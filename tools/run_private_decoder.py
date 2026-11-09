@@ -6,7 +6,7 @@ def run(args,name):
 result={}
 result['image_pull_exit']=run(['docker','pull','mono:6.12'],'docker-pull.txt')
 if result['image_pull_exit']==0:
-    args=['docker','run','--rm','--user',str(os.getuid())+':'+str(os.getgid()),'--network','none','--read-only','--cap-drop','ALL','--security-opt','no-new-privileges','--pids-limit','128','--memory','768m','--cpus','1','--tmpfs','/tmp:rw,nosuid,size=64m','-v',str(root/'private-input')+':/input:ro','-v',str(out)+':/output:rw','-v',str(root/'tools/DecodeTdr')+':/code:ro','mono:6.12','sh','-c','mcs -out:/tmp/decode.exe /code/Program.cs && mono /tmp/decode.exe /input/decoder-assemblies /input/decoded-game-frames /output']
+    args=['docker','run','--rm','--user',str(os.getuid())+':'+str(os.getgid()),'--network','none','--read-only','--cap-drop','ALL','--security-opt','no-new-privileges','--pids-limit','128','--memory','768m','--cpus','1','--tmpfs','/tmp:rw,nosuid,size=64m','-v',str(root/'private-input')+':/input:ro','-v',str(out)+':/output:rw','-v',str(root/'tools/DecodeTdr')+':/code:ro','-v',str(root/'mobile/MessageObserver')+':/observer:ro','mono:6.12','sh','-c','mcs -out:/tmp/decode.exe /code/Program.cs /observer/FieldSnapshot.cs /observer/ObserverJournal.cs /observer/ProtocolUnions.cs && mono /tmp/decode.exe /input/decoder-assemblies /input/decoded-game-frames /output']
     result['decoder_exit']=run(args,'decoder-output.txt')
 for name in ('docker-pull.txt','decoder-output.txt'):
     p=root/'private-input'/name

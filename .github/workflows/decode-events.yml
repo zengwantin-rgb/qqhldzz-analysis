@@ -50,7 +50,9 @@ jobs:
           python3 tools/inspect_message_observer.py
       - name: Decode inside isolated read-only networkless container
         run: |
+          python3 -m unittest discover -s tools -p test_decoded_events.py
           python3 tools/run_private_decoder.py
+          python3 tools/inspect_decoded_events.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:

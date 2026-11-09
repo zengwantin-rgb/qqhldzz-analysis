@@ -18,7 +18,7 @@ namespace MJDiagnostic
                 if (value.Length > 4096) throw new InvalidOperationException("String budget");
                 Put("\""); foreach (char c in value) { if (c == '"' || c == '\\') Put("\\" + c); else if (c < 32) Put("\\u" + ((int)c).ToString("x4", CultureInfo.InvariantCulture)); else Put(c.ToString()); } Put("\"");
             }
-            internal void Value(object value, int depth)
+            internal void Value(object value, int depth, long? selector = null)
             {
                 if (++nodes > 16000 || depth > 16) throw new InvalidOperationException("Snapshot traversal budget");
                 if (value == null) { Put("null"); return; }
@@ -37,9 +37,28 @@ namespace MJDiagnostic
                 }
                 string name = type.FullName;
                 if (name == null || !name.StartsWith("HuanLeGameSo.", StringComparison.Ordinal)) throw new InvalidOperationException("Unsupported snapshot type");
-                FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.Instance);
+                FieldInfo[] fields;
+                if (ProtocolUnions.IsUnion(name))
+                {
+                    string selected = selector.HasValue ? ProtocolUnions.Select(name, selector.Value) : null;
+                    if (selected == null) throw new InvalidOperationException("Unknown protocol union selector");
+                    FieldInfo active = type.GetField(selected, BindingFlags.Public | BindingFlags.Instance);
+                    if (active == null) throw new InvalidOperationException("Missing selected protocol field");
+                    fields = new FieldInfo[] { active };
+                }
+                else fields = type.GetFields(BindingFlags.Public | BindingFlags.Instance);
                 if (fields.Length > 256) throw new InvalidOperationException("Field budget");
-                Put("{"); for (int i = 0; i < fields.Length; i++) { if (i != 0) Put(","); Quote(fields[i].Name); Put(":"); Value(fields[i].GetValue(value), depth + 1); } Put("}");
+                FieldInfo discriminator = type.GetField("iType", BindingFlags.Public | BindingFlags.Instance) ?? type.GetField("nType", BindingFlags.Public | BindingFlags.Instance);
+                long? childSelector = discriminator == null ? (long?)null : Convert.ToInt64(discriminator.GetValue(value), CultureInfo.InvariantCulture);
+                bool first = true; Put("{");
+                for (int i = 0; i < fields.Length; i++)
+                {
+                    object child = fields[i].GetValue(value);
+                    if (child == null) continue;
+                    if (!first) Put(","); first = false; Quote(fields[i].Name); Put(":");
+                    Value(child, depth + 1, fields[i].Name == "stValue" ? childSelector : null);
+                }
+                Put("}");
             }
         }
         public static byte[] Encode(object message) { var writer = new Writer(); writer.Value(message, 0); byte[] bytes = Encoding.UTF8.GetBytes(writer.Text.ToString()); if (bytes.Length > ObserverJournal.MaxPayload) throw new InvalidOperationException("Encoded snapshot budget"); return bytes; }
