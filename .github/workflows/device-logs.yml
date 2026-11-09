@@ -9,6 +9,7 @@ on:
         options:
           - v1
           - v2
+          - v3
 permissions:
   contents: read
 jobs:
@@ -42,6 +43,7 @@ jobs:
           python3 -m unittest discover -s tools -p test_xlog.py
           python3 tools/inspect_xlog.py
           python3 tools/audit_export_coverage.py
+          python3 tools/inspect_phone_diagnostics.py
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
       - uses: actions/setup-dotnet@v4

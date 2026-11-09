@@ -1,0 +1,52 @@
+name: Inspect new phone diagnostic export
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve encrypted current and prior inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p private-input report/device
+          gh release download log-inputs-v3 --pattern log-input-v3.enc --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+          gh release download log-inputs-v2 --pattern log-input-v2.enc --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+      - name: Decrypt inside runner
+        env:
+          MJ_LOG_INPUT_KEY_V1: ${{ secrets.MJ_LOG_INPUT_KEY_V1 }}
+        run: |
+          umask 077
+          openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v3.enc -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
+          openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v2.enc -out private-input/previous.zip -pass env:MJ_LOG_INPUT_KEY_V1
+      - name: Test and inspect with restricted output
+        run: |
+          python3 -m unittest discover -s tools -p test_phone_diagnostics.py
+          python3 tools/audit_export_coverage.py > private-input/coverage-output.txt
+          python3 tools/inspect_phone_diagnostics.py
+          python3 tools/inspect_device_logs.py > private-input/log-output.txt
+          cp reports/device-round/gameplay-field-catalog.json report/device/gameplay-field-catalog.json
+          python3 tools/index_json_gameplay.py
+          python3 tools/inspect_xlog.py
+          python3 - <<'PY'
+          import json,pathlib,sys
+          sys.path.insert(0,'tools')
+          from analyze_round_logs import analyze_archive
+          placeholder=json.loads(pathlib.Path('reports/complete-v2/round-analysis.json').read_text())['placeholder_value_from_MJDef']
+          result=analyze_archive('private-input/device.zip',placeholder)
+          pathlib.Path('report/device/round-analysis.json').write_text(json.dumps(result,indent=2)+'\n')
+          PY
+          python3 tools/analyze_fan_recommend.py
+          python3 tools/analyze_finish_hands.py > private-input/finish-output.txt
+          python3 tools/probe_embedded_payloads.py > private-input/payload-output.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phone-export-summary
+          path: report/device/
+      - name: Remove plaintext inputs
+        if: always()
+        run: rm -rf private-input
