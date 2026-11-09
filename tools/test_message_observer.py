@@ -16,6 +16,20 @@ class MessageObserverTests(unittest.TestCase):
             row['bytes']=len(payload)+1
             self.assertEqual(events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode())['invalid_record_count'],1)
 
+    def test_snapshot_encoding_int32_and_closed_error_metadata(self):
+        payload=b'{"iType":2147483647,"tiles":[1,2]}'
+        row={'kind':'game_event','schema':1,'sequence':1,'channel':'tdr','message_type':2147483647,'encoding':'public_field_snapshot','bytes':len(payload),'payload_b64':base64.b64encode(payload).decode()}
+        result=events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode())
+        self.assertEqual(result['valid_frame_count'],1)
+        self.assertEqual(result['frames'][0]['encoding'],'public_field_snapshot')
+        row={'kind':'managed_status','schema':1,'status':'serialization_failed','value':0,'stage':'tdr_pack','category':'null_reference','message_type':3,'message':'private exception path'}
+        result=statuses(b'MJMessageObserverStatus/1\n'+json.dumps(row).encode())
+        self.assertEqual(result['records'][0]['stage'],'tdr_pack')
+        self.assertNotIn('private exception',json.dumps(result))
+        row['category']='private arbitrary type';row['stage']='private arbitrary path'
+        result=statuses(b'MJMessageObserverStatus/1\n'+json.dumps(row).encode())
+        self.assertNotIn('private arbitrary',json.dumps(result))
+
     def test_subscription_is_not_inherited_across_sessions(self):
         rows=[{'kind':'native_status','schema':1,'status':'library_loaded'}, {'kind':'managed_status','schema':1,'status':'observer_started','value':0}, {'kind':'native_status','schema':1,'status':'library_loaded'}]
         result=statuses(b'MJMessageObserverStatus/1\n'+b'\n'.join(json.dumps(r).encode() for r in rows))
