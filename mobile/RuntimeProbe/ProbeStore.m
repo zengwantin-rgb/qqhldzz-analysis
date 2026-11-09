@@ -6,6 +6,16 @@
 #import <errno.h>
 #import <string.h>
 
+#ifndef MJ_PROBE_DIRECTORY_NAME
+#define MJ_PROBE_DIRECTORY_NAME "MJRuntimeProbe"
+#endif
+#ifndef MJ_PROBE_FILE_NAME
+#define MJ_PROBE_FILE_NAME "runtime-probe.log"
+#endif
+#ifndef MJ_PROBE_HEADER
+#define MJ_PROBE_HEADER "MJRuntimeProbe/1\n"
+#endif
+
 BOOL MJProbeMatchesBundle(NSString *identifier) {
     return [identifier isKindOfClass:NSString.class] && [identifier isEqualToString:@"com.tencent.happymj"];
 }
@@ -29,13 +39,13 @@ BOOL MJProbeAppendRecord(NSString *documents, NSDictionary *record, NSError **er
     NSMutableData *line=[json mutableCopy]; [line appendBytes:"\n" length:1];
     int root=open(documents.fileSystemRepresentation,O_RDONLY|O_DIRECTORY|O_CLOEXEC);
     if (root<0) return MJProbeFailure(error,@"Probe documents directory unavailable");
-    if (mkdirat(root,"MJRuntimeProbe",0700)!=0 && errno!=EEXIST) { close(root);return MJProbeFailure(error,@"Probe directory creation failed"); }
-    int dir=openat(root,"MJRuntimeProbe",O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_CLOEXEC);close(root);
+    if (mkdirat(root,MJ_PROBE_DIRECTORY_NAME,0700)!=0 && errno!=EEXIST) { close(root);return MJProbeFailure(error,@"Probe directory creation failed"); }
+    int dir=openat(root,MJ_PROBE_DIRECTORY_NAME,O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_CLOEXEC);close(root);
     if (dir<0) return MJProbeFailure(error,@"Probe directory is not a regular directory");
-    int fd=openat(dir,"runtime-probe.log",O_RDWR|O_APPEND|O_CREAT|O_NOFOLLOW|O_CLOEXEC,0600);close(dir);
+    int fd=openat(dir,MJ_PROBE_FILE_NAME,O_RDWR|O_APPEND|O_CREAT|O_NOFOLLOW|O_CLOEXEC,0600);close(dir);
     if (fd<0) return MJProbeFailure(error,@"Probe file unavailable");
     if (flock(fd,LOCK_EX|LOCK_NB)!=0) { close(fd);return MJProbeFailure(error,@"Probe file busy"); }
-    struct stat st; const char header[]="MJRuntimeProbe/1\n"; size_t headerSize=sizeof(header)-1;
+    struct stat st; const char header[]=MJ_PROBE_HEADER; size_t headerSize=sizeof(header)-1;
     if (fstat(fd,&st)!=0 || !S_ISREG(st.st_mode) || st.st_nlink!=1 || st.st_size<0 || (unsigned long long)st.st_size+line.length+headerSize>64*1024) {
         close(fd);return MJProbeFailure(error,@"Probe file type or size limit");
     }

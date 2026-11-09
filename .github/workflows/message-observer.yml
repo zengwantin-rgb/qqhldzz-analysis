@@ -1,0 +1,77 @@
+name: Build decoded gameplay message observer
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  managed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Test bounded encoded-event journal
+        run: dotnet run --project tools/MessageObserverTests/MessageObserverTests.csproj -c Release
+      - name: Retrieve original metadata references
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+      - name: Compile our managed observer and embed its bytes
+        run: |
+          python3 tools/build_managed_observer.py
+          python3 - <<'PY'
+          import pathlib
+          p=pathlib.Path('build/message-observer')
+          data=(p/'MJMessageObserver.Managed.dll').read_bytes()
+          (p/'ManagedPayload.h').write_text('static const unsigned char MJManagedPayload[] = {'+','.join(str(b) for b in data)+'};\nstatic const unsigned long MJManagedPayloadLength = sizeof(MJManagedPayload);\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: observer-managed-payload
+          path: build/message-observer/
+  native:
+    needs: managed
+    runs-on: macos-15-intel
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: observer-managed-payload
+          path: build/message-observer/
+      - name: Test original probe output and isolated observer files
+        run: |
+          mkdir -p build
+          clang -fobjc-arc -framework Foundation mobile/RuntimeProbe/ProbeStore.m mobile/RuntimeProbe/ProbeStoreTests.m -o build/probe-store-tests
+          build/probe-store-tests
+          clang -fobjc-arc -framework Foundation -DMJ_PROBE_DIRECTORY_NAME='"MJMessageObserver"' -DMJ_PROBE_FILE_NAME='"observer-status.log"' -DMJ_PROBE_HEADER='"MJMessageObserverStatus/1\n"' mobile/RuntimeProbe/ProbeStore.m mobile/MessageObserver/ObserverFiles.m mobile/MessageObserver/ObserverFilesTests.m -o build/observer-file-tests
+          build/observer-file-tests
+      - name: Compile and sign single dylib with embedded observer
+        run: bash mobile/MessageObserver/build-native.sh
+      - name: Verify standalone dependency set and immutable package
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,os,pathlib
+          p=pathlib.Path('build/message-observer-device')
+          digest=hashlib.sha256((p/'MJMessageObserver.dylib').read_bytes()).hexdigest()
+          assert digest==(p/'checks/SHA256SUMS.txt').read_text().split()[0]
+          assert 'arm64' in (p/'checks/architecture.txt').read_text()
+          for line in (p/'checks/dependencies.txt').read_text().splitlines()[1:]:
+              dependency=line.strip().split(' (')[0]
+              assert dependency.startswith(('@rpath/MJMessageObserver.dylib','/System/Library/','/usr/lib/')),dependency
+          result={'version':'0.2.0','source_commit':os.environ['GITHUB_SHA'],'source_run':int(os.environ['GITHUB_RUN_ID']),
+              'sha256':digest,'managed_payload_sha256':hashlib.sha256(pathlib.Path('build/message-observer/MJMessageObserver.Managed.dll').read_bytes()).hexdigest(),
+              'journal_and_storage_tests_passed':True,'compiled_against_original_game_metadata':True,'arm64_build_and_adhoc_signature_verified':True,
+              'dependencies_limited_to_system_libraries':True,'native_loader_on_device_verified':False,'managed_subscription_on_device_verified':False,
+              'game_event_recording_on_device_verified':False,'live_opponent_display_implemented':False,
+              'scope':'Observe only TSDK gameplay event channels 9 and 217. Re-encode decoded event objects with original serializers; local bounded journals only. No receive-function patches or outgoing game requests.'}
+          (p/'checks/validation.json').write_text(json.dumps(result,indent=2)+'\n')
+          print(json.dumps(result,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: native-message-observer
+          path: build/message-observer-device/

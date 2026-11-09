@@ -17,6 +17,8 @@ namespace MJDiagnostic
         static bool started;
         static bool captureFailed;
         static int serializationFailures;
+        static bool unexpectedTdr;
+        static bool unexpectedProtobuf;
 
         public static bool Start(string events, string status)
         {
@@ -63,7 +65,7 @@ namespace MJDiagnostic
                 try
                 {
                     HuanLeGameSo.SoNotifyMsgTV message = evt.data as HuanLeGameSo.SoNotifyMsgTV;
-                    if (message == null) return;
+                    if (message == null) { if (!unexpectedTdr) { unexpectedTdr = true; journal.Status("unexpected_payload", 9); } return; }
                     byte[] bytes = tdrBuffer; int used = 0;
                     TdrError.ErrorType result = message.pack(ref bytes, bytes.Length, ref used, 0);
                     if (result != TdrError.ErrorType.TDR_NO_ERROR) { Failure(true); return; }
@@ -80,7 +82,7 @@ namespace MJDiagnostic
                 try
                 {
                     MJSoPb.SoNotifyMsgTV message = evt.data as MJSoPb.SoNotifyMsgTV;
-                    if (message == null) return;
+                    if (message == null) { if (!unexpectedProtobuf) { unexpectedProtobuf = true; journal.Status("unexpected_payload", 217); } return; }
                     byte[] bytes = MessageExtensions.ToByteArray(message);
                     journal.Append("protobuf", message.type, bytes, bytes.Length);
                 }

@@ -63,13 +63,15 @@ namespace MJDiagnostic
                 CheckHeader(eventFile, EventsHeader);
                 File.AppendAllText(eventFile, line, new UTF8Encoding(false));
                 FrameCount++;
+                if (FrameCount == 1) Status("first_event_recorded", FrameCount);
+                else if (FrameCount % 25 == 0) Status("capture_progress", FrameCount);
                 return true;
             }
         }
         public void Status(string code, int value)
         {
             // Fixed caller codes only; never serialize exception messages or paths.
-            if (code != "observer_started" && code != "capture_limit_reached" && code != "serialization_failed" && code != "capture_failed" && code != "observer_stopped") return;
+            if (code != "first_event_recorded" && code != "capture_progress" && code != "unexpected_payload" && code != "observer_started" && code != "capture_limit_reached" && code != "serialization_failed" && code != "capture_failed" && code != "observer_stopped") return;
             lock (gate)
             {
                 CheckHeader(statusFile, StatusHeader);
