@@ -1,6 +1,6 @@
-import json,tempfile,unittest
+import json,tempfile,unittest,zlib
 from pathlib import Path
-from inspect_decoded_events import inspect
+from inspect_decoded_events import inspect,embedded,proto_fields
 class DecodedEventTests(unittest.TestCase):
     def test_counts_phase_and_no_private_values(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -10,6 +10,13 @@ class DecodedEventTests(unittest.TestCase):
             self.assertEqual(result['frames'][0]['hand_fields'][0]['nonzero_tiles'],2)
             self.assertEqual(result['frames'][0]['phase'],'before_hu');self.assertEqual(result['frames'][1]['phase'],'after_hu_or_finish')
             public=json.dumps(result);self.assertNotIn('fixture-token',public);self.assertNotIn('szTiles',public);self.assertNotIn('29',public)
+    def test_bounded_embedded_advice_buffer_and_wire_lengths(self):
+        raw=bytes([10,2,8,1]);compressed=zlib.compress(raw)
+        data={'nGameBuf':len(compressed),'iOriginSize':len(raw),'szGameBuf':[b if b<128 else b-256 for b in compressed]}
+        result=embedded(data);self.assertEqual(result['top_level_field_counts'],{'1':1});self.assertTrue(result['only_known_advice_field'])
+        data['iOriginSize']=4*1024*1024+1;self.assertEqual(embedded(data)['status'],'invalid_buffer_shape')
+        with self.assertRaises(ValueError):proto_fields(bytes([10,100]))
+
     def test_invalid_hand_ownership_not_reported(self):
         with tempfile.TemporaryDirectory() as temp:
             (Path(temp)/'entry-0001-seq-0001.tdr.json').write_text(json.dumps({'iType':3,'nSeat':99,'nHandTilesNum':2,'szTiles':[12,13]}))

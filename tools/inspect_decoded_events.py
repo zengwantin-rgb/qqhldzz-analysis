@@ -18,7 +18,8 @@ def proto_fields(raw):
         if sum(counts.values())>100000:raise ValueError()
         if wire==0:varint()
         elif wire==1:index+=8
-        elif wire==2:index+=varint()
+        elif wire==2:
+            length=varint();index+=length
         elif wire==5:index+=4
         else:raise ValueError()
         if index>len(raw):raise ValueError()
