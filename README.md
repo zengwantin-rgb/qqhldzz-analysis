@@ -1,6 +1,6 @@
 # 欢乐麻将 iOS 文件静态分析
 
-输入为用户提供的 Info.plist、UnityFramework 和欢乐麻将_Decrypted.ipa，保存在本私有仓库的 inputs-v1 Release 附件中。
+输入为用户提供的 Info.plist、UnityFramework 和欢乐麻将_Decrypted.ipa，保存在原始仓库 zwthys-cyber/qqhldzz-analysis的 inputs-v1 Release 附件中。
 
 所有脚本编译、ZIP CRC、SHA-256、Mach-O、文件一致性和 IL2CPP 元数据验证均在 GitHub Actions 上执行。当前服务器仅用于读取文件、准备脚本和推送。
 
