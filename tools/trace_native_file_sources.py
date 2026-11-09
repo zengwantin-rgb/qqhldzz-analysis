@@ -141,6 +141,7 @@ def inspect(device_path, ipa_path):
                 if len(matches) == 1 and matches[0].file_size <= 4096 and row['category'] == 'replay_or_record':
                     small_files.append({'candidate': row['candidate'], **small_binary_facts(device.read(matches[0]))})
     refs = []
+    sdk_markers = []
     scanned = []
     with zipfile.ZipFile(ipa_path) as ipa:
         names = set(ipa.namelist())
@@ -160,6 +161,13 @@ def inspect(device_path, ipa_path):
             label = pathlib.PurePosixPath(name).name
             scanned.append({'binary': label, 'bytes': len(data)})
             refs.extend(binary_matches(data, candidates, label))
+            # Only public/static SDK tokens are emitted; never adjacent strings.
+            markers = {token: data.count(token.encode('ascii')) for token in (
+                '.xlog', 'appender_open', 'xlogger', 'LogCrypt', 'log_crypt.cc',
+                'log_buffer.cc', 'MSDKLog', 'mars::xlog', 'mars::comm')}
+            if any(markers.values()):
+                sdk_markers.append({'binary': label,
+                                    'static_marker_counts': {k: v for k, v in markers.items() if v}})
         packaged_records = []
         packaged_comparisons = []
         for candidate in candidates:
@@ -201,6 +209,7 @@ def inspect(device_path, ipa_path):
             'small_record_file_checks': small_files, 'packaged_record_configs': packaged_records,
             'packaged_candidate_comparisons': packaged_comparisons,
             'binaries_scanned': scanned, 'references': refs,
+            'sdk_static_markers': sdk_markers,
             'limits': [
                 'Only exact basename byte matches in supplied app executables and IL2CPP metadata are checked.',
                 'A filename match identifies a static reference, not its behavior or actual file format.',
