@@ -49,7 +49,7 @@ static class ModelFixture
         string panel=GameModelReader.Panel(live);
         Check(panel.Contains("牌背 ×3") && panel.Contains("1条 1筒 中") && panel.Contains("另有牌背 ×1"),"show masked, known and mixed lists faithfully");
         Check(panel.Contains("暗杠：中") && !panel.Contains("9条"),"show explicit kong model values, keep auxiliary draw fields separate");
-        Check(!panel.Contains("一万"),"opponent rows must not use own hand values");
+        Check(!panel.Contains("1万"),"opponent rows must not use own hand values");
         ((List<int>)lists[2])[0]=19;
         Check(live.Hands[2].Tiles[0]==11,"copy runtime list instead of keeping mutable game data");
         string json=GameModelReader.Json(live);using(var parsed=JsonDocument.Parse(json))Check(parsed.RootElement.GetProperty("kind").GetString()=="runtime_model","runtime snapshot JSON");

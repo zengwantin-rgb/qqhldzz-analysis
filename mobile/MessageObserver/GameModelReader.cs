@@ -68,7 +68,9 @@ namespace MJDiagnostic
                     if (valid) hand.Aux[name] = values;
                 }
                 object stored = Optional(tiles, "m_anGangList"); IList kongs = ModelCacheReader.IsCoreList(stored) ? stored as IList : null;
-                if (kongs != null && kongs.Count <= 4)
+                if (stored != null && kongs == null) { hand.AuxStatus = "unsupported_kong_list"; return; }
+                if (kongs != null && kongs.Count > 4) { hand.AuxStatus = "invalid_kong_count"; return; }
+                if (kongs != null)
                 {
                     var values = new int[kongs.Count];
                     for (int i = 0; i < values.Length; i++)
@@ -79,7 +81,7 @@ namespace MJDiagnostic
                     }
                     hand.ConcealedKongs = values;
                 }
-                hand.AuxStatus = "read";
+                hand.AuxStatus = stored == null ? "aux_partial" : "read";
             }
             catch { hand.AuxStatus = "aux_read_failed"; }
         }

@@ -36,6 +36,7 @@ def runtime_model(obj):
         if not isinstance(cards,list) or len(cards)>32 or not all(integer(c,-2147483648,2147483647) for c in cards):return None
         known=sum(1<=c<=9 or 11<=c<=19 or 21<=c<=29 or 31<=c<=37 for c in cards);backs=sum(c==0 for c in cards)
         seat={'view_seat':view,'seat':row['seat'],'tiles':len(cards),'known_tile_count':known,'placeholder_count':backs,'invalid_tile_count':len(cards)-known-backs}
+        if row.get('aux_status') in ('not_read','read','aux_partial','aux_read_failed','unsupported_kong_entry','unsupported_kong_list','invalid_kong_count'):seat['aux_status']=row['aux_status']
         kongs=row.get('concealed_kongs',[])
         if not isinstance(kongs,list) or len(kongs)>4 or not all(integer(c,-2147483648,2147483647) for c in kongs):return None
         seat['concealed_kong_groups']=len(kongs);seat['known_concealed_kong_groups']=sum(1<=c<=9 or 11<=c<=19 or 21<=c<=29 or 31<=c<=37 for c in kongs)
