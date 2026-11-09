@@ -103,6 +103,17 @@ def audit(path):
         candidates = [f for s in manifest.get('scans', []) for f in s.get('files', [])]
         actual = [i for i in infos if i.filename != 'manifest.json']
         actual_names = {i.filename for i in actual}
+        reported = manifest.get('coverage', {})
+        coverage_status = reported.get('status') if reported.get('status') in ('complete', 'partial', 'manifest_only') else None
+        selection_mode = manifest.get('selection_mode') if manifest.get('selection_mode') in ('manual', 'complete_candidates') else None
+        expected_names = {'files/' + pathlib.PurePosixPath(f.get('container', '')).name + '/' + f.get('relative', '') for f in candidates}
+        claim_verified = None
+        if coverage_status == 'complete':
+            claim_verified = (actual_names == expected_names and len(actual) == len(candidates)
+                              and len(infos) == len({i.filename for i in infos})
+                              and set(declared) == actual_names and len(declared) == len(actual)
+                              and not manifest.get('skipped_files') and not manifest.get('errors')
+                              and not any(s.get('truncated') or s.get('errors') for s in manifest.get('scans', [])))
         exported_categories = collections.Counter(category(i.filename) for i in actual)
         candidate_categories = collections.Counter(category(f.get('relative', '')) for f in candidates)
         rows = []
@@ -113,6 +124,9 @@ def audit(path):
             rows.append({'entry': index, **path_facts(entry.filename), **file_facts(archive.read(entry))})
         return {
             'zip_crc_valid': True,
+            'reported_selection_mode': selection_mode,
+            'reported_coverage_status': coverage_status,
+            'complete_claim_independently_verified': claim_verified,
             'manifest_declared_export_count': len(declared),
             'actual_export_count': len(actual),
             'duplicate_zip_entry_count': len(infos) - len({i.filename for i in infos}),

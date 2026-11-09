@@ -2,7 +2,7 @@ import json
 import struct
 import unittest
 
-from inspect_ifix_patch import IFIX_MAGIC, inspect_combined, Reader
+from inspect_ifix_patch import IFIX_MAGIC, inspect_combined, Reader, readiness
 
 
 def integer(n):
@@ -65,6 +65,17 @@ class IfixPatchTests(unittest.TestCase):
         self.assertEqual(result['subpatches'][0]['resolved_slot_types'][0]['declared_public_instance_methods'], 2)
         with self.assertRaises(ValueError):
             inspect_combined(combined, MAGIC, {OWNER: 0, BRIDGE: 0})
+
+    def test_readiness_version_checks_do_not_emit_other_log_content(self):
+        result = readiness([
+            '2026-11-09 22:00:00 iFix ready version =8.19.112',
+            'IFix version check false, unload private-user-sentinel',
+            'PatchManagerLoad exception: private-token-sentinel',
+        ], {'8.19.112'})
+        self.assertTrue(result['events'][0]['matches_manifest_version'])
+        self.assertEqual(result['counts']['version_check_unload'], 1)
+        self.assertEqual(result['counts']['patch_load_exception'], 1)
+        self.assertNotIn('private-', json.dumps(result))
 
 
 if __name__ == '__main__':

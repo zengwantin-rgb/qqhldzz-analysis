@@ -18,6 +18,7 @@ from trace_native_file_sources import inspect, small_binary_facts, binary_matche
 class ExportCoverageTests(unittest.TestCase):
     def test_all_entries_and_missing_candidates(self):
         manifest = {
+            'selection_mode': 'complete_candidates', 'coverage': {'status': 'complete'},
             'exported_files': ['files/c/Log398/a.log', 'files/c/TraceBinLogs/b.bin'],
             'scans': [{'files': [
                 {'relative': 'Log398/a.log'},
@@ -34,6 +35,7 @@ class ExportCoverageTests(unittest.TestCase):
                 z.writestr('files/c/extra.txt', 'private-sensitive-sentinel')
             result = audit(path)
         self.assertEqual(result['actual_export_count'], 3)
+        self.assertFalse(result['complete_claim_independently_verified'])
         self.assertEqual(result['unexported_candidate_count'], 1)
         self.assertEqual(result['undeclared_entry_count'], 1)
         self.assertEqual(result['files'][1]['known_field_mentions']['iTileFace'], 1)
