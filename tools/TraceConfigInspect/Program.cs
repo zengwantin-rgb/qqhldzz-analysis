@@ -3,7 +3,7 @@ using Mono.Cecil.Cil;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 IEnumerable<TypeDefinition> Flatten(IEnumerable<TypeDefinition> ts){foreach(var t in ts){yield return t;foreach(var n in Flatten(t.NestedTypes))yield return n;}}
-var methods=new List<object>();var enums=new List<object>();var traceTypes=new List<object>();var callers=new List<object>();int assemblies=0;
+var methods=new List<object>();var enums=new List<object>();var traceTypes=new List<object>();var preferenceKeys=new List<object>();var callers=new List<object>();int assemblies=0;
 object Operand(object operand) => operand switch {
  null => null,
  MethodReference m => new{method=m.FullName},
@@ -36,6 +36,12 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
     || t.FullName=="HappyMahjong.Core.PathUtil"
     || (t.FullName=="System.IO.BinaryWriter" && m.Name=="Write" && m.Parameters.Count==1 && m.Parameters[0].ParameterType.FullName=="System.Byte[]")
     || (t.FullName=="HappyMahjong.SelectionScene.SelectionStartCommand/<>c" && m.Name.Contains("<CheckDeleteOldRecord>"));
+   if(t.FullName=="HappyMahjong.Common.GM.GMModel" && (m.Name=="get_VMTraceBinLevel" || m.Name=="get_VMLogLevel")){
+    foreach(var ins in m.Body.Instructions.Where(i=>i.OpCode.Name=="ldstr" && i.Operand is string)){
+     string key=(string)ins.Operand;
+     if(Regex.IsMatch(key,@"^[A-Za-z_][A-Za-z0-9_.-]{0,79}$"))preferenceKeys.Add(new{property=m.Name.Substring(4),static_playerprefs_key=key});
+    }
+   }
    if(selected)methods.Add(new{assembly=asm.Name.Name,type=t.FullName,method=m.FullName,return_type=m.ReturnType.FullName,instructions=m.Body.Instructions.Select(i=>new{offset=i.Offset,opcode=i.OpCode.Name,operand=Operand(i.Operand)}).ToArray()});
    var hits=m.Body.Instructions.Where(i=>i.Operand is MethodReference r && (r.Name.Contains("TraceBin") || r.Name=="GetVMLogLevelByDeviceType")).Select(i=>new{offset=i.Offset,method=((MethodReference)i.Operand).FullName}).ToArray();
    if(hits.Length>0 && !t.FullName.StartsWith("IFix."))callers.Add(new{assembly=asm.Name.Name,method=m.FullName,calls=hits});
@@ -43,5 +49,5 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  }
 }
 Directory.CreateDirectory(args[1]);
-File.WriteAllText(Path.Combine(args[1],"trace-config.json"),JsonSerializer.Serialize(new{assemblies,methods,enums,trace_types=traceTypes,callers,limits=new[]{"Recovered static IL only; no runtime configuration or effect is proven.","Arbitrary string constants are omitted; only narrow static diagnostic-key names are retained."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
+File.WriteAllText(Path.Combine(args[1],"trace-config.json"),JsonSerializer.Serialize(new{assemblies,methods,enums,trace_types=traceTypes,diagnostic_preference_keys=preferenceKeys,callers,limits=new[]{"Recovered static IL only; no runtime configuration or effect is proven.","Arbitrary string constants are omitted; only narrow static diagnostic-key names are retained."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
 Console.WriteLine($"Scanned {assemblies} assemblies; {methods.Count} diagnostic methods, {enums.Count} enums, {callers.Count} callers.");
