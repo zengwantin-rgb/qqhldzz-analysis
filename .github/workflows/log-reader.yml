@@ -6,10 +6,12 @@ on:
         description: macOS runner image
         type: choice
         required: true
-        default: macos-26
+        default: macos-15-intel
         options:
           - macos-26
           - macos-latest
+          - macos-15
+          - macos-15-intel
 permissions:
   contents: read
 jobs:
