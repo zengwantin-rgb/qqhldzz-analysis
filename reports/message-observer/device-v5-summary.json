@@ -1,0 +1,91 @@
+{
+  "status_files": [
+    {
+      "entry": 6,
+      "status": "recognized_status",
+      "session_count": 1,
+      "invalid_record_count": 0,
+      "records": [
+        {
+          "kind": "native_status",
+          "status": "library_loaded",
+          "session": 1,
+          "attempt": 0,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "native_status",
+          "status": "preparing_files",
+          "session": 1,
+          "attempt": null,
+          "reported_subscription_registered": null
+        },
+        {
+          "kind": "native_status",
+          "status": "managed_assembly_loaded",
+          "session": 1,
+          "attempt": 1,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "managed_status",
+          "status": "observer_started",
+          "session": 1,
+          "count_or_channel": 0
+        },
+        {
+          "kind": "native_status",
+          "status": "observer_started",
+          "session": 1,
+          "attempt": 1,
+          "reported_subscription_registered": true
+        },
+        {
+          "kind": "managed_status",
+          "status": "first_event_recorded",
+          "session": 1,
+          "count_or_channel": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "capture_failed",
+          "session": 1,
+          "count_or_channel": 1
+        }
+      ],
+      "latest_session_subscription_reported": true,
+      "latest_session_first_event_reported": true
+    }
+  ],
+  "event_files": [
+    {
+      "entry": 5,
+      "status": "recognized_events",
+      "valid_frame_count": 1,
+      "invalid_record_count": 0,
+      "sequence_discontinuities": 0,
+      "decoded_bytes": 15,
+      "channel_counts": {
+        "tdr": 1
+      },
+      "message_type_counts": {
+        "17": 1
+      },
+      "frames": [
+        {
+          "sequence": 1,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15
+        }
+      ]
+    }
+  ],
+  "total_valid_frames": 1,
+  "limits": [
+    "Raw/base64 packet payloads and private output paths are never emitted; binary packets remain in the runner private-input directory.",
+    "Captured bytes are re-encoded decoded events, not original network bytes. Original listener ordering is not established.",
+    "A subscription status is separate from the observed valid frame count; valid frames do not establish live opponent hand visibility.",
+    "Each event file is a separate capture. It is not automatically attributed to the latest status-log session."
+  ]
+}

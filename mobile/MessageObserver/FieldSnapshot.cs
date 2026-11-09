@@ -23,9 +23,11 @@ namespace MJDiagnostic
                 if (++nodes > 16000 || depth > 16) throw new InvalidOperationException("Snapshot traversal budget");
                 if (value == null) { Put("null"); return; }
                 Type type = value.GetType();
-                if (value is string) { Quote((string)value); return; }
+                if (value is string || value is char) { Quote(Convert.ToString(value, CultureInfo.InvariantCulture)); return; }
                 if (value is bool) { Put((bool)value ? "true" : "false"); return; }
                 if (type.IsEnum) { Put(Convert.ToInt64(value).ToString(CultureInfo.InvariantCulture)); return; }
+                if (value is double && (Double.IsNaN((double)value) || Double.IsInfinity((double)value))) { Put("null"); return; }
+                if (value is float && (Single.IsNaN((float)value) || Single.IsInfinity((float)value))) { Put("null"); return; }
                 if (type.IsPrimitive || value is decimal) { Put(Convert.ToString(value, CultureInfo.InvariantCulture)); return; }
                 Array array = value as Array;
                 if (array != null)

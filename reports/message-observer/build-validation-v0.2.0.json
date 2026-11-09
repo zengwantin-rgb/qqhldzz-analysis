@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "source_commit": "d1cdf3d9dd5f4913125159f1d8c255cfcd128aa0",
+  "source_run": 42700647399,
+  "sha256": "3c5390187f23b51836392af9e6d21c74fa48204a3f2b48b5ccfc8f0dc45caa32",
+  "managed_payload_sha256": "065d758360add08b8d50335731d9bfcde56b9693fe27ac20a54bc35fbaadb972",
+  "journal_and_storage_tests_passed": true,
+  "compiled_against_original_game_metadata": true,
+  "arm64_build_and_adhoc_signature_verified": true,
+  "dependencies_limited_to_system_libraries": true,
+  "native_loader_on_device_verified": false,
+  "managed_subscription_on_device_verified": false,
+  "game_event_recording_on_device_verified": false,
+  "live_opponent_display_implemented": false,
+  "scope": "Observe only TSDK gameplay event channels 9 and 217. Re-encode decoded event objects with original serializers; local bounded journals only. No receive-function patches or outgoing game requests."
+}

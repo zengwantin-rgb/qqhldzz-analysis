@@ -1,0 +1,11 @@
+# Device verification and 0.2.1 correction
+
+The v4 export verifies the 0.1 probe actually loaded and found all 25 requested APIs and seven target classes. The sanitized receipt is ../runtime-probe/device-v4-summary.json. Build-time unverified flags in historical receipts remain unchanged.
+
+The v5 export verifies 0.2.0 loaded its own managed assembly on attempt 1, registered callbacks, and saved one valid TDR frame: message type 17 (ID_SO_NOTIFY_TRUST), 15 re-encoded bytes. It then reported capture_failed. There are no invalid frames or sequence gaps within that one-frame capture. Source run: https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42703715615 . Payload bytes remain private; no card values or player identifiers are published.
+
+The old callbacks caught every exception as a fatal journal failure. A later serializer exception therefore disabled both channels. The coarse v5 status cannot establish which statement or exception caused the failure. The static enum audit found IDs 1–160, so the old 16-bit restriction is not established as the cause. Event 300 is dispatched by PreviewGameServer with PreviewGameServerData; the inspected live receive methods do not establish a raw SimpleGameMsg preview channel. No raw-buffer subscription was added on that assumption.
+
+Version 0.2.1 separates serializer errors from journal write errors. A failed TDR serializer attempts a bounded JSON snapshot of public protocol fields, without calling game getters or methods. Frames explicitly identify public_field_snapshot versus reencoded_decoded_event; neither is claimed to be original network bytes. Snapshot traversal is bounded by depth, nodes, fields, array lengths, text and final UTF-8 size. Snapshot errors skip that message and allow later messages. Only journal write failure disables capture. Diagnostics retain fixed stage/category and integer message ID, never exception messages, stack traces or private paths.
+
+A callback regression fixture throws in a serializer, verifies its field snapshot, then verifies a subsequent packet still records. It also checks JSON escaping, array limits, full signed int32 message IDs and absence of exception text. This does not establish reflection or fallback success on the phone; that needs a new device receipt. No live opponent hand display has been implemented.

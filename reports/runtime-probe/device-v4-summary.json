@@ -1,0 +1,574 @@
+{
+  "files": [
+    {
+      "entry": 5,
+      "status": "recognized_probe",
+      "session_count": 1,
+      "invalid_record_count": 0,
+      "library_loaded_observed": true,
+      "latest_session_metadata_checked": true,
+      "records": [
+        {
+          "line": 2,
+          "session": 1,
+          "stage": "library_loaded",
+          "attempt": null,
+          "reported_capturing_game_messages": false
+        },
+        {
+          "line": 3,
+          "session": 1,
+          "stage": "runtime_snapshot",
+          "attempt": 1,
+          "reported_capturing_game_messages": false,
+          "lookup_status": "metadata_checked",
+          "unity_framework_loaded": true,
+          "assembly_count": 96,
+          "assembly_scan_capped": false,
+          "native_apis": {
+            "il2cpp_array_new": true,
+            "il2cpp_assembly_get_image": true,
+            "il2cpp_class_from_name": true,
+            "il2cpp_class_from_type": true,
+            "il2cpp_class_get_element_class": true,
+            "il2cpp_class_get_field_from_name": true,
+            "il2cpp_class_get_method_from_name": true,
+            "il2cpp_class_get_methods": true,
+            "il2cpp_domain_get": true,
+            "il2cpp_domain_get_assemblies": true,
+            "il2cpp_field_static_get_value": true,
+            "il2cpp_gchandle_new": true,
+            "il2cpp_get_corlib": true,
+            "il2cpp_image_get_name": true,
+            "il2cpp_method_get_name": true,
+            "il2cpp_method_get_param": true,
+            "il2cpp_method_get_param_count": true,
+            "il2cpp_object_new": true,
+            "il2cpp_object_unbox": true,
+            "il2cpp_runtime_invoke": true,
+            "il2cpp_string_new": true,
+            "il2cpp_thread_attach": true,
+            "il2cpp_thread_current": true,
+            "il2cpp_thread_detach": true,
+            "il2cpp_type_get_type": true
+          },
+          "classes": [
+            {
+              "type": "HappyMahjong.TSDK4CSharpService",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "dispatcher_backing_field_found": true,
+              "methods": [
+                {
+                  "name": "get_dispatcher",
+                  "parameter_count": 0
+                }
+              ]
+            },
+            {
+              "type": "HappyMahjong.TSDKMessageEvent",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "game_message_field_found": true,
+              "game_pb_message_field_found": true,
+              "methods": []
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Invoke",
+                  "parameter_count": 1
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "get_data",
+                  "parameter_count": 0
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Dispatch",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Dispatch",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                }
+              ]
+            },
+            {
+              "type": "System.Reflection.Assembly",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 3
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 4,
+          "session": 1,
+          "stage": "runtime_snapshot",
+          "attempt": 2,
+          "reported_capturing_game_messages": false,
+          "lookup_status": "metadata_checked",
+          "unity_framework_loaded": true,
+          "assembly_count": 96,
+          "assembly_scan_capped": false,
+          "native_apis": {
+            "il2cpp_array_new": true,
+            "il2cpp_assembly_get_image": true,
+            "il2cpp_class_from_name": true,
+            "il2cpp_class_from_type": true,
+            "il2cpp_class_get_element_class": true,
+            "il2cpp_class_get_field_from_name": true,
+            "il2cpp_class_get_method_from_name": true,
+            "il2cpp_class_get_methods": true,
+            "il2cpp_domain_get": true,
+            "il2cpp_domain_get_assemblies": true,
+            "il2cpp_field_static_get_value": true,
+            "il2cpp_gchandle_new": true,
+            "il2cpp_get_corlib": true,
+            "il2cpp_image_get_name": true,
+            "il2cpp_method_get_name": true,
+            "il2cpp_method_get_param": true,
+            "il2cpp_method_get_param_count": true,
+            "il2cpp_object_new": true,
+            "il2cpp_object_unbox": true,
+            "il2cpp_runtime_invoke": true,
+            "il2cpp_string_new": true,
+            "il2cpp_thread_attach": true,
+            "il2cpp_thread_current": true,
+            "il2cpp_thread_detach": true,
+            "il2cpp_type_get_type": true
+          },
+          "classes": [
+            {
+              "type": "HappyMahjong.TSDK4CSharpService",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "dispatcher_backing_field_found": true,
+              "methods": [
+                {
+                  "name": "get_dispatcher",
+                  "parameter_count": 0
+                }
+              ]
+            },
+            {
+              "type": "HappyMahjong.TSDKMessageEvent",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "game_message_field_found": true,
+              "game_pb_message_field_found": true,
+              "methods": []
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Invoke",
+                  "parameter_count": 1
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "get_data",
+                  "parameter_count": 0
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Dispatch",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Dispatch",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                }
+              ]
+            },
+            {
+              "type": "System.Reflection.Assembly",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 3
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 5,
+          "session": 1,
+          "stage": "runtime_snapshot",
+          "attempt": 3,
+          "reported_capturing_game_messages": false,
+          "lookup_status": "metadata_checked",
+          "unity_framework_loaded": true,
+          "assembly_count": 96,
+          "assembly_scan_capped": false,
+          "native_apis": {
+            "il2cpp_array_new": true,
+            "il2cpp_assembly_get_image": true,
+            "il2cpp_class_from_name": true,
+            "il2cpp_class_from_type": true,
+            "il2cpp_class_get_element_class": true,
+            "il2cpp_class_get_field_from_name": true,
+            "il2cpp_class_get_method_from_name": true,
+            "il2cpp_class_get_methods": true,
+            "il2cpp_domain_get": true,
+            "il2cpp_domain_get_assemblies": true,
+            "il2cpp_field_static_get_value": true,
+            "il2cpp_gchandle_new": true,
+            "il2cpp_get_corlib": true,
+            "il2cpp_image_get_name": true,
+            "il2cpp_method_get_name": true,
+            "il2cpp_method_get_param": true,
+            "il2cpp_method_get_param_count": true,
+            "il2cpp_object_new": true,
+            "il2cpp_object_unbox": true,
+            "il2cpp_runtime_invoke": true,
+            "il2cpp_string_new": true,
+            "il2cpp_thread_attach": true,
+            "il2cpp_thread_current": true,
+            "il2cpp_thread_detach": true,
+            "il2cpp_type_get_type": true
+          },
+          "classes": [
+            {
+              "type": "HappyMahjong.TSDK4CSharpService",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "dispatcher_backing_field_found": true,
+              "methods": [
+                {
+                  "name": "get_dispatcher",
+                  "parameter_count": 0
+                }
+              ]
+            },
+            {
+              "type": "HappyMahjong.TSDKMessageEvent",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "game_message_field_found": true,
+              "game_pb_message_field_found": true,
+              "methods": []
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Invoke",
+                  "parameter_count": 1
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "get_data",
+                  "parameter_count": 0
+                }
+              ]
+            },
+            {
+              "type": "strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Dispatch",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Dispatch",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "AddListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "RemoveListener",
+                  "parameter_count": 2
+                }
+              ]
+            },
+            {
+              "type": "System.Reflection.Assembly",
+              "found": true,
+              "expected_image": true,
+              "method_scan_capped": false,
+              "methods": [
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 1
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 2
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 3
+                },
+                {
+                  "name": "Load",
+                  "parameter_count": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "game_message_subscription_implemented": false,
+      "live_opponent_display_implemented": false
+    }
+  ],
+  "limits": [
+    "Only fixed native API names, selected source types, bounded counts and booleans are emitted.",
+    "Unknown strings and unexpected fields are discarded, not logged.",
+    "The released probe queries metadata only; successful lookup does not prove message subscription or opponent hand availability."
+  ]
+}
