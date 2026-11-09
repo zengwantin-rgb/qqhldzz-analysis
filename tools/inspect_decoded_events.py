@@ -164,9 +164,12 @@ def inspect(directory):
             if initial is not None:snapshot_details['deal_self_tiles']={'declared_tiles':initial_count,'array_length':len(root_deal['szTiles']),'nonzero_tiles':sum(v!=0 for v in initial),'recommendation_hands_compared':len(recommendations),'recommendation_hands_matching':sum(recommendations)}
         walk(data)
         frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'source_encoding':'public_field_snapshot' if formats.get(path.name)=='public_field_snapshot' else 'reencoded_decoded_event','snapshot_details':snapshot_details,'hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'lua_config_shapes':configs,'tlv_type_counts':dict(tlvs)})
-    states={}
+    states={};rounds={}
     for frame in frames:
         entry=frame['entry'];phase=states.get(entry,'before_hu')
+        if frame['message_type']==1:
+            rounds[entry]=rounds.get(entry,0)+1;phase='before_hu';states[entry]=phase
+        frame['captured_deal_number']=rounds.get(entry,0)
         if frame['message_type'] in (50,51,54):phase='after_hu_or_finish';states[entry]=phase
         frame['phase']=phase
     return {'decoded_frame_count':len(frames),'frames':frames,'limits':['Card values, identifiers, raw payloads and private paths are never emitted.','Only active union branches are traversed by the decoder. Hidden display is not established by message counts.','Seat identity must be reconciled independently; post-Hu hands do not establish live visibility.','Phase is relative to captured Hu/finish only; a missing earlier Hu cannot be inferred absent.']}

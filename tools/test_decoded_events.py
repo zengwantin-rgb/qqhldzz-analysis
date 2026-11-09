@@ -55,6 +55,14 @@ class DecodedEventTests(unittest.TestCase):
         result=lua_shape({'iLuaType':1,'nLuaBuffLen':len(raw),'szLuaBuff':list(raw)})
         self.assertEqual(result['status'],'unclassified_utf8');self.assertNotIn('private_player_token',json.dumps(result))
 
+    def test_new_deal_resets_previous_hu_phase(self):
+        with tempfile.TemporaryDirectory() as temp:
+            for sequence,kind in enumerate((1,50,51,1,3),1):
+                (Path(temp)/('entry-0001-seq-%04d.tdr.json'%sequence)).write_text(json.dumps({'iType':kind}))
+            frames=inspect(temp)['frames']
+            self.assertEqual(frames[2]['phase'],'after_hu_or_finish')
+            self.assertEqual(frames[4]['phase'],'before_hu');self.assertEqual(frames[4]['captured_deal_number'],2)
+
     def test_invalid_hand_ownership_not_reported(self):
         with tempfile.TemporaryDirectory() as temp:
             (Path(temp)/'entry-0001-seq-0001.tdr.json').write_text(json.dumps({'iType':3,'nSeat':99,'nHandTilesNum':2,'szTiles':[12,13]}))
