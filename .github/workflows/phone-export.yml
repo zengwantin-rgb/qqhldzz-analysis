@@ -45,6 +45,7 @@ jobs:
           python3 -m unittest discover -s tools -p test_round_anomalies.py
           python3 tools/inspect_round_anomalies.py
           python3 tools/audit_export_coverage.py > private-input/coverage-output.txt
+          python3 tools/inspect_message_observer.py
           python3 tools/inspect_runtime_probe.py
           python3 tools/inspect_phone_diagnostics.py
           python3 tools/inspect_device_logs.py > private-input/log-output.txt
