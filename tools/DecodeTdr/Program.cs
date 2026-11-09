@@ -38,7 +38,7 @@ class Decode
   var m=t.GetMethod("unpack",new Type[]{typeof(byte[]).MakeByRefType(),typeof(int),typeof(int).MakeByRefType(),typeof(uint)});
   var summary=new StringBuilder("{\"frames\":[");bool first=true;
   foreach(string file in Directory.GetFiles(args[1],"*.tdr")){
-   string status="failed",category="none";int used=0,type=0;bool consumedAll=false,roundtrip=false;string bytesOut=null;
+   string status="failed",category="none";int used=0,type=0;bool consumedAll=false,roundtrip=false,semanticRoundtrip=false;int encodedLength=0;string bytesOut=null;
    try {
     byte[] bytes=File.ReadAllBytes(file);object msg=Activator.CreateInstance(t);object[] p={bytes,bytes.Length,0,(uint)0};object result=m.Invoke(msg,p);used=(int)p[2];consumedAll=used==bytes.Length;type=(int)t.GetField("iType").GetValue(msg);
     if(Convert.ToInt32(result)!=0){status="unpack_error";category=Convert.ToInt32(result).ToString(CultureInfo.InvariantCulture);}
@@ -46,7 +46,9 @@ class Decode
       try {
        var pack=t.GetMethod("pack",new Type[]{typeof(byte[]).MakeByRefType(),typeof(int),typeof(int).MakeByRefType(),typeof(uint)});
        object[] encoded={new byte[256*1024],256*1024,0,(uint)0};object packed=pack.Invoke(msg,encoded);byte[] again=(byte[])encoded[0];
-       roundtrip=Convert.ToInt32(packed)==0 && (int)encoded[2]==bytes.Length;
+       encodedLength=(int)encoded[2];
+       if(Convert.ToInt32(packed)==0){object rebuilt=Activator.CreateInstance(t);object[] readBack={again,encodedLength,0,(uint)0};object code=m.Invoke(rebuilt,readBack);if(Convert.ToInt32(code)==0)semanticRoundtrip=bytesOut==Encoding.UTF8.GetString(MJDiagnostic.FieldSnapshot.Encode(rebuilt));}
+       roundtrip=Convert.ToInt32(packed)==0 && encodedLength==bytes.Length;
        if(roundtrip)for(int q=0;q<bytes.Length;q++)if(bytes[q]!=again[q]){roundtrip=false;break;}
       } catch { roundtrip=false; }
 }
@@ -54,7 +56,7 @@ class Decode
    // Only fixed counters and exception type metadata are written here. Decoded fields stay private.
    if(bytesOut!=null)File.WriteAllText(Path.Combine(args[2],Path.GetFileName(file)+".json"),bytesOut);
    if(!first)summary.Append(',');first=false;
-   summary.Append("{\"file\":").Append(Quote(Path.GetFileName(file))).Append(",\"status\":").Append(Quote(status)).Append(",\"category\":").Append(Quote(category)).Append(",\"message_type\":").Append(type).Append(",\"used_bytes\":").Append(used).Append(",\"unpack_consumed_all\":").Append(consumedAll?"true":"false").Append(",\"roundtrip_equal\":").Append(roundtrip?"true":"false").Append('}');
+   summary.Append("{\"file\":").Append(Quote(Path.GetFileName(file))).Append(",\"status\":").Append(Quote(status)).Append(",\"category\":").Append(Quote(category)).Append(",\"message_type\":").Append(type).Append(",\"used_bytes\":").Append(used).Append(",\"unpack_consumed_all\":").Append(consumedAll?"true":"false").Append(",\"roundtrip_equal\":").Append(roundtrip?"true":"false").Append(",\"modeled_fields_roundtrip_equal\":").Append(semanticRoundtrip?"true":"false").Append(",\"encoded_bytes\":").Append(encodedLength).Append('}');
   }
   summary.Append("]}");File.WriteAllText(Path.Combine(args[2],"decode-summary.json"),summary.ToString());
  }
