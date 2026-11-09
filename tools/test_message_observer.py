@@ -30,6 +30,17 @@ class MessageObserverTests(unittest.TestCase):
         result=statuses(b'MJMessageObserverStatus/1\n'+json.dumps(row).encode())
         self.assertNotIn('private arbitrary',json.dumps(result))
 
+    def test_snapshot_private_extraction_and_header_agreement(self):
+        row={'kind':'game_event','schema':1,'sequence':1,'channel':'tdr','message_type':1,'encoding':'public_field_snapshot','bytes':11,'payload_b64':base64.b64encode(b'{"iType":1}').decode()}
+        row['bytes']=len(b'{"iType":1}')
+        with tempfile.TemporaryDirectory() as temp:
+            result=events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode(),temp,2)
+            self.assertEqual(result['valid_frame_count'],1)
+            self.assertEqual((Path(temp)/'entry-0002-seq-0001.snapshot.json').read_bytes(),b'{"iType":1}')
+            self.assertFalse((Path(temp)/'entry-0002-seq-0001.tdr').exists())
+        row['message_type']=8
+        self.assertEqual(events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode())['invalid_record_count'],1)
+
     def test_subscription_is_not_inherited_across_sessions(self):
         rows=[{'kind':'native_status','schema':1,'status':'library_loaded'}, {'kind':'managed_status','schema':1,'status':'observer_started','value':0}, {'kind':'native_status','schema':1,'status':'library_loaded'}]
         result=statuses(b'MJMessageObserverStatus/1\n'+b'\n'.join(json.dumps(r).encode() for r in rows))

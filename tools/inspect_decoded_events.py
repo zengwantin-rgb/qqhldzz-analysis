@@ -114,8 +114,31 @@ def inspect(directory):
                 for v in value.values():walk(v)
             elif isinstance(value,list):
                 for v in value:walk(v)
+        snapshot_details=None
+        if formats.get(path.name)=='public_field_snapshot':
+            inventory=[];seat_counts=[];recommendations=[]
+            root_deal=data.get('stValue',{}).get('stNotifyDeal',{}) if data.get('iType')==1 else {}
+            initial=root_deal.get('szTiles');initial_count=root_deal.get('nTilesNum')
+            initial=initial[:initial_count] if isinstance(initial,list) and type(initial_count) is int and 0<=initial_count<=32 else None
+            def shape(value,field_path='',seat=None):
+                if isinstance(value,dict):
+                    explicit=value.get('nSeat',value.get('nSeatID'))
+                    if type(explicit) is int and 0<=explicit<=3:seat=explicit
+                    if type(value.get('nHandTilesNum')) is int and type(value.get('nSeat')) is int and 0<=value['nSeat']<=3:
+                        seat_counts.append({'seat':value['nSeat'],'declared_hand_tiles':value['nHandTilesNum'],'has_tile_array':isinstance(value.get('szTiles'),list)})
+                    candidate=value.get('CurHandTiles')
+                    if isinstance(candidate,list) and initial is not None:recommendations.append(collections.Counter(candidate)==collections.Counter(initial))
+                    for key,child in value.items():
+                        if re.fullmatch(r'[A-Za-z_][A-Za-z0-9_]{0,79}',key):shape(child,field_path+'.'+key,seat)
+                elif isinstance(value,list):
+                    if value and all(type(v) is int for v in value):inventory.append({'path':field_path,'length':len(value),'nonzero_entries':sum(v!=0 for v in value),'zero_entries':sum(v==0 for v in value),'explicit_ancestor_seat':seat})
+                    else:
+                        for child in value:shape(child,field_path+'[*]',seat)
+            shape(data)
+            snapshot_details={'numeric_arrays':inventory,'seat_hand_counts':seat_counts}
+            if initial is not None:snapshot_details['deal_self_tiles']={'declared_tiles':initial_count,'array_length':len(root_deal['szTiles']),'nonzero_tiles':sum(v!=0 for v in initial),'recommendation_hands_compared':len(recommendations),'recommendation_hands_matching':sum(recommendations)}
         walk(data)
-        frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'source_encoding':'public_field_snapshot' if formats.get(path.name)=='public_field_snapshot' else 'reencoded_decoded_event','hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'tlv_type_counts':dict(tlvs)})
+        frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'source_encoding':'public_field_snapshot' if formats.get(path.name)=='public_field_snapshot' else 'reencoded_decoded_event','snapshot_details':snapshot_details,'hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'tlv_type_counts':dict(tlvs)})
     states={}
     for frame in frames:
         entry=frame['entry'];phase=states.get(entry,'before_hu')
