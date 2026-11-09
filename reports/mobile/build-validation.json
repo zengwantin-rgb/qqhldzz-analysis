@@ -1,0 +1,13 @@
+{
+  "source_run": 42636936904,
+  "source_commit": "2ba56c51bcbc4a991d99413979e3b141a5c91350",
+  "source_workflow_conclusion": "cancelled",
+  "successful_checks": [
+    "Test scanner isolation and ZIP export on GitHub",
+    "Compile and sign device IPA",
+    "Build and launch simulator smoke test",
+    "Verify packaging and expected entitlements"
+  ],
+  "ipa_sha256": "59cb9f20ccf31527156e9578a41cb28dbc4ee59605029d5a801e25be6757dfa5",
+  "note": "Source workflow publication was interrupted after all checks completed. Actual TrollStore iOS 17 container access remains untested."
+}

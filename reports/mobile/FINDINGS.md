@@ -42,3 +42,15 @@
 工具导出的是已经存在的文件，不是实时消息抓取器、进程内存读取器或透视显示层。编译、ZIP/隔离测试、签名检查及模拟器启动检查在 GitHub 执行；真机权限、文件内容和运行时状态需要实际安装后检查。
 
 如日志为空、加密或不含相关消息体，不能从空结果断言服务器没有下发数据。导出 manifest.json 的意义是确认文件可见性、版本和读取限制，不能代替对局消息本体。
+
+## 可下载的构建与检查结果
+
+[下载 MJLogReader.ipa](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/log-reader-v1/MJLogReader.ipa)，[Release 与手机安装说明](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/tag/log-reader-v1)。
+
+[最终产物核验任务已成功](https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42639002456)，校验记录保存在 [build-validation.json](build-validation.json)。IPA 对应源代码提交 2ba56c51bcbc4a991d99413979e3b141a5c91350。
+
+源构建中的扫描隔离/ZIP 测试、ARM64 编译签名、模拟器启动、打包和权限检查步骤均成功，已留存模拟器界面截图。源工作流在等待结束时取消，发布步骤中断；最终核验任务重新检查了各成功步骤和不可变构建附件的 SHA-256，随后由维护账号发布同一附件。不能将源工作流的整体 cancelled 状态写成整体 success。
+
+在 Mac Foundation 测试中发现并修正了 /var 与 /private/var 别名造成的目录比较问题。导出 ZIP 还由独立 Python ZIP 读取器校验 CRC 和中文文件名。所有编译与测试均在 GitHub 执行，当前服务器仅准备源码、读取检查产物和上传已核验的发布附件。
+
+尚未在用户 iOS 17.0 真机安装运行；跨容器访问权限和实际文件内容仍需安装后确认。下一步是用户在大众房间完成一局，使用工具扫描并选择该时段日志，导出 ZIP 后提供给分析；如没有候选文件，也可导出只含清单的 ZIP。

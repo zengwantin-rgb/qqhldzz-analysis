@@ -1,5 +1,7 @@
 # 麻将日志导出（TrollStore）
 
+[下载 IPA](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/log-reader-v1/MJLogReader.ipa) · [已通过的 GitHub 产物核验](https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42639002456)
+
 适用于已有 TrollStore 的设备，构建目标为 ARM64、iOS 15 及以上；用户目标设备为 iPhone 15 Pro Max / iOS 17.0。
 
 这是独立的只读文件导出工具，用来检查欢乐麻将已经保存的日志、回放和规则配置候选文件。它不会注入游戏、读取运行内存、抓取网络消息、向游戏服务器发送请求或显示对手手牌。日志可能没有原始消息体，也可能是加密格式。
