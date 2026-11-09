@@ -26,3 +26,6 @@ remote-file-references/
 remote-native-sources/
 remote-native-expanded/
 remote-native-final/
+remote-record-io/
+remote-record-readers/
+remote-record-final/

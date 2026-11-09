@@ -1,0 +1,252 @@
+{
+  "candidates": [
+    {
+      "assembly": "mscorlib",
+      "method": "System.Void System.IO.BinaryWriter::.ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)",
+      "record_literal_present": false,
+      "sixteen_byte_array_allocation": true,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Boolean System.IO.Stream::get_CanWrite()"
+      ]
+    },
+    {
+      "assembly": "System.IO.Compression",
+      "method": "System.Void System.IO.Compression.ZipArchive::ReadEndOfCentralDirectory()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin)",
+        "System.Boolean System.IO.Compression.ZipHelper::SeekBackwardsToSignature(System.IO.Stream,System.UInt32)",
+        "System.Void System.IO.InvalidDataException::.ctor(System.String)",
+        "System.Int64 System.IO.Stream::get_Position()",
+        "System.Boolean System.IO.Compression.ZipEndOfCentralDirectoryBlock::TryReadBlock(System.IO.BinaryReader,System.IO.Compression.ZipEndOfCentralDirectoryBlock\u0026)",
+        "System.Boolean System.IO.Compression.Zip64EndOfCentralDirectoryLocator::TryReadBlock(System.IO.BinaryReader,System.IO.Compression.Zip64EndOfCentralDirectoryLocator\u0026)",
+        "System.Boolean System.IO.Compression.Zip64EndOfCentralDirectoryRecord::TryReadBlock(System.IO.BinaryReader,System.IO.Compression.Zip64EndOfCentralDirectoryRecord\u0026)",
+        "System.Int64 System.IO.Stream::get_Length()",
+        "System.Void System.IO.InvalidDataException::.ctor(System.String,System.Exception)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.String ProtocolHierarchy.ProtocolSerializer::SerializeToFile(ProtocolHierarchy.ProtocolList,System.String)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String HappyMahjong.Common.PathManager::GetPath(System.Boolean)",
+        "System.String System.IO.Path::Combine(System.String,System.String)",
+        "System.Void System.IO.MemoryStream::.ctor()",
+        "System.Byte[] System.IO.MemoryStream::ToArray()"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "ProtocolHierarchy.ProtocolList ProtocolHierarchy.ProtocolSerializer::DeSerializeFromFile(System.String)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String HappyMahjong.Common.PathManager::GetPath(System.Boolean)",
+        "System.String System.IO.Path::Combine(System.String,System.String)",
+        "System.Boolean System.IO.File::Exists(System.String)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.PlayerRecord.PlaybackRecordService::PlaybackRecordDataRes(System.Byte[],System.Int32)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.MemoryStream::.ctor(System.Byte[],System.Int32,System.Int32)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.PlayerRecord.PlaybackRecordService::PlaybackRecordDataResCGI(HappyMahjong.TSDKMessage.CgiRspInfo)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.MemoryStream::.ctor(System.Byte[],System.Int32,System.Int32)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.String HappyMahjong.Chat.ChatRecordData::GetPath()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String HappyMahjong.Common.PathManager::GetUserBasePersistentPath(System.String,System.String,System.UInt32,System.Boolean)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.String HappyMahjong.Chat.ChatRecordData::GetVoicePath()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String HappyMahjong.Common.PathManager::GetUserBasePersistentPath(System.String,System.String,System.UInt32,System.Boolean)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Int32 HappyMahjong.Common.Voice::StopRecord(System.Boolean)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Boolean System.IO.File::Exists(System.String)",
+        "System.Void System.IO.File::Delete(System.String)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.TwoVsTwo.TeamBattleService::FetchRecordListV2()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.MemoryStream::.ctor()",
+        "System.Int64 System.IO.Stream::get_Length()",
+        "System.Void System.IO.Stream::set_Position(System.Int64)",
+        "System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Core",
+      "method": "System.Void HappyMahjong.Common.MemoryMonitorUtil::ReadFromFiles()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String System.IO.Path::Combine(System.String,System.String)",
+        "System.Boolean System.IO.Directory::Exists(System.String)",
+        "System.String[] System.IO.Directory::GetFiles(System.String,System.String)",
+        "System.String System.IO.Path::GetFileName(System.String)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.CSReplay.CSReplayRecordData::.ctor(HLMJPlayback.GetPlaybackRecordRes,System.Boolean)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.MemoryStream::.ctor(System.Byte[],System.Int32,System.Int32)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.ReplayGameServer::SaveRecord(System.String)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String HappyMahjong.Common.PathManager::GetPath(System.Boolean)",
+        "System.Void System.IO.File::WriteAllText(System.String,System.String)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.ReplayGameServer::ConvertDirRecordFromXMLToJson(System.String)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.DirectoryInfo::.ctor(System.String)",
+        "System.IO.FileInfo[] System.IO.DirectoryInfo::GetFiles(System.String,System.IO.SearchOption)",
+        "System.String System.IO.FileSystemInfo::get_FullName()"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Boolean HappyMahjong.Game.ReplayGameServer::LoadRecord(System.String,System.Collections.Generic.Queue\u00601\u003CSystem.Object\u003E)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String System.IO.File::ReadAllText(System.String)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Boolean HappyMahjong.Game.ReplayGameServer::ReplayFile(System.Int32)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.DirectoryInfo::.ctor(System.String)",
+        "System.IO.FileInfo[] System.IO.DirectoryInfo::GetFiles(System.String,System.IO.SearchOption)",
+        "System.String System.IO.FileSystemInfo::get_FullName()"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Int32 HappyMahjong.Game.ReplayGameServer::ReplayAllFileFromPath(System.String)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.DirectoryInfo::.ctor(System.String)",
+        "System.IO.FileInfo[] System.IO.DirectoryInfo::GetFiles(System.String,System.IO.SearchOption)",
+        "System.String System.IO.FileSystemInfo::get_FullName()"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.ReplayKit::CheckShowReplayBtn()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.DirectoryInfo::.ctor(System.String)",
+        "System.IO.FileInfo[] System.IO.DirectoryInfo::GetFiles(System.String,System.IO.SearchOption)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.ReplayKit::CreateRecordsList()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.Void System.IO.DirectoryInfo::.ctor(System.String)",
+        "System.IO.FileInfo[] System.IO.DirectoryInfo::GetFiles(System.String,System.IO.SearchOption)",
+        "System.String System.IO.FileSystemInfo::get_FullName()"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.String HappyMahjong.Game.AutoTestManager::GetFullDumpPath(System.String)",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String HappyMahjong.Common.PathManager::GetPersistentPath(System.String,System.String,System.Boolean)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.AutoTestManager::CheckDeleteOldRecord()",
+      "record_literal_present": true,
+      "sixteen_byte_array_allocation": false,
+      "static_record_filenames": [],
+      "io_calls": [
+        "System.String HappyMahjong.Common.PathManager::GetPath(System.Boolean)",
+        "System.Void System.IO.DirectoryInfo::.ctor(System.String)",
+        "System.IO.DirectoryInfo[] System.IO.DirectoryInfo::GetDirectories()",
+        "System.Void System.IO.DirectoryInfo::Delete(System.Boolean)"
+      ]
+    }
+  ],
+  "limits": [
+    "Candidates contain file/path IO calls and either a record literal or an immediate 16-byte allocation.",
+    "A candidate is not proven to read or write the device file; indirect calls and dynamic allocation sizes are not covered.",
+    "Only method signatures and restricted static record filenames are emitted."
+  ]
+}
