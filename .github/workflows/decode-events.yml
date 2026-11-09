@@ -47,6 +47,7 @@ jobs:
         run: |
           gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
           dotnet run --project tools/PrepareTdrDecode -c Release -- recovered-input/recovered/assemblies private-input/decoder-assemblies report/device
+          python3 tools/verify_union_maps.py
           python3 tools/inspect_message_observer.py
       - name: Decode inside isolated read-only networkless container
         run: |

@@ -26,9 +26,15 @@ namespace HappyMahjong
 }
 namespace HuanLeGameSo
 {
+    public sealed class UMJMsgTVValue { public Payload stNotifyDeal; public Payload stTableInfo; }
+    public sealed class Payload { public string label; public TSOTLVUNIT[] astTLVInfo; }
+    public sealed class TSOTLVUNIT { public short nType; public USOTLVValue stValue; }
+    public sealed class USOTLVValue { public Wait stDoWaitInfo; public int[] stFlowerInfo; }
+    public sealed class Wait { public sbyte chChair; public int[] ExtraTiles; }
     public sealed class SoNotifyMsgTV
     {
         public int iType;
+        public UMJMsgTVValue stValue;
         public string text="quote\"\nfixture";
         public byte[] tiles=new byte[] {1,2,3};
         public tsf4g_tdr_csharp.TdrError.ErrorType pack(ref byte[] bytes,int size,ref int used,uint version)
@@ -62,6 +68,12 @@ static class CallbackFixture
         using(var json=JsonDocument.Parse(lines[2])) if(json.RootElement.GetProperty("message_type").GetInt32()!=int.MaxValue) throw new Exception("full int32 message ID");
         string diagnostics=File.ReadAllText(status);
         if (!diagnostics.Contains("tdr_pack") || !diagnostics.Contains("null_reference") || diagnostics.Contains("private exception") || diagnostics.Contains("capture_failed")) throw new Exception("safe stage diagnostics and no global latch");
+        var nested=new HuanLeGameSo.SoNotifyMsgTV { iType=1, stValue=new HuanLeGameSo.UMJMsgTVValue {
+            stNotifyDeal=new HuanLeGameSo.Payload { label="selected",astTLVInfo=new HuanLeGameSo.TSOTLVUNIT[] { new HuanLeGameSo.TSOTLVUNIT { nType=6,stValue=new HuanLeGameSo.USOTLVValue { stDoWaitInfo=new HuanLeGameSo.Wait { chChair=2, ExtraTiles=new int[0] },stFlowerInfo=new int[4097] } } } },
+            stTableInfo=new HuanLeGameSo.Payload { label="unused branch must be excluded" } } };
+        string snapshotText=Encoding.UTF8.GetString(FieldSnapshot.Encode(nested));
+        if (!snapshotText.Contains("selected") || !snapshotText.Contains("stDoWaitInfo") || snapshotText.Contains("unused branch") || snapshotText.Contains("stFlowerInfo") || snapshotText.Contains("stTableInfo")) throw new Exception("root and nested union selection excludes unrelated branches");
+        nested.iType=int.MaxValue;bool unknown=false;try { FieldSnapshot.Encode(nested); } catch(InvalidOperationException) { unknown=true; } if(!unknown) throw new Exception("unknown selector cannot guess branch");
         bool bounded=false;try { FieldSnapshot.Encode(new byte[4097]); } catch(InvalidOperationException) { bounded=true; } if(!bounded) throw new Exception("snapshot array budget");
     }
 }
