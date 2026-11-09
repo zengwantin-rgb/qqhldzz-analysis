@@ -1,11 +1,20 @@
 name: Build phone log reader
 on:
   workflow_dispatch:
+    inputs:
+      build_host:
+        description: macOS runner image
+        type: choice
+        required: true
+        default: macos-26
+        options:
+          - macos-26
+          - macos-latest
 permissions:
   contents: read
 jobs:
   build:
-    runs-on: macos-26
+    runs-on: ${{ inputs.build_host }}
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4

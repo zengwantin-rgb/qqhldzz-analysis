@@ -85,7 +85,7 @@
             NSMutableArray *status=[NSMutableArray arrayWithObjects:[NSString stringWithFormat:@"找到 %lu 个欢乐麻将容器、%lu 个候选文件。",(unsigned long)containers.count,(unsigned long)files.count],nil];
             if (version.count) [status addObject:[NSString stringWithFormat:@"游戏版本 %@（%@）",version[@"version"],version[@"build"]]];
             if (!containers.count) [status addObject:@"未找到原包名 com.tencent.happymj 的容器，或访问被系统拒绝。请导出清单以便检查；分身或改包名版本不会被自动扫描。"];
-            if (containers.count && !files.count) [status addObject:@"当前没有匹配的日志或回放。请先完成一局再扫描；游戏可能没有保存可用日志。"];
+            if (containers.count && !files.count) [status addObject:@"当前没有匹配的现有文件。可导出清单检查扫描结果；工具不能恢复已删除的日志。"];
             [status addObject:@"文件默认不选中。单个文件上限 20 MB，总导出上限 64 MB；也可以只导出诊断清单。"];
             if (files.count) [status addObject:@"要补齐配置、补丁和其他现有日志，请点底部“完整选择”再导出。"];
             for (NSString *error in errors) [status addObject:error];
