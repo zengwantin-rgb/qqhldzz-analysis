@@ -1,0 +1,449 @@
+{
+  "candidates": [
+    {
+      "candidate": 1,
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 3159,
+      "exported": true
+    },
+    {
+      "candidate": 2,
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 4419584,
+      "exported": true
+    },
+    {
+      "candidate": 3,
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 35389,
+      "exported": true
+    },
+    {
+      "candidate": 4,
+      "category": "activity_log",
+      "extension": "log",
+      "path_hints": [
+        "pandora"
+      ],
+      "bytes": 140025,
+      "exported": true
+    },
+    {
+      "candidate": 5,
+      "category": "replay_or_record",
+      "extension": "dat",
+      "path_hints": [
+        "record"
+      ],
+      "bytes": 16,
+      "exported": true
+    },
+    {
+      "candidate": 6,
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 60827,
+      "exported": false
+    },
+    {
+      "candidate": 7,
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 14197,
+      "exported": false
+    },
+    {
+      "candidate": 8,
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 1298432,
+      "exported": false
+    },
+    {
+      "candidate": 9,
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 24822,
+      "exported": false
+    },
+    {
+      "candidate": 10,
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 109324,
+      "exported": false
+    },
+    {
+      "candidate": 11,
+      "category": "patch",
+      "extension": "bytes",
+      "path_hints": [],
+      "bytes": 76786,
+      "exported": false
+    },
+    {
+      "candidate": 12,
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 6580,
+      "exported": false
+    },
+    {
+      "candidate": 13,
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 1092,
+      "exported": false
+    },
+    {
+      "candidate": 14,
+      "category": "replay_or_record",
+      "extension": "data",
+      "path_hints": [
+        "record"
+      ],
+      "bytes": 230,
+      "exported": false
+    },
+    {
+      "candidate": 15,
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 5552,
+      "exported": false
+    },
+    {
+      "candidate": 16,
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 13663,
+      "exported": false
+    }
+  ],
+  "small_record_file_checks": [
+    {
+      "candidate": 5,
+      "bytes": 16,
+      "zero_bytes": 6,
+      "whole_stream_compression_matches": []
+    }
+  ],
+  "packaged_record_configs": [
+    {
+      "static_basename": "VedioRecordConfig.data",
+      "bytes": 230,
+      "source": "packaged_config",
+      "zero_bytes": 2,
+      "whole_stream_compression_matches": [
+        {
+          "format": "zlib",
+          "decoded_bytes": 336
+        }
+      ],
+      "protobuf_config_shape": {
+        "decoded_bytes": 336,
+        "row_count": 12,
+        "unknown_top_level_fields": 0,
+        "known_row_fields": [
+          "aheadStart",
+          "delayEnd",
+          "gameType",
+          "id",
+          "name",
+          "priority"
+        ],
+        "unknown_row_field_count": 0,
+        "row_wire_type_mismatch_count": 0,
+        "note": "Only schema and row counts are emitted; no record values are included."
+      }
+    }
+  ],
+  "packaged_candidate_comparisons": [
+    {
+      "candidate": 5,
+      "manifest_bytes": 16,
+      "packaged_matches": [],
+      "note": "Equal sizes do not establish identical contents or active runtime configuration."
+    },
+    {
+      "candidate": 11,
+      "manifest_bytes": 76786,
+      "packaged_matches": [],
+      "note": "Equal sizes do not establish identical contents or active runtime configuration."
+    },
+    {
+      "candidate": 12,
+      "manifest_bytes": 6580,
+      "packaged_matches": [
+        {
+          "packaged_bytes": 6268,
+          "same_size_as_manifest": false
+        }
+      ],
+      "note": "Equal sizes do not establish identical contents or active runtime configuration."
+    },
+    {
+      "candidate": 13,
+      "manifest_bytes": 1092,
+      "packaged_matches": [
+        {
+          "packaged_bytes": 1092,
+          "same_size_as_manifest": true
+        }
+      ],
+      "note": "Equal sizes do not establish identical contents or active runtime configuration."
+    },
+    {
+      "candidate": 14,
+      "manifest_bytes": 230,
+      "packaged_matches": [
+        {
+          "packaged_bytes": 230,
+          "same_size_as_manifest": true
+        }
+      ],
+      "note": "Equal sizes do not establish identical contents or active runtime configuration."
+    },
+    {
+      "candidate": 15,
+      "manifest_bytes": 5552,
+      "packaged_matches": [
+        {
+          "packaged_bytes": 5552,
+          "same_size_as_manifest": true
+        }
+      ],
+      "note": "Equal sizes do not establish identical contents or active runtime configuration."
+    }
+  ],
+  "binaries_scanned": [
+    {
+      "binary": "global-metadata.dat",
+      "bytes": 20317184
+    },
+    {
+      "binary": "CrashSight",
+      "bytes": 2033872
+    },
+    {
+      "binary": "CrashSightAdapter",
+      "bytes": 86560
+    },
+    {
+      "binary": "CrashSightCore",
+      "bytes": 246032
+    },
+    {
+      "binary": "CrashSightPlugin",
+      "bytes": 124544
+    },
+    {
+      "binary": "GCloud",
+      "bytes": 19022400
+    },
+    {
+      "binary": "GCloudCore",
+      "bytes": 1315264
+    },
+    {
+      "binary": "GPixUI",
+      "bytes": 84736
+    },
+    {
+      "binary": "MSDKPIXAdapter",
+      "bytes": 395424
+    },
+    {
+      "binary": "MSDKPIXCore",
+      "bytes": 3582304
+    },
+    {
+      "binary": "MSDKPIXLBS",
+      "bytes": 116768
+    },
+    {
+      "binary": "MSDKPIXSensitivity",
+      "bytes": 71760
+    },
+    {
+      "binary": "MSDKPIXSystem",
+      "bytes": 132496
+    },
+    {
+      "binary": "MSDKPIXTDM",
+      "bytes": 83728
+    },
+    {
+      "binary": "MSDKPIXWebView",
+      "bytes": 643552
+    },
+    {
+      "binary": "MSDKPolicy",
+      "bytes": 75984
+    },
+    {
+      "binary": "MSDKPopup",
+      "bytes": 271840
+    },
+    {
+      "binary": "MidasIAPSDK",
+      "bytes": 35536
+    },
+    {
+      "binary": "PixVideo",
+      "bytes": 4775744
+    },
+    {
+      "binary": "PluginCrosCurl",
+      "bytes": 92016
+    },
+    {
+      "binary": "PxEmbedded",
+      "bytes": 1659312
+    },
+    {
+      "binary": "PxKit3",
+      "bytes": 8243648
+    },
+    {
+      "binary": "TDMASA",
+      "bytes": 72528
+    },
+    {
+      "binary": "TDMIDFA",
+      "bytes": 70864
+    },
+    {
+      "binary": "TDataMaster",
+      "bytes": 955104
+    },
+    {
+      "binary": "UnityFramework",
+      "bytes": 143661632
+    },
+    {
+      "binary": "crosCurl",
+      "bytes": 511776
+    },
+    {
+      "binary": "iTopDns_dylib",
+      "bytes": 248432
+    },
+    {
+      "binary": "ilink_live",
+      "bytes": 9337584
+    },
+    {
+      "binary": "owl",
+      "bytes": 1105472
+    },
+    {
+      "binary": "rapidjson",
+      "bytes": 139680
+    },
+    {
+      "binary": "tersafe",
+      "bytes": 2890576
+    },
+    {
+      "binary": "videotexture",
+      "bytes": 75888
+    },
+    {
+      "binary": "happymj",
+      "bytes": 104720
+    }
+  ],
+  "references": [
+    {
+      "candidate": 11,
+      "binary": "global-metadata.dat",
+      "encoding": "utf-8",
+      "match_count": 1,
+      "first_offsets": [
+        595106
+      ],
+      "matched_static_basename": "PatchIOS.bytes"
+    },
+    {
+      "candidate": 12,
+      "binary": "global-metadata.dat",
+      "encoding": "utf-8",
+      "match_count": 1,
+      "first_offsets": [
+        549894
+      ],
+      "matched_static_basename": "MJGameBaseConfig.data"
+    },
+    {
+      "candidate": 13,
+      "binary": "global-metadata.dat",
+      "encoding": "utf-8",
+      "match_count": 1,
+      "first_offsets": [
+        659763
+      ],
+      "matched_static_basename": "SvrNotifyTips.data"
+    },
+    {
+      "candidate": 14,
+      "binary": "global-metadata.dat",
+      "encoding": "utf-8",
+      "match_count": 1,
+      "first_offsets": [
+        793870
+      ],
+      "matched_static_basename": "VedioRecordConfig.data"
+    },
+    {
+      "candidate": 15,
+      "binary": "global-metadata.dat",
+      "encoding": "utf-8",
+      "match_count": 1,
+      "first_offsets": [
+        560882
+      ],
+      "matched_static_basename": "ModuleFanConfig.data"
+    }
+  ],
+  "limits": [
+    "Only exact basename byte matches in supplied app executables and IL2CPP metadata are checked.",
+    "A filename match identifies a static reference, not its behavior or actual file format.",
+    "No match cannot rule out encoded strings, dynamic paths or other installed runtime patches.",
+    "Whole-stream compression failures do not rule out headers, encryption or custom serialization.",
+    "No device paths, file contents, hand values or adjacent binary strings are emitted."
+  ]
+}

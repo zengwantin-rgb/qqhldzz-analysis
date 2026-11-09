@@ -1,0 +1,145 @@
+{
+  "references": [
+    {
+      "candidate_indices": [
+        12
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void GameModule.MJGameBaseConfigUtil::FetchConfig(System.Boolean)",
+      "offset": 39
+    },
+    {
+      "candidate_indices": [
+        15
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void GameModule.MJGameBaseConfigUtil::FetchConfig(System.Boolean)",
+      "offset": 74
+    },
+    {
+      "candidate_indices": [
+        13
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void GameModule.MJGameBaseConfigUtil::FetchConfig(System.Boolean)",
+      "offset": 109
+    },
+    {
+      "candidate_indices": [
+        11
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.String HappyMahjong.AppRoot::GetFixPatchName()",
+      "offset": 32
+    },
+    {
+      "candidate_indices": [
+        12
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.update.CsResMgrHelper::RequestLoginKeyPathConfig()",
+      "offset": 177
+    },
+    {
+      "candidate_indices": [
+        12
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.update.CsResMgrHelper::SetLocalDataToLoader(System.String,System.Int32,System.Byte[],System.Boolean)",
+      "offset": 390
+    },
+    {
+      "candidate_indices": [
+        15
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.update.CsResMgrHelper::SetLocalDataToLoader(System.String,System.Int32,System.Byte[],System.Boolean)",
+      "offset": 407
+    },
+    {
+      "candidate_indices": [
+        12
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Boolean HappyMahjong.update.CsResMgrHelper/\u003CStartGetInitCfgCorouting\u003Ed__15::MoveNext()",
+      "offset": 170
+    },
+    {
+      "candidate_indices": [
+        15
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Boolean HappyMahjong.update.CsResMgrHelper/\u003CStartGetInitCfgCorouting\u003Ed__15::MoveNext()",
+      "offset": 181
+    },
+    {
+      "candidate_indices": [
+        13
+      ],
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Boolean HappyMahjong.update.CsResMgrHelper/\u003CStartGetInitCfgCorouting\u003Ed__15::MoveNext()",
+      "offset": 203
+    },
+    {
+      "candidate_indices": [
+        11
+      ],
+      "assembly": "HappyMahjong.Core",
+      "method": "System.Boolean HappyMahjong.update.ConfigReader::IsConfigFileExcluded(System.String)",
+      "offset": 50
+    },
+    {
+      "candidate_indices": [
+        12
+      ],
+      "assembly": "HappyMahjong.Core",
+      "method": "System.Void HappyMahjong.update.CsResMgr::InitializeConfigs()",
+      "offset": 319
+    },
+    {
+      "candidate_indices": [
+        15
+      ],
+      "assembly": "HappyMahjong.Core",
+      "method": "System.Void HappyMahjong.update.CsResMgr::InitializeConfigs()",
+      "offset": 345
+    },
+    {
+      "candidate_indices": [
+        14
+      ],
+      "assembly": "HappyMahjong.Core",
+      "method": "System.Void HappyMahjong.update.CsResMgr::InitializeConfigs()",
+      "offset": 384
+    },
+    {
+      "candidate_indices": [
+        13
+      ],
+      "assembly": "HappyMahjong.Core",
+      "method": "System.Void HappyMahjong.update.CsResMgr::InitializeConfigs()",
+      "offset": 449
+    },
+    {
+      "candidate_indices": [
+        11
+      ],
+      "assembly": "HappyMahjong.Core",
+      "method": "System.Void HappyMahjong.update.CsResMgr::InitializeConfigs()",
+      "offset": 800
+    },
+    {
+      "candidate_indices": [
+        11
+      ],
+      "assembly": "HappyMahjong.Core",
+      "method": "System.String HappyMahjong.update.CsResMgr::GetFixPatchName()",
+      "offset": 0
+    }
+  ],
+  "limits": [
+    "Only exact basename matches to managed method string literals are reported; filenames and private paths are omitted.",
+    "No match does not rule out native SDK files, dynamic path construction or runtime patches.",
+    "Candidate indices refer to manifest scan order, not exported ZIP entry order."
+  ]
+}

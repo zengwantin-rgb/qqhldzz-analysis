@@ -23,3 +23,6 @@ remote-export-audit/
 remote-export-details/
 remote-export-final/
 remote-file-references/
+remote-native-sources/
+remote-native-expanded/
+remote-native-final/

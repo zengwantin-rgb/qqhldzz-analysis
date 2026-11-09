@@ -1,0 +1,739 @@
+{
+  "scanned_methods": 327886,
+  "methods_with_bodies": 307307,
+  "schemas": [
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "Configuration.VedioRecordConfig",
+      "fields": [
+        {
+          "name": "idFieldNumber",
+          "type": "System.Int32",
+          "constant": 1
+        },
+        {
+          "name": "idDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "id_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "nameFieldNumber",
+          "type": "System.Int32",
+          "constant": 2
+        },
+        {
+          "name": "nameDefaultValue",
+          "type": "System.String",
+          "constant": null
+        },
+        {
+          "name": "name_",
+          "type": "System.String",
+          "constant": null
+        },
+        {
+          "name": "priorityFieldNumber",
+          "type": "System.Int32",
+          "constant": 3
+        },
+        {
+          "name": "priorityDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "priority_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "gameTypeFieldNumber",
+          "type": "System.Int32",
+          "constant": 4
+        },
+        {
+          "name": "gameTypeDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "gameType_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "aheadStartFieldNumber",
+          "type": "System.Int32",
+          "constant": 5
+        },
+        {
+          "name": "aheadStartDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "aheadStart_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "delayEndFieldNumber",
+          "type": "System.Int32",
+          "constant": 6
+        },
+        {
+          "name": "delayEndDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "delayEnd_",
+          "type": "System.Int32",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "Configuration.VedioRecordConfigCfg",
+      "fields": [
+        {
+          "name": "Sheet1FieldNumber",
+          "type": "System.Int32",
+          "constant": 1
+        },
+        {
+          "name": "sheet1_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CConfiguration.VedioRecordConfig\u003E",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TProtoSingleTingTile",
+      "fields": [
+        {
+          "name": "TingTileFieldNumber",
+          "type": "System.Int32",
+          "constant": 1
+        },
+        {
+          "name": "TingTileDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "tingTile_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "TileLeftNumFieldNumber",
+          "type": "System.Int32",
+          "constant": 2
+        },
+        {
+          "name": "TileLeftNumDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "tileLeftNum_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "WinFanCountFieldNumber",
+          "type": "System.Int32",
+          "constant": 3
+        },
+        {
+          "name": "WinFanCountDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "winFanCount_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "ShowTypeFieldNumber",
+          "type": "System.Int32",
+          "constant": 4
+        },
+        {
+          "name": "ShowTypeDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "showType_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "FanInfoFieldNumber",
+          "type": "System.Int32",
+          "constant": 5
+        },
+        {
+          "name": "fanInfo_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TFanV\u003E",
+          "constant": null
+        },
+        {
+          "name": "WinModeFieldNumber",
+          "type": "System.Int32",
+          "constant": 6
+        },
+        {
+          "name": "WinModeDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "winMode_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "FengDingTypeFieldNumber",
+          "type": "System.Int32",
+          "constant": 7
+        },
+        {
+          "name": "FengDingTypeDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "fengDingType_",
+          "type": "System.Int32",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TProtoOneDiscardTingAdvice",
+      "fields": [
+        {
+          "name": "DiscardTileFieldNumber",
+          "type": "System.Int32",
+          "constant": 1
+        },
+        {
+          "name": "DiscardTileDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "discardTile_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "CanTingTileFieldNumber",
+          "type": "System.Int32",
+          "constant": 2
+        },
+        {
+          "name": "canTingTile_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TProtoSingleTingTile\u003E",
+          "constant": null
+        },
+        {
+          "name": "RecommendDiscardFlagFieldNumber",
+          "type": "System.Int32",
+          "constant": 3
+        },
+        {
+          "name": "RecommendDiscardFlagDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "recommendDiscardFlag_",
+          "type": "System.Int32",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TProtoIntelligenceAdviceTing",
+      "fields": [
+        {
+          "name": "DiscardTingAdviceFieldNumber",
+          "type": "System.Int32",
+          "constant": 1
+        },
+        {
+          "name": "discardTingAdvice_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TProtoOneDiscardTingAdvice\u003E",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TProtoIntelligenceAdvice",
+      "fields": [
+        {
+          "name": "AdviceTypeFieldNumber",
+          "type": "System.Int32",
+          "constant": 1
+        },
+        {
+          "name": "AdviceTypeDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "adviceType_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "AdviceTileFieldNumber",
+          "type": "System.Int32",
+          "constant": 2
+        },
+        {
+          "name": "AdviceTileDefaultValue",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "adviceTile_",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "IntelligenceAdviceTingFieldNumber",
+          "type": "System.Int32",
+          "constant": 3
+        },
+        {
+          "name": "intelligenceAdviceTing_",
+          "type": "MJSoPb.TProtoIntelligenceAdviceTing",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.UnitProtoValue",
+      "fields": [
+        {
+          "name": "ProtoIntelligenceAdviceFieldNumber",
+          "type": "System.Int32",
+          "constant": 1
+        },
+        {
+          "name": "protoIntelligenceAdvice_",
+          "type": "MJSoPb.TProtoIntelligenceAdvice",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HuanLeGameSo.TSingleTileShowInfo",
+      "fields": [
+        {
+          "name": "iIndex",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "iTileFace",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "iTileBack",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "BASEVERSION",
+          "type": "System.UInt32",
+          "constant": null
+        },
+        {
+          "name": "CURRVERSION",
+          "type": "System.UInt32",
+          "constant": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HuanLeGameSo.TAbilityTileWallInfo",
+      "fields": [
+        {
+          "name": "iTotalTileCount",
+          "type": "System.Int32",
+          "constant": null
+        },
+        {
+          "name": "nTileCount",
+          "type": "System.Int16",
+          "constant": null
+        },
+        {
+          "name": "astTileInfos",
+          "type": "HuanLeGameSo.TSingleTileShowInfo[]",
+          "constant": null
+        },
+        {
+          "name": "BASEVERSION",
+          "type": "System.UInt32",
+          "constant": null
+        },
+        {
+          "name": "CURRVERSION",
+          "type": "System.UInt32",
+          "constant": null
+        }
+      ]
+    }
+  ],
+  "consumers": [
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void Pb2TdrConverter::ConvertTAbilityTileGetInfo(MJSoPb.TAbilityTileGetInfo,HuanLeGameSo.TSOTLVUNIT)",
+      "hits": [
+        {
+          "offset": 98,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TAbilityTileGetInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void Pb2TdrConverter::ConvertTAbilityTileWallInfo(MJSoPb.TAbilityTileWallInfo,HuanLeGameSo.TSOTLVUNIT)",
+      "hits": [
+        {
+          "offset": 45,
+          "opcode": "stfld",
+          "field": "HuanLeGameSo.TAbilityTileWallInfo HuanLeGameSo.USOTLVValue::stAbilityTileWallInfo"
+        },
+        {
+          "offset": 56,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TAbilityTileWallInfo HuanLeGameSo.USOTLVValue::stAbilityTileWallInfo"
+        },
+        {
+          "offset": 73,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TAbilityTileWallInfo HuanLeGameSo.USOTLVValue::stAbilityTileWallInfo"
+        },
+        {
+          "offset": 126,
+          "opcode": "stfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TAbilityTileWallInfo::astTileInfos"
+        },
+        {
+          "offset": 136,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TAbilityTileWallInfo::astTileInfos"
+        },
+        {
+          "offset": 149,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TAbilityTileWallInfo::astTileInfos"
+        },
+        {
+          "offset": 179,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TAbilityTileWallInfo::astTileInfos"
+        },
+        {
+          "offset": 203,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 209,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TAbilityTileWallInfo::astTileInfos"
+        },
+        {
+          "offset": 233,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void Pb2TdrConverter::ConvertTPlayerTotalHandAbilityTileInfo(MJSoPb.TPlayerTotalHandAbilityTileInfo,HuanLeGameSo.TSOTLVUNIT)",
+      "hits": [
+        {
+          "offset": 241,
+          "opcode": "stfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 261,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 281,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 329,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 364,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 377,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 412,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void Pb2TdrConverter::ConvertTTilesShowInfoInCardWall(MJSoPb.TTilesShowInfoInCardWall,HuanLeGameSo.TSOTLVUNIT)",
+      "hits": [
+        {
+          "offset": 363,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 411,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void Pb2TdrConverter::ConvertTUnitProtoValueBuf(MJSoPb.TUnitProtoValueBuf,HuanLeGameSo.TSOTLVUNIT)",
+      "hits": [
+        {
+          "offset": 45,
+          "opcode": "stfld",
+          "field": "HuanLeGameSo.TUnitProtoValueBuf HuanLeGameSo.USOTLVValue::stUnitProtoValueBuf"
+        },
+        {
+          "offset": 56,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TUnitProtoValueBuf HuanLeGameSo.USOTLVValue::stUnitProtoValueBuf"
+        },
+        {
+          "offset": 73,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TUnitProtoValueBuf HuanLeGameSo.USOTLVValue::stUnitProtoValueBuf"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.NextToDoHelper::HandleNextToDo(System.Int32,HuanLeGameSo.TSOTLVUNIT[],HappyMahjong.Game.IRoundModel,HappyMahjong.Game.IProcessModel,HappyMahjong.Game.ICommonRule,System.Int32,HuanLeGameSo.UMJMsgTVValue)",
+      "hits": [
+        {
+          "offset": 2345,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TUnitProtoValueBuf HuanLeGameSo.USOTLVValue::stUnitProtoValueBuf"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.NextToDoHelper::ShowInfoInCardWall(HuanLeGameSo.TTilesShowInfoInCardWall,System.Int32,HuanLeGameSo.TSOTLVUNIT[])",
+      "hits": [
+        {
+          "offset": 246,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 253,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.RevcGameReplayCommand::HandleTLV()",
+      "hits": [
+        {
+          "offset": 2504,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TUnitProtoValueBuf HuanLeGameSo.USOTLVValue::stUnitProtoValueBuf"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.MJWallHandler::UpdateSingleAbilityMjInfoForLuckyTile(System.Int32,System.Int32,System.Int32)",
+      "hits": [
+        {
+          "offset": 89,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 96,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E HappyMahjong.Game.MJWallHandler::ShowSingleAbilityMJRefreshEffect(System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E,System.Collections.Generic.List\u00601\u003CHuanLeGameSo.TSingleTileShowInfo\u003E,System.Int32)",
+      "hits": [
+        {
+          "offset": 56,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Collections.Generic.List\u00601\u003CHuanLeGameSo.TSingleTileShowInfo\u003E HappyMahjong.Game.MJWallHandler::DeepCopyTileShowInfoList(System.Collections.Generic.List\u00601\u003CHuanLeGameSo.TSingleTileShowInfo\u003E)",
+      "hits": [
+        {
+          "offset": 81,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 86,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 93,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        },
+        {
+          "offset": 98,
+          "opcode": "stfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.MJWallHandler::ShowAbilityMJInWall(System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E,System.Collections.Generic.List\u00601\u003CHuanLeGameSo.TSingleTileShowInfo\u003E,System.Int32)",
+      "hits": [
+        {
+          "offset": 93,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 158,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 172,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 205,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 216,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 246,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 417,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 449,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 455,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        },
+        {
+          "offset": 477,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 488,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        },
+        {
+          "offset": 565,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        },
+        {
+          "offset": 589,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileFace"
+        },
+        {
+          "offset": 595,
+          "opcode": "ldfld",
+          "field": "System.Int32 HuanLeGameSo.TSingleTileShowInfo::iTileBack"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.RecvAdviceTingCommand::Execute()",
+      "hits": [
+        {
+          "offset": 219,
+          "opcode": "ldfld",
+          "field": "HuanLeGameSo.TUnitProtoValueBuf HuanLeGameSo.USOTLVValue::stUnitProtoValueBuf"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only the recovered managed assemblies were scanned; native AOT implementation and active runtime patches are not covered.",
+    "A schema definition does not establish actual network payload contents."
+  ]
+}

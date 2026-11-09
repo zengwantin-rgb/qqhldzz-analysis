@@ -1,5 +1,7 @@
 # 欢乐麻将 iOS 静态逆向分析
 
+[第八轮原生与配置追查](reports/device-round/NATIVE-FOLLOWUP.md)：扫描全部 91 个恢复程序集及 34 个原生/元数据目标，解析包内录像配置为 12 行配置表，并发现设备主配置大小与包内版本不同；实时暗牌仍未取得。
+
 [第七轮原 ZIP 覆盖审计](reports/device-round/EXPORT-AUDIT.md)：补齐全部导出文本的负载探测，5 个文件完整，无新增对手暗牌证据；另有 11 个文件仅在扫描清单中，实际未装入 ZIP。
 
 [第六轮协议复核](reports/device-round/PROTOCOL-FOLLOWUP.md)：已核对压缩消息的听牌/推荐消费路径及牌墙结构；当前日志没有可恢复的对应负载，实时对手暗牌仍未验证。
