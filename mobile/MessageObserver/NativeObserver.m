@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <dispatch/dispatch.h>
 #import <dlfcn.h>
 #import <mach-o/dyld.h>
@@ -38,9 +39,52 @@ typedef struct {
 static NSString *ManagedPath,*EventsPath,*StatusPath;
 static BOOL PayloadLoaded=NO,ObserverStarted=NO;
 static uint32_t AssemblyRoot=0;
+static UILabel *Badge;
+static dispatch_source_t PollTimer;
+static NSUInteger PollTicks=0;
+static void ShowBadge(NSString *message,BOOL failure){
+    @try{
+        UIWindow *window=nil;
+        for(UIWindow *candidate in UIApplication.sharedApplication.windows)if(candidate.isKeyWindow && !candidate.hidden){window=candidate;break;}
+        if(!window)return;
+        if(!Badge){Badge=[[UILabel alloc] initWithFrame:CGRectZero];Badge.userInteractionEnabled=NO;Badge.font=[UIFont systemFontOfSize:12 weight:UIFontWeightMedium];Badge.textAlignment=NSTextAlignmentCenter;Badge.textColor=UIColor.whiteColor;Badge.layer.cornerRadius=6;Badge.clipsToBounds=YES;Badge.accessibilityIdentifier=@"mj-message-observer-status";}
+        if(Badge.superview!=window){[Badge removeFromSuperview];[window addSubview:Badge];}
+        Badge.frame=CGRectMake(8,MAX(8,window.safeAreaInsets.top+2),MIN(300,window.bounds.size.width-16),28);
+        Badge.backgroundColor=failure?[UIColor colorWithRed:0.65 green:0.12 blue:0.12 alpha:0.85]:[UIColor colorWithWhite:0 alpha:0.7];
+        Badge.text=message;[window bringSubviewToFront:Badge];
+    }@catch(NSException *exception){}
+}
+static void PollManagedStatus(void){
+    if(!StatusPath)return;
+    NSData *data=[NSData dataWithContentsOfFile:StatusPath];if(!data || data.length>64*1024)return;
+    NSString *text=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    for(NSString *line in [[text componentsSeparatedByString:@"\n"] reverseObjectEnumerator]){
+        NSData *bytes=[line dataUsingEncoding:NSUTF8StringEncoding];if(!bytes)continue;
+        id object=[NSJSONSerialization JSONObjectWithData:bytes options:0 error:NULL];
+        if(![object isKindOfClass:NSDictionary.class] || ![object[@"kind"] isEqual:@"managed_status"])continue;
+        NSString *code=object[@"status"];id number=object[@"value"];
+        NSInteger count=[number isKindOfClass:NSNumber.class]?[number integerValue]:-1;
+        if(([code isEqual:@"first_event_recorded"] || [code isEqual:@"capture_progress"]) && count>=1 && count<=512)ShowBadge([NSString stringWithFormat:@"诊断：已记录 ≥%ld 条消息",(long)count],NO);
+        else if([code isEqual:@"observer_started"])ShowBadge(@"诊断：已就绪，可以进入对局",NO);
+        else if([code isEqual:@"capture_limit_reached"])ShowBadge(@"诊断：记录已到上限，请导出",NO);
+        else if([code isEqual:@"capture_failed"] || [code isEqual:@"unexpected_payload"])ShowBadge(@"诊断：记录待检查，请导出日志",YES);
+        break;
+    }
+}
+static void StartPolling(void){
+    if(PollTimer)return;
+    PollTimer=dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER,0,0,dispatch_get_main_queue());
+    dispatch_source_set_timer(PollTimer,dispatch_time(DISPATCH_TIME_NOW,NSEC_PER_SEC),2*NSEC_PER_SEC,NSEC_PER_SEC/4);
+    dispatch_source_set_event_handler(PollTimer,^{@try{PollManagedStatus();} @catch(NSException *exception){} if(++PollTicks>=180){dispatch_source_cancel(PollTimer);PollTimer=nil;}});
+    dispatch_resume(PollTimer);
+}
 static void Status(NSString *code,NSUInteger attempt) {
     NSString *documents=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
     if(documents)MJProbeAppendRecord(documents,@{@"kind":@"native_status",@"schema":@1,@"version":@"0.2.0",@"status":code,@"attempt":@(attempt),@"subscription_registered":@(ObserverStarted)},NULL);
+    if([code isEqual:@"observer_started"]){ShowBadge(@"诊断：已就绪，可以进入对局",NO);StartPolling();}
+    else if([code isEqual:@"library_loaded"] || [code isEqual:@"preparing_files"] || [code isEqual:@"managed_assembly_loaded"])ShowBadge(@"诊断：正在启动消息观察器",NO);
+    else if(attempt>=3 || [code isEqual:@"unsupported_game_build"] || [code isEqual:@"diagnostic_files_failed"])ShowBadge(@"诊断：启动未完成，请导出日志",YES);
+    else ShowBadge(@"诊断：等待消息入口就绪",NO);
 }
 static void *Find(void *handle,const char *name){void *p=dlsym(RTLD_DEFAULT,name);return p? p:(handle?dlsym(handle,name):NULL);}
 static void *UnityHandle(void){
