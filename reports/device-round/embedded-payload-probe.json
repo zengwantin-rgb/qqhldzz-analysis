@@ -1,4 +1,13 @@
 {
+  "text_entries_scanned": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "binary_entries_not_json_decoded": [
+    1
+  ],
   "known_field_mentions": {
     "szGameBuf": 0,
     "gameBuf": 0,

@@ -1,0 +1,263 @@
+{
+  "zip_crc_valid": true,
+  "manifest_declared_export_count": 5,
+  "actual_export_count": 5,
+  "duplicate_zip_entry_count": 0,
+  "declared_but_missing_count": 0,
+  "undeclared_entry_count": 0,
+  "candidate_count": 16,
+  "candidate_categories": {
+    "other": 1,
+    "main_log": 2,
+    "cloud_log": 6,
+    "activity_log": 1,
+    "replay_or_record": 2,
+    "patch": 1,
+    "configuration_or_data": 3
+  },
+  "exported_categories": {
+    "replay_or_record": 1,
+    "cloud_log": 1,
+    "main_log": 1,
+    "activity_log": 1,
+    "other": 1
+  },
+  "unexported_candidate_count": 11,
+  "unexported_candidates": [
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 60827
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 14197
+    },
+    {
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 1298432
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 24822
+    },
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 109324
+    },
+    {
+      "category": "patch",
+      "extension": "bytes",
+      "path_hints": [],
+      "bytes": 76786
+    },
+    {
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 6580
+    },
+    {
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 1092
+    },
+    {
+      "category": "replay_or_record",
+      "extension": "data",
+      "path_hints": [
+        "record"
+      ],
+      "bytes": 230
+    },
+    {
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 5552
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 13663
+    }
+  ],
+  "files": [
+    {
+      "entry": 1,
+      "category": "replay_or_record",
+      "extension": "dat",
+      "path_hints": [
+        "record"
+      ],
+      "bytes": 16,
+      "format": "utf8_with_binary_controls",
+      "control_characters": 12,
+      "zero_byte_count": 6,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0
+      }
+    },
+    {
+      "entry": 2,
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 35389,
+      "format": "utf8_text",
+      "line_count": 287,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0
+      }
+    },
+    {
+      "entry": 3,
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 4419584,
+      "format": "non_utf8_binary",
+      "utf8_replacement_characters": 3,
+      "line_count_with_replacement": 32375,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 104,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0
+      }
+    },
+    {
+      "entry": 4,
+      "category": "activity_log",
+      "extension": "log",
+      "path_hints": [
+        "pandora"
+      ],
+      "bytes": 140025,
+      "format": "utf8_text",
+      "line_count": 129,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0
+      }
+    },
+    {
+      "entry": 5,
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 3159,
+      "format": "utf8_text",
+      "line_count": 134,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0
+      }
+    }
+  ],
+  "limits": [
+    "Entry numbers identify archive order only; paths and contents are omitted.",
+    "All exported entries are inventoried; missing candidates cannot be read from this ZIP.",
+    "Known-field byte matches do not prove structured payloads or real opponent tiles.",
+    "Binary formats are classified, not guessed or treated as decrypted messages.",
+    "Nested ZIP entries are counted but their contents are not inspected."
+  ]
+}

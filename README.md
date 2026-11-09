@@ -1,5 +1,7 @@
 # 欢乐麻将 iOS 静态逆向分析
 
+[第七轮原 ZIP 覆盖审计](reports/device-round/EXPORT-AUDIT.md)：补齐全部导出文本的负载探测，5 个文件完整，无新增对手暗牌证据；另有 11 个文件仅在扫描清单中，实际未装入 ZIP。
+
 [第六轮协议复核](reports/device-round/PROTOCOL-FOLLOWUP.md)：已核对压缩消息的听牌/推荐消费路径及牌墙结构；当前日志没有可恢复的对应负载，实时对手暗牌仍未验证。
 
 分析输入是用户提供的 Info.plist、UnityFramework 和欢乐麻将_Decrypted.ipa。原始文件位于公开仓库 zwthys-cyber/qqhldzz-analysis 的 inputs-v1 Release 附件中。
