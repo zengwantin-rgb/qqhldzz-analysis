@@ -88,6 +88,25 @@ def embedded(value):
     except ValueError:pass
     return {'status':'not_decoded','compressed_bytes':count,'reported_origin_bytes':original}
 
+def lua_shape(value):
+    size=value.get('nLuaBuffLen');data=value.get('szLuaBuff')
+    if type(size) is not int or not 0<=size<=65536 or not isinstance(data,list) or len(data)<size or not all(type(c) is int and -128<=c<=255 for c in data):return {'status':'invalid_shape'}
+    raw=bytes(c&255 for c in data[:size]).rstrip(b'\0');signals=collections.Counter();arrays=[];scalar_kinds=collections.Counter()
+    try:parsed=json.loads(raw)
+    except (ValueError,UnicodeError,RecursionError):return {'status':'not_json','bytes':size}
+    def walk(node):
+        if isinstance(node,dict):
+            for key,child in node.items():
+                for signal in ('hand','tile','card','wall','seed','rand'):
+                    if signal in key.lower():signals[signal]+=1
+                walk(child)
+        elif isinstance(node,list):
+            if all(type(c) is int for c in node):arrays.append(len(node))
+            for child in node:walk(child)
+        else:scalar_kinds[type(node).__name__]+=1
+    walk(parsed)
+    return {'status':'json_shape','bytes':size,'root_fields':len(parsed) if isinstance(parsed,dict) else None,'gameplay_key_signals':dict(signals),'numeric_array_lengths':arrays,'scalar_type_counts':dict(scalar_kinds)}
+
 def inspect(directory):
     frames=[]
     format_path=pathlib.Path(directory)/'capture-formats.json'
@@ -95,7 +114,7 @@ def inspect(directory):
     for path in sorted(pathlib.Path(directory).glob('entry-*-seq-*.tdr.json')):
         match=re.fullmatch(r'entry-(\d+)-seq-(\d+)\.tdr\.json',path.name)
         if not match:continue
-        data=json.loads(path.read_text());rows=[];waits=[];draws=[];buffers=[];tlvs=collections.Counter()
+        data=json.loads(path.read_text());rows=[];waits=[];draws=[];buffers=[];configs=[];tlvs=collections.Counter()
         def walk(value):
             if isinstance(value,dict):
                 if type(value.get('nType')) is int and 'nLen' in value:tlvs[str(value['nType'])]+=1
@@ -111,6 +130,7 @@ def inspect(directory):
                     cards=value.get('DrawTiles',[]);count=value['nDrawTileNum']
                     if type(count) is int and 0<=count<=32 and isinstance(cards,list) and all(type(c) is int for c in cards):draws.append({'seat':value['nSeatID'],'single_tile_nonzero':value['chTile']!=0,'declared_draw_tiles':count,'array_length':len(cards),'nonzero_draw_tiles':sum(c!=0 for c in cards[:count])})
                 if all(k in value for k in ('nGameBuf','iOriginSize','szGameBuf')):buffers.append(embedded(value))
+                if all(k in value for k in ('nLuaBuffLen','szLuaBuff')):configs.append(lua_shape(value))
                 for v in value.values():walk(v)
             elif isinstance(value,list):
                 for v in value:walk(v)
@@ -138,7 +158,7 @@ def inspect(directory):
             snapshot_details={'numeric_arrays':inventory,'seat_hand_counts':seat_counts}
             if initial is not None:snapshot_details['deal_self_tiles']={'declared_tiles':initial_count,'array_length':len(root_deal['szTiles']),'nonzero_tiles':sum(v!=0 for v in initial),'recommendation_hands_compared':len(recommendations),'recommendation_hands_matching':sum(recommendations)}
         walk(data)
-        frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'source_encoding':'public_field_snapshot' if formats.get(path.name)=='public_field_snapshot' else 'reencoded_decoded_event','snapshot_details':snapshot_details,'hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'tlv_type_counts':dict(tlvs)})
+        frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'source_encoding':'public_field_snapshot' if formats.get(path.name)=='public_field_snapshot' else 'reencoded_decoded_event','snapshot_details':snapshot_details,'hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'lua_config_shapes':configs,'tlv_type_counts':dict(tlvs)})
     states={}
     for frame in frames:
         entry=frame['entry'];phase=states.get(entry,'before_hu')

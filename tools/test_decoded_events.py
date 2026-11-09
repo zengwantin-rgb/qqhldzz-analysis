@@ -1,6 +1,6 @@
 import json,tempfile,unittest,zlib
 from pathlib import Path
-from inspect_decoded_events import inspect,embedded,proto_fields,lz4_block,advice_schema
+from inspect_decoded_events import inspect,embedded,proto_fields,lz4_block,advice_schema,lua_shape
 class DecodedEventTests(unittest.TestCase):
     def test_counts_phase_and_no_private_values(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -39,6 +39,13 @@ class DecodedEventTests(unittest.TestCase):
             self.assertEqual(details['deal_self_tiles']['recommendation_hands_matching'],1)
             self.assertFalse(details['seat_hand_counts'][0]['has_tile_array'])
             self.assertNotIn('987654321',json.dumps(result))
+
+    def test_config_shape_does_not_publish_keys_or_values(self):
+        raw=b'{"private-user-token":12345678,"randomSeed":42,"tiles":[1,2]}'
+        result=lua_shape({'nLuaBuffLen':len(raw),'szLuaBuff':list(raw)})
+        self.assertEqual(result['gameplay_key_signals']['seed'],1)
+        self.assertEqual(result['numeric_array_lengths'],[2])
+        self.assertNotIn('private-user-token',json.dumps(result));self.assertNotIn('12345678',json.dumps(result))
 
     def test_invalid_hand_ownership_not_reported(self):
         with tempfile.TemporaryDirectory() as temp:
