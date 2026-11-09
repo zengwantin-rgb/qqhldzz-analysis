@@ -12,7 +12,7 @@ jobs:
       - name: Test scanner isolation and ZIP export on GitHub
         run: |
           mkdir -p build/checks
-          clang -fobjc-arc -framework Foundation -lz mobile/LogReader/Scanner.m mobile/LogReader/ScannerTests.m -o build/scanner-tests
+          clang -DMJ_TEST_DEBUG -fobjc-arc -framework Foundation -lz mobile/LogReader/Scanner.m mobile/LogReader/ScannerTests.m -o build/scanner-tests
           build/scanner-tests build/checks/export-test.zip
           python3 - <<'PY'
           import zipfile

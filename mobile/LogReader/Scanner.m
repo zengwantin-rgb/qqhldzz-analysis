@@ -54,11 +54,15 @@ NSDictionary *MJScanContainer(NSString *container) {
         if (++visited > 50000 || files.count >= 1000) { truncated = YES; break; }
         NSDictionary *values = [url resourceValuesForKeys:keys error:nil];
         if ([values[NSURLIsSymbolicLinkKey] boolValue]) { [enumerator skipDescendants]; continue; }
-        if (![values[NSURLIsRegularFileKey] boolValue] || ![url.path hasPrefix:prefix]) continue;
-        NSString *relative = [url.path substringFromIndex:prefix.length];
+        NSString *filePath = url.path.stringByResolvingSymlinksInPath;
+#ifdef MJ_TEST_DEBUG
+        NSLog(@"Fixture entry: %@ prefix=%@ values=%@", filePath, prefix, values);
+#endif
+        if (![values[NSURLIsRegularFileKey] boolValue] || ![filePath hasPrefix:prefix]) continue;
+        NSString *relative = [filePath substringFromIndex:prefix.length];
         if (!MJIsCandidate(relative)) continue;
         NSDate *modified = values[NSURLContentModificationDateKey] ?: NSDate.distantPast;
-        [files addObject:@{@"container":container, @"relative":relative, @"path":url.path,
+        [files addObject:@{@"container":container, @"relative":relative, @"path":filePath,
                            @"size":values[NSURLFileSizeKey] ?: @0, @"modified":@([modified timeIntervalSince1970])}];
     }
     [files sortUsingComparator:^NSComparisonResult(NSDictionary *a, NSDictionary *b) { return [b[@"modified"] compare:a[@"modified"]]; }];
