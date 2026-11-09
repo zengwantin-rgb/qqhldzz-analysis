@@ -145,6 +145,18 @@ def inspect(directory):
             root_deal=data.get('stValue',{}).get('stNotifyDeal',{}) if data.get('iType')==1 else {}
             initial=root_deal.get('szTiles');initial_count=root_deal.get('nTilesNum')
             initial=initial[:initial_count] if isinstance(initial,list) and type(initial_count) is int and 0<=initial_count<=32 else None
+            reference_kind='deal_self_array' if initial is not None else None
+            if initial is None and data.get('iType')==8:
+                references=set()
+                def own_reference(node):
+                    if isinstance(node,dict):
+                        cards=node.get('szTiles');count=node.get('nHandTilesNum')
+                        if node.get('nSeat')==0 and type(count) is int and 0<count<=32 and isinstance(cards,list) and len(cards)==count and all(type(c) is int for c in cards):references.add(tuple(cards))
+                        for child in node.values():own_reference(child)
+                    elif isinstance(node,list):
+                        for child in node:own_reference(child)
+                own_reference(data.get('stValue',{}).get('stTableInfo',{}))
+                if len(references)==1:initial=list(next(iter(references)));initial_count=len(initial);reference_kind='table_seat_0_hand'
             def shape(value,field_path='',seat=None):
                 if isinstance(value,dict):
                     explicit=value.get('nSeat',value.get('nSeatID'))
@@ -161,7 +173,10 @@ def inspect(directory):
                         for child in value:shape(child,field_path+'[*]',seat)
             shape(data)
             snapshot_details={'numeric_arrays':inventory,'seat_hand_counts':seat_counts}
-            if initial is not None:snapshot_details['deal_self_tiles']={'declared_tiles':initial_count,'array_length':len(root_deal['szTiles']),'nonzero_tiles':sum(v!=0 for v in initial),'recommendation_hands_compared':len(recommendations),'recommendation_hands_matching':sum(recommendations)}
+            if initial is not None:
+                check={'reference_kind':reference_kind,'reference_tiles':len(initial),'recommendation_hands_compared':len(recommendations),'recommendation_hands_matching':sum(recommendations)}
+                snapshot_details['self_hand_reference']=check
+                if root_deal:snapshot_details['deal_self_tiles']={'declared_tiles':initial_count,'array_length':len(root_deal['szTiles']),'nonzero_tiles':sum(v!=0 for v in initial),'recommendation_hands_compared':len(recommendations),'recommendation_hands_matching':sum(recommendations)}
         walk(data)
         frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'source_encoding':'public_field_snapshot' if formats.get(path.name)=='public_field_snapshot' else 'reencoded_decoded_event','snapshot_details':snapshot_details,'hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'lua_config_shapes':configs,'tlv_type_counts':dict(tlvs)})
     states={};rounds={}

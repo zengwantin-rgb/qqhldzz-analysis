@@ -63,6 +63,16 @@ class DecodedEventTests(unittest.TestCase):
             self.assertEqual(frames[2]['phase'],'after_hu_or_finish')
             self.assertEqual(frames[4]['phase'],'before_hu');self.assertEqual(frames[4]['captured_deal_number'],2)
 
+    def test_reconnect_recommendations_compare_to_explicit_self_hand(self):
+        with tempfile.TemporaryDirectory() as temp:
+            p=Path(temp);name='entry-0003-seq-0005.tdr.json'
+            data={'iType':8,'stValue':{'stTableInfo':{'hand':{'nSeat':0,'nHandTilesNum':3,'szTiles':[987654321,12,13]},'other':{'nSeat':1,'nHandTilesNum':14},'targets':[{'CurHandTiles':[13,12,987654321]}]}}}
+            (p/name).write_text(json.dumps(data));(p/'capture-formats.json').write_text(json.dumps({name:'public_field_snapshot'}))
+            result=inspect(temp);details=result['frames'][0]['snapshot_details']
+            self.assertEqual(details['self_hand_reference']['reference_kind'],'table_seat_0_hand')
+            self.assertEqual(details['self_hand_reference']['recommendation_hands_matching'],1)
+            self.assertNotIn('deal_self_tiles',details);self.assertNotIn('987654321',json.dumps(result))
+
     def test_invalid_hand_ownership_not_reported(self):
         with tempfile.TemporaryDirectory() as temp:
             (Path(temp)/'entry-0001-seq-0001.tdr.json').write_text(json.dumps({'iType':3,'nSeat':99,'nHandTilesNum':2,'szTiles':[12,13]}))
