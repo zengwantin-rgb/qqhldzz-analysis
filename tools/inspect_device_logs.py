@@ -33,8 +33,12 @@ with zipfile.ZipFile('private-input/device.zip') as z:
   tags=collections.Counter();cpp=collections.Counter()
   events=[];arrays=[];field_facts=[]
   for number,line in enumerate(lines,1):
-   for match in re.findall(r'\|([A-Za-z_][A-Za-z0-9_:.-]{2,90})\|',line):tags[match]+=1
-   for match in re.findall(r'([A-Za-z0-9_]+\.cpp):\d+',line):cpp[match]+=1
+   parts=line.split('|',4)
+   if len(parts)==5:
+    source=re.search(r'([A-Za-z0-9_]+\.cpp):\d+$',parts[2])
+    if source:
+     cpp[source.group(1)]+=1
+     if re.fullmatch(r'[A-Z_][A-Z_0-9:]{1,90}',parts[3]):tags[parts[3]]+=1
    m=re.search(r'RecvGameMsg msgType:(ID_SO_[A-Z_0-9]+) gameType:([A-Za-z_0-9]{1,60})',line)
    if m:
     dispatch[m.group(1)+' / '+m.group(2)]+=1
