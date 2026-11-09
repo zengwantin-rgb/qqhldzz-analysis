@@ -1,0 +1,40 @@
+{
+  "complete_export_files": 33,
+  "retained_prior_events": 58,
+  "new_valid_events": 67,
+  "new_reencoded_events": 65,
+  "new_direct_field_snapshots": 2,
+  "deal_snapshot_present": true,
+  "predeal_table_snapshot_present": true,
+  "in_round_reconnect_snapshot_present": false,
+  "deal_self_tile_count": 14,
+  "recommendation_hands_compared": 38,
+  "recommendation_hands_matching_self_deal": 38,
+  "new_wait_fields": 43,
+  "new_extra_tile_count_total": 0,
+  "new_draw_field_count": 13,
+  "new_draw_seats": [
+    0
+  ],
+  "new_embedded_advice_buffers": 13,
+  "new_embedded_unknown_tags": 0,
+  "new_rule_expression_buffers": 2,
+  "new_nonzero_complete_opponent_hands_before_hu_observed": false,
+  "new_post_hu_hand_counts_by_seat": {
+    "0": 13,
+    "1": 10,
+    "2": 7,
+    "3": 4
+  },
+  "live_opponent_display_implemented": false,
+  "general_server_hidden_hand_availability_established": false,
+  "new_binary_frames_consuming_all_bytes": 64,
+  "new_binary_frames_total": 65,
+  "new_binary_exact_roundtrips": 39,
+  "remaining_unconsumed_frame": {
+    "sequence": 65,
+    "message_type": 160,
+    "unconsumed_bytes": 8
+  },
+  "private_values_published": false
+}
