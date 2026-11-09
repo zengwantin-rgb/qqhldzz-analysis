@@ -25,6 +25,32 @@ def proto_fields(raw):
         if index>len(raw):raise ValueError()
     return dict(counts)
 
+def lz4_block(raw,expected):
+    if not 0<expected<=4*1024*1024:raise ValueError()
+    index=0;output=bytearray()
+    def extension(length):
+        nonlocal index
+        if length==15:
+            while True:
+                if index>=len(raw):raise ValueError()
+                byte=raw[index];index+=1;length+=byte
+                if length>expected:raise ValueError()
+                if byte!=255:break
+        return length
+    while index<len(raw):
+        token=raw[index];index+=1;literal=extension(token>>4)
+        if index+literal>len(raw) or len(output)+literal>expected:raise ValueError()
+        output.extend(raw[index:index+literal]);index+=literal
+        if index==len(raw):break
+        if index+2>len(raw):raise ValueError()
+        offset=raw[index]|raw[index+1]<<8;index+=2
+        if offset==0 or offset>len(output):raise ValueError()
+        match=extension(token&15)+4
+        if len(output)+match>expected:raise ValueError()
+        for unused in range(match):output.append(output[-offset])
+    if len(output)!=expected:raise ValueError()
+    return bytes(output)
+
 def embedded(value):
     count,original,cards=(value.get(k) for k in ('nGameBuf','iOriginSize','szGameBuf'))
     if type(count) is not int or not 0<count<=32767 or type(original) is not int or not 0<original<=4*1024*1024 or not isinstance(cards,list) or len(cards)<count or not all(type(c) is int and -128<=c<=255 for c in cards):return {'status':'invalid_buffer_shape'}
@@ -36,6 +62,10 @@ def embedded(value):
             tags=proto_fields(clear)
             return {'status':'decompressed_proto_fields','compression':{15:'zlib',-15:'raw_deflate',31:'gzip'}[window],'compressed_bytes':count,'decoded_bytes':len(clear),'top_level_field_counts':tags,'only_known_advice_field':set(tags)=={'1'}}
         except (ValueError,zlib.error):continue
+    try:
+        clear=lz4_block(raw,original);tags=proto_fields(clear)
+        return {'status':'decompressed_proto_fields','compression':'lz4_block','compressed_bytes':count,'decoded_bytes':len(clear),'top_level_field_counts':tags,'only_known_advice_field':set(tags)=={'1'}}
+    except ValueError:pass
     return {'status':'not_decoded','compressed_bytes':count,'reported_origin_bytes':original}
 
 def inspect(directory):
@@ -54,7 +84,7 @@ def inspect(directory):
                         rows.append({'seat':value['nSeat'],'declared_tiles':count,'array_length':len(cards),'nonzero_tiles':sum(c!=0 for c in used),'zero_tiles':sum(c==0 for c in used),'length_agrees':len(cards)==count})
                 if all(k in value for k in ('chChair','chExCmd','nExtraTilesNum')):
                     cards=value.get('ExtraTiles',[]);count=value['nExtraTilesNum'];seat=value['chChair']
-                    if type(seat) is int and 0<=seat<=3 and type(count) is int and 0<=count<=4096 and isinstance(cards,list) and all(type(c) is int for c in cards):waits.append({'seat':seat,'extra_command_nonzero':value['chExCmd']!=0,'declared_extra_tiles':count,'array_length':len(cards),'nonzero_extra_tiles':sum(c!=0 for c in cards[:count])})
+                    if type(seat) is int and -1<=seat<=3 and type(count) is int and 0<=count<=4096 and isinstance(cards,list) and all(type(c) is int for c in cards):waits.append({'seat':seat,'extra_command_nonzero':value['chExCmd']!=0,'declared_extra_tiles':count,'array_length':len(cards),'nonzero_extra_tiles':sum(c!=0 for c in cards[:count])})
                 if all(k in value for k in ('nSeatID','nDrawTileNum','chTile')) and type(value['nSeatID']) is int and 0<=value['nSeatID']<=3:
                     cards=value.get('DrawTiles',[]);count=value['nDrawTileNum']
                     if type(count) is int and 0<=count<=32 and isinstance(cards,list) and all(type(c) is int for c in cards):draws.append({'seat':value['nSeatID'],'single_tile_nonzero':value['chTile']!=0,'declared_draw_tiles':count,'array_length':len(cards),'nonzero_draw_tiles':sum(c!=0 for c in cards[:count])})
