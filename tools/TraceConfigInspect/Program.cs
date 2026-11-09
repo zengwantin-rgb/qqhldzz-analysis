@@ -33,6 +33,8 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
     || (t.FullName=="HappyMahjong.SelectionScene.SelectionStartCommand" && (m.Name=="InitHbpEngineService" || m.Name=="CheckDeleteOldRecord"))
     || (t.FullName=="HappyMahjong.Common.DynamicConfig" && m.Name=="GetString")
     || t.FullName=="HappyMahjong.Common.PathManager"
+    || t.FullName=="HappyMahjong.Core.PathUtil"
+    || (t.FullName=="System.IO.BinaryWriter" && m.Name=="Write" && m.Parameters.Count==1 && m.Parameters[0].ParameterType.FullName=="System.Byte[]")
     || (t.FullName=="HappyMahjong.SelectionScene.SelectionStartCommand/<>c" && m.Name.Contains("<CheckDeleteOldRecord>"));
    if(selected)methods.Add(new{assembly=asm.Name.Name,type=t.FullName,method=m.FullName,return_type=m.ReturnType.FullName,instructions=m.Body.Instructions.Select(i=>new{offset=i.Offset,opcode=i.OpCode.Name,operand=Operand(i.Operand)}).ToArray()});
    var hits=m.Body.Instructions.Where(i=>i.Operand is MethodReference r && (r.Name.Contains("TraceBin") || r.Name=="GetVMLogLevelByDeviceType")).Select(i=>new{offset=i.Offset,method=((MethodReference)i.Operand).FullName}).ToArray();
