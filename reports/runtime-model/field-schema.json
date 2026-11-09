@@ -1,0 +1,2534 @@
+{
+  "types": [
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Game.MJTileData",
+      "base_type": "System.Object",
+      "fields": [
+        {
+          "name": "m_inHandList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_pengList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.BlockDetail\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mingGangList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.GangInfo\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_anGangList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.GangInfo\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_buGangList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.GangInfo\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_chiList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.BlockDetail\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_giveList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_flowerList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_huList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_specialTileList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_YiPaoDuoXiangHuList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Byte\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gangYaoList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_danList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.DanTileInfo\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_multiTileRedrawList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "curRedrawMjValue",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_dajiCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_facaiCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_zhaNiaoList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_maiMaList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_zhuaNiaoList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_zhuoJiList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_specialGangTileList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "LastMJ",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "givenNum",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_laiZhiList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_hujiaozhuanggangValueList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "viewSeatLog",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_tianHuTile",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": []
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GameStatus",
+      "base_type": "System.Enum",
+      "fields": [
+        {
+          "name": "value__",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "NotPlaying",
+          "type": "HappyMahjong.Common.GameStatus",
+          "is_static": true,
+          "is_public": true,
+          "constant": 0
+        },
+        {
+          "name": "Playing",
+          "type": "HappyMahjong.Common.GameStatus",
+          "is_static": true,
+          "is_public": true,
+          "constant": 1
+        }
+      ],
+      "accessors": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "GameModuleRegistry",
+      "base_type": "HappyMahjong.Common.SingletonBase\u00601\u003CGameModuleRegistry\u003E",
+      "fields": [
+        {
+          "name": "m_gameModules",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.IGameModuleRegistry\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gameEventListeners",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.IGameEventListener\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CGameContext\u003Ek__BackingField",
+          "type": "strange.extensions.context.impl.MVCSContext",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "GameModule.MJGameRulesCenter",
+      "base_type": "HappyMahjong.Common.SingletonBase\u00601\u003CGameModule.MJGameRulesCenter\u003E",
+      "fields": [
+        {
+          "name": "m_curUnit",
+          "type": "GameModule.MJGameRuleUnit",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_moduleDef",
+          "type": "GameModule.MJGameModuleDef",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HappyMahjong.Game.GuoBiaoRoundModel",
+      "base_type": "System.Object",
+      "fields": [
+        {
+          "name": "m_blackboard",
+          "type": "HappyMahjong.Common.Blackboard",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gameType",
+          "type": "HappyMahjong.Common.GameType",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gameSubType",
+          "type": "HappyMahjong.Common.GameSubType",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gameSecondType",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_playerCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curChoosePlayerViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curPlayerViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curSvrPlayerViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastRedrawPlayerViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastDropPlayerViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_dealerViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curGiveOutMJValue",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curRedrawMJValue",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_playerGameInfo",
+          "type": "HappyMahjong.Game.PlayerGameInfoVO[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_leftMJNumInWall",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_leftValidMJNumInWall",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastNotDrawTilesNum",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_roundWind",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_subRound",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_continueWin",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gameStatus",
+          "type": "HappyMahjong.Common.GameStatus",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_giveStatus",
+          "type": "HappyMahjong.Game.GiveStatus",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_redrawStatus",
+          "type": "HappyMahjong.Game.RedrawStatus",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_ticket",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_selfSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastGiveAndBlock",
+          "type": "HappyMahjong.Game.UserActionType",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastActorViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_actionRecordList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.ActionRecordVO\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjValueOfRequestDrop",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_tingList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_currentTingInfo",
+          "type": "HappyMahjong.Game.TingInfo",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curGiveOutMJList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastGiveOrBlockMJList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curRedrawMJList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_dicesList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_zhaNiaoWinType",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curGiveNotifyMJValue",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isContainFakeHu",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isContainFanPrediction",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isSelfFakeHuAlreadyHappened",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_fakeHuList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_haidiTile",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjTimeout",
+          "type": "HappyMahjong.Game.MJTimeOut",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isReceiveBalance",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isReceiveRedPacket",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isDapiaoRoom",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isFirstTing",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isTianhu",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_numOfTimeOut",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_doGiveFlag",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curDianpaoMJ",
+          "type": "System.SByte",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_chMinWinFan",
+          "type": "System.SByte",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_ticketBean",
+          "type": "System.Int64",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_fengDingBeiCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_softHuDingBeiCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_hardHuDingBeiCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_sectionBaseBet",
+          "type": "System.Single",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_sectionAddition",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_sectionFengDingBei",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_sectionFengDingScore",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_baseBet",
+          "type": "System.Int64",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_teamBaseBet",
+          "type": "System.Int64",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_teamFengDing",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curBetInfo",
+          "type": "HappyMahjong.Game.BetDetailVO",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_charmTargetSeatId",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_hasPushedCharmSettleEffectProcess",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_charmRemainCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_rePlay",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_newGameStart",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_hasShowHelpTipsInCurrentGame",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,System.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_leftDelayTimes",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastGiveOrBlockMJValue",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_sitdownSuccessResult",
+          "type": "HappyMahjong.TSDKMessage.T2UMsgSitDownResult",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_privateTableInfo",
+          "type": "HuanLeGameSo.TNtfMJPrivateTableInfo",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_privateTableFinishInfo",
+          "type": "HuanLeGameSo.TPrivateTableFinishInfo",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_privateVibrateSwitch",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_TSDKPlayerStatus",
+          "type": "HappyMahjong.TSDK_PLAYER_STATUS",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_SitDownReplayCahceInfo",
+          "type": "HappyMahjong.Game.SitDownReplayCahceInfo",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_CheckQishouhu",
+          "type": "HuanLeGameSo.CNotifyCheckQishouhu",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_moduleDataModels",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,GameModule.DataModel\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastEnterGiveVO",
+          "type": "HappyMahjong.Game.LastEnterGiveVO",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_roundID",
+          "type": "System.String",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_caiPiao",
+          "type": "System.Int32[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_usedRankItemToolsList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_showRoundWind",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isDeskProEnabled",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isCrossScene",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_abnornalTileConfig",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,System.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_playerProcessModels",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.IProcessModel\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isTingDirty",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isJiHuZiMo",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_piHuState",
+          "type": "HappyMahjong.Game.RankGradingWinHandler/PiHuState",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CIsFriendFroomTerminate\u003Ek__BackingField",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CteammateViewSeat\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CNewWinSectionFengDing\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CNewLoseSectionFengDing\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CWinBeanUpLimitMinValue\u003Ek__BackingField",
+          "type": "System.Int64",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_HorseUseNewSetTiles",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003ChuTimes\u003Ek__BackingField",
+          "type": "System.Int32[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bigHuFengDingBeiCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_topHuFengDingBeiCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_balanceConfig",
+          "type": "HappyMahjong.Game.IBalanceConfig",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CadsBonusSectionScore\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CMatchRoundType\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CAutoPlayType\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CShowStopDropIgnoredTips\u003Ek__BackingField",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CPandoraBoxInfo\u003Ek__BackingField",
+          "type": "HuanLeGameSo.TTreasuseBoxInfo",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CMingPaiViewSeat\u003Ek__BackingField",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CIsMingPai\u003Ek__BackingField",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CRequestClientTingID\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CRoomTicketType\u003Ek__BackingField",
+          "type": "HuanLeGameSo.TicketType",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CNewSectionScoreJieSuan\u003Ek__BackingField",
+          "type": "HuanLeGameSo.TNewSectionScoreJieSuan",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CNotifyCanReturnSectionScoreNotify\u003Ek__BackingField",
+          "type": "HuanLeGameSo.CNotifyCanReturnSectionScore",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CNotifyReturnSectionScoreResult\u003Ek__BackingField",
+          "type": "HuanLeGameSo.CNotifyReturnSectionScoreResult",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CMahjongGameTableView\u003Ek__BackingField",
+          "type": "HappyMahjong.Game.GameTableView",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CSitDownFailContinueTimes\u003Ek__BackingField",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CHaveShowBiHuPanel\u003Ek__BackingField",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CiWarmReason\u003Ek__BackingField",
+          "type": "System.Int64",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": [
+        {
+          "method": "HappyMahjong.Game.MJTileData HappyMahjong.Game.GuoBiaoRoundModel::GetTilesByViewSeat(System.Int32)",
+          "fields": [
+            "HappyMahjong.Game.PlayerGameInfoVO[] HappyMahjong.Game.GuoBiaoRoundModel::m_playerGameInfo",
+            "HappyMahjong.Game.MJTileData HappyMahjong.Game.PlayerGameInfoVO::tiles"
+          ]
+        },
+        {
+          "method": "HappyMahjong.Game.PlayerGameInfoVO HappyMahjong.Game.GuoBiaoRoundModel::GetSelfGameInfo()",
+          "fields": [
+            "HappyMahjong.Game.PlayerGameInfoVO[] HappyMahjong.Game.GuoBiaoRoundModel::m_playerGameInfo"
+          ]
+        },
+        {
+          "method": "GameModule.DataModel HappyMahjong.Game.GuoBiaoRoundModel::GetModel(System.String)",
+          "fields": [
+            "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,GameModule.DataModel\u003E HappyMahjong.Game.GuoBiaoRoundModel::m_moduleDataModels"
+          ]
+        },
+        {
+          "method": "HappyMahjong.Game.RankGradingWinHandler/PiHuState HappyMahjong.Game.GuoBiaoRoundModel::get_PiHuState()",
+          "fields": [
+            "HappyMahjong.Game.RankGradingWinHandler/PiHuState HappyMahjong.Game.GuoBiaoRoundModel::m_piHuState"
+          ]
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HappyMahjong.Game.RoundModeUtil",
+      "base_type": "System.Object",
+      "fields": [
+        {
+          "name": "RoundModel",
+          "type": "HappyMahjong.Game.IRoundModel",
+          "is_static": true,
+          "is_public": true,
+          "constant": null
+        }
+      ],
+      "accessors": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HappyMahjong.Game.PlayerGameInfoVO",
+      "base_type": "System.Object",
+      "fields": [
+        {
+          "name": "playerGameStatus",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "isOffLine",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "tiles",
+          "type": "HappyMahjong.Game.MJTileData",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "guoHuVO",
+          "type": "HappyMahjong.Game.GuoHuVO",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "seatWind",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "tingStatus",
+          "type": "HappyMahjong.Game.TingType",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "isRequestingGiveUp",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "tingInfoList",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.TingInfo\u003E",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_isTrust",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastIntoTrustTime",
+          "type": "System.Single",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastTrustDuration",
+          "type": "System.Single",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "isTianTing",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "chHuFlag",
+          "type": "System.SByte",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "chTingFlag",
+          "type": "System.SByte",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "isSelfDapiao",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "ExtraCountNum",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_blockActions",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.ActionRecordVO\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003ClastGiveAndBlock\u003Ek__BackingField",
+          "type": "HappyMahjong.Game.UserActionType",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HappyMahjong.Game.GameTableView",
+      "base_type": "strange.extensions.mediation.impl.EventView",
+      "fields": [
+        {
+          "name": "\u003CroundModel\u003Ek__BackingField",
+          "type": "HappyMahjong.Game.IRoundModel",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CglobalModel\u003Ek__BackingField",
+          "type": "HappyMahjong.IGlobalModel",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CprocessModel\u003Ek__BackingField",
+          "type": "HappyMahjong.Game.IProcessModel",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "\u003CshopModel\u003Ek__BackingField",
+          "type": "HappyMahjong.ShopAndBag.IShopModel",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_userControlls",
+          "type": "HappyMahjong.Game.UserHandler[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_wallCtrl",
+          "type": "HappyMahjong.Game.MJWallHandler",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_shuaiziController",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_ymShowInstance",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_ymShowLoopCoroutine",
+          "type": "UnityEngine.Coroutine",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_deskHandler",
+          "type": "HappyMahjong.Game.DeskHandler",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastDropPointer",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_layoutTemplateInstance",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_pushMjScript",
+          "type": "HappyMahjong.Game.PushAllMjHandler",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_ChangShaQuanQiuRenTips",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bShowFirstDropTips",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_handAnimHandler",
+          "type": "HappyMahjong.Game.HandAnimHandler",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_firstDropTipTile",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_firstDropTipMJ",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_skillEffectHandler",
+          "type": "HappyMahjong.ShopAndBag.AvatarSkillEffectHandler",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bWallTransparent",
+          "type": "System.Boolean[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": [
+        {
+          "method": "HappyMahjong.Game.UserHandler[] HappyMahjong.Game.GameTableView::get_UserControlls()",
+          "fields": [
+            "HappyMahjong.Game.UserHandler[] HappyMahjong.Game.GameTableView::m_userControlls"
+          ]
+        },
+        {
+          "method": "HappyMahjong.Game.MJWallHandler HappyMahjong.Game.GameTableView::get_MJWallHandler()",
+          "fields": [
+            "HappyMahjong.Game.MJWallHandler HappyMahjong.Game.GameTableView::m_wallCtrl"
+          ]
+        },
+        {
+          "method": "HappyMahjong.Game.DeskHandler HappyMahjong.Game.GameTableView::get_DeskHandler()",
+          "fields": [
+            "HappyMahjong.Game.DeskHandler HappyMahjong.Game.GameTableView::m_deskHandler"
+          ]
+        },
+        {
+          "method": "HappyMahjong.Game.MJWallHandler HappyMahjong.Game.GameTableView::get_WallHandler()",
+          "fields": [
+            "HappyMahjong.Game.MJWallHandler HappyMahjong.Game.GameTableView::m_wallCtrl"
+          ]
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HappyMahjong.Game.InHandTileHandler",
+      "base_type": "System.Object",
+      "fields": [
+        {
+          "name": "m_showUserPaiReason",
+          "type": "HappyMahjong.Game.SetUserPaiReason",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_container",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_playerIndex",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_startPos",
+          "type": "System.Single",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_inHandList",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gameType",
+          "type": "HappyMahjong.Common.GameType",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_needShowTingPaiEffect",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_dealHuList",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "TOTAL_INHAND_COUNT",
+          "type": "System.Int32",
+          "is_static": true,
+          "is_public": false,
+          "constant": 13
+        },
+        {
+          "name": "m_containerStartPos",
+          "type": "UnityEngine.Vector3",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_fanpaiEffects",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_arrangeTime",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_animationDestroyTime",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_animationPrefab",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjSelected",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bubbleEvent",
+          "type": "BubbleEventHelper",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_ignoreKind",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_whmjRainIgnores",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_laiziList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_specialValue",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_curHandTileStatus",
+          "type": "HappyMahjong.Game.MJInHandStatus",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_compareDelegate",
+          "type": "HappyMahjong.Game.InHandTileHandler/CompareDelegate",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "PengMJHandler",
+          "type": "HappyMahjong.Game.PengMJHandler",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_blockIndex",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_removedMJIndex",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_removedMJPos",
+          "type": "UnityEngine.Vector3",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_removeMJRotation",
+          "type": "UnityEngine.Quaternion",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bFinishedChapaiAni",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "ClickSelectedDelegate",
+          "type": "UIEventListener/VoidDelegate",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "SelectMJDelegate",
+          "type": "UIEventListener/VoidDelegate",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_ArrangeDelegate",
+          "type": "HappyMahjong.SelectionScene.VoidDelegate",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_redrawTweenID",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "MJ_CARD_Y_AXIS_CONST",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.01095
+        },
+        {
+          "name": "MJ_CARD_Y_AXIS",
+          "type": "System.Single",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "MJ_CARD_X_GAP",
+          "type": "System.Single",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gangYaoRedrwaMJCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gangYaoVo",
+          "type": "HappyMahjong.Game.EnterGangYaoVO",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mopaiHandAvatar",
+          "type": "HappyMahjong.Avatar.Avatar",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_maopaiMj",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mopaiHandHandler",
+          "type": "HappyMahjong.Game.HandHandler",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_roundModel",
+          "type": "HappyMahjong.Game.IRoundModel",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "isOnFire",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_arrangePrefabName",
+          "type": "System.String",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "MOVE_UP_INTERVAL",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.25
+        },
+        {
+          "name": "MOVE_X_INTERVAL",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.15
+        },
+        {
+          "name": "MOVE_DOWN_INTERVAL",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.25
+        },
+        {
+          "name": "ROTATE_INTERVAL",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.1
+        },
+        {
+          "name": "DELAY_TIME",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.5
+        },
+        {
+          "name": "callbacks",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.SelectionScene.VoidDelegate\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "needReorderInHandTileOnAnimComplete",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_needChapaiAnimFromDrop",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": [
+        {
+          "method": "HappyMahjong.Game.MJInHandStatus HappyMahjong.Game.InHandTileHandler::get_curHandTileStatus()",
+          "fields": [
+            "HappyMahjong.Game.MJInHandStatus HappyMahjong.Game.InHandTileHandler::m_curHandTileStatus"
+          ]
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HappyMahjong.Game.MJHandler",
+      "base_type": "UnityEngine.MonoBehaviour",
+      "fields": [
+        {
+          "name": "sIsPlaying",
+          "type": "System.Boolean",
+          "is_static": true,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "s_tableDispatcher",
+          "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher",
+          "is_static": true,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_narrowIndex",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "playerIndex",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "mjValue",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "IsMJ_BACK",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "customPrefabABPath",
+          "type": "System.String",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "isBuildinPrefab",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "SelectDisable",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "autoDropType",
+          "type": "HappyMahjong.Game.AutoDropType",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "SecondaryHandTileEffect",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_isEnable",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isSelected",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_status",
+          "type": "HappyMahjong.Game.MJStatus",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bubbleEvent",
+          "type": "BubbleEventHelper",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_selectDeleaget",
+          "type": "UIEventListener/VoidDelegate",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "ClickSelectedDelegate",
+          "type": "UIEventListener/VoidDelegate",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_renderer",
+          "type": "UnityEngine.MeshRenderer",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_narrowObject",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_standShadow",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_layDownShadow",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_shiningEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_highLightEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gaiZhangEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gaiZhangMoPaiEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_chongFengZeRenEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_newFanRecommendTag",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_newFanRecommendQiPaiTag",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_newFanRecommendQiPaiTagEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_quickPickShinningEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_baoPaiTagEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_sShadowStandPrefab",
+          "type": "UnityEngine.GameObject",
+          "is_static": true,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_sShadowLayDownPrefab",
+          "type": "UnityEngine.GameObject",
+          "is_static": true,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_showLaydownCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_isMJSelected",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_preMaterial",
+          "type": "UnityEngine.Material",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_preStatus",
+          "type": "HappyMahjong.Game.MJStatus",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_abilityMeshInfo",
+          "type": "HappyMahjong.Game.AbilityTile.AbilityTileHelper/MeshInfo",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_danNumberCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_changeQuePai",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "mjId",
+          "type": "System.UInt32",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "m_activeDragonTileShowTip",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjNode",
+          "type": "UnityEngine.Transform",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_handlerPropertiesSO",
+          "type": "HappyMahjong.Game.MJHandlerSO",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        },
+        {
+          "name": "OnMjHandleClear",
+          "type": "HappyMahjong.SelectionScene.VoidDelegate",
+          "is_static": false,
+          "is_public": true,
+          "constant": null
+        }
+      ],
+      "accessors": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HappyMahjong.Game.MJWallHandler",
+      "base_type": "System.Object",
+      "fields": [
+        {
+          "name": "m_liftConfig",
+          "type": "Configuration.MJLiftConfig",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_abilityTileInfoList",
+          "type": "System.Collections.Generic.List\u00601\u003CHuanLeGameSo.TSingleTileShowInfo\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_wallType",
+          "type": "HappyMahjong.Common.GameType",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_zeroViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_wallContainers",
+          "type": "UnityEngine.GameObject[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastRemoveContainer",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastRemovePos",
+          "type": "UnityEngine.Vector3",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjListInWall",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjSingleListInWall",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.GameObject\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mascotListInWall",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.MascotInfo\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_originalWallWidth",
+          "type": "System.Single[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_splitStackIndices",
+          "type": "System.Collections.Generic.HashSet\u00601\u003CSystem.Int32\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_cachedSlotElements",
+          "type": "System.Collections.Generic.List\u00601\u003CHappyMahjong.Game.SlotElement\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "WALL_SCALE_TARGET_DOUBLE",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.9
+        },
+        {
+          "name": "WALL_SCALE_TARGET_SINGLE",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.95
+        },
+        {
+          "name": "WALL_SCALED_POSITIONS_DOUBLE",
+          "type": "UnityEngine.Vector3[]",
+          "is_static": true,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "WALL_SCALED_POSITIONS_SINGLE",
+          "type": "UnityEngine.Vector3[]",
+          "is_static": true,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_wallInitialPositions",
+          "type": "UnityEngine.Vector3[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_wallScaled",
+          "type": "System.Boolean[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_totalCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_lastNotDrawTilesNum",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_totalRoundNum",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_singleWallCardEffectOrigLen",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_nonSkipCount",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjCountOfWall",
+          "type": "System.Int32[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_hasSeperatedLaoYuePai",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_moveableSlots",
+          "type": "UnityEngine.GameObject[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bubbleEventHelper",
+          "type": "BubbleEventHelper",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_bubbleTarget",
+          "type": "UnityEngine.Transform",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_wallsStartPos",
+          "type": "UnityEngine.Vector3[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_wallMove",
+          "type": "UnityEngine.Vector2",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_startViewSeat",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_startJump",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gangYaoMJNum",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_gangYaoMJStartIndex",
+          "type": "System.Int32",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_abilityMjList",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_abilityMjInfo",
+          "type": "System.Collections.Generic.List\u00601\u003CHuanLeGameSo.TSingleTileShowInfo\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_singleAbilityMjInfo",
+          "type": "System.Collections.Generic.List\u00601\u003CHuanLeGameSo.TSingleTileShowInfo\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_mjRefreshAudioClip",
+          "type": "UnityEngine.AudioClip",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_singleCardEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_latestDrawCardEffect",
+          "type": "UnityEngine.GameObject",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_abilityMJRefreshEffect",
+          "type": "UnityEngine.GameObject[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_laiziEffect",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.GameObject\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_singleAbilityMJEffectList",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_addOneVarTileMJRefreshEffect",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_addOneVarTileMjList",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E[]",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "m_addOneVarTileSkill",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "loopfxItems",
+          "type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "VARIABLE_TILE_SCALE",
+          "type": "System.Single",
+          "is_static": true,
+          "is_public": false,
+          "constant": 0.95
+        },
+        {
+          "name": "m_isSingleWallCard",
+          "type": "System.Boolean",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        },
+        {
+          "name": "_pendingMascotObjects",
+          "type": "System.Collections.Generic.HashSet\u00601\u003CUnityEngine.GameObject\u003E",
+          "is_static": false,
+          "is_public": false,
+          "constant": null
+        }
+      ],
+      "accessors": []
+    }
+  ],
+  "limits": [
+    "Static metadata only; no runtime game fields or account values read.",
+    "Runtime class field presence is not yet verified on phone."
+  ]
+}
