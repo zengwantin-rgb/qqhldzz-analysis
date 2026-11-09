@@ -1,0 +1,54 @@
+{
+  "text_entries_scanned": [
+    7,
+    8,
+    9,
+    10,
+    13,
+    14,
+    15,
+    16
+  ],
+  "binary_entries_not_json_decoded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    11,
+    12
+  ],
+  "known_field_mentions": {
+    "szGameBuf": 0,
+    "gameBuf": 0,
+    "nGameBuf": 0,
+    "iOriginSize": 0,
+    "OriginSize": 0,
+    "stUnitProtoValueBuf": 0,
+    "stAbilityTileWallInfo": 0,
+    "iTotalTileCount": 0,
+    "TotalTileCount": 0,
+    "nTileCount": 0,
+    "astTileInfos": 0,
+    "TileInfos": 0,
+    "iTileFace": 0,
+    "iTileBack": 0,
+    "ProtoIntelligenceAdvice": 0,
+    "AdviceType": 0,
+    "iAdviceType": 0,
+    "AdviceTile": 0,
+    "iAdviceTile": 0,
+    "IntelligenceAdviceTing": 0,
+    "TileLeftNum": 0
+  },
+  "matching_json_objects": 0,
+  "known_buffer_candidates": [],
+  "wall_objects": [],
+  "advice_objects": [],
+  "limits": [
+    "Only recognized gameplay field names are searched; arbitrary token/base64 strings are not decoded.",
+    "A type-name mention without its bytes is not a recoverable payload.",
+    "No real hand values or identifying raw log content are published."
+  ]
+}

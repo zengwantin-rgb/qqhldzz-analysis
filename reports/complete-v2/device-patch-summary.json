@@ -1,0 +1,455 @@
+{
+  "status": "parsed",
+  "format": "combined_ifix",
+  "version": 1,
+  "subpatch_count": 3,
+  "last_subpatch_end": 76786,
+  "file_bytes": 76786,
+  "trailing_bytes": 0,
+  "padding_or_gap_bytes": 0,
+  "fully_consumed": true,
+  "subpatches": [
+    {
+      "offset": 36,
+      "bytes": 819,
+      "fully_consumed": true,
+      "interface_bridge": "$unresolved_type",
+      "wrapper_manager": "$unresolved_type",
+      "external_type_count": 3,
+      "vm_method_count": 2,
+      "unresolved_external_type_count": 1,
+      "instruction_count": 12,
+      "external_method_count": 0,
+      "intern_string_count": 2,
+      "field_count": 0,
+      "matching_manifest_version_marker_count": 1,
+      "static_field_count": 0,
+      "anonymous_storey_count": 0,
+      "resolved_slot_types": [],
+      "new_class_count": 0,
+      "patched_methods": [
+        {
+          "declaring_type": "HappyMahjong.IFixManager, HappyMahjong.Core",
+          "method": "GetRevision",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 0
+        },
+        {
+          "declaring_type": "HappyMahjong.IFixManager, HappyMahjong.Core",
+          "method": "Version",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 1
+        }
+      ],
+      "critical_owner_bindings": [],
+      "critical_owner_external_references": [],
+      "unresolved_binding_count": 0
+    },
+    {
+      "offset": 855,
+      "bytes": 48563,
+      "fully_consumed": true,
+      "interface_bridge": "IFix.ILFixInterfaceBridge, HappyMahjong.Hall",
+      "wrapper_manager": "IFix.WrappersManagerImpl, HappyMahjong.Hall",
+      "external_type_count": 164,
+      "vm_method_count": 37,
+      "unresolved_external_type_count": 0,
+      "instruction_count": 2071,
+      "external_method_count": 188,
+      "intern_string_count": 48,
+      "field_count": 52,
+      "matching_manifest_version_marker_count": 0,
+      "static_field_count": 0,
+      "anonymous_storey_count": 4,
+      "resolved_slot_types": [
+        {
+          "type": "System.Runtime.CompilerServices.IAsyncStateMachine, mscorlib",
+          "declared_public_instance_methods": 2
+        },
+        {
+          "type": "System.Runtime.CompilerServices.IAsyncStateMachine, mscorlib",
+          "declared_public_instance_methods": 2
+        },
+        {
+          "type": "System.Collections.Generic.IEnumerator`1, mscorlib",
+          "declared_public_instance_methods": 1
+        },
+        {
+          "type": "System.Collections.IEnumerator, mscorlib",
+          "declared_public_instance_methods": 3
+        },
+        {
+          "type": "System.IDisposable, mscorlib",
+          "declared_public_instance_methods": 1
+        },
+        {
+          "type": "System.Collections.Generic.IEnumerator`1, mscorlib",
+          "declared_public_instance_methods": 1
+        },
+        {
+          "type": "System.Collections.IEnumerator, mscorlib",
+          "declared_public_instance_methods": 3
+        },
+        {
+          "type": "System.IDisposable, mscorlib",
+          "declared_public_instance_methods": 1
+        }
+      ],
+      "new_class_count": 0,
+      "patched_methods": [
+        {
+          "declaring_type": "HappyBridge.JsBridge.JsHttpsRequest, HappyMahjong.Hall",
+          "method": "SendGetHttpRequest",
+          "parameter_count": 6,
+          "generic_argument_count": 0,
+          "vm_method_id": 0
+        },
+        {
+          "declaring_type": "HappyBridge.JsBridge.JsHttpsRequest, HappyMahjong.Hall",
+          "method": "SendPostHttpRequest",
+          "parameter_count": 6,
+          "generic_argument_count": 0,
+          "vm_method_id": 4
+        },
+        {
+          "declaring_type": "HappyMahjong.FanInfoManager, HappyMahjong.Hall",
+          "method": "Reload",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 8
+        },
+        {
+          "declaring_type": "HappyMahjong.FanInfoManager, HappyMahjong.Hall",
+          "method": "LoadConfigs",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 9
+        },
+        {
+          "declaring_type": "HappyMahjong.ShopAndBag.SuitSpecialList, HappyMahjong.Hall",
+          "method": "ResolveSpecialItemIcon",
+          "parameter_count": 3,
+          "generic_argument_count": 0,
+          "vm_method_id": 10
+        },
+        {
+          "declaring_type": "HappyMahjong.FriendAssistSpace.HandleWakeupDataCommand, HappyMahjong.Hall",
+          "method": "Execute",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 11
+        },
+        {
+          "declaring_type": "HappyMahjong.FriendAssistSpace.FriendAssistModel, HappyMahjong.Hall",
+          "method": "get_HasPendingShareSlot",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 12
+        },
+        {
+          "declaring_type": "HappyMahjong.SelectionScene.BottomBarLogicHelper, HappyMahjong.Hall",
+          "method": "RefreshDynamicBenefitCards",
+          "parameter_count": 2,
+          "generic_argument_count": 0,
+          "vm_method_id": 13
+        },
+        {
+          "declaring_type": "HappyMahjong.PlayerRecord.PlayerRecordItemHandler, HappyMahjong.Hall",
+          "method": "SetItemData",
+          "parameter_count": 2,
+          "generic_argument_count": 0,
+          "vm_method_id": 14
+        },
+        {
+          "declaring_type": "HappyMahjong.PlayerRecord.PlayerRecordItemHandler, HappyMahjong.Hall",
+          "method": "EffectLoadOver",
+          "parameter_count": 3,
+          "generic_argument_count": 0,
+          "vm_method_id": 15
+        },
+        {
+          "declaring_type": "HappyMahjong.CaptureTexture.CaptureTexture, HappyMahjong.Hall",
+          "method": "CaptureRenderTextureByCamera",
+          "parameter_count": 6,
+          "generic_argument_count": 0,
+          "vm_method_id": 16
+        },
+        {
+          "declaring_type": "HappyMahjong.Benefit.BenefitController, HappyMahjong.Hall",
+          "method": "onConfigLoadComplete",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 30
+        },
+        {
+          "declaring_type": "HappyMahjong.Common.HeadPhotoCommonHandler, HappyMahjong.Hall",
+          "method": "OnClickHead",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 31
+        },
+        {
+          "declaring_type": "HappyMahjong.Activity.ActivityModel, HappyMahjong.Hall",
+          "method": "ReportRedDotSnapshot",
+          "parameter_count": 2,
+          "generic_argument_count": 0,
+          "vm_method_id": 33
+        },
+        {
+          "declaring_type": "HappyMahjong.Activity.ActivityModel, HappyMahjong.Hall",
+          "method": "SyncActivityRedDots",
+          "parameter_count": 1,
+          "generic_argument_count": 0,
+          "vm_method_id": 34
+        },
+        {
+          "declaring_type": "HappyMahjong.Activity.ActivityModel, HappyMahjong.Hall",
+          "method": "UpdateHotLoadRedDot",
+          "parameter_count": 2,
+          "generic_argument_count": 0,
+          "vm_method_id": 36
+        }
+      ],
+      "critical_owner_bindings": [],
+      "critical_owner_external_references": [],
+      "unresolved_binding_count": 0
+    },
+    {
+      "offset": 49418,
+      "bytes": 27368,
+      "fully_consumed": true,
+      "interface_bridge": "IFix.ILFixInterfaceBridge, HappyMahjong.InGameScripts",
+      "wrapper_manager": "IFix.WrappersManagerImpl, HappyMahjong.InGameScripts",
+      "external_type_count": 111,
+      "vm_method_count": 15,
+      "unresolved_external_type_count": 1,
+      "instruction_count": 956,
+      "external_method_count": 158,
+      "intern_string_count": 39,
+      "field_count": 20,
+      "matching_manifest_version_marker_count": 0,
+      "static_field_count": 0,
+      "anonymous_storey_count": 3,
+      "resolved_slot_types": [],
+      "new_class_count": 0,
+      "patched_methods": [
+        {
+          "declaring_type": "HappyMahjong.Game.MJ2DResManager, HappyMahjong.InGameScripts",
+          "method": "GetSprite",
+          "parameter_count": 5,
+          "generic_argument_count": 0,
+          "vm_method_id": 0
+        },
+        {
+          "declaring_type": "HappyMahjong.Game.MJResManager, HappyMahjong.InGameScripts",
+          "method": "ClearLaydownNormalIfRemote",
+          "parameter_count": 3,
+          "generic_argument_count": 0,
+          "vm_method_id": 3
+        },
+        {
+          "declaring_type": "HappyMahjong.Game.FanAniUIHandler, HappyMahjong.InGameScripts",
+          "method": "ShowVideoEffect",
+          "parameter_count": 3,
+          "generic_argument_count": 0,
+          "vm_method_id": 4
+        },
+        {
+          "declaring_type": "HappyMahjong.Game.MJHandler, HappyMahjong.InGameScripts",
+          "method": "Clear",
+          "parameter_count": 1,
+          "generic_argument_count": 0,
+          "vm_method_id": 5
+        },
+        {
+          "declaring_type": "HappyMahjong.Game.FirstMatchHandlerNewStyle, HappyMahjong.InGameScripts",
+          "method": "PlayCameraPushAni",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 6
+        },
+        {
+          "declaring_type": "HappyMahjong.Game.VariableTile.VariableBtnGestureHandler, HappyMahjong.InGameScripts",
+          "method": "Tap_Gesture",
+          "parameter_count": 1,
+          "generic_argument_count": 0,
+          "vm_method_id": 10
+        },
+        {
+          "declaring_type": "HappyMahjong.Game.CompareTile.SelfSelectCardPanel, HappyMahjong.InGameScripts",
+          "method": "InitGroupBtns",
+          "parameter_count": 0,
+          "generic_argument_count": 0,
+          "vm_method_id": 11
+        }
+      ],
+      "critical_owner_bindings": [],
+      "critical_owner_external_references": [
+        {
+          "declaring_type": "HappyMahjong.Common.Util, HappyMahjong.Hall",
+          "method": "SetLayer",
+          "parameter_count": 2,
+          "generic_argument_count": 0
+        }
+      ],
+      "unresolved_binding_count": 0
+    }
+  ],
+  "runtime_readiness": [
+    {
+      "entry": 7,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 8,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 9,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 10,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 13,
+      "counts": {
+        "fix_begin": 1,
+        "ready": 1,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [
+        {
+          "line": 3171,
+          "kind": "fix_begin",
+          "time": "2026-11-09 21:33:48"
+        },
+        {
+          "line": 3261,
+          "kind": "ready",
+          "time": "2026-11-09 21:33:48",
+          "matches_manifest_version": true
+        }
+      ],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 14,
+      "counts": {
+        "fix_begin": 2,
+        "ready": 2,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [
+        {
+          "line": 366,
+          "kind": "fix_begin",
+          "time": "2026-11-09 22:13:12"
+        },
+        {
+          "line": 456,
+          "kind": "ready",
+          "time": "2026-11-09 22:13:12",
+          "matches_manifest_version": true
+        },
+        {
+          "line": 2836,
+          "kind": "fix_begin",
+          "time": "2026-11-09 22:13:19"
+        },
+        {
+          "line": 2926,
+          "kind": "ready",
+          "time": "2026-11-09 22:13:19",
+          "matches_manifest_version": true
+        }
+      ],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 15,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 16,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    }
+  ],
+  "limits": [
+    "Patch bytes are read as serialized data; no patch, VM instruction, reflection binding or game code is executed.",
+    "Successful structural parsing does not prove that this patch was applied in the recorded session.",
+    "Readiness markers and matching app-version strings do not identify the exact loaded patch digest.",
+    "Only resolved source type names and restricted method metadata are emitted; intern strings and raw patch data are omitted."
+  ]
+}

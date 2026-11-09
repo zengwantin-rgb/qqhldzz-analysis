@@ -1,0 +1,49 @@
+{
+  "callers": [
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.AppRoot",
+      "method": "System.Void HappyMahjong.AppRoot::FixLoadText()",
+      "calls": [
+        "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)",
+        "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)",
+        "System.Void IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_0(System.Object)",
+        "System.Void HappyMahjong.Common.Log::Info(System.String,System.String)",
+        "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.DynamicConfig\u003E::GetInstance()",
+        "System.Int32 HappyMahjong.Common.DynamicConfig::GetInt(System.String,System.String,System.Int32)",
+        "HappyMahjong.update.CsResMgr HappyMahjong.update.CsResMgr::GetInstance()",
+        "System.String HappyMahjong.AppRoot::GetFixPatchName()",
+        "System.Byte[] HappyMahjong.update.CsResMgr::GetConfig(System.String,System.Boolean)",
+        "System.Void System.IO.MemoryStream::.ctor(System.Byte[])",
+        "IFix.Core.VirtualMachine IFix.Core.PatchManager::Load(System.IO.Stream,System.Boolean)",
+        "System.String IFix.Core.VirtualMachine::Statistics()",
+        "System.Void System.IDisposable::Dispose()",
+        "System.String System.Exception::get_Message()",
+        "System.String System.Exception::get_StackTrace()",
+        "System.String System.String::Concat(System.String,System.String,System.String,System.String)",
+        "System.Void UnityEngine.Debug::LogError(System.Object)"
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Core",
+      "type": "HappyMahjong.IFixManager",
+      "method": "System.Void HappyMahjong.IFixManager::\u003CFixBegin\u003Eb__29_0(System.IO.Stream)",
+      "calls": [
+        "IFix.Core.VirtualMachine IFix.Core.PatchManager::Load(System.IO.Stream,System.Boolean)",
+        "IFix.Core.WrappersManager IFix.Core.VirtualMachine::get_WrappersManager()",
+        "System.Type System.Object::GetType()",
+        "System.Reflection.Assembly System.Type::get_Assembly()",
+        "System.Void System.ValueTuple\u00602\u003CSystem.Reflection.Assembly,IFix.Core.VirtualMachine\u003E::.ctor(!0,!1)",
+        "System.Void System.Collections.Generic.List\u00601\u003CSystem.ValueTuple\u00602\u003CSystem.Reflection.Assembly,IFix.Core.VirtualMachine\u003E\u003E::Add(!0)",
+        "System.Void HappyMahjong.Common.Log::Error(System.String,System.String)",
+        "System.String System.String::Format(System.String,System.Object)"
+      ]
+    }
+  ],
+  "game_identifiers": [
+    {
+      "name": "ModuleTuidaohu49",
+      "value": 149
+    }
+  ]
+}

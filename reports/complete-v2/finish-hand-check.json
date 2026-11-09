@@ -1,0 +1,190 @@
+{
+  "placeholder": 0,
+  "files": [
+    {
+      "entry": 7,
+      "self_seat_observations": {},
+      "self_seat_from_draw_field": null,
+      "last_live_recommendation_line": null,
+      "final_seats_matching_last_recommended_hand": [],
+      "unambiguous_self_seat": null,
+      "final_hand_markers": 0,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    },
+    {
+      "entry": 8,
+      "self_seat_observations": {},
+      "self_seat_from_draw_field": null,
+      "last_live_recommendation_line": null,
+      "final_seats_matching_last_recommended_hand": [],
+      "unambiguous_self_seat": null,
+      "final_hand_markers": 0,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    },
+    {
+      "entry": 9,
+      "self_seat_observations": {},
+      "self_seat_from_draw_field": null,
+      "last_live_recommendation_line": null,
+      "final_seats_matching_last_recommended_hand": [],
+      "unambiguous_self_seat": null,
+      "final_hand_markers": 0,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    },
+    {
+      "entry": 10,
+      "self_seat_observations": {},
+      "self_seat_from_draw_field": null,
+      "last_live_recommendation_line": null,
+      "final_seats_matching_last_recommended_hand": [],
+      "unambiguous_self_seat": null,
+      "final_hand_markers": 0,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    },
+    {
+      "entry": 13,
+      "self_seat_observations": {},
+      "self_seat_from_draw_field": null,
+      "last_live_recommendation_line": null,
+      "final_seats_matching_last_recommended_hand": [],
+      "unambiguous_self_seat": null,
+      "final_hand_markers": 0,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    },
+    {
+      "entry": 14,
+      "self_seat_observations": {
+        "0": 15
+      },
+      "self_seat_from_draw_field": 0,
+      "last_live_recommendation_line": 30974,
+      "final_seats_matching_last_recommended_hand": [
+        0
+      ],
+      "unambiguous_self_seat": 0,
+      "final_hand_markers": 4,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [
+        {
+          "line": 31366,
+          "phase": "hu_notification",
+          "seat": 0,
+          "tile_count": 13,
+          "placeholder_entries": 0,
+          "positive_entries": 13,
+          "is_self": true
+        },
+        {
+          "line": 31367,
+          "phase": "hu_notification",
+          "seat": 1,
+          "tile_count": 13,
+          "placeholder_entries": 0,
+          "positive_entries": 13,
+          "is_self": false
+        },
+        {
+          "line": 31368,
+          "phase": "hu_notification",
+          "seat": 2,
+          "tile_count": 7,
+          "placeholder_entries": 0,
+          "positive_entries": 7,
+          "is_self": false
+        },
+        {
+          "line": 31369,
+          "phase": "hu_notification",
+          "seat": 3,
+          "tile_count": 4,
+          "placeholder_entries": 0,
+          "positive_entries": 4,
+          "is_self": false
+        }
+      ],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    },
+    {
+      "entry": 15,
+      "self_seat_observations": {},
+      "self_seat_from_draw_field": null,
+      "last_live_recommendation_line": null,
+      "final_seats_matching_last_recommended_hand": [],
+      "unambiguous_self_seat": null,
+      "final_hand_markers": 0,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    },
+    {
+      "entry": 16,
+      "self_seat_observations": {},
+      "self_seat_from_draw_field": null,
+      "last_live_recommendation_line": null,
+      "final_seats_matching_last_recommended_hand": [],
+      "unambiguous_self_seat": null,
+      "final_hand_markers": 0,
+      "unparsed_final_hand_lines": [],
+      "pre_hu_final_hand_entries": 0,
+      "final_hands": [],
+      "limits": [
+        "Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.",
+        "Final-hand logging is inspected independently of whether a finish notification has arrived.",
+        "Post-Hu final hands cannot establish visibility during ordinary live play.",
+        "Counts omit actual tile values and do not include melds absent from this field."
+      ]
+    }
+  ]
+}

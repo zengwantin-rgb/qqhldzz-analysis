@@ -1,0 +1,3055 @@
+{
+  "entry": 14,
+  "placeholder_value_from_MJDef": 0,
+  "dispatches": [
+    {
+      "line": 16416,
+      "time": "22:56:00",
+      "message": "ID_SO_NOTIFY_TRUST",
+      "game_type": "ModuleTuidaohu49",
+      "round": 0,
+      "phase": "before_deal"
+    },
+    {
+      "line": 16533,
+      "time": "22:56:00",
+      "message": "ID_SO_TABLE_ALL_INFO",
+      "game_type": "ModuleTuidaohu49",
+      "round": 0,
+      "phase": "before_deal"
+    },
+    {
+      "line": 16969,
+      "time": "22:56:01",
+      "message": "ID_SO_NOTIFY_DEAL",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 17427,
+      "time": "22:56:03",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 21447,
+      "time": "22:56:20",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 21723,
+      "time": "22:56:22",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 21794,
+      "time": "22:56:23",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 21891,
+      "time": "22:56:26",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 21980,
+      "time": "22:56:28",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22072,
+      "time": "22:56:31",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22291,
+      "time": "22:56:40",
+      "message": "ID_SO_NOTIFY_DELAY_GIVE_TIME",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22396,
+      "time": "22:56:48",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22566,
+      "time": "22:56:51",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22638,
+      "time": "22:56:52",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22731,
+      "time": "22:56:55",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22803,
+      "time": "22:56:56",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 22909,
+      "time": "22:56:59",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23109,
+      "time": "22:57:08",
+      "message": "ID_SO_NOTIFY_DELAY_GIVE_TIME",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23222,
+      "time": "22:57:16",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23263,
+      "time": "22:57:16",
+      "message": "ID_SO_NOTIFY_TRUST",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23353,
+      "time": "22:57:18",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23465,
+      "time": "22:57:20",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23574,
+      "time": "22:57:21",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23597,
+      "time": "22:57:21",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 23910,
+      "time": "22:57:24",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24035,
+      "time": "22:57:26",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24147,
+      "time": "22:57:27",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24257,
+      "time": "22:57:28",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24557,
+      "time": "22:57:31",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24678,
+      "time": "22:57:32",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24786,
+      "time": "22:57:33",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24904,
+      "time": "22:57:35",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 24939,
+      "time": "22:57:35",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 25194,
+      "time": "22:57:37",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 25318,
+      "time": "22:57:38",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 25437,
+      "time": "22:57:39",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 25550,
+      "time": "22:57:41",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 25795,
+      "time": "22:57:43",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 25924,
+      "time": "22:57:44",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26035,
+      "time": "22:57:46",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26106,
+      "time": "22:57:47",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26207,
+      "time": "22:57:49",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26247,
+      "time": "22:57:49",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26511,
+      "time": "22:57:51",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26634,
+      "time": "22:57:52",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26742,
+      "time": "22:57:53",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 26855,
+      "time": "22:57:54",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 27096,
+      "time": "22:57:56",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 27236,
+      "time": "22:57:58",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 27349,
+      "time": "22:58:00",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 27466,
+      "time": "22:58:01",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 27506,
+      "time": "22:58:01",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 27770,
+      "time": "22:58:03",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 27894,
+      "time": "22:58:04",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 28003,
+      "time": "22:58:06",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 28116,
+      "time": "22:58:07",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 28361,
+      "time": "22:58:09",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 28486,
+      "time": "22:58:11",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 28597,
+      "time": "22:58:12",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 28705,
+      "time": "22:58:14",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 28955,
+      "time": "22:58:15",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 29078,
+      "time": "22:58:17",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 29191,
+      "time": "22:58:20",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 29356,
+      "time": "22:58:22",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 29592,
+      "time": "22:58:23",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 29716,
+      "time": "22:58:26",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 29831,
+      "time": "22:58:28",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 29947,
+      "time": "22:58:29",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 30188,
+      "time": "22:58:30",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 30312,
+      "time": "22:58:33",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 30471,
+      "time": "22:58:35",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 30587,
+      "time": "22:58:36",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 30696,
+      "time": "22:58:38",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 30946,
+      "time": "22:58:39",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 31069,
+      "time": "22:58:41",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 31177,
+      "time": "22:58:42",
+      "message": "ID_SO_NOTIFY_GIVE",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 31276,
+      "time": "22:58:45",
+      "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "live"
+    },
+    {
+      "line": 31360,
+      "time": "22:58:45",
+      "message": "ID_SO_NOTIFY_HU",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "hu_notification"
+    },
+    {
+      "line": 31377,
+      "time": "22:58:45",
+      "message": "ID_SO_NOTIFY_FINISH_V2",
+      "game_type": "ModuleTuidaohu49",
+      "round": 1,
+      "phase": "settled"
+    }
+  ],
+  "wait_messages": [
+    {
+      "line": 17065,
+      "time": "22:56:01",
+      "phase": "live",
+      "chFlag": 2,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 21462,
+      "time": "22:56:20",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 21731,
+      "time": "22:56:22",
+      "phase": "live",
+      "chFlag": 1,
+      "chChair": -1,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 21819,
+      "time": "22:56:23",
+      "phase": "live",
+      "chFlag": 2,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 21899,
+      "time": "22:56:26",
+      "phase": "live",
+      "chFlag": 1,
+      "chChair": -1,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 22005,
+      "time": "22:56:28",
+      "phase": "live",
+      "chFlag": 2,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 22413,
+      "time": "22:56:48",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 22574,
+      "time": "22:56:51",
+      "phase": "live",
+      "chFlag": 1,
+      "chChair": -1,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 22655,
+      "time": "22:56:52",
+      "phase": "live",
+      "chFlag": 2,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 22739,
+      "time": "22:56:55",
+      "phase": "live",
+      "chFlag": 1,
+      "chChair": -1,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 22820,
+      "time": "22:56:56",
+      "phase": "live",
+      "chFlag": 2,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 23237,
+      "time": "22:57:16",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 23365,
+      "time": "22:57:18",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 23479,
+      "time": "22:57:20",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 23925,
+      "time": "22:57:24",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 24047,
+      "time": "22:57:26",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 24159,
+      "time": "22:57:27",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 24572,
+      "time": "22:57:31",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 24690,
+      "time": "22:57:32",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 24798,
+      "time": "22:57:33",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 25209,
+      "time": "22:57:37",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 25330,
+      "time": "22:57:38",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 25449,
+      "time": "22:57:39",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 25810,
+      "time": "22:57:43",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 25936,
+      "time": "22:57:44",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 26043,
+      "time": "22:57:46",
+      "phase": "live",
+      "chFlag": 1,
+      "chChair": -1,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 26131,
+      "time": "22:57:47",
+      "phase": "live",
+      "chFlag": 2,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 26526,
+      "time": "22:57:51",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 26646,
+      "time": "22:57:52",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 26754,
+      "time": "22:57:53",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 27111,
+      "time": "22:57:56",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 27248,
+      "time": "22:57:58",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 27361,
+      "time": "22:58:00",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 27785,
+      "time": "22:58:03",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 27906,
+      "time": "22:58:04",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 28015,
+      "time": "22:58:06",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 28376,
+      "time": "22:58:09",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 28498,
+      "time": "22:58:11",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 28609,
+      "time": "22:58:12",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 28970,
+      "time": "22:58:15",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 29090,
+      "time": "22:58:17",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 29205,
+      "time": "22:58:20",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 29607,
+      "time": "22:58:23",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 29728,
+      "time": "22:58:26",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 29843,
+      "time": "22:58:28",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 30203,
+      "time": "22:58:30",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 30326,
+      "time": "22:58:33",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 30483,
+      "time": "22:58:35",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 30610,
+      "time": "22:58:36",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 3,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 30961,
+      "time": "22:58:39",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 1,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 31081,
+      "time": "22:58:41",
+      "phase": "live",
+      "chFlag": 0,
+      "chChair": 2,
+      "chExCmd": 0,
+      "chDrawTileNum": 1,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    },
+    {
+      "line": 31185,
+      "time": "22:58:42",
+      "phase": "live",
+      "chFlag": 1,
+      "chChair": -1,
+      "chExCmd": 0,
+      "chDrawTileNum": 0,
+      "nTileIndexNum": 0,
+      "nExtraTilesNum": 0,
+      "ExtraTiles_length": 0,
+      "TileIndex_length": 0
+    }
+  ],
+  "self_draw_summary": [
+    {
+      "line": 17444,
+      "time": "22:56:03",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 22087,
+      "time": "22:56:31",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 22924,
+      "time": "22:56:59",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 23619,
+      "time": "22:57:21",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 24274,
+      "time": "22:57:28",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 24961,
+      "time": "22:57:35",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 25565,
+      "time": "22:57:41",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 26269,
+      "time": "22:57:49",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 26870,
+      "time": "22:57:54",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 27528,
+      "time": "22:58:01",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 28131,
+      "time": "22:58:07",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 28720,
+      "time": "22:58:14",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 29371,
+      "time": "22:58:22",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 29962,
+      "time": "22:58:29",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    },
+    {
+      "line": 30711,
+      "time": "22:58:38",
+      "phase": "live",
+      "single_tile_has_positive_value": true,
+      "multi_tile_count": 1
+    }
+  ],
+  "initial_self_hand_counts": [
+    {
+      "line": 16990,
+      "time": "22:56:01",
+      "count": 13,
+      "placeholder_entries": 0
+    }
+  ],
+  "model_snapshots": [],
+  "show_hand_events": [],
+  "replay_balance_flags": [
+    {
+      "line": 17124,
+      "time": "22:56:01",
+      "value": false
+    }
+  ],
+  "wait_aggregate": {
+    "parsed_records": 52,
+    "chExCmd_values": {
+      "0": 52
+    },
+    "nExtraTilesNum_values": {
+      "0": 52
+    },
+    "extra_array_lengths": {
+      "0": 52
+    },
+    "with_positive_draw_count": 40,
+    "unparsed_wait_markers": 0
+  },
+  "tlv_mentions_by_phase": {
+    "live": {
+      "EM_DN_TLV_SHARE_TABLE_INFO": 2,
+      "EM_UP_TLV_TIMEINFO": 2,
+      "EM_DN_TLV_LUA_CONFIG": 2,
+      "EM_UP_TLV_LAIZI": 2,
+      "EM_UP_TLV_FLOWER_KEY": 14,
+      "EM_DN_TLV_RANK_ITEM": 2,
+      "EM_UP_TLV_DO_WAIT_KEY": 109,
+      "EM_UP_TLV_PROTO_BUF": 36,
+      "EM_UP_TLV_CONFIG_INFO": 2,
+      "EM_UP_TLV_TABLE_CONF_INFO": 2,
+      "EM_DN_TLV_ROUND_ID_INFO": 2,
+      "EM_DN_TLV_GRADE_SCORE_INFO": 142,
+      "EM_DN_TLV_ABILITY_TILE_WALL_INFO": 2,
+      "EM_DN_TLV_ROUND_INTELLIGENCE_ADVICE_SWITCH": 2,
+      "EM_DN_TLV_TABLE_DONNER_INFO": 2,
+      "EM_DN_TLV_ROUND_FEATURE": 2,
+      "EM_DN_TLV_ABNORMAL_TILES_CONF": 2,
+      "EM_DN_TLV_NEW_RECOMMEND_FAN_TARGET": 66,
+      "EM_DN_TLV_NEW_SECTION_SCORE_JIE_SUAN": 154,
+      "EM_UP_TLV_DONNNERINFO": 105,
+      "EM_UP_TLV_RESTRICT_INFO": 105,
+      "EM_UP_TLV_DO_GIVE_KEY": 34,
+      "EM_DN_TLV_BLOCK_INFO_EX_LIST": 18,
+      "EM_UP_TLV_DO_BLOCK_KEY": 8,
+      "EM_DN_TLV_INTELLIGENCE_ADVICE": 4,
+      "EM_DN_TLV_GIVE_GANG_INFO": 2,
+      "EM_DN_TLV_FAN_INFO": 3,
+      "EM_DN_TLV_WIN_TILE_TYPE": 3,
+      "EM_UP_TLV_SINGLE_DETAIL_LIST": 3
+    }
+  },
+  "hand_tlv_mentions": {
+    "live": {
+      "EM_UP_TLV_HAND_TILES": 0,
+      "EM_DN_TLV_KEY_HAND_TILES": 0,
+      "EM_UP_TLV_SEND_CARD": 0,
+      "EM_DN_TLV_SEND_CARD": 0
+    }
+  },
+  "self_draw_aggregate": {
+    "parsed_records": 15,
+    "positive_single_tile_records": 15
+  },
+  "model_aggregates": {},
+  "limits": [
+    "Round count and phases are limited to this individual main log.",
+    "Zero observed extra fields do not prove unlogged packet fields are absent.",
+    "TLV logging may repeat the same item in two loops; mention counts are not independent packet counts.",
+    "Repeated model snapshots are observations, not independent hands.",
+    "Post-Hu and settlement data must not be treated as ordinary concealed-hand data.",
+    "This report contains counts and placeholders, not player identifiers or actual hand values."
+  ],
+  "primary_entry": 14,
+  "main_log_count": 2,
+  "main_logs": [
+    {
+      "entry": 13,
+      "placeholder_value_from_MJDef": 0,
+      "dispatches": [],
+      "wait_messages": [],
+      "self_draw_summary": [],
+      "initial_self_hand_counts": [],
+      "model_snapshots": [],
+      "show_hand_events": [],
+      "replay_balance_flags": [],
+      "wait_aggregate": {
+        "parsed_records": 0,
+        "chExCmd_values": {},
+        "nExtraTilesNum_values": {},
+        "extra_array_lengths": {},
+        "with_positive_draw_count": 0,
+        "unparsed_wait_markers": 0
+      },
+      "tlv_mentions_by_phase": {},
+      "hand_tlv_mentions": {},
+      "self_draw_aggregate": {
+        "parsed_records": 0,
+        "positive_single_tile_records": 0
+      },
+      "model_aggregates": {},
+      "limits": [
+        "Round count and phases are limited to this individual main log.",
+        "Zero observed extra fields do not prove unlogged packet fields are absent.",
+        "TLV logging may repeat the same item in two loops; mention counts are not independent packet counts.",
+        "Repeated model snapshots are observations, not independent hands.",
+        "Post-Hu and settlement data must not be treated as ordinary concealed-hand data.",
+        "This report contains counts and placeholders, not player identifiers or actual hand values."
+      ]
+    },
+    {
+      "entry": 14,
+      "placeholder_value_from_MJDef": 0,
+      "dispatches": [
+        {
+          "line": 16416,
+          "time": "22:56:00",
+          "message": "ID_SO_NOTIFY_TRUST",
+          "game_type": "ModuleTuidaohu49",
+          "round": 0,
+          "phase": "before_deal"
+        },
+        {
+          "line": 16533,
+          "time": "22:56:00",
+          "message": "ID_SO_TABLE_ALL_INFO",
+          "game_type": "ModuleTuidaohu49",
+          "round": 0,
+          "phase": "before_deal"
+        },
+        {
+          "line": 16969,
+          "time": "22:56:01",
+          "message": "ID_SO_NOTIFY_DEAL",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 17427,
+          "time": "22:56:03",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 21447,
+          "time": "22:56:20",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 21723,
+          "time": "22:56:22",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 21794,
+          "time": "22:56:23",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 21891,
+          "time": "22:56:26",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 21980,
+          "time": "22:56:28",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22072,
+          "time": "22:56:31",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22291,
+          "time": "22:56:40",
+          "message": "ID_SO_NOTIFY_DELAY_GIVE_TIME",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22396,
+          "time": "22:56:48",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22566,
+          "time": "22:56:51",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22638,
+          "time": "22:56:52",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22731,
+          "time": "22:56:55",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22803,
+          "time": "22:56:56",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 22909,
+          "time": "22:56:59",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23109,
+          "time": "22:57:08",
+          "message": "ID_SO_NOTIFY_DELAY_GIVE_TIME",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23222,
+          "time": "22:57:16",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23263,
+          "time": "22:57:16",
+          "message": "ID_SO_NOTIFY_TRUST",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23353,
+          "time": "22:57:18",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23465,
+          "time": "22:57:20",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23574,
+          "time": "22:57:21",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23597,
+          "time": "22:57:21",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 23910,
+          "time": "22:57:24",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24035,
+          "time": "22:57:26",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24147,
+          "time": "22:57:27",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24257,
+          "time": "22:57:28",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24557,
+          "time": "22:57:31",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24678,
+          "time": "22:57:32",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24786,
+          "time": "22:57:33",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24904,
+          "time": "22:57:35",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 24939,
+          "time": "22:57:35",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 25194,
+          "time": "22:57:37",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 25318,
+          "time": "22:57:38",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 25437,
+          "time": "22:57:39",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 25550,
+          "time": "22:57:41",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 25795,
+          "time": "22:57:43",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 25924,
+          "time": "22:57:44",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26035,
+          "time": "22:57:46",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26106,
+          "time": "22:57:47",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26207,
+          "time": "22:57:49",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26247,
+          "time": "22:57:49",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26511,
+          "time": "22:57:51",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26634,
+          "time": "22:57:52",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26742,
+          "time": "22:57:53",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 26855,
+          "time": "22:57:54",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 27096,
+          "time": "22:57:56",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 27236,
+          "time": "22:57:58",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 27349,
+          "time": "22:58:00",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 27466,
+          "time": "22:58:01",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 27506,
+          "time": "22:58:01",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 27770,
+          "time": "22:58:03",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 27894,
+          "time": "22:58:04",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 28003,
+          "time": "22:58:06",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 28116,
+          "time": "22:58:07",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 28361,
+          "time": "22:58:09",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 28486,
+          "time": "22:58:11",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 28597,
+          "time": "22:58:12",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 28705,
+          "time": "22:58:14",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 28955,
+          "time": "22:58:15",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 29078,
+          "time": "22:58:17",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 29191,
+          "time": "22:58:20",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 29356,
+          "time": "22:58:22",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 29592,
+          "time": "22:58:23",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 29716,
+          "time": "22:58:26",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 29831,
+          "time": "22:58:28",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 29947,
+          "time": "22:58:29",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 30188,
+          "time": "22:58:30",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 30312,
+          "time": "22:58:33",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 30471,
+          "time": "22:58:35",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 30587,
+          "time": "22:58:36",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 30696,
+          "time": "22:58:38",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 30946,
+          "time": "22:58:39",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 31069,
+          "time": "22:58:41",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 31177,
+          "time": "22:58:42",
+          "message": "ID_SO_NOTIFY_GIVE",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 31276,
+          "time": "22:58:45",
+          "message": "ID_SO_NOTIFY_BLOCK_RESULT",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "live"
+        },
+        {
+          "line": 31360,
+          "time": "22:58:45",
+          "message": "ID_SO_NOTIFY_HU",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "hu_notification"
+        },
+        {
+          "line": 31377,
+          "time": "22:58:45",
+          "message": "ID_SO_NOTIFY_FINISH_V2",
+          "game_type": "ModuleTuidaohu49",
+          "round": 1,
+          "phase": "settled"
+        }
+      ],
+      "wait_messages": [
+        {
+          "line": 17065,
+          "time": "22:56:01",
+          "phase": "live",
+          "chFlag": 2,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 21462,
+          "time": "22:56:20",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 21731,
+          "time": "22:56:22",
+          "phase": "live",
+          "chFlag": 1,
+          "chChair": -1,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 21819,
+          "time": "22:56:23",
+          "phase": "live",
+          "chFlag": 2,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 21899,
+          "time": "22:56:26",
+          "phase": "live",
+          "chFlag": 1,
+          "chChair": -1,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 22005,
+          "time": "22:56:28",
+          "phase": "live",
+          "chFlag": 2,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 22413,
+          "time": "22:56:48",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 22574,
+          "time": "22:56:51",
+          "phase": "live",
+          "chFlag": 1,
+          "chChair": -1,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 22655,
+          "time": "22:56:52",
+          "phase": "live",
+          "chFlag": 2,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 22739,
+          "time": "22:56:55",
+          "phase": "live",
+          "chFlag": 1,
+          "chChair": -1,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 22820,
+          "time": "22:56:56",
+          "phase": "live",
+          "chFlag": 2,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 23237,
+          "time": "22:57:16",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 23365,
+          "time": "22:57:18",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 23479,
+          "time": "22:57:20",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 23925,
+          "time": "22:57:24",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 24047,
+          "time": "22:57:26",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 24159,
+          "time": "22:57:27",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 24572,
+          "time": "22:57:31",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 24690,
+          "time": "22:57:32",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 24798,
+          "time": "22:57:33",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 25209,
+          "time": "22:57:37",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 25330,
+          "time": "22:57:38",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 25449,
+          "time": "22:57:39",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 25810,
+          "time": "22:57:43",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 25936,
+          "time": "22:57:44",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 26043,
+          "time": "22:57:46",
+          "phase": "live",
+          "chFlag": 1,
+          "chChair": -1,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 26131,
+          "time": "22:57:47",
+          "phase": "live",
+          "chFlag": 2,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 26526,
+          "time": "22:57:51",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 26646,
+          "time": "22:57:52",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 26754,
+          "time": "22:57:53",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 27111,
+          "time": "22:57:56",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 27248,
+          "time": "22:57:58",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 27361,
+          "time": "22:58:00",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 27785,
+          "time": "22:58:03",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 27906,
+          "time": "22:58:04",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 28015,
+          "time": "22:58:06",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 28376,
+          "time": "22:58:09",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 28498,
+          "time": "22:58:11",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 28609,
+          "time": "22:58:12",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 28970,
+          "time": "22:58:15",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 29090,
+          "time": "22:58:17",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 29205,
+          "time": "22:58:20",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 29607,
+          "time": "22:58:23",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 29728,
+          "time": "22:58:26",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 29843,
+          "time": "22:58:28",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 30203,
+          "time": "22:58:30",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 30326,
+          "time": "22:58:33",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 30483,
+          "time": "22:58:35",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 30610,
+          "time": "22:58:36",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 3,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 30961,
+          "time": "22:58:39",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 1,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 31081,
+          "time": "22:58:41",
+          "phase": "live",
+          "chFlag": 0,
+          "chChair": 2,
+          "chExCmd": 0,
+          "chDrawTileNum": 1,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        },
+        {
+          "line": 31185,
+          "time": "22:58:42",
+          "phase": "live",
+          "chFlag": 1,
+          "chChair": -1,
+          "chExCmd": 0,
+          "chDrawTileNum": 0,
+          "nTileIndexNum": 0,
+          "nExtraTilesNum": 0,
+          "ExtraTiles_length": 0,
+          "TileIndex_length": 0
+        }
+      ],
+      "self_draw_summary": [
+        {
+          "line": 17444,
+          "time": "22:56:03",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 22087,
+          "time": "22:56:31",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 22924,
+          "time": "22:56:59",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 23619,
+          "time": "22:57:21",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 24274,
+          "time": "22:57:28",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 24961,
+          "time": "22:57:35",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 25565,
+          "time": "22:57:41",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 26269,
+          "time": "22:57:49",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 26870,
+          "time": "22:57:54",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 27528,
+          "time": "22:58:01",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 28131,
+          "time": "22:58:07",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 28720,
+          "time": "22:58:14",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 29371,
+          "time": "22:58:22",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 29962,
+          "time": "22:58:29",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        },
+        {
+          "line": 30711,
+          "time": "22:58:38",
+          "phase": "live",
+          "single_tile_has_positive_value": true,
+          "multi_tile_count": 1
+        }
+      ],
+      "initial_self_hand_counts": [
+        {
+          "line": 16990,
+          "time": "22:56:01",
+          "count": 13,
+          "placeholder_entries": 0
+        }
+      ],
+      "model_snapshots": [],
+      "show_hand_events": [],
+      "replay_balance_flags": [
+        {
+          "line": 17124,
+          "time": "22:56:01",
+          "value": false
+        }
+      ],
+      "wait_aggregate": {
+        "parsed_records": 52,
+        "chExCmd_values": {
+          "0": 52
+        },
+        "nExtraTilesNum_values": {
+          "0": 52
+        },
+        "extra_array_lengths": {
+          "0": 52
+        },
+        "with_positive_draw_count": 40,
+        "unparsed_wait_markers": 0
+      },
+      "tlv_mentions_by_phase": {
+        "live": {
+          "EM_DN_TLV_SHARE_TABLE_INFO": 2,
+          "EM_UP_TLV_TIMEINFO": 2,
+          "EM_DN_TLV_LUA_CONFIG": 2,
+          "EM_UP_TLV_LAIZI": 2,
+          "EM_UP_TLV_FLOWER_KEY": 14,
+          "EM_DN_TLV_RANK_ITEM": 2,
+          "EM_UP_TLV_DO_WAIT_KEY": 109,
+          "EM_UP_TLV_PROTO_BUF": 36,
+          "EM_UP_TLV_CONFIG_INFO": 2,
+          "EM_UP_TLV_TABLE_CONF_INFO": 2,
+          "EM_DN_TLV_ROUND_ID_INFO": 2,
+          "EM_DN_TLV_GRADE_SCORE_INFO": 142,
+          "EM_DN_TLV_ABILITY_TILE_WALL_INFO": 2,
+          "EM_DN_TLV_ROUND_INTELLIGENCE_ADVICE_SWITCH": 2,
+          "EM_DN_TLV_TABLE_DONNER_INFO": 2,
+          "EM_DN_TLV_ROUND_FEATURE": 2,
+          "EM_DN_TLV_ABNORMAL_TILES_CONF": 2,
+          "EM_DN_TLV_NEW_RECOMMEND_FAN_TARGET": 66,
+          "EM_DN_TLV_NEW_SECTION_SCORE_JIE_SUAN": 154,
+          "EM_UP_TLV_DONNNERINFO": 105,
+          "EM_UP_TLV_RESTRICT_INFO": 105,
+          "EM_UP_TLV_DO_GIVE_KEY": 34,
+          "EM_DN_TLV_BLOCK_INFO_EX_LIST": 18,
+          "EM_UP_TLV_DO_BLOCK_KEY": 8,
+          "EM_DN_TLV_INTELLIGENCE_ADVICE": 4,
+          "EM_DN_TLV_GIVE_GANG_INFO": 2,
+          "EM_DN_TLV_FAN_INFO": 3,
+          "EM_DN_TLV_WIN_TILE_TYPE": 3,
+          "EM_UP_TLV_SINGLE_DETAIL_LIST": 3
+        }
+      },
+      "hand_tlv_mentions": {
+        "live": {
+          "EM_UP_TLV_HAND_TILES": 0,
+          "EM_DN_TLV_KEY_HAND_TILES": 0,
+          "EM_UP_TLV_SEND_CARD": 0,
+          "EM_DN_TLV_SEND_CARD": 0
+        }
+      },
+      "self_draw_aggregate": {
+        "parsed_records": 15,
+        "positive_single_tile_records": 15
+      },
+      "model_aggregates": {},
+      "limits": [
+        "Round count and phases are limited to this individual main log.",
+        "Zero observed extra fields do not prove unlogged packet fields are absent.",
+        "TLV logging may repeat the same item in two loops; mention counts are not independent packet counts.",
+        "Repeated model snapshots are observations, not independent hands.",
+        "Post-Hu and settlement data must not be treated as ordinary concealed-hand data.",
+        "This report contains counts and placeholders, not player identifiers or actual hand values."
+      ]
+    }
+  ],
+  "main_log_scope": "Compatibility top-level facts describe the lexically latest main log; main_logs includes every main log independently."
+}

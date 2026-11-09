@@ -1,0 +1,333 @@
+{
+  "files": [
+    {
+      "entry": 1,
+      "known_static_basename": "MJGameBaseConfig.data",
+      "bytes": 6580,
+      "sha256": "2e52705074a1310b70c9f8330e19aedec91492417a1ee21b2ea4fe5f30b927ed",
+      "known_code_name_mentions": {
+        "NextToDoHelper": 0,
+        "HandleSelfRedraw": 0,
+        "RevcDealCommand": 0,
+        "RecvGameFinishCommand": 0,
+        "FanRecommendDetail": 0,
+        "NewFanRecommendDataModel": 0,
+        "MJGameContext": 0,
+        "TDoWaitInfo": 0
+      },
+      "ifix_magic_matches_recovered_loader": false,
+      "whole_stream_decompression": [
+        {
+          "format": "zlib",
+          "decoded_bytes": 108722,
+          "protobuf_top_level_field_numbers": [
+            1,
+            2,
+            3
+          ],
+          "length_delimited_entries": 648
+        }
+      ],
+      "bundled_comparisons": [
+        {
+          "bytes": 6268,
+          "sha256": "657f5e1b545419fa42070d90a8d5755cfd3c4926c97f8ec3540f9df1a304088d",
+          "byte_identical": false
+        }
+      ],
+      "base_config_comparison": {
+        "device_sheet1_rows": 486,
+        "bundled_sheet1_rows": 484,
+        "section_comparisons": [
+          {
+            "field_number": 1,
+            "device_entries": 486,
+            "bundled_entries": 484,
+            "serialized_entries_identical": false
+          },
+          {
+            "field_number": 2,
+            "device_entries": 134,
+            "bundled_entries": 94,
+            "serialized_entries_identical": false
+          },
+          {
+            "field_number": 3,
+            "device_entries": 28,
+            "bundled_entries": 28,
+            "serialized_entries_identical": true
+          }
+        ],
+        "added_row_ids": [
+          400,
+          401
+        ],
+        "removed_row_ids": [],
+        "changed_serialized_row_ids": [
+          841398,
+          842398,
+          843398,
+          844398,
+          8801398
+        ],
+        "changed_numeric_config_row_ids": [
+          841398,
+          842398,
+          843398,
+          844398,
+          8801398
+        ],
+        "target_game_rows": [
+          {
+            "source": "device",
+            "row_id": 149,
+            "found": true,
+            "value_count": 34,
+            "named_config_values": {
+              "totalPlayerNum": 4,
+              "totalCardNum": 144,
+              "canTing": 0,
+              "showTingGiveCard": 0,
+              "afterTingShowAllHandTile": 0,
+              "afterTingShowHuHandTile": 0
+            }
+          },
+          {
+            "source": "bundled",
+            "row_id": 149,
+            "found": true,
+            "value_count": 34,
+            "named_config_values": {
+              "totalPlayerNum": 4,
+              "totalCardNum": 144,
+              "canTing": 0,
+              "showTingGiveCard": 0,
+              "afterTingShowAllHandTile": 0,
+              "afterTingShowHuHandTile": 0
+            }
+          }
+        ],
+        "limits": [
+          "Row 149 matches the recovered GameType enum; effective room overrides and patches require separate verification.",
+          "Only selected named rule flags and row IDs are emitted; other strings and field values are omitted."
+        ]
+      },
+      "runtime_config_observations": [
+        {
+          "entry": 13,
+          "observations": []
+        },
+        {
+          "entry": 14,
+          "observations": [
+            {
+              "line": 15871,
+              "value_count": 60,
+              "matching_device_row_ids": [
+                270398,
+                271398,
+                272398
+              ],
+              "named_config_values": {
+                "totalPlayerNum": 4,
+                "totalCardNum": 144,
+                "canTing": 0,
+                "showTingGiveCard": 0,
+                "afterTingShowAllHandTile": 0,
+                "afterTingShowHuHandTile": 0,
+                "showRecommendFanPanel": 0,
+                "HasSingleWall": 0,
+                "IsParallelDraw": 0
+              }
+            },
+            {
+              "line": 16030,
+              "value_count": 60,
+              "matching_device_row_ids": [
+                270398,
+                271398,
+                272398
+              ],
+              "named_config_values": {
+                "totalPlayerNum": 4,
+                "totalCardNum": 144,
+                "canTing": 0,
+                "showTingGiveCard": 0,
+                "afterTingShowAllHandTile": 0,
+                "afterTingShowHuHandTile": 0,
+                "showRecommendFanPanel": 0,
+                "HasSingleWall": 0,
+                "IsParallelDraw": 0
+              }
+            },
+            {
+              "line": 16043,
+              "value_count": 60,
+              "matching_device_row_ids": [
+                270398,
+                271398,
+                272398
+              ],
+              "named_config_values": {
+                "totalPlayerNum": 4,
+                "totalCardNum": 144,
+                "canTing": 0,
+                "showTingGiveCard": 0,
+                "afterTingShowAllHandTile": 0,
+                "afterTingShowHuHandTile": 0,
+                "showRecommendFanPanel": 0,
+                "HasSingleWall": 0,
+                "IsParallelDraw": 0
+              }
+            },
+            {
+              "line": 16346,
+              "value_count": 60,
+              "matching_device_row_ids": [
+                270398,
+                271398,
+                272398
+              ],
+              "named_config_values": {
+                "totalPlayerNum": 4,
+                "totalCardNum": 144,
+                "canTing": 0,
+                "showTingGiveCard": 0,
+                "afterTingShowAllHandTile": 0,
+                "afterTingShowHuHandTile": 0,
+                "showRecommendFanPanel": 0,
+                "HasSingleWall": 0,
+                "IsParallelDraw": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": 2,
+      "known_static_basename": "ModuleFanConfig.data",
+      "bytes": 5552,
+      "sha256": "02080a041543350c75240ed35b6eae9bb6add3313fcbd8e6ba5033be6b22ee45",
+      "known_code_name_mentions": {
+        "NextToDoHelper": 0,
+        "HandleSelfRedraw": 0,
+        "RevcDealCommand": 0,
+        "RecvGameFinishCommand": 0,
+        "FanRecommendDetail": 0,
+        "NewFanRecommendDataModel": 0,
+        "MJGameContext": 0,
+        "TDoWaitInfo": 0
+      },
+      "ifix_magic_matches_recovered_loader": false,
+      "whole_stream_decompression": [
+        {
+          "format": "zlib",
+          "decoded_bytes": 18603,
+          "protobuf_top_level_field_numbers": [
+            1
+          ],
+          "length_delimited_entries": 444
+        }
+      ],
+      "bundled_comparisons": [
+        {
+          "bytes": 5552,
+          "sha256": "02080a041543350c75240ed35b6eae9bb6add3313fcbd8e6ba5033be6b22ee45",
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "entry": 3,
+      "known_static_basename": "PatchIOS.bytes",
+      "bytes": 76786,
+      "sha256": "adeaf7fbd13860677f39b805ff227c9905959c984eea2a6abcdc39fa2489b92c",
+      "known_code_name_mentions": {
+        "NextToDoHelper": 0,
+        "HandleSelfRedraw": 0,
+        "RevcDealCommand": 0,
+        "RecvGameFinishCommand": 0,
+        "FanRecommendDetail": 0,
+        "NewFanRecommendDataModel": 0,
+        "MJGameContext": 0,
+        "TDoWaitInfo": 0
+      },
+      "ifix_magic_matches_recovered_loader": false,
+      "bundled_comparisons": []
+    },
+    {
+      "entry": 4,
+      "known_static_basename": "SvrNotifyTips.data",
+      "bytes": 1092,
+      "sha256": "6e1646e33eb73a27939a471549653db551426977790d2ee0b3226a4796362f3e",
+      "known_code_name_mentions": {
+        "NextToDoHelper": 0,
+        "HandleSelfRedraw": 0,
+        "RevcDealCommand": 0,
+        "RecvGameFinishCommand": 0,
+        "FanRecommendDetail": 0,
+        "NewFanRecommendDataModel": 0,
+        "MJGameContext": 0,
+        "TDoWaitInfo": 0
+      },
+      "ifix_magic_matches_recovered_loader": false,
+      "whole_stream_decompression": [
+        {
+          "format": "zlib",
+          "decoded_bytes": 2671,
+          "protobuf_top_level_field_numbers": [
+            1
+          ],
+          "length_delimited_entries": 39
+        }
+      ],
+      "bundled_comparisons": [
+        {
+          "bytes": 1092,
+          "sha256": "6e1646e33eb73a27939a471549653db551426977790d2ee0b3226a4796362f3e",
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "entry": 5,
+      "known_static_basename": "VedioRecordConfig.data",
+      "bytes": 230,
+      "sha256": "4c87914e0ac4ee708d388e065dde25f8a2e146ceaacf2fc209dc9b4898ec179e",
+      "known_code_name_mentions": {
+        "NextToDoHelper": 0,
+        "HandleSelfRedraw": 0,
+        "RevcDealCommand": 0,
+        "RecvGameFinishCommand": 0,
+        "FanRecommendDetail": 0,
+        "NewFanRecommendDataModel": 0,
+        "MJGameContext": 0,
+        "TDoWaitInfo": 0
+      },
+      "ifix_magic_matches_recovered_loader": false,
+      "whole_stream_decompression": [
+        {
+          "format": "zlib",
+          "decoded_bytes": 336,
+          "protobuf_top_level_field_numbers": [
+            1
+          ],
+          "length_delimited_entries": 12
+        }
+      ],
+      "bundled_comparisons": [
+        {
+          "bytes": 230,
+          "sha256": "4c87914e0ac4ee708d388e065dde25f8a2e146ceaacf2fc209dc9b4898ec179e",
+          "byte_identical": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only five known static code/config basenames are inventoried.",
+    "Wire parseability does not establish a schema or runtime use.",
+    "No arbitrary strings, field values, player identifiers or raw patch bytes are emitted."
+  ]
+}
