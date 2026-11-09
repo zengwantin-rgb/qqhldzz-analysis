@@ -1,0 +1,73 @@
+{
+  "schema_count": 8,
+  "direct_consumer_methods": 8,
+  "recorded_tlv_mentions": [
+    {
+      "name": "EM_DN_TLV_ABILITY_TILE_WALL_INFO",
+      "value": 108,
+      "recorded_mentions_by_phase": {
+        "live": 2
+      }
+    },
+    {
+      "name": "EM_DN_TLV_PLAYER_HAND_ABILITY_TILE_INFO",
+      "value": 110,
+      "recorded_mentions_by_phase": {
+        "live": 0
+      }
+    },
+    {
+      "name": "EM_DN_TLV_NEW_RECOMMEND_FAN_TARGET",
+      "value": 168,
+      "recorded_mentions_by_phase": {
+        "live": 66
+      }
+    }
+  ],
+  "seat_fields": [
+    {
+      "type": "MJSoPb.TPlayerHandAbilityTileInfo",
+      "members": [
+        "HasSeatID",
+        "SeatID",
+        "seatID_"
+      ]
+    },
+    {
+      "type": "MJSoPb.TPlayerTotalHandAbilityTileInfo",
+      "members": []
+    },
+    {
+      "type": "MJSoPb.TOneNewRecommendFanTarget",
+      "members": []
+    },
+    {
+      "type": "MJSoPb.TNewRecommendFanTarget",
+      "members": []
+    },
+    {
+      "type": "HuanLeGameSo.TPlayerHandAbilityTileInfo",
+      "members": [
+        "nSeatID"
+      ]
+    },
+    {
+      "type": "HuanLeGameSo.TPlayerTotalHandAbilityTileInfo",
+      "members": []
+    },
+    {
+      "type": "HuanLeGameSo.TOneNewRecommendFanTarget",
+      "members": []
+    },
+    {
+      "type": "HuanLeGameSo.TNewRecommendFanTarget",
+      "members": []
+    }
+  ],
+  "limits": [
+    "Round observations are reused from the already validated published report; no new device sample was collected.",
+    "TLV mention counts may include repeated logging and are not unique network packet counts.",
+    "Zero mentions do not establish that unlogged messages or fields were absent.",
+    "Seat fields alone do not establish whether tile entries represent actual concealed tiles, ability reveals or placeholders."
+  ]
+}

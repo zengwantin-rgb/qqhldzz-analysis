@@ -1,0 +1,2024 @@
+{
+  "schemas": [
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TPlayerHandAbilityTileInfo",
+      "fields": [
+        {
+          "name": "_unknownFields",
+          "type": "Google.Protobuf.UnknownFieldSet"
+        },
+        {
+          "name": "_hasBits0",
+          "type": "System.Int32"
+        },
+        {
+          "name": "seatID_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "tileInfos_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Parser",
+          "type": "Google.Protobuf.MessageParser\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E"
+        },
+        {
+          "name": "Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "pb::Google.Protobuf.IMessage.Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "SeatID",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasSeatID",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "TileInfos",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TPlayerTotalHandAbilityTileInfo",
+      "fields": [
+        {
+          "name": "_unknownFields",
+          "type": "Google.Protobuf.UnknownFieldSet"
+        },
+        {
+          "name": "playerHandAbilityTileInfo_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Parser",
+          "type": "Google.Protobuf.MessageParser\u00601\u003CMJSoPb.TPlayerTotalHandAbilityTileInfo\u003E"
+        },
+        {
+          "name": "Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "pb::Google.Protobuf.IMessage.Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "PlayerHandAbilityTileInfo",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TOneNewRecommendFanTarget",
+      "fields": [
+        {
+          "name": "_unknownFields",
+          "type": "Google.Protobuf.UnknownFieldSet"
+        },
+        {
+          "name": "_hasBits0",
+          "type": "System.Int32"
+        },
+        {
+          "name": "targetIdx_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "fanIdx_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "fanMulti_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "fanName_",
+          "type": "System.String"
+        },
+        {
+          "name": "fanDesc_",
+          "type": "System.String"
+        },
+        {
+          "name": "extDesc_",
+          "type": "System.String"
+        },
+        {
+          "name": "targetTiles_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "targetTilesFlag_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "targetTilesShowSplit_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "curHandTiles_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "curHandTilesFlag_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "isChosen_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "maxFanMulti_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "score_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "paiDesc_",
+          "type": "System.String"
+        },
+        {
+          "name": "paiList_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "achieveType_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "noticeType_",
+          "type": "System.Int32"
+        },
+        {
+          "name": "destoryNoticeTiles_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "destoryNoticeTilesType_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "targetTilesShowSplitShow_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "curHandTilesFlagNew_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Parser",
+          "type": "Google.Protobuf.MessageParser\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E"
+        },
+        {
+          "name": "Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "pb::Google.Protobuf.IMessage.Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "TargetIdx",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasTargetIdx",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "FanIdx",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasFanIdx",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "FanMulti",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasFanMulti",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "FanName",
+          "type": "System.String"
+        },
+        {
+          "name": "HasFanName",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "FanDesc",
+          "type": "System.String"
+        },
+        {
+          "name": "HasFanDesc",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "ExtDesc",
+          "type": "System.String"
+        },
+        {
+          "name": "HasExtDesc",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "TargetTiles",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "TargetTilesFlag",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "TargetTilesShowSplit",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "CurHandTiles",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "CurHandTilesFlag",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "IsChosen",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasIsChosen",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "MaxFanMulti",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasMaxFanMulti",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "Score",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasScore",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "PaiDesc",
+          "type": "System.String"
+        },
+        {
+          "name": "HasPaiDesc",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "PaiList",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "AchieveType",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasAchieveType",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "NoticeType",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasNoticeType",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "DestoryNoticeTiles",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "DestoryNoticeTilesType",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "TargetTilesShowSplitShow",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        },
+        {
+          "name": "CurHandTilesFlagNew",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "MJSoPb.TNewRecommendFanTarget",
+      "fields": [
+        {
+          "name": "_unknownFields",
+          "type": "Google.Protobuf.UnknownFieldSet"
+        },
+        {
+          "name": "_hasBits0",
+          "type": "System.Int32"
+        },
+        {
+          "name": "targetList_",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E"
+        },
+        {
+          "name": "uiMode_",
+          "type": "System.Int32"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Parser",
+          "type": "Google.Protobuf.MessageParser\u00601\u003CMJSoPb.TNewRecommendFanTarget\u003E"
+        },
+        {
+          "name": "Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "pb::Google.Protobuf.IMessage.Descriptor",
+          "type": "Google.Protobuf.Reflection.MessageDescriptor"
+        },
+        {
+          "name": "TargetList",
+          "type": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E"
+        },
+        {
+          "name": "UiMode",
+          "type": "System.Int32"
+        },
+        {
+          "name": "HasUiMode",
+          "type": "System.Boolean"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HuanLeGameSo.TPlayerHandAbilityTileInfo",
+      "fields": [
+        {
+          "name": "nSeatID",
+          "type": "System.Int16"
+        },
+        {
+          "name": "nTileCount",
+          "type": "System.Int16"
+        },
+        {
+          "name": "astTileInfos",
+          "type": "HuanLeGameSo.TSingleTileShowInfo[]"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HuanLeGameSo.TPlayerTotalHandAbilityTileInfo",
+      "fields": [
+        {
+          "name": "nPlayerNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "astPlayerHandAbilityTileInfo",
+          "type": "HuanLeGameSo.TPlayerHandAbilityTileInfo[]"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HuanLeGameSo.TOneNewRecommendFanTarget",
+      "fields": [
+        {
+          "name": "iTargetIdx",
+          "type": "System.Int32"
+        },
+        {
+          "name": "iFanIdx",
+          "type": "System.Int32"
+        },
+        {
+          "name": "iFanMulti",
+          "type": "System.Int32"
+        },
+        {
+          "name": "szFanName",
+          "type": "System.String"
+        },
+        {
+          "name": "szFanDesc",
+          "type": "System.String"
+        },
+        {
+          "name": "szExtDesc",
+          "type": "System.String"
+        },
+        {
+          "name": "nTargetTilesNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "TargetTiles",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "TargetTilesFlag",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "nTargetTilesShowSplitNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "TargetTilesShowSplit",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "nHandTilesNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "CurHandTiles",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "CurHandTilesFlag",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "iIsChosen",
+          "type": "System.Int32"
+        },
+        {
+          "name": "iMaxFanMulti",
+          "type": "System.Int32"
+        },
+        {
+          "name": "iScore",
+          "type": "System.Int32"
+        },
+        {
+          "name": "szPaiDesc",
+          "type": "System.String"
+        },
+        {
+          "name": "nPaiTilesNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "PaiList",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "iAchieveType",
+          "type": "System.Int32"
+        },
+        {
+          "name": "iNoticeType",
+          "type": "System.Int32"
+        },
+        {
+          "name": "nDestoryNoticesTilesNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "DestoryNoticeTiles",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "DestoryNoticeTilesType",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "nTargetTilesShowSplitShowNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "TargetTilesShowSplitShow",
+          "type": "System.Int32[]"
+        },
+        {
+          "name": "CurHandTilesFlagNew",
+          "type": "System.Int32[]"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "type": "HuanLeGameSo.TNewRecommendFanTarget",
+      "fields": [
+        {
+          "name": "nTargetNum",
+          "type": "System.Int16"
+        },
+        {
+          "name": "astTargetList",
+          "type": "HuanLeGameSo.TOneNewRecommendFanTarget[]"
+        },
+        {
+          "name": "iUiMode",
+          "type": "System.Int32"
+        }
+      ],
+      "properties": []
+    }
+  ],
+  "enums": [
+    {
+      "name": "EM_DN_TLV_ABILITY_TILE_WALL_INFO",
+      "value": 108
+    },
+    {
+      "name": "EM_DN_TLV_PLAYER_HAND_ABILITY_TILE_INFO",
+      "value": 110
+    },
+    {
+      "name": "EM_DN_TLV_NEW_RECOMMEND_FAN_TARGET",
+      "value": 168
+    }
+  ],
+  "consumers": [
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void Pb2TdrConverter::ConvertTPlayerTotalHandAbilityTileInfo(MJSoPb.TPlayerTotalHandAbilityTileInfo,HuanLeGameSo.TSOTLVUNIT)",
+      "hits": [
+        {
+          "offset": 40,
+          "opcode": "newobj",
+          "reference": "System.Void HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::.ctor()"
+        },
+        {
+          "offset": 45,
+          "opcode": "stfld",
+          "reference": "HuanLeGameSo.TPlayerTotalHandAbilityTileInfo HuanLeGameSo.USOTLVValue::stPlayerTotalHandAbilityTileInfo"
+        },
+        {
+          "offset": 56,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerTotalHandAbilityTileInfo HuanLeGameSo.USOTLVValue::stPlayerTotalHandAbilityTileInfo"
+        },
+        {
+          "offset": 61,
+          "opcode": "callvirt",
+          "reference": "tsf4g_tdr_csharp.TdrError/ErrorType HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::construct()"
+        },
+        {
+          "offset": 73,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerTotalHandAbilityTileInfo HuanLeGameSo.USOTLVValue::stPlayerTotalHandAbilityTileInfo"
+        },
+        {
+          "offset": 81,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 92,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::nPlayerNum"
+        },
+        {
+          "offset": 99,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 114,
+          "opcode": "stfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 127,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 133,
+          "opcode": "newobj",
+          "reference": "System.Void HuanLeGameSo.TPlayerHandAbilityTileInfo::.ctor()"
+        },
+        {
+          "offset": 140,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 148,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 159,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TPlayerHandAbilityTileInfo::get_SeatID()"
+        },
+        {
+          "offset": 165,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TPlayerHandAbilityTileInfo::nSeatID"
+        },
+        {
+          "offset": 171,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 179,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 190,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E MJSoPb.TPlayerHandAbilityTileInfo::get_TileInfos()"
+        },
+        {
+          "offset": 201,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TPlayerHandAbilityTileInfo::nTileCount"
+        },
+        {
+          "offset": 207,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 215,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 226,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E MJSoPb.TPlayerHandAbilityTileInfo::get_TileInfos()"
+        },
+        {
+          "offset": 241,
+          "opcode": "stfld",
+          "reference": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 254,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 261,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 274,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 281,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 289,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 300,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E MJSoPb.TPlayerHandAbilityTileInfo::get_TileInfos()"
+        },
+        {
+          "offset": 322,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 329,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 337,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 348,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E MJSoPb.TPlayerHandAbilityTileInfo::get_TileInfos()"
+        },
+        {
+          "offset": 370,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TPlayerHandAbilityTileInfo[] HuanLeGameSo.TPlayerTotalHandAbilityTileInfo::astPlayerHandAbilityTileInfo"
+        },
+        {
+          "offset": 377,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TSingleTileShowInfo[] HuanLeGameSo.TPlayerHandAbilityTileInfo::astTileInfos"
+        },
+        {
+          "offset": 385,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 396,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E MJSoPb.TPlayerHandAbilityTileInfo::get_TileInfos()"
+        },
+        {
+          "offset": 423,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        },
+        {
+          "offset": 434,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TSingleTileShowInfo\u003E MJSoPb.TPlayerHandAbilityTileInfo::get_TileInfos()"
+        },
+        {
+          "offset": 455,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TPlayerHandAbilityTileInfo\u003E MJSoPb.TPlayerTotalHandAbilityTileInfo::get_PlayerHandAbilityTileInfo()"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void Pb2TdrConverter::ConvertTNewRecommendFanTarget(MJSoPb.TNewRecommendFanTarget,HuanLeGameSo.TSOTLVUNIT)",
+      "hits": [
+        {
+          "offset": 40,
+          "opcode": "newobj",
+          "reference": "System.Void HuanLeGameSo.TNewRecommendFanTarget::.ctor()"
+        },
+        {
+          "offset": 45,
+          "opcode": "stfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 56,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 61,
+          "opcode": "callvirt",
+          "reference": "tsf4g_tdr_csharp.TdrError/ErrorType HuanLeGameSo.TNewRecommendFanTarget::construct()"
+        },
+        {
+          "offset": 73,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 81,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 92,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TNewRecommendFanTarget::nTargetNum"
+        },
+        {
+          "offset": 99,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 114,
+          "opcode": "stfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 127,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 133,
+          "opcode": "newobj",
+          "reference": "System.Void HuanLeGameSo.TOneNewRecommendFanTarget::.ctor()"
+        },
+        {
+          "offset": 140,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 148,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 159,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_TargetIdx()"
+        },
+        {
+          "offset": 164,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iTargetIdx"
+        },
+        {
+          "offset": 170,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 178,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 189,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_FanIdx()"
+        },
+        {
+          "offset": 194,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iFanIdx"
+        },
+        {
+          "offset": 200,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 208,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 219,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_FanMulti()"
+        },
+        {
+          "offset": 224,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iFanMulti"
+        },
+        {
+          "offset": 230,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 238,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 249,
+          "opcode": "callvirt",
+          "reference": "System.String MJSoPb.TOneNewRecommendFanTarget::get_FanName()"
+        },
+        {
+          "offset": 254,
+          "opcode": "stfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szFanName"
+        },
+        {
+          "offset": 260,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 268,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 279,
+          "opcode": "callvirt",
+          "reference": "System.String MJSoPb.TOneNewRecommendFanTarget::get_FanDesc()"
+        },
+        {
+          "offset": 284,
+          "opcode": "stfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szFanDesc"
+        },
+        {
+          "offset": 290,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 298,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 309,
+          "opcode": "callvirt",
+          "reference": "System.String MJSoPb.TOneNewRecommendFanTarget::get_ExtDesc()"
+        },
+        {
+          "offset": 314,
+          "opcode": "stfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szExtDesc"
+        },
+        {
+          "offset": 320,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 328,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 339,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTiles()"
+        },
+        {
+          "offset": 350,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nTargetTilesNum"
+        },
+        {
+          "offset": 356,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 364,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 375,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTiles()"
+        },
+        {
+          "offset": 390,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTiles"
+        },
+        {
+          "offset": 400,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 407,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTiles"
+        },
+        {
+          "offset": 414,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 425,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTiles()"
+        },
+        {
+          "offset": 443,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 454,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTiles()"
+        },
+        {
+          "offset": 467,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 475,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 486,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesFlag()"
+        },
+        {
+          "offset": 497,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nTargetTilesNum"
+        },
+        {
+          "offset": 503,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 511,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 522,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesFlag()"
+        },
+        {
+          "offset": 537,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesFlag"
+        },
+        {
+          "offset": 547,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 554,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesFlag"
+        },
+        {
+          "offset": 561,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 572,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesFlag()"
+        },
+        {
+          "offset": 590,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 601,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesFlag()"
+        },
+        {
+          "offset": 614,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 622,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 633,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplit()"
+        },
+        {
+          "offset": 644,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nTargetTilesShowSplitNum"
+        },
+        {
+          "offset": 650,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 658,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 669,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplit()"
+        },
+        {
+          "offset": 684,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesShowSplit"
+        },
+        {
+          "offset": 695,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 702,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesShowSplit"
+        },
+        {
+          "offset": 710,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 721,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplit()"
+        },
+        {
+          "offset": 743,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 754,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplit()"
+        },
+        {
+          "offset": 767,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 775,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 786,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTiles()"
+        },
+        {
+          "offset": 797,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nHandTilesNum"
+        },
+        {
+          "offset": 803,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 811,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 822,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTiles()"
+        },
+        {
+          "offset": 837,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTiles"
+        },
+        {
+          "offset": 848,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 855,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTiles"
+        },
+        {
+          "offset": 863,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 874,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTiles()"
+        },
+        {
+          "offset": 896,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 907,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTiles()"
+        },
+        {
+          "offset": 920,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 928,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 939,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlag()"
+        },
+        {
+          "offset": 950,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nHandTilesNum"
+        },
+        {
+          "offset": 956,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 964,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 975,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlag()"
+        },
+        {
+          "offset": 990,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTilesFlag"
+        },
+        {
+          "offset": 1001,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1008,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTilesFlag"
+        },
+        {
+          "offset": 1016,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1027,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlag()"
+        },
+        {
+          "offset": 1049,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1060,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlag()"
+        },
+        {
+          "offset": 1073,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1081,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1092,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_IsChosen()"
+        },
+        {
+          "offset": 1097,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iIsChosen"
+        },
+        {
+          "offset": 1103,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1111,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1122,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_MaxFanMulti()"
+        },
+        {
+          "offset": 1127,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iMaxFanMulti"
+        },
+        {
+          "offset": 1133,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1141,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1152,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_Score()"
+        },
+        {
+          "offset": 1157,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iScore"
+        },
+        {
+          "offset": 1163,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1171,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1182,
+          "opcode": "callvirt",
+          "reference": "System.String MJSoPb.TOneNewRecommendFanTarget::get_PaiDesc()"
+        },
+        {
+          "offset": 1187,
+          "opcode": "stfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szPaiDesc"
+        },
+        {
+          "offset": 1193,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1201,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1212,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_PaiList()"
+        },
+        {
+          "offset": 1223,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nPaiTilesNum"
+        },
+        {
+          "offset": 1229,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1237,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1248,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_PaiList()"
+        },
+        {
+          "offset": 1263,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::PaiList"
+        },
+        {
+          "offset": 1274,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1281,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::PaiList"
+        },
+        {
+          "offset": 1289,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1300,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_PaiList()"
+        },
+        {
+          "offset": 1322,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1333,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_PaiList()"
+        },
+        {
+          "offset": 1346,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1354,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1365,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_AchieveType()"
+        },
+        {
+          "offset": 1370,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iAchieveType"
+        },
+        {
+          "offset": 1376,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1384,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1395,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TOneNewRecommendFanTarget::get_NoticeType()"
+        },
+        {
+          "offset": 1400,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iNoticeType"
+        },
+        {
+          "offset": 1406,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1414,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1425,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTiles()"
+        },
+        {
+          "offset": 1436,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nDestoryNoticesTilesNum"
+        },
+        {
+          "offset": 1442,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1450,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1461,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTiles()"
+        },
+        {
+          "offset": 1476,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::DestoryNoticeTiles"
+        },
+        {
+          "offset": 1487,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1494,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::DestoryNoticeTiles"
+        },
+        {
+          "offset": 1502,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1513,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTiles()"
+        },
+        {
+          "offset": 1535,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1546,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTiles()"
+        },
+        {
+          "offset": 1559,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1567,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1578,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTilesType()"
+        },
+        {
+          "offset": 1589,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nDestoryNoticesTilesNum"
+        },
+        {
+          "offset": 1595,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1603,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1614,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTilesType()"
+        },
+        {
+          "offset": 1629,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::DestoryNoticeTilesType"
+        },
+        {
+          "offset": 1640,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1647,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::DestoryNoticeTilesType"
+        },
+        {
+          "offset": 1655,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1666,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTilesType()"
+        },
+        {
+          "offset": 1688,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1699,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_DestoryNoticeTilesType()"
+        },
+        {
+          "offset": 1712,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1720,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1731,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplitShow()"
+        },
+        {
+          "offset": 1742,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nTargetTilesShowSplitShowNum"
+        },
+        {
+          "offset": 1748,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1756,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1767,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplitShow()"
+        },
+        {
+          "offset": 1782,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesShowSplitShow"
+        },
+        {
+          "offset": 1793,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1800,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesShowSplitShow"
+        },
+        {
+          "offset": 1808,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1819,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplitShow()"
+        },
+        {
+          "offset": 1841,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1852,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_TargetTilesShowSplitShow()"
+        },
+        {
+          "offset": 1865,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1873,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1884,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlagNew()"
+        },
+        {
+          "offset": 1895,
+          "opcode": "stfld",
+          "reference": "System.Int16 HuanLeGameSo.TOneNewRecommendFanTarget::nHandTilesNum"
+        },
+        {
+          "offset": 1901,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1909,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1920,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlagNew()"
+        },
+        {
+          "offset": 1935,
+          "opcode": "stfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTilesFlagNew"
+        },
+        {
+          "offset": 1946,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1953,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTilesFlagNew"
+        },
+        {
+          "offset": 1961,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 1972,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlagNew()"
+        },
+        {
+          "offset": 1994,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 2005,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CSystem.Int32\u003E MJSoPb.TOneNewRecommendFanTarget::get_CurHandTilesFlagNew()"
+        },
+        {
+          "offset": 2023,
+          "opcode": "callvirt",
+          "reference": "Google.Protobuf.Collections.RepeatedField\u00601\u003CMJSoPb.TOneNewRecommendFanTarget\u003E MJSoPb.TNewRecommendFanTarget::get_TargetList()"
+        },
+        {
+          "offset": 2040,
+          "opcode": "callvirt",
+          "reference": "System.Int32 MJSoPb.TNewRecommendFanTarget::get_UiMode()"
+        },
+        {
+          "offset": 2045,
+          "opcode": "stfld",
+          "reference": "System.Int32 HuanLeGameSo.TNewRecommendFanTarget::iUiMode"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.NextToDoHelper::HandleNextToDo(System.Int32,HuanLeGameSo.TSOTLVUNIT[],HappyMahjong.Game.IRoundModel,HappyMahjong.Game.IProcessModel,HappyMahjong.Game.ICommonRule,System.Int32,HuanLeGameSo.UMJMsgTVValue)",
+      "hits": [
+        {
+          "offset": 2186,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.RecvChooseNewRecommendFanTargtCommand::Execute()",
+      "hits": [
+        {
+          "offset": 77,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 104,
+          "opcode": "ldfld",
+          "reference": "System.Int16 HuanLeGameSo.TNewRecommendFanTarget::nTargetNum"
+        },
+        {
+          "offset": 138,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TNewRecommendFanTarget::iUiMode"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.RevcGameReplayCommand::HandleTLVAfterRebuildTable()",
+      "hits": [
+        {
+          "offset": 948,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "HappyMahjong.Game.FanRecommendDetail HappyMahjong.Game.FanRecommendDetail::BuildVOData(HuanLeGameSo.TOneNewRecommendFanTarget)",
+      "hits": [
+        {
+          "offset": 39,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iTargetIdx"
+        },
+        {
+          "offset": 51,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iFanIdx"
+        },
+        {
+          "offset": 63,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iFanMulti"
+        },
+        {
+          "offset": 75,
+          "opcode": "ldfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szFanName"
+        },
+        {
+          "offset": 87,
+          "opcode": "ldfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szFanDesc"
+        },
+        {
+          "offset": 99,
+          "opcode": "ldfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szExtDesc"
+        },
+        {
+          "offset": 111,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iMaxFanMulti"
+        },
+        {
+          "offset": 123,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTiles"
+        },
+        {
+          "offset": 140,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesFlag"
+        },
+        {
+          "offset": 157,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesShowSplit"
+        },
+        {
+          "offset": 174,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::TargetTilesShowSplitShow"
+        },
+        {
+          "offset": 191,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTiles"
+        },
+        {
+          "offset": 208,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::CurHandTilesFlagNew"
+        },
+        {
+          "offset": 225,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iIsChosen"
+        },
+        {
+          "offset": 240,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iScore"
+        },
+        {
+          "offset": 252,
+          "opcode": "ldfld",
+          "reference": "System.String HuanLeGameSo.TOneNewRecommendFanTarget::szPaiDesc"
+        },
+        {
+          "offset": 264,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::PaiList"
+        },
+        {
+          "offset": 281,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iAchieveType"
+        },
+        {
+          "offset": 293,
+          "opcode": "ldfld",
+          "reference": "System.Int32 HuanLeGameSo.TOneNewRecommendFanTarget::iNoticeType"
+        },
+        {
+          "offset": 305,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::DestoryNoticeTilesType"
+        },
+        {
+          "offset": 322,
+          "opcode": "ldfld",
+          "reference": "System.Int32[] HuanLeGameSo.TOneNewRecommendFanTarget::DestoryNoticeTiles"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.VariableTile.GameEvents.VariableTileGameEventHandler::HandleGameMsg(HuanLeGameSo.SO_MJ_MSG_ID,HuanLeGameSo.SoNotifyMsgTV,strange.extensions.dispatcher.api.IDispatcher)",
+      "hits": [
+        {
+          "offset": 138,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 143,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 175,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 180,
+          "opcode": "ldfld",
+          "reference": "System.Int16 HuanLeGameSo.TNewRecommendFanTarget::nTargetNum"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.Game.CompareTile.GameEvents.CompareTileGameEventHandler::HandleGameMsg(HuanLeGameSo.SO_MJ_MSG_ID,HuanLeGameSo.SoNotifyMsgTV,strange.extensions.dispatcher.api.IDispatcher)",
+      "hits": [
+        {
+          "offset": 513,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 518,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 550,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 555,
+          "opcode": "ldfld",
+          "reference": "System.Int16 HuanLeGameSo.TNewRecommendFanTarget::nTargetNum"
+        },
+        {
+          "offset": 1009,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 1014,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TOneNewRecommendFanTarget[] HuanLeGameSo.TNewRecommendFanTarget::astTargetList"
+        },
+        {
+          "offset": 1047,
+          "opcode": "ldfld",
+          "reference": "HuanLeGameSo.TNewRecommendFanTarget HuanLeGameSo.USOTLVValue::stNewRecommendFanTarget"
+        },
+        {
+          "offset": 1052,
+          "opcode": "ldfld",
+          "reference": "System.Int16 HuanLeGameSo.TNewRecommendFanTarget::nTargetNum"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only direct field and method references in recovered managed assemblies are indexed.",
+    "Native code, reflection, runtime patches and actual message contents are not established by this scan."
+  ]
+}
