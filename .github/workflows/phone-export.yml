@@ -1,6 +1,17 @@
 name: Inspect new phone diagnostic export
 on:
   workflow_dispatch:
+    inputs:
+      current_version:
+        type: choice
+        required: true
+        default: v3
+        options: [v3, v4]
+      previous_version:
+        type: choice
+        required: true
+        default: v2
+        options: [v2, v3]
 permissions:
   contents: read
 jobs:
@@ -12,19 +23,24 @@ jobs:
       - name: Retrieve encrypted current and prior inputs
         env:
           GH_TOKEN: ${{ github.token }}
+          MJ_CURRENT: ${{ inputs.current_version }}
+          MJ_PREVIOUS: ${{ inputs.previous_version }}
         run: |
           mkdir -p private-input report/device
-          gh release download log-inputs-v3 --pattern log-input-v3.enc --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
-          gh release download log-inputs-v2 --pattern log-input-v2.enc --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+          gh release download "log-inputs-${MJ_CURRENT}" --pattern "log-input-${MJ_CURRENT}.enc" --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+          gh release download "log-inputs-${MJ_PREVIOUS}" --pattern "log-input-${MJ_PREVIOUS}.enc" --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
       - name: Decrypt inside runner
         env:
           MJ_LOG_INPUT_KEY_V1: ${{ secrets.MJ_LOG_INPUT_KEY_V1 }}
+          MJ_CURRENT: ${{ inputs.current_version }}
+          MJ_PREVIOUS: ${{ inputs.previous_version }}
         run: |
           umask 077
-          openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v3.enc -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
-          openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v2.enc -out private-input/previous.zip -pass env:MJ_LOG_INPUT_KEY_V1
+          openssl enc -d -aes-256-cbc -pbkdf2 -in "private-input/log-input-${MJ_CURRENT}.enc" -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
+          openssl enc -d -aes-256-cbc -pbkdf2 -in "private-input/log-input-${MJ_PREVIOUS}.enc" -out private-input/previous.zip -pass env:MJ_LOG_INPUT_KEY_V1
       - name: Test and inspect with restricted output
         run: |
+          python3 -m unittest discover -s tools -p test_runtime_probe.py
           python3 -m unittest discover -s tools -p test_phone_diagnostics.py
           python3 -m unittest discover -s tools -p test_round_anomalies.py
           python3 tools/inspect_round_anomalies.py
