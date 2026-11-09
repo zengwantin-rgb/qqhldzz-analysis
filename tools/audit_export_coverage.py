@@ -12,7 +12,7 @@ FIELDS = (
     'tileInfos', 'iTileFace', 'tileFace', 'stHandTiles', 'nHandTilesNum',
     'ExtraTiles', 'ProtoIntelligenceAdvice', 'IntelligenceAdviceTing',
 )
-PATH_HINTS = ('replay', 'record', 'tracebinlogs', 'crash', 'bugly',
+PATH_HINTS = ('replay', 'record', 'tracebinlogs', 'crash', 'bugly', 'tss', 'tersafe',
               'msdk', 'gcloud', 'tsdk', 'unity', 'pandora', 'log398')
 EXTENSIONS = {'log', 'xlog', 'clog', 'replay', 'trace', 'bin', 'data',
               'xml', 'json', 'txt', 'dat', 'bytes', 'patch', 'dll'}

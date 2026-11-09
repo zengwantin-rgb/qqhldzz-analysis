@@ -55,9 +55,8 @@ def buffer_facts(blob):
   facts['decompression'].append(row)
  return facts
 
-with zipfile.ZipFile('private-input/device.zip') as z:
- name=next(n for n in z.namelist() if '/Log398/' in n and n.endswith('.log'))
- lines=z.read(name).decode('utf-8',errors='replace').splitlines()
+def scan_entry(lines,entry_index):
+ global parse_attempts
  for number,line in enumerate(lines,1):
   for key in known:
    counts[key]+=len(re.findall(r'(?<![A-Za-z0-9_])'+re.escape(key)+r'(?![A-Za-z0-9_])',line,re.I))
@@ -78,7 +77,7 @@ with zipfile.ZipFile('private-input/device.zip') as z:
      if blob is not None:
       n=obj.get('nGameBuf')
       if isinstance(n,int) and 0<=n<=len(blob):blob=blob[:n]
-      buffers.append({'line':number,**buffer_facts(blob)})
+      buffers.append({'entry':entry_index,'line':number,**buffer_facts(blob)})
     wall_array_key=next((k for k in ('astTileInfos','tileInfos','TileInfos') if k in obj),None)
     wall_total=next((obj[k] for k in ('iTotalTileCount','totalTileCount','TotalTileCount') if k in obj),None)
     if wall_array_key is not None and wall_total is not None:
@@ -90,11 +89,22 @@ with zipfile.ZipFile('private-input/device.zip') as z:
        if isinstance(face,int):
         if face<0:hidden+=1
         else:visible+=1
-      wall.append({'line':number,'total_count':wall_total if isinstance(wall_total,int) and 0<=wall_total<=512 else None,'declared_count':n,'array_length':len(values),'nonnegative_face_entries':visible,'negative_face_entries':hidden})
+      wall.append({'entry':entry_index,'line':number,'total_count':wall_total if isinstance(wall_total,int) and 0<=wall_total<=512 else None,'declared_count':n,'array_length':len(values),'nonnegative_face_entries':visible,'negative_face_entries':hidden})
     advice_type=next((obj[k] for k in ('AdviceType','adviceType','iAdviceType') if k in obj),None)
     if advice_type is not None and any(k in obj for k in ('IntelligenceAdviceTing','intelligenceAdviceTing','stIntelligenceAdviceTing')):
-     advice.append({'line':number,'advice_type':advice_type if isinstance(advice_type,int) and 0<=advice_type<100 else None,'known_advice_object':True})
+     advice.append({'entry':entry_index,'line':number,'advice_type':advice_type if isinstance(advice_type,int) and 0<=advice_type<100 else None,'known_advice_object':True})
    break
-result={'known_field_mentions':dict(counts),'matching_json_objects':parse_attempts,'known_buffer_candidates':buffers,'wall_objects':wall,'advice_objects':advice,'limits':['Only recognized gameplay field names are searched; arbitrary token/base64 strings are not decoded.','A type-name mention without its bytes is not a recoverable payload.','No real hand values or identifying raw log content are published.']}
+
+scanned_entries=[];binary_entries=[]
+with zipfile.ZipFile('private-input/device.zip') as z:
+ for entry_index,entry in enumerate((i for i in z.infolist() if not i.is_dir() and i.filename!='manifest.json'),1):
+  raw=z.read(entry)
+  text=raw.decode('utf-8',errors='replace')
+  if b'\x00' in raw or text.count('\ufffd')>max(3,len(raw)//1000):
+   binary_entries.append(entry_index);continue
+  scanned_entries.append(entry_index)
+  scan_entry(text.splitlines(),entry_index)
+
+result={'text_entries_scanned':scanned_entries,'binary_entries_not_json_decoded':binary_entries,'known_field_mentions':dict(counts),'matching_json_objects':parse_attempts,'known_buffer_candidates':buffers,'wall_objects':wall,'advice_objects':advice,'limits':['Only recognized gameplay field names are searched; arbitrary token/base64 strings are not decoded.','A type-name mention without its bytes is not a recoverable payload.','No real hand values or identifying raw log content are published.']}
 (out/'embedded-payload-probe.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(result,ensure_ascii=False,indent=2))

@@ -5,6 +5,10 @@ import pathlib
 import tempfile
 import unittest
 import zipfile
+import base64
+import subprocess
+import sys
+import zlib
 
 from audit_export_coverage import audit, file_facts
 
@@ -44,6 +48,27 @@ class ExportCoverageTests(unittest.TestCase):
         self.assertEqual(facts['format'], 'zip')
         self.assertEqual(facts['nested_entry_count'], 1)
         self.assertNotIn('unpublished-', json.dumps(facts))
+
+    def test_payload_probe_reads_second_text_file(self):
+        script = pathlib.Path(__file__).with_name('probe_embedded_payloads.py').resolve()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp)
+            (root / 'private-input').mkdir()
+            with zipfile.ZipFile(root / 'private-input/device.zip', 'w') as z:
+                z.writestr('manifest.json', '{}')
+                z.writestr('files/c/Log398/first.log', 'ordinary text')
+                z.writestr('files/c/record.dat', b'\x00' * 16)
+                z.writestr('files/c/second.txt', json.dumps({
+                    'gameBuf': base64.b64encode(zlib.compress(b'\x0a\x00')).decode('ascii')
+                }))
+            subprocess.run([sys.executable, str(script)], cwd=root, check=True, capture_output=True)
+            result = json.loads((root / 'report/device/embedded-payload-probe.json').read_text())
+        self.assertEqual(result['text_entries_scanned'], [1, 3])
+        self.assertEqual(result['binary_entries_not_json_decoded'], [2])
+        self.assertEqual(len(result['known_buffer_candidates']), 1)
+        candidate = result['known_buffer_candidates'][0]
+        self.assertEqual(candidate['entry'], 3)
+        self.assertEqual(candidate['decompression'][0]['defined_advice_field_count'], 1)
 
 
 if __name__ == '__main__':
