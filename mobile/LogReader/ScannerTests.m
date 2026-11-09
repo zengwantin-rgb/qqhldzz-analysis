@@ -24,6 +24,40 @@ int main(int argc,char *argv[]) { @autoreleasepool {
     Require(MJIsCandidate(@"Library/TraceBin/sample.bin"),@"Trace files should be discoverable");
     Require(MJIsCandidate(@"Documents/TraceBinLogs/session.capture"),@"Known trace directory may use a custom extension");
     Require(!MJIsCandidate(@"Library/Cookies/private.log"),@"Cookie directories must be excluded");
+    NSMutableArray *inventory=[NSMutableArray array], *copied=[NSMutableArray array];
+    NSMutableDictionary *completeEntries=[NSMutableDictionary dictionary];
+    for (NSUInteger i=0;i<16;i++) {
+        NSString *relative=[NSString stringWithFormat:@"Documents/Logs/candidate-%lu.log",(unsigned long)i];
+        NSString *path=[target stringByAppendingPathComponent:relative];
+        [log writeToFile:path atomically:YES];
+        [inventory addObject:@{@"container":target,@"relative":relative,@"path":path,@"size":@(log.length)}];
+        NSString *entry=[NSString stringWithFormat:@"files/%@/%@",target.lastPathComponent,relative];
+        [copied addObject:entry]; completeEntries[entry]=[NSData dataWithContentsOfFile:path];
+    }
+    NSDictionary *report=@{@"schema":@2,@"tool_version":@"1.1",@"errors":@[],@"scans":@[@{@"files":inventory,@"errors":@[],@"truncated":@NO}]};
+    NSDictionary *plan=MJPlanCompleteSelection(inventory);
+    Require([plan[@"indexes"] count]==16 && [plan[@"skipped"] count]==0,@"All sixteen small candidates must be selected");
+    NSMutableIndexSet *allSelected=[NSMutableIndexSet indexSet];
+    for (NSNumber *index in plan[@"indexes"]) [allSelected addIndex:index.unsignedIntegerValue];
+    NSDictionary *coverage=MJExportCoverage(report,inventory,allSelected,copied,@[]);
+    Require([coverage[@"status"] isEqual:@"complete"] && [coverage[@"unselected_count"] unsignedIntegerValue]==0,@"Complete means all discovered candidates were actually copied");
+    NSDictionary *partial=MJExportCoverage(report,inventory,[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0,5)],[copied subarrayWithRange:NSMakeRange(0,5)],@[]);
+    Require([partial[@"status"] isEqual:@"partial"] && [partial[@"unselected_count"] unsignedIntegerValue]==11 && [partial[@"unselected_files"] count]==11,@"The old five-of-sixteen case must explicitly show eleven missing files");
+    Require([MJExportCoverage(report,inventory,allSelected,@[copied[0]],@[@{@"file":@"unreadable"}])[@"status"] isEqual:@"partial"],@"Read failures cannot be marked complete");
+    NSMutableArray *duplicate=[copied mutableCopy]; duplicate[15]=duplicate[0];
+    Require([MJExportCoverage(report,inventory,allSelected,duplicate,@[])[@"status"] isEqual:@"partial"],@"Duplicate exported paths cannot be marked complete");
+    NSMutableDictionary *truncated=[report mutableCopy]; truncated[@"scans"]=@[@{@"truncated":@YES,@"errors":@[]}];
+    Require([MJExportCoverage(truncated,inventory,allSelected,copied,@[])[@"status"] isEqual:@"partial"],@"A truncated scan cannot be marked complete");
+    Require([MJExportCoverage(@{},@[],[NSIndexSet indexSet],@[],@[])[@"status"] isEqual:@"manifest_only"],@"Empty scans produce manifest-only exports");
+    NSArray *large=@[@{@"relative":@"old.log",@"size":@(20*1024*1024)},@{@"relative":@"old2.log",@"size":@(20*1024*1024)},@{@"relative":@"old3.log",@"size":@(20*1024*1024)},@{@"relative":@"old4.log",@"size":@(20*1024*1024)},@{@"relative":@"config/MJGameBaseConfig.data",@"size":@100},@{@"relative":@"PatchIOS.bytes",@"size":@100},@{@"relative":@"huge.log",@"size":@(20*1024*1024+1)}];
+    NSDictionary *bounded=MJPlanCompleteSelection(large);NSArray *chosen=bounded[@"indexes"];
+    Require([chosen containsObject:@4] && [chosen containsObject:@5],@"Configuration and patch survive a crowded export budget");
+    Require(![chosen containsObject:@6] && [bounded[@"skipped"] count]==2,@"Report oversized and total-budget exclusions");
+    Require([bounded[@"bytes"] unsignedLongLongValue]<=63*1024*1024,@"Selection stays inside the payload budget");
+    NSMutableDictionary *completeManifest=[report mutableCopy]; completeManifest[@"exported_files"]=copied; completeManifest[@"skipped_files"]=@[];
+    completeManifest[@"coverage"]=coverage; completeManifest[@"selection_mode"]=@"complete_candidates";
+    completeEntries[@"manifest.json"]=[NSJSONSerialization dataWithJSONObject:completeManifest options:0 error:NULL];
+    if (argc>2) Require([MJCreateZip(completeEntries,NULL) writeToFile:[NSString stringWithUTF8String:argv[2]] atomically:YES],@"Full sixteen-file ZIP must be written");
     NSError *error=nil;
     NSData *zip=MJCreateZip(@{@"manifest.json":[@"{}" dataUsingEncoding:NSUTF8StringEncoding], @"files/日志.txt":log},&error);
     Require(zip!=nil,@"ZIP export must succeed");
@@ -32,6 +66,6 @@ int main(int argc,char *argv[]) { @autoreleasepool {
     error=nil;
     Require(MJCreateZip(@{@"large.log":[NSMutableData dataWithLength:20*1024*1024+1]},&error)==nil,@"Enforce the per-file export limit");
     [fm removeItemAtPath:root error:NULL];
-    puts("PASS: target isolation, sensitive-path filtering, symlink rejection, read-only scan, ZIP creation and bounds");
+    puts("PASS: isolation, read-only scan, ZIP bounds, complete selection, priority budgets and explicit export coverage");
     return 0;
 } }

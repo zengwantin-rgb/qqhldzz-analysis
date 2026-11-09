@@ -13,7 +13,7 @@ jobs:
         run: |
           mkdir -p build/checks
           clang -DMJ_TEST_DEBUG -fobjc-arc -framework Foundation -lz mobile/LogReader/Scanner.m mobile/LogReader/ScannerTests.m -o build/scanner-tests
-          build/scanner-tests build/checks/export-test.zip
+          build/scanner-tests build/checks/export-test.zip build/checks/complete-export-test.zip
           python3 - <<'PY'
           import zipfile
           with zipfile.ZipFile('build/checks/export-test.zip') as z:
@@ -21,6 +21,16 @@ jobs:
               assert z.read('manifest.json') == b'{}'
               assert z.read('files/日志.txt') == b'ordinary match diagnostic fixture'
           print('PASS: independent ZIP CRC and Unicode round-trip')
+          import json
+          with zipfile.ZipFile('build/checks/complete-export-test.zip') as z:
+              assert z.testzip() is None
+              manifest=json.loads(z.read('manifest.json'))
+              assert len(manifest['exported_files'])==16
+              assert manifest['coverage']['status']=='complete'
+              assert manifest['coverage']['unselected_count']==0
+              assert len(z.namelist())==17
+              assert all(z.read(n)==b'ordinary match diagnostic fixture' for n in manifest['exported_files'])
+          print('PASS: sixteen-file complete export, manifest coverage and independent CRC verification')
           PY
       - name: Compile and sign device IPA
         run: bash mobile/LogReader/build.sh
@@ -47,6 +57,8 @@ jobs:
               assert z.testzip() is None
               p=plistlib.loads(z.read('Payload/MJLogReader.app/Info.plist'))
               assert p['CFBundleIdentifier']=='org.qqhldzz.MJLogReader'
+              assert p['CFBundleShortVersionString']=='1.1'
+              assert p['CFBundleVersion']=='2'
               assert 'Payload/MJLogReader.app/MJLogReader' in z.namelist()
           e=plistlib.loads(pathlib.Path('build/checks/device-entitlements.plist').read_bytes())
           assert e['com.apple.private.security.no-sandbox'] is True

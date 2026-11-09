@@ -20,6 +20,53 @@ BOOL MJIsCandidate(NSString *relative) {
     return NO;
 }
 
+static NSUInteger MJSelectionPriority(NSDictionary *file) {
+    NSString *path=[file[@"relative"] lowercaseString], *name=path.lastPathComponent;
+    if ([@[@"mjgamebaseconfig.data", @"modulefanconfig.data", @"svrnotifytips.data"] containsObject:name] || [path containsString:@"patch"]) return 0;
+    if ([path containsString:@"log398/"] || [path containsString:@"tracebinlogs/"]) return 1;
+    return 2;
+}
+
+NSDictionary *MJPlanCompleteSelection(NSArray<NSDictionary *> *files) {
+    NSMutableArray<NSNumber *> *order=[NSMutableArray array], *selected=[NSMutableArray array];
+    NSMutableArray<NSDictionary *> *skipped=[NSMutableArray array];
+    for (NSUInteger i=0;i<files.count;i++) [order addObject:@(i)];
+    [order sortUsingComparator:^NSComparisonResult(NSNumber *a, NSNumber *b) {
+        NSUInteger pa=MJSelectionPriority(files[a.unsignedIntegerValue]), pb=MJSelectionPriority(files[b.unsignedIntegerValue]);
+        return pa<pb?NSOrderedAscending:pa>pb?NSOrderedDescending:[a compare:b];
+    }];
+    unsigned long long total=0;
+    for (NSNumber *index in order) {
+        NSDictionary *file=files[index.unsignedIntegerValue];
+        unsigned long long bytes=[file[@"size"] unsignedLongLongValue];
+        NSString *reason=nil;
+        if (bytes>20*1024*1024) reason=@"file_size_limit";
+        else if (bytes>63*1024*1024-total) reason=@"total_size_limit";
+        if (reason) [skipped addObject:@{@"index":index,@"file":file[@"relative"],@"reason":reason,@"size":@(bytes)}];
+        else { [selected addObject:index]; total+=bytes; }
+    }
+    return @{@"indexes":selected,@"skipped":skipped,@"bytes":@(total)};
+}
+
+NSDictionary *MJExportCoverage(NSDictionary *report, NSArray<NSDictionary *> *files, NSIndexSet *selection, NSArray<NSString *> *exported, NSArray<NSDictionary *> *skipped) {
+    NSMutableArray *unselected=[NSMutableArray array];
+    for (NSUInteger i=0;i<files.count;i++) if (![selection containsIndex:i])
+        [unselected addObject:@{@"file":files[i][@"relative"],@"container_id":[files[i][@"container"] lastPathComponent],@"reason":@"not_selected"}];
+    NSUInteger scanErrors=[report[@"errors"] count]; BOOL truncated=NO;
+    for (NSDictionary *scan in report[@"scans"]) { scanErrors+=[scan[@"errors"] count]; truncated|=[scan[@"truncated"] boolValue]; }
+    NSSet *exportedSet=[NSSet setWithArray:exported];
+    BOOL all=files.count>0 && selection.count==files.count && unselected.count==0 && exported.count==files.count && exportedSet.count==files.count && skipped.count==0;
+    for (NSDictionary *file in files) {
+        NSString *entry=[NSString stringWithFormat:@"files/%@/%@",[file[@"container"] lastPathComponent],file[@"relative"]];
+        if (![exportedSet containsObject:entry]) all=NO;
+    }
+    NSString *status=files.count==0?@"manifest_only":all && scanErrors==0 && !truncated?@"complete":@"partial";
+    return @{@"status":status,@"candidate_count":@(files.count),@"selected_count":@(selection.count),@"exported_count":@(exported.count),
+        @"unselected_count":@(unselected.count),@"skipped_count":@(skipped.count),@"unselected_files":unselected,
+        @"scan_error_count":@(scanErrors),@"scan_truncated":@(truncated),@"all_candidates_exported":@(all),
+        @"scope":@"Completeness refers only to discovered candidate files, not all app data or all network messages."};
+}
+
 NSArray<NSString *> *MJFindContainers(NSString *parent, NSMutableArray<NSString *> *errors) {
     NSError *error = nil;
     NSArray *children = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:parent error:&error];
