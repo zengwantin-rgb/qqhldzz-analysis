@@ -14,7 +14,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release download inputs-v1 --repo zwthys-cyber/qqhldzz-analysis --pattern '*Decrypted.ipa' --dir inputs
       - name: Install asset parser
-        run: python3 -m pip install UnityPy
+        run: python3 -m pip install UnityPy==1.25.4
       - name: Inspect packaged hotload assemblies
         run: |
           python3 -m py_compile tools/inspect_assets.py

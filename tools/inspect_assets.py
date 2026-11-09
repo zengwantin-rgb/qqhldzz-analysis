@@ -20,6 +20,9 @@ with zipfile.ZipFile('inputs/_Decrypted.ipa') as z:
             r['managed_candidate']=str(destination)
         else:
             try:
+                if b.startswith(b"UnityMJ\0"):
+                    b = b"UnityFS\0" + b[8:]
+                    r["normalization"] = "UnityMJ signature replaced with UnityFS for parser compatibility"
                 env=UnityPy.load(b)
                 counts=collections.Counter()
                 texts=[]
