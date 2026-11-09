@@ -66,11 +66,16 @@ def events(raw, private_directory=None, entry=0):
         try: clear=base64.b64decode(payload,validate=True)
         except (ValueError,binascii.Error):invalid+=1;continue
         if len(clear)!=declared:invalid+=1;continue
+        if obj['encoding']=='public_field_snapshot':
+            try:snapshot=json.loads(clear)
+            except (ValueError,UnicodeError,RecursionError):invalid+=1;continue
+            if not isinstance(snapshot,dict) or snapshot.get('iType')!=msg:invalid+=1;continue
         if sequence!=expected:discontinuities+=1
         expected=sequence+1
         if private_directory is not None:
             directory=pathlib.Path(private_directory);directory.mkdir(parents=True,exist_ok=True,mode=0o700)
-            (directory/('entry-%04d-seq-%04d.%s'%(entry,sequence,channel))).write_bytes(clear)
+            suffix='snapshot.json' if obj['encoding']=='public_field_snapshot' else channel
+            (directory/('entry-%04d-seq-%04d.%s'%(entry,sequence,suffix))).write_bytes(clear)
         records.append({'sequence':sequence,'channel':channel,'message_type':msg,'bytes':declared,'encoding':obj['encoding']})
         if len(records)>=512:break
     return {'status':'recognized_events','valid_frame_count':len(records),'invalid_record_count':invalid,
@@ -92,7 +97,7 @@ if __name__=='__main__':
     (out/'message-observer-summary.json').write_text(json.dumps({'status_files':status_files,'event_files':event_files,
         'total_valid_frames':sum(f.get('valid_frame_count',0) for f in event_files), 'limits':[
         'Raw/base64 packet payloads and private output paths are never emitted; binary packets remain in the runner private-input directory.',
-        'Captured bytes are re-encoded decoded events, not original network bytes. Original listener ordering is not established.',
+        'Captured entries are re-encoded events or explicitly labeled public-field JSON snapshots, not original network bytes. Original listener ordering is not established.',
         'A subscription status is separate from the observed valid frame count; valid frames do not establish live opponent hand visibility.',
         'Each event file is a separate capture. It is not automatically attributed to the latest status-log session.'
     ]},indent=2)+'\n')

@@ -1,6 +1,12 @@
 """Bounded container driver. No raw process output escapes the private directory."""
 import json,pathlib,re,subprocess,os
 root=pathlib.Path.cwd();out=root/'private-output';out.mkdir(exist_ok=True,mode=0o700)
+formats={}
+for source in (root/'private-input/decoded-game-frames').glob('entry-*-seq-*.snapshot.json'):
+    if not re.fullmatch(r'entry-\d{4}-seq-\d{4}\.snapshot\.json',source.name):continue
+    name=source.name.replace('.snapshot.json','.tdr.json')
+    (out/name).write_bytes(source.read_bytes());formats[name]='public_field_snapshot'
+(out/'capture-formats.json').write_text(json.dumps(formats))
 def run(args,name):
     with (root/'private-input'/name).open('wb') as stream:return subprocess.run(args,stdout=stream,stderr=subprocess.STDOUT).returncode
 result={}

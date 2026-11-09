@@ -90,6 +90,8 @@ def embedded(value):
 
 def inspect(directory):
     frames=[]
+    format_path=pathlib.Path(directory)/'capture-formats.json'
+    formats=json.loads(format_path.read_text()) if format_path.exists() else {}
     for path in sorted(pathlib.Path(directory).glob('entry-*-seq-*.tdr.json')):
         match=re.fullmatch(r'entry-(\d+)-seq-(\d+)\.tdr\.json',path.name)
         if not match:continue
@@ -113,7 +115,7 @@ def inspect(directory):
             elif isinstance(value,list):
                 for v in value:walk(v)
         walk(data)
-        frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'tlv_type_counts':dict(tlvs)})
+        frames.append({'entry':int(match[1]),'sequence':int(match[2]),'message_type':data.get('iType'),'source_encoding':'public_field_snapshot' if formats.get(path.name)=='public_field_snapshot' else 'reencoded_decoded_event','hand_fields':rows,'wait_fields':waits,'draw_fields':draws,'embedded_proto_buffers':buffers,'tlv_type_counts':dict(tlvs)})
     states={}
     for frame in frames:
         entry=frame['entry'];phase=states.get(entry,'before_hu')
