@@ -1,0 +1,58 @@
+name: Verify and publish completed phone build
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve completed build and check records
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 42636936904 --repo zengwantin-rgb/qqhldzz-analysis --name phone-log-reader --dir verified-build
+          gh api repos/zengwantin-rgb/qqhldzz-analysis/actions/runs/42636936904/jobs > verified-build/checks/source-jobs.json
+          gh api repos/zengwantin-rgb/qqhldzz-analysis/actions/runs/42636936904 > verified-build/checks/source-run.json
+      - name: Verify artifact integrity and individual successful build checks
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,pathlib,plistlib,zipfile
+          root=pathlib.Path('verified-build')
+          jobs=json.loads((root/'checks/source-jobs.json').read_text())['jobs']
+          checks={s['name']:s['conclusion'] for job in jobs for s in job['steps']}
+          required=['Test scanner isolation and ZIP export on GitHub','Compile and sign device IPA','Build and launch simulator smoke test','Verify packaging and expected entitlements']
+          assert all(checks.get(name)=='success' for name in required), checks
+          package=root/'MJLogReader.ipa'
+          actual=hashlib.sha256(package.read_bytes()).hexdigest()
+          expected=(root/'checks/SHA256SUMS.txt').read_text().split()[0]
+          assert actual==expected
+          with zipfile.ZipFile(package) as z:
+              assert z.testzip() is None
+              info=plistlib.loads(z.read('Payload/MJLogReader.app/Info.plist'))
+              assert info['CFBundleIdentifier']=='org.qqhldzz.MJLogReader'
+              assert info['MinimumOSVersion']=='15.0'
+          entitlements=plistlib.loads((root/'checks/device-entitlements.plist').read_bytes())
+          for key in ['com.apple.private.security.no-sandbox','platform-application','com.apple.private.security.storage.AppDataContainers']:
+              assert entitlements[key] is True
+          assert 'arm64' in (root/'checks/architecture.txt').read_text()
+          assert (root/'checks/simulator.png').read_bytes().startswith(b'\x89PNG\r\n\x1a\n')
+          run=json.loads((root/'checks/source-run.json').read_text())
+          result={'source_run':42636936904,'source_commit':run['head_sha'],'source_workflow_conclusion':run['conclusion'],'successful_checks':required,'ipa_sha256':actual,'note':'Source workflow publication was interrupted after all checks completed. Actual TrollStore iOS 17 container access remains untested.'}
+          (root/'checks/validation.json').write_text(json.dumps(result,indent=2)+'\n')
+          (root/'checks/source-commit.txt').write_text(run['head_sha'])
+          print(json.dumps(result,indent=2))
+          PY
+      - name: Publish verified IPA
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          source_sha=$(cat verified-build/checks/source-commit.txt)
+          gh release create log-reader-v1 verified-build/MJLogReader.ipa verified-build/checks/SHA256SUMS.txt verified-build/checks/validation.json verified-build/checks/simulator.png --target "$source_sha" --title '麻将日志导出 v1（TrollStore）' --notes-file mobile/LogReader/README.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phone-build-validation
+          path: verified-build/checks/
