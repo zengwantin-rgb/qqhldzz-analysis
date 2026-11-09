@@ -45,6 +45,8 @@ class JsonGameplayTests(unittest.TestCase):
         sequences = result['non_json_numeric_sequences']
         self.assertTrue(any(s['context'] == 'Recv Deal Self mjValue:' and s['length'] == 4 for s in sequences))
         self.assertTrue(any(s['zero_entries'] == 2 for s in sequences))
+        oversized = index_text('9' * 6000 + ',1,2', [])
+        self.assertEqual(oversized['non_json_numeric_sequences'], [])
 
 
 if __name__ == '__main__':

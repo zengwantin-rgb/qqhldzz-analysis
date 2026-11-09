@@ -123,8 +123,11 @@ def index_text(text, catalog):
         for match in NUMBER_SEQUENCE.finditer(line):
             if any(start <= match.start() and match.end() <= end for start, end in json_spans):
                 continue
-            values = [int(n) for n in re.findall(r'-?\d+', match.group())]
-            if not 3 <= len(values) <= 512 or not all(-1 <= n <= 255 for n in values):
+            tokens = re.findall(r'-?\d+', match.group())
+            if not 3 <= len(tokens) <= 512 or any(len(n) > 4 for n in tokens):
+                continue
+            values = [int(n) for n in tokens]
+            if not all(-1 <= n <= 255 for n in values):
                 continue
             counters['non_json_numeric_sequences'] += 1
             facts = numeric_array_facts(values)
