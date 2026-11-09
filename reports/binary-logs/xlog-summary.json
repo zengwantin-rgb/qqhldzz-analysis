@@ -1,0 +1,82 @@
+{
+  "files": [
+    {
+      "entry": 11,
+      "bytes": 109324,
+      "status": "validated_mars_frame_chain",
+      "prefix_bytes": 0,
+      "unparsed_suffix_bytes": 0,
+      "frame_count": 2,
+      "magic_counts": {
+        "9": 2
+      },
+      "decode_counts": {
+        "deflate": 2
+      },
+      "decoded_bytes": 1090135,
+      "decoded_ascii_printable_bytes": 1088803,
+      "decoded_utf8_replacement_count": 0,
+      "deflate_frames_without_final_marker": 2,
+      "known_field_mentions": {
+        "ID_SO_NOTIFY_DEAL": 0,
+        "ID_SO_NOTIFY_WAIT": 0,
+        "ID_SO_NOTIFY_FINISH": 0,
+        "HandleSelfRedraw": 0,
+        "ExtraTiles": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "stAbilityTileWallInfo": 0,
+        "stPlayerTotalHandAbilityTileInfo": 0,
+        "stUnitProtoValueBuf": 0,
+        "ProtocolDataList": 0,
+        "MSDK": 8157,
+        "Login": 1049,
+        "HTTP": 116
+      }
+    },
+    {
+      "entry": 12,
+      "bytes": 60827,
+      "status": "validated_mars_frame_chain",
+      "prefix_bytes": 0,
+      "unparsed_suffix_bytes": 0,
+      "frame_count": 4,
+      "magic_counts": {
+        "8": 2,
+        "9": 2
+      },
+      "decode_counts": {
+        "uncompressed": 2,
+        "deflate": 2
+      },
+      "decoded_bytes": 637878,
+      "decoded_ascii_printable_bytes": 637842,
+      "decoded_utf8_replacement_count": 0,
+      "deflate_frames_without_final_marker": 2,
+      "known_field_mentions": {
+        "ID_SO_NOTIFY_DEAL": 0,
+        "ID_SO_NOTIFY_WAIT": 0,
+        "ID_SO_NOTIFY_FINISH": 0,
+        "HandleSelfRedraw": 0,
+        "ExtraTiles": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "stAbilityTileWallInfo": 0,
+        "stPlayerTotalHandAbilityTileInfo": 0,
+        "stUnitProtoValueBuf": 0,
+        "ProtocolDataList": 0,
+        "MSDK": 4908,
+        "Login": 472,
+        "HTTP": 50
+      }
+    }
+  ],
+  "limits": [
+    "Framing follows the public Tencent Mars format; no arbitrary decryption is attempted.",
+    "Encrypted variants are never interpreted as plaintext.",
+    "Plaintext stays in runner memory; only counts and allowlisted key mentions are emitted.",
+    "A key mention alone does not establish a structured gameplay payload or opponent hand.",
+    "No validated chain does not exclude a different SDK format or encryption wrapper.",
+    "Deflate sync-flushed records need not contain a final stream marker; nonfinal counts are explicit."
+  ]
+}
