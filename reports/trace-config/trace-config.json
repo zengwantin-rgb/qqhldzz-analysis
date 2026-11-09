@@ -1,0 +1,3185 @@
+{
+  "assemblies": 91,
+  "methods": [
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.SelectionScene.SelectionStartCommand",
+      "method": "System.Void HappyMahjong.SelectionScene.SelectionStartCommand::InitHbpEngineService()",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 55470
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 32
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 55470
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 26,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_0(System.Object)"
+          }
+        },
+        {
+          "offset": 31,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 32,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.DynamicConfig\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 37,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "HBPGame"
+          }
+        },
+        {
+          "offset": 42,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "EnableHBPGame"
+          }
+        },
+        {
+          "offset": 47,
+          "opcode": "ldc.i4.1",
+          "operand": null
+        },
+        {
+          "offset": 48,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Boolean HappyMahjong.Common.DynamicConfig::GetBool(System.String,System.String,System.Boolean)"
+          }
+        },
+        {
+          "offset": 53,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 56
+          }
+        },
+        {
+          "offset": 55,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 56,
+          "opcode": "nop",
+          "operand": null
+        },
+        {
+          "offset": 57,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "TraceBinLogs/"
+          }
+        },
+        {
+          "offset": 62,
+          "opcode": "ldnull",
+          "operand": null
+        },
+        {
+          "offset": 63,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 64,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String HappyMahjong.Common.PathManager::GetPersistentPath(System.String,System.String,System.Boolean)"
+          }
+        },
+        {
+          "offset": 69,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 70,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.DynamicConfig\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 75,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "HBPGame"
+          }
+        },
+        {
+          "offset": 80,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 85,
+          "opcode": "ldc.i4.m1",
+          "operand": null
+        },
+        {
+          "offset": 86,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.DynamicConfig::GetInt(System.String,System.String,System.Int32)"
+          }
+        },
+        {
+          "offset": 91,
+          "opcode": "stloc.1",
+          "operand": null
+        },
+        {
+          "offset": 92,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 93,
+          "opcode": "brfalse.s",
+          "operand": {
+            "branch_offset": 109
+          }
+        },
+        {
+          "offset": 95,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 96,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.TSDK4CSharpService::SetUploadAttachmentDir(System.String)"
+          }
+        },
+        {
+          "offset": 101,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 102,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 103,
+          "opcode": "ldloc.1",
+          "operand": null
+        },
+        {
+          "offset": 104,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.SelectionScene.SelectionStartCommand::CheckDeleteOldRecord(System.String,System.Int32)"
+          }
+        },
+        {
+          "offset": 109,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 110,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::SetTraceBinRoot(System.String)"
+          }
+        },
+        {
+          "offset": 115,
+          "opcode": "call",
+          "operand": {
+            "method": "HappyMahjong.AppRoot HappyMahjong.AppRoot::GetInstance()"
+          }
+        },
+        {
+          "offset": 120,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "Happy.Blueprint.HbpEngineService HappyMahjong.AppRoot::GetHbpEngineService()"
+          }
+        },
+        {
+          "offset": 125,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetVMLogLevelByDeviceType()"
+          }
+        },
+        {
+          "offset": 130,
+          "opcode": "stloc.2",
+          "operand": null
+        },
+        {
+          "offset": 131,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 136,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 141,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.Log::Info(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 146,
+          "opcode": "dup",
+          "operand": null
+        },
+        {
+          "offset": 147,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 164
+          }
+        },
+        {
+          "offset": 149,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 154,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 159,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.Log::Error(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 164,
+          "opcode": "call",
+          "operand": {
+            "method": "HappyMahjong.PlayerDataMgr HappyMahjong.PlayerDataMgr::GetInstance()"
+          }
+        },
+        {
+          "offset": 169,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.PlayerDataVO HappyMahjong.PlayerDataMgr::GetSelfInfo()"
+          }
+        },
+        {
+          "offset": 174,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 191
+          }
+        },
+        {
+          "offset": 176,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 181,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 186,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.Log::Error(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 191,
+          "opcode": "call",
+          "operand": {
+            "method": "HappyMahjong.PlayerDataMgr HappyMahjong.PlayerDataMgr::GetInstance()"
+          }
+        },
+        {
+          "offset": 196,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.PlayerDataVO HappyMahjong.PlayerDataMgr::GetSelfInfo()"
+          }
+        },
+        {
+          "offset": 201,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.UInt32 HappyMahjong.PlayerDataVO::playerUin"
+          }
+        },
+        {
+          "offset": 206,
+          "opcode": "ldloc.2",
+          "operand": null
+        },
+        {
+          "offset": 207,
+          "opcode": "ldc.i4.1",
+          "operand": null
+        },
+        {
+          "offset": 208,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 209,
+          "opcode": "ldsfld",
+          "operand": {
+            "field": "Happy.Blueprint.LogFunction HappyMahjong.SelectionScene.SelectionStartCommand/\u003C\u003Ec::\u003C\u003E9__30_0"
+          }
+        },
+        {
+          "offset": 214,
+          "opcode": "dup",
+          "operand": null
+        },
+        {
+          "offset": 215,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 240
+          }
+        },
+        {
+          "offset": 217,
+          "opcode": "pop",
+          "operand": null
+        },
+        {
+          "offset": 218,
+          "opcode": "ldsfld",
+          "operand": {
+            "field": "HappyMahjong.SelectionScene.SelectionStartCommand/\u003C\u003Ec HappyMahjong.SelectionScene.SelectionStartCommand/\u003C\u003Ec::\u003C\u003E9"
+          }
+        },
+        {
+          "offset": 223,
+          "opcode": "ldftn",
+          "operand": {
+            "method": "System.Void HappyMahjong.SelectionScene.SelectionStartCommand/\u003C\u003Ec::\u003CInitHbpEngineService\u003Eb__30_0(System.String,System.String,Happy.Blueprint.LogLevel,System.String)"
+          }
+        },
+        {
+          "offset": 229,
+          "opcode": "newobj",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.LogFunction::.ctor(System.Object,System.IntPtr)"
+          }
+        },
+        {
+          "offset": 234,
+          "opcode": "dup",
+          "operand": null
+        },
+        {
+          "offset": 235,
+          "opcode": "stsfld",
+          "operand": {
+            "field": "Happy.Blueprint.LogFunction HappyMahjong.SelectionScene.SelectionStartCommand/\u003C\u003Ec::\u003C\u003E9__30_0"
+          }
+        },
+        {
+          "offset": 240,
+          "opcode": "ldnull",
+          "operand": null
+        },
+        {
+          "offset": 241,
+          "opcode": "ldftn",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::OnTraceBinLog(Happy.Blueprint.LogBinOpType,System.String,System.String,System.String,System.Byte[])"
+          }
+        },
+        {
+          "offset": 247,
+          "opcode": "newobj",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.TraceLogFunction::.ctor(System.Object,System.IntPtr)"
+          }
+        },
+        {
+          "offset": 252,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 253,
+          "opcode": "ldnull",
+          "operand": null
+        },
+        {
+          "offset": 254,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 Happy.Blueprint.HbpEngineService::Init(System.UInt32,Happy.Blueprint.LogLevel,Happy.Blueprint.EngineRunMode,Happy.Blueprint.EventMsgType,Happy.Blueprint.LogFunction,Happy.Blueprint.TraceLogFunction,System.Boolean,Happy.Blueprint.OnAsyncLoadingFinishedFunction)"
+          }
+        },
+        {
+          "offset": 259,
+          "opcode": "stloc.3",
+          "operand": null
+        },
+        {
+          "offset": 260,
+          "opcode": "ldloc.3",
+          "operand": null
+        },
+        {
+          "offset": 261,
+          "opcode": "brfalse.s",
+          "operand": {
+            "branch_offset": 290
+          }
+        },
+        {
+          "offset": 263,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 268,
+          "opcode": "ldloca.s",
+          "operand": {
+            "local_index": 3
+          }
+        },
+        {
+          "offset": 270,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.Int32::ToString()"
+          }
+        },
+        {
+          "offset": 275,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.String::Concat(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 280,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 285,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.Log::Error(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 290,
+          "opcode": "leave.s",
+          "operand": {
+            "branch_offset": 323
+          }
+        },
+        {
+          "offset": 292,
+          "opcode": "stloc.s",
+          "operand": {
+            "local_index": 4
+          }
+        },
+        {
+          "offset": 294,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 299,
+          "opcode": "ldloc.s",
+          "operand": {
+            "local_index": 4
+          }
+        },
+        {
+          "offset": 301,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String System.Object::ToString()"
+          }
+        },
+        {
+          "offset": 306,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.String::Concat(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 311,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 316,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.Log::Error(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 321,
+          "opcode": "leave.s",
+          "operand": {
+            "branch_offset": 323
+          }
+        },
+        {
+          "offset": 323,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.HBPUtil",
+      "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetVMLogLevelByDeviceType()",
+      "return_type": "System.Int32",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 55476
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 31
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 55476
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_101()"
+          }
+        },
+        {
+          "offset": 30,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 31,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.GM.GMManager\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 36,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.GM.GMModel HappyMahjong.Common.GM.GMManager::get_Model()"
+          }
+        },
+        {
+          "offset": 41,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMLogLevel()"
+          }
+        },
+        {
+          "offset": 46,
+          "opcode": "ldc.i4.m1",
+          "operand": null
+        },
+        {
+          "offset": 47,
+          "opcode": "beq.s",
+          "operand": {
+            "branch_offset": 65
+          }
+        },
+        {
+          "offset": 49,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.GM.GMManager\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 54,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.GM.GMModel HappyMahjong.Common.GM.GMManager::get_Model()"
+          }
+        },
+        {
+          "offset": 59,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMLogLevel()"
+          }
+        },
+        {
+          "offset": 64,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 65,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.DynamicConfig\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 70,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "HBPGame"
+          }
+        },
+        {
+          "offset": 75,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "VMLogLevels"
+          }
+        },
+        {
+          "offset": 80,
+          "opcode": "ldstr",
+          "operand": {
+            "static_diagnostic_numeric_default": "1,1,1,1,1,1"
+          }
+        },
+        {
+          "offset": 85,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String HappyMahjong.Common.DynamicConfig::GetString(System.String,System.String,System.String)"
+          }
+        },
+        {
+          "offset": 90,
+          "opcode": "ldc.i4.s",
+          "operand": 44
+        },
+        {
+          "offset": 92,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 93,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String[] System.String::Split(System.Char,System.StringSplitOptions)"
+          }
+        },
+        {
+          "offset": 98,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 99,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 100,
+          "opcode": "ldlen",
+          "operand": null
+        },
+        {
+          "offset": 101,
+          "opcode": "conv.i4",
+          "operand": null
+        },
+        {
+          "offset": 102,
+          "opcode": "ldc.i4.6",
+          "operand": null
+        },
+        {
+          "offset": 103,
+          "opcode": "beq.s",
+          "operand": {
+            "branch_offset": 107
+          }
+        },
+        {
+          "offset": 105,
+          "opcode": "ldc.i4.1",
+          "operand": null
+        },
+        {
+          "offset": 106,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 107,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 108,
+          "opcode": "call",
+          "operand": {
+            "method": "HappyMahjong.Common.Device HappyMahjong.Common.Device::GetInstance()"
+          }
+        },
+        {
+          "offset": 113,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.DeviceType HappyMahjong.Common.Device::get_type()"
+          }
+        },
+        {
+          "offset": 118,
+          "opcode": "ldelem.ref",
+          "operand": null
+        },
+        {
+          "offset": 119,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Int32 System.Convert::ToInt32(System.String)"
+          }
+        },
+        {
+          "offset": 124,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.HBPUtil",
+      "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetTraceBinLevelByDeviceType()",
+      "return_type": "System.Int32",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 62359
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 31
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 62359
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_101()"
+          }
+        },
+        {
+          "offset": 30,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 31,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.GM.GMManager\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 36,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.GM.GMModel HappyMahjong.Common.GM.GMManager::get_Model()"
+          }
+        },
+        {
+          "offset": 41,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMTraceBinLevel()"
+          }
+        },
+        {
+          "offset": 46,
+          "opcode": "ldc.i4.m1",
+          "operand": null
+        },
+        {
+          "offset": 47,
+          "opcode": "beq.s",
+          "operand": {
+            "branch_offset": 65
+          }
+        },
+        {
+          "offset": 49,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.GM.GMManager\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 54,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.GM.GMModel HappyMahjong.Common.GM.GMManager::get_Model()"
+          }
+        },
+        {
+          "offset": 59,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMTraceBinLevel()"
+          }
+        },
+        {
+          "offset": 64,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 65,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.DynamicConfig\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 70,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "HBPGame"
+          }
+        },
+        {
+          "offset": 75,
+          "opcode": "ldstr",
+          "operand": {
+            "static_config_literal": "TraceBinLevels"
+          }
+        },
+        {
+          "offset": 80,
+          "opcode": "ldstr",
+          "operand": {
+            "static_diagnostic_numeric_default": "0,0,0,0,0,0"
+          }
+        },
+        {
+          "offset": 85,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String HappyMahjong.Common.DynamicConfig::GetString(System.String,System.String,System.String)"
+          }
+        },
+        {
+          "offset": 90,
+          "opcode": "ldc.i4.s",
+          "operand": 44
+        },
+        {
+          "offset": 92,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 93,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String[] System.String::Split(System.Char,System.StringSplitOptions)"
+          }
+        },
+        {
+          "offset": 98,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 99,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 100,
+          "opcode": "ldlen",
+          "operand": null
+        },
+        {
+          "offset": 101,
+          "opcode": "conv.i4",
+          "operand": null
+        },
+        {
+          "offset": 102,
+          "opcode": "ldc.i4.6",
+          "operand": null
+        },
+        {
+          "offset": 103,
+          "opcode": "beq.s",
+          "operand": {
+            "branch_offset": 107
+          }
+        },
+        {
+          "offset": 105,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 106,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 107,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 108,
+          "opcode": "call",
+          "operand": {
+            "method": "HappyMahjong.Common.Device HappyMahjong.Common.Device::GetInstance()"
+          }
+        },
+        {
+          "offset": 113,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.DeviceType HappyMahjong.Common.Device::get_type()"
+          }
+        },
+        {
+          "offset": 118,
+          "opcode": "ldelem.ref",
+          "operand": null
+        },
+        {
+          "offset": 119,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Int32 System.Convert::ToInt32(System.String)"
+          }
+        },
+        {
+          "offset": 124,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GM.GMModel",
+      "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMLogLevel()",
+      "return_type": "System.Int32",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 55477
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 32
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 55477
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 26,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_85(System.Object)"
+          }
+        },
+        {
+          "offset": 31,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 32,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 37,
+          "opcode": "ldc.i4.m1",
+          "operand": null
+        },
+        {
+          "offset": 38,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)"
+          }
+        },
+        {
+          "offset": 43,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GM.GMModel",
+      "method": "System.Void HappyMahjong.Common.GM.GMModel::set_VMLogLevel(System.Int32)",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 62966
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 33
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 62966
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 26,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 27,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_10(System.Object,System.Int32)"
+          }
+        },
+        {
+          "offset": 32,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 33,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 38,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 39,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)"
+          }
+        },
+        {
+          "offset": 44,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GM.GMModel",
+      "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMTraceBinLevel()",
+      "return_type": "System.Int32",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 62360
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 32
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 62360
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 26,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_85(System.Object)"
+          }
+        },
+        {
+          "offset": 31,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 32,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 37,
+          "opcode": "ldc.i4.m1",
+          "operand": null
+        },
+        {
+          "offset": 38,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)"
+          }
+        },
+        {
+          "offset": 43,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GM.GMModel",
+      "method": "System.Void HappyMahjong.Common.GM.GMModel::set_VMTraceBinLevel(System.Int32)",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 62967
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 33
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 62967
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 26,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 27,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_10(System.Object,System.Int32)"
+          }
+        },
+        {
+          "offset": 32,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 33,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 38,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 39,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)"
+          }
+        },
+        {
+          "offset": 44,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GM.GMModel",
+      "method": "System.Void HappyMahjong.Common.GM.GMModel::.ctor()",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "newobj",
+          "operand": {
+            "method": "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,HappyMahjong.Common.GM.GMModel/MatchPlayerAvatarData\u003E::.ctor()"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "stfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,HappyMahjong.Common.GM.GMModel/MatchPlayerAvatarData\u003E HappyMahjong.Common.GM.GMModel::MatchPlayerAvatarOverrides"
+          }
+        },
+        {
+          "offset": 11,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 12,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void System.Object::.ctor()"
+          }
+        },
+        {
+          "offset": 17,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 18,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.GM.GMModel::Reset()"
+          }
+        },
+        {
+          "offset": 23,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GM.GMVMSystemHandler",
+      "method": "System.String HappyMahjong.Common.GM.GMVMSystemHandler::GetTraceBinLevel()",
+      "return_type": "System.String",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 64200
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 32
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 64200
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 26,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_19(System.Object)"
+          }
+        },
+        {
+          "offset": 31,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 32,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.GM.GMManager\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 37,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.GM.GMModel HappyMahjong.Common.GM.GMManager::get_Model()"
+          }
+        },
+        {
+          "offset": 42,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMTraceBinLevel()"
+          }
+        },
+        {
+          "offset": 47,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 48,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 49,
+          "opcode": "ldc.i4.m1",
+          "operand": null
+        },
+        {
+          "offset": 50,
+          "opcode": "beq.s",
+          "operand": {
+            "branch_offset": 69
+          }
+        },
+        {
+          "offset": 52,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 57,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 58,
+          "opcode": "box",
+          "operand": {
+            "type": "System.Int32"
+          }
+        },
+        {
+          "offset": 63,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.String::Format(System.String,System.Object)"
+          }
+        },
+        {
+          "offset": 68,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 69,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 74,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetTraceBinLevelByDeviceType()"
+          }
+        },
+        {
+          "offset": 79,
+          "opcode": "box",
+          "operand": {
+            "type": "System.Int32"
+          }
+        },
+        {
+          "offset": 84,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.String::Format(System.String,System.Object)"
+          }
+        },
+        {
+          "offset": 89,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.Common.GM.GMVMSystemHandler",
+      "method": "System.Void HappyMahjong.Common.GM.GMVMSystemHandler::OnSetTraceBinLevel(HappyMahjong.Common.GM.GMBaseData)",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldc.i4",
+          "operand": 64202
+        },
+        {
+          "offset": 5,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean IFix.WrappersManagerImpl::IsPatched(System.Int32)"
+          }
+        },
+        {
+          "offset": 10,
+          "opcode": "brfalse",
+          "operand": {
+            "branch_offset": 33
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4",
+          "operand": 64202
+        },
+        {
+          "offset": 20,
+          "opcode": "call",
+          "operand": {
+            "method": "IFix.ILFixDynamicMethodWrapper IFix.WrappersManagerImpl::GetPatch(System.Int32)"
+          }
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 26,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 27,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void IFix.ILFixDynamicMethodWrapper::__Gen_Wrap_1(System.Object,System.Object)"
+          }
+        },
+        {
+          "offset": 32,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 33,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 34,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "HappyMahjong.Common.GM.GMBaseData HappyMahjong.Common.GM.GMBaseData::Parent"
+          }
+        },
+        {
+          "offset": 39,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E HappyMahjong.Common.GM.GMBaseData::GetDataList()"
+          }
+        },
+        {
+          "offset": 44,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 45,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "!0 System.Collections.Generic.List\u00601\u003CSystem.String\u003E::get_Item(System.Int32)"
+          }
+        },
+        {
+          "offset": 50,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Int32 System.Int32::Parse(System.String)"
+          }
+        },
+        {
+          "offset": 55,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 56,
+          "opcode": "call",
+          "operand": {
+            "method": "!0 HappyMahjong.Common.SingletonBase\u00601\u003CHappyMahjong.Common.GM.GMManager\u003E::GetInstance()"
+          }
+        },
+        {
+          "offset": 61,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "HappyMahjong.Common.GM.GMModel HappyMahjong.Common.GM.GMManager::get_Model()"
+          }
+        },
+        {
+          "offset": 66,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 67,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.GM.GMModel::set_VMTraceBinLevel(System.Int32)"
+          }
+        },
+        {
+          "offset": 72,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 73,
+          "opcode": "ldc.i4.m1",
+          "operand": null
+        },
+        {
+          "offset": 74,
+          "opcode": "beq.s",
+          "operand": {
+            "branch_offset": 88
+          }
+        },
+        {
+          "offset": 76,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 81,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 82,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.GM.GMLogger::Log(System.String,HappyMahjong.Common.GM.GMLogger/LogType)"
+          }
+        },
+        {
+          "offset": 87,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 88,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 93,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 94,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void HappyMahjong.Common.GM.GMLogger::Log(System.String,HappyMahjong.Common.GM.GMLogger/LogType)"
+          }
+        },
+        {
+          "offset": 99,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Core",
+      "type": "HappyMahjong.Common.DynamicConfig",
+      "method": "System.String HappyMahjong.Common.DynamicConfig::GetString(System.String,System.String,System.String)",
+      "return_type": "System.String",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldloca.s",
+          "operand": {
+            "local_index": 0
+          }
+        },
+        {
+          "offset": 2,
+          "opcode": "initobj",
+          "operand": {
+            "type": "rapidjson.Value"
+          }
+        },
+        {
+          "offset": 8,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 9,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 10,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 11,
+          "opcode": "ldloca.s",
+          "operand": {
+            "local_index": 0
+          }
+        },
+        {
+          "offset": 13,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean HappyMahjong.Common.DynamicConfig::GetValueByKey(System.String,System.String,rapidjson.Value\u0026)"
+          }
+        },
+        {
+          "offset": 18,
+          "opcode": "brfalse.s",
+          "operand": {
+            "branch_offset": 34
+          }
+        },
+        {
+          "offset": 20,
+          "opcode": "ldloca.s",
+          "operand": {
+            "local_index": 0
+          }
+        },
+        {
+          "offset": 22,
+          "opcode": "constrained.",
+          "operand": {
+            "type": "rapidjson.Value"
+          }
+        },
+        {
+          "offset": 28,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String System.Object::ToString()"
+          }
+        },
+        {
+          "offset": 33,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 34,
+          "opcode": "ldarg.3",
+          "operand": null
+        },
+        {
+          "offset": 35,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::SetTraceBinRoot(System.String)",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "call",
+          "operand": {
+            "method": "T Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::get_Instance()"
+          }
+        },
+        {
+          "offset": 5,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 13
+          }
+        },
+        {
+          "offset": 7,
+          "opcode": "call",
+          "operand": {
+            "method": "T Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::CreateInstance()"
+          }
+        },
+        {
+          "offset": 12,
+          "opcode": "pop",
+          "operand": null
+        },
+        {
+          "offset": 13,
+          "opcode": "call",
+          "operand": {
+            "method": "T Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::get_Instance()"
+          }
+        },
+        {
+          "offset": 18,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 19,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.IO.Path::GetFullPath(System.String)"
+          }
+        },
+        {
+          "offset": 24,
+          "opcode": "stfld",
+          "operand": {
+            "field": "System.String Happy.Blueprint.SimpleTraceBinWriter::m_traceBinRootPath"
+          }
+        },
+        {
+          "offset": 29,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 34,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 35,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.String::Concat(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 40,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.HbpManager::Log(System.Object)"
+          }
+        },
+        {
+          "offset": 45,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::OnTraceBinLog(Happy.Blueprint.LogBinOpType,System.String,System.String,System.String,System.Byte[])",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldc.i4.1",
+          "operand": null
+        },
+        {
+          "offset": 2,
+          "opcode": "bne.un.s",
+          "operand": {
+            "branch_offset": 16
+          }
+        },
+        {
+          "offset": 4,
+          "opcode": "call",
+          "operand": {
+            "method": "T Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::get_Instance()"
+          }
+        },
+        {
+          "offset": 9,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 10,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::StartTraceBin(System.String)"
+          }
+        },
+        {
+          "offset": 15,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 16,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 17,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 33
+          }
+        },
+        {
+          "offset": 19,
+          "opcode": "call",
+          "operand": {
+            "method": "T Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::get_Instance()"
+          }
+        },
+        {
+          "offset": 24,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 25,
+          "opcode": "ldarg.s",
+          "operand": {
+            "parameter_index": 4
+          }
+        },
+        {
+          "offset": 27,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::WriteTraceBin(System.String,System.Byte[])"
+          }
+        },
+        {
+          "offset": 32,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 33,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 34,
+          "opcode": "ldc.i4.2",
+          "operand": null
+        },
+        {
+          "offset": 35,
+          "opcode": "bne.un.s",
+          "operand": {
+            "branch_offset": 49
+          }
+        },
+        {
+          "offset": 37,
+          "opcode": "call",
+          "operand": {
+            "method": "T Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::get_Instance()"
+          }
+        },
+        {
+          "offset": 42,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 43,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::FinishTraceBin(System.String)"
+          }
+        },
+        {
+          "offset": 48,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 49,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 50,
+          "opcode": "ldc.i4.3",
+          "operand": null
+        },
+        {
+          "offset": 51,
+          "opcode": "bne.un.s",
+          "operand": {
+            "branch_offset": 65
+          }
+        },
+        {
+          "offset": 53,
+          "opcode": "call",
+          "operand": {
+            "method": "T Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::get_Instance()"
+          }
+        },
+        {
+          "offset": 58,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 59,
+          "opcode": "ldarg.3",
+          "operand": null
+        },
+        {
+          "offset": 60,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::RenameTraceBin(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 65,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.String Happy.Blueprint.SimpleTraceBinWriter::TagToPath(System.String)",
+      "return_type": "System.String",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.String Happy.Blueprint.SimpleTraceBinWriter::m_traceBinRootPath"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.IO.Path::Combine(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 12,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 17,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 22,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.String System.String::Replace(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 27,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::StartTraceBin(System.String)",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::ContainsKey(!0)"
+          }
+        },
+        {
+          "offset": 12,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 65
+          }
+        },
+        {
+          "offset": 14,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 15,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 16,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String Happy.Blueprint.SimpleTraceBinWriter::TagToPath(System.String)"
+          }
+        },
+        {
+          "offset": 21,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 22,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 23,
+          "opcode": "newobj",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.TraceBinDefaultWriter::.ctor(System.String)"
+          }
+        },
+        {
+          "offset": 28,
+          "opcode": "stloc.1",
+          "operand": null
+        },
+        {
+          "offset": 29,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 30,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 31,
+          "opcode": "stfld",
+          "operand": {
+            "field": "System.String Happy.Blueprint.SimpleTraceBinWriter::m_curWriteTraceBinPath"
+          }
+        },
+        {
+          "offset": 36,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 41,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 42,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String System.String::Concat(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 47,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.HbpManager::Log(System.Object)"
+          }
+        },
+        {
+          "offset": 52,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 53,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 58,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 59,
+          "opcode": "ldloc.1",
+          "operand": null
+        },
+        {
+          "offset": 60,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::Add(!0,!1)"
+          }
+        },
+        {
+          "offset": 65,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::WriteTraceBin(System.String,System.Byte[])",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::ContainsKey(!0)"
+          }
+        },
+        {
+          "offset": 12,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 21
+          }
+        },
+        {
+          "offset": 14,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 15,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 16,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::StartTraceBin(System.String)"
+          }
+        },
+        {
+          "offset": 21,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 22,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 27,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 28,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "!1 System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::get_Item(!0)"
+          }
+        },
+        {
+          "offset": 33,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 34,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.TraceBinWriter::Write(System.Byte[])"
+          }
+        },
+        {
+          "offset": 39,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::FinishTraceBin(System.String)",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::ContainsKey(!0)"
+          }
+        },
+        {
+          "offset": 12,
+          "opcode": "brfalse.s",
+          "operand": {
+            "branch_offset": 44
+          }
+        },
+        {
+          "offset": 14,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 15,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 20,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 21,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "!1 System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::get_Item(!0)"
+          }
+        },
+        {
+          "offset": 26,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.TraceBinWriter::Finish()"
+          }
+        },
+        {
+          "offset": 31,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 32,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 37,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 38,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::Remove(!0)"
+          }
+        },
+        {
+          "offset": 43,
+          "opcode": "pop",
+          "operand": null
+        },
+        {
+          "offset": 44,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::RenameTraceBin(System.String,System.String)",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "callvirt",
+          "operand": {
+            "method": "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::ContainsKey(!0)"
+          }
+        },
+        {
+          "offset": 12,
+          "opcode": "brfalse.s",
+          "operand": {
+            "branch_offset": 67
+          }
+        },
+        {
+          "offset": 14,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 15,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 16,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::FinishTraceBin(System.String)"
+          }
+        },
+        {
+          "offset": 21,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 22,
+          "opcode": "ldarg.2",
+          "operand": null
+        },
+        {
+          "offset": 23,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String Happy.Blueprint.SimpleTraceBinWriter::TagToPath(System.String)"
+          }
+        },
+        {
+          "offset": 28,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 29,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 30,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 31,
+          "opcode": "call",
+          "operand": {
+            "method": "System.String Happy.Blueprint.SimpleTraceBinWriter::TagToPath(System.String)"
+          }
+        },
+        {
+          "offset": 36,
+          "opcode": "stloc.1",
+          "operand": null
+        },
+        {
+          "offset": 37,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 38,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean System.IO.File::Exists(System.String)"
+          }
+        },
+        {
+          "offset": 43,
+          "opcode": "brfalse.s",
+          "operand": {
+            "branch_offset": 60
+          }
+        },
+        {
+          "offset": 45,
+          "opcode": "ldloc.1",
+          "operand": null
+        },
+        {
+          "offset": 46,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Boolean System.IO.File::Exists(System.String)"
+          }
+        },
+        {
+          "offset": 51,
+          "opcode": "brtrue.s",
+          "operand": {
+            "branch_offset": 60
+          }
+        },
+        {
+          "offset": 53,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 54,
+          "opcode": "ldloc.1",
+          "operand": null
+        },
+        {
+          "offset": 55,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void System.IO.File::Move(System.String,System.String)"
+          }
+        },
+        {
+          "offset": 60,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 61,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 62,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::StartTraceBin(System.String)"
+          }
+        },
+        {
+          "offset": 67,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.String Happy.Blueprint.SimpleTraceBinWriter::GetCurWriteTraceBinPath()",
+      "return_type": "System.String",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.String Happy.Blueprint.SimpleTraceBinWriter::m_curWriteTraceBinPath"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "brfalse.s",
+          "operand": {
+            "branch_offset": 15
+          }
+        },
+        {
+          "offset": 8,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 9,
+          "opcode": "ldfld",
+          "operand": {
+            "field": "System.String Happy.Blueprint.SimpleTraceBinWriter::m_curWriteTraceBinPath"
+          }
+        },
+        {
+          "offset": 14,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 15,
+          "opcode": "ldstr",
+          "operand": {
+            "string_literal_omitted": true
+          }
+        },
+        {
+          "offset": 20,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.SimpleTraceBinWriter",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::.ctor()",
+      "return_type": "System.Void",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "newobj",
+          "operand": {
+            "method": "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E::.ctor()"
+          }
+        },
+        {
+          "offset": 6,
+          "opcode": "stfld",
+          "operand": {
+            "field": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Happy.Blueprint.TraceBinWriter\u003E Happy.Blueprint.SimpleTraceBinWriter::m_allWriters"
+          }
+        },
+        {
+          "offset": 11,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 12,
+          "opcode": "call",
+          "operand": {
+            "method": "System.Void Happy.Blueprint.HbpSingleton\u00601\u003CHappy.Blueprint.SimpleTraceBinWriter\u003E::.ctor()"
+          }
+        },
+        {
+          "offset": 17,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "assembly": "HappyMahjong.Core",
+      "type": "HappyMahjong.Common.DeviceType",
+      "values": [
+        {
+          "name": "SuperLow",
+          "value": 0
+        },
+        {
+          "name": "Low",
+          "value": 1
+        },
+        {
+          "name": "LowNormal",
+          "value": 2
+        },
+        {
+          "name": "Normal",
+          "value": 3
+        },
+        {
+          "name": "High",
+          "value": 4
+        },
+        {
+          "name": "SuperHigh",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "Happy.Blueprint.TraceBinLevel",
+      "values": [
+        {
+          "name": "TRACE_LEVEL_OFF",
+          "value": 0
+        },
+        {
+          "name": "TRACE_LEVEL_ONLY_FLOW",
+          "value": 1
+        },
+        {
+          "name": "TRACE_LEVEL_VAR_NO_REF_ENTITY",
+          "value": 2
+        },
+        {
+          "name": "TRACE_LEVEL_ALL",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "callers": [
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.SelectionScene.SelectionStartCommand::InitHbpEngineService()",
+      "calls": [
+        {
+          "offset": 110,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::SetTraceBinRoot(System.String)"
+        },
+        {
+          "offset": 125,
+          "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetVMLogLevelByDeviceType()"
+        },
+        {
+          "offset": 241,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::OnTraceBinLog(Happy.Blueprint.LogBinOpType,System.String,System.String,System.String,System.Byte[])"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetTraceBinLevelByDeviceType()",
+      "calls": [
+        {
+          "offset": 41,
+          "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMTraceBinLevel()"
+        },
+        {
+          "offset": 59,
+          "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMTraceBinLevel()"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.Common.GM.GMLogSystemHandler::InitData(System.Collections.Generic.List\u00601\u003CHappyMahjong.Common.GM.GMBaseData\u003E)",
+      "calls": [
+        {
+          "offset": 465,
+          "method": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E HappyMahjong.Common.GM.GMLogSystemHandler::GetTraceBinLogFileList()"
+        },
+        {
+          "offset": 488,
+          "method": "System.Void HappyMahjong.Common.GM.GMLogSystemHandler::ReportTraceBinLog(HappyMahjong.Common.GM.GMBaseData)"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E HappyMahjong.Common.GM.GMLogSystemHandler::GetTraceBinLogFileList()",
+      "calls": [
+        {
+          "offset": 33,
+          "method": "System.String HappyMahjong.Common.GM.GMLogSystemHandler::GetTraceBinDir()"
+        },
+        {
+          "offset": 68,
+          "method": "System.DateTime HappyMahjong.Common.GM.GMLogSystemHandler/\u003C\u003Ec::\u003CGetTraceBinLogFileList\u003Eb__4_0(System.IO.FileInfo)"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.Common.GM.GMLogSystemHandler/\u003CReportTraceBinLog\u003Ed__16::MoveNext()",
+      "calls": [
+        {
+          "offset": 148,
+          "method": "System.String HappyMahjong.Common.GM.GMLogSystemHandler::GetTraceBinDir()"
+        },
+        {
+          "offset": 154,
+          "method": "System.Threading.Tasks.Task HappyMahjong.Common.GM.GMLogSystemHandler::UploadTraceBin(System.String,System.String)"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.Common.GM.GMVMSystemHandler::InitData(System.Collections.Generic.List\u00601\u003CHappyMahjong.Common.GM.GMBaseData\u003E)",
+      "calls": [
+        {
+          "offset": 103,
+          "method": "System.String HappyMahjong.Common.GM.GMVMSystemHandler::GetTraceBinLevel()"
+        },
+        {
+          "offset": 246,
+          "method": "System.Void HappyMahjong.Common.GM.GMVMSystemHandler::OnSetTraceBinLevel(HappyMahjong.Common.GM.GMBaseData)"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.String HappyMahjong.Common.GM.GMVMSystemHandler::GetLogLevel()",
+      "calls": [
+        {
+          "offset": 74,
+          "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetVMLogLevelByDeviceType()"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.String HappyMahjong.Common.GM.GMVMSystemHandler::GetTraceBinLevel()",
+      "calls": [
+        {
+          "offset": 42,
+          "method": "System.Int32 HappyMahjong.Common.GM.GMModel::get_VMTraceBinLevel()"
+        },
+        {
+          "offset": 74,
+          "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetTraceBinLevelByDeviceType()"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "method": "System.Void HappyMahjong.Common.GM.GMVMSystemHandler::OnSetTraceBinLevel(HappyMahjong.Common.GM.GMBaseData)",
+      "calls": [
+        {
+          "offset": 67,
+          "method": "System.Void HappyMahjong.Common.GM.GMModel::set_VMTraceBinLevel(System.Int32)"
+        }
+      ]
+    },
+    {
+      "assembly": "UniFramework",
+      "method": "System.Boolean HappyBlueprint.HBpEngineAdapter::InitEngine(System.UInt32,Happy.Blueprint.LogLevel,System.String,Happy.Blueprint.EngineRunMode,Happy.Blueprint.EventMsgType,Happy.Blueprint.LogFunction)",
+      "calls": [
+        {
+          "offset": 72,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::SetTraceBinRoot(System.String)"
+        },
+        {
+          "offset": 148,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::OnTraceBinLog(Happy.Blueprint.LogBinOpType,System.String,System.String,System.String,System.Byte[])"
+        }
+      ]
+    },
+    {
+      "assembly": "UniFramework",
+      "method": "System.String HappyBlueprint.HBpEngineAdapter::GetCurWriteTraceBinPath()",
+      "calls": [
+        {
+          "offset": 5,
+          "method": "System.String Happy.Blueprint.SimpleTraceBinWriter::GetCurWriteTraceBinPath()"
+        }
+      ]
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "method": "System.Void PuertsStaticWrap.HappyBlueprint_HBpEngineAdapter_Wrap::M_GetCurWriteTraceBinPath(System.IntPtr,System.IntPtr,System.IntPtr,System.Int32,System.Int64)",
+      "calls": [
+        {
+          "offset": 51,
+          "method": "System.String HappyBlueprint.HBpEngineAdapter::GetCurWriteTraceBinPath()"
+        }
+      ]
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "method": "Puerts.TypeMapping.RegisterInfo PuertsStaticWrap.PuerRegisterInfo_Gen::GetRegisterInfo_HappyBlueprint_HBpEngineAdapter_Wrap()",
+      "calls": [
+        {
+          "offset": 1057,
+          "method": "System.Void PuertsStaticWrap.HappyBlueprint_HBpEngineAdapter_Wrap::M_GetCurWriteTraceBinPath(System.IntPtr,System.IntPtr,System.IntPtr,System.Int32,System.Int64)"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.NewGame.MJGameContext::Init(HappyMahjong.Game.GameContext)",
+      "calls": [
+        {
+          "offset": 52,
+          "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetVMLogLevelByDeviceType()"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.InGameScripts",
+      "method": "System.Void HappyMahjong.NewGame.MJGameContext::InitVM(System.String,Happy.Blueprint.VMBPLoadMode,System.String)",
+      "calls": [
+        {
+          "offset": 149,
+          "method": "System.Int32 HappyMahjong.Common.HBPUtil::GetTraceBinLevelByDeviceType()"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::OnTraceBinLog(Happy.Blueprint.LogBinOpType,System.String,System.String,System.String,System.Byte[])",
+      "calls": [
+        {
+          "offset": 10,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::StartTraceBin(System.String)"
+        },
+        {
+          "offset": 27,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::WriteTraceBin(System.String,System.Byte[])"
+        },
+        {
+          "offset": 43,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::FinishTraceBin(System.String)"
+        },
+        {
+          "offset": 60,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::RenameTraceBin(System.String,System.String)"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::WriteTraceBin(System.String,System.Byte[])",
+      "calls": [
+        {
+          "offset": 16,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::StartTraceBin(System.String)"
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::RenameTraceBin(System.String,System.String)",
+      "calls": [
+        {
+          "offset": 16,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::FinishTraceBin(System.String)"
+        },
+        {
+          "offset": 62,
+          "method": "System.Void Happy.Blueprint.SimpleTraceBinWriter::StartTraceBin(System.String)"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Recovered static IL only; no runtime configuration or effect is proven.",
+    "Arbitrary string constants are omitted; only narrow static diagnostic-key names are retained."
+  ]
+}

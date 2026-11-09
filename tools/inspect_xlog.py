@@ -131,7 +131,7 @@ def main():
                     catalog = json.loads(pathlib.Path('reports/device-round/gameplay-field-catalog.json').read_text())['fields']
                     canonical = {key.lower(): key for key in catalog}
                     # Adjacent decoded frames are parts of the same logical stream.
-                    # Stop at any undecoded frame instead of splicing across a gap.
+                    # If any frame was undecoded, separate recovered chunks with newlines.
                     if row.get('decode_counts', {}).get('encrypted_variant') or row.get('decode_counts', {}).get('decode_error') or row.get('decode_counts', {}).get('zstd_not_decoded'):
                         text = '\n'.join(chunk.decode('utf-8', errors='replace') for chunk in decoded)
                     else:

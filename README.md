@@ -1,6 +1,8 @@
 # 欢乐麻将 iOS 静态逆向分析
 
-[第十三轮：二进制日志解码](reports/binary-logs/FINDINGS.md)：两份 xlog 的 6 条记录完整解压，新增约 173 万字节文本覆盖；尚无实时对手手牌证据。
+[第十四轮：现有二进制跟踪入口](reports/trace-config/FINDINGS.md)：确认 TraceBin 默认关闭、GM 覆盖使用 PlayerPrefs 保存，以及虚拟机初始化和字节写入调用链；未取得实际 TraceBin 样本。
+
+[第十三轮：二进制日志解码](reports/binary-logs/FINDINGS.md)：两份 xlog 的 6 条记录完整解压，已完成 5364 个源码字段与 JSON 结构复查；尚无实时对手手牌证据。
 
 [第十二轮：完整设备包核对](reports/complete-v2/FINDINGS.md)：独立验证 16/16 候选文件，解析设备配置及 3 个热补丁；未取得实时对手暗牌。
 
