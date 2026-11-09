@@ -1,0 +1,30 @@
+name: Trace seat-bearing hand and recommendation paths
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trace:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Download previously recovered assemblies
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+      - name: Compile and trace direct references
+        run: |
+          dotnet build tools/ProtocolInspect/ProtocolInspect.csproj -c Release
+          dotnet tools/ProtocolInspect/bin/Release/net8.0/ProtocolInspect.dll recovered-input/recovered/assemblies report/ownership
+      - name: Cross-reference already validated round observations
+        run: |
+          python3 -m py_compile tools/summarize_ownership_paths.py
+          python3 tools/summarize_ownership_paths.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ownership-path-report
+          path: report/ownership/

@@ -4,6 +4,10 @@ using System.IO.Compression;
 IEnumerable<TypeDefinition> Flatten(IEnumerable<TypeDefinition> types){foreach(var t in types){yield return t;foreach(var n in Flatten(t.NestedTypes))yield return n;}}
 var targetTypes=new HashSet<string>{"MJSoPb.UnitProtoValue","MJSoPb.TProtoIntelligenceAdvice","MJSoPb.TProtoIntelligenceAdviceTing","MJSoPb.TProtoOneDiscardTingAdvice","MJSoPb.TProtoSingleTingTile","HuanLeGameSo.TAbilityTileWallInfo","HuanLeGameSo.TSingleTileShowInfo"};
 var targetFields=new HashSet<string>{"stUnitProtoValueBuf","stAbilityTileWallInfo","iTileFace","iTileBack","astTileInfos"};
+var ownershipTypes=new HashSet<string>{"HuanLeGameSo.TNewRecommendFanTarget","HuanLeGameSo.TOneNewRecommendFanTarget","MJSoPb.TNewRecommendFanTarget","MJSoPb.TOneNewRecommendFanTarget","HuanLeGameSo.TPlayerTotalHandAbilityTileInfo","HuanLeGameSo.TPlayerHandAbilityTileInfo","MJSoPb.TPlayerTotalHandAbilityTileInfo","MJSoPb.TPlayerHandAbilityTileInfo"};
+targetTypes.UnionWith(ownershipTypes);
+targetFields.UnionWith(new[]{"stNewRecommendFanTarget","stPlayerTotalHandAbilityTileInfo","astPlayerHandAbilityTileInfo","CurHandTiles","CurHandTilesFlagNew"});
+var ownershipConsumers=new List<object>();var ownershipSchemas=new List<object>();var ownershipEnums=new List<object>();
 var schemas=new List<object>();var consumers=new List<object>();int scanned=0,bodies=0;
 var candidateNames=new Dictionary<string,List<int>>(StringComparer.OrdinalIgnoreCase);
 var fileReferences=new List<object>();
@@ -26,6 +30,8 @@ if(File.Exists("private-input/device.zip")){
 foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  using var asm=AssemblyDefinition.ReadAssembly(file);
  foreach(var t in Flatten(asm.MainModule.Types)){
+  if(ownershipTypes.Contains(t.FullName))ownershipSchemas.Add(new{assembly=asm.Name.Name,type=t.FullName,fields=t.Fields.Where(f=>!f.IsStatic).Select(f=>new{name=f.Name,type=f.FieldType.FullName}).ToArray(),properties=t.Properties.Select(p=>new{name=p.Name,type=p.PropertyType.FullName}).ToArray()});
+  if(t.FullName=="HuanLeGameSo.TLV_TYPE")foreach(var field in t.Fields.Where(f=>f.HasConstant && (f.Name.Contains("PLAYER_HAND_ABILITY") || f.Name.Contains("NEW_RECOMMEND_FAN_TARGET") || f.Name.Contains("ABILITY_TILE_WALL"))))ownershipEnums.Add(new{name=field.Name,value=field.Constant});
   foreach(string member in t.Fields.Select(f=>f.Name).Concat(t.Properties.Select(p=>p.Name))){
    string key=member.Trim('_');
    if(key.Length<=80 && System.Text.RegularExpressions.Regex.IsMatch(key,@"^[A-Za-z_][A-Za-z0-9_]*$") && !key.EndsWith("FieldNumber") && !key.EndsWith("DefaultValue") && gameplayNamePattern.IsMatch(key))gameplayFieldNames.Add(key);
@@ -34,10 +40,13 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
   foreach(var m in t.Methods){
    scanned++;if(!m.HasBody)continue;bodies++;
    var hits=new List<object>();
+   var ownershipHits=new List<object>();
    var ioCalls=new HashSet<string>();
    bool recordLiteral=false,byteArray16=false;
    var recordFileLiterals=new HashSet<string>();
    foreach(var ins in m.Body.Instructions){
+    if(ins.Operand is FieldReference ownerField && (ownershipTypes.Contains(ownerField.DeclaringType.FullName) || new[]{"stNewRecommendFanTarget","stPlayerTotalHandAbilityTileInfo"}.Contains(ownerField.Name)))ownershipHits.Add(new{offset=ins.Offset,opcode=ins.OpCode.Name,reference=ownerField.FullName});
+    if(ins.Operand is MethodReference ownerMethod && ownershipTypes.Contains(ownerMethod.DeclaringType.FullName))ownershipHits.Add(new{offset=ins.Offset,opcode=ins.OpCode.Name,reference=ownerMethod.FullName});
     if(ins.Operand is MethodReference called && (called.DeclaringType.FullName.StartsWith("System.IO.") || called.DeclaringType.Name.Contains("FileHelper") || called.DeclaringType.Name.Contains("PathManager")))ioCalls.Add(called.FullName);
     if(ins.OpCode.Name=="newarr" && ins.Operand is TypeReference element && element.FullName=="System.Byte" && ins.Previous!=null){
      var prev=ins.Previous;
@@ -57,12 +66,14 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
       hits.Add(new{offset=ins.Offset,opcode=ins.OpCode.Name,field=f.FullName});
    }
    if(ioCalls.Count>0 && (recordLiteral || byteArray16))recordIoCandidates.Add(new{assembly=asm.Name.Name,method=m.FullName,record_literal_present=recordLiteral,sixteen_byte_array_allocation=byteArray16,static_record_filenames=recordFileLiterals.ToArray(),io_calls=ioCalls.ToArray()});
+   if(ownershipHits.Count>0 && !t.Namespace.StartsWith("HuanLeGameSo") && !t.Namespace.StartsWith("MJSoPb") && !t.Namespace.StartsWith("IFix"))ownershipConsumers.Add(new{assembly=asm.Name.Name,method=m.FullName,hits=ownershipHits});
    if(hits.Count>0 && !t.Namespace.StartsWith("HuanLeGameSo") && !t.Namespace.StartsWith("MJSoPb") && !t.Namespace.StartsWith("IFix"))
     consumers.Add(new{assembly=asm.Name.Name,method=m.FullName,hits});
   }
  }
 }
 Directory.CreateDirectory(args[1]);
+File.WriteAllText(Path.Combine(args[1],"ownership-paths.json"),JsonSerializer.Serialize(new{schemas=ownershipSchemas,enums=ownershipEnums,consumers=ownershipConsumers,limits=new[]{"Only direct field and method references in recovered managed assemblies are indexed.","Native code, reflection, runtime patches and actual message contents are not established by this scan."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
 File.WriteAllText(Path.Combine(args[1],"gameplay-field-catalog.json"),JsonSerializer.Serialize(new{fields=gameplayFieldNames.OrderBy(n=>n,StringComparer.Ordinal).ToArray(),limits=new[]{"Static recovered field and property names selected by gameplay terms; names alone do not establish gameplay semantics."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
 var result=new{scanned_methods=scanned,methods_with_bodies=bodies,schemas,consumers,limits=new[]{"Only the recovered managed assemblies were scanned; native AOT implementation and active runtime patches are not covered.","A schema definition does not establish actual network payload contents."}};
 File.WriteAllText(Path.Combine(args[1],"protocol-consumers.json"),JsonSerializer.Serialize(result,new JsonSerializerOptions{WriteIndented=true})+"\n");
