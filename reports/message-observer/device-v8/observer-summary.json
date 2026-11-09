@@ -1,0 +1,1582 @@
+{
+  "status_files": [
+    {
+      "entry": 9,
+      "status": "recognized_status",
+      "session_count": 4,
+      "invalid_record_count": 0,
+      "records": [
+        {
+          "kind": "native_status",
+          "status": "library_loaded",
+          "session": 1,
+          "attempt": 0,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "native_status",
+          "status": "preparing_files",
+          "session": 1,
+          "attempt": null,
+          "reported_subscription_registered": null
+        },
+        {
+          "kind": "native_status",
+          "status": "managed_assembly_loaded",
+          "session": 1,
+          "attempt": 1,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "managed_status",
+          "status": "observer_started",
+          "session": 1,
+          "count_or_channel": 0
+        },
+        {
+          "kind": "native_status",
+          "status": "observer_started",
+          "session": 1,
+          "attempt": 1,
+          "reported_subscription_registered": true
+        },
+        {
+          "kind": "managed_status",
+          "status": "first_event_recorded",
+          "session": 1,
+          "count_or_channel": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "capture_failed",
+          "session": 1,
+          "count_or_channel": 1
+        },
+        {
+          "kind": "native_status",
+          "status": "library_loaded",
+          "session": 2,
+          "attempt": 0,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "native_status",
+          "status": "preparing_files",
+          "session": 2,
+          "attempt": null,
+          "reported_subscription_registered": null
+        },
+        {
+          "kind": "native_status",
+          "status": "managed_assembly_loaded",
+          "session": 2,
+          "attempt": 1,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "managed_status",
+          "status": "observer_started",
+          "session": 2,
+          "count_or_channel": 0
+        },
+        {
+          "kind": "native_status",
+          "status": "observer_started",
+          "session": 2,
+          "attempt": 1,
+          "reported_subscription_registered": true
+        },
+        {
+          "kind": "managed_status",
+          "status": "first_event_recorded",
+          "session": 2,
+          "count_or_channel": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "field_snapshot",
+          "category": "invalid_operation",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "field_snapshot",
+          "category": "invalid_operation",
+          "message_type": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "field_snapshot",
+          "category": "invalid_operation",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "capture_progress",
+          "session": 2,
+          "count_or_channel": 25
+        },
+        {
+          "kind": "managed_status",
+          "status": "capture_progress",
+          "session": 2,
+          "count_or_channel": 50
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "field_snapshot",
+          "category": "invalid_operation",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 2,
+          "count_or_channel": 0,
+          "stage": "field_snapshot",
+          "category": "invalid_operation",
+          "message_type": 1
+        },
+        {
+          "kind": "native_status",
+          "status": "library_loaded",
+          "session": 3,
+          "attempt": 0,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "native_status",
+          "status": "preparing_files",
+          "session": 3,
+          "attempt": null,
+          "reported_subscription_registered": null
+        },
+        {
+          "kind": "native_status",
+          "status": "managed_assembly_loaded",
+          "session": 3,
+          "attempt": 1,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "managed_status",
+          "status": "observer_started",
+          "session": 3,
+          "count_or_channel": 0
+        },
+        {
+          "kind": "native_status",
+          "status": "observer_started",
+          "session": 3,
+          "attempt": 1,
+          "reported_subscription_registered": true
+        },
+        {
+          "kind": "managed_status",
+          "status": "first_event_recorded",
+          "session": 3,
+          "count_or_channel": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 3,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 3,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "capture_progress",
+          "session": 3,
+          "count_or_channel": 25
+        },
+        {
+          "kind": "managed_status",
+          "status": "capture_progress",
+          "session": 3,
+          "count_or_channel": 50
+        },
+        {
+          "kind": "native_status",
+          "status": "library_loaded",
+          "session": 4,
+          "attempt": 0,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "native_status",
+          "status": "preparing_files",
+          "session": 4,
+          "attempt": null,
+          "reported_subscription_registered": null
+        },
+        {
+          "kind": "native_status",
+          "status": "managed_assembly_loaded",
+          "session": 4,
+          "attempt": 1,
+          "reported_subscription_registered": false
+        },
+        {
+          "kind": "managed_status",
+          "status": "observer_started",
+          "session": 4,
+          "count_or_channel": 0
+        },
+        {
+          "kind": "native_status",
+          "status": "observer_started",
+          "session": 4,
+          "attempt": 1,
+          "reported_subscription_registered": true
+        },
+        {
+          "kind": "managed_status",
+          "status": "first_event_recorded",
+          "session": 4,
+          "count_or_channel": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 4,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 4,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 1
+        },
+        {
+          "kind": "managed_status",
+          "status": "serialization_failed",
+          "session": 4,
+          "count_or_channel": 0,
+          "stage": "tdr_pack",
+          "category": "argument",
+          "message_type": 8
+        },
+        {
+          "kind": "managed_status",
+          "status": "capture_progress",
+          "session": 4,
+          "count_or_channel": 25
+        }
+      ],
+      "latest_session_subscription_reported": true,
+      "latest_session_first_event_reported": true
+    }
+  ],
+  "event_files": [
+    {
+      "entry": 5,
+      "status": "recognized_events",
+      "valid_frame_count": 57,
+      "invalid_record_count": 0,
+      "sequence_discontinuities": 0,
+      "decoded_bytes": 157005,
+      "channel_counts": {
+        "tdr": 57
+      },
+      "message_type_counts": {
+        "17": 3,
+        "3": 38,
+        "5": 11,
+        "52": 2,
+        "160": 1,
+        "50": 1,
+        "51": 1
+      },
+      "frames": [
+        {
+          "sequence": 1,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 2,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 308,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 3,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 7618,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 4,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7338,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 5,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 6,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 7,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 8,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 308,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 9,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 309,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 10,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 11,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 308,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 12,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 8404,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 13,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8228,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 14,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 316,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 15,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 146,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 16,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 305,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 17,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 317,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 18,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8589,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 19,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8218,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 20,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 21,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 22,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8457,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 23,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8086,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 24,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 25,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 305,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 26,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 317,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 27,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8457,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 28,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8060,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 29,
+          "channel": "tdr",
+          "message_type": 52,
+          "bytes": 16,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 30,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 317,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 31,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 32,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 305,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 33,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 317,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 34,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8915,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 35,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7648,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 36,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 37,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 38,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8915,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 39,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7648,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 40,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 41,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 316,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 42,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 146,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 43,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8023,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 44,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7648,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 45,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 46,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 47,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8023,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 48,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7622,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 49,
+          "channel": "tdr",
+          "message_type": 52,
+          "bytes": 16,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 50,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 317,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 51,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 52,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 386,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 53,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 532,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 54,
+          "channel": "tdr",
+          "message_type": 160,
+          "bytes": 48,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 55,
+          "channel": "tdr",
+          "message_type": 50,
+          "bytes": 66,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 56,
+          "channel": "tdr",
+          "message_type": 51,
+          "bytes": 1063,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 57,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15,
+          "encoding": "reencoded_decoded_event"
+        }
+      ]
+    },
+    {
+      "entry": 6,
+      "status": "recognized_events",
+      "valid_frame_count": 67,
+      "invalid_record_count": 0,
+      "sequence_discontinuities": 0,
+      "decoded_bytes": 241403,
+      "channel_counts": {
+        "tdr": 67
+      },
+      "message_type_counts": {
+        "17": 1,
+        "8": 1,
+        "1": 1,
+        "3": 50,
+        "5": 10,
+        "52": 1,
+        "160": 1,
+        "50": 1,
+        "51": 1
+      },
+      "frames": [
+        {
+          "sequence": 1,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 2,
+          "channel": "tdr",
+          "message_type": 8,
+          "bytes": 4919,
+          "encoding": "public_field_snapshot"
+        },
+        {
+          "sequence": 3,
+          "channel": "tdr",
+          "message_type": 1,
+          "bytes": 33622,
+          "encoding": "public_field_snapshot"
+        },
+        {
+          "sequence": 4,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7264,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 5,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 6,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 7,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 308,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 8,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 7353,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 9,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7264,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 10,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 11,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 12,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7547,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 13,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7264,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 14,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 15,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 16,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 308,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 17,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 7353,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 18,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7238,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 19,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 309,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 20,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 21,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7538,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 22,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7264,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 23,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 297,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 24,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 309,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 25,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7982,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 26,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7696,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 27,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 28,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 29,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7982,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 30,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7696,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 31,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 297,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 32,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 309,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 33,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 34,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7850,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 35,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7538,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 36,
+          "channel": "tdr",
+          "message_type": 52,
+          "bytes": 16,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 37,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 309,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 38,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 39,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 40,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 41,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7850,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 42,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7564,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 43,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 44,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 297,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 45,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 309,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 46,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7850,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 47,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7573,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 48,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 49,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 50,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7935,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 51,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7582,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 52,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 53,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 54,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 337,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 55,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 7783,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 56,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7572,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 57,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 58,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 331,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 59,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7984,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 60,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7572,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 61,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 305,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 62,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 317,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 63,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 434,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 64,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 576,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 65,
+          "channel": "tdr",
+          "message_type": 160,
+          "bytes": 48,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 66,
+          "channel": "tdr",
+          "message_type": 50,
+          "bytes": 69,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 67,
+          "channel": "tdr",
+          "message_type": 51,
+          "bytes": 1099,
+          "encoding": "reencoded_decoded_event"
+        }
+      ]
+    },
+    {
+      "entry": 7,
+      "status": "recognized_events",
+      "valid_frame_count": 38,
+      "invalid_record_count": 0,
+      "sequence_discontinuities": 0,
+      "decoded_bytes": 152620,
+      "channel_counts": {
+        "tdr": 38
+      },
+      "message_type_counts": {
+        "17": 2,
+        "8": 2,
+        "1": 1,
+        "3": 24,
+        "5": 4,
+        "26": 1,
+        "160": 1,
+        "50": 1,
+        "51": 1,
+        "55": 1
+      },
+      "frames": [
+        {
+          "sequence": 1,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 2,
+          "channel": "tdr",
+          "message_type": 8,
+          "bytes": 4920,
+          "encoding": "public_field_snapshot"
+        },
+        {
+          "sequence": 3,
+          "channel": "tdr",
+          "message_type": 1,
+          "bytes": 38261,
+          "encoding": "public_field_snapshot"
+        },
+        {
+          "sequence": 4,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 5,
+          "channel": "tdr",
+          "message_type": 8,
+          "bytes": 21616,
+          "encoding": "public_field_snapshot"
+        },
+        {
+          "sequence": 6,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 7,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 8,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 8366,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 9,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7696,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 10,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 332,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 11,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 12,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 308,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 13,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 7208,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 14,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 6940,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 15,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 16,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 17,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 7226,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 18,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 6808,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 19,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 20,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 332,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 21,
+          "channel": "tdr",
+          "message_type": 26,
+          "bytes": 27,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 22,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 329,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 23,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 6320,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 24,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 6052,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 25,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 26,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 297,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 27,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 138,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 28,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 6338,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 29,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 6052,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 30,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 333,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 31,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 323,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 32,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 6347,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 33,
+          "channel": "tdr",
+          "message_type": 3,
+          "bytes": 6026,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 34,
+          "channel": "tdr",
+          "message_type": 5,
+          "bytes": 554,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 35,
+          "channel": "tdr",
+          "message_type": 160,
+          "bytes": 48,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 36,
+          "channel": "tdr",
+          "message_type": 50,
+          "bytes": 81,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 37,
+          "channel": "tdr",
+          "message_type": 51,
+          "bytes": 1025,
+          "encoding": "reencoded_decoded_event"
+        },
+        {
+          "sequence": 38,
+          "channel": "tdr",
+          "message_type": 55,
+          "bytes": 26,
+          "encoding": "reencoded_decoded_event"
+        }
+      ]
+    },
+    {
+      "entry": 8,
+      "status": "recognized_events",
+      "valid_frame_count": 1,
+      "invalid_record_count": 0,
+      "sequence_discontinuities": 0,
+      "decoded_bytes": 15,
+      "channel_counts": {
+        "tdr": 1
+      },
+      "message_type_counts": {
+        "17": 1
+      },
+      "frames": [
+        {
+          "sequence": 1,
+          "channel": "tdr",
+          "message_type": 17,
+          "bytes": 15,
+          "encoding": "reencoded_decoded_event"
+        }
+      ]
+    }
+  ],
+  "total_valid_frames": 163,
+  "limits": [
+    "Raw/base64 packet payloads and private output paths are never emitted; binary packets remain in the runner private-input directory.",
+    "Captured entries are re-encoded events or explicitly labeled public-field JSON snapshots, not original network bytes. Original listener ordering is not established.",
+    "A subscription status is separate from the observed valid frame count; valid frames do not establish live opponent hand visibility.",
+    "Each event file is a separate capture. It is not automatically attributed to the latest status-log session."
+  ]
+}

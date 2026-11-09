@@ -1,0 +1,51 @@
+{
+  "complete_export_files": 38,
+  "retained_prior_events": 125,
+  "new_valid_events": 38,
+  "new_reencoded_events": 35,
+  "new_direct_snapshots": 3,
+  "new_invalid_events": 0,
+  "new_sequence_discontinuities": 0,
+  "predeal_table_sequence": 2,
+  "deal_sequence": 3,
+  "in_round_table_sequence": 5,
+  "hu_sequence": 36,
+  "in_round_table_snapshot_saved": true,
+  "in_round_snapshot_self_seat": 0,
+  "in_round_self_actual_tiles": 13,
+  "in_round_declared_hand_counts_by_seat": {
+    "0": 13,
+    "1": 14,
+    "2": 13,
+    "3": 13
+  },
+  "in_round_actual_opponent_hand_arrays": 0,
+  "initial_self_tiles": 14,
+  "initial_recommendation_hands_compared": 44,
+  "initial_recommendation_hands_matching_self": 44,
+  "reconnect_recommendation_hands_compared": 21,
+  "reconnect_recommendation_hands_matching_self": 21,
+  "new_wait_fields": 20,
+  "new_extra_tiles_total": 0,
+  "new_nonzero_extra_commands": 0,
+  "new_self_draw_field_count": 7,
+  "new_draw_seats": [
+    0
+  ],
+  "embedded_advice_buffers": 8,
+  "unknown_embedded_proto_tags": 0,
+  "validated_rule_expression_buffers": 3,
+  "post_hu_hand_counts_by_seat": {
+    "0": 7,
+    "1": 13,
+    "2": 13,
+    "3": 13
+  },
+  "new_binary_frames": 35,
+  "new_binary_frames_fully_consumed": 34,
+  "new_binary_exact_roundtrips": 22,
+  "one_type_160_frame_has_unmodeled_bytes": 8,
+  "live_opponent_display_implemented": false,
+  "general_server_behavior_in_all_modes_proved": false,
+  "private_values_published": false
+}
