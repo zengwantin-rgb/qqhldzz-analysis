@@ -23,7 +23,7 @@ object Operand(object operand) => operand switch {
 foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  using var asm=AssemblyDefinition.ReadAssembly(file);assemblies++;
  foreach(var t in Flatten(asm.MainModule.Types)){
-  if(t.IsEnum && (t.Name.Contains("TraceBin") || t.Name=="LogBinOpType" || t.FullName=="HappyMahjong.Common.DeviceType"))enums.Add(new{assembly=asm.Name.Name,type=t.FullName,values=t.Fields.Where(f=>f.HasConstant).Select(f=>new{name=f.Name,value=f.Constant}).ToArray()});
+  if(t.IsEnum && (t.Name.Contains("TraceBin") || t.Name=="LogBinOpType" || t.FullName=="HappyMahjong.Common.DeviceType" || t.FullName is "System.IO.FileMode" or "System.IO.FileAccess" or "System.IO.FileShare"))enums.Add(new{assembly=asm.Name.Name,type=t.FullName,values=t.Fields.Where(f=>f.HasConstant).Select(f=>new{name=f.Name,value=f.Constant}).ToArray()});
   if(t.Namespace=="Happy.Blueprint" && t.Name.Contains("TraceBin"))traceTypes.Add(new{assembly=asm.Name.Name,type=t.FullName,fields=t.Fields.Select(f=>new{name=f.Name,type=f.FieldType.FullName,constant=f.HasConstant && f.Constant is not string?f.Constant:null}).ToArray(),methods=t.Methods.Select(m=>m.FullName).ToArray()});
   foreach(var m in t.Methods.Where(m=>m.HasBody)){
    bool selected=(t.Name=="HBPUtil" && (m.Name.Contains("Trace") || m.Name.Contains("LogLevel")))
@@ -32,7 +32,8 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
     || (t.Namespace=="Happy.Blueprint" && t.Name.Contains("TraceBin"))
     || (t.FullName=="HappyMahjong.SelectionScene.SelectionStartCommand" && (m.Name=="InitHbpEngineService" || m.Name=="CheckDeleteOldRecord"))
     || (t.FullName=="HappyMahjong.Common.DynamicConfig" && m.Name=="GetString")
-    || (t.FullName=="HappyMahjong.Common.PathManager" && m.Name=="GetPersistentPath");
+    || t.FullName=="HappyMahjong.Common.PathManager"
+    || (t.FullName=="HappyMahjong.SelectionScene.SelectionStartCommand/<>c" && m.Name.Contains("<CheckDeleteOldRecord>"));
    if(selected)methods.Add(new{assembly=asm.Name.Name,type=t.FullName,method=m.FullName,return_type=m.ReturnType.FullName,instructions=m.Body.Instructions.Select(i=>new{offset=i.Offset,opcode=i.OpCode.Name,operand=Operand(i.Operand)}).ToArray()});
    var hits=m.Body.Instructions.Where(i=>i.Operand is MethodReference r && (r.Name.Contains("TraceBin") || r.Name=="GetVMLogLevelByDeviceType")).Select(i=>new{offset=i.Offset,method=((MethodReference)i.Operand).FullName}).ToArray();
    if(hits.Length>0 && !t.FullName.StartsWith("IFix."))callers.Add(new{assembly=asm.Name.Name,method=m.FullName,calls=hits});
