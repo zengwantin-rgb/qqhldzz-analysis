@@ -25,6 +25,20 @@ jobs:
         run: |
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Recover exact placeholder definition
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+          dotnet tool install --tool-path .tools ilspycmd --version 9.1.0.7988
+          .tools/ilspycmd --disable-updatecheck -t HappyMahjong.Common.MJDef -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > private-input/MJDef.cs
+      - name: Analyze recorded round without publishing hand values
+        run: |
+          python3 -m py_compile tools/analyze_round_logs.py
+          python3 tools/analyze_round_logs.py
       - uses: actions/upload-artifact@v4
         with:
           name: device-log-summary
