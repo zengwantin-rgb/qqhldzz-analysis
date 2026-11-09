@@ -13,7 +13,7 @@ jobs:
       - name: Download original artifacts
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release download inputs-v1 --dir inputs
+        run: gh release download inputs-v1 --repo zwthys-cyber/qqhldzz-analysis --dir inputs
       - name: Compile analysis script
         run: python3 -m py_compile tools/analyze.py
       - name: Analyze and verify artifacts
