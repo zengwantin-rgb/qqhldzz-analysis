@@ -42,7 +42,7 @@ class Decode
    try {
     byte[] bytes=File.ReadAllBytes(file);object msg=Activator.CreateInstance(t);object[] p={bytes,bytes.Length,0,(uint)0};object result=m.Invoke(msg,p);used=(int)p[2];type=(int)t.GetField("iType").GetValue(msg);
     if(Convert.ToInt32(result)!=0){status="unpack_error";category=Convert.ToInt32(result).ToString(CultureInfo.InvariantCulture);}
-    else {nodes=0;bytesOut=Json(msg,0);status="decoded";}
+    else {status="unpacked_snapshot_failed";nodes=0;bytesOut=Json(msg,0);status="decoded";}
    } catch(Exception e){Exception inner=e is TargetInvocationException && e.InnerException!=null?e.InnerException:e;category=inner.GetType().Name;}
    // Only fixed counters and exception type metadata are written here. Decoded fields stay private.
    if(bytesOut!=null)File.WriteAllText(Path.Combine(args[2],Path.GetFileName(file)+".json"),bytesOut);
