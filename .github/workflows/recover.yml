@@ -1,0 +1,26 @@
+name: Recover custom bundle directory
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download input files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download inputs-v1 --repo zwthys-cyber/qqhldzz-analysis --dir inputs
+      - name: Install readers
+        run: python3 -m pip install UnityPy==1.25.4 capstone==5.0.6 lz4==4.4.5
+      - name: Compile and run structural recovery
+        run: |
+          python3 -m py_compile tools/recover_unitymj.py
+          python3 tools/recover_unitymj.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unitymj-recovered-report
+          path: report/
