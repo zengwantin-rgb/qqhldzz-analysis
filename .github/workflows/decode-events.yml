@@ -1,0 +1,64 @@
+name: Decode captured gameplay events privately
+on:
+  workflow_dispatch:
+    inputs:
+      current_version:
+        type: choice
+        required: true
+        default: v3
+        options: [v3, v4, v5, v6]
+      previous_version:
+        type: choice
+        required: true
+        default: v2
+        options: [v2, v3, v4, v5]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve encrypted current and prior inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MJ_CURRENT: ${{ inputs.current_version }}
+          MJ_PREVIOUS: ${{ inputs.previous_version }}
+        run: |
+          mkdir -p private-input report/device
+          gh release download "log-inputs-${MJ_CURRENT}" --pattern "log-input-${MJ_CURRENT}.enc" --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+          gh release download "log-inputs-${MJ_PREVIOUS}" --pattern "log-input-${MJ_PREVIOUS}.enc" --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+      - name: Decrypt inside runner
+        env:
+          MJ_LOG_INPUT_KEY_V1: ${{ secrets.MJ_LOG_INPUT_KEY_V1 }}
+          MJ_CURRENT: ${{ inputs.current_version }}
+          MJ_PREVIOUS: ${{ inputs.previous_version }}
+        run: |
+          umask 077
+          openssl enc -d -aes-256-cbc -pbkdf2 -in "private-input/log-input-${MJ_CURRENT}.enc" -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
+          openssl enc -d -aes-256-cbc -pbkdf2 -in "private-input/log-input-${MJ_PREVIOUS}.enc" -out private-input/previous.zip -pass env:MJ_LOG_INPUT_KEY_V1
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Retrieve original metadata and prepare private-only decoder copies
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+          dotnet run --project tools/PrepareTdrDecode -c Release -- recovered-input/recovered/assemblies private-input/decoder-assemblies report/device
+          python3 tools/inspect_message_observer.py
+      - name: Decode inside isolated read-only networkless container
+        run: |
+          mkdir -p private-output
+          chmod 700 private-output
+          docker pull mono:6.12 > private-input/docker-pull.txt 2>&1
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges --pids-limit 128 --memory 768m --cpus 1 --tmpfs /tmp:rw,nosuid,size=64m -v "$PWD/private-input:/input:ro" -v "$PWD/private-output:/output:rw" -v "$PWD/tools/DecodeTdr:/code:ro" mono:6.12 sh -c 'mcs -out:/tmp/decode.exe /code/Program.cs && mono /tmp/decode.exe /input/decoder-assemblies /input/decoded-game-frames /output' > private-input/decoder-output.txt 2>&1
+          cp private-output/decode-summary.json report/device/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: decoded-event-summary
+          path: report/device/
+      - name: Remove plaintext inputs
+        if: always()
+        run: rm -rf private-input private-output
