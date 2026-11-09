@@ -54,6 +54,15 @@ int main(void) { @autoreleasepool {
     [fm removeItemAtPath:prefs error:NULL];
     Check(!MJSetTraceRecording(container,backups,YES,NULL),@"Do not invent missing game preference file");
     [original writeToFile:prefs atomically:YES];
+    NSString *blocked=[root stringByAppendingPathComponent:@"blocked-backup-parent"];
+    [@"fixture" writeToFile:blocked atomically:YES encoding:NSUTF8StringEncoding error:NULL];
+    NSData *unchanged=[NSData dataWithContentsOfFile:prefs];
+    Check(!MJSetTraceRecording(container,blocked,YES,NULL),@"Actual backup directory creation failure blocks setting writes");
+    Check([[NSData dataWithContentsOfFile:prefs] isEqual:unchanged],@"Backup IO failure leaves original bytes unchanged");
+    NSString *alias=[root stringByAppendingPathComponent:@"game-alias"];
+    [fm createSymbolicLinkAtPath:alias withDestinationPath:container error:NULL];
+    Check(!MJSetTraceRecording(alias,backups,YES,NULL),@"Reject arbitrary root symlinks despite system alias support");
+    Check([[NSData dataWithContentsOfFile:prefs] isEqual:unchanged],@"Root symlink rejection leaves original bytes unchanged");
     [fm createDirectoryAtPath:backup withIntermediateDirectories:YES attributes:nil error:NULL];
     NSData *before=[NSData dataWithContentsOfFile:prefs];
     Check(!MJSetTraceRecording(container,backups,YES,NULL),@"Refuse invalid backup and leave original untouched");
