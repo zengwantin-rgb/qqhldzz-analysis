@@ -1,0 +1,16 @@
+name: Test diagnostic output parsers
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test metadata privacy and session boundaries
+        run: |
+          python3 -m unittest discover -s tools -p test_runtime_probe.py
+          python3 -m unittest discover -s tools -p test_phone_diagnostics.py
+          python3 -m unittest discover -s tools -p test_round_anomalies.py
