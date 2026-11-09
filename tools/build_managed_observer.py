@@ -8,6 +8,6 @@ out=pathlib.Path('build/message-observer');out.mkdir(parents=True,exist_ok=True)
 references=sorted(pathlib.Path('recovered-input/recovered/assemblies').glob('*.dll'))
 args=['dotnet',str(compiler),'/nologo','/noconfig','/nostdlib+','/langversion:7.3','/target:library','/optimize+','/debug-',f'/out:{out}/MJMessageObserver.Managed.dll']
 args.extend('/reference:'+str(p) for p in references)
-args.extend(['mobile/MessageObserver/ObserverJournal.cs','mobile/MessageObserver/ManagedObserver.cs','mobile/MessageObserver/FieldSnapshot.cs','mobile/MessageObserver/ProtocolUnions.cs'])
+args.extend(['mobile/MessageObserver/ObserverJournal.cs','mobile/MessageObserver/ManagedObserver.cs','mobile/MessageObserver/FieldSnapshot.cs','mobile/MessageObserver/ProtocolUnions.cs','mobile/MessageObserver/GameModelReader.cs'])
 subprocess.run(args,check=True)
 print('Compiled our managed observer against',len(references),'recovered metadata assemblies; no game code executed.')

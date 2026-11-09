@@ -62,12 +62,12 @@ jobs:
           for line in (p/'checks/dependencies.txt').read_text().splitlines()[1:]:
               dependency=line.strip().split(' (')[0]
               assert dependency.startswith(('@rpath/MJMessageObserver.dylib','/System/Library/','/usr/lib/')),dependency
-          result={'version':'0.2.2','source_commit':os.environ['GITHUB_SHA'],'source_run':int(os.environ['GITHUB_RUN_ID']),
+          result={'version':'0.3.0','source_commit':os.environ['GITHUB_SHA'],'source_run':int(os.environ['GITHUB_RUN_ID']),
               'sha256':digest,'managed_payload_sha256':hashlib.sha256(pathlib.Path('build/message-observer/MJMessageObserver.Managed.dll').read_bytes()).hexdigest(),
               'journal_and_storage_tests_passed':True,'compiled_against_original_game_metadata':True,'arm64_build_and_adhoc_signature_verified':True,
               'dependencies_limited_to_system_libraries':True,'native_loader_on_device_verified':False,'managed_subscription_on_device_verified':False,
-              'game_event_recording_on_device_verified':False,'live_opponent_display_implemented':False,
-              'scope':'Observe only TSDK gameplay event channels 9 and 217. Re-encode decoded events; bounded public protocol field snapshots on TDR serialization failures. Local bounded journals only. No receive-function patches or outgoing game requests.'}
+              'game_event_recording_on_device_verified':False,'live_opponent_display_implemented':False,'runtime_model_panel_implemented':True,'runtime_model_reading_on_device_verified':False,
+              'scope':'Observe TSDK channels 9 and 217, and read known active RoundModel hand fields on the main thread for a live model panel. Placeholder values remain unknown; post-Hu and stale phases are labeled. Local bounded journals only. No game-field writes, receive-function patches or outgoing game requests.'}
           (p/'checks/validation.json').write_text(json.dumps(result,indent=2)+'\n')
           print(json.dumps(result,indent=2))
           PY

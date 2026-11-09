@@ -45,12 +45,14 @@ namespace MJDiagnostic
         }
         public bool Append(string channel, int messageType, byte[] bytes, int used, string encoding = "reencoded_decoded_event")
         {
-            if ((encoding != "reencoded_decoded_event" && encoding != "public_field_snapshot") || (channel != "tdr" && channel != "protobuf") || bytes == null || used <= 0 || used > bytes.Length || used > MaxPayload)
+            bool runtime = channel == "runtime" && messageType == 0 && encoding == "runtime_model_snapshot";
+            bool game = (channel == "tdr" || channel == "protobuf") && encoding == "reencoded_decoded_event" || channel == "tdr" && encoding == "public_field_snapshot";
+            if ((!runtime && !game) || bytes == null || used <= 0 || used > bytes.Length || used > MaxPayload)
                 throw new InvalidOperationException("Invalid event frame");
             lock (gate)
             {
                 if (LimitReached) return false;
-                string line = "{\"kind\":\"game_event\",\"schema\":1,\"sequence\":" + (FrameCount + 1).ToString(CultureInfo.InvariantCulture) +
+                string line = "{\"kind\":\"" + (runtime ? "runtime_model_event" : "game_event") + "\",\"schema\":1,\"sequence\":" + (FrameCount + 1).ToString(CultureInfo.InvariantCulture) +
                     ",\"channel\":\"" + channel + "\",\"message_type\":" + messageType.ToString(CultureInfo.InvariantCulture) +
                     ",\"encoding\":\"" + encoding + "\",\"bytes\":" + used.ToString(CultureInfo.InvariantCulture) +
                     ",\"payload_b64\":\"" + Convert.ToBase64String(bytes, 0, used) + "\"}\n";
@@ -82,7 +84,7 @@ namespace MJDiagnostic
         public void Status(string code, int value)
         {
             // Fixed caller codes only; never serialize exception messages or paths.
-            if (code != "first_event_recorded" && code != "capture_progress" && code != "unexpected_payload" && code != "observer_started" && code != "capture_limit_reached" && code != "serialization_failed" && code != "capture_failed" && code != "observer_stopped") return;
+            if (code != "model_reader_available" && code != "runtime_model_limit_reached" && code != "first_event_recorded" && code != "capture_progress" && code != "unexpected_payload" && code != "observer_started" && code != "capture_limit_reached" && code != "serialization_failed" && code != "capture_failed" && code != "observer_stopped") return;
             lock (gate)
             {
                 CheckHeader(statusFile, StatusHeader);

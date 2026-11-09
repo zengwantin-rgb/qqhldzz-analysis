@@ -77,3 +77,5 @@ static class CallbackFixture
         bool bounded=false;try { FieldSnapshot.Encode(new byte[4097]); } catch(InvalidOperationException) { bounded=true; } if(!bounded) throw new Exception("snapshot array budget");
     }
 }
+
+namespace HappyMahjong.Game { public static class RoundModeUtil { public static object RoundModel; } }
