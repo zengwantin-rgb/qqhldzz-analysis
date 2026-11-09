@@ -1,5 +1,7 @@
 # 欢乐麻将 iOS 静态逆向分析
 
+[第十轮完整结构与手牌归属](reports/device-round/STRUCTURE-FOLLOWUP.md)：补查 JSON 及非 JSON 牌列表，验证推荐中的当前手牌与自己一致；确认胡牌后四个座位剩余手牌，其他三家为 13、7、4 张，实时暗牌仍未取得。
+
 [第九轮记录 IO 追查](reports/device-round/RECORD-IO-FOLLOWUP.md)：核对协议记录、本地回放、回放响应及内存统计的真实格式；补查 8 个载体字段，在原 ZIP 全部文件中均未命中，16 字节文件仍未与写入者关联。
 
 [第八轮原生与配置追查](reports/device-round/NATIVE-FOLLOWUP.md)：扫描全部 91 个恢复程序集及 34 个原生/元数据目标，解析包内录像配置为 12 行配置表，并发现设备主配置大小与包内版本不同；实时暗牌仍未取得。

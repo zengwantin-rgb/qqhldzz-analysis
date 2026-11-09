@@ -29,3 +29,10 @@ remote-native-final/
 remote-record-io/
 remote-record-readers/
 remote-record-final/
+remote-json-index/
+remote-json-lists/
+remote-sequence-context/
+remote-fan-check/
+remote-structure-final/
+remote-hand-final/
+remote-gameplay-final/

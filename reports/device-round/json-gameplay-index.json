@@ -1,0 +1,3660 @@
+{
+  "catalog_field_count": 5364,
+  "files": [
+    {
+      "entry": 1,
+      "skipped": "binary_not_json_decoded"
+    },
+    {
+      "entry": 2,
+      "counters": {
+        "decode_attempts": 613,
+        "lines_with_starts_but_no_json": 278,
+        "json_documents": 36,
+        "root_numeric_arrays": 36
+      },
+      "recognized_fields": [],
+      "root_numeric_array_shapes": [
+        {
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0,
+          "occurrences": 1
+        },
+        {
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 1,
+          "occurrences": 1
+        },
+        {
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0,
+          "occurrences": 14
+        },
+        {
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0,
+          "occurrences": 20
+        }
+      ],
+      "all_numeric_array_paths": [
+        {
+          "path": "$",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 1
+            },
+            {
+              "length": 1,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 1,
+              "occurrences": 1
+            },
+            {
+              "length": 1,
+              "zero_entries": 0,
+              "positive_entries": 1,
+              "negative_entries": 0,
+              "occurrences": 14
+            },
+            {
+              "length": 1,
+              "zero_entries": 1,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 20
+            }
+          ],
+          "locations": [
+            {
+              "line": 6,
+              "context": "unclassified"
+            },
+            {
+              "line": 7,
+              "context": "unclassified"
+            },
+            {
+              "line": 8,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 9,
+              "context": "unclassified"
+            },
+            {
+              "line": 10,
+              "context": "unclassified"
+            },
+            {
+              "line": 10,
+              "context": "unclassified"
+            },
+            {
+              "line": 10,
+              "context": "unclassified"
+            },
+            {
+              "line": 10,
+              "context": "unclassified"
+            },
+            {
+              "line": 10,
+              "context": "unclassified"
+            }
+          ]
+        }
+      ],
+      "non_json_numeric_sequences": [],
+      "root_numeric_array_samples": [
+        {
+          "line": 6,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 7,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 8,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 9,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 1
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 10,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 11,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 11,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 11,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 11,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 12,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 12,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 12,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 12,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 12,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 13,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 13,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 13,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 14,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        }
+      ]
+    },
+    {
+      "entry": 3,
+      "counters": {
+        "decode_attempts": 1080,
+        "lines_with_starts_but_no_json": 663,
+        "json_documents": 222,
+        "unknown_key_occurrences": 1559,
+        "embedded_json_strings": 15,
+        "root_numeric_arrays": 35,
+        "non_json_numeric_sequences": 1195
+      },
+      "recognized_fields": [
+        {
+          "path": "$/chChair",
+          "occurrences": 52,
+          "kinds": {
+            "int": 52
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24159,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24572,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24690,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24798,
+              "context": "HandleWait"
+            }
+          ]
+        },
+        {
+          "path": "$/chDrawTileNum",
+          "occurrences": 52,
+          "kinds": {
+            "int": 52
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24159,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24572,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24690,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24798,
+              "context": "HandleWait"
+            }
+          ]
+        },
+        {
+          "path": "$/chTile",
+          "occurrences": 15,
+          "kinds": {
+            "int": 15
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24274,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24961,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 25565,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26269,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26870,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 27528,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28131,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28720,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29371,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29962,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 30711,
+              "context": "HandleSelfRedraw"
+            }
+          ]
+        },
+        {
+          "path": "$/drawTiles",
+          "occurrences": 15,
+          "kinds": {
+            "list": 15
+          },
+          "array_lengths": {
+            "1": 15
+          },
+          "numeric_array_shapes": [
+            {
+              "length": 1,
+              "zero_entries": 0,
+              "positive_entries": 1,
+              "negative_entries": 0,
+              "occurrences": 15
+            }
+          ],
+          "locations": [
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24274,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24961,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 25565,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 26269,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 26870,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 27528,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 28131,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 28720,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 29371,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 29962,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 30711,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0
+              }
+            }
+          ]
+        },
+        {
+          "path": "$/extraTiles",
+          "occurrences": 52,
+          "kinds": {
+            "list": 52
+          },
+          "array_lengths": {
+            "0": 52
+          },
+          "numeric_array_shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 52
+            }
+          ],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24159,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24572,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24690,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24798,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            }
+          ]
+        },
+        {
+          "path": "$/nDrawTileNum",
+          "occurrences": 15,
+          "kinds": {
+            "int": 15
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24274,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24961,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 25565,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26269,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26870,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 27528,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28131,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28720,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29371,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29962,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 30711,
+              "context": "HandleSelfRedraw"
+            }
+          ]
+        },
+        {
+          "path": "$/nExtraTilesNum",
+          "occurrences": 52,
+          "kinds": {
+            "int": 52
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24159,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24572,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24690,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24798,
+              "context": "HandleWait"
+            }
+          ]
+        },
+        {
+          "path": "$/nSeatId",
+          "occurrences": 15,
+          "kinds": {
+            "int": 15
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24274,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24961,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 25565,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26269,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26870,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 27528,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28131,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28720,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29371,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29962,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 30711,
+              "context": "HandleSelfRedraw"
+            }
+          ]
+        },
+        {
+          "path": "$/nTileIndexNum",
+          "occurrences": 67,
+          "kinds": {
+            "int": 67
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait"
+            },
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait"
+            }
+          ]
+        },
+        {
+          "path": "$/targetViewSeat",
+          "occurrences": 14,
+          "kinds": {
+            "int": 14
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 22338,
+              "context": "unclassified"
+            },
+            {
+              "line": 23154,
+              "context": "unclassified"
+            },
+            {
+              "line": 23852,
+              "context": "unclassified"
+            },
+            {
+              "line": 24499,
+              "context": "unclassified"
+            },
+            {
+              "line": 25136,
+              "context": "unclassified"
+            },
+            {
+              "line": 25737,
+              "context": "unclassified"
+            },
+            {
+              "line": 26453,
+              "context": "unclassified"
+            },
+            {
+              "line": 27036,
+              "context": "unclassified"
+            },
+            {
+              "line": 27712,
+              "context": "unclassified"
+            },
+            {
+              "line": 28303,
+              "context": "unclassified"
+            },
+            {
+              "line": 28897,
+              "context": "unclassified"
+            },
+            {
+              "line": 29534,
+              "context": "unclassified"
+            },
+            {
+              "line": 30130,
+              "context": "unclassified"
+            },
+            {
+              "line": 30886,
+              "context": "unclassified"
+            }
+          ]
+        },
+        {
+          "path": "$/tileindex",
+          "occurrences": 67,
+          "kinds": {
+            "list": 67
+          },
+          "array_lengths": {
+            "0": 67
+          },
+          "numeric_array_shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 67
+            }
+          ],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait",
+              "numeric_array": {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0
+              }
+            }
+          ]
+        },
+        {
+          "path": "$/viewSeat",
+          "occurrences": 14,
+          "kinds": {
+            "int": 14
+          },
+          "array_lengths": {},
+          "numeric_array_shapes": [],
+          "locations": [
+            {
+              "line": 22338,
+              "context": "unclassified"
+            },
+            {
+              "line": 23154,
+              "context": "unclassified"
+            },
+            {
+              "line": 23852,
+              "context": "unclassified"
+            },
+            {
+              "line": 24499,
+              "context": "unclassified"
+            },
+            {
+              "line": 25136,
+              "context": "unclassified"
+            },
+            {
+              "line": 25737,
+              "context": "unclassified"
+            },
+            {
+              "line": 26453,
+              "context": "unclassified"
+            },
+            {
+              "line": 27036,
+              "context": "unclassified"
+            },
+            {
+              "line": 27712,
+              "context": "unclassified"
+            },
+            {
+              "line": 28303,
+              "context": "unclassified"
+            },
+            {
+              "line": 28897,
+              "context": "unclassified"
+            },
+            {
+              "line": 29534,
+              "context": "unclassified"
+            },
+            {
+              "line": 30130,
+              "context": "unclassified"
+            },
+            {
+              "line": 30886,
+              "context": "unclassified"
+            }
+          ]
+        }
+      ],
+      "root_numeric_array_shapes": [
+        {
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0,
+          "occurrences": 10
+        },
+        {
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0,
+          "occurrences": 21
+        },
+        {
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0,
+          "occurrences": 4
+        }
+      ],
+      "all_numeric_array_paths": [
+        {
+          "path": "$",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 10
+            },
+            {
+              "length": 1,
+              "zero_entries": 0,
+              "positive_entries": 1,
+              "negative_entries": 0,
+              "occurrences": 21
+            },
+            {
+              "length": 1,
+              "zero_entries": 1,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 4
+            }
+          ],
+          "locations": [
+            {
+              "line": 1517,
+              "context": "unclassified"
+            },
+            {
+              "line": 1526,
+              "context": "unclassified"
+            },
+            {
+              "line": 1573,
+              "context": "unclassified"
+            },
+            {
+              "line": 2472,
+              "context": "unclassified"
+            },
+            {
+              "line": 2476,
+              "context": "unclassified"
+            },
+            {
+              "line": 2514,
+              "context": "unclassified"
+            },
+            {
+              "line": 2594,
+              "context": "unclassified"
+            },
+            {
+              "line": 2715,
+              "context": "unclassified"
+            },
+            {
+              "line": 3099,
+              "context": "unclassified"
+            },
+            {
+              "line": 3884,
+              "context": "unclassified"
+            },
+            {
+              "line": 4013,
+              "context": "unclassified"
+            },
+            {
+              "line": 4234,
+              "context": "unclassified"
+            },
+            {
+              "line": 4239,
+              "context": "unclassified"
+            },
+            {
+              "line": 4251,
+              "context": "unclassified"
+            },
+            {
+              "line": 4505,
+              "context": "unclassified"
+            },
+            {
+              "line": 4512,
+              "context": "unclassified"
+            },
+            {
+              "line": 5649,
+              "context": "unclassified"
+            },
+            {
+              "line": 6022,
+              "context": "unclassified"
+            },
+            {
+              "line": 6143,
+              "context": "unclassified"
+            },
+            {
+              "line": 6227,
+              "context": "unclassified"
+            }
+          ]
+        },
+        {
+          "path": "$/$unknown",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 19
+            }
+          ],
+          "locations": [
+            {
+              "line": 1068,
+              "context": "unclassified"
+            },
+            {
+              "line": 1466,
+              "context": "unclassified"
+            },
+            {
+              "line": 5130,
+              "context": "unclassified"
+            },
+            {
+              "line": 6026,
+              "context": "unclassified"
+            },
+            {
+              "line": 6027,
+              "context": "unclassified"
+            },
+            {
+              "line": 22338,
+              "context": "unclassified"
+            },
+            {
+              "line": 23154,
+              "context": "unclassified"
+            },
+            {
+              "line": 23852,
+              "context": "unclassified"
+            },
+            {
+              "line": 24499,
+              "context": "unclassified"
+            },
+            {
+              "line": 25136,
+              "context": "unclassified"
+            },
+            {
+              "line": 25737,
+              "context": "unclassified"
+            },
+            {
+              "line": 26453,
+              "context": "unclassified"
+            },
+            {
+              "line": 27036,
+              "context": "unclassified"
+            },
+            {
+              "line": 27712,
+              "context": "unclassified"
+            },
+            {
+              "line": 28303,
+              "context": "unclassified"
+            },
+            {
+              "line": 28897,
+              "context": "unclassified"
+            },
+            {
+              "line": 29534,
+              "context": "unclassified"
+            },
+            {
+              "line": 30130,
+              "context": "unclassified"
+            },
+            {
+              "line": 30886,
+              "context": "unclassified"
+            }
+          ]
+        },
+        {
+          "path": "$/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$unknown",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 2
+            }
+          ],
+          "locations": [
+            {
+              "line": 1468,
+              "context": "unclassified"
+            },
+            {
+              "line": 2303,
+              "context": "unclassified"
+            }
+          ]
+        },
+        {
+          "path": "$/$unknown/*/$unknown",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 36
+            }
+          ],
+          "locations": [
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2795,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 2796,
+              "context": "unclassified"
+            },
+            {
+              "line": 6231,
+              "context": "unclassified"
+            },
+            {
+              "line": 6231,
+              "context": "unclassified"
+            },
+            {
+              "line": 6231,
+              "context": "unclassified"
+            },
+            {
+              "line": 6231,
+              "context": "unclassified"
+            }
+          ]
+        },
+        {
+          "path": "$/drawTiles",
+          "shapes": [
+            {
+              "length": 1,
+              "zero_entries": 0,
+              "positive_entries": 1,
+              "negative_entries": 0,
+              "occurrences": 15
+            }
+          ],
+          "locations": [
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24274,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 24961,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 25565,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26269,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 26870,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 27528,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28131,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 28720,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29371,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 29962,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 30711,
+              "context": "HandleSelfRedraw"
+            }
+          ]
+        },
+        {
+          "path": "$/extraTiles",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 52
+            }
+          ],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24159,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24572,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24690,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24798,
+              "context": "HandleWait"
+            }
+          ]
+        },
+        {
+          "path": "$/tileindex",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 67
+            }
+          ],
+          "locations": [
+            {
+              "line": 17065,
+              "context": "HandleWait"
+            },
+            {
+              "line": 17444,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 21462,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21731,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21819,
+              "context": "HandleWait"
+            },
+            {
+              "line": 21899,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22005,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22087,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 22413,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22574,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22655,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22739,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22820,
+              "context": "HandleWait"
+            },
+            {
+              "line": 22924,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23237,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23365,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23479,
+              "context": "HandleWait"
+            },
+            {
+              "line": 23619,
+              "context": "HandleSelfRedraw"
+            },
+            {
+              "line": 23925,
+              "context": "HandleWait"
+            },
+            {
+              "line": 24047,
+              "context": "HandleWait"
+            }
+          ]
+        }
+      ],
+      "non_json_numeric_sequences": [
+        {
+          "context": "GetBaseConifgByGameID",
+          "length": 60,
+          "zero_entries": 49,
+          "positive_entries": 10,
+          "negative_entries": 1,
+          "occurrences": 4,
+          "first_lines": [
+            15871,
+            16030,
+            16043,
+            16346
+          ]
+        },
+        {
+          "context": "Recv Deal Self mjValue:",
+          "length": 13,
+          "zero_entries": 0,
+          "positive_entries": 13,
+          "negative_entries": 0,
+          "occurrences": 1,
+          "first_lines": [
+            16990
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 3,
+          "zero_entries": 0,
+          "positive_entries": 3,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            26290,
+            29405
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 4,
+          "zero_entries": 0,
+          "positive_entries": 4,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            23640,
+            27549
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 5,
+          "zero_entries": 0,
+          "positive_entries": 5,
+          "negative_entries": 0,
+          "occurrences": 1,
+          "first_lines": [
+            25599
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 8,
+          "zero_entries": 0,
+          "positive_entries": 8,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            25599,
+            30216
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 9,
+          "zero_entries": 0,
+          "positive_entries": 9,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            23640,
+            27549
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 10,
+          "zero_entries": 0,
+          "positive_entries": 10,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            26290,
+            29405
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 11,
+          "zero_entries": 0,
+          "positive_entries": 11,
+          "negative_entries": 0,
+          "occurrences": 1,
+          "first_lines": [
+            30745
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 12,
+          "zero_entries": 0,
+          "positive_entries": 12,
+          "negative_entries": 0,
+          "occurrences": 18,
+          "first_lines": [
+            17114,
+            17471,
+            21475,
+            22121,
+            22431,
+            22958,
+            23250,
+            23938,
+            24585,
+            25222,
+            25823,
+            26539,
+            26904,
+            27124,
+            27798,
+            28389,
+            28983,
+            29620
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 13,
+          "zero_entries": 0,
+          "positive_entries": 13,
+          "negative_entries": 0,
+          "occurrences": 20,
+          "first_lines": [
+            17114,
+            21475,
+            22431,
+            23250,
+            23938,
+            24313,
+            24585,
+            25222,
+            25823,
+            26539,
+            27124,
+            27798,
+            28165,
+            28389,
+            28983,
+            29620,
+            30216,
+            30974
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 13,
+          "zero_entries": 5,
+          "positive_entries": 8,
+          "negative_entries": 0,
+          "occurrences": 14,
+          "first_lines": [
+            17114,
+            21475,
+            22431,
+            23250,
+            23938,
+            24585,
+            25222,
+            25823,
+            26539,
+            27124,
+            27798,
+            28389,
+            28983,
+            29620
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 14,
+          "zero_entries": 0,
+          "positive_entries": 14,
+          "negative_entries": 0,
+          "occurrences": 21,
+          "first_lines": [
+            17471,
+            22121,
+            22958,
+            23640,
+            24313,
+            24982,
+            25599,
+            26290,
+            26904,
+            27549,
+            28165,
+            28754,
+            29405,
+            29996,
+            30745,
+            30974
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 14,
+          "zero_entries": 5,
+          "positive_entries": 9,
+          "negative_entries": 0,
+          "occurrences": 11,
+          "first_lines": [
+            17471,
+            22121,
+            22958,
+            23640,
+            24313,
+            25599,
+            26290,
+            26904,
+            27549,
+            28165,
+            29405
+          ]
+        },
+        {
+          "context": "Set Active FanRecommendDeatil",
+          "length": 14,
+          "zero_entries": 6,
+          "positive_entries": 8,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            24982,
+            28754
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 3,
+          "zero_entries": 0,
+          "positive_entries": 3,
+          "negative_entries": 0,
+          "occurrences": 42,
+          "first_lines": [
+            17113,
+            17470,
+            21474,
+            22120,
+            22430,
+            22957,
+            23249,
+            23639,
+            23937,
+            24312,
+            24584,
+            24981,
+            25221,
+            25598,
+            25822,
+            26289,
+            26538,
+            26903,
+            27123,
+            27548
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 4,
+          "zero_entries": 0,
+          "positive_entries": 4,
+          "negative_entries": 0,
+          "occurrences": 25,
+          "first_lines": [
+            17113,
+            17470,
+            21474,
+            22120,
+            22430,
+            22957,
+            23249,
+            23639,
+            23937,
+            24584,
+            25221,
+            25822,
+            26289,
+            26538,
+            26903,
+            27123,
+            27548,
+            27797
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 5,
+          "zero_entries": 0,
+          "positive_entries": 5,
+          "negative_entries": 0,
+          "occurrences": 3,
+          "first_lines": [
+            23639,
+            25598,
+            29619
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 8,
+          "zero_entries": 0,
+          "positive_entries": 8,
+          "negative_entries": 0,
+          "occurrences": 71,
+          "first_lines": [
+            17113,
+            17470,
+            21474,
+            22120,
+            22430,
+            22957,
+            23249,
+            23639,
+            23937,
+            24312,
+            24584,
+            24981,
+            25221,
+            25598,
+            25822,
+            26289,
+            26538,
+            26903,
+            27123,
+            27548
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 9,
+          "zero_entries": 0,
+          "positive_entries": 9,
+          "negative_entries": 0,
+          "occurrences": 32,
+          "first_lines": [
+            17113,
+            17470,
+            21474,
+            22120,
+            22430,
+            22957,
+            23249,
+            23639,
+            23937,
+            24584,
+            24981,
+            25221,
+            25598,
+            25822,
+            26538,
+            26903,
+            27123,
+            27548,
+            27797,
+            28164
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 10,
+          "zero_entries": 0,
+          "positive_entries": 10,
+          "negative_entries": 0,
+          "occurrences": 7,
+          "first_lines": [
+            25598,
+            26289,
+            29404,
+            29995,
+            30215,
+            30744,
+            30973
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 11,
+          "zero_entries": 0,
+          "positive_entries": 11,
+          "negative_entries": 0,
+          "occurrences": 42,
+          "first_lines": [
+            17113,
+            17470,
+            21474,
+            22120,
+            22430,
+            22957,
+            23249,
+            23639,
+            23937,
+            24312,
+            24584,
+            24981,
+            25221,
+            25598,
+            25822,
+            26289,
+            26538,
+            26903,
+            27123,
+            27548
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 12,
+          "zero_entries": 0,
+          "positive_entries": 12,
+          "negative_entries": 0,
+          "occurrences": 28,
+          "first_lines": [
+            17113,
+            17470,
+            21474,
+            22120,
+            22430,
+            22957,
+            23249,
+            23639,
+            23937,
+            24312,
+            24584,
+            25221,
+            25598,
+            25822,
+            26289,
+            26538,
+            26903,
+            27123,
+            27548,
+            27797
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 13,
+          "zero_entries": 0,
+          "positive_entries": 13,
+          "negative_entries": 0,
+          "occurrences": 338,
+          "first_lines": [
+            17113,
+            21474,
+            22430,
+            23249,
+            23937,
+            24312,
+            24584,
+            25221,
+            25822,
+            26538,
+            27123,
+            27797,
+            28164,
+            28388,
+            28982,
+            29619,
+            30215,
+            30973
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 13,
+          "zero_entries": 1,
+          "positive_entries": 12,
+          "negative_entries": 0,
+          "occurrences": 3,
+          "first_lines": [
+            29619,
+            30215,
+            30973
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 13,
+          "zero_entries": 2,
+          "positive_entries": 11,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            30215,
+            30973
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 13,
+          "zero_entries": 3,
+          "positive_entries": 10,
+          "negative_entries": 0,
+          "occurrences": 37,
+          "first_lines": [
+            17113,
+            21474,
+            22430,
+            23249,
+            23937,
+            24584,
+            25221,
+            25822,
+            26538,
+            27123,
+            27797,
+            28388,
+            28982,
+            29619,
+            30215,
+            30973
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 13,
+          "zero_entries": 4,
+          "positive_entries": 9,
+          "negative_entries": 0,
+          "occurrences": 24,
+          "first_lines": [
+            17113,
+            21474,
+            22430,
+            23249,
+            23937,
+            24584,
+            25221,
+            25822,
+            26538,
+            27123,
+            27797,
+            28388,
+            28982
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 13,
+          "zero_entries": 5,
+          "positive_entries": 8,
+          "negative_entries": 0,
+          "occurrences": 14,
+          "first_lines": [
+            17113,
+            21474,
+            22430,
+            23249,
+            23937,
+            24584,
+            25221,
+            25822,
+            26538,
+            27123,
+            27797,
+            28388,
+            28982,
+            29619
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 14,
+          "zero_entries": 0,
+          "positive_entries": 14,
+          "negative_entries": 0,
+          "occurrences": 319,
+          "first_lines": [
+            17470,
+            22120,
+            22957,
+            23639,
+            24312,
+            24981,
+            25598,
+            26289,
+            26903,
+            27548,
+            28164,
+            28753,
+            29404,
+            29995,
+            30744,
+            30973
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 14,
+          "zero_entries": 1,
+          "positive_entries": 13,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            29995,
+            30744
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 14,
+          "zero_entries": 2,
+          "positive_entries": 12,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            29995,
+            30744
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 14,
+          "zero_entries": 3,
+          "positive_entries": 11,
+          "negative_entries": 0,
+          "occurrences": 32,
+          "first_lines": [
+            17470,
+            22120,
+            22957,
+            23639,
+            24312,
+            24981,
+            25598,
+            26289,
+            26903,
+            27548,
+            28164,
+            28753,
+            29404,
+            29995,
+            30744
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 14,
+          "zero_entries": 4,
+          "positive_entries": 10,
+          "negative_entries": 0,
+          "occurrences": 19,
+          "first_lines": [
+            17470,
+            22120,
+            22957,
+            23639,
+            24312,
+            24981,
+            25598,
+            26289,
+            26903,
+            27548,
+            28164,
+            28753
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 14,
+          "zero_entries": 5,
+          "positive_entries": 9,
+          "negative_entries": 0,
+          "occurrences": 18,
+          "first_lines": [
+            17470,
+            22120,
+            22957,
+            23639,
+            24312,
+            25598,
+            26289,
+            26903,
+            27548,
+            28164,
+            29404
+          ]
+        },
+        {
+          "context": "SetNewFanRecommendDetailData",
+          "length": 14,
+          "zero_entries": 6,
+          "positive_entries": 8,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            24981,
+            28753
+          ]
+        },
+        {
+          "context": "unclassified",
+          "length": 3,
+          "zero_entries": 2,
+          "positive_entries": 1,
+          "negative_entries": 0,
+          "occurrences": 1,
+          "first_lines": [
+            3757
+          ]
+        },
+        {
+          "context": "unclassified",
+          "length": 4,
+          "zero_entries": 0,
+          "positive_entries": 4,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            31369,
+            31736
+          ]
+        },
+        {
+          "context": "unclassified",
+          "length": 4,
+          "zero_entries": 1,
+          "positive_entries": 3,
+          "negative_entries": 0,
+          "occurrences": 11,
+          "first_lines": [
+            5758,
+            5770,
+            5771,
+            5783,
+            5784,
+            5786,
+            5790,
+            5791,
+            5793,
+            5795,
+            5796
+          ]
+        },
+        {
+          "context": "unclassified",
+          "length": 4,
+          "zero_entries": 2,
+          "positive_entries": 2,
+          "negative_entries": 0,
+          "occurrences": 9,
+          "first_lines": [
+            5757,
+            5766,
+            5767,
+            5768,
+            5769,
+            5781,
+            5782,
+            5788,
+            5789
+          ]
+        },
+        {
+          "context": "unclassified",
+          "length": 7,
+          "zero_entries": 0,
+          "positive_entries": 7,
+          "negative_entries": 0,
+          "occurrences": 2,
+          "first_lines": [
+            31368,
+            31728
+          ]
+        },
+        {
+          "context": "unclassified",
+          "length": 13,
+          "zero_entries": 0,
+          "positive_entries": 13,
+          "negative_entries": 0,
+          "occurrences": 5,
+          "first_lines": [
+            31366,
+            31367,
+            31712,
+            31720,
+            32209
+          ]
+        }
+      ],
+      "root_numeric_array_samples": [
+        {
+          "line": 1517,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 1526,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 1573,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 2472,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 2476,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 2514,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 2594,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 2715,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 3099,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 3884,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 4013,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 4234,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 4239,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 4251,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 4505,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 4512,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 5649,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 6022,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 6143,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 6227,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 6390,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 6394,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 6461,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 6609,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 6630,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 6637,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 12631,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 21495,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 21496,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 21497,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 21498,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 21667,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 21704,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 21708,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 0,
+          "positive_entries": 1,
+          "negative_entries": 0
+        },
+        {
+          "line": 21712,
+          "context": "unclassified",
+          "length": 1,
+          "zero_entries": 1,
+          "positive_entries": 0,
+          "negative_entries": 0
+        }
+      ]
+    },
+    {
+      "entry": 4,
+      "counters": {
+        "decode_attempts": 16,
+        "json_documents": 16,
+        "root_numeric_arrays": 10,
+        "unknown_key_occurrences": 1304,
+        "embedded_json_strings": 4
+      },
+      "recognized_fields": [],
+      "root_numeric_array_shapes": [
+        {
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0,
+          "occurrences": 10
+        }
+      ],
+      "all_numeric_array_paths": [
+        {
+          "path": "$",
+          "shapes": [
+            {
+              "length": 0,
+              "zero_entries": 0,
+              "positive_entries": 0,
+              "negative_entries": 0,
+              "occurrences": 10
+            }
+          ],
+          "locations": [
+            {
+              "line": 5,
+              "context": "unclassified"
+            },
+            {
+              "line": 6,
+              "context": "unclassified"
+            },
+            {
+              "line": 44,
+              "context": "unclassified"
+            },
+            {
+              "line": 51,
+              "context": "unclassified"
+            },
+            {
+              "line": 59,
+              "context": "unclassified"
+            },
+            {
+              "line": 68,
+              "context": "unclassified"
+            },
+            {
+              "line": 102,
+              "context": "unclassified"
+            },
+            {
+              "line": 109,
+              "context": "unclassified"
+            },
+            {
+              "line": 117,
+              "context": "unclassified"
+            },
+            {
+              "line": 126,
+              "context": "unclassified"
+            }
+          ]
+        }
+      ],
+      "non_json_numeric_sequences": [],
+      "root_numeric_array_samples": [
+        {
+          "line": 5,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 6,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 44,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 51,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 59,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 68,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 102,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 109,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 117,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        },
+        {
+          "line": 126,
+          "context": "unclassified",
+          "length": 0,
+          "zero_entries": 0,
+          "positive_entries": 0,
+          "negative_entries": 0
+        }
+      ]
+    },
+    {
+      "entry": 5,
+      "counters": {
+        "decode_attempts": 43,
+        "lines_with_starts_but_no_json": 43
+      },
+      "recognized_fields": [],
+      "root_numeric_array_shapes": [],
+      "all_numeric_array_paths": [],
+      "non_json_numeric_sequences": [],
+      "root_numeric_array_samples": []
+    }
+  ],
+  "limits": [
+    "Published paths contain only recovered code field/property names; other keys become $unknown.",
+    "No scalar values, actual array values, raw log prefixes, file paths or account identifiers are emitted.",
+    "JSON in log text can be telemetry or user content; a matching key is not proof of gameplay provenance.",
+    "All text entries are scanned; binary input is not interpreted as JSON.",
+    "Depth, array length, candidate-start and sample limits are counted explicitly.",
+    "Numeric array sign and length summaries do not identify valid tiles, owners or live opponent hands.",
+    "Non-JSON integer sequences use comma, semicolon or whitespace separators and can also represent non-gameplay data."
+  ]
+}
