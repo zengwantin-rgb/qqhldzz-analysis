@@ -9,3 +9,6 @@ remote-managed/
 **/bin/
 **/obj/
 remote-dazhong/
+build/
+remote-mobile-paths/
+remote-phone-build/
