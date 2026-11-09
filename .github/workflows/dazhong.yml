@@ -1,0 +1,32 @@
+name: Inspect Dazhong rule configuration
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  dazhong:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Download recovered assemblies
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+      - name: Install decompiler
+        run: dotnet tool install --tool-path .tools ilspycmd --version 9.1.0.7988
+      - name: Inspect rule and room configuration classes
+        run: |
+          mkdir -p report/dazhong
+          for type in GameModule.MJGameBaseConfigUtil Configuration.MJGameBaseConfig HappyMahjong.Common.GameType HappyMahjong.Common.GameSubType HappyMahjong.Common.TingType HappyMahjong.Common.Util; do
+            .tools/ilspycmd --disable-updatecheck -t "$type" -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > "report/dazhong/$type.cs"
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dazhong-rule-report
+          path: report/dazhong/
