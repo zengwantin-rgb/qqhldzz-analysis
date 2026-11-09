@@ -12,7 +12,7 @@ import zlib
 import plistlib
 
 from audit_export_coverage import audit, file_facts
-from trace_native_file_sources import inspect, small_binary_facts, binary_matches
+from trace_native_file_sources import inspect, small_binary_facts, binary_matches, config_shape, wire_fields
 
 
 class ExportCoverageTests(unittest.TestCase):
@@ -106,6 +106,15 @@ class ExportCoverageTests(unittest.TestCase):
         self.assertEqual(matches[0]['reference_kind'], 'suffix_only')
         self.assertEqual(matches[0]['static_basename_template'], '%d_record.dat')
         self.assertNotIn('123', json.dumps(matches))
+
+    def test_static_config_shape_and_invalid_wire(self):
+        shape = config_shape(b'\x0a\x05\x08\x01\x12\x01X', {1: 'id', 2: 'name'})
+        self.assertEqual(shape['row_count'], 1)
+        self.assertEqual(shape['known_row_fields'], ['id', 'name'])
+        self.assertEqual(shape['row_wire_type_mismatch_count'], 0)
+        for invalid in (b'\x00', b'\x0a\x05x', b'\x08' + b'\xff' * 10):
+            with self.assertRaises(ValueError):
+                wire_fields(invalid)
 
 
 if __name__ == '__main__':

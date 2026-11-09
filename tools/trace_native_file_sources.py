@@ -23,6 +23,57 @@ def small_binary_facts(raw):
     return facts
 
 
+def wire_fields(raw):
+    def varint(pos):
+        value = 0
+        for shift in range(0, 70, 7):
+            if pos >= len(raw):
+                raise ValueError('Truncated protobuf varint')
+            byte = raw[pos]
+            pos += 1
+            if shift == 63 and byte > 1:
+                raise ValueError('Protobuf varint exceeds 64 bits')
+            value |= (byte & 127) << shift
+            if byte < 128:
+                return value, pos
+        raise ValueError('Invalid protobuf varint')
+    pos = 0
+    rows = []
+    while pos < len(raw):
+        tag, pos = varint(pos)
+        number, kind = tag >> 3, tag & 7
+        if not 0 < number < 2**29:
+            raise ValueError('Invalid protobuf field number')
+        if kind == 0:
+            value, pos = varint(pos)
+        else:
+            if kind == 2:
+                length, pos = varint(pos)
+            elif kind in (1, 5):
+                length = 8 if kind == 1 else 4
+            else:
+                raise ValueError('Unsupported protobuf wire type')
+            if pos + length > len(raw):
+                raise ValueError('Truncated protobuf value')
+            value = raw[pos:pos + length]
+            pos += length
+        rows.append((number, kind, value))
+    return rows
+
+
+def config_shape(clear, number_to_name):
+    outer = wire_fields(clear)
+    rows = [wire_fields(value) for number, kind, value in outer if number == 1 and kind == 2]
+    return {'decoded_bytes': len(clear), 'row_count': len(rows),
+            'unknown_top_level_fields': sum(number != 1 or kind != 2 for number, kind, value in outer),
+            'known_row_fields': sorted({number_to_name[number] for row in rows for number, kind, value in row if number in number_to_name}),
+            'unknown_row_field_count': sum(number not in number_to_name for row in rows for number, kind, value in row),
+            'row_wire_type_mismatch_count': sum(
+                kind != (2 if number_to_name[number] == 'name' else 0)
+                for row in rows for number, kind, value in row if number in number_to_name),
+            'note': 'Only schema and row counts are emitted; no record values are included.'}
+
+
 def binary_matches(data, candidates, binary_label):
     rows = []
     for candidate in candidates:
@@ -112,10 +163,26 @@ def inspect(device_path, ipa_path):
         for name in sorted(names):
             if name.endswith('/config/VedioRecordConfig.data'):
                 raw = ipa.read(name)
-                packaged_records.append({'static_basename': 'VedioRecordConfig.data',
+                record = {'static_basename': 'VedioRecordConfig.data',
                                          'bytes': len(raw),
                                          'source': 'packaged_config',
-                                         **small_binary_facts(raw)})
+                                         **small_binary_facts(raw)}
+                schema_path = pathlib.Path('report/device/protocol-consumers.json')
+                if schema_path.exists() and any(r['format'] == 'zlib' for r in record['whole_stream_compression_matches']):
+                    schemas = json.loads(schema_path.read_text())['schemas']
+                    schema = next((s for s in schemas if s['type'] == 'Configuration.VedioRecordConfig'), None)
+                    if schema:
+                        mapping = {f['constant']: f['name'].removesuffix('FieldNumber')
+                                   for f in schema['fields'] if f['name'].endswith('FieldNumber') and isinstance(f['constant'], int)}
+                        try:
+                            decoder = zlib.decompressobj()
+                            clear = decoder.decompress(raw, 65537)
+                            if not decoder.eof or decoder.unused_data or decoder.unconsumed_tail or len(clear) > 65536:
+                                raise ValueError('Config compression limit or trailing data')
+                            record['protobuf_config_shape'] = config_shape(clear, mapping)
+                        except (ValueError, zlib.error):
+                            record['protobuf_config_shape'] = {'parse_failed': True}
+                packaged_records.append(record)
     return {'candidates': [{k: v for k, v in c.items() if not k.startswith('_')} for c in candidates],
             'small_record_file_checks': small_files, 'packaged_record_configs': packaged_records,
             'binaries_scanned': scanned, 'references': refs,
