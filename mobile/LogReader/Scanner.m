@@ -38,8 +38,9 @@ NSArray<NSString *> *MJFindContainers(NSString *parent, NSMutableArray<NSString 
 }
 
 NSDictionary *MJScanContainer(NSString *container) {
-    NSURL *root = [NSURL fileURLWithPath:container isDirectory:YES];
-    NSString *prefix = [container stringByAppendingString:@"/"];
+    NSString *canonical = container.stringByResolvingSymlinksInPath;
+    NSURL *root = [NSURL fileURLWithPath:canonical isDirectory:YES];
+    NSString *prefix = [canonical stringByAppendingString:@"/"];
     NSMutableArray *files = [NSMutableArray array];
     NSMutableArray *errors = [NSMutableArray array];
     NSArray *keys = @[NSURLIsDirectoryKey, NSURLIsRegularFileKey, NSURLIsSymbolicLinkKey, NSURLFileSizeKey, NSURLContentModificationDateKey];
