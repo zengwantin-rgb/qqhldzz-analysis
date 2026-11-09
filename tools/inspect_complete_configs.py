@@ -2,6 +2,8 @@
 import hashlib
 import json
 import pathlib
+import re
+import struct
 import zipfile
 import zlib
 
@@ -12,9 +14,61 @@ LABELS = ('NextToDoHelper', 'HandleSelfRedraw', 'RevcDealCommand', 'RecvGameFini
           'FanRecommendDetail', 'NewFanRecommendDataModel', 'MJGameContext', 'TDoWaitInfo')
 
 
+def inflate(raw):
+    decoder = zlib.decompressobj()
+    clear = decoder.decompress(raw, 4 * 1024 * 1024 + 1)
+    if not decoder.eof or decoder.unused_data or decoder.unconsumed_tail or len(clear) > 4 * 1024 * 1024:
+        raise ValueError('Config compression limits')
+    return clear
+
+
+def base_config_rows(raw):
+    result = {}
+    for number, kind, row in wire_fields(inflate(raw)):
+        if number != 1 or kind != 2:
+            continue
+        fields = wire_fields(row)
+        ids = [v for n, k, v in fields if n == 1 and k == 0]
+        strings = [v for n, k, v in fields if n == 2 and k == 2]
+        if len(ids) != 1 or len(strings) != 1 or ids[0] in result:
+            raise ValueError('Ambiguous config row identifiers or values')
+        text = strings[0].decode('utf-8')
+        values = None
+        if re.fullmatch(r'[0-9,;|\s-]*', text):
+            tokens = [s for s in re.split(r'[,;|\s]+', text.strip()) if s]
+            if len(tokens) <= 512 and all(re.fullmatch(r'-?\d{1,10}', s) for s in tokens):
+                values = [int(s) for s in tokens]
+        result[ids[0]] = {'values': values, 'row_sha256': hashlib.sha256(row).hexdigest()}
+    return result
+
+
+def compare_base_configs(raw, original, source):
+    device, bundled = base_config_rows(raw), base_config_rows(original)
+    mapping = {int(index): name for index, name in re.findall(r'case\s+(\d+):\s*([A-Za-z_][A-Za-z0-9_]*)\s*=', source)}
+    selected = {'afterTingShowAllHandTile', 'afterTingShowHuHandTile', 'showRecommendFanPanel',
+                'IsParallelDraw', 'HasSingleWall', 'canTing', 'showTingGiveCard', 'totalPlayerNum', 'totalCardNum'}
+    rows = []
+    for label, data in [('device', device), ('bundled', bundled)]:
+        row = data.get(149)
+        values = row['values'] if row else None
+        rows.append({'source': label, 'row_id': 149, 'found': row is not None,
+                     'value_count': len(values) if values is not None else None,
+                     'named_config_values': {name: values[index] for index, name in mapping.items()
+                                             if name in selected and values is not None and index < len(values)}})
+    common = device.keys() & bundled.keys()
+    return {'device_sheet1_rows': len(device), 'bundled_sheet1_rows': len(bundled),
+            'added_row_ids': sorted(device.keys() - bundled.keys()), 'removed_row_ids': sorted(bundled.keys() - device.keys()),
+            'changed_serialized_row_ids': sorted(i for i in common if device[i]['row_sha256'] != bundled[i]['row_sha256']),
+            'changed_numeric_config_row_ids': sorted(i for i in common if device[i]['values'] != bundled[i]['values']),
+            'target_game_rows': rows,
+            'limits': ['Row 149 matches the recovered GameType enum; effective room overrides and patches require separate verification.',
+                       'Only selected named rule flags and row IDs are emitted; other strings and field values are omitted.']}
+
+
 def facts(raw):
     result = {'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest(),
               'known_code_name_mentions': {name: raw.count(name.encode()) + raw.count(name.encode('utf-16-le')) for name in LABELS}}
+    result['ifix_magic_matches_recovered_loader'] = len(raw) >= 8 and struct.unpack_from('<Q', raw)[0] == 8881892042087324221
     for method, mode in [('zlib', 15), ('gzip', 31), ('raw_deflate', -15)]:
         try:
             decoder = zlib.decompressobj(mode)
@@ -47,7 +101,11 @@ if __name__ == '__main__':
             for match in bundled:
                 original = ipa.read(match)
                 comparisons.append({'bytes': len(original), 'sha256': hashlib.sha256(original).hexdigest(), 'byte_identical': raw == original})
-            rows.append({'entry': index, 'known_static_basename': name, **facts(raw), 'bundled_comparisons': comparisons})
+            row = {'entry': index, 'known_static_basename': name, **facts(raw), 'bundled_comparisons': comparisons}
+            if name == 'MJGameBaseConfig.data' and len(bundled) == 1:
+                source = pathlib.Path('report/device/record-evidence/MJGameBaseConfigDetail.cs').read_text()
+                row['base_config_comparison'] = compare_base_configs(raw, ipa.read(bundled[0]), source)
+            rows.append(row)
     result = {'files': rows, 'limits': ['Only five known static code/config basenames are inventoried.', 'Wire parseability does not establish a schema or runtime use.', 'No arbitrary strings, field values, player identifiers or raw patch bytes are emitted.']}
     pathlib.Path('report/device/complete-config-facts.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))

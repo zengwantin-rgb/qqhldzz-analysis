@@ -37,6 +37,7 @@ jobs:
           python3 -m unittest discover -s tools -p test_export_coverage.py
           python3 -m unittest discover -s tools -p test_json_gameplay.py
           python3 -m unittest discover -s tools -p test_round_multilog.py
+          python3 -m unittest discover -s tools -p test_complete_configs.py
           python3 tools/audit_export_coverage.py
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
@@ -74,6 +75,7 @@ jobs:
           .tools/ilspycmd --disable-updatecheck -t HappyMahjong.Common.MemoryMonitorUtil -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/MemoryMonitorUtil.cs
           .tools/ilspycmd --disable-updatecheck -t IFix.Core.PatchManager -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/IFix.Core.dll > report/device/record-evidence/PatchManager.cs
           .tools/ilspycmd --disable-updatecheck -t GameModule.MJGameBaseConfigDetail -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/MJGameBaseConfigDetail.cs
+          .tools/ilspycmd --disable-updatecheck -t GameModule.MJGameBaseConfigUtil -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/MJGameBaseConfigUtil.cs
       - name: Probe known embedded gameplay buffers
         run: |
           python3 -m py_compile tools/probe_embedded_payloads.py

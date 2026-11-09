@@ -8,6 +8,7 @@ var ownershipTypes=new HashSet<string>{"HuanLeGameSo.TNewRecommendFanTarget","Hu
 targetTypes.UnionWith(ownershipTypes);
 targetFields.UnionWith(new[]{"stNewRecommendFanTarget","stPlayerTotalHandAbilityTileInfo","astPlayerHandAbilityTileInfo","CurHandTiles","CurHandTilesFlagNew"});
 var ownershipConsumers=new List<object>();var ownershipSchemas=new List<object>();var ownershipEnums=new List<object>();
+var patchLoadCallers=new List<object>();var gameIdentifiers=new List<object>();
 var schemas=new List<object>();var consumers=new List<object>();int scanned=0,bodies=0;
 var candidateNames=new Dictionary<string,List<int>>(StringComparer.OrdinalIgnoreCase);
 var fileReferences=new List<object>();
@@ -30,6 +31,7 @@ if(File.Exists("private-input/device.zip")){
 foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  using var asm=AssemblyDefinition.ReadAssembly(file);
  foreach(var t in Flatten(asm.MainModule.Types)){
+  if(t.FullName=="HappyMahjong.Common.GameType")foreach(var field in t.Fields.Where(f=>f.HasConstant && f.Name=="ModuleTuidaohu49"))gameIdentifiers.Add(new{name=field.Name,value=field.Constant});
   if(ownershipTypes.Contains(t.FullName))ownershipSchemas.Add(new{assembly=asm.Name.Name,type=t.FullName,fields=t.Fields.Where(f=>!f.IsStatic).Select(f=>new{name=f.Name,type=f.FieldType.FullName}).ToArray(),properties=t.Properties.Select(p=>new{name=p.Name,type=p.PropertyType.FullName}).ToArray()});
   if(t.FullName=="HuanLeGameSo.TLV_TYPE")foreach(var field in t.Fields.Where(f=>f.HasConstant && (f.Name.Contains("PLAYER_HAND_ABILITY") || f.Name.Contains("NEW_RECOMMEND_FAN_TARGET") || f.Name.Contains("ABILITY_TILE_WALL"))))ownershipEnums.Add(new{name=field.Name,value=field.Constant});
   foreach(string member in t.Fields.Select(f=>f.Name).Concat(t.Properties.Select(p=>p.Name))){
@@ -39,6 +41,7 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
   if(targetTypes.Contains(t.FullName) || t.FullName is "Configuration.VedioRecordConfig" or "Configuration.VedioRecordConfigCfg" or "Configuration.MJGameBaseConfig" or "Configuration.MJGameBaseConfigCfg")schemas.Add(new{assembly=asm.Name.Name,type=t.FullName,fields=t.Fields.Where(f=>!f.Name.StartsWith("_")).Select(f=>new{name=f.Name,type=f.FieldType.FullName,constant=f.HasConstant?f.Constant:null}).ToArray()});
   foreach(var m in t.Methods){
    scanned++;if(!m.HasBody)continue;bodies++;
+   if(asm.Name.Name!="IFix.Core" && m.Body.Instructions.Any(i=>i.Operand is MethodReference mr && mr.DeclaringType.FullName=="IFix.Core.PatchManager" && mr.Name=="Load"))patchLoadCallers.Add(new{assembly=asm.Name.Name,type=t.FullName,method=m.FullName,calls=m.Body.Instructions.Where(i=>i.Operand is MethodReference).Select(i=>((MethodReference)i.Operand).FullName).Distinct().ToArray()});
    var hits=new List<object>();
    var ownershipHits=new List<object>();
    var ioCalls=new HashSet<string>();
@@ -73,6 +76,7 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  }
 }
 Directory.CreateDirectory(args[1]);
+File.WriteAllText(Path.Combine(args[1],"patch-loader-callers.json"),JsonSerializer.Serialize(new{callers=patchLoadCallers,game_identifiers=gameIdentifiers},new JsonSerializerOptions{WriteIndented=true})+"\n");
 File.WriteAllText(Path.Combine(args[1],"ownership-paths.json"),JsonSerializer.Serialize(new{schemas=ownershipSchemas,enums=ownershipEnums,consumers=ownershipConsumers,limits=new[]{"Only direct field and method references in recovered managed assemblies are indexed.","Native code, reflection, runtime patches and actual message contents are not established by this scan."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
 File.WriteAllText(Path.Combine(args[1],"gameplay-field-catalog.json"),JsonSerializer.Serialize(new{fields=gameplayFieldNames.OrderBy(n=>n,StringComparer.Ordinal).ToArray(),limits=new[]{"Static recovered field and property names selected by gameplay terms; names alone do not establish gameplay semantics."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
 var result=new{scanned_methods=scanned,methods_with_bodies=bodies,schemas,consumers,limits=new[]{"Only the recovered managed assemblies were scanned; native AOT implementation and active runtime patches are not covered.","A schema definition does not establish actual network payload contents."}};
