@@ -80,6 +80,9 @@ jobs:
           .tools/ilspycmd --disable-updatecheck -t HappyMahjong.update.ConfigReader -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/ConfigReader.cs
           .tools/ilspycmd --disable-updatecheck -t HappyMahjong.IFixManager -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/IFixManager.cs
           .tools/ilspycmd --disable-updatecheck -t HappyMahjong.AppRoot -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/AppRoot.cs
+          .tools/ilspycmd --disable-updatecheck -l c recovered-input/recovered/assemblies/HappyMahjong.Core.dll > private-input/core-types.txt
+          mj_combined_type=$(python3 -c 'from pathlib import Path; print(next(line.split()[-1] for line in Path("private-input/core-types.txt").read_text().splitlines() if line.split() and line.split()[-1].endswith("CombinedPatchProcessor")))')
+          .tools/ilspycmd --disable-updatecheck -t "$mj_combined_type" -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/CombinedPatchProcessor.cs
       - name: Probe known embedded gameplay buffers
         run: |
           python3 -m py_compile tools/probe_embedded_payloads.py
