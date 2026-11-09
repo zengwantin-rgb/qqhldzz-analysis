@@ -44,7 +44,12 @@ static uint32_t AssemblyRoot=0;
 static UILabel *Badge;
 static dispatch_source_t PollTimer;
 static UILabel *ModelPanel;
-static BOOL ModelReadErrorReported=NO;
+static NSUInteger ModelErrorMask=0;
+static void ModelNativeError(NSString *code,NSUInteger bit){
+    if(ModelErrorMask & bit)return;ModelErrorMask|=bit;
+    NSString *documents=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+    if(documents)MJProbeAppendRecord(documents,@{@"kind":@"native_status",@"schema":@1,@"version":@"0.3.0",@"status":code,@"attempt":@0,@"subscription_registered":@(ObserverStarted)},NULL);
+}
 static void ReadModelPanel(void);
 static void ShowModelPanel(NSString *message){
     @try{
@@ -54,7 +59,8 @@ static void ShowModelPanel(NSString *message){
         if(!ModelPanel){ModelPanel=[[UILabel alloc] initWithFrame:CGRectZero];ModelPanel.userInteractionEnabled=NO;ModelPanel.numberOfLines=4;ModelPanel.font=[UIFont systemFontOfSize:11 weight:UIFontWeightMedium];ModelPanel.textColor=UIColor.whiteColor;ModelPanel.backgroundColor=[UIColor colorWithWhite:0 alpha:0.78];ModelPanel.layer.cornerRadius=6;ModelPanel.clipsToBounds=YES;ModelPanel.adjustsFontSizeToFitWidth=YES;ModelPanel.minimumScaleFactor=0.65;ModelPanel.accessibilityIdentifier=@"mj-runtime-model-panel";}
         if(ModelPanel.superview!=window){[ModelPanel removeFromSuperview];[window addSubview:ModelPanel];}
         CGFloat top=MAX(8,window.safeAreaInsets.top+2)+32;
-        ModelPanel.frame=CGRectMake(8,top,MIN(560,window.bounds.size.width-16),88);
+        CGFloat left=MAX(8,window.safeAreaInsets.left+4);
+        ModelPanel.frame=CGRectMake(left,top,MIN(560,window.bounds.size.width-left-window.safeAreaInsets.right-8),88);
         ModelPanel.text=message;[window bringSubviewToFront:ModelPanel];
     }@catch(NSException *exception){}
 }
@@ -65,7 +71,8 @@ static void ShowBadge(NSString *message,BOOL failure){
         if(!window)return;
         if(!Badge){Badge=[[UILabel alloc] initWithFrame:CGRectZero];Badge.userInteractionEnabled=NO;Badge.font=[UIFont systemFontOfSize:12 weight:UIFontWeightMedium];Badge.textAlignment=NSTextAlignmentCenter;Badge.textColor=UIColor.whiteColor;Badge.layer.cornerRadius=6;Badge.clipsToBounds=YES;Badge.accessibilityIdentifier=@"mj-message-observer-status";}
         if(Badge.superview!=window){[Badge removeFromSuperview];[window addSubview:Badge];}
-        Badge.frame=CGRectMake(8,MAX(8,window.safeAreaInsets.top+2),MIN(300,window.bounds.size.width-16),28);
+        CGFloat left=MAX(8,window.safeAreaInsets.left+4);
+        Badge.frame=CGRectMake(left,MAX(8,window.safeAreaInsets.top+2),MIN(300,window.bounds.size.width-left-window.safeAreaInsets.right-8),28);
         Badge.backgroundColor=failure?[UIColor colorWithRed:0.65 green:0.12 blue:0.12 alpha:0.85]:[UIColor colorWithWhite:0 alpha:0.7];
         Badge.text=message;[window bringSubviewToFront:Badge];
     }@catch(NSException *exception){}
@@ -137,10 +144,10 @@ static void *FindClass(Runtime *r,void *domain,const char *space,const char *nam
 static void ReadModelPanel(void){
     if(!ObserverStarted)return;
     void *handle=UnityHandle();Runtime r={0};
-    if(!Bind(&r,handle) || !r.stringLength || !r.stringChars){ShowModelPanel(@"客户端模型：运行时接口不可用");if(handle)dlclose(handle);return;}
-    void *domain=r.domain();if(!domain){ShowModelPanel(@"客户端模型：等待运行时");if(handle)dlclose(handle);return;}
+    if(!Bind(&r,handle) || !r.stringLength || !r.stringChars){ShowModelPanel(@"客户端模型：运行时接口不可用");ModelNativeError(@"model_reader_api_unavailable",1);if(handle)dlclose(handle);return;}
+    void *domain=r.domain();if(!domain){ShowModelPanel(@"客户端模型：等待运行时");ModelNativeError(@"model_reader_domain_unavailable",2);if(handle)dlclose(handle);return;}
     void *previous=r.current(),*thread=previous?previous:r.attach(domain);
-    if(!thread){ShowModelPanel(@"客户端模型：读取未完成");if(handle)dlclose(handle);return;}
+    if(!thread){ShowModelPanel(@"客户端模型：读取未完成");ModelNativeError(@"model_reader_attach_failed",4);if(handle)dlclose(handle);return;}
     void *klass=FindClass(&r,domain,"MJDiagnostic","Observer");const void *method=klass?r.method(klass,"ReadModel",0):NULL;
     void *exception=NULL,*result=method?r.invoke(method,NULL,NULL,&exception):NULL;
     uint32_t root=result?r.root(result,false):0;
@@ -156,11 +163,7 @@ static void ReadModelPanel(void){
     NSString *panel=[snapshot isKindOfClass:NSDictionary.class]?snapshot[@"panel_text"]:nil;
     if([snapshot isKindOfClass:NSDictionary.class] && [snapshot[@"kind"] isEqual:@"runtime_model"] && [panel isKindOfClass:NSString.class] && panel.length>0 && panel.length<=4096){ShowModelPanel(panel);return;}
     ShowModelPanel(@"客户端模型：读取未完成，请导出记录");
-    if(!ModelReadErrorReported){
-        ModelReadErrorReported=YES;
-        NSString *documents=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
-        if(documents)MJProbeAppendRecord(documents,@{@"kind":@"native_status",@"schema":@1,@"version":@"0.3.0",@"status":@"model_reader_invoke_failed",@"attempt":@0,@"subscription_registered":@(ObserverStarted)},NULL);
-    }
+    ModelNativeError(@"model_reader_invoke_failed",8);
 }
 static void Bootstrap(NSUInteger attempt){
     @autoreleasepool{

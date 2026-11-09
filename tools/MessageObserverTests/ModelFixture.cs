@@ -12,13 +12,14 @@ namespace HappyMahjong.Game
         private int m_playerCount=4;
         protected int m_selfSeat;
         protected object[] m_playerGameInfo;
+        private object m_blackboard;
         public int PropertyCalls;
         public string PlayerAccountSecret="never include account fixture";
         public object GetTilesByViewSeat(int seat) { PropertyCalls++;throw new Exception("Game getter must not run"); }
         public int selfSeat { get { PropertyCalls++;throw new Exception("Game getter must not run"); } }
-        public GuoBiaoRoundModel(IList[] hands,int type=149,int status=1,int self=0)
+        public GuoBiaoRoundModel(IList[] hands,int type=149,int status=1,int self=0,object board=null)
         {
-            m_gameType=type;m_gameStatus=status;m_selfSeat=self;m_playerGameInfo=new object[4];
+            m_blackboard=board;m_gameType=type;m_gameStatus=status;m_selfSeat=self;m_playerGameInfo=new object[4];
             for(int i=0;i<4;i++)m_playerGameInfo[i]=new ModelFixturePlayer { tiles=new ModelFixtureTiles(hands[i]) };
         }
     }
@@ -57,6 +58,33 @@ static class ModelFixture
         Check(GameModelReader.Capture(new HappyMahjong.Game.DerivedRoundFixture(Hands()),"live").Status=="ok","inherited fields found");
         var oversized=Hands();oversized[1]=new List<int>(new int[33]);Check(GameModelReader.Capture(new HappyMahjong.Game.GuoBiaoRoundModel(oversized),"live").Status=="invalid_hand_list","bounded model reads");
         var invalid=Hands();invalid[2]=new List<int>{10};Check(GameModelReader.Panel(GameModelReader.Capture(new HappyMahjong.Game.GuoBiaoRoundModel(invalid),"live")).Contains("含未识别牌值"),"never invent a label for invalid tile code");
+        var board=new HappyMahjong.Common.Blackboard();
+        board.Add(new GameModule.CacheFixture());
+        var withCache=GameModelReader.Capture(new HappyMahjong.Game.GuoBiaoRoundModel(Hands(),board:board),"live");
+        Check(withCache.Cache.Status=="candidates_recorded" && withCache.Cache.Candidates.Length==1,"only hand-related numeric blackboard arrays retained");
+        Check(withCache.Cache.Candidates[0].Owner==1 && withCache.Cache.Candidates[0].OwnerField=="nSeatID","cache owner metadata retained without assuming seat mapping");
+        string privateJson=GameModelReader.Json(withCache);
+        Check(privateJson.Contains("987654321") && !privateJson.Contains("account-token-fixture") && !privateJson.Contains("private-account-key"),"bounded cache values stay in private capture, unrelated fields omitted");
+        Check(!GameModelReader.Json(withCache,false).Contains("987654321") && !GameModelReader.Panel(withCache).Contains("987654321"),"unverified cache arrays never rendered as opponent hands");
         Check(!GameModelReader.ValidTile(0) && !GameModelReader.ValidTile(10) && GameModelReader.ValidTile(37),"source tile code ranges");
+    }
+}
+
+namespace HappyMahjong.Common
+{
+    public sealed class Blackboard
+    {
+        readonly System.Collections.Generic.Dictionary<string,object> models=new System.Collections.Generic.Dictionary<string,object>();
+        public void Add(object value){models["private-account-key"]=value;}
+    }
+}
+namespace GameModule
+{
+    public sealed class CacheFixture
+    {
+        public int nSeatID=1;
+        public System.Collections.Generic.List<int> m_handTiles=new System.Collections.Generic.List<int>{987654321,2};
+        public string accountToken="account-token-fixture";
+        public int[] m_handPlayerID=new int[]{123456789};
     }
 }

@@ -157,7 +157,7 @@ namespace MJDiagnostic
                     }
                     catch { /* Model logging must not disable message capture or the read-only panel. */ }
                 }
-                return json;
+                return GameModelReader.Json(state, false);
             }
         }
         public static void Stop()

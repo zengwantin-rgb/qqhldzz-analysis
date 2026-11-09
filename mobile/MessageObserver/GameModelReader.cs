@@ -23,6 +23,7 @@ namespace MJDiagnostic
         public int PlayerCount;
         public ModelHand[] Hands = new ModelHand[0];
         public int Generation;
+        public ModelCacheScan Cache = new ModelCacheScan();
     }
     public static class GameModelReader
     {
@@ -75,7 +76,7 @@ namespace MJDiagnostic
                     }
                     hands[view] = new ModelHand { ViewSeat = view, Seat = (state.SelfSeat + view) % 4, Tiles = values };
                 }
-                state.Hands = hands; state.Status = "ok"; return state;
+                state.Hands = hands; state.Cache = ModelCacheReader.Capture(model); state.Status = "ok"; return state;
             }
             catch (MissingFieldException) { state.Status = "model_fields_missing"; }
             catch { state.Status = "model_read_failed"; }
@@ -119,7 +120,7 @@ namespace MJDiagnostic
             return output.ToString();
         }
         static string Quote(string value) { return "\"" + value.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n") + "\""; }
-        public static string Json(ModelState state)
+        public static string Json(ModelState state, bool includeCaches = true)
         {
             var output = new StringBuilder("{\"kind\":\"runtime_model\",\"schema\":1,\"source\":\"RoundModeUtil.RoundModel\",\"status\":");
             output.Append(Quote(state.Status)).Append(",\"phase\":").Append(Quote(state.Phase)).Append(",\"generation\":").Append(state.Generation.ToString(CultureInfo.InvariantCulture));
@@ -132,7 +133,22 @@ namespace MJDiagnostic
                 for (int j = 0; j < hand.Tiles.Length; j++) { if (j != 0) output.Append(','); output.Append(hand.Tiles[j].ToString(CultureInfo.InvariantCulture)); }
                 output.Append("]}");
             }
-            return output.Append("],\"panel_text\":").Append(Quote(Panel(state))).Append('}').ToString();
+            output.Append("],\"cache_status\":").Append(Quote(state.Cache.Status));
+            if (includeCaches)
+            {
+                output.Append(",\"cache_candidates\":[");
+                for (int i = 0; i < state.Cache.Candidates.Length; i++)
+                {
+                    if (i != 0) output.Append(','); var candidate = state.Cache.Candidates[i];
+                    output.Append("{\"source_type\":").Append(Quote(candidate.SourceType)).Append(",\"field\":").Append(Quote(candidate.FieldPath));
+                    output.Append(",\"owner_field\":").Append(Quote(candidate.OwnerField)).Append(",\"owner_value\":").Append(candidate.Owner.ToString(CultureInfo.InvariantCulture)).Append(",\"values\":[");
+                    for (int j = 0; j < candidate.Values.Length; j++) { if (j != 0) output.Append(','); output.Append(candidate.Values[j].ToString(CultureInfo.InvariantCulture)); }
+                    output.Append("]}");
+                }
+                output.Append(']');
+            }
+            return output.Append(",\"panel_text\":").Append(Quote(Panel(state))).Append('}').ToString();
+
         }
     }
 }

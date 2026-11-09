@@ -1,6 +1,6 @@
 import base64,json,tempfile,unittest
 from pathlib import Path
-from inspect_message_observer import events,statuses
+from inspect_message_observer import events,statuses,runtime_model
 
 class MessageObserverTests(unittest.TestCase):
     def test_frame_integrity_and_private_extraction(self):
@@ -39,6 +39,21 @@ class MessageObserverTests(unittest.TestCase):
             self.assertEqual((Path(temp)/'entry-0002-seq-0001.snapshot.json').read_bytes(),b'{"iType":1}')
             self.assertFalse((Path(temp)/'entry-0002-seq-0001.tdr').exists())
         row['message_type']=8
+        self.assertEqual(events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode())['invalid_record_count'],1)
+
+    def test_runtime_model_counts_never_publish_values_or_panel_text(self):
+        model={'kind':'runtime_model','schema':1,'source':'RoundModeUtil.RoundModel','status':'ok','phase':'live','generation':1,'game_type':149,'game_status':1,'player_count':4,'self_seat':0,'seats':[{'view_seat':v,'seat':v,'hand':[0,1,987654321]} for v in range(4)],'cache_status':'candidates_recorded','cache_candidates':[{'source_type':'private-type-token','field':'private-path-token','values':[0,1,987654321]}],'panel_text':'private card names and token'}
+        payload=json.dumps(model).encode();row={'kind':'runtime_model_event','schema':1,'sequence':1,'channel':'runtime','message_type':0,'encoding':'runtime_model_snapshot','bytes':len(payload),'payload_b64':base64.b64encode(payload).decode()}
+        with tempfile.TemporaryDirectory() as temp:
+            result=events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode(),temp,5)
+            self.assertEqual(result['valid_frame_count'],1)
+            self.assertEqual((Path(temp)/'entry-0005-seq-0001.runtime.json').read_bytes(),payload)
+            summary=result['frames'][0]['runtime_model'];self.assertEqual(summary['seats'][1]['placeholder_count'],1);self.assertEqual(summary['seats'][1]['known_tile_count'],1);self.assertEqual(summary['seats'][1]['invalid_tile_count'],1)
+            public=json.dumps(result)
+            for token in ('987654321','private-type-token','private-path-token','private card names',row['payload_b64']):self.assertNotIn(token,public)
+        model['seats'][1]['seat']=3;self.assertIsNone(runtime_model(model))
+        model['status']=[];self.assertIsNone(runtime_model(model))
+        row['kind']='game_event'
         self.assertEqual(events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode())['invalid_record_count'],1)
 
     def test_subscription_is_not_inherited_across_sessions(self):
