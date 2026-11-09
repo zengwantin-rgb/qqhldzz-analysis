@@ -1,0 +1,34 @@
+name: Inspect encrypted device logs
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download encrypted diagnostic input
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p private-input
+          gh release download log-inputs-v1 --pattern '*.enc' --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+      - name: Decrypt input inside runner
+        env:
+          MJ_LOG_INPUT_KEY_V1: ${{ secrets.MJ_LOG_INPUT_KEY_V1 }}
+        run: |
+          umask 077
+          openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v1.enc -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
+      - name: Compile and inspect with allowlisted output
+        run: |
+          python3 -m py_compile tools/inspect_device_logs.py
+          python3 tools/inspect_device_logs.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: device-log-summary
+          path: report/device/
+      - name: Remove plaintext from workspace
+        if: always()
+        run: rm -rf private-input

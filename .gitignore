@@ -13,3 +13,5 @@ build/
 remote-mobile-paths/
 remote-phone-build/
 remote-phone-validation/
+private-input/
+remote-device-logs/
