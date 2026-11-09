@@ -1,6 +1,14 @@
 name: Inspect encrypted device logs
 on:
   workflow_dispatch:
+    inputs:
+      input_version:
+        type: choice
+        required: true
+        default: v1
+        options:
+          - v1
+          - v2
 permissions:
   contents: read
 jobs:
@@ -12,20 +20,23 @@ jobs:
       - name: Download encrypted diagnostic input
         env:
           GH_TOKEN: ${{ github.token }}
+          MJ_INPUT_VERSION: ${{ inputs.input_version }}
         run: |
           mkdir -p private-input
-          gh release download log-inputs-v1 --pattern '*.enc' --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+          gh release download "log-inputs-${MJ_INPUT_VERSION}" --pattern "log-input-${MJ_INPUT_VERSION}.enc" --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
       - name: Decrypt input inside runner
         env:
           MJ_LOG_INPUT_KEY_V1: ${{ secrets.MJ_LOG_INPUT_KEY_V1 }}
+          MJ_INPUT_VERSION: ${{ inputs.input_version }}
         run: |
           umask 077
-          openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v1.enc -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
+          openssl enc -d -aes-256-cbc -pbkdf2 -in "private-input/log-input-${MJ_INPUT_VERSION}.enc" -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
       - name: Compile and inspect with allowlisted output
         run: |
           python3 -m py_compile tools/audit_export_coverage.py
           python3 -m unittest discover -s tools -p test_export_coverage.py
           python3 -m unittest discover -s tools -p test_json_gameplay.py
+          python3 -m unittest discover -s tools -p test_round_multilog.py
           python3 tools/audit_export_coverage.py
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
@@ -61,6 +72,8 @@ jobs:
           .tools/ilspycmd --disable-updatecheck -t ProtocolHierarchy.ProtocolSerializer -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/ProtocolSerializer.cs
           .tools/ilspycmd --disable-updatecheck -t HappyMahjong.PlayerRecord.PlaybackRecordService -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/PlaybackRecordService.cs
           .tools/ilspycmd --disable-updatecheck -t HappyMahjong.Common.MemoryMonitorUtil -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/MemoryMonitorUtil.cs
+          .tools/ilspycmd --disable-updatecheck -t IFix.Core.PatchManager -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/IFix.Core.dll > report/device/record-evidence/PatchManager.cs
+          .tools/ilspycmd --disable-updatecheck -t GameModule.MJGameBaseConfigDetail -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/MJGameBaseConfigDetail.cs
       - name: Probe known embedded gameplay buffers
         run: |
           python3 -m py_compile tools/probe_embedded_payloads.py
@@ -74,6 +87,8 @@ jobs:
           python3 tools/trace_native_file_sources.py
           python3 -m py_compile tools/trace_sequence_context.py
           python3 tools/trace_sequence_context.py
+          python3 -m py_compile tools/inspect_complete_configs.py
+          python3 tools/inspect_complete_configs.py
       - uses: actions/upload-artifact@v4
         with:
           name: device-log-summary

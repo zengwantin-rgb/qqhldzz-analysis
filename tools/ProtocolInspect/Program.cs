@@ -36,7 +36,7 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
    string key=member.Trim('_');
    if(key.Length<=80 && System.Text.RegularExpressions.Regex.IsMatch(key,@"^[A-Za-z_][A-Za-z0-9_]*$") && !key.EndsWith("FieldNumber") && !key.EndsWith("DefaultValue") && gameplayNamePattern.IsMatch(key))gameplayFieldNames.Add(key);
   }
-  if(targetTypes.Contains(t.FullName) || t.FullName is "Configuration.VedioRecordConfig" or "Configuration.VedioRecordConfigCfg")schemas.Add(new{assembly=asm.Name.Name,type=t.FullName,fields=t.Fields.Where(f=>!f.Name.StartsWith("_")).Select(f=>new{name=f.Name,type=f.FieldType.FullName,constant=f.HasConstant?f.Constant:null}).ToArray()});
+  if(targetTypes.Contains(t.FullName) || t.FullName is "Configuration.VedioRecordConfig" or "Configuration.VedioRecordConfigCfg" or "Configuration.MJGameBaseConfig" or "Configuration.MJGameBaseConfigCfg")schemas.Add(new{assembly=asm.Name.Name,type=t.FullName,fields=t.Fields.Where(f=>!f.Name.StartsWith("_")).Select(f=>new{name=f.Name,type=f.FieldType.FullName,constant=f.HasConstant?f.Constant:null}).ToArray()});
   foreach(var m in t.Methods){
    scanned++;if(!m.HasBody)continue;bodies++;
    var hits=new List<object>();
