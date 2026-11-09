@@ -6,7 +6,8 @@ import re
 import zipfile
 
 MARKERS = ('Recv Deal Self mjValue:', 'HandleSelfRedraw', 'HandleOtherRedraw',
-           'HandleWait', 'CheckAllMJ', 'RevcDealCommand', 'RecvGameMsg', 'Handle TLV')
+           'HandleWait', 'CheckAllMJ', 'RevcDealCommand', 'RecvGameMsg', 'Handle TLV',
+           'SetNewFanRecommendDetailData', 'Set Active FanRecommendDeatil', 'GetBaseConifgByGameID')
 MAX_ARRAY = 4096
 MAX_DEPTH = 24
 MAX_STARTS = 128

@@ -51,6 +51,8 @@ jobs:
         run: |
           python3 -m py_compile tools/index_json_gameplay.py
           python3 tools/index_json_gameplay.py
+          python3 -m py_compile tools/analyze_fan_recommend.py
+          python3 tools/analyze_fan_recommend.py
       - name: Recover record IO implementations
         run: |
           mkdir -p report/device/record-evidence

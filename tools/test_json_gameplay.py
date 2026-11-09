@@ -3,6 +3,7 @@ import unittest
 
 from index_json_gameplay import index_text
 from trace_sequence_context import fragments, matches
+from analyze_fan_recommend import analyze
 
 
 class JsonGameplayTests(unittest.TestCase):
@@ -60,6 +61,20 @@ class JsonGameplayTests(unittest.TestCase):
         row = result['non_json_numeric_sequences'][0]
         self.assertEqual(row['occurrences'], 3)
         self.assertEqual(row['first_lines'], [1, 2])
+
+    def test_recommendation_current_hand_matches_known_self_checkpoints(self):
+        initial = ' '.join(str(n) for n in range(1, 14))
+        drawn = initial + ' 14'
+        rows = [
+            'Recv Deal Self mjValue: ' + initial,
+            'SetNewFanRecommendDetailData 【 CurHandTile ' + initial + ' CurHandTag ' + '0 ' * 13 + '】',
+            'HandleSelfRedraw {"chTile":14,"DrawTiles":[14]}',
+            'SetNewFanRecommendDetailData 【 CurHandTile ' + drawn + ' CurHandTag ' + '0 ' * 14 + '】',
+        ]
+        result = analyze(rows)
+        self.assertEqual(result['detail_entries'], 2)
+        self.assertEqual([c['exact_self_multiset_matches'] for c in result['self_checkpoints']], [1, 1])
+        self.assertNotIn(initial, json.dumps(result))
 
 
 if __name__ == '__main__':
