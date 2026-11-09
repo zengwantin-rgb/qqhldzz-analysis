@@ -2,7 +2,7 @@
 import hashlib,json,pathlib,struct,zipfile
 import lz4.block
 import UnityPy
-from probe_unitymj import valid_info,readz
+from unitybundle_common import valid_info,readz
 out=pathlib.Path('report/recovered')
 out.mkdir(parents=True,exist_ok=True)
 results=[]
@@ -54,5 +54,9 @@ with zipfile.ZipFile('inputs/_Decrypted.ipa') as z:
                 r['attempts'][-1]['text_assets']=texts
             except Exception as e:r['attempts'][-1]['asset_parse_error']=str(e)[:1000]
         results.append(r)
+        assert len(r["attempts"]) == 1, "Expected one structurally valid directory"
+        attempt=r["attempts"][0]
+        assert attempt["block_layout_end"] == len(b), "Block ranges do not cover the complete bundle"
+        assert "asset_parse_error" not in attempt and attempt.get("text_assets"), "Asset parsing did not succeed"
 (out/'recovery.json').write_text(json.dumps(results,indent=2)+'\n')
 print(json.dumps(results,indent=2))
