@@ -80,7 +80,7 @@ static void StartPolling(void){
 }
 static void Status(NSString *code,NSUInteger attempt) {
     NSString *documents=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
-    if(documents)MJProbeAppendRecord(documents,@{@"kind":@"native_status",@"schema":@1,@"version":@"0.2.0",@"status":code,@"attempt":@(attempt),@"subscription_registered":@(ObserverStarted)},NULL);
+    if(documents)MJProbeAppendRecord(documents,@{@"kind":@"native_status",@"schema":@1,@"version":@"0.2.1",@"status":code,@"attempt":@(attempt),@"subscription_registered":@(ObserverStarted)},NULL);
     if([code isEqual:@"observer_started"]){ShowBadge(@"诊断：已就绪，可以进入对局",NO);StartPolling();}
     else if([code isEqual:@"library_loaded"] || [code isEqual:@"preparing_files"] || [code isEqual:@"managed_assembly_loaded"])ShowBadge(@"诊断：正在启动消息观察器",NO);
     else if(attempt>=3 || [code isEqual:@"unsupported_game_build"] || [code isEqual:@"diagnostic_files_failed"])ShowBadge(@"诊断：启动未完成，请导出日志",YES);

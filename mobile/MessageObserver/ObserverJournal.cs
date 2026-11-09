@@ -43,16 +43,16 @@ namespace MJDiagnostic
                 for (int i = 0; i < expected.Length; i++) if (actual[i] != expected[i]) throw new InvalidOperationException("Unrelated journal file");
             }
         }
-        public bool Append(string channel, int messageType, byte[] bytes, int used)
+        public bool Append(string channel, int messageType, byte[] bytes, int used, string encoding = "reencoded_decoded_event")
         {
-            if ((channel != "tdr" && channel != "protobuf") || messageType < 0 || messageType > 65535 || bytes == null || used <= 0 || used > bytes.Length || used > MaxPayload)
+            if ((encoding != "reencoded_decoded_event" && encoding != "public_field_snapshot") || (channel != "tdr" && channel != "protobuf") || bytes == null || used <= 0 || used > bytes.Length || used > MaxPayload)
                 throw new InvalidOperationException("Invalid event frame");
             lock (gate)
             {
                 if (LimitReached) return false;
                 string line = "{\"kind\":\"game_event\",\"schema\":1,\"sequence\":" + (FrameCount + 1).ToString(CultureInfo.InvariantCulture) +
                     ",\"channel\":\"" + channel + "\",\"message_type\":" + messageType.ToString(CultureInfo.InvariantCulture) +
-                    ",\"encoding\":\"reencoded_decoded_event\",\"bytes\":" + used.ToString(CultureInfo.InvariantCulture) +
+                    ",\"encoding\":\"" + encoding + "\",\"bytes\":" + used.ToString(CultureInfo.InvariantCulture) +
                     ",\"payload_b64\":\"" + Convert.ToBase64String(bytes, 0, used) + "\"}\n";
                 if (FrameCount >= maxFrames || new FileInfo(eventFile).Length + Encoding.UTF8.GetByteCount(line) > maxBytes)
                 {
@@ -66,6 +66,17 @@ namespace MJDiagnostic
                 if (FrameCount == 1) Status("first_event_recorded", FrameCount);
                 else if (FrameCount % 25 == 0) Status("capture_progress", FrameCount);
                 return true;
+            }
+        }
+        public void Error(string stage, Exception error, int messageType)
+        {
+            if (stage != "tdr_pack" && stage != "protobuf_encode" && stage != "field_snapshot" && stage != "journal_append") return;
+            string category = error is System.IO.IOException ? "io" : error is UnauthorizedAccessException ? "access" : error is NullReferenceException ? "null_reference" : error is ArgumentException ? "argument" : error is InvalidOperationException ? "invalid_operation" : error is NotSupportedException ? "not_supported" : "other";
+            lock (gate)
+            {
+                CheckHeader(statusFile, StatusHeader);
+                string line = "{\"kind\":\"managed_status\",\"schema\":1,\"status\":\"serialization_failed\",\"value\":0,\"stage\":\"" + stage + "\",\"category\":\"" + category + "\",\"message_type\":" + messageType.ToString(CultureInfo.InvariantCulture) + "}\n";
+                if (new FileInfo(statusFile).Length + Encoding.UTF8.GetByteCount(line) <= 64 * 1024) File.AppendAllText(statusFile, line, new UTF8Encoding(false));
             }
         }
         public void Status(string code, int value)

@@ -40,6 +40,10 @@ def statuses(raw):
             value=obj.get('value')
             allowed=(value in (9,217) if type(value) is int and code=='unexpected_payload' else integer(value,0,512))
             row['count_or_channel']=value if allowed else None
+        if kind=='managed_status' and code=='serialization_failed':
+            if obj.get('stage') in ('tdr_pack','protobuf_encode','field_snapshot','journal_append'):row['stage']=obj['stage']
+            if obj.get('category') in ('io','access','null_reference','argument','invalid_operation','not_supported','other'):row['category']=obj['category']
+            if integer(obj.get('message_type'),-2147483648,2147483647):row['message_type']=obj['message_type']
         records.append(row)
     latest=[r for r in records if r['session']==session]
     return {'status':'recognized_status','session_count':session,'invalid_record_count':invalid,'records':records,
@@ -56,9 +60,9 @@ def events(raw, private_directory=None, entry=0):
         if len(line)>400*1024:invalid+=1;continue
         try: obj=json.loads(line)
         except (ValueError,UnicodeError,RecursionError):invalid+=1;continue
-        if not isinstance(obj,dict) or obj.get('kind')!='game_event' or obj.get('schema')!=1 or obj.get('encoding')!='reencoded_decoded_event':invalid+=1;continue
+        if not isinstance(obj,dict) or obj.get('kind')!='game_event' or obj.get('schema')!=1 or obj.get('encoding') not in ('reencoded_decoded_event','public_field_snapshot'):invalid+=1;continue
         channel,sequence,msg,declared,payload=(obj.get(k) for k in ('channel','sequence','message_type','bytes','payload_b64'))
-        if channel not in ('tdr','protobuf') or not integer(sequence,1,512) or not integer(msg,0,65535) or not integer(declared,1,256*1024) or not isinstance(payload,str):invalid+=1;continue
+        if channel not in ('tdr','protobuf') or not integer(sequence,1,512) or not integer(msg,-2147483648,2147483647) or not integer(declared,1,256*1024) or not isinstance(payload,str):invalid+=1;continue
         try: clear=base64.b64decode(payload,validate=True)
         except (ValueError,binascii.Error):invalid+=1;continue
         if len(clear)!=declared:invalid+=1;continue
@@ -67,7 +71,7 @@ def events(raw, private_directory=None, entry=0):
         if private_directory is not None:
             directory=pathlib.Path(private_directory);directory.mkdir(parents=True,exist_ok=True,mode=0o700)
             (directory/('entry-%04d-seq-%04d.%s'%(entry,sequence,channel))).write_bytes(clear)
-        records.append({'sequence':sequence,'channel':channel,'message_type':msg,'bytes':declared})
+        records.append({'sequence':sequence,'channel':channel,'message_type':msg,'bytes':declared,'encoding':obj['encoding']})
         if len(records)>=512:break
     return {'status':'recognized_events','valid_frame_count':len(records),'invalid_record_count':invalid,
             'sequence_discontinuities':discontinuities,'decoded_bytes':sum(r['bytes'] for r in records),
