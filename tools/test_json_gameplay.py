@@ -4,6 +4,7 @@ import unittest
 from index_json_gameplay import index_text
 from trace_sequence_context import fragments, matches
 from analyze_fan_recommend import analyze
+from analyze_finish_hands import analyze as analyze_finish
 
 
 class JsonGameplayTests(unittest.TestCase):
@@ -75,6 +76,22 @@ class JsonGameplayTests(unittest.TestCase):
         self.assertEqual(result['detail_entries'], 2)
         self.assertEqual([c['exact_self_multiset_matches'] for c in result['self_checkpoints']], [1, 1])
         self.assertNotIn(initial, json.dumps(result))
+
+    def test_finish_hands_timing_and_self_seat_are_not_assumed(self):
+        result = analyze_finish([
+            'RecvGameMsg msgType:ID_SO_NOTIFY_DEAL',
+            'HandleSelfRedraw {"nSeatId":2,"chTile":4}',
+            'Balance UserHand Tiles seat:1 tiles:0,0,0',
+            'RecvGameMsg msgType:ID_SO_NOTIFY_HU',
+            'Balance UserHand Tiles seat:1 tiles:1,2,3',
+            'Balance UserHand Tiles seat:2 tiles:4',
+        ], 0)
+        self.assertEqual(result['pre_hu_final_hand_entries'], 1)
+        self.assertEqual(result['unambiguous_self_seat'], 2)
+        self.assertEqual(result['final_hands'][1]['phase'], 'hu_notification')
+        self.assertFalse(result['final_hands'][1]['is_self'])
+        self.assertTrue(result['final_hands'][2]['is_self'])
+        self.assertEqual(result['final_hands'][0]['placeholder_entries'], 3)
 
 
 if __name__ == '__main__':
