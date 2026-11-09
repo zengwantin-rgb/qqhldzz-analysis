@@ -39,6 +39,8 @@ jobs:
           python3 -m unittest discover -s tools -p test_round_multilog.py
           python3 -m unittest discover -s tools -p test_complete_configs.py
           python3 -m unittest discover -s tools -p test_ifix_patch.py
+          python3 -m unittest discover -s tools -p test_xlog.py
+          python3 tools/inspect_xlog.py
           python3 tools/audit_export_coverage.py
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
