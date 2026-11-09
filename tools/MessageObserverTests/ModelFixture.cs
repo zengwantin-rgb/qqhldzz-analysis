@@ -23,10 +23,14 @@ namespace HappyMahjong.Game
             for(int i=0;i<4;i++)m_playerGameInfo[i]=new ModelFixturePlayer { tiles=new ModelFixtureTiles(hands[i]) };
         }
     }
+    public sealed class GangInfo { public int mjValue; }
     public sealed class ModelFixturePlayer { public object tiles; }
     public sealed class ModelFixtureTiles
     {
         private IList m_inHandList;
+        private List<GangInfo> m_anGangList = new List<GangInfo> { new GangInfo { mjValue=35 } };
+        public int curRedrawMjValue=19;
+        public int LastMJ=21;
         public IList inHandList { get { throw new Exception("Game getter must not run"); } }
         public ModelFixtureTiles(IList values){m_inHandList=values;}
     }
@@ -44,6 +48,7 @@ static class ModelFixture
         Check(live.Hands[0].Seat==2 && live.Hands[1].Seat==3 && live.Hands[2].Seat==0,"convert view seats with actual self seat");
         string panel=GameModelReader.Panel(live);
         Check(panel.Contains("牌背 ×3") && panel.Contains("1条 1筒 中") && panel.Contains("另有牌背 ×1"),"show masked, known and mixed lists faithfully");
+        Check(panel.Contains("暗杠：中") && !panel.Contains("9条"),"show explicit kong model values, keep auxiliary draw fields separate");
         Check(!panel.Contains("一万"),"opponent rows must not use own hand values");
         ((List<int>)lists[2])[0]=19;
         Check(live.Hands[2].Tiles[0]==11,"copy runtime list instead of keeping mutable game data");

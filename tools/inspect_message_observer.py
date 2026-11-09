@@ -35,7 +35,17 @@ def runtime_model(obj):
         cards=row.get('hand')
         if not isinstance(cards,list) or len(cards)>32 or not all(integer(c,-2147483648,2147483647) for c in cards):return None
         known=sum(1<=c<=9 or 11<=c<=19 or 21<=c<=29 or 31<=c<=37 for c in cards);backs=sum(c==0 for c in cards)
-        output['seats'].append({'view_seat':view,'seat':row['seat'],'tiles':len(cards),'known_tile_count':known,'placeholder_count':backs,'invalid_tile_count':len(cards)-known-backs})
+        seat={'view_seat':view,'seat':row['seat'],'tiles':len(cards),'known_tile_count':known,'placeholder_count':backs,'invalid_tile_count':len(cards)-known-backs}
+        kongs=row.get('concealed_kongs',[])
+        if not isinstance(kongs,list) or len(kongs)>4 or not all(integer(c,-2147483648,2147483647) for c in kongs):return None
+        seat['concealed_kong_groups']=len(kongs);seat['known_concealed_kong_groups']=sum(1<=c<=9 or 11<=c<=19 or 21<=c<=29 or 31<=c<=37 for c in kongs)
+        aux=row.get('aux_fields',{})
+        if not isinstance(aux,dict):return None
+        seat['aux_fields']={}
+        for name,values in aux.items():
+            if name not in ('curRedrawMjValue','LastMJ','m_tianHuTile','m_multiTileRedrawList','m_laiZhiList') or not isinstance(values,list) or len(values)>16 or not all(integer(c,-2147483648,2147483647) for c in values):return None
+            seat['aux_fields'][name]={'entries':len(values),'nonzero_entries':sum(c!=0 for c in values),'valid_tile_code_count':sum(1<=c<=9 or 11<=c<=19 or 21<=c<=29 or 31<=c<=37 for c in values)}
+        output['seats'].append(seat)
     cache=obj.get('cache_candidates',[])
     if not isinstance(cache,list) or len(cache)>16:return None
     total=0;counts=[]
