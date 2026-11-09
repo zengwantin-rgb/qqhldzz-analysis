@@ -23,6 +23,9 @@ jobs:
           openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v1.enc -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
       - name: Compile and inspect with allowlisted output
         run: |
+          python3 -m py_compile tools/audit_export_coverage.py
+          python3 -m unittest discover -s tools -p test_export_coverage.py
+          python3 tools/audit_export_coverage.py
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
       - uses: actions/setup-dotnet@v4
