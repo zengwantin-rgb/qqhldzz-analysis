@@ -12,7 +12,7 @@ import zlib
 import plistlib
 
 from audit_export_coverage import audit, file_facts
-from trace_native_file_sources import inspect, small_binary_facts
+from trace_native_file_sources import inspect, small_binary_facts, binary_matches
 
 
 class ExportCoverageTests(unittest.TestCase):
@@ -97,6 +97,15 @@ class ExportCoverageTests(unittest.TestCase):
         self.assertTrue(small_binary_facts(compressed)['whole_stream_compression_matches'])
         self.assertFalse(small_binary_facts(compressed + b'trailer')['whole_stream_compression_matches'])
         self.assertFalse(small_binary_facts(compressed[:-1])['whole_stream_compression_matches'])
+
+    def test_generated_record_name_only_yields_weak_suffix_reference(self):
+        matches = binary_matches(b'\0%d_record.dat\0', [
+            {'candidate': 5, '_basename': '123_record.dat'}
+        ], 'synthetic')
+        self.assertEqual(len(matches), 1)
+        self.assertEqual(matches[0]['reference_kind'], 'suffix_only')
+        self.assertEqual(matches[0]['static_basename_template'], '%d_record.dat')
+        self.assertNotIn('123', json.dumps(matches))
 
 
 if __name__ == '__main__':

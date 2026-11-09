@@ -1,5 +1,4 @@
 """Compare manifest basenames to supplied app binaries, without exposing paths."""
-import collections
 import json
 import pathlib
 import plistlib
@@ -48,6 +47,28 @@ def binary_matches(data, candidates, binary_label):
                 if re.fullmatch(r'[A-Za-z_.-]{1,80}', name):
                     row['matched_static_basename'] = name
                 rows.append(row)
+        # Names generated with IDs may only occur as a printf-style template.
+        # Suffix matches remain a separate, weaker result than exact matches.
+        suffix_match = re.search(r'([A-Za-z_][A-Za-z_.-]*\.[A-Za-z]+)$', name)
+        if suffix_match and suffix_match.group(1) != name and 'record' in suffix_match.group(1).lower():
+            suffix = suffix_match.group(1).encode('ascii')
+            start = 0
+            while True:
+                offset = data.find(suffix, start)
+                if offset < 0:
+                    break
+                start = offset + len(suffix)
+                left = data.rfind(b'\0', max(0, offset - 160), offset)
+                right = data.find(b'\0', offset, offset + 160)
+                if left < 0 or right < 0:
+                    continue
+                literal = data[left + 1:right]
+                if not re.fullmatch(rb'[A-Za-z0-9_./%+\-]{4,160}', literal):
+                    continue
+                basename = pathlib.PurePosixPath(literal.decode('ascii')).name
+                rows.append({'candidate': candidate['candidate'], 'binary': binary_label,
+                             'reference_kind': 'suffix_only', 'offset': offset,
+                             'static_basename_template': basename})
     return rows
 
 
@@ -87,8 +108,17 @@ def inspect(device_path, ipa_path):
             label = pathlib.PurePosixPath(name).name
             scanned.append({'binary': label, 'bytes': len(data)})
             refs.extend(binary_matches(data, candidates, label))
+        packaged_records = []
+        for name in sorted(names):
+            if name.endswith('/config/VedioRecordConfig.data'):
+                raw = ipa.read(name)
+                packaged_records.append({'static_basename': 'VedioRecordConfig.data',
+                                         'bytes': len(raw),
+                                         'source': 'packaged_config',
+                                         **small_binary_facts(raw)})
     return {'candidates': [{k: v for k, v in c.items() if not k.startswith('_')} for c in candidates],
-            'small_record_file_checks': small_files, 'binaries_scanned': scanned, 'references': refs,
+            'small_record_file_checks': small_files, 'packaged_record_configs': packaged_records,
+            'binaries_scanned': scanned, 'references': refs,
             'limits': [
                 'Only exact basename byte matches in supplied app executables and IL2CPP metadata are checked.',
                 'A filename match identifies a static reference, not its behavior or actual file format.',
