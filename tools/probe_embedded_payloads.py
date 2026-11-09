@@ -1,7 +1,7 @@
 """Only known gameplay buffer fields are decoded. Raw content is never output."""
 import base64,collections,json,pathlib,re,zipfile,zlib
 out=pathlib.Path('report/device');out.mkdir(parents=True,exist_ok=True)
-known=['szGameBuf','nGameBuf','iOriginSize','stUnitProtoValueBuf','stAbilityTileWallInfo','iTotalTileCount','nTileCount','astTileInfos','iTileFace','iTileBack','ProtoIntelligenceAdvice','AdviceType','AdviceTile','IntelligenceAdviceTing','TileLeftNum']
+known=['szGameBuf','gameBuf','nGameBuf','iOriginSize','OriginSize','stUnitProtoValueBuf','stAbilityTileWallInfo','iTotalTileCount','TotalTileCount','nTileCount','astTileInfos','TileInfos','iTileFace','iTileBack','ProtoIntelligenceAdvice','AdviceType','iAdviceType','AdviceTile','iAdviceTile','IntelligenceAdviceTing','TileLeftNum']
 counts=collections.Counter();buffers=[];wall=[];advice=[];parse_attempts=0
 
 def walk(value,depth=0):
@@ -68,8 +68,9 @@ with zipfile.ZipFile('private-input/device.zip') as z:
    except json.JSONDecodeError:continue
    parse_attempts+=1
    for obj in walk(value):
-    if 'szGameBuf' in obj:
-     val=obj['szGameBuf'];blob=None
+    buffer_key=next((k for k in obj if k in ('szGameBuf','gameBuf','GameBuf')),None)
+    if buffer_key is not None:
+     val=obj[buffer_key];blob=None
      if isinstance(val,list) and len(val)<=4*1024*1024 and all(isinstance(n,int) and -128<=n<=255 for n in val):blob=bytes(n&255 for n in val)
      elif isinstance(val,str) and len(val)<6*1024*1024:
       try:blob=base64.b64decode(val,validate=True)
@@ -78,17 +79,21 @@ with zipfile.ZipFile('private-input/device.zip') as z:
       n=obj.get('nGameBuf')
       if isinstance(n,int) and 0<=n<=len(blob):blob=blob[:n]
       buffers.append({'line':number,**buffer_facts(blob)})
-    if all(key in obj for key in ('iTotalTileCount','nTileCount','astTileInfos')):
-     values=obj.get('astTileInfos');n=obj.get('nTileCount')
+    wall_array_key=next((k for k in ('astTileInfos','tileInfos','TileInfos') if k in obj),None)
+    wall_total=next((obj[k] for k in ('iTotalTileCount','totalTileCount','TotalTileCount') if k in obj),None)
+    if wall_array_key is not None and wall_total is not None:
+     values=obj[wall_array_key];n=obj.get('nTileCount',len(values) if isinstance(values,list) else None)
      if isinstance(values,list) and isinstance(n,int) and 0<=n<=512:
       visible=hidden=0
       for item in values[:n]:
-       if isinstance(item,dict) and isinstance(item.get('iTileFace'),int):
-        if item['iTileFace']<0:hidden+=1
+       face=next((item[k] for k in ('iTileFace','tileFace','TileFace') if isinstance(item,dict) and k in item),None)
+       if isinstance(face,int):
+        if face<0:hidden+=1
         else:visible+=1
-      wall.append({'line':number,'total_count':obj['iTotalTileCount'] if isinstance(obj['iTotalTileCount'],int) and 0<=obj['iTotalTileCount']<=512 else None,'declared_count':n,'array_length':len(values),'nonnegative_face_entries':visible,'negative_face_entries':hidden})
-    if 'AdviceType' in obj and 'IntelligenceAdviceTing' in obj:
-     advice.append({'line':number,'advice_type':obj['AdviceType'] if isinstance(obj['AdviceType'],int) and 0<=obj['AdviceType']<100 else None,'known_advice_object':True})
+      wall.append({'line':number,'total_count':wall_total if isinstance(wall_total,int) and 0<=wall_total<=512 else None,'declared_count':n,'array_length':len(values),'nonnegative_face_entries':visible,'negative_face_entries':hidden})
+    advice_type=next((obj[k] for k in ('AdviceType','adviceType','iAdviceType') if k in obj),None)
+    if advice_type is not None and any(k in obj for k in ('IntelligenceAdviceTing','intelligenceAdviceTing','stIntelligenceAdviceTing')):
+     advice.append({'line':number,'advice_type':advice_type if isinstance(advice_type,int) and 0<=advice_type<100 else None,'known_advice_object':True})
    break
 result={'known_field_mentions':dict(counts),'matching_json_objects':parse_attempts,'known_buffer_candidates':buffers,'wall_objects':wall,'advice_objects':advice,'limits':['Only recognized gameplay field names are searched; arbitrary token/base64 strings are not decoded.','A type-name mention without its bytes is not a recoverable payload.','No real hand values or identifying raw log content are published.']}
 (out/'embedded-payload-probe.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
