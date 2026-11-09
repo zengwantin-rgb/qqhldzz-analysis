@@ -46,6 +46,12 @@ jobs:
         run: |
           dotnet build tools/ProtocolInspect/ProtocolInspect.csproj -c Release
           dotnet tools/ProtocolInspect/bin/Release/net8.0/ProtocolInspect.dll recovered-input/recovered/assemblies report/device
+      - name: Recover record IO implementations
+        run: |
+          mkdir -p report/device/record-evidence
+          .tools/ilspycmd --disable-updatecheck -t ProtocolHierarchy.ProtocolSerializer -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/ProtocolSerializer.cs
+          .tools/ilspycmd --disable-updatecheck -t HappyMahjong.PlayerRecord.PlaybackRecordService -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > report/device/record-evidence/PlaybackRecordService.cs
+          .tools/ilspycmd --disable-updatecheck -t HappyMahjong.Common.MemoryMonitorUtil -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/MemoryMonitorUtil.cs
       - name: Probe known embedded gameplay buffers
         run: |
           python3 -m py_compile tools/probe_embedded_payloads.py
