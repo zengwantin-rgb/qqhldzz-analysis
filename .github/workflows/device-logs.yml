@@ -39,6 +39,14 @@ jobs:
         run: |
           python3 -m py_compile tools/analyze_round_logs.py
           python3 tools/analyze_round_logs.py
+      - name: Inspect schema and managed consumers
+        run: |
+          dotnet build tools/ProtocolInspect/ProtocolInspect.csproj -c Release
+          dotnet tools/ProtocolInspect/bin/Release/net8.0/ProtocolInspect.dll recovered-input/recovered/assemblies report/device
+      - name: Probe known embedded gameplay buffers
+        run: |
+          python3 -m py_compile tools/probe_embedded_payloads.py
+          python3 tools/probe_embedded_payloads.py
       - uses: actions/upload-artifact@v4
         with:
           name: device-log-summary
