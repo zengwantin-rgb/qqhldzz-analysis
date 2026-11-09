@@ -13,6 +13,7 @@ object Operand(object operand) => operand switch {
  Instruction[] a => new{branch_offsets=a.Select(i=>i.Offset).ToArray()},
  VariableDefinition v => new{local_index=v.Index},
  ParameterDefinition p => new{parameter_index=p.Index},
+ string s when Regex.IsMatch(s,@"^-?[0-9]+(,-?[0-9]+){5}$") && s.Length<=64 => new{static_diagnostic_numeric_default=s},
  string s => Regex.IsMatch(s,@"^(HBP|VM|Trace|trace|Device|device|Enable|enable|Log|log)[A-Za-z0-9_./-]{0,80}$") ? new{static_config_literal=s} : (object)new{string_literal_omitted=true},
  int or long or short or byte or sbyte or uint or ulong or float or double => operand,
  _ => new{operand_kind=operand.GetType().Name}
@@ -20,9 +21,14 @@ object Operand(object operand) => operand switch {
 foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  using var asm=AssemblyDefinition.ReadAssembly(file);assemblies++;
  foreach(var t in Flatten(asm.MainModule.Types)){
-  if(t.IsEnum && t.Name.Contains("TraceBin"))enums.Add(new{assembly=asm.Name.Name,type=t.FullName,values=t.Fields.Where(f=>f.HasConstant).Select(f=>new{name=f.Name,value=f.Constant}).ToArray()});
+  if(t.IsEnum && (t.Name.Contains("TraceBin") || t.FullName=="HappyMahjong.Common.DeviceType"))enums.Add(new{assembly=asm.Name.Name,type=t.FullName,values=t.Fields.Where(f=>f.HasConstant).Select(f=>new{name=f.Name,value=f.Constant}).ToArray()});
   foreach(var m in t.Methods.Where(m=>m.HasBody)){
-   bool selected=t.Name=="HBPUtil" && (m.Name.Contains("Trace") || m.Name.Contains("LogLevel"));
+   bool selected=(t.Name=="HBPUtil" && (m.Name.Contains("Trace") || m.Name.Contains("LogLevel")))
+    || (t.FullName=="HappyMahjong.Common.GM.GMModel" && (m.Name.Contains("VMTraceBinLevel") || m.Name.Contains("VMLogLevel") || m.Name==".ctor"))
+    || (t.FullName=="HappyMahjong.Common.GM.GMVMSystemHandler" && (m.Name=="OnSetTraceBinLevel" || m.Name=="GetTraceBinLevel"))
+    || t.FullName=="Happy.Blueprint.SimpleTraceBinWriter"
+    || (t.FullName=="HappyMahjong.SelectionScene.SelectionStartCommand" && m.Name=="InitHbpEngineService")
+    || (t.FullName=="HappyMahjong.Common.DynamicConfig" && m.Name=="GetString");
    if(selected)methods.Add(new{assembly=asm.Name.Name,type=t.FullName,method=m.FullName,return_type=m.ReturnType.FullName,instructions=m.Body.Instructions.Select(i=>new{offset=i.Offset,opcode=i.OpCode.Name,operand=Operand(i.Operand)}).ToArray()});
    var hits=m.Body.Instructions.Where(i=>i.Operand is MethodReference r && (r.Name.Contains("TraceBin") || r.Name=="GetVMLogLevelByDeviceType")).Select(i=>new{offset=i.Offset,method=((MethodReference)i.Operand).FullName}).ToArray();
    if(hits.Length>0 && !t.FullName.StartsWith("IFix."))callers.Add(new{assembly=asm.Name.Name,method=m.FullName,calls=hits});
