@@ -50,6 +50,13 @@ jobs:
         run: |
           python3 -m py_compile tools/probe_embedded_payloads.py
           python3 tools/probe_embedded_payloads.py
+      - name: Trace candidate basenames in supplied native binaries
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download inputs-v1 --pattern '_Decrypted.ipa' --repo zwthys-cyber/qqhldzz-analysis --dir inputs
+          python3 -m py_compile tools/trace_native_file_sources.py
+          python3 tools/trace_native_file_sources.py
       - uses: actions/upload-artifact@v4
         with:
           name: device-log-summary

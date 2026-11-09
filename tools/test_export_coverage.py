@@ -9,8 +9,10 @@ import base64
 import subprocess
 import sys
 import zlib
+import plistlib
 
 from audit_export_coverage import audit, file_facts
+from trace_native_file_sources import inspect, small_binary_facts
 
 
 class ExportCoverageTests(unittest.TestCase):
@@ -69,6 +71,32 @@ class ExportCoverageTests(unittest.TestCase):
         candidate = result['known_buffer_candidates'][0]
         self.assertEqual(candidate['entry'], 3)
         self.assertEqual(candidate['decompression'][0]['defined_advice_field_count'], 1)
+
+    def test_native_file_reference_and_redaction(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp)
+            device = root / 'device.zip'
+            ipa = root / 'app.ipa'
+            with zipfile.ZipFile(device, 'w') as z:
+                z.writestr('manifest.json', json.dumps({'scans': [{'files': [
+                    {'relative': 'private-sensitive-dir/record.dat', 'size': 16}
+                ]}]}))
+                z.writestr('files/c/private-sensitive-dir/record.dat', b'\x00' * 16)
+            with zipfile.ZipFile(ipa, 'w') as z:
+                z.writestr('Payload/test.app/Info.plist', plistlib.dumps({'CFBundleExecutable': 'test'}))
+                z.writestr('Payload/test.app/test', b'\0record.dat\0adjacent-secret-sentinel\0')
+            result = inspect(device, ipa)
+        self.assertEqual(result['references'][0]['matched_static_basename'], 'record.dat')
+        self.assertTrue(result['candidates'][0]['exported'])
+        self.assertEqual(result['small_record_file_checks'][0]['bytes'], 16)
+        self.assertNotIn('private-sensitive-dir', json.dumps(result))
+        self.assertNotIn('adjacent-secret-sentinel', json.dumps(result))
+
+    def test_compression_requires_complete_stream(self):
+        compressed = zlib.compress(b'synthetic')
+        self.assertTrue(small_binary_facts(compressed)['whole_stream_compression_matches'])
+        self.assertFalse(small_binary_facts(compressed + b'trailer')['whole_stream_compression_matches'])
+        self.assertFalse(small_binary_facts(compressed[:-1])['whole_stream_compression_matches'])
 
 
 if __name__ == '__main__':
