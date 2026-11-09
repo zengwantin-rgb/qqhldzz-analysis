@@ -1,0 +1,26 @@
+[
+  {
+    "name": "HappyMahjong.Hall",
+    "types": 10522,
+    "methods": 90453,
+    "methods_with_bodies": 88616
+  },
+  {
+    "name": "HappyMahjong.InGameScripts",
+    "types": 6062,
+    "methods": 70051,
+    "methods_with_bodies": 69233
+  },
+  {
+    "name": "HappyMahjong.Bootstrap",
+    "types": 19,
+    "methods": 177,
+    "methods_with_bodies": 172
+  },
+  {
+    "name": "Assembly-CSharp",
+    "types": 322,
+    "methods": 6330,
+    "methods_with_bodies": 6318
+  }
+]
