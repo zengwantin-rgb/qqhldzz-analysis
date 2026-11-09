@@ -24,6 +24,11 @@ class RuntimeProbeTests(unittest.TestCase):
         self.assertTrue(result['records'][1]['native_apis']['il2cpp_domain_get'])
         self.assertFalse(result['game_message_subscription_implemented'])
 
+    def test_unexpected_field_shapes_are_ignored(self):
+        result=analyze(encoded({'stage':'runtime_snapshot','lookup_status':{},'classes':[{'type':[]},{'type':'HappyMahjong.TSDK4CSharpService','methods':[{'name':{}}]}]}))
+        self.assertIsNone(result['records'][0]['lookup_status'])
+        self.assertEqual(result['records'][0]['classes'][0]['methods'],[])
+
     def test_bad_header_truncated_record_and_limit(self):
         self.assertEqual(analyze(b'private-user-token')['status'],'unrecognized_probe_header')
         self.assertEqual(analyze(encoded({'stage':'library_loaded'})+b'{incomplete')['invalid_record_count'],1)

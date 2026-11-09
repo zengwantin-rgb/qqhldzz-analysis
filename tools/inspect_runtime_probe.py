@@ -33,7 +33,7 @@ def analyze(raw):
     for number,line in enumerate(raw.splitlines()[1:],2):
         if not line.strip():continue
         try: obj=json.loads(line)
-        except (ValueError,UnicodeError):invalid+=1;continue
+        except (ValueError,UnicodeError,RecursionError):invalid+=1;continue
         if not isinstance(obj,dict) or obj.get('kind')!='MJRuntimeProbe' or type(obj.get('schema')) is not int or obj['schema']!=1 or obj.get('probe_version') not in (None,'0.1.0'):
             invalid+=1;continue
         stage=obj.get('stage')
@@ -43,7 +43,7 @@ def analyze(raw):
         row={'line':number,'session':session,'stage':stage,'attempt':bounded(obj.get('attempt'),1,3),
              'reported_capturing_game_messages':boolean(obj.get('capturing_game_messages'))}
         if stage=='runtime_snapshot':
-            row['lookup_status']=obj.get('lookup_status') if obj.get('lookup_status') in STATUSES else None
+            row['lookup_status']=obj.get('lookup_status') if isinstance(obj.get('lookup_status'),str) and obj['lookup_status'] in STATUSES else None
             row['unity_framework_loaded']=boolean(obj.get('unity_framework_loaded'))
             row['assembly_count']=bounded(obj.get('assembly_count'),0,100000)
             row['assembly_scan_capped']=boolean(obj.get('assembly_scan_capped'))
@@ -52,13 +52,13 @@ def analyze(raw):
             classes=[]
             source=obj.get('classes',[])
             for cls in source if isinstance(source,list) else []:
-                if not isinstance(cls,dict) or cls.get('type') not in TYPES:continue
+                if not isinstance(cls,dict) or not isinstance(cls.get('type'),str) or cls['type'] not in TYPES:continue
                 item={'type':cls['type']}
                 for key in ('found','expected_image','method_scan_capped','dispatcher_backing_field_found','game_message_field_found','game_pb_message_field_found'):
                     if key in cls:item[key]=boolean(cls[key])
                 methods=cls.get('methods',[])
                 item['methods']=[{'name':m['name'],'parameter_count':bounded(m.get('parameter_count'),0,32)}
-                    for m in methods if isinstance(m,dict) and m.get('name') in METHODS] if isinstance(methods,list) else []
+                    for m in methods if isinstance(m,dict) and isinstance(m.get('name'),str) and m['name'] in METHODS] if isinstance(methods,list) else []
                 classes.append(item)
             row['classes']=classes
         rows.append(row)
