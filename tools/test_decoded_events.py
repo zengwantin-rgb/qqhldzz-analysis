@@ -28,6 +28,18 @@ class DecodedEventTests(unittest.TestCase):
     def test_unknown_nested_advice_tags_are_reported(self):
         result=advice_schema(bytes([10,2,80,1]));self.assertEqual(result['unknown_field_count'],1);self.assertTrue(result['parsed'])
 
+    def test_direct_deal_shapes_and_private_recommendation_comparison(self):
+        with tempfile.TemporaryDirectory() as temp:
+            p=Path(temp);name='entry-0002-seq-0003.tdr.json'
+            data={'iType':1,'stValue':{'stNotifyDeal':{'nTilesNum':3,'szTiles':[987654321,12,13],'targets':[{'CurHandTiles':[13,12,987654321]},{'CurHandTiles':[1,2,3]}],'players':[{'nSeat':1,'nHandTilesNum':13}]}}}
+            (p/name).write_text(json.dumps(data));(p/'capture-formats.json').write_text(json.dumps({name:'public_field_snapshot'}))
+            result=inspect(temp);frame=result['frames'][0];details=frame['snapshot_details']
+            self.assertEqual(frame['source_encoding'],'public_field_snapshot')
+            self.assertEqual(details['deal_self_tiles']['recommendation_hands_compared'],2)
+            self.assertEqual(details['deal_self_tiles']['recommendation_hands_matching'],1)
+            self.assertFalse(details['seat_hand_counts'][0]['has_tile_array'])
+            self.assertNotIn('987654321',json.dumps(result))
+
     def test_invalid_hand_ownership_not_reported(self):
         with tempfile.TemporaryDirectory() as temp:
             (Path(temp)/'entry-0001-seq-0001.tdr.json').write_text(json.dumps({'iType':3,'nSeat':99,'nHandTilesNum':2,'szTiles':[12,13]}))
