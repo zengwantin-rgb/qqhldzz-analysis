@@ -25,6 +25,7 @@ jobs:
         run: |
           python3 -m py_compile tools/audit_export_coverage.py
           python3 -m unittest discover -s tools -p test_export_coverage.py
+          python3 -m unittest discover -s tools -p test_json_gameplay.py
           python3 tools/audit_export_coverage.py
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
@@ -46,6 +47,10 @@ jobs:
         run: |
           dotnet build tools/ProtocolInspect/ProtocolInspect.csproj -c Release
           dotnet tools/ProtocolInspect/bin/Release/net8.0/ProtocolInspect.dll recovered-input/recovered/assemblies report/device
+      - name: Index every JSON structure using recovered gameplay keys
+        run: |
+          python3 -m py_compile tools/index_json_gameplay.py
+          python3 tools/index_json_gameplay.py
       - name: Recover record IO implementations
         run: |
           mkdir -p report/device/record-evidence

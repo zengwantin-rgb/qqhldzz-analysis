@@ -8,6 +8,8 @@ var schemas=new List<object>();var consumers=new List<object>();int scanned=0,bo
 var candidateNames=new Dictionary<string,List<int>>(StringComparer.OrdinalIgnoreCase);
 var fileReferences=new List<object>();
 var recordIoCandidates=new List<object>();
+var gameplayFieldNames=new HashSet<string>(StringComparer.Ordinal);
+var gameplayNamePattern=new System.Text.RegularExpressions.Regex("hand|tile|card|seat|chair|deal|draw|wall|replay|record|playback",System.Text.RegularExpressions.RegexOptions.IgnoreCase);
 if(File.Exists("private-input/device.zip")){
  using var archive=ZipFile.OpenRead("private-input/device.zip");
  using var manifestStream=archive.GetEntry("manifest.json")!.Open();
@@ -24,6 +26,10 @@ if(File.Exists("private-input/device.zip")){
 foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  using var asm=AssemblyDefinition.ReadAssembly(file);
  foreach(var t in Flatten(asm.MainModule.Types)){
+  foreach(string member in t.Fields.Select(f=>f.Name).Concat(t.Properties.Select(p=>p.Name))){
+   string key=member.Trim('_');
+   if(key.Length<=80 && System.Text.RegularExpressions.Regex.IsMatch(key,@"^[A-Za-z_][A-Za-z0-9_]*$") && !key.EndsWith("FieldNumber") && !key.EndsWith("DefaultValue") && gameplayNamePattern.IsMatch(key))gameplayFieldNames.Add(key);
+  }
   if(targetTypes.Contains(t.FullName) || t.FullName is "Configuration.VedioRecordConfig" or "Configuration.VedioRecordConfigCfg")schemas.Add(new{assembly=asm.Name.Name,type=t.FullName,fields=t.Fields.Where(f=>!f.Name.StartsWith("_")).Select(f=>new{name=f.Name,type=f.FieldType.FullName,constant=f.HasConstant?f.Constant:null}).ToArray()});
   foreach(var m in t.Methods){
    scanned++;if(!m.HasBody)continue;bodies++;
@@ -57,6 +63,7 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  }
 }
 Directory.CreateDirectory(args[1]);
+File.WriteAllText(Path.Combine(args[1],"gameplay-field-catalog.json"),JsonSerializer.Serialize(new{fields=gameplayFieldNames.OrderBy(n=>n,StringComparer.Ordinal).ToArray(),limits=new[]{"Static recovered field and property names selected by gameplay terms; names alone do not establish gameplay semantics."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
 var result=new{scanned_methods=scanned,methods_with_bodies=bodies,schemas,consumers,limits=new[]{"Only the recovered managed assemblies were scanned; native AOT implementation and active runtime patches are not covered.","A schema definition does not establish actual network payload contents."}};
 File.WriteAllText(Path.Combine(args[1],"protocol-consumers.json"),JsonSerializer.Serialize(result,new JsonSerializerOptions{WriteIndented=true})+"\n");
 File.WriteAllText(Path.Combine(args[1],"candidate-file-references.json"),JsonSerializer.Serialize(new{references=fileReferences,limits=new[]{"Only exact basename matches to managed method string literals are reported; filenames and private paths are omitted.","No match does not rule out native SDK files, dynamic path construction or runtime patches.","Candidate indices refer to manifest scan order, not exported ZIP entry order."}},new JsonSerializerOptions{WriteIndented=true})+"\n");
