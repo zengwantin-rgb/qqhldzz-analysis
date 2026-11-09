@@ -85,10 +85,12 @@ class ExportCoverageTests(unittest.TestCase):
             with zipfile.ZipFile(ipa, 'w') as z:
                 z.writestr('Payload/test.app/Info.plist', plistlib.dumps({'CFBundleExecutable': 'test'}))
                 z.writestr('Payload/test.app/test', b'\0record.dat\0adjacent-secret-sentinel\0')
+                z.writestr('Payload/test.app/Data/Raw/config/record.dat', b'different-size')
             result = inspect(device, ipa)
         self.assertEqual(result['references'][0]['matched_static_basename'], 'record.dat')
         self.assertTrue(result['candidates'][0]['exported'])
         self.assertEqual(result['small_record_file_checks'][0]['bytes'], 16)
+        self.assertFalse(result['packaged_candidate_comparisons'][0]['packaged_matches'][0]['same_size_as_manifest'])
         self.assertNotIn('private-sensitive-dir', json.dumps(result))
         self.assertNotIn('adjacent-secret-sentinel', json.dumps(result))
 

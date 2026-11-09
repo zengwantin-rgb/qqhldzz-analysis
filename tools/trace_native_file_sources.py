@@ -160,6 +160,19 @@ def inspect(device_path, ipa_path):
             scanned.append({'binary': label, 'bytes': len(data)})
             refs.extend(binary_matches(data, candidates, label))
         packaged_records = []
+        packaged_comparisons = []
+        for candidate in candidates:
+            if candidate['category'] not in ('configuration_or_data', 'patch', 'replay_or_record'):
+                continue
+            matches = [n for n in names if '/Data/Raw/' in n and pathlib.PurePosixPath(n).name == candidate['_basename']]
+            packaged_comparisons.append({
+                'candidate': candidate['candidate'],
+                'manifest_bytes': candidate['bytes'],
+                'packaged_matches': [
+                    {'packaged_bytes': ipa.getinfo(n).file_size,
+                     'same_size_as_manifest': ipa.getinfo(n).file_size == candidate['bytes']}
+                    for n in sorted(matches)],
+                'note': 'Equal sizes do not establish identical contents or active runtime configuration.'})
         for name in sorted(names):
             if name.endswith('/config/VedioRecordConfig.data'):
                 raw = ipa.read(name)
@@ -185,6 +198,7 @@ def inspect(device_path, ipa_path):
                 packaged_records.append(record)
     return {'candidates': [{k: v for k, v in c.items() if not k.startswith('_')} for c in candidates],
             'small_record_file_checks': small_files, 'packaged_record_configs': packaged_records,
+            'packaged_candidate_comparisons': packaged_comparisons,
             'binaries_scanned': scanned, 'references': refs,
             'limits': [
                 'Only exact basename byte matches in supplied app executables and IL2CPP metadata are checked.',
