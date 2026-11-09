@@ -1,5 +1,7 @@
 # 欢乐麻将 iOS 静态逆向分析
 
+[第十五轮：TraceBin 写入与清理](reports/trace-format/FINDINGS.md)：确认原始字节追加、按文件数清理，以及根目录最终来自 Unity persistentDataPath；现有扫描支持 TraceBin 自定义扩展名，仍无实际负载样本。
+
 [第十四轮：现有二进制跟踪入口](reports/trace-config/FINDINGS.md)：确认 TraceBin 默认关闭、GM 覆盖使用 PlayerPrefs 保存，以及虚拟机初始化和字节写入调用链；未取得实际 TraceBin 样本。
 
 [第十三轮：二进制日志解码](reports/binary-logs/FINDINGS.md)：两份 xlog 的 6 条记录完整解压，已完成 5364 个源码字段与 JSON 结构复查；尚无实时对手手牌证据。

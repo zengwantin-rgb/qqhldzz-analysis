@@ -34,3 +34,5 @@ SelectionStartCommand.InitHbpEngineService 另受 HBPGame/EnableHBPGame 控制�
 [首次检查](https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42676154265)与[扩展检查](https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42676425546)均成功。扩展检查源码为 2965f9c，.NET 8 编译通过；扫描全部 91 个恢复程序集，输出 20 个选定方法、2 个枚举、18 个直接调用者。证据为[受限 IL 索引](trace-config.json)，包含指令、数值常量、源码方法/字段名与少量诊断配置键；任意字符串常量均被省略。此操作只读取程序集，不执行游戏代码。
 
 现有导出器读取已经存在的文件，无法单靠扫描启用尚未产生的记录。本轮完成了此前被调度错误阻断的完整字段检查，并将新诊断来源落实到默认值、偏好保存与写入调用链。仍无可供实时展示的对手暗牌，也没有已验证的手机端消息采集或显示功能。
+
+后续更新：[第十五轮](../trace-format/FINDINGS.md)已核对最终 writer、底层 BinaryWriter、根目录来源与清理排序；上文未解析 writer 的表述保留本轮完成时的历史状态。
