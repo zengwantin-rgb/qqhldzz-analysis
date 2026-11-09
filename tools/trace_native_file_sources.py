@@ -76,16 +76,17 @@ def config_shape(clear, number_to_name):
 
 def binary_matches(data, candidates, binary_label):
     rows = []
+    folded = data.lower()
     for candidate in candidates:
         name = candidate['_basename']
         if not name:
             continue
         for encoding in ('utf-8', 'utf-16-le'):
-            needle = name.encode(encoding)
+            needle = name.lower().encode(encoding)
             offsets = []
             start = 0
             while True:
-                offset = data.find(needle, start)
+                offset = folded.find(needle, start)
                 if offset < 0:
                     break
                 offsets.append(offset)
@@ -96,16 +97,16 @@ def binary_matches(data, candidates, binary_label):
                 # A matched alphabetic basename is now confirmed as an app-static string.
                 # No device directory or arbitrary surrounding binary string is emitted.
                 if re.fullmatch(r'[A-Za-z_.-]{1,80}', name):
-                    row['matched_static_basename'] = name
+                    row['matched_static_basename'] = data[offsets[0]:offsets[0] + len(needle)].decode(encoding)
                 rows.append(row)
         # Names generated with IDs may only occur as a printf-style template.
         # Suffix matches remain a separate, weaker result than exact matches.
-        suffix_match = re.search(r'([A-Za-z_][A-Za-z_.-]*\.[A-Za-z]+)$', name)
-        if suffix_match and suffix_match.group(1) != name and 'record' in suffix_match.group(1).lower():
-            suffix = suffix_match.group(1).encode('ascii')
+        suffix_match = re.search(r'(record[A-Za-z_.-]*\.(?:dat|data|bin))$', name, re.I)
+        if suffix_match and suffix_match.group(1).lower() != name.lower():
+            suffix = suffix_match.group(1).lower().encode('ascii')
             start = 0
             while True:
-                offset = data.find(suffix, start)
+                offset = folded.find(suffix, start)
                 if offset < 0:
                     break
                 start = offset + len(suffix)

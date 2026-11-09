@@ -109,6 +109,17 @@ class ExportCoverageTests(unittest.TestCase):
         self.assertEqual(matches[0]['static_basename_template'], '%d_record.dat')
         self.assertNotIn('123', json.dumps(matches))
 
+    def test_case_insensitive_exact_and_alphabetic_prefix_suffix(self):
+        exact = binary_matches(b'\0Record.dat\0', [
+            {'candidate': 1, '_basename': 'record.dat'}
+        ], 'synthetic')
+        self.assertEqual(exact[0]['matched_static_basename'], 'Record.dat')
+        weak = binary_matches(b'\0%s_record.dat\0', [
+            {'candidate': 2, '_basename': 'prefix_record.dat'}
+        ], 'synthetic')
+        self.assertEqual(weak[0]['reference_kind'], 'suffix_only')
+        self.assertEqual(weak[0]['static_basename_template'], '%s_record.dat')
+
     def test_static_config_shape_and_invalid_wire(self):
         shape = config_shape(b'\x0a\x05\x08\x01\x12\x01X', {1: 'id', 2: 'name'})
         self.assertEqual(shape['row_count'], 1)
