@@ -50,6 +50,7 @@
             @"interpretation":@"A filename or replay file does not prove live opponents hands are available. Some logs are encrypted or lack message bodies."};
         dispatch_async(dispatch_get_main_queue(), ^{
             self.report=report; self.files=files; [self.selected removeAllIndexes];
+            self.exportButton.title=@"导出(0)";
             NSMutableArray *status=[NSMutableArray arrayWithObjects:[NSString stringWithFormat:@"找到 %lu 个欢乐麻将容器、%lu 个候选文件。",(unsigned long)containers.count,(unsigned long)files.count],nil];
             if (version.count) [status addObject:[NSString stringWithFormat:@"游戏版本 %@（%@）",version[@"version"],version[@"build"]]];
             if (!containers.count) [status addObject:@"未找到原包名 com.tencent.happymj 的容器，或访问被系统拒绝。请导出清单以便检查；分身或改包名版本不会被自动扫描。"];

@@ -9,6 +9,7 @@ BOOL MJIsCandidate(NSString *relative) {
     NSString *path = relative.lowercaseString;
     for (NSString *word in @[@"cookie", @"credential", @"keychain", @"token", @"accounts", @"webkit"])
         if ([path containsString:word]) return NO;
+    if ([path containsString:@"/tracebinlogs/"] || [path hasPrefix:@"tracebinlogs/"]) return YES;
     NSString *name = path.lastPathComponent;
     NSString *ext = name.pathExtension;
     if ([@[@"log", @"xlog", @"clog", @"replay", @"trace"] containsObject:ext]) return YES;

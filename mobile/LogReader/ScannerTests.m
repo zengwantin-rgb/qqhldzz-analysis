@@ -21,6 +21,7 @@ int main(int argc,char *argv[]) { @autoreleasepool {
     Require([[NSData dataWithContentsOfFile:source] isEqual:log],@"Scanning must not modify the original file");
     Require(!MJMatchesBundle(@"com.tencent.happymj.clone"),@"Do not silently broaden target to cloned bundle IDs");
     Require(MJIsCandidate(@"Library/TraceBin/sample.bin"),@"Trace files should be discoverable");
+    Require(MJIsCandidate(@"Documents/TraceBinLogs/session.capture"),@"Known trace directory may use a custom extension");
     Require(!MJIsCandidate(@"Library/Cookies/private.log"),@"Cookie directories must be excluded");
     NSError *error=nil;
     NSData *zip=MJCreateZip(@{@"manifest.json":[@"{}" dataUsingEncoding:NSUTF8StringEncoding], @"files/日志.txt":log},&error);
