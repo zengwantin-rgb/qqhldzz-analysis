@@ -5,7 +5,7 @@ permissions:
   contents: write
 jobs:
   build:
-    runs-on: macos-15-intel
+    runs-on: macos-26
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -25,6 +25,7 @@ jobs:
       - name: Compile and sign device IPA
         run: bash mobile/LogReader/build.sh
       - name: Build and launch simulator smoke test
+        timeout-minutes: 6
         run: |
           mkdir -p build/Simulator/MJLogReader.app
           cp mobile/LogReader/Info.plist build/Simulator/MJLogReader.app/Info.plist
@@ -36,6 +37,7 @@ jobs:
           xcrun simctl bootstatus "$device_id" -b
           xcrun simctl install "$device_id" build/Simulator/MJLogReader.app
           xcrun simctl launch "$device_id" org.qqhldzz.MJLogReader
+          sleep 3
           xcrun simctl io "$device_id" screenshot build/checks/simulator.png
       - name: Verify packaging and expected entitlements
         run: |
