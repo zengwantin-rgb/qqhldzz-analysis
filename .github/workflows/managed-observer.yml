@@ -1,0 +1,27 @@
+name: Compile managed gameplay observer
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Test bounded event journal using fixtures
+        run: dotnet run --project tools/MessageObserverTests/MessageObserverTests.csproj -c Release
+      - name: Retrieve recovered metadata references
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+      - name: Compile observer without running game code
+        run: python3 tools/build_managed_observer.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: managed-message-observer
+          path: build/message-observer/
