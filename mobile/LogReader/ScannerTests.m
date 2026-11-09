@@ -17,6 +17,7 @@ int main(int argc,char *argv[]) { @autoreleasepool {
     NSArray *containers=MJFindContainers(root,errors);
     Require(containers.count==1 && [containers[0] isEqual:target],@"Only the exact target bundle may be scanned");
     NSDictionary *scan=MJScanContainer(target);NSArray *files=scan[@"files"];
+    NSLog(@"Fixture scan: %@",scan);
     Require(files.count==1 && [files[0][@"relative"] isEqual:@"Documents/Logs/match.log"],@"Skip credentials and symlinks");
     Require([[NSData dataWithContentsOfFile:source] isEqual:log],@"Scanning must not modify the original file");
     Require(!MJMatchesBundle(@"com.tencent.happymj.clone"),@"Do not silently broaden target to cloned bundle IDs");
