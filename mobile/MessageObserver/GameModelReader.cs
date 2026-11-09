@@ -65,7 +65,8 @@ namespace MJDiagnostic
                 {
                     object player = players.GetValue(view);
                     object tiles = Value(player, "tiles");
-                    IList list = Value(tiles, "m_inHandList") as IList;
+                    object stored = Value(tiles, "m_inHandList");
+                    IList list = ModelCacheReader.IsCoreList(stored) ? stored as IList : null;
                     if (list == null || list.Count > 32) { state.Status = "invalid_hand_list"; return state; }
                     int count = list.Count; var values = new int[count];
                     for (int index = 0; index < count; index++)
@@ -119,7 +120,18 @@ namespace MJDiagnostic
             }
             return output.ToString();
         }
-        static string Quote(string value) { return "\"" + value.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n") + "\""; }
+        static string Quote(string value)
+        {
+            var text = new StringBuilder("\"");
+            foreach (char character in value ?? "")
+            {
+                if (character == '\\' || character == '"') text.Append('\\').Append(character);
+                else if (character < 32) text.Append("\\u").Append(((int)character).ToString("x4", CultureInfo.InvariantCulture));
+                else text.Append(character);
+            }
+            return text.Append('"').ToString();
+        }
+
         public static string Json(ModelState state, bool includeCaches = true)
         {
             var output = new StringBuilder("{\"kind\":\"runtime_model\",\"schema\":1,\"source\":\"RoundModeUtil.RoundModel\",\"status\":");

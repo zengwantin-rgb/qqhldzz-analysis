@@ -30,6 +30,13 @@ namespace MJDiagnostic
             }
             return null;
         }
+        public static bool IsCoreList(object value)
+        {
+            if (value is Array) return ((Array)value).Rank == 1;
+            if (value == null) return false;
+            Type type = value.GetType();
+            return type.IsGenericType && type.GetGenericTypeDefinition().FullName == "System.Collections.Generic.List`1";
+        }
         sealed class Scan
         {
             internal readonly List<ModelCacheCandidate> Results = new List<ModelCacheCandidate>();
@@ -48,7 +55,7 @@ namespace MJDiagnostic
             }
             int[] Integers(object value)
             {
-                IList list = value as IList;
+                IList list = IsCoreList(value) ? value as IList : null;
                 if (list == null || list.Count == 0 || list.Count > 200) return null;
                 if (integers + list.Count > 1024) { Limited = true; return null; }
                 var values = new int[list.Count];
@@ -107,7 +114,7 @@ namespace MJDiagnostic
                         if (TileField(field.Name))
                         {
                             Add(value, next, child);
-                            IList outer = child as IList;
+                            IList outer = IsCoreList(child) ? child as IList : null;
                             if (outer != null && outer.Count <= 4)
                                 for (int index = 0; index < outer.Count; index++) Add(value, next + "[" + index + "]", outer[index]);
                         }

@@ -28,6 +28,7 @@ class Tests
         File.WriteAllText(events,"unrelated contents");refused=false;try { new ObserverJournal(events,status,2048,2); } catch(InvalidOperationException) { refused=true; }Check(refused && File.ReadAllText(events)=="unrelated contents","unrelated file guard");
         CallbackFixture.Run(root);
         ModelFixture.Run();
+        ObserverModelFixture.Run(root);
         Directory.Delete(Path.GetDirectoryName(root),true);
         Console.WriteLine("PASS: frame encoding/subrange, frame and byte budgets, channel restriction and unrelated-file guard");
     }
