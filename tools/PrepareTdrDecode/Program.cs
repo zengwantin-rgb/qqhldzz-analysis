@@ -1,12 +1,13 @@
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 using System.Text.Json;
-Directory.CreateDirectory(args[1]);Directory.CreateDirectory(args[2]);int guards=0;int defaults=0;
+Directory.CreateDirectory(args[1]);Directory.CreateDirectory(args[2]);int guards=0;int defaults=0;var sizes=new List<object>();
 var resolver=new DefaultAssemblyResolver();resolver.AddSearchDirectory(args[0]);
 IEnumerable<TypeDefinition> Flatten(IEnumerable<TypeDefinition> ts){foreach(var t in ts){yield return t;foreach(var n in Flatten(t.NestedTypes))yield return n;}}
 foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  using var a=AssemblyDefinition.ReadAssembly(file,new ReaderParameters{AssemblyResolver=resolver});bool changed=false;
  foreach(var t in Flatten(a.MainModule.Types)){
+  if(t.FullName.StartsWith("HuanLeGameSo."))sizes.Add(new{type=t.FullName,public_field_count=t.Fields.Count(f=>f.IsPublic && !f.IsStatic)});
   if(t.FullName=="IFix.WrappersManagerImpl")foreach(var m in t.Methods.Where(m=>m.Name=="IsPatched" && m.IsStatic && m.ReturnType.FullName=="System.Boolean" && m.HasBody)){
     m.Body=new MethodBody(m);m.Body.Instructions.Add(Instruction.Create(OpCodes.Ldc_I4_0));m.Body.Instructions.Add(Instruction.Create(OpCodes.Ret));guards++;changed=true;
   }
@@ -22,3 +23,5 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
 }
 if(guards==0)throw new Exception("No expected IFix guard found");
 File.WriteAllText(Path.Combine(args[2],"decode-preparation.json"),JsonSerializer.Serialize(new{private_copies_only=true,ifix_boolean_guards_disabled=guards,optional_parameter_defaults_removed_in_modified_copies=defaults,method_bodies_otherwise_unchanged=true})+"\n");
+
+File.WriteAllText(Path.Combine(args[2],"protocol-field-sizes.json"),JsonSerializer.Serialize(sizes,new JsonSerializerOptions{WriteIndented=true}));

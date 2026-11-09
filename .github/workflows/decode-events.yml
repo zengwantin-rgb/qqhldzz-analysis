@@ -50,11 +50,7 @@ jobs:
           python3 tools/inspect_message_observer.py
       - name: Decode inside isolated read-only networkless container
         run: |
-          mkdir -p private-output
-          chmod 700 private-output
-          docker pull mono:6.12 > private-input/docker-pull.txt 2>&1
-          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges --pids-limit 128 --memory 768m --cpus 1 --tmpfs /tmp:rw,nosuid,size=64m -v "$PWD/private-input:/input:ro" -v "$PWD/private-output:/output:rw" -v "$PWD/tools/DecodeTdr:/code:ro" mono:6.12 sh -c 'mcs -out:/tmp/decode.exe /code/Program.cs && mono /tmp/decode.exe /input/decoder-assemblies /input/decoded-game-frames /output' > private-input/decoder-output.txt 2>&1
-          cp private-output/decode-summary.json report/device/
+          python3 tools/run_private_decoder.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
