@@ -6,12 +6,12 @@ on:
         type: choice
         required: true
         default: v3
-        options: [v3, v4, v5]
+        options: [v3, v4, v5, v6]
       previous_version:
         type: choice
         required: true
         default: v2
-        options: [v2, v3, v4]
+        options: [v2, v3, v4, v5]
 permissions:
   contents: read
 jobs:
@@ -40,6 +40,7 @@ jobs:
           openssl enc -d -aes-256-cbc -pbkdf2 -in "private-input/log-input-${MJ_PREVIOUS}.enc" -out private-input/previous.zip -pass env:MJ_LOG_INPUT_KEY_V1
       - name: Test and inspect with restricted output
         run: |
+          python3 -m unittest discover -s tools -p test_message_observer.py
           python3 -m unittest discover -s tools -p test_runtime_probe.py
           python3 -m unittest discover -s tools -p test_phone_diagnostics.py
           python3 -m unittest discover -s tools -p test_round_anomalies.py
