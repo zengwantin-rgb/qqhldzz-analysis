@@ -1,0 +1,1530 @@
+{
+  "decoded_frame_count": 58,
+  "frames": [
+    {
+      "entry": 5,
+      "sequence": 1,
+      "message_type": 17,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 2,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "5": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 3,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": false,
+          "declared_draw_tiles": 0,
+          "array_length": 0,
+          "nonzero_draw_tiles": 0
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 9,
+          "decoded_bytes": 8,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "189": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 4,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 5,
+      "message_type": 17,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 6,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 7,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 8,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "5": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 9,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "189": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 10,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 11,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "5": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 12,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 58,
+          "decoded_bytes": 64,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 1,
+              "tile": 1,
+              "fan": 3
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 13,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 14,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "5": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 15,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "6": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 16,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": -1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 17,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "189": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 18,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 58,
+          "decoded_bytes": 64,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 1,
+              "tile": 1,
+              "fan": 3
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 19,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 20,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 21,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 22,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 58,
+          "decoded_bytes": 64,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 1,
+              "tile": 1,
+              "fan": 3
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 23,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 24,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 25,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": -1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 26,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "189": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 27,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 58,
+          "decoded_bytes": 64,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 1,
+              "tile": 1,
+              "fan": 3
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 28,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": -1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 29,
+      "message_type": 52,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 30,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "189": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 31,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 32,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": -1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 33,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "189": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 34,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 126,
+          "decoded_bytes": 204,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 3,
+              "tile": 4,
+              "fan": 10
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 35,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 36,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 37,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 38,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 126,
+          "decoded_bytes": 204,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 3,
+              "tile": 4,
+              "fan": 10
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 39,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 40,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 41,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "5": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 42,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "6": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 43,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 74,
+          "decoded_bytes": 90,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 1,
+              "tile": 2,
+              "fan": 4
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 44,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 45,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 46,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 3,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 47,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [
+        {
+          "seat": 0,
+          "single_tile_nonzero": true,
+          "declared_draw_tiles": 1,
+          "array_length": 1,
+          "nonzero_draw_tiles": 1
+        }
+      ],
+      "embedded_proto_buffers": [
+        {
+          "status": "decompressed_proto_fields",
+          "compression": "lz4_block",
+          "compressed_bytes": 74,
+          "decoded_bytes": 90,
+          "top_level_field_counts": {
+            "1": 1
+          },
+          "only_known_advice_field": true,
+          "advice_schema": {
+            "parsed": true,
+            "message_counts": {
+              "unit": 1,
+              "advice": 1,
+              "ting": 1,
+              "discard": 1,
+              "tile": 2,
+              "fan": 4
+            },
+            "unknown_field_count": 0,
+            "wire_mismatch_count": 0
+          }
+        }
+      ],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "4": 1,
+        "141": 1,
+        "168": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 48,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": -1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "168": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 49,
+      "message_type": 52,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 50,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 1,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "189": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 51,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [
+        {
+          "seat": 2,
+          "extra_command_nonzero": false,
+          "declared_extra_tiles": 0,
+          "array_length": 0,
+          "nonzero_extra_tiles": 0
+        }
+      ],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "16": 1,
+        "44": 1,
+        "6": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 52,
+      "message_type": 3,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "5": 1,
+        "142": 1,
+        "103": 1,
+        "74": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 53,
+      "message_type": 5,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "189": 1,
+        "16": 1,
+        "44": 1,
+        "74": 1,
+        "63": 1,
+        "95": 1,
+        "70": 1,
+        "178": 1
+      },
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 54,
+      "message_type": 160,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "before_hu"
+    },
+    {
+      "entry": 5,
+      "sequence": 55,
+      "message_type": 50,
+      "hand_fields": [
+        {
+          "seat": 0,
+          "declared_tiles": 10,
+          "array_length": 10,
+          "nonzero_tiles": 10,
+          "zero_tiles": 0,
+          "length_agrees": true
+        },
+        {
+          "seat": 1,
+          "declared_tiles": 7,
+          "array_length": 7,
+          "nonzero_tiles": 7,
+          "zero_tiles": 0,
+          "length_agrees": true
+        },
+        {
+          "seat": 2,
+          "declared_tiles": 10,
+          "array_length": 10,
+          "nonzero_tiles": 10,
+          "zero_tiles": 0,
+          "length_agrees": true
+        },
+        {
+          "seat": 3,
+          "declared_tiles": 4,
+          "array_length": 4,
+          "nonzero_tiles": 4,
+          "zero_tiles": 0,
+          "length_agrees": true
+        }
+      ],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "after_hu_or_finish"
+    },
+    {
+      "entry": 5,
+      "sequence": 56,
+      "message_type": 51,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {
+        "95": 1,
+        "68": 1,
+        "73": 1,
+        "74": 1,
+        "105": 1,
+        "11": 4,
+        "164": 1,
+        "16": 1,
+        "44": 1,
+        "179": 1
+      },
+      "phase": "after_hu_or_finish"
+    },
+    {
+      "entry": 5,
+      "sequence": 57,
+      "message_type": 17,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "after_hu_or_finish"
+    },
+    {
+      "entry": 6,
+      "sequence": 1,
+      "message_type": 17,
+      "hand_fields": [],
+      "wait_fields": [],
+      "draw_fields": [],
+      "embedded_proto_buffers": [],
+      "tlv_type_counts": {},
+      "phase": "before_hu"
+    }
+  ],
+  "limits": [
+    "Card values, identifiers, raw payloads and private paths are never emitted.",
+    "Only active union branches are traversed by the decoder. Hidden display is not established by message counts.",
+    "Seat identity must be reconciled independently; post-Hu hands do not establish live visibility.",
+    "Phase is relative to captured Hu/finish only; a missing earlier Hu cannot be inferred absent."
+  ]
+}
