@@ -52,9 +52,9 @@
 - (void)traceMenu {
     if (self.busy) return;
     UIAlertController *menu=[UIAlertController alertControllerWithTitle:@"对局诊断记录" message:@"可尝试让游戏生成更多诊断记录。仅保存与调整一项记录设置；当前房间未必使用这条记录路径，也不保证记录包含对手手牌。" preferredStyle:UIAlertControllerStyleActionSheet];
-    [menu addAction:[UIAlertAction actionWithTitle:@"检查设置与记录文件" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self performTraceAction:0]; }]];
-    [menu addAction:[UIAlertAction actionWithTitle:@"开启完整记录…" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self confirmTraceAction:YES]; }]];
-    [menu addAction:[UIAlertAction actionWithTitle:@"恢复原设置…" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self confirmTraceAction:NO]; }]];
+    [menu addAction:[UIAlertAction actionWithTitle:@"检查设置与记录文件" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self dismissViewControllerAnimated:YES completion:^{ [self performTraceAction:0]; }]; }]];
+    [menu addAction:[UIAlertAction actionWithTitle:@"开启完整记录…" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self dismissViewControllerAnimated:YES completion:^{ [self confirmTraceAction:YES]; }]; }]];
+    [menu addAction:[UIAlertAction actionWithTitle:@"恢复原设置…" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self dismissViewControllerAnimated:YES completion:^{ [self confirmTraceAction:NO]; }]; }]];
     [menu addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
     menu.popoverPresentationController.barButtonItem=self.traceButton;
     [self presentViewController:menu animated:YES completion:nil];
@@ -62,7 +62,7 @@
 - (void)confirmTraceAction:(BOOL)enable {
     UIAlertController *alert=[UIAlertController alertControllerWithTitle:enable?@"先完全关闭欢乐麻将":@"恢复原记录设置" message:enable?@"请先从多任务界面关闭欢乐麻将。工具会备份原值，再将完整记录设为开启。之后重新打开游戏、进入对局，再回来检查是否产生记录。系统偏好缓存和当前房间规则可能使设置未生效；磁盘写入成功不代表已开始采集。":@"请先从多任务界面关闭欢乐麻将。只恢复本工具备份的记录设置，保留其他设置的后续变化。" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
-    [alert addAction:[UIAlertAction actionWithTitle:enable?@"已关闭游戏，开启记录":@"已关闭游戏，恢复" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self performTraceAction:enable?1:2]; }]];
+    [alert addAction:[UIAlertAction actionWithTitle:enable?@"已关闭游戏，开启记录":@"已关闭游戏，恢复" style:UIAlertActionStyleDefault handler:^(UIAlertAction *a){ [self dismissViewControllerAnimated:YES completion:^{ [self performTraceAction:enable?1:2]; }]; }]];
     [self presentViewController:alert animated:YES completion:nil];
 }
 - (void)performTraceAction:(NSInteger)action {
@@ -91,7 +91,7 @@
     });
 }
 - (void)showMessage:(NSString *)message {
-    UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"麻将日志导出" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"麻将诊断工具" message:message preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
 }

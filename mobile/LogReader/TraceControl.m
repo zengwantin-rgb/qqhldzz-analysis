@@ -15,6 +15,8 @@ static NSString *MJTracePath(NSString *container, NSError **error) {
     NSFileManager *fm=NSFileManager.defaultManager;
     NSString *absolute=container.stringByStandardizingPath;
     NSString *resolved=container.stringByResolvingSymlinksInPath;
+    if ([resolved hasPrefix:@"/var/"]) resolved=[@"/private" stringByAppendingString:resolved];
+    if ([resolved hasPrefix:@"/tmp/"]) resolved=[@"/private" stringByAppendingString:resolved];
     if ([absolute hasPrefix:@"/var/"]) absolute=[@"/private" stringByAppendingString:absolute];
     if ([absolute hasPrefix:@"/tmp/"]) absolute=[@"/private" stringByAppendingString:absolute];
     if (![absolute isEqual:resolved]) { MJTraceFail(error,@"目标路径含符号链接，未修改设置。"); return nil; }

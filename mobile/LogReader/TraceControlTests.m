@@ -13,6 +13,7 @@ int main(void) { @autoreleasepool {
     [original writeToFile:prefs atomically:YES];
     NSError *error=nil;
     NSDictionary *state=MJTraceStatus(container,backups,&error);
+    if (!state) NSLog(@"Fixture status error: %@",error);
     Check(state && ![state[@"preference_present"] boolValue],@"Absent override must be distinct from explicit off");
     Check(MJSetTraceRecording(container,backups,YES,&error),@"Enable missing override");
     Check([[NSDictionary dictionaryWithContentsOfFile:prefs][key] isEqual:@3],@"Exact trace setting written");
