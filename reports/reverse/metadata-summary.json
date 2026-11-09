@@ -1,0 +1,605 @@
+{
+  "metadata_version": 29,
+  "type_count": 19521,
+  "method_count": 171297,
+  "field_count": 104326,
+  "images": [
+    {
+      "name": "mscorlib.dll",
+      "type_start": 0,
+      "type_count": 2944
+    },
+    {
+      "name": "HappyMahjong.Base.dll",
+      "type_start": 2944,
+      "type_count": 2382
+    },
+    {
+      "name": "System.Xml.dll",
+      "type_start": 5326,
+      "type_count": 1399
+    },
+    {
+      "name": "System.dll",
+      "type_start": 6725,
+      "type_count": 1970
+    },
+    {
+      "name": "HappyMahjong.Core.dll",
+      "type_start": 8695,
+      "type_count": 771
+    },
+    {
+      "name": "UnityEngine.CoreModule.dll",
+      "type_start": 9466,
+      "type_count": 1141
+    },
+    {
+      "name": "System.Core.dll",
+      "type_start": 10607,
+      "type_count": 1265
+    },
+    {
+      "name": "HappyMahjong.3rdParty.dll",
+      "type_start": 11872,
+      "type_count": 492
+    },
+    {
+      "name": "HappyMahjong.GCloudSDK.dll",
+      "type_start": 12364,
+      "type_count": 553
+    },
+    {
+      "name": "Unity.Mathematics.dll",
+      "type_start": 12917,
+      "type_count": 99
+    },
+    {
+      "name": "Newtonsoft.Json.dll",
+      "type_start": 13016,
+      "type_count": 496
+    },
+    {
+      "name": "System.Data.dll",
+      "type_start": 13512,
+      "type_count": 231
+    },
+    {
+      "name": "HappyMahjong.ResMgr.dll",
+      "type_start": 13743,
+      "type_count": 228
+    },
+    {
+      "name": "UniTask.dll",
+      "type_start": 13971,
+      "type_count": 589
+    },
+    {
+      "name": "zxing.unity.dll",
+      "type_start": 14560,
+      "type_count": 344
+    },
+    {
+      "name": "Google.Protobuf.dll",
+      "type_start": 14904,
+      "type_count": 318
+    },
+    {
+      "name": "Unity.TextMeshPro.dll",
+      "type_start": 15222,
+      "type_count": 173
+    },
+    {
+      "name": "Unity.Collections.dll",
+      "type_start": 15395,
+      "type_count": 346
+    },
+    {
+      "name": "Unity.Burst.dll",
+      "type_start": 15741,
+      "type_count": 89
+    },
+    {
+      "name": "spine-unity.dll",
+      "type_start": 15830,
+      "type_count": 200
+    },
+    {
+      "name": "ILRuntim.Mono.Cecil.dll",
+      "type_start": 16030,
+      "type_count": 252
+    },
+    {
+      "name": "websocket-sharp.dll",
+      "type_start": 16282,
+      "type_count": 127
+    },
+    {
+      "name": "UnityEngine.UI.dll",
+      "type_start": 16409,
+      "type_count": 195
+    },
+    {
+      "name": "Slua_Managed.dll",
+      "type_start": 16604,
+      "type_count": 162
+    },
+    {
+      "name": "UnityEngine.AnimationModule.dll",
+      "type_start": 16766,
+      "type_count": 107
+    },
+    {
+      "name": "Unity.Postprocessing.Runtime.dll",
+      "type_start": 16873,
+      "type_count": 141
+    },
+    {
+      "name": "UnityEngine.IMGUIModule.dll",
+      "type_start": 17014,
+      "type_count": 47
+    },
+    {
+      "name": "UnityEngine.ParticleSystemModule.dll",
+      "type_start": 17061,
+      "type_count": 109
+    },
+    {
+      "name": "DOTween.dll",
+      "type_start": 17170,
+      "type_count": 193
+    },
+    {
+      "name": "Mono.Security.dll",
+      "type_start": 17363,
+      "type_count": 119
+    },
+    {
+      "name": "UnityEngine.Physics2DModule.dll",
+      "type_start": 17482,
+      "type_count": 61
+    },
+    {
+      "name": "System.Net.Http.dll",
+      "type_start": 17543,
+      "type_count": 110
+    },
+    {
+      "name": "Mio.RemoteDevTools.Runtime.dll",
+      "type_start": 17653,
+      "type_count": 131
+    },
+    {
+      "name": "ConfigSDK.dll",
+      "type_start": 17784,
+      "type_count": 77
+    },
+    {
+      "name": "Unity.Timeline.dll",
+      "type_start": 17861,
+      "type_count": 121
+    },
+    {
+      "name": "System.IO.Compression.dll",
+      "type_start": 17982,
+      "type_count": 77
+    },
+    {
+      "name": "com.tencent.puerts.core.dll",
+      "type_start": 18059,
+      "type_count": 122
+    },
+    {
+      "name": "Unity.ResourceManager.dll",
+      "type_start": 18181,
+      "type_count": 103
+    },
+    {
+      "name": "UnityEngine.PhysicsModule.dll",
+      "type_start": 18284,
+      "type_count": 60
+    },
+    {
+      "name": "Unity.Addressables.dll",
+      "type_start": 18344,
+      "type_count": 86
+    },
+    {
+      "name": "UniFramework.dll",
+      "type_start": 18430,
+      "type_count": 63
+    },
+    {
+      "name": "IFix.Core.dll",
+      "type_start": 18493,
+      "type_count": 43
+    },
+    {
+      "name": "UnityEngine.AndroidJNIModule.dll",
+      "type_start": 18536,
+      "type_count": 28
+    },
+    {
+      "name": "HappyMJ.UIFrame.Runtime.dll",
+      "type_start": 18564,
+      "type_count": 68
+    },
+    {
+      "name": "IngameDebugConsole.Runtime.dll",
+      "type_start": 18632,
+      "type_count": 22
+    },
+    {
+      "name": "UnityEngine.dll",
+      "type_start": 18654,
+      "type_count": 1
+    },
+    {
+      "name": "ILRuntime.Mono.Cecil.Pdb.dll",
+      "type_start": 18655,
+      "type_count": 225
+    },
+    {
+      "name": "zlib.net.dll",
+      "type_start": 18880,
+      "type_count": 36
+    },
+    {
+      "name": "UnityEngine.AudioModule.dll",
+      "type_start": 18916,
+      "type_count": 51
+    },
+    {
+      "name": "HappyMahjong.Apm.dll",
+      "type_start": 18967,
+      "type_count": 25
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestModule.dll",
+      "type_start": 18992,
+      "type_count": 20
+    },
+    {
+      "name": "UniWebView-CSharp.dll",
+      "type_start": 19012,
+      "type_count": 33
+    },
+    {
+      "name": "System.Numerics.dll",
+      "type_start": 19045,
+      "type_count": 13
+    },
+    {
+      "name": "System.Xml.Linq.dll",
+      "type_start": 19058,
+      "type_count": 38
+    },
+    {
+      "name": "TSDK4CSharp.dll",
+      "type_start": 19096,
+      "type_count": 59
+    },
+    {
+      "name": "JCE_Managed.dll",
+      "type_start": 19155,
+      "type_count": 18
+    },
+    {
+      "name": "PathologicalGames.dll",
+      "type_start": 19173,
+      "type_count": 16
+    },
+    {
+      "name": "UnityEngine.VideoModule.dll",
+      "type_start": 19189,
+      "type_count": 24
+    },
+    {
+      "name": "Boot.dll",
+      "type_start": 19213,
+      "type_count": 12
+    },
+    {
+      "name": "UnityEngine.TextRenderingModule.dll",
+      "type_start": 19225,
+      "type_count": 17
+    },
+    {
+      "name": "UnityEngine.InputLegacyModule.dll",
+      "type_start": 19242,
+      "type_count": 18
+    },
+    {
+      "name": "UnityEngine.GameCenterModule.dll",
+      "type_start": 19260,
+      "type_count": 25
+    },
+    {
+      "name": "UnityWebSocket.Runtime.dll",
+      "type_start": 19285,
+      "type_count": 20
+    },
+    {
+      "name": "UnityEngine.UIModule.dll",
+      "type_start": 19305,
+      "type_count": 11
+    },
+    {
+      "name": "UnityEngine.TextCoreFontEngineModule.dll",
+      "type_start": 19316,
+      "type_count": 16
+    },
+    {
+      "name": "UnityEngine.AssetBundleModule.dll",
+      "type_start": 19332,
+      "type_count": 12
+    },
+    {
+      "name": "NativeGallery.Runtime.dll",
+      "type_start": 19344,
+      "type_count": 23
+    },
+    {
+      "name": "HappyMahjong.SceneMgr.dll",
+      "type_start": 19367,
+      "type_count": 14
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "type_start": 19381,
+      "type_count": 4
+    },
+    {
+      "name": "BetterStreamingAssets.dll",
+      "type_start": 19385,
+      "type_count": 17
+    },
+    {
+      "name": "UnityEngine.SharedInternalsModule.dll",
+      "type_start": 19402,
+      "type_count": 30
+    },
+    {
+      "name": "UnityEngine.DirectorModule.dll",
+      "type_start": 19432,
+      "type_count": 2
+    },
+    {
+      "name": "UnityEngine.ImageConversionModule.dll",
+      "type_start": 19434,
+      "type_count": 2
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestTextureModule.dll",
+      "type_start": 19436,
+      "type_count": 3
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "type_start": 19439,
+      "type_count": 3
+    },
+    {
+      "name": "UnityEngine.JSONSerializeModule.dll",
+      "type_start": 19442,
+      "type_count": 2
+    },
+    {
+      "name": "HybridCLR.Runtime.dll",
+      "type_start": 19444,
+      "type_count": 9
+    },
+    {
+      "name": "UnityEngine.SpriteMaskModule.dll",
+      "type_start": 19453,
+      "type_count": 2
+    },
+    {
+      "name": "UnityEngine.ScreenCaptureModule.dll",
+      "type_start": 19455,
+      "type_count": 3
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestAudioModule.dll",
+      "type_start": 19458,
+      "type_count": 2
+    },
+    {
+      "name": "UnityEngine.TilemapModule.dll",
+      "type_start": 19460,
+      "type_count": 3
+    },
+    {
+      "name": "UnityEngine.SpriteShapeModule.dll",
+      "type_start": 19463,
+      "type_count": 2
+    },
+    {
+      "name": "UnityEngine.GridModule.dll",
+      "type_start": 19465,
+      "type_count": 2
+    },
+    {
+      "name": "System.Configuration.dll",
+      "type_start": 19467,
+      "type_count": 16
+    },
+    {
+      "name": "Runtime.dll",
+      "type_start": 19483,
+      "type_count": 10
+    },
+    {
+      "name": "System.IO.Compression.FileSystem.dll",
+      "type_start": 19493,
+      "type_count": 3
+    },
+    {
+      "name": "Unity.Burst.Unsafe.dll",
+      "type_start": 19496,
+      "type_count": 4
+    },
+    {
+      "name": "System.Runtime.Serialization.dll",
+      "type_start": 19500,
+      "type_count": 5
+    },
+    {
+      "name": "System.Runtime.CompilerServices.Unsafe.dll",
+      "type_start": 19505,
+      "type_count": 3
+    },
+    {
+      "name": "Assembly-CSharp-firstpass.dll",
+      "type_start": 19508,
+      "type_count": 4
+    },
+    {
+      "name": "Unity.Collections.LowLevel.ILSupport.dll",
+      "type_start": 19512,
+      "type_count": 4
+    },
+    {
+      "name": "__Generated",
+      "type_start": 19516,
+      "type_count": 5
+    }
+  ],
+  "candidate_count": 384,
+  "keyword_string_counts": {
+    "replay_spectate": 45,
+    "mahjong": 1749,
+    "hand": 1
+  },
+  "asset_candidates": [
+    {
+      "path": "Payload/happymj.app/AppIconMahjongFestival60x60@2x.png",
+      "size": 39322
+    },
+    {
+      "path": "Payload/happymj.app/AppIconMahjongFestival76x76@2x~ipad.png",
+      "size": 58577
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/HongYunJinLi2.dll.bytes",
+      "size": 10752
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/QiTianDaSheng.dll.bytes",
+      "size": 33792
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replay_ab_v1.bundle.manifest",
+      "size": 6637
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaytest_ab_v1.bundle.manifest",
+      "size": 1778
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaypc_ab_v1.bundle",
+      "size": 66780
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong4p_ab_v1.bundle.manifest",
+      "size": 597
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fxmahjong_ab_v1.bundle",
+      "size": 1279365
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaypc_ab_v1.bundle.manifest",
+      "size": 3981
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong_ab_v1.bundle",
+      "size": 4878693
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replay_ab_v1.bundle",
+      "size": 120177
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichimahjong_ab_v1.bundle",
+      "size": 2647235
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong4p_ab_v1.bundle",
+      "size": 6628326
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaytest_ab_v1.bundle",
+      "size": 298743
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fxmahjong_ab_v1.bundle.manifest",
+      "size": 3272
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong_ab_v1.bundle.manifest",
+      "size": 13358
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichimahjong_ab_v1.bundle.manifest",
+      "size": 17708
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/LocalReplay/ErRen.data",
+      "size": 8125
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/LocalReplay/DaZhong.data",
+      "size": 9965
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/LocalReplay/XueLiu.data",
+      "size": 25450
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/PatchPC.bytes",
+      "size": 36308
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/MJGameBaseConfig.data",
+      "size": 6268
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/TuNianQueJing.dll.bytes",
+      "size": 23040
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/QiTianDaSheng2.dll.bytes",
+      "size": 10752
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/HongYunJinLi.dll.bytes",
+      "size": 11264
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/QiTianDaSheng.dll.bytes",
+      "size": 33792
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/TuNianQueJing.dll.bytes",
+      "size": 33280
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/JinYuManTang.dll.bytes",
+      "size": 31232
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/ShiKongQiLv.dll.bytes",
+      "size": 30720
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/LongTengShengShi.dll.bytes",
+      "size": 38400
+    }
+  ],
+  "limits": [
+    "Name matches do not establish live protocol contents.",
+    "Replay, spectator and settlement structures may expose cards only after a round or with separate privileges.",
+    "No runtime traffic or device memory was captured."
+  ]
+}

@@ -1,0 +1,4850 @@
+[
+  {
+    "path": "Payload/happymj.app/Data/Raw/soda.txt",
+    "size": 28825
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/HongYunJinLi2.dll.bytes",
+    "size": 10752
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/QiTianDaSheng.dll.bytes",
+    "size": 33792
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/xuezhan.html",
+    "size": 12944
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/InerIOS.manifest",
+    "size": 209305
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/moneyroll_ab_v1.bundle",
+    "size": 304758
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/choosescene_ab_v1.bundle",
+    "size": 1695241
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/zhaocaijinbaoentrance_ab_v1.bundle",
+    "size": 1234792
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/deskprobalance_ab_v1.bundle.manifest",
+    "size": 3656
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/jiesuananimation_ab_v1.bundle.manifest",
+    "size": 4231
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/allplaying_ab_v1.bundle",
+    "size": 561983
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tutorial_ab_v1.bundle",
+    "size": 3174300
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/update_ab_v1.bundle.manifest",
+    "size": 4241
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privateroomshare_ab_v1.bundle.manifest",
+    "size": 3095
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/2v2_test_ab_v1.bundle",
+    "size": 7412
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/levelsclect_ab_v1.bundle",
+    "size": 221295
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/buybeans_ab_v1.bundle",
+    "size": 582769
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/onlinetreasure_ab_v1.bundle",
+    "size": 269525
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newbiesignin_ab_v1.bundle",
+    "size": 595752
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fazai_ab_v1.bundle",
+    "size": 394631
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradewin3dicons_ab_v1.bundle.manifest",
+    "size": 4282
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gacha_ab_v1.bundle",
+    "size": 836656
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privilege_ab_v1.bundle",
+    "size": 117658
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankstage_ab_v1.bundle.manifest",
+    "size": 20731
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newhongzhongxueliuupdate_ab_v1.bundle",
+    "size": 440248
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rechargeviewpc_ab_v1.bundle",
+    "size": 133806
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gameuieffects_ab_v1.bundle",
+    "size": 408917
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/storereview_ab_v1.bundle",
+    "size": 216543
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichirules_ab_v1.bundle",
+    "size": 168247
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/sharelucky_ab_v1.bundle",
+    "size": 487352
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/beancan_ab_v1.bundle.manifest",
+    "size": 4744
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/choicesex_ab_v1.bundle.manifest",
+    "size": 8137
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/loginscene_ab_v1.bundle",
+    "size": 510032
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gangpaidedou_ab_v1.bundle",
+    "size": 24776
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichichatanimation_ab_v1.bundle.manifest",
+    "size": 34984
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ingamedebug_ab_v1.bundle",
+    "size": 37987
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/camera_ab_v1.bundle",
+    "size": 4447
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replay_ab_v1.bundle.manifest",
+    "size": 6637
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/section_ab_v1.bundle",
+    "size": 41616
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ingamedebug_ab_v1.bundle.manifest",
+    "size": 5779
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/huaddpoint_ab_v1.bundle",
+    "size": 1031929
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/recommendfanui_ab_v1.bundle",
+    "size": 374617
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/photomode_ab_v1.bundle.manifest",
+    "size": 3251
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/permission_ab_v1.bundle",
+    "size": 63671
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newhongzhongxueliuupdate_ab_v1.bundle.manifest",
+    "size": 9288
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/bet_ab_v1.bundle",
+    "size": 390274
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscenenew_ab_v1.bundle",
+    "size": 10462624
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgrade3dicons_ab_v1.bundle",
+    "size": 1298112
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_newstyle_ab_v1.bundle",
+    "size": 5296756
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/choicesex_ab_v1.bundle.manifest",
+    "size": 2702
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscenelow_ab_v1.bundle.manifest",
+    "size": 3171
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_newstyle_ab_v1.bundle.manifest",
+    "size": 2813
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_newstyle_low_ab_v1.bundle",
+    "size": 1508186
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/choicesex_ab_v1.bundle",
+    "size": 6075386
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscenenew_ab_v1.bundle",
+    "size": 3890425
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/entryscene_ab_v1.bundle.manifest",
+    "size": 845
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescenepc_ab_v1.bundle.manifest",
+    "size": 2083
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscenelow_ab_v1.bundle",
+    "size": 539438
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_newstyle_low_ab_v1.bundle.manifest",
+    "size": 2866
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_low_ab_v1.bundle",
+    "size": 1190249
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/logoscene_ab_v1.bundle.manifest",
+    "size": 926
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscene_ab_v1.bundle.manifest",
+    "size": 3021
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscenenewlow_ab_v1.bundle.manifest",
+    "size": 3155
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/videoscene_ab_v1.bundle.manifest",
+    "size": 1345
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/checkresupdate_ab_v1.bundle",
+    "size": 1412647
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/checkresupdate_ab_v1.bundle.manifest",
+    "size": 4361
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/videoscene_ab_v1.bundle",
+    "size": 26211
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_ab_v1.bundle",
+    "size": 1497636
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscenenewlow_ab_v1.bundle",
+    "size": 107997
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/logoscene_ab_v1.bundle",
+    "size": 86733
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_low_ab_v1.bundle.manifest",
+    "size": 2466
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/entryscene_ab_v1.bundle",
+    "size": 86291
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescenepc_ab_v1.bundle",
+    "size": 21492
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscenenew_ab_v1.bundle.manifest",
+    "size": 3708
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/loadingscene_ab_v1.bundle",
+    "size": 539221
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/scenes/gamescene_ab_v1.bundle.manifest",
+    "size": 3104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ingametutorialpc_ab_v1.bundle",
+    "size": 13529
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/bubble_ab_v1.bundle.manifest",
+    "size": 2738
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/cameraingametool_ab_v1.bundle.manifest",
+    "size": 583
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichitopbaricon_ab_v1.bundle.manifest",
+    "size": 2018
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/clickeffect_ab_v1.bundle.manifest",
+    "size": 864
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fazai_ab_v1.bundle.manifest",
+    "size": 5670
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rechargeview_ab_v1.bundle",
+    "size": 454373
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/huaddpoint_ab_v1.bundle.manifest",
+    "size": 3209
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ranktutorial_ab_v1.bundle.manifest",
+    "size": 3044
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/platform_ab_v1.bundle",
+    "size": 7948
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/bootstrap_ab_v1.bundle",
+    "size": 28308
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/limitedtimegameentrance_ab_v1.bundle.manifest",
+    "size": 8594
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradeseasonpopbuiltin_ab_v1.bundle",
+    "size": 1871897
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mission_ab_v1.bundle.manifest",
+    "size": 4576
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/choicesex_ab_v1.bundle",
+    "size": 1134983
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/realtimevoice_ab_v1.bundle",
+    "size": 65742
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/universalxueliuentrance_ab_v1.bundle",
+    "size": 1659041
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/funplaycard_ab_v1.bundle",
+    "size": 408277
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/bet_ab_v1.bundle.manifest",
+    "size": 9493
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/crossmarket_ab_v1.bundle",
+    "size": 10730
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/congratulation_ab_v1.bundle.manifest",
+    "size": 10145
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradeseasonpopbuiltin_ab_v1.bundle.manifest",
+    "size": 6183
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscenehotupdate_ab_v1.bundle",
+    "size": 176667
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/talenthall_ab_v1.bundle",
+    "size": 2367658
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradewin3dicons_ab_v1.bundle",
+    "size": 1241810
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaytest_ab_v1.bundle.manifest",
+    "size": 1778
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gameuieffects_ab_v1.bundle.manifest",
+    "size": 5592
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tachieeffect_ab_v1.bundle.manifest",
+    "size": 2465
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/2v2_test_ab_v1.bundle.manifest",
+    "size": 511
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaypc_ab_v1.bundle",
+    "size": 66780
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activity_ab_v1.bundle.manifest",
+    "size": 15473
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/selectionbtm_ab_v1.bundle",
+    "size": 33084
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/friendassist_ab_v1.bundle.manifest",
+    "size": 15856
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichiselfinfo_ab_v1.bundle",
+    "size": 798474
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/platformprivilege_ab_v1.bundle",
+    "size": 7137
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/itemingameeffect_ab_v1.bundle",
+    "size": 252560
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privateroom_ab_v1.bundle.manifest",
+    "size": 13383
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/universalxueliuentrancepc_ab_v1.bundle.manifest",
+    "size": 4520
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/beancard_ab_v1.bundle.manifest",
+    "size": 6212
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/led_ab_v1.bundle.manifest",
+    "size": 3221
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/game_ab_v1.bundle",
+    "size": 2438979
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/healthpromise_ab_v1.bundle.manifest",
+    "size": 3370
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/main_ab_v1.bundle.manifest",
+    "size": 8682
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/healthpromise_ab_v1.bundle",
+    "size": 557731
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/mjhandlerst_ab_v1.bundle.manifest",
+    "size": 8413
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/unenoughnewstyle_ab_v1.bundle",
+    "size": 284059
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/suitaddition_ab_v1.bundle",
+    "size": 372104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/mainpc_ab_v1.bundle",
+    "size": 98054
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/common_ab_v1.bundle",
+    "size": 223716
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/game_ab_v1.bundle.manifest",
+    "size": 14401
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/gameentrance_ab_v1.bundle.manifest",
+    "size": 3517
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/inbattle_ab_v1.bundle.manifest",
+    "size": 7659
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/zhuoji_ab_v1.bundle.manifest",
+    "size": 5837
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/rankbalance_ab_v1.bundle.manifest",
+    "size": 2577
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/guohu_ab_v1.bundle.manifest",
+    "size": 2122
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/dingquepc_ab_v1.bundle.manifest",
+    "size": 1002
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/inbattle_ab_v1.bundle",
+    "size": 2043628
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/laizi_ab_v1.bundle.manifest",
+    "size": 1921
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/wordeffect_ab_v1.bundle.manifest",
+    "size": 4752
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/fx_kaima_ab_v1.bundle.manifest",
+    "size": 3224
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/zhaniao_ab_v1.bundle.manifest",
+    "size": 2524
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/bigrslay_ab_v1.bundle",
+    "size": 653025
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/baopai_ab_v1.bundle",
+    "size": 106234
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/dingque_ab_v1.bundle",
+    "size": 202982
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/guohu_ab_v1.bundle",
+    "size": 51837
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/haidimanyou_ab_v1.bundle",
+    "size": 195709
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/baopai_ab_v1.bundle.manifest",
+    "size": 1655
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/fx_ui_ab_v1.bundle",
+    "size": 1506575
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/bigrslay_ab_v1.bundle.manifest",
+    "size": 1225
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/hueffect_ab_v1.bundle",
+    "size": 100759
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/rankbalance_ab_v1.bundle",
+    "size": 371729
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/hueffect_ab_v1.bundle.manifest",
+    "size": 2077
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/huansanzhang_ab_v1.bundle",
+    "size": 234236
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/zhaniao_ab_v1.bundle",
+    "size": 170849
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/zhuoji_ab_v1.bundle",
+    "size": 896899
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/huansanzhangpc_ab_v1.bundle",
+    "size": 213104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/haidimanyou_ab_v1.bundle.manifest",
+    "size": 1968
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/fx_ui_ab_v1.bundle.manifest",
+    "size": 3689
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/fx_rankgrade_ab_v1.bundle",
+    "size": 382916
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/dingque_ab_v1.bundle.manifest",
+    "size": 4096
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/huansanzhangpc_ab_v1.bundle.manifest",
+    "size": 4424
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/fx_rankgrade_ab_v1.bundle.manifest",
+    "size": 1109
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/dingquepc_ab_v1.bundle",
+    "size": 34851
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/laizi_ab_v1.bundle",
+    "size": 26465
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/huansanzhang_ab_v1.bundle.manifest",
+    "size": 4740
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/wordeffect_ab_v1.bundle",
+    "size": 494224
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/effect/fx_kaima_ab_v1.bundle",
+    "size": 881103
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/unenoughnewstyle_ab_v1.bundle.manifest",
+    "size": 4492
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/unenough_ab_v1.bundle.manifest",
+    "size": 7696
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/mjhandlerst_ab_v1.bundle",
+    "size": 110666
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/common_ab_v1.bundle.manifest",
+    "size": 1552
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/led_ab_v1.bundle",
+    "size": 639596
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/fourpeople_ab_v1.bundle.manifest",
+    "size": 14679
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/main_ab_v1.bundle",
+    "size": 1130159
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/mainpc_ab_v1.bundle.manifest",
+    "size": 2108
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/gameentrance_ab_v1.bundle",
+    "size": 125902
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/suitaddition_ab_v1.bundle.manifest",
+    "size": 2907
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/fourpeople_ab_v1.bundle",
+    "size": 8561791
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/prefabs/unenough_ab_v1.bundle",
+    "size": 652838
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/dailyrewardtipspc_ab_v1.bundle.manifest",
+    "size": 3267
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/realtimevoice_ab_v1.bundle.manifest",
+    "size": 4144
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong4p_ab_v1.bundle.manifest",
+    "size": 597
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscenehotupdate_ab_v1.bundle.manifest",
+    "size": 907
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rank_ab_v1.bundle.manifest",
+    "size": 14451
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ranktutorial_ab_v1.bundle",
+    "size": 672990
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/limitedtimegameentrance_ab_v1.bundle",
+    "size": 10574329
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/camera_ab_v1.bundle.manifest",
+    "size": 1043
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/roomitembglow_ab_v1.bundle.manifest",
+    "size": 1433
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/chatanimation_ab_v1.bundle",
+    "size": 812419
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/deskprobalance_ab_v1.bundle",
+    "size": 58333
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichisettingui_ab_v1.bundle.manifest",
+    "size": 2983
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newgamescenetransition_ab_v1.bundle.manifest",
+    "size": 941
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/downloadprogress_ab_v1.bundle",
+    "size": 16686
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/screencaptureshare_ab_v1.bundle.manifest",
+    "size": 3040
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/login_ab_v1.bundle",
+    "size": 10588849
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/recommendfanui_ab_v1.bundle.manifest",
+    "size": 11464
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/order_ab_v1.bundle.manifest",
+    "size": 3512
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/settingpc_ab_v1.bundle",
+    "size": 228887
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/wanfamainsceneentry_ab_v1.bundle",
+    "size": 3341729
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/askorgive_ab_v1.bundle",
+    "size": 190664
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/aotdll_ab_v1.bundle",
+    "size": 10562449
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/returnuser_ab_v1.bundle.manifest",
+    "size": 5074
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newgamescenetransition_ab_v1.bundle",
+    "size": 768611
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/luckroulette_ab_v1.bundle",
+    "size": 1544238
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/crossmarket_ab_v1.bundle.manifest",
+    "size": 1689
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/appletguide_ab_v1.bundle",
+    "size": 605003
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/exitgameapppc_ab_v1.bundle.manifest",
+    "size": 2586
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/platform_ab_v1.bundle.manifest",
+    "size": 1628
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/entertainmentselect_ab_v1.bundle",
+    "size": 922758
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/prefab_ab_v1.bundle",
+    "size": 2363061
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/llk_ab_v1.bundle",
+    "size": 131129
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/entertainmentui_ab_v1.bundle",
+    "size": 102352
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/entertainmentselect_ab_v1.bundle.manifest",
+    "size": 3951
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/entertainmentui_ab_v1.bundle.manifest",
+    "size": 3967
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/prefab_ab_v1.bundle.manifest",
+    "size": 13280
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/entertainmentgame/llk_ab_v1.bundle.manifest",
+    "size": 897
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activitybindphone_ab_v1.bundle.manifest",
+    "size": 3473
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/clickeffect_ab_v1.bundle",
+    "size": 109514
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mission_ab_v1.bundle",
+    "size": 37425
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/protocolhierarchy_ab_v1.bundle",
+    "size": 2515
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/onlinetreasure_ab_v1.bundle.manifest",
+    "size": 3917
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fxmahjong_ab_v1.bundle",
+    "size": 1279365
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privilege_ab_v1.bundle.manifest",
+    "size": 4492
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activityhappyfund_ab_v1.bundle.manifest",
+    "size": 4031
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/textmeshprofonts_common_ab_v1.bundle.manifest",
+    "size": 507
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/kuaishou_ab_v1.bundle.manifest",
+    "size": 1691
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaypc_ab_v1.bundle.manifest",
+    "size": 3981
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/returnuser_ab_v1.bundle",
+    "size": 504258
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/permission_ab_v1.bundle.manifest",
+    "size": 1636
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/buybeanpc_ab_v1.bundle",
+    "size": 63870
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/login_ab_v1.bundle.manifest",
+    "size": 6659
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/askorgive_ab_v1.bundle.manifest",
+    "size": 6367
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/choosetileui_ab_v1.bundle",
+    "size": 411351
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/agent_ab_v1.bundle",
+    "size": 333480
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privateroom_ab_v1.bundle",
+    "size": 756263
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgrade3dicons_ab_v1.bundle.manifest",
+    "size": 4626
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/hongzhongdesk_ab_v1.bundle",
+    "size": 932333
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gamesceneeffects_ab_v1.bundle.manifest",
+    "size": 5424
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradeupdatenotice_ab_v1.bundle",
+    "size": 400106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/adslottery_ab_v1.bundle",
+    "size": 607622
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/kuaishou_ab_v1.bundle",
+    "size": 10524
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rechargeviewpc_ab_v1.bundle.manifest",
+    "size": 5219
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gm_ab_v1.bundle.manifest",
+    "size": 6478
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/nitan_ab_v1.bundle.manifest",
+    "size": 4181
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activitydoublevideo_ab_v1.bundle",
+    "size": 384668
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/cameraingametool_ab_v1.bundle",
+    "size": 2538
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/itemexchange_ab_v1.bundle",
+    "size": 299607
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mobilehierarchy_ab_v1.bundle.manifest",
+    "size": 4443
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/dailyrewardtips_ab_v1.bundle.manifest",
+    "size": 4822
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/2v2rank_ab_v1.bundle.manifest",
+    "size": 5737
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong_ab_v1.bundle",
+    "size": 4878693
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mobilehierarchy_ab_v1.bundle",
+    "size": 51576
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replay_ab_v1.bundle",
+    "size": 120177
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/zhaocaijinbaoentrance_ab_v1.bundle.manifest",
+    "size": 4382
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ingametutorial_ab_v1.bundle.manifest",
+    "size": 7370
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tutorialpc_ab_v1.bundle.manifest",
+    "size": 2085
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscenenew_ab_v1.bundle.manifest",
+    "size": 26834
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/moneybag_ab_v1.bundle.manifest",
+    "size": 3851
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichimahjong_ab_v1.bundle",
+    "size": 2647235
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichirules_ab_v1.bundle.manifest",
+    "size": 4161
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankmodelicons_ab_v1.bundle.manifest",
+    "size": 3985
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/accusation_ab_v1.bundle.manifest",
+    "size": 4363
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/universalxueliuentrance_ab_v1.bundle.manifest",
+    "size": 5641
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/balance2v2_ab_v1.bundle.manifest",
+    "size": 12964
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/popups_ab_v1.bundle.manifest",
+    "size": 6087
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/changequepai_ab_v1.bundle.manifest",
+    "size": 1775
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/balance2v2pc_ab_v1.bundle",
+    "size": 207976
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameload_ab_v1.bundle",
+    "size": 47180
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/multitile/ui_ab_v1.bundle",
+    "size": 29608
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/multitile/ui_ab_v1.bundle.manifest",
+    "size": 1507
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameload_ab_v1.bundle.manifest",
+    "size": 2053
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/avatar_ab_v1.bundle",
+    "size": 702672
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/effect_ab_v1.bundle.manifest",
+    "size": 9430
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/dragon_ab_v1.bundle",
+    "size": 1498873
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/dapiao_ab_v1.bundle",
+    "size": 138661
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/comparetile_ab_v1.bundle",
+    "size": 6568975
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinefx_ab_v1.bundle.manifest",
+    "size": 1110
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/userinfoicons_ab_v1.bundle.manifest",
+    "size": 3195
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinefx_ab_v1.bundle",
+    "size": 139325
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/baopai_ab_v1.bundle",
+    "size": 4216317
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinebalancepc_ab_v1.bundle",
+    "size": 383261
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/rankbalanceani_ab_v1.bundle",
+    "size": 43001
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/rankgradepc_ab_v1.bundle.manifest",
+    "size": 5764
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/effect_ab_v1.bundle",
+    "size": 1016456
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/baopai_ab_v1.bundle.manifest",
+    "size": 5623
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/breakfantop_ab_v1.bundle",
+    "size": 1307627
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/balance_ab_v1.bundle.manifest",
+    "size": 8550
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/userinfoicons_ab_v1.bundle",
+    "size": 29448
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/popups_ab_v1.bundle",
+    "size": 346018
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/missingtilesmodules_ab_v1.bundle",
+    "size": 6226
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameui_ab_v1.bundle",
+    "size": 3752402
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/dapiao_ab_v1.bundle.manifest",
+    "size": 3813
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameui_new_ab_v1.bundle.manifest",
+    "size": 2471
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/balance2v2pc_ab_v1.bundle.manifest",
+    "size": 5810
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameuipc_ab_v1.bundle.manifest",
+    "size": 15842
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameuipc_ab_v1.bundle",
+    "size": 1322609
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/avatar_ab_v1.bundle.manifest",
+    "size": 5765
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/balance_ab_v1.bundle",
+    "size": 463344
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/rankbalanceani_ab_v1.bundle.manifest",
+    "size": 1661
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameui_new_ab_v1.bundle",
+    "size": 205711
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/variabletile_ab_v1.bundle.manifest",
+    "size": 10787
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinebalance_ab_v1.bundle.manifest",
+    "size": 7807
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/shaizi_ab_v1.bundle.manifest",
+    "size": 1682
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/comparetile_ab_v1.bundle.manifest",
+    "size": 33056
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/variabletile_ab_v1.bundle",
+    "size": 704210
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinebalancenew_ab_v1.bundle",
+    "size": 683325
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/secondaryhandtile_ab_v1.bundle.manifest",
+    "size": 10288
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/missingtilesmodules_ab_v1.bundle.manifest",
+    "size": 1519
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/rankgrade_ab_v1.bundle",
+    "size": 1243246
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/dragon_ab_v1.bundle.manifest",
+    "size": 7006
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/secondaryhandtile_ab_v1.bundle",
+    "size": 1386289
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/balance2v2_ab_v1.bundle",
+    "size": 1232511
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinebalancepc_ab_v1.bundle.manifest",
+    "size": 6314
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/rankgrade_ab_v1.bundle.manifest",
+    "size": 12333
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/gameui_ab_v1.bundle.manifest",
+    "size": 32042
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/breakfantop_ab_v1.bundle.manifest",
+    "size": 4366
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinebalancenew_ab_v1.bundle.manifest",
+    "size": 12247
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/changequepai_ab_v1.bundle",
+    "size": 55125
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/rankgradepc_ab_v1.bundle",
+    "size": 223001
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/shaizi_ab_v1.bundle",
+    "size": 73821
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/game/timelinebalance_ab_v1.bundle",
+    "size": 619794
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newbietutorial_ab_v1.bundle.manifest",
+    "size": 7344
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/dailyrewardtipspc_ab_v1.bundle",
+    "size": 14171
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/scene_low_ab_v1.bundle",
+    "size": 1211666
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/scene_ab_v1.bundle.manifest",
+    "size": 3619
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/scene_low_ab_v1.bundle.manifest",
+    "size": 3361
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/texture_v1.bundle",
+    "size": 1628658
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/texture_v1.bundle.manifest",
+    "size": 1745
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/animation_v1.bundle",
+    "size": 27619
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/material_v1.bundle.manifest",
+    "size": 948
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/material_v1.bundle",
+    "size": 25935
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/unpacktextures_v1.bundle.manifest",
+    "size": 556
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/unpacktextures_v1.bundle",
+    "size": 246259
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/fx_mainscene_low/animation_v1.bundle.manifest",
+    "size": 432
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainscene/scene_ab_v1.bundle",
+    "size": 4586765
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/share_ab_v1.bundle",
+    "size": 3104684
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/bubble_ab_v1.bundle",
+    "size": 28452
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/agent_ab_v1.bundle.manifest",
+    "size": 5634
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/effect_ab_v1.bundle.manifest",
+    "size": 2844
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/effect_ab_v1.bundle",
+    "size": 638219
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/bgm_ab_v1.bundle.manifest",
+    "size": 547
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/people/quickchat_ab_v1.bundle.manifest",
+    "size": 3528
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/people/boardpeople_ab_v1.bundle",
+    "size": 360799
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/people/quickchat_ab_v1.bundle",
+    "size": 696662
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/people/boardpeople_ab_v1.bundle.manifest",
+    "size": 1537
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/people/ingame_ab_v1.bundle.manifest",
+    "size": 19962
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/people/ingame_ab_v1.bundle",
+    "size": 1642324
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/music/bgm_ab_v1.bundle",
+    "size": 2238746
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/realtimevoice_ab_v1.bundle",
+    "size": 48449
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/realtimevoice_ab_v1.bundle.manifest",
+    "size": 4286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichigameui_ab_v1.bundle",
+    "size": 3357948
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichihelp_ab_v1.bundle.manifest",
+    "size": 2554
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/ingame_ab_v1.bundle.manifest",
+    "size": 3332
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichibalance_ab_v1.bundle.manifest",
+    "size": 16946
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichishare_ab_v1.bundle.manifest",
+    "size": 6199
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichiprivateroom_ab_v1.bundle",
+    "size": 90820
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichishare_ab_v1.bundle",
+    "size": 1864019
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichiprivateroom_ab_v1.bundle.manifest",
+    "size": 6024
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichibalance_ab_v1.bundle",
+    "size": 1219178
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/mjs_ab_v1.bundle.manifest",
+    "size": 3041
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/mjs_ab_v1.bundle",
+    "size": 764886
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/ingame_ab_v1.bundle",
+    "size": 1963703
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichihelp_ab_v1.bundle",
+    "size": 10263
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichigame/riichigameui_ab_v1.bundle.manifest",
+    "size": 20000
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/notice_ab_v1.bundle.manifest",
+    "size": 3644
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradeupdatenotice_ab_v1.bundle.manifest",
+    "size": 3221
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/battlepass_ab_v1.bundle",
+    "size": 2718582
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankdefaultdesk_ab_v1.bundle.manifest",
+    "size": 2520
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichichat_ab_v1.bundle.manifest",
+    "size": 8718
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/benefit_ab_v1.bundle",
+    "size": 1712437
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/pandorabox_ab_v1.bundle",
+    "size": 364376
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/returningactivity_ab_v1.bundle.manifest",
+    "size": 19603
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/welfarecenter_ab_v1.bundle",
+    "size": 1770420
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/selectionbtm_ab_v1.bundle.manifest",
+    "size": 2167
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/email_ab_v1.bundle.manifest",
+    "size": 6982
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/adslottery_ab_v1.bundle.manifest",
+    "size": 7106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/olditemexchange_ab_v1.bundle",
+    "size": 614816
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/2v2rank_ab_v1.bundle",
+    "size": 603981
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/minigamehub_ab_v1.bundle.manifest",
+    "size": 4161
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/buybeanpc_ab_v1.bundle.manifest",
+    "size": 5024
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/streakball_ab_v1.bundle.manifest",
+    "size": 32921
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/levelsclect_ab_v1.bundle.manifest",
+    "size": 2170
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rank_ab_v1.bundle",
+    "size": 1080365
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ranktoolingame_ab_v1.bundle.manifest",
+    "size": 3460
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/approot_ab_v1.bundle",
+    "size": 55771
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichitutorial_ab_v1.bundle.manifest",
+    "size": 4907
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/realname_ab_v1.bundle.manifest",
+    "size": 1805
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/logreport_ab_v1.bundle.manifest",
+    "size": 3756
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/chatpc_ab_v1.bundle",
+    "size": 35148
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/comparetiletutorial_ab_v1.bundle.manifest",
+    "size": 5642
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/olditemexchange_ab_v1.bundle.manifest",
+    "size": 7614
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activity_ab_v1.bundle",
+    "size": 4597392
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/notice_ab_v1.bundle",
+    "size": 14322
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/exitgameapppc_ab_v1.bundle",
+    "size": 18462
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/order_ab_v1.bundle",
+    "size": 25210
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ingametutorial_ab_v1.bundle",
+    "size": 345798
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong4p_ab_v1.bundle",
+    "size": 6628326
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fireworks_ab_v1.bundle.manifest",
+    "size": 5466
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/shop_ab_v1.bundle.manifest",
+    "size": 31925
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/savingbox_ab_v1.bundle.manifest",
+    "size": 5057
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/replaytest_ab_v1.bundle",
+    "size": 298743
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fazaicommon_ab_v1.bundle.manifest",
+    "size": 4109
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/textmeshprofonts_common_ab_v1.bundle",
+    "size": 3052
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/downloadprogress_ab_v1.bundle.manifest",
+    "size": 2815
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/deskpro_ab_v1.bundle.manifest",
+    "size": 5286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/realname_ab_v1.bundle",
+    "size": 289071
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/returningactivity_ab_v1.bundle",
+    "size": 3172696
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/beancard_ab_v1.bundle",
+    "size": 380608
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/personalinfo_ab_v1.bundle.manifest",
+    "size": 21474
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichitopbaricon_ab_v1.bundle",
+    "size": 6773
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newupgrade_ab_v1.bundle.manifest",
+    "size": 3672
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/funplaycard_ab_v1.bundle.manifest",
+    "size": 2339
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/childrenprotected_ab_v1.bundle",
+    "size": 28161
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/itemingameeffect_ab_v1.bundle.manifest",
+    "size": 1264
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/setting_ab_v1.bundle",
+    "size": 1191362
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ranktoolingame_ab_v1.bundle",
+    "size": 27265
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/logreport_ab_v1.bundle",
+    "size": 18656
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/choosetileui_ab_v1.bundle.manifest",
+    "size": 5421
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gamescene_ab_v1.bundle",
+    "size": 10750500
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/accusation_ab_v1.bundle",
+    "size": 33977
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/setting_ab_v1.bundle.manifest",
+    "size": 16511
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/talentrevival_ab_v1.bundle",
+    "size": 1617082
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/comparetiletutorial_ab_v1.bundle",
+    "size": 390325
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/childrenprotected_ab_v1.bundle.manifest",
+    "size": 3720
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/allplaying_ab_v1.bundle.manifest",
+    "size": 5879
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/loginscene_ab_v1.bundle.manifest",
+    "size": 4846
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tachieeffect_ab_v1.bundle",
+    "size": 1461929
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newrankdefaultdesk_ab_v1.bundle.manifest",
+    "size": 2192
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/jiesuananimation_ab_v1.bundle",
+    "size": 1618840
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichiselfinfo_ab_v1.bundle.manifest",
+    "size": 7778
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/webviewpc_ab_v1.bundle",
+    "size": 6574
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/choosescene_ab_v1.bundle.manifest",
+    "size": 20939
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/chat_ab_v1.bundle",
+    "size": 509545
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/streakball_ab_v1.bundle",
+    "size": 4906565
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankads_ab_v1.bundle.manifest",
+    "size": 4112
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainsceneeffect_ab_v1.bundle.manifest",
+    "size": 1794
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/talenthall_ab_v1.bundle.manifest",
+    "size": 20104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activitybindphone_ab_v1.bundle",
+    "size": 272234
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/wanfamainsceneentry_ab_v1.bundle.manifest",
+    "size": 22304
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/protocolhierarchy_ab_v1.bundle.manifest",
+    "size": 586
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/moneybag_ab_v1.bundle",
+    "size": 227932
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/2v2_ab_v1.bundle",
+    "size": 975356
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichichat_ab_v1.bundle",
+    "size": 220574
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fireworks_ab_v1.bundle",
+    "size": 405289
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/roomitembglow_ab_v1.bundle",
+    "size": 102388
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/approot_ab_v1.bundle.manifest",
+    "size": 7313
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankstage_ab_v1.bundle",
+    "size": 3209094
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tutorial_ab_v1.bundle.manifest",
+    "size": 16082
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/scenes/shop_v1.bundle.manifest",
+    "size": 2512
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/scenes/shop/materials_v1.bundle.manifest",
+    "size": 634
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/scenes/shop/materials_v1.bundle",
+    "size": 608900
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/scenes/shop_v1.bundle",
+    "size": 387328
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/table_ab_v1.bundle",
+    "size": 3550392
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/sceneshader_v1.bundle",
+    "size": 20543
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar_v1.bundle",
+    "size": 2008
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/table_ab_v1.bundle.manifest",
+    "size": 2724
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/newtable_ab_v1.bundle",
+    "size": 1321000
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/maskmaterial_v1.bundle.manifest",
+    "size": 578
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar_v1.bundle.manifest",
+    "size": 398
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/sceneshader/mirrorreflection_v1.bundle.manifest",
+    "size": 418
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/sceneshader/mask_v1.bundle",
+    "size": 17486
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/sceneshader/mask_v1.bundle.manifest",
+    "size": 411
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/sceneshader/mirrorreflection_v1.bundle",
+    "size": 52062
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/hand_ab_v1.bundle",
+    "size": 1528971
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/avatarui_ab_v1.bundle",
+    "size": 85690
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/shader_ab_v1.bundle",
+    "size": 645852
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_03_low_ab_v1.bundle",
+    "size": 18085
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_03_fbx_low_ab_v1.bundle",
+    "size": 227453
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_03_fbx_low_ab_v1.bundle.manifest",
+    "size": 765
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_02_low_ab_v1.bundle",
+    "size": 16549
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_03_ab_v1.bundle",
+    "size": 551083
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_02_low_ab_v1.bundle.manifest",
+    "size": 2084
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation_v1.bundle",
+    "size": 2675042
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_02_ab_v1.bundle.manifest",
+    "size": 3508
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_02_fbx_low_ab_v1.bundle.manifest",
+    "size": 689
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/animation_base_v1.bundle.manifest",
+    "size": 958
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/sort_v1.bundle",
+    "size": 246522
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/sort_v1.bundle.manifest",
+    "size": 875
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/chupai_v1.bundle",
+    "size": 739399
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/idle_v1.bundle.manifest",
+    "size": 3111
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/chupai_v1.bundle.manifest",
+    "size": 1817
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/animation_base_v1.bundle",
+    "size": 283256
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/pose_v1.bundle",
+    "size": 10368
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/pose_v1.bundle.manifest",
+    "size": 431
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/game_v1.bundle",
+    "size": 1344133
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/game_v1.bundle.manifest",
+    "size": 1807
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation/idle_v1.bundle",
+    "size": 3866366
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_02_ab_v1.bundle",
+    "size": 837327
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_2_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_0_ab_v1.bundle",
+    "size": 17826
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_0_low1_ab_v1.bundle",
+    "size": 18870
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_1_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_1_low2_ab_v1.bundle.manifest",
+    "size": 1929
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_2_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_1_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_0_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_0_low1_ab_v1.bundle",
+    "size": 19151
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_2_ab_v1.bundle",
+    "size": 20123
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_2_low2_ab_v1.bundle",
+    "size": 14257
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_2_low2_ab_v1.bundle.manifest",
+    "size": 2430
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_1_ab_v1.bundle",
+    "size": 17832
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_2_low2_ab_v1.bundle",
+    "size": 14315
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_1_ab_v1.bundle",
+    "size": 20584
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_0_low1_ab_v1.bundle",
+    "size": 19252
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_2_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_0_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_2_low2_ab_v1.bundle",
+    "size": 13942
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_1_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_1_low1_ab_v1.bundle",
+    "size": 18855
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_2_low2_ab_v1.bundle",
+    "size": 17792
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_1_low1_ab_v1.bundle.manifest",
+    "size": 2600
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_0_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_1_low1_ab_v1.bundle",
+    "size": 19127
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_0_low2_ab_v1.bundle.manifest",
+    "size": 2112
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_1_ab_v1.bundle",
+    "size": 17825
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_0_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_0_low2_ab_v1.bundle.manifest",
+    "size": 2264
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_1_low1_ab_v1.bundle.manifest",
+    "size": 2439
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_0_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_2_low2_ab_v1.bundle",
+    "size": 17767
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_1_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_1_low1_ab_v1.bundle",
+    "size": 19266
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_2_low2_ab_v1.bundle.manifest",
+    "size": 2430
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_0_ab_v1.bundle",
+    "size": 20599
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_2_low2_ab_v1.bundle",
+    "size": 17862
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_0_ab_v1.bundle",
+    "size": 17839
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_2_low2_ab_v1.bundle.manifest",
+    "size": 2265
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_1_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_2_ab_v1.bundle",
+    "size": 20206
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_2_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_2_low1_ab_v1.bundle",
+    "size": 18973
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_2_low2_ab_v1.bundle.manifest",
+    "size": 2339
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_1_low2_ab_v1.bundle",
+    "size": 17724
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_2_low1_ab_v1.bundle",
+    "size": 19223
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_1_low2_ab_v1.bundle.manifest",
+    "size": 2583
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_0_low1_ab_v1.bundle.manifest",
+    "size": 2125
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_0_low1_ab_v1.bundle.manifest",
+    "size": 2600
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_0_low2_ab_v1.bundle",
+    "size": 14101
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_0_ab_v1.bundle",
+    "size": 20566
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_1_low2_ab_v1.bundle.manifest",
+    "size": 2112
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_0_low2_ab_v1.bundle",
+    "size": 14093
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_1_low2_ab_v1.bundle",
+    "size": 17602
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_1_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_2_low1_ab_v1.bundle",
+    "size": 19228
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_1_low2_ab_v1.bundle",
+    "size": 17657
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_2_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_0_low2_ab_v1.bundle",
+    "size": 13385
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_1_ab_v1.bundle",
+    "size": 17844
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_1_ab_v1.bundle",
+    "size": 20544
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_0_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_2_low1_ab_v1.bundle.manifest",
+    "size": 2599
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_0_low2_ab_v1.bundle.manifest",
+    "size": 1612
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_1_low1_ab_v1.bundle.manifest",
+    "size": 2599
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_0_low2_ab_v1.bundle",
+    "size": 17601
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_1_ab_v1.bundle",
+    "size": 20509
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_0_ab_v1.bundle.manifest",
+    "size": 1801
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_1_low2_ab_v1.bundle",
+    "size": 14180
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_2_low1_ab_v1.bundle.manifest",
+    "size": 2600
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_1_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_1_low2_ab_v1.bundle",
+    "size": 14109
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_2_low2_ab_v1.bundle.manifest",
+    "size": 2021
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_0_low2_ab_v1.bundle",
+    "size": 17517
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_0_ab_v1.bundle",
+    "size": 20576
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_2_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_0_ab_v1.bundle",
+    "size": 17833
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_0_low2_ab_v1.bundle",
+    "size": 17710
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_0_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_2_ab_v1.bundle",
+    "size": 20157
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_1_low2_ab_v1.bundle",
+    "size": 13475
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_1_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_0_low1_ab_v1.bundle",
+    "size": 16470
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_2_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_2_low2_ab_v1.bundle",
+    "size": 17941
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_2_low1_ab_v1.bundle.manifest",
+    "size": 2600
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_1_low1_ab_v1.bundle",
+    "size": 18782
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_0_low2_ab_v1.bundle.manifest",
+    "size": 2021
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_1_ab_v1.bundle",
+    "size": 20154
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_2_ab_v1.bundle.manifest",
+    "size": 1953
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_2_low2_ab_v1.bundle",
+    "size": 17630
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_2_ab_v1.bundle",
+    "size": 17835
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_0_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_0_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_2_ab_v1.bundle",
+    "size": 20618
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_1_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_1_low1_ab_v1.bundle",
+    "size": 18793
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_1_low2_ab_v1.bundle.manifest",
+    "size": 2428
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_0_low1_ab_v1.bundle",
+    "size": 16059
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_0_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_0_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_2_low2_ab_v1.bundle",
+    "size": 17900
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_0_ab_v1.bundle",
+    "size": 20174
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_0_low1_ab_v1.bundle",
+    "size": 16434
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_1_low1_ab_v1.bundle",
+    "size": 18800
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_1_low1_ab_v1.bundle",
+    "size": 16558
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_1_low2_ab_v1.bundle.manifest",
+    "size": 2112
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_0_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_0_ab_v1.bundle",
+    "size": 20184
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_0_low1_ab_v1.bundle.manifest",
+    "size": 2439
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_2_ab_v1.bundle",
+    "size": 20576
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_2_low2_ab_v1.bundle.manifest",
+    "size": 2021
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_0_low1_ab_v1.bundle",
+    "size": 18707
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_2_low1_ab_v1.bundle.manifest",
+    "size": 2600
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_0_low1_ab_v1.bundle",
+    "size": 18785
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_1_ab_v1.bundle",
+    "size": 20167
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_1_low1_ab_v1.bundle",
+    "size": 16149
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_1_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_1_low1_ab_v1.bundle.manifest",
+    "size": 2285
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_0_low2_ab_v1.bundle.manifest",
+    "size": 2021
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_2_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_1_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_1_low1_ab_v1.bundle",
+    "size": 16460
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_2_ab_v1.bundle.manifest",
+    "size": 2105
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_0_low1_ab_v1.bundle",
+    "size": 18687
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_2_low1_ab_v1.bundle",
+    "size": 16464
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_1_ab_v1.bundle",
+    "size": 20177
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_1_low1_ab_v1.bundle.manifest",
+    "size": 2439
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_0_low2_ab_v1.bundle",
+    "size": 17637
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_0_low2_ab_v1.bundle.manifest",
+    "size": 2111
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_1_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_2_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_0_low2_ab_v1.bundle",
+    "size": 17324
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_2_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_2_low2_ab_v1.bundle.manifest",
+    "size": 2582
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_0_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_2_low1_ab_v1.bundle",
+    "size": 16134
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_0_low2_ab_v1.bundle",
+    "size": 17777
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_2_ab_v1.bundle",
+    "size": 17921
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_2_low1_ab_v1.bundle",
+    "size": 16542
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_0_low1_ab_v1.bundle.manifest",
+    "size": 1972
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_2_ab_v1.bundle",
+    "size": 20630
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_2_1_low2_ab_v1.bundle.manifest",
+    "size": 2338
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_2_low2_ab_v1.bundle.manifest",
+    "size": 2430
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_2_low2_ab_v1.bundle.manifest",
+    "size": 2264
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_0_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_1_1_low2_ab_v1.bundle",
+    "size": 17691
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_2_ab_v1.bundle",
+    "size": 17839
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_1_low2_ab_v1.bundle.manifest",
+    "size": 2021
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_2_low1_ab_v1.bundle",
+    "size": 18719
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_0_ab_v1.bundle",
+    "size": 20131
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_1_low2_ab_v1.bundle",
+    "size": 17318
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_0_low2_ab_v1.bundle.manifest",
+    "size": 2430
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_0_1_low1_ab_v1.bundle.manifest",
+    "size": 2286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_1_2_low1_ab_v1.bundle",
+    "size": 18839
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_2_1_low1_ab_v1.bundle.manifest",
+    "size": 2600
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_0_low2_ab_v1.bundle.manifest",
+    "size": 2104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/1_2_1_low2_ab_v1.bundle",
+    "size": 17746
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_2_low1_ab_v1.bundle.manifest",
+    "size": 2600
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_1_2_ab_v1.bundle.manifest",
+    "size": 2107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/2_0_2_low1_ab_v1.bundle",
+    "size": 18792
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/baseprefab/0_0_1_ab_v1.bundle.manifest",
+    "size": 1954
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_02_fbx_low_ab_v1.bundle",
+    "size": 222256
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_01_fbx_low_ab_v1.bundle",
+    "size": 330469
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_01_fbx_low_ab_v1.bundle.manifest",
+    "size": 542
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_01_low_ab_v1.bundle",
+    "size": 227354
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_01_ab_v1.bundle",
+    "size": 1833639
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_03_low_ab_v1.bundle.manifest",
+    "size": 2183
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_03_ab_v1.bundle.manifest",
+    "size": 3176
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_01_ab_v1.bundle.manifest",
+    "size": 3557
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/gsd_01_low_ab_v1.bundle.manifest",
+    "size": 2469
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/girl_new/animation_v1.bundle.manifest",
+    "size": 4859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/hand_ab_v1.bundle.manifest",
+    "size": 5518
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/common_ab_v1.bundle",
+    "size": 3784986
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/avatarui_ab_v1.bundle.manifest",
+    "size": 2254
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/shader_ab_v1.bundle.manifest",
+    "size": 4734
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/common_ab_v1.bundle.manifest",
+    "size": 7882
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_02_fbx_low_ab_v1.bundle",
+    "size": 155795
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_01_ab_v1.bundle.manifest",
+    "size": 3448
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_01_low_ab_v1.bundle.manifest",
+    "size": 2398
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_03_ab_v1.bundle.manifest",
+    "size": 3405
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_03_ab_v1.bundle",
+    "size": 841541
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_03_fbx_low_ab_v1.bundle",
+    "size": 163690
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_01_low_ab_v1.bundle",
+    "size": 227800
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation_v1.bundle",
+    "size": 3486365
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/animation_base_v1.bundle.manifest",
+    "size": 963
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/sort_v1.bundle",
+    "size": 249176
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/sort_v1.bundle.manifest",
+    "size": 861
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/chupai_v1.bundle",
+    "size": 661776
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/idle_v1.bundle.manifest",
+    "size": 3047
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/chupai_v1.bundle.manifest",
+    "size": 1787
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/animation_base_v1.bundle",
+    "size": 329454
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/pose_v1.bundle",
+    "size": 10000
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/pose_v1.bundle.manifest",
+    "size": 429
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/game_v1.bundle",
+    "size": 1127921
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/game_v1.bundle.manifest",
+    "size": 1773
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation/idle_v1.bundle",
+    "size": 4094899
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_2_ab_v1.bundle.manifest",
+    "size": 1858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_0_ab_v1.bundle",
+    "size": 15718
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_0_low1_ab_v1.bundle",
+    "size": 16167
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_1_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_1_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_2_ab_v1.bundle.manifest",
+    "size": 2010
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_1_ab_v1.bundle.manifest",
+    "size": 1859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_0_low1_ab_v1.bundle.manifest",
+    "size": 2097
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_0_low1_ab_v1.bundle",
+    "size": 16216
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_2_ab_v1.bundle",
+    "size": 17532
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_2_low2_ab_v1.bundle",
+    "size": 15346
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_2_low2_ab_v1.bundle.manifest",
+    "size": 2421
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_1_ab_v1.bundle",
+    "size": 15783
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_2_low2_ab_v1.bundle",
+    "size": 15449
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_1_ab_v1.bundle",
+    "size": 16691
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_0_low1_ab_v1.bundle",
+    "size": 16282
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_2_low1_ab_v1.bundle.manifest",
+    "size": 2097
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_0_low2_ab_v1.bundle.manifest",
+    "size": 2420
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_2_low2_ab_v1.bundle",
+    "size": 15323
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_1_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_1_low1_ab_v1.bundle",
+    "size": 16167
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_2_low2_ab_v1.bundle",
+    "size": 15332
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_1_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_0_ab_v1.bundle.manifest",
+    "size": 1858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_1_low1_ab_v1.bundle",
+    "size": 16208
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_0_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_1_ab_v1.bundle",
+    "size": 15806
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_0_ab_v1.bundle.manifest",
+    "size": 1858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_0_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_1_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_0_low1_ab_v1.bundle.manifest",
+    "size": 2097
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_2_low2_ab_v1.bundle",
+    "size": 15306
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_1_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_1_low1_ab_v1.bundle",
+    "size": 16262
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_2_low2_ab_v1.bundle.manifest",
+    "size": 2421
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_0_ab_v1.bundle",
+    "size": 16734
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_2_low2_ab_v1.bundle",
+    "size": 15421
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_0_ab_v1.bundle",
+    "size": 15834
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_2_low2_ab_v1.bundle.manifest",
+    "size": 2103
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_1_ab_v1.bundle.manifest",
+    "size": 1858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_2_ab_v1.bundle",
+    "size": 17586
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_2_ab_v1.bundle.manifest",
+    "size": 1858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_2_low1_ab_v1.bundle",
+    "size": 16281
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_2_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_1_low2_ab_v1.bundle",
+    "size": 15414
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_2_low1_ab_v1.bundle",
+    "size": 16314
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_1_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_0_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_0_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_0_low2_ab_v1.bundle",
+    "size": 15358
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_0_ab_v1.bundle",
+    "size": 16652
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_1_low2_ab_v1.bundle.manifest",
+    "size": 2105
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_0_low2_ab_v1.bundle",
+    "size": 15049
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_1_low2_ab_v1.bundle",
+    "size": 15378
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_1_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_2_low1_ab_v1.bundle",
+    "size": 16295
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_1_low2_ab_v1.bundle",
+    "size": 15420
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_2_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_0_low2_ab_v1.bundle",
+    "size": 14365
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_1_ab_v1.bundle",
+    "size": 15851
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_1_ab_v1.bundle",
+    "size": 16659
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_0_ab_v1.bundle.manifest",
+    "size": 2010
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_2_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_0_low2_ab_v1.bundle.manifest",
+    "size": 1699
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_1_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_0_low2_ab_v1.bundle",
+    "size": 15305
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_1_ab_v1.bundle",
+    "size": 16658
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_0_ab_v1.bundle.manifest",
+    "size": 1706
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_1_low2_ab_v1.bundle",
+    "size": 15425
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_2_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_1_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_1_low2_ab_v1.bundle",
+    "size": 15170
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_2_low2_ab_v1.bundle.manifest",
+    "size": 2105
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_0_low2_ab_v1.bundle",
+    "size": 15372
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_0_ab_v1.bundle",
+    "size": 16669
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_2_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_0_ab_v1.bundle",
+    "size": 15814
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_0_low2_ab_v1.bundle",
+    "size": 15387
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_0_low1_ab_v1.bundle.manifest",
+    "size": 2095
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_2_ab_v1.bundle",
+    "size": 17581
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_1_low2_ab_v1.bundle",
+    "size": 14937
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_1_low2_ab_v1.bundle.manifest",
+    "size": 2421
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_0_low1_ab_v1.bundle",
+    "size": 15316
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_2_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_2_low2_ab_v1.bundle",
+    "size": 16299
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_2_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_1_low1_ab_v1.bundle",
+    "size": 15406
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_0_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_1_ab_v1.bundle",
+    "size": 15837
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_2_ab_v1.bundle.manifest",
+    "size": 1859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_2_low2_ab_v1.bundle",
+    "size": 16260
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_2_ab_v1.bundle",
+    "size": 17551
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_0_low1_ab_v1.bundle.manifest",
+    "size": 2097
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_0_ab_v1.bundle.manifest",
+    "size": 1859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_2_ab_v1.bundle",
+    "size": 18422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_1_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_1_low1_ab_v1.bundle",
+    "size": 15429
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_1_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_0_low1_ab_v1.bundle",
+    "size": 14385
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_0_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_0_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_2_low2_ab_v1.bundle",
+    "size": 16287
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_0_ab_v1.bundle",
+    "size": 15794
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_0_low1_ab_v1.bundle",
+    "size": 15002
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_1_low1_ab_v1.bundle",
+    "size": 15417
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_1_low1_ab_v1.bundle",
+    "size": 15468
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_1_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_0_ab_v1.bundle.manifest",
+    "size": 1859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_0_ab_v1.bundle",
+    "size": 15842
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_0_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_2_ab_v1.bundle",
+    "size": 18424
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_2_low2_ab_v1.bundle.manifest",
+    "size": 2104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_0_low1_ab_v1.bundle",
+    "size": 15338
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_2_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_0_low1_ab_v1.bundle",
+    "size": 15413
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_1_ab_v1.bundle",
+    "size": 15830
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_1_low1_ab_v1.bundle",
+    "size": 14929
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_1_ab_v1.bundle.manifest",
+    "size": 1859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_1_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_0_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_2_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_1_ab_v1.bundle.manifest",
+    "size": 2010
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_1_low1_ab_v1.bundle",
+    "size": 15148
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_2_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_0_low1_ab_v1.bundle",
+    "size": 15358
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_2_low1_ab_v1.bundle",
+    "size": 15325
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_1_ab_v1.bundle",
+    "size": 15875
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_1_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_0_low2_ab_v1.bundle",
+    "size": 16226
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_0_low2_ab_v1.bundle.manifest",
+    "size": 2104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_1_ab_v1.bundle.manifest",
+    "size": 2011
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_2_ab_v1.bundle.manifest",
+    "size": 1858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_0_low2_ab_v1.bundle",
+    "size": 16207
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_2_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_2_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_0_ab_v1.bundle.manifest",
+    "size": 1859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_2_low1_ab_v1.bundle",
+    "size": 15306
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_0_low2_ab_v1.bundle",
+    "size": 16296
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_2_ab_v1.bundle",
+    "size": 17609
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_2_low1_ab_v1.bundle",
+    "size": 15432
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_0_low1_ab_v1.bundle.manifest",
+    "size": 1695
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_2_ab_v1.bundle",
+    "size": 18478
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_2_1_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_2_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_2_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_0_ab_v1.bundle.manifest",
+    "size": 1858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_1_1_low2_ab_v1.bundle",
+    "size": 16177
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_2_ab_v1.bundle",
+    "size": 17556
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_1_low2_ab_v1.bundle.manifest",
+    "size": 2106
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_2_low1_ab_v1.bundle",
+    "size": 15355
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_0_ab_v1.bundle",
+    "size": 15834
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_1_low2_ab_v1.bundle",
+    "size": 16206
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_0_low2_ab_v1.bundle.manifest",
+    "size": 2422
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_0_1_low1_ab_v1.bundle.manifest",
+    "size": 2098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_1_2_low1_ab_v1.bundle",
+    "size": 15444
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_2_1_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_0_low2_ab_v1.bundle.manifest",
+    "size": 2104
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/1_2_1_low2_ab_v1.bundle",
+    "size": 16276
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_2_low1_ab_v1.bundle.manifest",
+    "size": 2410
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_1_2_ab_v1.bundle.manifest",
+    "size": 2010
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/2_0_2_low1_ab_v1.bundle",
+    "size": 15320
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/baseprefab/0_0_1_ab_v1.bundle.manifest",
+    "size": 1859
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_03_low_ab_v1.bundle.manifest",
+    "size": 2263
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_02_ab_v1.bundle",
+    "size": 590946
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_01_fbx_low_ab_v1.bundle.manifest",
+    "size": 540
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_02_low_ab_v1.bundle.manifest",
+    "size": 2352
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_02_low_ab_v1.bundle",
+    "size": 21096
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_02_fbx_low_ab_v1.bundle.manifest",
+    "size": 685
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_02_ab_v1.bundle.manifest",
+    "size": 3486
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_01_ab_v1.bundle",
+    "size": 2961299
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_03_fbx_low_ab_v1.bundle.manifest",
+    "size": 686
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_03_low_ab_v1.bundle",
+    "size": 25579
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/animation_v1.bundle.manifest",
+    "size": 5049
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/avatar/boy_new/bsd_01_fbx_low_ab_v1.bundle",
+    "size": 253150
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/maskmaterial_v1.bundle",
+    "size": 2637
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/newtable_ab_v1.bundle.manifest",
+    "size": 2740
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/model/sceneshader_v1.bundle.manifest",
+    "size": 468
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/savingbox_ab_v1.bundle",
+    "size": 384480
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/webviewpc_ab_v1.bundle.manifest",
+    "size": 1894
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/xueliubaopai_ab_v1.bundle.manifest",
+    "size": 7949
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fxmahjong_ab_v1.bundle.manifest",
+    "size": 3272
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankmodelicons_ab_v1.bundle",
+    "size": 1482764
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/hotloaddll_ab_v1.bundle.manifest",
+    "size": 557
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/facecheck_ab_v1.bundle",
+    "size": 29907
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradejiangli_ab_v1.bundle.manifest",
+    "size": 4064
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/facecheck_ab_v1.bundle.manifest",
+    "size": 4140
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/update_ab_v1.bundle",
+    "size": 679057
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gacha_ab_v1.bundle.manifest",
+    "size": 4986
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fazaicommon_ab_v1.bundle",
+    "size": 574589
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/video_ab_v1.bundle",
+    "size": 1214280
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fazaisignin_ab_v1.bundle.manifest",
+    "size": 9575
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/hongzhongdesk_ab_v1.bundle.manifest",
+    "size": 2403
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/roomitembg_ab_v1.bundle",
+    "size": 555447
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rechargeview_ab_v1.bundle.manifest",
+    "size": 8304
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgrade_ab_v1.bundle",
+    "size": 3283006
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/congratulation_ab_v1.bundle",
+    "size": 1208853
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/fazaisignin_ab_v1.bundle",
+    "size": 1541440
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newbiesignin_ab_v1.bundle.manifest",
+    "size": 4335
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gangpaidedou_ab_v1.bundle.manifest",
+    "size": 1117
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/eventileaddscore_ab_v1.bundle",
+    "size": 90819
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/email_ab_v1.bundle",
+    "size": 82098
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/screencaptureshare_ab_v1.bundle",
+    "size": 59248
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/storereview_ab_v1.bundle.manifest",
+    "size": 1758
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/talentrevival_ab_v1.bundle.manifest",
+    "size": 6963
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ingametutorialpc_ab_v1.bundle.manifest",
+    "size": 1732
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/match_ab_v1.bundle",
+    "size": 2447110
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/aotdll_ab_v1.bundle.manifest",
+    "size": 6242
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ssrinstitute_ab_v1.bundle",
+    "size": 1865770
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tapd_ab_v1.bundle",
+    "size": 64210
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/nitan_ab_v1.bundle",
+    "size": 33867
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankbg_ab_v1.bundle",
+    "size": 802616
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/deskpro_ab_v1.bundle",
+    "size": 392416
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newrankdefaultdesk_ab_v1.bundle",
+    "size": 906896
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activitydoublevideo_ab_v1.bundle.manifest",
+    "size": 4537
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgrade_ab_v1.bundle.manifest",
+    "size": 25845
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/appletguide_ab_v1.bundle.manifest",
+    "size": 3415
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/minigamehub_ab_v1.bundle",
+    "size": 456109
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/itemexchange_ab_v1.bundle.manifest",
+    "size": 9253
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tapd_ab_v1.bundle.manifest",
+    "size": 6449
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/moneyroll_ab_v1.bundle.manifest",
+    "size": 2994
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gm_ab_v1.bundle",
+    "size": 58371
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/ssrinstitute_ab_v1.bundle.manifest",
+    "size": 17723
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/video_ab_v1.bundle.manifest",
+    "size": 4926
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/dailyrewardtips_ab_v1.bundle",
+    "size": 255304
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/platformprivilege_ab_v1.bundle.manifest",
+    "size": 597
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/chatpc_ab_v1.bundle.manifest",
+    "size": 5418
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichiui_ab_v1.bundle",
+    "size": 5508408
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mainsceneeffect_ab_v1.bundle",
+    "size": 188815
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/chat_ab_v1.bundle.manifest",
+    "size": 13070
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/marquee_ab_v1.bundle",
+    "size": 286007
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankgradejiangli_ab_v1.bundle",
+    "size": 28212
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/activityhappyfund_ab_v1.bundle",
+    "size": 282716
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/friendassist_ab_v1.bundle",
+    "size": 1623507
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichisettingui_ab_v1.bundle",
+    "size": 21208
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newbietutorial_ab_v1.bundle",
+    "size": 1493603
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/dailytreasurebox_ab_v1.bundle",
+    "size": 282605
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichichatanimation_ab_v1.bundle",
+    "size": 3472486
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankbg_ab_v1.bundle.manifest",
+    "size": 1489
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privateupdate_ab_v1.bundle",
+    "size": 13641
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/sharelucky_ab_v1.bundle.manifest",
+    "size": 3950
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/roomitembg_ab_v1.bundle.manifest",
+    "size": 3022
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/mahjong_ab_v1.bundle.manifest",
+    "size": 13358
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankstagenew_ab_v1.bundle",
+    "size": 13423
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/shop_ab_v1.bundle",
+    "size": 1330993
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/chatanimation_ab_v1.bundle.manifest",
+    "size": 22855
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/share_ab_v1.bundle.manifest",
+    "size": 8189
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/pandorabox_ab_v1.bundle.manifest",
+    "size": 1532
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/eventileaddscore_ab_v1.bundle.manifest",
+    "size": 1830
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/universalxueliuentrancepc_ab_v1.bundle",
+    "size": 1332536
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/tutorialpc_ab_v1.bundle",
+    "size": 1443342
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/personalinfo_ab_v1.bundle",
+    "size": 694188
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/beancan_ab_v1.bundle",
+    "size": 490445
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/fonts_ab_v1.bundle.manifest",
+    "size": 2074
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonassets_ab_v1.bundle.manifest",
+    "size": 2759
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/icons_ab_v1.bundle.manifest",
+    "size": 6113
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonmesh_ab_v1.bundle",
+    "size": 648030
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonanimations_ab_v1.bundle.manifest",
+    "size": 2808
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/textmeshprofontspc_ab_v1.bundle",
+    "size": 26027
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/textmeshprofonts_ab_v1.bundle.manifest",
+    "size": 17788
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/icons_ab_v1.bundle",
+    "size": 481479
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonanimations_ab_v1.bundle",
+    "size": 30592
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonuicomponent_ab_v1.bundle",
+    "size": 19234
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonprefabs_ab_v1.bundle.manifest",
+    "size": 4723
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/fonts_ab_v1.bundle",
+    "size": 9485164
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/textmeshprofontspc_ab_v1.bundle.manifest",
+    "size": 613
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/rankcommonicons_ab_v1.bundle.manifest",
+    "size": 8624
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonprefabs_ab_v1.bundle",
+    "size": 514710
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonmesh_ab_v1.bundle.manifest",
+    "size": 2466
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonui_ab_v1.bundle.manifest",
+    "size": 25232
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/textmeshprofonts_ab_v1.bundle",
+    "size": 7495958
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonuicomponent_ab_v1.bundle.manifest",
+    "size": 3164
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonmaterials_ab_v1.bundle.manifest",
+    "size": 1060
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commontextures_ab_v1.bundle",
+    "size": 6046742
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/rankcommonicons_ab_v1.bundle",
+    "size": 441133
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonassets_ab_v1.bundle",
+    "size": 172844
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonui_ab_v1.bundle",
+    "size": 1385004
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commontextures_ab_v1.bundle.manifest",
+    "size": 52588
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/global/commonmaterials_ab_v1.bundle",
+    "size": 630035
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/bootstrap_ab_v1.bundle.manifest",
+    "size": 418
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/dailytreasurebox_ab_v1.bundle.manifest",
+    "size": 3717
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/marquee_ab_v1.bundle.manifest",
+    "size": 1256
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichimahjong_ab_v1.bundle.manifest",
+    "size": 17708
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/newupgrade_ab_v1.bundle",
+    "size": 22921
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankedbattlepass_ab_v1.bundle",
+    "size": 975581
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privateupdate_ab_v1.bundle.manifest",
+    "size": 3172
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankdefaultdesk_ab_v1.bundle",
+    "size": 715827
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/2v2_ab_v1.bundle.manifest",
+    "size": 7148
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/battlepass_ab_v1.bundle.manifest",
+    "size": 14560
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/unlimitedtilesxueliuentrance_ab_v1.bundle.manifest",
+    "size": 4188
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankads_ab_v1.bundle",
+    "size": 261879
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/photomode_ab_v1.bundle",
+    "size": 12916
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichiui_ab_v1.bundle.manifest",
+    "size": 22040
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/luckroulette_ab_v1.bundle.manifest",
+    "size": 10505
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/welfarecenter_ab_v1.bundle.manifest",
+    "size": 8492
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/buybeans_ab_v1.bundle.manifest",
+    "size": 11509
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gamesceneeffects_ab_v1.bundle",
+    "size": 522938
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/privateroomshare_ab_v1.bundle",
+    "size": 307957
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankedbattlepass_ab_v1.bundle.manifest",
+    "size": 16503
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/gamescene_ab_v1.bundle.manifest",
+    "size": 7424
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/benefit_ab_v1.bundle.manifest",
+    "size": 6782
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/section_ab_v1.bundle.manifest",
+    "size": 1521
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/xueliubaopai_ab_v1.bundle",
+    "size": 2653080
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/rankstagenew_ab_v1.bundle.manifest",
+    "size": 496
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/unlimitedtilesxueliuentrance_ab_v1.bundle",
+    "size": 1075864
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/match_ab_v1.bundle.manifest",
+    "size": 18870
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/hotloaddll_ab_v1.bundle",
+    "size": 14494830
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/riichitutorial_ab_v1.bundle",
+    "size": 3356887
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/settingpc_ab_v1.bundle.manifest",
+    "size": 7079
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/InerIOS",
+    "size": 19858
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/InnerBundles.data",
+    "size": 34101
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/md5_config.json",
+    "size": 45813
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/artistworkspace/effect/common_ab_v1.bundle",
+    "size": 5346088
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/artistworkspace/effect/common_ab_v1.bundle.manifest",
+    "size": 62232
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/InerIOS/buildlogtep.json",
+    "size": 2749767
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FriendAssistConfig.data",
+    "size": 86
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LocalReplay/ErRen.data",
+    "size": 8125
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LocalReplay/DaZhong.data",
+    "size": 9965
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LocalReplay/XueLiu.data",
+    "size": 25450
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/WebAnnIDConfig.txt",
+    "size": 5
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LuckyCall.data",
+    "size": 379
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SSRItemConfig.data",
+    "size": 3850
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PlayModeUpgrade.data",
+    "size": 903
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotloadController.json",
+    "size": 1204
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/NanJingSound.data",
+    "size": 830
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ResVersion.txt",
+    "size": 4
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FestivalConfig.data",
+    "size": 519
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SectionInfoOld.data",
+    "size": 533
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LuckyDrawShare.data",
+    "size": 237
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LoadingTipsConfig.data",
+    "size": 1285
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SvrNotifyTips.data",
+    "size": 1092
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FirstTimeShareConfig.data",
+    "size": 88
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PopwindowConfig.data",
+    "size": 1616
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BagTabConfig.data",
+    "size": 620
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RiiChiPrivateRoomConfig.data",
+    "size": 1884
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RandomSpecialEventCfg.json",
+    "size": 22130
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GuangDongSound.data",
+    "size": 789
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/MagicFaceConfig.data",
+    "size": 4914
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SpecialBalanceTipsConfig.data",
+    "size": 611
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/WebAnnConfig.data",
+    "size": 5072
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BetInfoConfig.data",
+    "size": 665
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/EffectBoardConfig.data",
+    "size": 472
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/Share_Hongbao.png",
+    "size": 17048
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LuckyDraw.data",
+    "size": 171
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PCBenchMark/PCBenchMark_3.0.0.data",
+    "size": 30081
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/VedioRecordConfig.data",
+    "size": 230
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GoodsConfig.data",
+    "size": 28781
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FanAniConfig.data",
+    "size": 10922
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/MatchUIConfig.data",
+    "size": 85
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BookGameConfig.data",
+    "size": 1114
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/WuHanSound.data",
+    "size": 1545
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/EntertainmentGameConfig.data",
+    "size": 77
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ItemSkill.data",
+    "size": 3357
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/XXXXX.data",
+    "size": 0
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/AskOrGiveConfig.data",
+    "size": 268
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/WebAni_README.txt",
+    "size": 1657
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/TuringRecommendDiamondShopConfig.data",
+    "size": 327
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SectionInfoV2.data",
+    "size": 676
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/WanFa.data",
+    "size": 407
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RiiChiMatchTips.data",
+    "size": 1383
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7622_01.json",
+    "size": 7433
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ShopRecommendConfig.data",
+    "size": 4758
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ActionToName.data",
+    "size": 30
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SiChuanSound.data",
+    "size": 955
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7622_01.json.data",
+    "size": 2293
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PatchPC.bytes",
+    "size": 36308
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ShopTabConfig_PC.data",
+    "size": 556
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RiichiPersonalLanguageConfig.data",
+    "size": 2179
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ChangShaSound.data",
+    "size": 546
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/NewVersionRelease.json",
+    "size": 190
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RiichiGuideTips.data",
+    "size": 815
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/MJGameBaseConfig.data",
+    "size": 6268
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/TalentHallConfig.data",
+    "size": 630
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PersonalLanguageConfig.data",
+    "size": 9128
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/HostMagicFaceConfig.data",
+    "size": 3623
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FanInfoConfig.data",
+    "size": 23097
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BenefitConfig.data",
+    "size": 783
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RankPopupConfig.data",
+    "size": 701
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/QualityConfig.data",
+    "size": 1948
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/AllJsonConfig.data",
+    "size": 3080
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ItemConfig.data",
+    "size": 82164
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/WishActivityConfig.data",
+    "size": 2120
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/DeskProEventConfig.data",
+    "size": 230
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/OldItemExchangeConfig.data",
+    "size": 2997
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BagTabConfig_PC.data",
+    "size": 522
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ModuleFanConfig.data",
+    "size": 5552
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/AnimatorConfig.data",
+    "size": 3517
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GameRoomTaskUIConfig.data",
+    "size": 1329
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/CommonMusic.data",
+    "size": 2840
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/Agent.data",
+    "size": 524
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ShareTileConfig.data",
+    "size": 113
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PlayerInfoPanelConfig.json",
+    "size": 2
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/json_list.txt",
+    "size": 115
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PrivateRoomLeftBarIconCfg.data",
+    "size": 161
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GuiZhouSound.data",
+    "size": 620
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/MiscConfig.json.data",
+    "size": 1298
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PlayingUIConfig.data",
+    "size": 4569
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7671.json",
+    "size": 16993
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/Help_Taskbg2.jpg",
+    "size": 124905
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FriendSectionInfo.data",
+    "size": 280
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/HundredPlayerMagicFaceConfig.data",
+    "size": 1643
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/AdvertisementConfig.data",
+    "size": 2994
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GameTypeRecommend.data",
+    "size": 437
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotloadController.json.data",
+    "size": 326
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SCMJFanNames.data",
+    "size": 292
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ShopTabConfig.data",
+    "size": 671
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7671.json.data",
+    "size": 3860
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BuyDiamondConfigQQ.data",
+    "size": 509
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SpecialItemConfig.data",
+    "size": 263
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/WHFanConfig.data",
+    "size": 135
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SectionInfo.data",
+    "size": 541
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GDFanConfig.data",
+    "size": 342
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GoldRoomConfig.json",
+    "size": 505
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/Warning.txt",
+    "size": 28
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/logo.png",
+    "size": 72186
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/InPackageJson.data",
+    "size": 1006
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/MarqueeCfg.data",
+    "size": 135
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/TsHotloadConfig.data",
+    "size": 222
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PrivateRoomSettingConfig.data",
+    "size": 5167
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SNSShareConfig.data",
+    "size": 547
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SectionGiftConfig.data",
+    "size": 1391
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ChangShaSecretRoomFanConfig.data",
+    "size": 277
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GameAni.data",
+    "size": 8795
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/OperationCfg.data",
+    "size": 259
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ExchangeGift.data",
+    "size": 2764
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FriendSectionGiftConfig.data",
+    "size": 363
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FanToName.data",
+    "size": 6419
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ItemVersionConfig.data",
+    "size": 8
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RoomConfig.data",
+    "size": 13788
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/TimelineClothConfig.data",
+    "size": 273
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FanLevelConfig.data",
+    "size": 11658
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/Language.data",
+    "size": 7759
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RankAdsConfig.data",
+    "size": 95
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/Puffer.data",
+    "size": 11306
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/AvatarMainPart.data",
+    "size": 232
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LLKSound.data",
+    "size": 143
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/HotLoadJson.data",
+    "size": 26797
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ActivityConfig.data",
+    "size": 6070
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/Advertisement.data",
+    "size": 4560
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GameTypePosition.data",
+    "size": 835
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LeftBarIconCfg.data",
+    "size": 4548
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/SuitConfig.json",
+    "size": 22273
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BuyDiamondConfig.data",
+    "size": 868
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotloadZero.json.data",
+    "size": 19064
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/AvatarPartName.data",
+    "size": 241
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/DaZhongSound.data",
+    "size": 1286
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/BuyBeansConfig.data",
+    "size": 1227
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/ReourcesVersion.data",
+    "size": 60
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RiichiMarqueeConfig.data",
+    "size": 206
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/PlayerInfoPanelConfig.json.data",
+    "size": 20
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GDSecretRoomFanConfig.data",
+    "size": 465
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/RechargeUIConfig.data",
+    "size": 258
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/GameNameConfig.data",
+    "size": 1024
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/DeviceAndQuality.data",
+    "size": 10536
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/FanConfig.data",
+    "size": 474
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/DeskProConfig.data",
+    "size": 4777
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/AccusationConfig.data",
+    "size": 232
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/config/LuckyCallShare.data",
+    "size": 298
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/bai.png",
+    "size": 1173
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/mj_bg.png",
+    "size": 3480
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_7.png",
+    "size": 2153
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_8.png",
+    "size": 1924
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/fa.png",
+    "size": 2120
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_9.png",
+    "size": 2013
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_6.png",
+    "size": 2391
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_4.png",
+    "size": 2070
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_5.png",
+    "size": 2268
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_1.png",
+    "size": 2182
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_8.png",
+    "size": 2545
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_9.png",
+    "size": 2675
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_2.png",
+    "size": 1451
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_3.png",
+    "size": 1846
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_1.png",
+    "size": 1882
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_7.png",
+    "size": 2454
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/bei.png",
+    "size": 1739
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/dong.png",
+    "size": 2020
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_6.png",
+    "size": 2370
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_2.png",
+    "size": 1977
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_4.png",
+    "size": 2163
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_5.png",
+    "size": 2338
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_3.png",
+    "size": 2028
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_8.png",
+    "size": 2263
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_7.png",
+    "size": 1976
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_1.png",
+    "size": 2121
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_6.png",
+    "size": 2039
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tiao_9.png",
+    "size": 2352
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_4.png",
+    "size": 2015
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_2.png",
+    "size": 2017
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/tong_3.png",
+    "size": 2021
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/w_5.png",
+    "size": 2043
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/nan.png",
+    "size": 1916
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/zhong.png",
+    "size": 1773
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/images/xi.png",
+    "size": 1906
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/gbgame.html",
+    "size": 47445
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/wuhan.html",
+    "size": 7376
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/Android Native Audio/playingInGameSA.ogg",
+    "size": 485376
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/TuNianQueJing.dll.bytes",
+    "size": 23040
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/TSGameIOS/TSGame.zip",
+    "size": 89652110
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/TSGameIOS/version.txt",
+    "size": 5
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/hlurl.html",
+    "size": 614
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/UnityServicesProjectConfiguration.json",
+    "size": 440
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/QiTianDaSheng2.dll.bytes",
+    "size": 10752
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/erren.html",
+    "size": 32193
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/HongYunJinLi.dll.bytes",
+    "size": 11264
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/mute.caf",
+    "size": 7298
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/StandaloneWindows/settings.json",
+    "size": 11034
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/StandaloneWindows/AddressablesLink/link.xml",
+    "size": 2960
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/StandaloneWindows/catalog.json",
+    "size": 159389
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/OpenHarmony/settings.json",
+    "size": 3230
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/OpenHarmony/AddressablesLink/link.xml",
+    "size": 3032
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/OpenHarmony/catalog.json",
+    "size": 424119
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/Android/settings.json",
+    "size": 11013
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/Android/AddressablesLink/link.xml",
+    "size": 2960
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/Android/catalog.json",
+    "size": 159107
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/iOS/settings.json",
+    "size": 11005
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/iOS/AddressablesLink/link.xml",
+    "size": 2960
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/aa/iOS/catalog.json",
+    "size": 159003
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/xueliu.html",
+    "size": 12802
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/Bootstrap/UpdatePolicy.json",
+    "size": 297
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/Bootstrap/RemoteDiff.json",
+    "size": 317
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/dzgame.html",
+    "size": 47445
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/ShopBundleData.txt",
+    "size": 61314
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/ask_logo_2.jpg",
+    "size": 91962
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/DeskProDLL/QiTianDaSheng.dll.bytes",
+    "size": 33792
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/DeskProDLL/TuNianQueJing.dll.bytes",
+    "size": 33280
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/DeskProDLL/JinYuManTang.dll.bytes",
+    "size": 31232
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/DeskProDLL/ShiKongQiLv.dll.bytes",
+    "size": 30720
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/DeskProDLL/LongTengShengShi.dll.bytes",
+    "size": 38400
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/ask_logo_3.jpg",
+    "size": 91038
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/ask_logo_1.jpg",
+    "size": 88488
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/adsmj.ini",
+    "size": 0
+  },
+  {
+    "path": "Payload/happymj.app/Data/Raw/ask_logo_0.jpg",
+    "size": 88167
+  }
+]

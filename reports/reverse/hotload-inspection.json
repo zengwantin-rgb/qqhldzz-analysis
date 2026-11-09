@@ -1,0 +1,187 @@
+{
+  "unitypy_version": "1.25.4",
+  "results": [
+    {
+      "path": "Payload/happymj.app/Data/Raw/HongYunJinLi2.dll.bytes",
+      "size": 10752,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "02dfebe3a49e3e19a899915cef9f3698898f9081c25f4937a2e54ab4b9e6a3b2",
+      "managed_candidate": "report/assets/assemblies/02dfebe3a49e_HongYunJinLi2.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/QiTianDaSheng.dll.bytes",
+      "size": 33792,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "4d839e8ca90989b0dec64d940e0d1293e34853e4f523b4911b3a68fd12ea2942",
+      "managed_candidate": "report/assets/assemblies/4d839e8ca909_QiTianDaSheng.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/bootstrap_ab_v1.bundle",
+      "size": 28308,
+      "head_hex": "556e6974794d4a0000000008352e782e7800323032312e332e31356631000000",
+      "sha256": "9e8df3920902aa6340f5193db18a7e1793d285d2e909e057d4e7b1043c7439b1",
+      "normalization": "UnityMJ signature replaced with UnityFS for parser compatibility",
+      "parse_error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 3"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/aotdll_ab_v1.bundle",
+      "size": 10562449,
+      "head_hex": "556e6974794d4a0000000008352e782e7800323032312e332e31356631000000",
+      "sha256": "74dc0e61ef7a6d219d689fe92b778e8d4e1da08215bc9cfdf2e168685712757b",
+      "normalization": "UnityMJ signature replaced with UnityFS for parser compatibility",
+      "parse_error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 16"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/InerIOS/rawresources_new/hotloaddll_ab_v1.bundle",
+      "size": 14494830,
+      "head_hex": "556e6974794d4a0000000008352e782e7800323032312e332e31356631000000",
+      "sha256": "93c170b01a8506bebba986539762e66a46598c3c39bc1364feac916c975cd9ed",
+      "normalization": "UnityMJ signature replaced with UnityFS for parser compatibility",
+      "parse_error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 9"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotloadController.json",
+      "size": 1204,
+      "head_hex": "7b0a20202255495048435f56657273696f6e73223a207b0a2020202022766572",
+      "sha256": "0d3d496693bc67860d12dc59532e94f3a8aed0298839347b8a82bdbbc8631b65",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7622_01.json",
+      "size": 7433,
+      "head_hex": "7b0a0922507566666572416e64726f69645f5549486f746c6f6164223a207b0a",
+      "sha256": "fde85ab996cd75fe16704b31316dbff5e38eed5cd3d5ba41081e6c13711fab8a",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7622_01.json.data",
+      "size": 2293,
+      "head_hex": "5d00080000ac1e000000000000003d833d4050182874a5294971dd3059c0f450",
+      "sha256": "14175c8112e31f3b768bd617a198f544c95e3ed9505ca11dd7669d6a304be9ea",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7671.json",
+      "size": 16993,
+      "head_hex": "7b0a20202020224163746976697479526573436865636b486f744c6f6164223a",
+      "sha256": "3f32bb6d03d83176de42be76af9a4953d86910c2cde5a2332a7f54e917b0cf80",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotloadController.json.data",
+      "size": 326,
+      "head_hex": "5d000800002c0c000000000000003d833d41ed00cc7831212e42a5cc76a7c8b4",
+      "sha256": "bf917a14a29475f2ea4a66818865e83d15876ab36c381971422eca1bccff9040",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotload7671.json.data",
+      "size": 3860,
+      "head_hex": "5d00080000c35a000000000000003d8280191b99810a94bba67fcce26b2693b2",
+      "sha256": "c373b81f16c46598acba4d1a0b0d60a03debd40f215a334479505f670cd60c94",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/TsHotloadConfig.data",
+      "size": 222,
+      "head_hex": "789cd58f414ec3301045c9ae8aa0ad2c21500e61b75bb6149040ac5ac4d29a3a",
+      "sha256": "eb69c4023145ba7c7d906bbd33b3cefeeea4a5b7b183c8b6a067ef9a64081d07",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/HotLoadJson.data",
+      "size": 26797,
+      "head_hex": "5d00080000d343010000000000003d833d405017fe9c8f7be334a04a35e7a2ac",
+      "sha256": "3d52dbd8ca1a96b3b6e90e5f780695598f41b71acff69c6538bf29561e6dca3b",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/config/UIPufferHotloadZero.json.data",
+      "size": 19064,
+      "head_hex": "5d000800000306020000000000003d8280191b99810a94bba67fcce26b2693b2",
+      "sha256": "ad062242f11fb5edf83cd292e8ea7df869f969dbc9cfb2ac234da621b697a465",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/TuNianQueJing.dll.bytes",
+      "size": 23040,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "0afaba7efa35340247053f1136bc47314d69eea6b02e55a3616d40421ffc22f5",
+      "managed_candidate": "report/assets/assemblies/0afaba7efa35_TuNianQueJing.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/QiTianDaSheng2.dll.bytes",
+      "size": 10752,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "dfecfe70effdfe494be48c0b2bcb04d4e6d862d8cfa3c76b77c52ae64576eb2b",
+      "managed_candidate": "report/assets/assemblies/dfecfe70effd_QiTianDaSheng2.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/HongYunJinLi.dll.bytes",
+      "size": 11264,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "259671189a8cededf5be75231748a8d36faa8a16824a1d2a64da6510a21c2023",
+      "managed_candidate": "report/assets/assemblies/259671189a8c_HongYunJinLi.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/Bootstrap/UpdatePolicy.json",
+      "size": 297,
+      "head_hex": "7b0a20202020226973466f726365557064617465223a2066616c73652c0a2020",
+      "sha256": "ebe0f0ef705192cc0632c7ae6df307c246809a45895db11d0fe2ac7353e97a47",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/Bootstrap/RemoteDiff.json",
+      "size": 317,
+      "head_hex": "7b0a20202020226973466f726365557064617465223a2066616c73652c0a2020",
+      "sha256": "295086d2125c375c6f40362a2d3b3dbbdb452ccbb9432f48a36d53b3d2869e84",
+      "objects": {},
+      "text_assets": []
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/QiTianDaSheng.dll.bytes",
+      "size": 33792,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "8bbc9328a68a87818f9214148d7bd5e300841629ca15bd913b55dddfdc708423",
+      "managed_candidate": "report/assets/assemblies/8bbc9328a68a_QiTianDaSheng.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/TuNianQueJing.dll.bytes",
+      "size": 33280,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "9ecf5424e34314c11104b70c8c43f6cf60b539f9227ecf18d2f206f1f76238c7",
+      "managed_candidate": "report/assets/assemblies/9ecf5424e343_TuNianQueJing.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/JinYuManTang.dll.bytes",
+      "size": 31232,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "1ff5a63dd0d518c820b98fb6da40facbbe54f41e5cd1937a37557164c388cc87",
+      "managed_candidate": "report/assets/assemblies/1ff5a63dd0d5_JinYuManTang.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/ShiKongQiLv.dll.bytes",
+      "size": 30720,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "563f865f2e286aca97aaf68309011ef196d9673cf657da3575ff36b78afc9584",
+      "managed_candidate": "report/assets/assemblies/563f865f2e28_ShiKongQiLv.dll"
+    },
+    {
+      "path": "Payload/happymj.app/Data/Raw/DeskProDLL/LongTengShengShi.dll.bytes",
+      "size": 38400,
+      "head_hex": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000",
+      "sha256": "28927a26c062ca97a4a99035b04280dab45c0c092b248ecda6bfa526526eb8a1",
+      "managed_candidate": "report/assets/assemblies/28927a26c062_LongTengShengShi.dll"
+    }
+  ]
+}
