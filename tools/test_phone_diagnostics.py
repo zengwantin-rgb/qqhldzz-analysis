@@ -27,6 +27,15 @@ class PhoneDiagnosticsTests(unittest.TestCase):
             self.assertFalse(result['reported_diagnostics'][0]['reported_runtime_effect_verified'])
             self.assertNotIn('fixture',json.dumps(result))
 
+    def test_objective_c_numeric_booleans(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'a.zip';fixture(path,{},[{'preference_present':1,'restore_available':1,'backup_file_present':0,'runtime_effect_verified':2}])
+            row=inspect(path)['reported_diagnostics'][0]
+            self.assertTrue(row['reported_preference_present'])
+            self.assertTrue(row['reported_restore_available'])
+            self.assertFalse(row['reported_backup_file_present'])
+            self.assertIsNone(row['reported_runtime_effect_verified'])
+
     def test_absent_diagnostic_is_unknown(self):
         with tempfile.TemporaryDirectory() as temp:
             path=Path(temp)/'a.zip';fixture(path,{'Documents/Log398/a.log':b'old'},[])

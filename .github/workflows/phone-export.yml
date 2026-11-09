@@ -26,6 +26,8 @@ jobs:
       - name: Test and inspect with restricted output
         run: |
           python3 -m unittest discover -s tools -p test_phone_diagnostics.py
+          python3 -m unittest discover -s tools -p test_round_anomalies.py
+          python3 tools/inspect_round_anomalies.py
           python3 tools/audit_export_coverage.py > private-input/coverage-output.txt
           python3 tools/inspect_phone_diagnostics.py
           python3 tools/inspect_device_logs.py > private-input/log-output.txt

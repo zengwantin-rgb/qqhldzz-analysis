@@ -9,7 +9,10 @@ from audit_export_coverage import category, file_facts
 
 
 def boolean(value):
-    return value if type(value) is bool else None
+    if type(value) is bool:
+        return value
+    # Objective-C boxes comparison expressions as int, so JSON may contain 0/1.
+    return bool(value) if type(value) is int and value in (0, 1) else None
 
 
 def inspect(current, previous=None):

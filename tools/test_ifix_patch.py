@@ -78,5 +78,20 @@ class IfixPatchTests(unittest.TestCase):
         self.assertNotIn('private-', json.dumps(result))
 
 
+class MissingArchivePatchTests(unittest.TestCase):
+    def test_missing_patch_keeps_runtime_audit(self):
+        import tempfile, zipfile, json
+        from pathlib import Path
+        from inspect_ifix_patch import inspect_archive
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'empty.zip'
+            with zipfile.ZipFile(path,'w') as archive:
+                archive.writestr('manifest.json',json.dumps({'app_version':{'build':'8.19.112'}}))
+                archive.writestr('a.log','ordinary fixture')
+            result=inspect_archive(path,0,{})
+            self.assertEqual(result['status'],'device_patch_not_exported')
+            self.assertEqual(len(result['runtime_readiness']),1)
+
+
 if __name__ == '__main__':
     unittest.main()

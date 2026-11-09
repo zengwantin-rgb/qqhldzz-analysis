@@ -226,6 +226,32 @@ def readiness(lines, versions):
     return {'counts': counts, 'events': events, 'event_samples_truncated': sum(counts.values()) > len(events)}
 
 
+def inspect_archive(path, combined_magic, catalog):
+    with zipfile.ZipFile(path) as archive:
+        manifest = json.loads(archive.read('manifest.json'))
+        versions = {v for v in manifest.get('app_version', {}).values()
+                    if isinstance(v, str) and re.fullmatch(r'\d+(?:\.\d+){0,3}', v) and len(v) <= 32}
+        names = [n for n in archive.namelist() if pathlib.PurePosixPath(n).name == 'PatchIOS.bytes']
+        runtime = []
+        for entry, info in enumerate((i for i in archive.infolist() if not i.is_dir() and i.filename != 'manifest.json'), 1):
+            if not info.filename.endswith('.log'):
+                continue
+            raw = archive.read(info)
+            if b'\0' not in raw:
+                runtime.append({'entry': entry, **readiness(raw.decode('utf-8', errors='replace').splitlines(), versions)})
+        if not names:
+            result = {'status': 'device_patch_not_exported', 'patch_match_count': 0}
+        elif len(names) != 1:
+            result = {'status': 'ambiguous_device_patches', 'patch_match_count': len(names)}
+        else:
+            try:
+                result = {'status': 'parsed', **inspect_combined(archive.read(names[0]), combined_magic, catalog, versions)}
+            except (ValueError, UnicodeError, struct.error) as error:
+                result = {'status': 'not_fully_parsed', 'error_category': str(error) if isinstance(error, ValueError) and not isinstance(error, UnicodeError) else type(error).__name__}
+        result['runtime_readiness'] = runtime
+        return result
+
+
 if __name__ == '__main__':
     out = pathlib.Path('report/device')
     metadata = json.loads((out / 'patch-format-metadata.json').read_text())
@@ -233,29 +259,11 @@ if __name__ == '__main__':
     if 'combined_magic' not in metadata:
         result = {'status': 'format_metadata_unavailable'}
     else:
-        with zipfile.ZipFile('private-input/device.zip') as archive:
-            manifest = json.loads(archive.read('manifest.json'))
-            versions = {v for v in manifest.get('app_version', {}).values()
-                        if isinstance(v, str) and re.fullmatch(r'\d+(?:\.\d+){0,3}', v) and len(v) <= 32}
-            names = [n for n in archive.namelist() if pathlib.PurePosixPath(n).name == 'PatchIOS.bytes']
-            if len(names) != 1:
-                raise ValueError('Expected exactly one device patch')
-            data = archive.read(names[0])
-            runtime = []
-            for entry, info in enumerate((i for i in archive.infolist() if not i.is_dir() and i.filename != 'manifest.json'), 1):
-                if not info.filename.endswith('.log'):
-                    continue
-                raw = archive.read(info)
-                if b'\0' not in raw:
-                    runtime.append({'entry': entry, **readiness(raw.decode('utf-8', errors='replace').splitlines(), versions)})
-        try:
-            result = {'status': 'parsed', **inspect_combined(data, int(metadata['combined_magic']), catalog, versions)}
-        except (ValueError, UnicodeError, struct.error) as error:
-            result = {'status': 'not_fully_parsed', 'error_category': str(error) if isinstance(error, ValueError) and not isinstance(error, UnicodeError) else type(error).__name__}
-        result['runtime_readiness'] = runtime
+        result = inspect_archive('private-input/device.zip', int(metadata['combined_magic']), catalog)
     result['limits'] = ['Patch bytes are read as serialized data; no patch, VM instruction, reflection binding or game code is executed.',
                         'Successful structural parsing does not prove that this patch was applied in the recorded session.',
                         'Readiness markers and matching app-version strings do not identify the exact loaded patch digest.',
+                        'A missing exported disk patch does not establish that no patch was active in memory.',
                         'Only resolved source type names and restricted method metadata are emitted; intern strings and raw patch data are omitted.']
     (out / 'device-patch-summary.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
