@@ -1,8 +1,8 @@
 # 麻将日志导出（TrollStore）
 
-[旧版 1.0 IPA](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/log-reader-v1/MJLogReader.ipa) · [1.0 产物核验](https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42639002456)
+[下载 1.1 IPA](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/log-reader-v1.1/MJLogReader.ipa) · [1.1 构建与验证](https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42661993471) · [校验记录](../../reports/mobile/build-validation-v1.1.json)
 
-1.1 新增“完整选择”、配置/补丁优先选择、未导出原因及完整性清单；新版构建验证完成后提供下载。
+1.1 新增“完整选择”、配置/补丁优先选择、未导出原因及完整性清单。构建、签名、选择/覆盖测试、独立 ZIP 校验及模拟器启动检查均已通过。
 
 适用于已有 TrollStore 的设备，构建目标为 ARM64、iOS 15 及以上；用户目标设备为 iPhone 15 Pro Max / iOS 17.0。
 
@@ -20,6 +20,8 @@
 
 权限根据 [TrollStore 官方文档](https://github.com/opa334/TrollStore#unsandboxing)配置为 no-sandbox、platform-application 和 AppDataContainers。未使用官方列为禁用的调试/动态代码签名 entitlement，没有 root helper。
 
-GitHub Actions 编译 IPA，验证签名和 entitlements，使用临时测试目录检查目标容器隔离、符号链接过滤与只读扫描，并由 Python 独立验证 ZIP 的 CRC 和 Unicode 文件名。另有模拟器编译和启动检查。模拟器测试不能证明 TrollStore 真机权限有效；iOS 17.0 真机上的跨容器读取与实际日志内容仍需用户安装后验证。
+GitHub Actions 编译 IPA，验证签名和 entitlements，使用临时测试目录检查目标容器隔离、符号链接过滤与只读扫描，并由 Python 独立验证 ZIP 的 CRC 和 Unicode 文件名。另有模拟器编译和启动检查；1.1 的新增选择与覆盖状态流程仍需在用户手机上确认。
+
+1.0 已在用户的 iOS 17.0 设备成功导出日志；1.1 的新增完整选择流程尚未在该设备运行。1.1 对应源码提交 bcb1990947be4cd7c1adcf7b261a38bdc137a3ad，发布 IPA 的 SHA-256 为 `36dcd1c709fc2284d60307d5de775597aa9d3a3a5676faca5342d95ff44c168b`。完整 16 文件导出及旧版 5/16 漏选场景均有测试覆盖。
 
 完整源码和工作流保存在仓库中。请不要把“编译通过、能导出文件”理解为“已确认普通对局下发对手暗牌”。

@@ -1,0 +1,19 @@
+{
+  "source_run": 42661993471,
+  "source_commit": "bcb1990947be4cd7c1adcf7b261a38bdc137a3ad",
+  "source_workflow_conclusion": "success",
+  "successful_checks": [
+    "Test scanner isolation and ZIP export on GitHub",
+    "Compile and sign device IPA",
+    "Build and launch simulator smoke test",
+    "Verify packaging and expected entitlements"
+  ],
+  "ipa_sha256": "36dcd1c709fc2284d60307d5de775597aa9d3a3a5676faca5342d95ff44c168b",
+  "version": "1.1",
+  "build": "2",
+  "minimum_ios": "15.0",
+  "build_host": "macos-15-intel",
+  "complete_export_fixture_files": 16,
+  "target_device_tested": false,
+  "note": "Device compilation, signing, fixture ZIP checks and simulator launch passed on GitHub. The 1.1 selection flow has not yet been exercised on the user device."
+}
