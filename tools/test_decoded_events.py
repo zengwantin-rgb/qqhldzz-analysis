@@ -1,6 +1,6 @@
 import json,tempfile,unittest,zlib
 from pathlib import Path
-from inspect_decoded_events import inspect,embedded,proto_fields,lz4_block
+from inspect_decoded_events import inspect,embedded,proto_fields,lz4_block,advice_schema
 class DecodedEventTests(unittest.TestCase):
     def test_counts_phase_and_no_private_values(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -13,7 +13,7 @@ class DecodedEventTests(unittest.TestCase):
     def test_bounded_embedded_advice_buffer_and_wire_lengths(self):
         raw=bytes([10,2,8,1]);compressed=zlib.compress(raw)
         data={'nGameBuf':len(compressed),'iOriginSize':len(raw),'szGameBuf':[b if b<128 else b-256 for b in compressed]}
-        result=embedded(data);self.assertEqual(result['top_level_field_counts'],{'1':1});self.assertTrue(result['only_known_advice_field'])
+        result=embedded(data);self.assertEqual(result['top_level_field_counts'],{'1':1});self.assertTrue(result['only_known_advice_field']);self.assertEqual(result['advice_schema']['unknown_field_count'],0)
         data['iOriginSize']=4*1024*1024+1;self.assertEqual(embedded(data)['status'],'invalid_buffer_shape')
         with self.assertRaises(ValueError):proto_fields(bytes([10,100]))
 
@@ -24,6 +24,9 @@ class DecodedEventTests(unittest.TestCase):
         with self.assertRaises(ValueError):lz4_block(bytes([80])+b'hello',4)
         raw=bytes([10,2,8,1]);result=embedded({'nGameBuf':5,'iOriginSize':4,'szGameBuf':[64]+list(raw)})
         self.assertEqual(result['compression'],'lz4_block');self.assertTrue(result['only_known_advice_field'])
+
+    def test_unknown_nested_advice_tags_are_reported(self):
+        result=advice_schema(bytes([10,2,80,1]));self.assertEqual(result['unknown_field_count'],1);self.assertTrue(result['parsed'])
 
     def test_invalid_hand_ownership_not_reported(self):
         with tempfile.TemporaryDirectory() as temp:

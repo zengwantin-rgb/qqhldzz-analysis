@@ -1,7 +1,7 @@
 """Publish only counters from privately decoded protocol objects, never tile values."""
 import collections,json,pathlib,re,zlib
 
-def proto_fields(raw):
+def proto_fields(raw,_visit=None):
     index=0;counts=collections.Counter()
     def varint():
         nonlocal index
@@ -12,18 +12,38 @@ def proto_fields(raw):
             if not byte&128:return value
         raise ValueError()
     while index<len(raw):
-        key=varint();tag,wire=key>>3,key&7
+        key=varint();tag,wire=key>>3,key&7;child=None
         if not 0<tag<536870912:raise ValueError()
         counts[str(tag)]+=1
         if sum(counts.values())>100000:raise ValueError()
         if wire==0:varint()
         elif wire==1:index+=8
         elif wire==2:
-            length=varint();index+=length
+            length=varint();child=raw[index:index+length];index+=length
         elif wire==5:index+=4
         else:raise ValueError()
         if index>len(raw):raise ValueError()
+        if _visit is not None:_visit(tag,wire,child)
     return dict(counts)
+
+def advice_schema(raw):
+    scalar=(None,0)
+    schemas={'unit':{1:('advice',2)},'advice':{1:scalar,2:scalar,3:('ting',2)},'ting':{1:('discard',2)},'discard':{1:scalar,2:('tile',2),3:scalar},'tile':{1:scalar,2:scalar,3:scalar,4:scalar,5:('fan',2),6:scalar,7:scalar},'fan':{i:scalar for i in range(1,6)}}
+    counts=collections.Counter();unknown=0;mismatch=0
+    def walk(data,name):
+        nonlocal unknown,mismatch
+        counts[name]+=1
+        if sum(counts.values())>100000:raise ValueError()
+        def visit(tag,wire,child):
+            nonlocal unknown,mismatch
+            expected=schemas[name].get(tag)
+            if expected is None:unknown+=1;return
+            if wire!=expected[1]:mismatch+=1;return
+            if expected[0] is not None:walk(child,expected[0])
+        proto_fields(data,visit)
+    try:walk(raw,'unit');valid=True
+    except ValueError:valid=False
+    return {'parsed':valid,'message_counts':dict(counts),'unknown_field_count':unknown,'wire_mismatch_count':mismatch}
 
 def lz4_block(raw,expected):
     if not 0<expected<=4*1024*1024:raise ValueError()
@@ -60,11 +80,11 @@ def embedded(value):
             stream=zlib.decompressobj(window);clear=stream.decompress(raw,4*1024*1024+1)
             if len(clear)!=original or not stream.eof or stream.unconsumed_tail or stream.unused_data:continue
             tags=proto_fields(clear)
-            return {'status':'decompressed_proto_fields','compression':{15:'zlib',-15:'raw_deflate',31:'gzip'}[window],'compressed_bytes':count,'decoded_bytes':len(clear),'top_level_field_counts':tags,'only_known_advice_field':set(tags)=={'1'}}
+            return {'status':'decompressed_proto_fields','compression':{15:'zlib',-15:'raw_deflate',31:'gzip'}[window],'compressed_bytes':count,'decoded_bytes':len(clear),'top_level_field_counts':tags,'only_known_advice_field':set(tags)=={'1'},'advice_schema':advice_schema(clear)}
         except (ValueError,zlib.error):continue
     try:
         clear=lz4_block(raw,original);tags=proto_fields(clear)
-        return {'status':'decompressed_proto_fields','compression':'lz4_block','compressed_bytes':count,'decoded_bytes':len(clear),'top_level_field_counts':tags,'only_known_advice_field':set(tags)=={'1'}}
+        return {'status':'decompressed_proto_fields','compression':'lz4_block','compressed_bytes':count,'decoded_bytes':len(clear),'top_level_field_counts':tags,'only_known_advice_field':set(tags)=={'1'},'advice_schema':advice_schema(clear)}
     except ValueError:pass
     return {'status':'not_decoded','compressed_bytes':count,'reported_origin_bytes':original}
 
