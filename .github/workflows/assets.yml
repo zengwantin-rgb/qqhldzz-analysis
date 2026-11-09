@@ -1,0 +1,27 @@
+name: Inspect hotload assets
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download input package
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download inputs-v1 --repo zwthys-cyber/qqhldzz-analysis --pattern '*Decrypted.ipa' --dir inputs
+      - name: Install asset parser
+        run: python3 -m pip install UnityPy
+      - name: Inspect packaged hotload assemblies
+        run: |
+          python3 -m py_compile tools/inspect_assets.py
+          python3 tools/inspect_assets.py
+          python3 -m pip freeze > report/assets/parser-environment.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hotload-assets-report
+          path: report/assets/

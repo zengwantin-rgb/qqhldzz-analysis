@@ -30,6 +30,7 @@ jobs:
         continue-on-error: true
         run: |
           mkdir -p report/reverse/dumper
+          sed -i 's/"RequireAnyKey": true/"RequireAnyKey": false/' dumper/config.json
           set -o pipefail
           timeout 300s dotnet dumper/Il2CppDumper.dll inputs/UnityFramework inputs/global-metadata.dat report/reverse/dumper < /dev/null 2>&1 | tee report/reverse/dumper.log
       - name: Upload reverse inspection results
