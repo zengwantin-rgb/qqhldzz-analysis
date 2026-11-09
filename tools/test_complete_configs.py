@@ -30,6 +30,8 @@ class CompleteConfigTests(unittest.TestCase):
         self.assertEqual(result['added_row_ids'], [2])
         self.assertEqual(result['removed_row_ids'], [1])
         self.assertEqual(result['changed_numeric_config_row_ids'], [149])
+        self.assertEqual(result['section_comparisons'][0]['device_entries'], 2)
+        self.assertFalse(result['section_comparisons'][0]['serialized_entries_identical'])
         self.assertEqual(result['target_game_rows'][0]['named_config_values']['afterTingShowAllHandTile'], 1)
 
     def test_trailing_data_and_duplicate_ids_rejected(self):

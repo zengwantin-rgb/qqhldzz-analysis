@@ -77,6 +77,16 @@ def base_config_rows(raw):
 
 def compare_base_configs(raw, original, source):
     device, bundled = base_config_rows(raw), base_config_rows(original)
+    device_sections, bundled_sections = {}, {}
+    for blob, sections in ((raw, device_sections), (original, bundled_sections)):
+        for number, kind, value in wire_fields(inflate(blob)):
+            if kind == 2:
+                sections.setdefault(number, []).append(value)
+    section_comparisons = [{'field_number': number,
+                            'device_entries': len(device_sections.get(number, [])),
+                            'bundled_entries': len(bundled_sections.get(number, [])),
+                            'serialized_entries_identical': device_sections.get(number, []) == bundled_sections.get(number, [])}
+                           for number in sorted(device_sections.keys() | bundled_sections.keys())]
     rows = []
     for label, data in [('device', device), ('bundled', bundled)]:
         row = data.get(149)
@@ -86,6 +96,7 @@ def compare_base_configs(raw, original, source):
                      'named_config_values': named_values(values, source) if values is not None else {}})
     common = device.keys() & bundled.keys()
     return {'device_sheet1_rows': len(device), 'bundled_sheet1_rows': len(bundled),
+            'section_comparisons': section_comparisons,
             'added_row_ids': sorted(device.keys() - bundled.keys()), 'removed_row_ids': sorted(bundled.keys() - device.keys()),
             'changed_serialized_row_ids': sorted(i for i in common if device[i]['row_sha256'] != bundled[i]['row_sha256']),
             'changed_numeric_config_row_ids': sorted(i for i in common if device[i]['values'] != bundled[i]['values']),
