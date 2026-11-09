@@ -2,7 +2,7 @@ name: Build phone log reader
 on:
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
   build:
     runs-on: macos-26
@@ -61,8 +61,3 @@ jobs:
           path: |
             build/MJLogReader.ipa
             build/checks/
-      - name: Publish tested build for phone download
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release create log-reader-v1 build/MJLogReader.ipa build/checks/SHA256SUMS.txt --target "$GITHUB_SHA" --title 'Phone-only local log export tool v1' --notes-file mobile/LogReader/README.md

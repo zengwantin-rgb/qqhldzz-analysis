@@ -1,8 +1,8 @@
-name: Verify and publish completed phone build
+name: Verify completed phone build
 on:
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
   actions: read
 jobs:
   publish:
@@ -46,12 +46,6 @@ jobs:
           (root/'checks/source-commit.txt').write_text(run['head_sha'])
           print(json.dumps(result,indent=2))
           PY
-      - name: Publish verified IPA
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          source_sha=$(cat verified-build/checks/source-commit.txt)
-          gh release create log-reader-v1 verified-build/MJLogReader.ipa verified-build/checks/SHA256SUMS.txt verified-build/checks/validation.json verified-build/checks/simulator.png --target "$source_sha" --title '麻将日志导出 v1（TrollStore）' --notes-file mobile/LogReader/README.md
       - uses: actions/upload-artifact@v4
         with:
           name: phone-build-validation
