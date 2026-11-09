@@ -1,0 +1,64 @@
+name: Validate diagnostic device package
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  device:
+    runs-on: macos-15-intel
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test scoped settings and export transactions
+        run: |
+          mkdir -p build/checks
+          clang -fobjc-arc -framework Foundation -lz mobile/LogReader/Scanner.m mobile/LogReader/ScannerTests.m -o build/scanner-tests
+          build/scanner-tests build/checks/export-test.zip build/checks/complete-export-test.zip
+          clang -fobjc-arc -framework Foundation -lz mobile/LogReader/Scanner.m mobile/LogReader/TraceControl.m mobile/LogReader/TraceControlTests.m -o build/trace-control-tests
+          build/trace-control-tests
+      - name: Compile and sign device package
+        run: bash mobile/LogReader/build.sh
+      - name: Verify package, permissions and independent ZIP checks
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,os,pathlib,plistlib,zipfile
+          root=pathlib.Path('build')
+          for filename in ['export-test.zip','complete-export-test.zip']:
+              with zipfile.ZipFile(root/'checks'/filename) as z:
+                  assert z.testzip() is None
+          with zipfile.ZipFile(root/'checks/complete-export-test.zip') as z:
+              manifest=json.loads(z.read('manifest.json'))
+              assert len(manifest['exported_files'])==16
+              assert manifest['coverage']['status']=='complete'
+              assert len(z.namelist())==17
+              assert all(z.read(n)==b'ordinary match diagnostic fixture' for n in manifest['exported_files'])
+          with zipfile.ZipFile(root/'MJLogReader.ipa') as z:
+              assert z.testzip() is None
+              p=plistlib.loads(z.read('Payload/MJLogReader.app/Info.plist'))
+              assert p['CFBundleIdentifier']=='org.qqhldzz.MJLogReader'
+              assert p['CFBundleShortVersionString']=='1.2' and p['CFBundleVersion']=='3'
+              assert p['MinimumOSVersion']=='15.0'
+          entitlements=plistlib.loads((root/'checks/device-entitlements.plist').read_bytes())
+          expected=plistlib.loads(pathlib.Path('mobile/LogReader/Entitlements.plist').read_bytes())
+          assert entitlements==expected
+          assert not any(k in entitlements for k in ['dynamic-codesigning','com.apple.private.cs.debugger','com.apple.private.skip-library-validation'])
+          assert 'arm64' in (root/'checks/architecture.txt').read_text()
+          digest=hashlib.sha256((root/'MJLogReader.ipa').read_bytes()).hexdigest()
+          assert digest==(root/'checks/SHA256SUMS.txt').read_text().split()[0]
+          result={'source_commit':os.environ['GITHUB_SHA'],'source_run':int(os.environ['GITHUB_RUN_ID']),
+              'version':'1.2','build':'3','ipa_sha256':digest,'settings_transaction_tests_passed':True,
+              'export_tests_and_independent_zip_crc_passed':True,'arm64_device_build_and_adhoc_signature_verified':True,
+              'entitlements_match_source':True,'simulator_launch_verified_by_this_workflow':False,
+              'device_trace_preference_write_verified':False,'runtime_trace_recording_verified':False,
+              'live_opponent_display_implemented':False,
+              'limits':['This workflow validates the device package and scoped settings fixtures. Simulator launch is tracked separately.',
+                        'Actual TrollStore preference mutation, preferences-daemon caching and fresh trace creation require device validation.']}
+          (root/'checks/validation-v1.2.json').write_text(json.dumps(result,indent=2)+'\n')
+          print(json.dumps(result,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phone-diagnostic-device
+          path: |
+            build/MJLogReader.ipa
+            build/checks/
