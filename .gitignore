@@ -19,3 +19,5 @@ remote-device-round/
 remote-device-final/
 remote-protocol-initial/
 remote-protocol-final/
+remote-export-audit/
+remote-export-details/

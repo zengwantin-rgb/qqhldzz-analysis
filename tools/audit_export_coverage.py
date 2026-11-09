@@ -12,6 +12,18 @@ FIELDS = (
     'tileInfos', 'iTileFace', 'tileFace', 'stHandTiles', 'nHandTilesNum',
     'ExtraTiles', 'ProtoIntelligenceAdvice', 'IntelligenceAdviceTing',
 )
+PATH_HINTS = ('replay', 'record', 'tracebinlogs', 'crash', 'bugly',
+              'msdk', 'gcloud', 'tsdk', 'unity', 'pandora', 'log398')
+EXTENSIONS = {'log', 'xlog', 'clog', 'replay', 'trace', 'bin', 'data',
+              'xml', 'json', 'txt', 'dat', 'bytes', 'patch', 'dll'}
+
+
+def path_facts(name):
+    lower = name.lower()
+    extension = pathlib.PurePosixPath(lower).suffix.lstrip('.')
+    return {'category': category(name),
+            'extension': extension if extension in EXTENSIONS else 'other',
+            'path_hints': [hint for hint in PATH_HINTS if hint in lower]}
 
 
 def category(name):
@@ -65,6 +77,10 @@ def file_facts(raw):
                     pass
         except UnicodeDecodeError:
             facts['format'] = 'non_utf8_binary'
+            decoded = raw.decode('utf-8', errors='replace')
+            facts['utf8_replacement_characters'] = decoded.count('\ufffd')
+            facts['line_count_with_replacement'] = len(decoded.splitlines())
+    facts['zero_byte_count'] = raw.count(b'\x00')
     # Byte searches cover all formats without exposing matched values.
     lower = raw.lower()
     facts['known_field_mentions'] = {
@@ -92,7 +108,7 @@ def audit(path):
             if entry.file_size > LIMIT:
                 rows.append({'entry': index, 'category': category(entry.filename), 'skipped': 'size_limit'})
                 continue
-            rows.append({'entry': index, 'category': category(entry.filename), **file_facts(archive.read(entry))})
+            rows.append({'entry': index, **path_facts(entry.filename), **file_facts(archive.read(entry))})
         return {
             'zip_crc_valid': True,
             'manifest_declared_export_count': len(declared),
@@ -107,6 +123,12 @@ def audit(path):
                 not any(n.endswith('/' + f.get('relative', '')) for n in actual_names)
                 for f in candidates
             ),
+            'unexported_candidates': [
+                {**path_facts(f.get('relative', '')),
+                 'bytes': f.get('size') if isinstance(f.get('size'), int) else None}
+                for f in candidates
+                if not any(n.endswith('/' + f.get('relative', '')) for n in actual_names)
+            ],
             'files': rows,
             'limits': [
                 'Entry numbers identify archive order only; paths and contents are omitted.',
