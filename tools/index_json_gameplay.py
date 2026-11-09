@@ -134,7 +134,7 @@ def index_text(text, catalog):
             key = (context, *shape_key(facts))
             row = text_sequences[key]
             row['occurrences'] += 1
-            if len(row['first_lines']) < 20:
+            if len(row['first_lines']) < 20 and (not row['first_lines'] or row['first_lines'][-1] != line_number):
                 row['first_lines'].append(line_number)
     return {'counters': dict(counters),
             'recognized_fields': [{'path': key, **row, 'numeric_array_shapes': shape_rows(row['numeric_array_shapes'])}

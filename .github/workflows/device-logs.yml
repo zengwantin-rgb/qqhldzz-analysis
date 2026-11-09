@@ -68,6 +68,8 @@ jobs:
           gh release download inputs-v1 --pattern '_Decrypted.ipa' --repo zwthys-cyber/qqhldzz-analysis --dir inputs
           python3 -m py_compile tools/trace_native_file_sources.py
           python3 tools/trace_native_file_sources.py
+          python3 -m py_compile tools/trace_sequence_context.py
+          python3 tools/trace_sequence_context.py
       - uses: actions/upload-artifact@v4
         with:
           name: device-log-summary

@@ -2,6 +2,7 @@ import json
 import unittest
 
 from index_json_gameplay import index_text
+from trace_sequence_context import fragments, matches
 
 
 class JsonGameplayTests(unittest.TestCase):
@@ -47,6 +48,18 @@ class JsonGameplayTests(unittest.TestCase):
         self.assertTrue(any(s['zero_entries'] == 2 for s in sequences))
         oversized = index_text('9' * 6000 + ',1,2', [])
         self.assertEqual(oversized['non_json_numeric_sequences'], [])
+
+    def test_context_only_publishes_source_matched_fragments(self):
+        candidates = fragments('prefix|file.cpp:10|tag|KnownHandSolver UnpublishedSecretSentinel 1;2;3')
+        result = matches(b'\0KnownHandSolver\0', candidates, 'synthetic.dll')
+        self.assertIn('KnownHandSolver', result)
+        self.assertNotIn('UnpublishedSecretSentinel', json.dumps(result))
+
+    def test_sequence_sample_uses_distinct_lines(self):
+        result = index_text('first 1;2;3 and 4;5;6\nsecond 7;8;9', [])
+        row = result['non_json_numeric_sequences'][0]
+        self.assertEqual(row['occurrences'], 3)
+        self.assertEqual(row['first_lines'], [1, 2])
 
 
 if __name__ == '__main__':
