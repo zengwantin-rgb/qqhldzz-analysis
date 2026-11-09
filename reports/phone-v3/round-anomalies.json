@@ -1,0 +1,317 @@
+{
+  "files": [
+    {
+      "entry": 15,
+      "marker_contexts": [],
+      "self_draw_seat_observations": {},
+      "hand_tlv_payload_checks": [],
+      "self_hand_restore_counts": []
+    },
+    {
+      "entry": 16,
+      "marker_contexts": [
+        {
+          "line": 16540,
+          "reasons": [
+            "EM_UP_TLV_HAND_TILES"
+          ],
+          "context_first_line": 16537,
+          "context_last_line": 16543,
+          "marker_line_characters": 114,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "EM_UP_TLV_HAND_TILES": 1
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {},
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [],
+            "root_numeric_array_samples": []
+          }
+        }
+      ],
+      "self_draw_seat_observations": {
+        "0": 15
+      },
+      "hand_tlv_payload_checks": [],
+      "self_hand_restore_counts": []
+    },
+    {
+      "entry": 17,
+      "marker_contexts": [
+        {
+          "line": 10469,
+          "reasons": [
+            "EM_UP_TLV_HAND_TILES"
+          ],
+          "context_first_line": 10466,
+          "context_last_line": 10472,
+          "marker_line_characters": 126,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "EM_UP_TLV_HAND_TILES": 1
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {},
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [],
+            "root_numeric_array_samples": []
+          }
+        },
+        {
+          "line": 10495,
+          "reasons": [
+            "EM_UP_TLV_HAND_TILES"
+          ],
+          "context_first_line": 10492,
+          "context_last_line": 10498,
+          "marker_line_characters": 121,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "EM_UP_TLV_HAND_TILES": 1
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {},
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [],
+            "root_numeric_array_samples": []
+          }
+        },
+        {
+          "line": 10516,
+          "reasons": [
+            "EM_UP_TLV_HAND_TILES"
+          ],
+          "context_first_line": 10513,
+          "context_last_line": 10519,
+          "marker_line_characters": 114,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "nHandTilesNum": 1,
+            "EM_UP_TLV_HAND_TILES": 2
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {
+              "non_json_numeric_sequences": 2
+            },
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [
+              {
+                "context": "unclassified",
+                "length": 13,
+                "zero_entries": 0,
+                "positive_entries": 13,
+                "negative_entries": 0,
+                "occurrences": 2,
+                "first_lines": [
+                  5,
+                  7
+                ]
+              }
+            ],
+            "root_numeric_array_samples": []
+          }
+        },
+        {
+          "line": 10517,
+          "reasons": [
+            "EM_UP_TLV_HAND_TILES"
+          ],
+          "context_first_line": 10514,
+          "context_last_line": 10520,
+          "marker_line_characters": 152,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "nHandTilesNum": 1,
+            "EM_UP_TLV_HAND_TILES": 2
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {
+              "non_json_numeric_sequences": 2
+            },
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [
+              {
+                "context": "unclassified",
+                "length": 13,
+                "zero_entries": 0,
+                "positive_entries": 13,
+                "negative_entries": 0,
+                "occurrences": 2,
+                "first_lines": [
+                  4,
+                  6
+                ]
+              }
+            ],
+            "root_numeric_array_samples": []
+          }
+        },
+        {
+          "line": 10518,
+          "reasons": [
+            "nHandTilesNum"
+          ],
+          "context_first_line": 10515,
+          "context_last_line": 10521,
+          "marker_line_characters": 123,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "nHandTilesNum": 1,
+            "EM_UP_TLV_HAND_TILES": 2
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {
+              "non_json_numeric_sequences": 2
+            },
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [
+              {
+                "context": "unclassified",
+                "length": 13,
+                "zero_entries": 0,
+                "positive_entries": 13,
+                "negative_entries": 0,
+                "occurrences": 2,
+                "first_lines": [
+                  3,
+                  5
+                ]
+              }
+            ],
+            "root_numeric_array_samples": []
+          }
+        },
+        {
+          "line": 10529,
+          "reasons": [
+            "unparsed_wait_marker"
+          ],
+          "context_first_line": 10526,
+          "context_last_line": 10532,
+          "marker_line_characters": 107,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "HandleWait": 1
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {},
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [],
+            "root_numeric_array_samples": []
+          }
+        },
+        {
+          "line": 10589,
+          "reasons": [
+            "EM_UP_TLV_HAND_TILES"
+          ],
+          "context_first_line": 10586,
+          "context_last_line": 10592,
+          "marker_line_characters": 108,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "Handle TLV": 6,
+            "EM_UP_TLV_HAND_TILES": 1
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {},
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [],
+            "root_numeric_array_samples": []
+          }
+        },
+        {
+          "line": 10675,
+          "reasons": [
+            "EM_UP_TLV_HAND_TILES"
+          ],
+          "context_first_line": 10672,
+          "context_last_line": 10678,
+          "marker_line_characters": 131,
+          "marker_line_has_json_start": false,
+          "marker_line_has_parsed_object": false,
+          "known_code_marker_counts": {
+            "EM_UP_TLV_HAND_TILES": 1
+          },
+          "hand_count_literals": [],
+          "context_structure": {
+            "counters": {},
+            "recognized_fields": [],
+            "root_numeric_array_shapes": [],
+            "all_numeric_array_paths": [],
+            "non_json_numeric_sequences": [],
+            "root_numeric_array_samples": []
+          }
+        }
+      ],
+      "self_draw_seat_observations": {
+        "0": 8
+      },
+      "hand_tlv_payload_checks": [
+        {
+          "line": 10517,
+          "kind": "explicit_replay_hand_tlv",
+          "seat": 0,
+          "tile_count": 13,
+          "source_dispatch": "ID_SO_TABLE_ALL_INFO",
+          "initial_self_hand_line": 10062,
+          "matches_initial_self_multiset": true,
+          "agrees_with_self_draw_seat": true
+        },
+        {
+          "line": 10519,
+          "kind": "self_hand_restore_log",
+          "tile_count": 13,
+          "nearby_explicit_tlv_line": 10517,
+          "matches_nearby_explicit_tlv": true,
+          "matches_initial_self_multiset": true
+        }
+      ],
+      "self_hand_restore_counts": [
+        {
+          "line": 10518,
+          "declared_count": 13,
+          "existing_hand_count": 0
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only known source markers, counts and source-catalog JSON shapes are published; raw context and scalar tile values are omitted.",
+    "A TLV marker does not establish a recoverable payload or its ownership.",
+    "JSON locations in each context_structure are relative to context_first_line."
+  ]
+}

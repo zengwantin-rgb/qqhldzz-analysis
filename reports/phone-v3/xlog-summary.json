@@ -1,0 +1,6829 @@
+{
+  "files": [
+    {
+      "entry": 12,
+      "bytes": 109324,
+      "status": "validated_mars_frame_chain",
+      "prefix_bytes": 0,
+      "unparsed_suffix_bytes": 0,
+      "frame_count": 2,
+      "magic_counts": {
+        "9": 2
+      },
+      "decode_counts": {
+        "deflate": 2
+      },
+      "decoded_bytes": 1090135,
+      "decoded_ascii_printable_bytes": 1088803,
+      "decoded_utf8_replacement_count": 0,
+      "deflate_frames_without_final_marker": 2,
+      "known_field_mentions": {
+        "ID_SO_NOTIFY_DEAL": 0,
+        "ID_SO_NOTIFY_WAIT": 0,
+        "ID_SO_NOTIFY_FINISH": 0,
+        "HandleSelfRedraw": 0,
+        "ExtraTiles": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "stAbilityTileWallInfo": 0,
+        "stPlayerTotalHandAbilityTileInfo": 0,
+        "stUnitProtoValueBuf": 0,
+        "ProtocolDataList": 0,
+        "MSDK": 8157,
+        "Login": 1049,
+        "HTTP": 116
+      },
+      "source_catalog_field_count": 5364,
+      "source_catalog_token_mentions": {
+        "handle": 50,
+        "handled": 1,
+        "handler": 13
+      },
+      "decoded_line_count": 3084,
+      "json_gameplay_index": {
+        "counters": {
+          "decode_attempts": 17828,
+          "json_documents": 8399,
+          "root_numeric_arrays": 7498,
+          "unknown_key_occurrences": 10615,
+          "root_array_sample_truncations": 7298,
+          "lines_with_starts_but_no_json": 3,
+          "embedded_json_strings": 842
+        },
+        "recognized_fields": [],
+        "root_numeric_array_shapes": [
+          {
+            "length": 0,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 0,
+            "occurrences": 28
+          },
+          {
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1,
+            "occurrences": 2974
+          },
+          {
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0,
+            "occurrences": 3031
+          },
+          {
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0,
+            "occurrences": 1465
+          }
+        ],
+        "all_numeric_array_paths": [
+          {
+            "path": "$",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 28
+              },
+              {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 1,
+                "occurrences": 2974
+              },
+              {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0,
+                "occurrences": 3031
+              },
+              {
+                "length": 1,
+                "zero_entries": 1,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 1465
+              }
+            ],
+            "locations": [
+              {
+                "line": 1,
+                "context": "unclassified"
+              },
+              {
+                "line": 1,
+                "context": "unclassified"
+              },
+              {
+                "line": 2,
+                "context": "unclassified"
+              },
+              {
+                "line": 2,
+                "context": "unclassified"
+              },
+              {
+                "line": 3,
+                "context": "unclassified"
+              },
+              {
+                "line": 3,
+                "context": "unclassified"
+              },
+              {
+                "line": 4,
+                "context": "unclassified"
+              },
+              {
+                "line": 4,
+                "context": "unclassified"
+              },
+              {
+                "line": 5,
+                "context": "unclassified"
+              },
+              {
+                "line": 5,
+                "context": "unclassified"
+              },
+              {
+                "line": 6,
+                "context": "unclassified"
+              },
+              {
+                "line": 6,
+                "context": "unclassified"
+              },
+              {
+                "line": 7,
+                "context": "unclassified"
+              },
+              {
+                "line": 7,
+                "context": "unclassified"
+              },
+              {
+                "line": 8,
+                "context": "unclassified"
+              },
+              {
+                "line": 8,
+                "context": "unclassified"
+              },
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 10,
+                "context": "unclassified"
+              },
+              {
+                "line": 10,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 18
+              }
+            ],
+            "locations": [
+              {
+                "line": 1204,
+                "context": "unclassified"
+              },
+              {
+                "line": 1204,
+                "context": "unclassified"
+              },
+              {
+                "line": 1224,
+                "context": "unclassified"
+              },
+              {
+                "line": 1224,
+                "context": "unclassified"
+              },
+              {
+                "line": 1225,
+                "context": "unclassified"
+              },
+              {
+                "line": 1225,
+                "context": "unclassified"
+              },
+              {
+                "line": 1266,
+                "context": "unclassified"
+              },
+              {
+                "line": 1269,
+                "context": "unclassified"
+              },
+              {
+                "line": 1456,
+                "context": "unclassified"
+              },
+              {
+                "line": 1459,
+                "context": "unclassified"
+              },
+              {
+                "line": 2752,
+                "context": "unclassified"
+              },
+              {
+                "line": 2752,
+                "context": "unclassified"
+              },
+              {
+                "line": 2770,
+                "context": "unclassified"
+              },
+              {
+                "line": 2770,
+                "context": "unclassified"
+              },
+              {
+                "line": 2771,
+                "context": "unclassified"
+              },
+              {
+                "line": 2771,
+                "context": "unclassified"
+              },
+              {
+                "line": 2782,
+                "context": "unclassified"
+              },
+              {
+                "line": 2785,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 6
+              }
+            ],
+            "locations": [
+              {
+                "line": 1234,
+                "context": "unclassified"
+              },
+              {
+                "line": 1265,
+                "context": "unclassified"
+              },
+              {
+                "line": 1453,
+                "context": "unclassified"
+              },
+              {
+                "line": 1455,
+                "context": "unclassified"
+              },
+              {
+                "line": 2780,
+                "context": "unclassified"
+              },
+              {
+                "line": 2781,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 4
+              }
+            ],
+            "locations": [
+              {
+                "line": 1216,
+                "context": "unclassified"
+              },
+              {
+                "line": 1216,
+                "context": "unclassified"
+              },
+              {
+                "line": 2763,
+                "context": "unclassified"
+              },
+              {
+                "line": 2763,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 1
+              }
+            ],
+            "locations": [
+              {
+                "line": 2129,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 20
+              }
+            ],
+            "locations": [
+              {
+                "line": 2227,
+                "context": "unclassified"
+              },
+              {
+                "line": 2251,
+                "context": "unclassified"
+              },
+              {
+                "line": 2252,
+                "context": "unclassified"
+              },
+              {
+                "line": 2264,
+                "context": "unclassified"
+              },
+              {
+                "line": 2276,
+                "context": "unclassified"
+              },
+              {
+                "line": 2311,
+                "context": "unclassified"
+              },
+              {
+                "line": 2322,
+                "context": "unclassified"
+              },
+              {
+                "line": 2376,
+                "context": "unclassified"
+              },
+              {
+                "line": 2411,
+                "context": "unclassified"
+              },
+              {
+                "line": 2456,
+                "context": "unclassified"
+              },
+              {
+                "line": 2470,
+                "context": "unclassified"
+              },
+              {
+                "line": 2486,
+                "context": "unclassified"
+              },
+              {
+                "line": 2489,
+                "context": "unclassified"
+              },
+              {
+                "line": 2497,
+                "context": "unclassified"
+              },
+              {
+                "line": 2507,
+                "context": "unclassified"
+              },
+              {
+                "line": 2723,
+                "context": "unclassified"
+              },
+              {
+                "line": 2768,
+                "context": "unclassified"
+              },
+              {
+                "line": 2973,
+                "context": "unclassified"
+              },
+              {
+                "line": 3024,
+                "context": "unclassified"
+              },
+              {
+                "line": 3068,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 69
+              }
+            ],
+            "locations": [
+              {
+                "line": 2117,
+                "context": "unclassified"
+              },
+              {
+                "line": 2137,
+                "context": "unclassified"
+              },
+              {
+                "line": 2142,
+                "context": "unclassified"
+              },
+              {
+                "line": 2146,
+                "context": "unclassified"
+              },
+              {
+                "line": 2158,
+                "context": "unclassified"
+              },
+              {
+                "line": 2170,
+                "context": "unclassified"
+              },
+              {
+                "line": 2193,
+                "context": "unclassified"
+              },
+              {
+                "line": 2220,
+                "context": "unclassified"
+              },
+              {
+                "line": 2225,
+                "context": "unclassified"
+              },
+              {
+                "line": 2227,
+                "context": "unclassified"
+              },
+              {
+                "line": 2253,
+                "context": "unclassified"
+              },
+              {
+                "line": 2268,
+                "context": "unclassified"
+              },
+              {
+                "line": 2274,
+                "context": "unclassified"
+              },
+              {
+                "line": 2276,
+                "context": "unclassified"
+              },
+              {
+                "line": 2281,
+                "context": "unclassified"
+              },
+              {
+                "line": 2303,
+                "context": "unclassified"
+              },
+              {
+                "line": 2309,
+                "context": "unclassified"
+              },
+              {
+                "line": 2311,
+                "context": "unclassified"
+              },
+              {
+                "line": 2320,
+                "context": "unclassified"
+              },
+              {
+                "line": 2322,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 4
+              }
+            ],
+            "locations": [
+              {
+                "line": 2251,
+                "context": "unclassified"
+              },
+              {
+                "line": 2252,
+                "context": "unclassified"
+              },
+              {
+                "line": 2470,
+                "context": "unclassified"
+              },
+              {
+                "line": 2489,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 51
+              }
+            ],
+            "locations": [
+              {
+                "line": 2158,
+                "context": "unclassified"
+              },
+              {
+                "line": 2170,
+                "context": "unclassified"
+              },
+              {
+                "line": 2193,
+                "context": "unclassified"
+              },
+              {
+                "line": 2220,
+                "context": "unclassified"
+              },
+              {
+                "line": 2225,
+                "context": "unclassified"
+              },
+              {
+                "line": 2253,
+                "context": "unclassified"
+              },
+              {
+                "line": 2268,
+                "context": "unclassified"
+              },
+              {
+                "line": 2274,
+                "context": "unclassified"
+              },
+              {
+                "line": 2281,
+                "context": "unclassified"
+              },
+              {
+                "line": 2303,
+                "context": "unclassified"
+              },
+              {
+                "line": 2309,
+                "context": "unclassified"
+              },
+              {
+                "line": 2320,
+                "context": "unclassified"
+              },
+              {
+                "line": 2351,
+                "context": "unclassified"
+              },
+              {
+                "line": 2364,
+                "context": "unclassified"
+              },
+              {
+                "line": 2369,
+                "context": "unclassified"
+              },
+              {
+                "line": 2374,
+                "context": "unclassified"
+              },
+              {
+                "line": 2382,
+                "context": "unclassified"
+              },
+              {
+                "line": 2404,
+                "context": "unclassified"
+              },
+              {
+                "line": 2409,
+                "context": "unclassified"
+              },
+              {
+                "line": 2448,
+                "context": "unclassified"
+              }
+            ]
+          }
+        ],
+        "non_json_numeric_sequences": [],
+        "root_numeric_array_samples": [
+          {
+            "line": 1,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 1,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 2,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 2,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 3,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 3,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 4,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 4,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 5,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 5,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 6,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 6,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 7,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 7,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 8,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 8,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 9,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 9,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 10,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 10,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 11,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 11,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 12,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 12,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 13,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 13,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 14,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 14,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 15,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 15,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 16,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 16,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 17,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 17,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 18,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 18,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 19,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 19,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 20,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 20,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 21,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 21,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 22,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 22,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 0,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 60,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 60,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          }
+        ]
+      }
+    },
+    {
+      "entry": 13,
+      "bytes": 60827,
+      "status": "validated_mars_frame_chain",
+      "prefix_bytes": 0,
+      "unparsed_suffix_bytes": 0,
+      "frame_count": 4,
+      "magic_counts": {
+        "8": 2,
+        "9": 2
+      },
+      "decode_counts": {
+        "uncompressed": 2,
+        "deflate": 2
+      },
+      "decoded_bytes": 637878,
+      "decoded_ascii_printable_bytes": 637842,
+      "decoded_utf8_replacement_count": 0,
+      "deflate_frames_without_final_marker": 2,
+      "known_field_mentions": {
+        "ID_SO_NOTIFY_DEAL": 0,
+        "ID_SO_NOTIFY_WAIT": 0,
+        "ID_SO_NOTIFY_FINISH": 0,
+        "HandleSelfRedraw": 0,
+        "ExtraTiles": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "stAbilityTileWallInfo": 0,
+        "stPlayerTotalHandAbilityTileInfo": 0,
+        "stUnitProtoValueBuf": 0,
+        "ProtocolDataList": 0,
+        "MSDK": 4908,
+        "Login": 472,
+        "HTTP": 50
+      },
+      "source_catalog_field_count": 5364,
+      "source_catalog_token_mentions": {
+        "handle": 53,
+        "handler": 13
+      },
+      "decoded_line_count": 1699,
+      "json_gameplay_index": {
+        "counters": {
+          "decode_attempts": 10285,
+          "json_documents": 4886,
+          "root_numeric_arrays": 4471,
+          "unknown_key_occurrences": 8422,
+          "embedded_json_strings": 608,
+          "root_array_sample_truncations": 4271,
+          "lines_with_starts_but_no_json": 2
+        },
+        "recognized_fields": [],
+        "root_numeric_array_shapes": [
+          {
+            "length": 0,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 0,
+            "occurrences": 29
+          },
+          {
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1,
+            "occurrences": 1670
+          },
+          {
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0,
+            "occurrences": 1727
+          },
+          {
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0,
+            "occurrences": 1045
+          }
+        ],
+        "all_numeric_array_paths": [
+          {
+            "path": "$",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 29
+              },
+              {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 1,
+                "occurrences": 1670
+              },
+              {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0,
+                "occurrences": 1727
+              },
+              {
+                "length": 1,
+                "zero_entries": 1,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 1045
+              }
+            ],
+            "locations": [
+              {
+                "line": 2,
+                "context": "unclassified"
+              },
+              {
+                "line": 2,
+                "context": "unclassified"
+              },
+              {
+                "line": 3,
+                "context": "unclassified"
+              },
+              {
+                "line": 3,
+                "context": "unclassified"
+              },
+              {
+                "line": 4,
+                "context": "unclassified"
+              },
+              {
+                "line": 4,
+                "context": "unclassified"
+              },
+              {
+                "line": 5,
+                "context": "unclassified"
+              },
+              {
+                "line": 5,
+                "context": "unclassified"
+              },
+              {
+                "line": 6,
+                "context": "unclassified"
+              },
+              {
+                "line": 6,
+                "context": "unclassified"
+              },
+              {
+                "line": 7,
+                "context": "unclassified"
+              },
+              {
+                "line": 7,
+                "context": "unclassified"
+              },
+              {
+                "line": 8,
+                "context": "unclassified"
+              },
+              {
+                "line": 8,
+                "context": "unclassified"
+              },
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 10,
+                "context": "unclassified"
+              },
+              {
+                "line": 10,
+                "context": "unclassified"
+              },
+              {
+                "line": 11,
+                "context": "unclassified"
+              },
+              {
+                "line": 11,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 10
+              }
+            ],
+            "locations": [
+              {
+                "line": 1261,
+                "context": "unclassified"
+              },
+              {
+                "line": 1261,
+                "context": "unclassified"
+              },
+              {
+                "line": 1279,
+                "context": "unclassified"
+              },
+              {
+                "line": 1279,
+                "context": "unclassified"
+              },
+              {
+                "line": 1280,
+                "context": "unclassified"
+              },
+              {
+                "line": 1280,
+                "context": "unclassified"
+              },
+              {
+                "line": 1291,
+                "context": "unclassified"
+              },
+              {
+                "line": 1294,
+                "context": "unclassified"
+              },
+              {
+                "line": 1480,
+                "context": "unclassified"
+              },
+              {
+                "line": 1483,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 4
+              }
+            ],
+            "locations": [
+              {
+                "line": 1289,
+                "context": "unclassified"
+              },
+              {
+                "line": 1290,
+                "context": "unclassified"
+              },
+              {
+                "line": 1477,
+                "context": "unclassified"
+              },
+              {
+                "line": 1478,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 2
+              }
+            ],
+            "locations": [
+              {
+                "line": 1272,
+                "context": "unclassified"
+              },
+              {
+                "line": 1272,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 26
+              }
+            ],
+            "locations": [
+              {
+                "line": 11,
+                "context": "unclassified"
+              },
+              {
+                "line": 16,
+                "context": "unclassified"
+              },
+              {
+                "line": 21,
+                "context": "unclassified"
+              },
+              {
+                "line": 110,
+                "context": "unclassified"
+              },
+              {
+                "line": 120,
+                "context": "unclassified"
+              },
+              {
+                "line": 140,
+                "context": "unclassified"
+              },
+              {
+                "line": 667,
+                "context": "unclassified"
+              },
+              {
+                "line": 719,
+                "context": "unclassified"
+              },
+              {
+                "line": 795,
+                "context": "unclassified"
+              },
+              {
+                "line": 799,
+                "context": "unclassified"
+              },
+              {
+                "line": 817,
+                "context": "unclassified"
+              },
+              {
+                "line": 927,
+                "context": "unclassified"
+              },
+              {
+                "line": 932,
+                "context": "unclassified"
+              },
+              {
+                "line": 1044,
+                "context": "unclassified"
+              },
+              {
+                "line": 1104,
+                "context": "unclassified"
+              },
+              {
+                "line": 1164,
+                "context": "unclassified"
+              },
+              {
+                "line": 1277,
+                "context": "unclassified"
+              },
+              {
+                "line": 1299,
+                "context": "unclassified"
+              },
+              {
+                "line": 1304,
+                "context": "unclassified"
+              },
+              {
+                "line": 1309,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 89
+              }
+            ],
+            "locations": [
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 11,
+                "context": "unclassified"
+              },
+              {
+                "line": 14,
+                "context": "unclassified"
+              },
+              {
+                "line": 16,
+                "context": "unclassified"
+              },
+              {
+                "line": 19,
+                "context": "unclassified"
+              },
+              {
+                "line": 21,
+                "context": "unclassified"
+              },
+              {
+                "line": 98,
+                "context": "unclassified"
+              },
+              {
+                "line": 108,
+                "context": "unclassified"
+              },
+              {
+                "line": 110,
+                "context": "unclassified"
+              },
+              {
+                "line": 113,
+                "context": "unclassified"
+              },
+              {
+                "line": 118,
+                "context": "unclassified"
+              },
+              {
+                "line": 120,
+                "context": "unclassified"
+              },
+              {
+                "line": 131,
+                "context": "unclassified"
+              },
+              {
+                "line": 140,
+                "context": "unclassified"
+              },
+              {
+                "line": 655,
+                "context": "unclassified"
+              },
+              {
+                "line": 665,
+                "context": "unclassified"
+              },
+              {
+                "line": 667,
+                "context": "unclassified"
+              },
+              {
+                "line": 685,
+                "context": "unclassified"
+              },
+              {
+                "line": 712,
+                "context": "unclassified"
+              },
+              {
+                "line": 717,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 1
+              }
+            ],
+            "locations": [
+              {
+                "line": 1596,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 2
+              }
+            ],
+            "locations": [
+              {
+                "line": 1585,
+                "context": "unclassified"
+              },
+              {
+                "line": 1586,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 62
+              }
+            ],
+            "locations": [
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 14,
+                "context": "unclassified"
+              },
+              {
+                "line": 19,
+                "context": "unclassified"
+              },
+              {
+                "line": 98,
+                "context": "unclassified"
+              },
+              {
+                "line": 108,
+                "context": "unclassified"
+              },
+              {
+                "line": 113,
+                "context": "unclassified"
+              },
+              {
+                "line": 118,
+                "context": "unclassified"
+              },
+              {
+                "line": 131,
+                "context": "unclassified"
+              },
+              {
+                "line": 655,
+                "context": "unclassified"
+              },
+              {
+                "line": 665,
+                "context": "unclassified"
+              },
+              {
+                "line": 685,
+                "context": "unclassified"
+              },
+              {
+                "line": 712,
+                "context": "unclassified"
+              },
+              {
+                "line": 717,
+                "context": "unclassified"
+              },
+              {
+                "line": 787,
+                "context": "unclassified"
+              },
+              {
+                "line": 792,
+                "context": "unclassified"
+              },
+              {
+                "line": 797,
+                "context": "unclassified"
+              },
+              {
+                "line": 810,
+                "context": "unclassified"
+              },
+              {
+                "line": 815,
+                "context": "unclassified"
+              },
+              {
+                "line": 925,
+                "context": "unclassified"
+              },
+              {
+                "line": 930,
+                "context": "unclassified"
+              }
+            ]
+          }
+        ],
+        "non_json_numeric_sequences": [],
+        "root_numeric_array_samples": [
+          {
+            "line": 2,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 2,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 3,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 3,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 4,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 4,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 5,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 5,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 6,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 6,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 7,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 7,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 8,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 8,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 9,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 9,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 10,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 10,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 11,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 11,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 12,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 12,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 13,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 13,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 14,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 14,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 15,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 15,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 16,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 16,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 17,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 17,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 18,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 18,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 19,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 19,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 20,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 20,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 21,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 21,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 22,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 22,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 60,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 60,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 61,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 61,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 62,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 62,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 63,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 63,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 64,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 64,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 65,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 65,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 66,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 66,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 67,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 67,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 68,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 68,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 69,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 69,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 70,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 70,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 71,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 71,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 72,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 72,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 73,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 73,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 74,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 74,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 75,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 75,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 76,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 76,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 77,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 77,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 78,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 78,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 79,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 79,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 80,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 80,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 81,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 81,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 82,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 82,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 83,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 83,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 84,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 84,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 85,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 85,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 86,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 86,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 87,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 87,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 88,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 88,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 89,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 89,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 90,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 90,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 90,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 90,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0
+          },
+          {
+            "line": 91,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 91,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 92,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 92,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 93,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 93,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 94,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 94,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 95,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 95,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 96,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 96,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 97,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 97,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 98,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 98,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          }
+        ]
+      }
+    },
+    {
+      "entry": 14,
+      "bytes": 115730,
+      "status": "validated_mars_frame_chain",
+      "prefix_bytes": 0,
+      "unparsed_suffix_bytes": 0,
+      "frame_count": 7,
+      "magic_counts": {
+        "8": 4,
+        "9": 3
+      },
+      "decode_counts": {
+        "uncompressed": 4,
+        "deflate": 3
+      },
+      "decoded_bytes": 1268238,
+      "decoded_ascii_printable_bytes": 1267812,
+      "decoded_utf8_replacement_count": 0,
+      "deflate_frames_without_final_marker": 3,
+      "known_field_mentions": {
+        "ID_SO_NOTIFY_DEAL": 0,
+        "ID_SO_NOTIFY_WAIT": 0,
+        "ID_SO_NOTIFY_FINISH": 0,
+        "HandleSelfRedraw": 0,
+        "ExtraTiles": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "stAbilityTileWallInfo": 0,
+        "stPlayerTotalHandAbilityTileInfo": 0,
+        "stUnitProtoValueBuf": 0,
+        "ProtocolDataList": 0,
+        "MSDK": 9592,
+        "Login": 985,
+        "HTTP": 100
+      },
+      "source_catalog_field_count": 5364,
+      "source_catalog_token_mentions": {
+        "handle": 79,
+        "handler": 14
+      },
+      "decoded_line_count": 3334,
+      "json_gameplay_index": {
+        "counters": {
+          "decode_attempts": 20072,
+          "json_documents": 9556,
+          "root_numeric_arrays": 8743,
+          "unknown_key_occurrences": 17475,
+          "embedded_json_strings": 1258,
+          "root_array_sample_truncations": 8543,
+          "lines_with_starts_but_no_json": 4
+        },
+        "recognized_fields": [],
+        "root_numeric_array_shapes": [
+          {
+            "length": 0,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 0,
+            "occurrences": 47
+          },
+          {
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1,
+            "occurrences": 3276
+          },
+          {
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0,
+            "occurrences": 3390
+          },
+          {
+            "length": 1,
+            "zero_entries": 1,
+            "positive_entries": 0,
+            "negative_entries": 0,
+            "occurrences": 2030
+          }
+        ],
+        "all_numeric_array_paths": [
+          {
+            "path": "$",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 47
+              },
+              {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 1,
+                "occurrences": 3276
+              },
+              {
+                "length": 1,
+                "zero_entries": 0,
+                "positive_entries": 1,
+                "negative_entries": 0,
+                "occurrences": 3390
+              },
+              {
+                "length": 1,
+                "zero_entries": 1,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 2030
+              }
+            ],
+            "locations": [
+              {
+                "line": 2,
+                "context": "unclassified"
+              },
+              {
+                "line": 2,
+                "context": "unclassified"
+              },
+              {
+                "line": 3,
+                "context": "unclassified"
+              },
+              {
+                "line": 3,
+                "context": "unclassified"
+              },
+              {
+                "line": 4,
+                "context": "unclassified"
+              },
+              {
+                "line": 4,
+                "context": "unclassified"
+              },
+              {
+                "line": 5,
+                "context": "unclassified"
+              },
+              {
+                "line": 5,
+                "context": "unclassified"
+              },
+              {
+                "line": 6,
+                "context": "unclassified"
+              },
+              {
+                "line": 6,
+                "context": "unclassified"
+              },
+              {
+                "line": 7,
+                "context": "unclassified"
+              },
+              {
+                "line": 7,
+                "context": "unclassified"
+              },
+              {
+                "line": 8,
+                "context": "unclassified"
+              },
+              {
+                "line": 8,
+                "context": "unclassified"
+              },
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 9,
+                "context": "unclassified"
+              },
+              {
+                "line": 10,
+                "context": "unclassified"
+              },
+              {
+                "line": 10,
+                "context": "unclassified"
+              },
+              {
+                "line": 11,
+                "context": "unclassified"
+              },
+              {
+                "line": 11,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 12
+              }
+            ],
+            "locations": [
+              {
+                "line": 531,
+                "context": "unclassified"
+              },
+              {
+                "line": 534,
+                "context": "unclassified"
+              },
+              {
+                "line": 2829,
+                "context": "unclassified"
+              },
+              {
+                "line": 2829,
+                "context": "unclassified"
+              },
+              {
+                "line": 2847,
+                "context": "unclassified"
+              },
+              {
+                "line": 2847,
+                "context": "unclassified"
+              },
+              {
+                "line": 2848,
+                "context": "unclassified"
+              },
+              {
+                "line": 2848,
+                "context": "unclassified"
+              },
+              {
+                "line": 2859,
+                "context": "unclassified"
+              },
+              {
+                "line": 2862,
+                "context": "unclassified"
+              },
+              {
+                "line": 3108,
+                "context": "unclassified"
+              },
+              {
+                "line": 3111,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 6
+              }
+            ],
+            "locations": [
+              {
+                "line": 528,
+                "context": "unclassified"
+              },
+              {
+                "line": 530,
+                "context": "unclassified"
+              },
+              {
+                "line": 2857,
+                "context": "unclassified"
+              },
+              {
+                "line": 2858,
+                "context": "unclassified"
+              },
+              {
+                "line": 3105,
+                "context": "unclassified"
+              },
+              {
+                "line": 3107,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 2
+              }
+            ],
+            "locations": [
+              {
+                "line": 2840,
+                "context": "unclassified"
+              },
+              {
+                "line": 2840,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 2
+              }
+            ],
+            "locations": [
+              {
+                "line": 73,
+                "context": "unclassified"
+              },
+              {
+                "line": 91,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 47
+              }
+            ],
+            "locations": [
+              {
+                "line": 30,
+                "context": "unclassified"
+              },
+              {
+                "line": 78,
+                "context": "unclassified"
+              },
+              {
+                "line": 96,
+                "context": "unclassified"
+              },
+              {
+                "line": 155,
+                "context": "unclassified"
+              },
+              {
+                "line": 156,
+                "context": "unclassified"
+              },
+              {
+                "line": 168,
+                "context": "unclassified"
+              },
+              {
+                "line": 180,
+                "context": "unclassified"
+              },
+              {
+                "line": 249,
+                "context": "unclassified"
+              },
+              {
+                "line": 284,
+                "context": "unclassified"
+              },
+              {
+                "line": 335,
+                "context": "unclassified"
+              },
+              {
+                "line": 349,
+                "context": "unclassified"
+              },
+              {
+                "line": 365,
+                "context": "unclassified"
+              },
+              {
+                "line": 367,
+                "context": "unclassified"
+              },
+              {
+                "line": 375,
+                "context": "unclassified"
+              },
+              {
+                "line": 595,
+                "context": "unclassified"
+              },
+              {
+                "line": 617,
+                "context": "unclassified"
+              },
+              {
+                "line": 688,
+                "context": "unclassified"
+              },
+              {
+                "line": 693,
+                "context": "unclassified"
+              },
+              {
+                "line": 824,
+                "context": "unclassified"
+              },
+              {
+                "line": 840,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 169
+              }
+            ],
+            "locations": [
+              {
+                "line": 23,
+                "context": "unclassified"
+              },
+              {
+                "line": 28,
+                "context": "unclassified"
+              },
+              {
+                "line": 30,
+                "context": "unclassified"
+              },
+              {
+                "line": 58,
+                "context": "unclassified"
+              },
+              {
+                "line": 62,
+                "context": "unclassified"
+              },
+              {
+                "line": 70,
+                "context": "unclassified"
+              },
+              {
+                "line": 76,
+                "context": "unclassified"
+              },
+              {
+                "line": 78,
+                "context": "unclassified"
+              },
+              {
+                "line": 80,
+                "context": "unclassified"
+              },
+              {
+                "line": 88,
+                "context": "unclassified"
+              },
+              {
+                "line": 94,
+                "context": "unclassified"
+              },
+              {
+                "line": 96,
+                "context": "unclassified"
+              },
+              {
+                "line": 98,
+                "context": "unclassified"
+              },
+              {
+                "line": 103,
+                "context": "unclassified"
+              },
+              {
+                "line": 108,
+                "context": "unclassified"
+              },
+              {
+                "line": 112,
+                "context": "unclassified"
+              },
+              {
+                "line": 117,
+                "context": "unclassified"
+              },
+              {
+                "line": 122,
+                "context": "unclassified"
+              },
+              {
+                "line": 132,
+                "context": "unclassified"
+              },
+              {
+                "line": 137,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$json/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 2
+              }
+            ],
+            "locations": [
+              {
+                "line": 25,
+                "context": "unclassified"
+              },
+              {
+                "line": 3224,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$json/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 8
+              }
+            ],
+            "locations": [
+              {
+                "line": 14,
+                "context": "unclassified"
+              },
+              {
+                "line": 15,
+                "context": "unclassified"
+              },
+              {
+                "line": 155,
+                "context": "unclassified"
+              },
+              {
+                "line": 156,
+                "context": "unclassified"
+              },
+              {
+                "line": 349,
+                "context": "unclassified"
+              },
+              {
+                "line": 367,
+                "context": "unclassified"
+              },
+              {
+                "line": 3213,
+                "context": "unclassified"
+              },
+              {
+                "line": 3214,
+                "context": "unclassified"
+              }
+            ]
+          },
+          {
+            "path": "$/$unknown/$unknown/$json/$unknown/$json/$unknown/$unknown",
+            "shapes": [
+              {
+                "length": 0,
+                "zero_entries": 0,
+                "positive_entries": 0,
+                "negative_entries": 0,
+                "occurrences": 121
+              }
+            ],
+            "locations": [
+              {
+                "line": 2,
+                "context": "unclassified"
+              },
+              {
+                "line": 23,
+                "context": "unclassified"
+              },
+              {
+                "line": 28,
+                "context": "unclassified"
+              },
+              {
+                "line": 70,
+                "context": "unclassified"
+              },
+              {
+                "line": 76,
+                "context": "unclassified"
+              },
+              {
+                "line": 88,
+                "context": "unclassified"
+              },
+              {
+                "line": 94,
+                "context": "unclassified"
+              },
+              {
+                "line": 108,
+                "context": "unclassified"
+              },
+              {
+                "line": 117,
+                "context": "unclassified"
+              },
+              {
+                "line": 122,
+                "context": "unclassified"
+              },
+              {
+                "line": 137,
+                "context": "unclassified"
+              },
+              {
+                "line": 144,
+                "context": "unclassified"
+              },
+              {
+                "line": 149,
+                "context": "unclassified"
+              },
+              {
+                "line": 157,
+                "context": "unclassified"
+              },
+              {
+                "line": 172,
+                "context": "unclassified"
+              },
+              {
+                "line": 178,
+                "context": "unclassified"
+              },
+              {
+                "line": 185,
+                "context": "unclassified"
+              },
+              {
+                "line": 224,
+                "context": "unclassified"
+              },
+              {
+                "line": 237,
+                "context": "unclassified"
+              },
+              {
+                "line": 242,
+                "context": "unclassified"
+              }
+            ]
+          }
+        ],
+        "non_json_numeric_sequences": [],
+        "root_numeric_array_samples": [
+          {
+            "line": 2,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 2,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 3,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 3,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 4,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 4,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 5,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 5,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 6,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 6,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 7,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 7,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 8,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 8,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 9,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 9,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 10,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 10,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 11,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 11,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 12,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 12,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 13,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 13,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 14,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 14,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 15,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 15,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 16,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 16,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 17,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 17,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 18,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 18,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 19,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 19,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 20,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 20,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 21,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 21,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 22,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 22,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 23,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 24,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 25,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 26,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 27,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 28,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 29,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 30,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 31,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 32,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 33,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 34,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 35,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 36,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 37,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 38,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 39,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 40,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 41,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 42,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 43,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 44,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 45,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 46,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 47,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 48,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 49,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 50,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 51,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 52,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 53,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 54,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 55,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 56,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 57,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 58,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 59,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 60,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 60,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 61,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 61,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 62,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 62,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 63,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 63,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 64,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 64,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 65,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 65,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 66,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 66,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 67,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 67,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 68,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 68,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 69,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 69,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 70,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 70,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 71,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 71,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 72,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 72,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 73,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 73,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 74,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 74,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 75,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 75,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 76,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 76,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 77,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 77,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 78,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 78,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 79,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 79,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 80,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 80,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 81,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 81,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 82,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 82,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 83,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 83,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 84,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 84,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 85,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 85,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 86,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 86,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 87,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 87,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 88,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 88,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 89,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 89,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 90,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 90,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 91,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 91,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 92,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 92,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 93,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 93,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 94,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 94,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 95,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 95,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 96,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 96,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 97,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 97,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 98,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 98,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 99,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 99,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 100,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 100,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          },
+          {
+            "line": 101,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 1,
+            "negative_entries": 0
+          },
+          {
+            "line": 101,
+            "context": "unclassified",
+            "length": 1,
+            "zero_entries": 0,
+            "positive_entries": 0,
+            "negative_entries": 1
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Framing follows the public Tencent Mars format; no arbitrary decryption is attempted.",
+    "Encrypted variants are never interpreted as plaintext.",
+    "Plaintext stays in runner memory; only counts and allowlisted key mentions are emitted.",
+    "A key mention alone does not establish a structured gameplay payload or opponent hand.",
+    "No validated chain does not exclude a different SDK format or encryption wrapper.",
+    "Deflate sync-flushed records need not contain a final stream marker; nonfinal counts are explicit."
+  ]
+}

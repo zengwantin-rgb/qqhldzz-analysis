@@ -1,5 +1,9 @@
 # 欢乐麻将 iOS 静态逆向分析
 
+[原生运行环境探针](reports/runtime-probe/FINDINGS.md)已发布，可通过 TrollFools 导入游戏，验证传统消息入口的运行时 API 与类型是否可见。探针仅查询元数据，尚未实现消息订阅或手牌显示。
+
+[第十六轮：1.2 真机新包](reports/phone-v3/FINDINGS.md)：20/20 个文件完整，新增一局；磁盘记录级别报告为 3，但没有 TraceBin，新增手牌 TLV 已验证归属自己。
+
 [可安装的诊断工具 1.2 Beta 1](reports/mobile/LOG-READER-1.2.md)已发布：新增主动开启记录、状态检查及原设置恢复。设备包与设置事务测试通过，真机记录生成待验证；仍未实现实时对手暗牌显示。
 
 [第十五轮：TraceBin 写入与清理](reports/trace-format/FINDINGS.md)：确认原始字节追加、按文件数清理，以及根目录最终来自 Unity persistentDataPath；现有扫描支持 TraceBin 自定义扩展名，仍无实际负载样本。

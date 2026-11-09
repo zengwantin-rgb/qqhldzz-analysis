@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "source_commit": "b713545ea118bcfe625ba28a8c850b4391628893",
+  "source_run": 42693999221,
+  "sha256": "d8ba5b43305cbb6d38b1bc8fc4cf1bc1574a7d8d3816e5c05b4e6e64f993b28a",
+  "storage_tests_passed": true,
+  "arm64_build_and_adhoc_signature_verified": true,
+  "dependencies_limited_to_system_libraries": true,
+  "device_injection_verified": false,
+  "runtime_metadata_lookup_verified": false,
+  "game_message_subscription_implemented": false,
+  "live_opponent_display_implemented": false,
+  "scope": "Metadata availability probe only; no code patching, method invocation, static field values, packet capture, account fields or network requests."
+}

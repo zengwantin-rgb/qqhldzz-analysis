@@ -1,0 +1,4387 @@
+{
+  "assembly_count": 91,
+  "schemas": [
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher",
+      "fields": [
+        {
+          "name": "triggerClients",
+          "type": "System.Collections.Generic.HashSet\u00601\u003Cstrange.extensions.dispatcher.api.ITriggerable\u003E",
+          "is_static": false,
+          "constant": null
+        },
+        {
+          "name": "triggerClientRemovals",
+          "type": "System.Collections.Generic.HashSet\u00601\u003Cstrange.extensions.dispatcher.api.ITriggerable\u003E",
+          "is_static": false,
+          "constant": null
+        },
+        {
+          "name": "isTriggeringClients",
+          "type": "System.Boolean",
+          "is_static": false,
+          "constant": null
+        },
+        {
+          "name": "eventPool",
+          "type": "strange.extensions.pool.api.IPool\u00601\u003Cstrange.extensions.dispatcher.eventdispatcher.impl.TmEvent\u003E",
+          "is_static": true,
+          "constant": null
+        }
+      ],
+      "properties": [
+        {
+          "name": "Triggerables",
+          "type": "System.Int32"
+        }
+      ],
+      "methods": [
+        {
+          "name": ".ctor",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::.ctor()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "GetRawBinding",
+          "signature": "strange.framework.api.IBinding strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::GetRawBinding()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": []
+        },
+        {
+          "name": "Bind",
+          "signature": "strange.extensions.dispatcher.eventdispatcher.api.IEventBinding strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::Bind(System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "Dispatch",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::Dispatch(System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "eventType",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "Dispatch",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::Dispatch(System.Object,System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "eventType",
+              "type": "System.Object"
+            },
+            {
+              "name": "data",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "conformDataToEvent",
+          "signature": "strange.extensions.dispatcher.eventdispatcher.api.IEvent strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::conformDataToEvent(System.Object,System.Object)",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "eventType",
+              "type": "System.Object"
+            },
+            {
+              "name": "data",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "createEvent",
+          "signature": "strange.extensions.dispatcher.eventdispatcher.api.IEvent strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::createEvent(System.Object,System.Object)",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "eventType",
+              "type": "System.Object"
+            },
+            {
+              "name": "data",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "invokeEventCallback",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::invokeEventCallback(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "data",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "AddListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::AddListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "AddListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::AddListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "RemoveListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::RemoveListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "RemoveListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::RemoveListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "HasListener",
+          "signature": "System.Boolean strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::HasListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "HasListener",
+          "signature": "System.Boolean strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::HasListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "UpdateListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::UpdateListener(System.Boolean,System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "toAdd",
+              "type": "System.Boolean"
+            },
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "UpdateListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::UpdateListener(System.Boolean,System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "toAdd",
+              "type": "System.Boolean"
+            },
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "AddTriggerable",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::AddTriggerable(strange.extensions.dispatcher.api.ITriggerable)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "target",
+              "type": "strange.extensions.dispatcher.api.ITriggerable"
+            }
+          ]
+        },
+        {
+          "name": "RemoveTriggerable",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::RemoveTriggerable(strange.extensions.dispatcher.api.ITriggerable)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "target",
+              "type": "strange.extensions.dispatcher.api.ITriggerable"
+            }
+          ]
+        },
+        {
+          "name": "get_Triggerables",
+          "signature": "System.Int32 strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::get_Triggerables()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": []
+        },
+        {
+          "name": "flushRemovals",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::flushRemovals()",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "Trigger",
+          "signature": "System.Boolean strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::Trigger(System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "data",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "Trigger",
+          "signature": "System.Boolean strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::Trigger(System.Object,System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.Object"
+            },
+            {
+              "name": "data",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "internalReleaseEvent",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::internalReleaseEvent(strange.extensions.dispatcher.eventdispatcher.api.IEvent)",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent"
+            }
+          ]
+        },
+        {
+          "name": "ReleaseEvent",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::ReleaseEvent(strange.extensions.dispatcher.eventdispatcher.api.IEvent)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent"
+            }
+          ]
+        },
+        {
+          "name": "cleanEvent",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.impl.EventDispatcher::cleanEvent(strange.extensions.dispatcher.eventdispatcher.api.IEvent)",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent",
+      "fields": [],
+      "properties": [
+        {
+          "name": "type",
+          "type": "System.Object"
+        },
+        {
+          "name": "target",
+          "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher"
+        },
+        {
+          "name": "data",
+          "type": "System.Object"
+        }
+      ],
+      "methods": [
+        {
+          "name": "get_type",
+          "signature": "System.Object strange.extensions.dispatcher.eventdispatcher.api.IEvent::get_type()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": []
+        },
+        {
+          "name": "set_type",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEvent::set_type(System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "value",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "get_target",
+          "signature": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher strange.extensions.dispatcher.eventdispatcher.api.IEvent::get_target()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": []
+        },
+        {
+          "name": "set_target",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEvent::set_target(strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "value",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher"
+            }
+          ]
+        },
+        {
+          "name": "get_data",
+          "signature": "System.Object strange.extensions.dispatcher.eventdispatcher.api.IEvent::get_data()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": []
+        },
+        {
+          "name": "set_data",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEvent::set_data(System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "value",
+              "type": "System.Object"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback",
+      "fields": [],
+      "properties": [],
+      "methods": [
+        {
+          "name": ".ctor",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.EventCallback::.ctor(System.Object,System.IntPtr)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "object",
+              "type": "System.Object"
+            },
+            {
+              "name": "method",
+              "type": "System.IntPtr"
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.EventCallback::Invoke(strange.extensions.dispatcher.eventdispatcher.api.IEvent)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "payload",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent"
+            }
+          ]
+        },
+        {
+          "name": "BeginInvoke",
+          "signature": "System.IAsyncResult strange.extensions.dispatcher.eventdispatcher.api.EventCallback::BeginInvoke(strange.extensions.dispatcher.eventdispatcher.api.IEvent,System.AsyncCallback,System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "payload",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent"
+            },
+            {
+              "name": "callback",
+              "type": "System.AsyncCallback"
+            },
+            {
+              "name": "object",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "EndInvoke",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.EventCallback::EndInvoke(System.IAsyncResult)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "result",
+              "type": "System.IAsyncResult"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Base",
+      "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher",
+      "fields": [],
+      "properties": [],
+      "methods": [
+        {
+          "name": "Bind",
+          "signature": "strange.extensions.dispatcher.eventdispatcher.api.IEventBinding strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::Bind(System.Object)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.Object"
+            }
+          ]
+        },
+        {
+          "name": "AddListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::AddListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "AddListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::AddListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "RemoveListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::RemoveListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "RemoveListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::RemoveListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "HasListener",
+          "signature": "System.Boolean strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::HasListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "HasListener",
+          "signature": "System.Boolean strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::HasListener(System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "UpdateListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::UpdateListener(System.Boolean,System.Object,strange.extensions.dispatcher.eventdispatcher.api.EventCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "toAdd",
+              "type": "System.Boolean"
+            },
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EventCallback"
+            }
+          ]
+        },
+        {
+          "name": "UpdateListener",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::UpdateListener(System.Boolean,System.Object,strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "toAdd",
+              "type": "System.Boolean"
+            },
+            {
+              "name": "evt",
+              "type": "System.Object"
+            },
+            {
+              "name": "callback",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.EmptyCallback"
+            }
+          ]
+        },
+        {
+          "name": "ReleaseEvent",
+          "signature": "System.Void strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher::ReleaseEvent(strange.extensions.dispatcher.eventdispatcher.api.IEvent)",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": true,
+          "parameters": [
+            {
+              "name": "evt",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEvent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.TSDKMessageEvent",
+      "fields": [
+        {
+          "name": "value__",
+          "type": "System.Int32",
+          "is_static": false,
+          "constant": null
+        },
+        {
+          "name": "OnTSDKLoginSuccess",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 1
+        },
+        {
+          "name": "OnTSDKLoginFailed",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 2
+        },
+        {
+          "name": "OnTSDKGetSelfInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 3
+        },
+        {
+          "name": "OnTSDKUserEnter",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 4
+        },
+        {
+          "name": "OnTSDKUserExit",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 5
+        },
+        {
+          "name": "OnTSDKUserReady",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 6
+        },
+        {
+          "name": "OnTSDKStartGame",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 7
+        },
+        {
+          "name": "OnTSDKEndGame",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 8
+        },
+        {
+          "name": "OnTSDKGameMessage",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 9
+        },
+        {
+          "name": "OnTSDKBeanDiamondGoldCoin",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 10
+        },
+        {
+          "name": "OnTSDKBeanNumberChg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 11
+        },
+        {
+          "name": "OnTSDKRecvFriendList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 12
+        },
+        {
+          "name": "OnTSDKRecvFriendQuerySendBeanList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 13
+        },
+        {
+          "name": "OnTSDKEnterRoomFailed",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 14
+        },
+        {
+          "name": "OnTSDKRoomLocked",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 15
+        },
+        {
+          "name": "OnTSDKNetworkChg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 16
+        },
+        {
+          "name": "OnTSDKMainsvrReconnect",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 17
+        },
+        {
+          "name": "OnTSDKLogoutMainsvr",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 18
+        },
+        {
+          "name": "OnTSDKUserOffline",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 19
+        },
+        {
+          "name": "OnTSDKUserRelogin",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 20
+        },
+        {
+          "name": "OnTSDKFetchMyItem",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 21
+        },
+        {
+          "name": "OnTSDKGoodsBuy",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 22
+        },
+        {
+          "name": "OnTSDKOpenChest",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 23
+        },
+        {
+          "name": "OnTSDKFitonItem",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 24
+        },
+        {
+          "name": "OnTSDKLotusConInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 25
+        },
+        {
+          "name": "OnTSDKMissonNotify",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 26
+        },
+        {
+          "name": "OnTSDKMissonRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 27
+        },
+        {
+          "name": "OnTSDKMissonAcptRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 28
+        },
+        {
+          "name": "OnTSDKBuyBeanRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 29
+        },
+        {
+          "name": "OnTSDKFetchBenefitRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 30
+        },
+        {
+          "name": "OnTSDKUseBenefitRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 31
+        },
+        {
+          "name": "OnTSDKReqMailNumRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 32
+        },
+        {
+          "name": "OnTSDKReqMessageInfoRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 33
+        },
+        {
+          "name": "OnTSDKNotifyMessageChange",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 34
+        },
+        {
+          "name": "OnTSDKDownloadCfgEnd",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 35
+        },
+        {
+          "name": "OnTSDKPersonCfg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 36
+        },
+        {
+          "name": "OnPlayerRecordInfoRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 37
+        },
+        {
+          "name": "OnFeedBackRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 38
+        },
+        {
+          "name": "OnTSDKSitDownFailed",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 39
+        },
+        {
+          "name": "OnTSDKSendBeanRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 40
+        },
+        {
+          "name": "OnNotifyCallPlayer",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 41
+        },
+        {
+          "name": "OnTSDKFriendMailRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 42
+        },
+        {
+          "name": "OnTSDKFriendMailRecvRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 43
+        },
+        {
+          "name": "OnTSDKChatMsgRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 44
+        },
+        {
+          "name": "OnTSDKEnterRoomSuccesss",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 45
+        },
+        {
+          "name": "OnTSDKClientExeRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 48
+        },
+        {
+          "name": "OnTSDKSetLoginInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 49
+        },
+        {
+          "name": "OnTSDKNotifyOnlinePeople",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 50
+        },
+        {
+          "name": "OnTSDKOlympicGameStart",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 51
+        },
+        {
+          "name": "OnTSDKOlympicJoinGame",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 52
+        },
+        {
+          "name": "OnTSDKOlympicSeriesList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 53
+        },
+        {
+          "name": "OnTSDKChallageJoin",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 54
+        },
+        {
+          "name": "OnTSDKChallageCancel",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 55
+        },
+        {
+          "name": "OnTSDKChallageMatchInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 56
+        },
+        {
+          "name": "OnTSDKChallageMatchPlayerInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 57
+        },
+        {
+          "name": "OnTSDKChallageMatchStatus",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 58
+        },
+        {
+          "name": "OnTSDKChallageJoinInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 59
+        },
+        {
+          "name": "OnTSDKEmailClaimSystemAward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 60
+        },
+        {
+          "name": "OnTSDKReqUserState",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 61
+        },
+        {
+          "name": "OnTSDKQueryQuickGameInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 62
+        },
+        {
+          "name": "OnTSDKSetGenderCommand",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 63
+        },
+        {
+          "name": "OnTSDKClearGameStatus",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 64
+        },
+        {
+          "name": "OnTSDKPersonalLocationInfoRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 65
+        },
+        {
+          "name": "OnTSDKFillPersonalLocationInfoRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 66
+        },
+        {
+          "name": "OnTSDKItemExchange",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 67
+        },
+        {
+          "name": "OnTSDKItemExchangeRecord",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 68
+        },
+        {
+          "name": "OnTSDKOlympicGameRank",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 69
+        },
+        {
+          "name": "OnTSDKChallageRankInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 70
+        },
+        {
+          "name": "OnTSDKChallageGameScore",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 71
+        },
+        {
+          "name": "OnTSDKRouletteStatus",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 72
+        },
+        {
+          "name": "OnTSDKRouletteResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 73
+        },
+        {
+          "name": "OnTSDKRecvWinRateList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 74
+        },
+        {
+          "name": "OnTSDKRecvWinRateQuerySendBeanList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 75
+        },
+        {
+          "name": "OnTSDKRecvCallBackList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 76
+        },
+        {
+          "name": "OnTSDKCallBack",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 77
+        },
+        {
+          "name": "OnTSDKRecvWinRateWeekRewardList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 78
+        },
+        {
+          "name": "OnTSDKRecvVersionUpgradeInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 79
+        },
+        {
+          "name": "OnTSDKRecvVersionUpgradeDownloadProgress",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 80
+        },
+        {
+          "name": "OnTSDKRecvVersionUpgradeDownloadResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 81
+        },
+        {
+          "name": "OnTSDKRecvMissionCompleted",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 82
+        },
+        {
+          "name": "OnTSDKCGISendMessageToFriend",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 83
+        },
+        {
+          "name": "OnMarqueeReceive",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 84
+        },
+        {
+          "name": "OnTSDKPersonActivityCfg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 85
+        },
+        {
+          "name": "OnTSDKChatRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 88
+        },
+        {
+          "name": "OnTSDKOnlinePerson",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 89
+        },
+        {
+          "name": "OnTSDKVoiceRoomInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 90
+        },
+        {
+          "name": "OnTSDKResponseQuerPlayerPosition",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 91
+        },
+        {
+          "name": "OnTSDKFetchDateRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 95
+        },
+        {
+          "name": "OnTSDKCreateDateRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 96
+        },
+        {
+          "name": "OnTSDKQueryDateRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 97
+        },
+        {
+          "name": "OnTSDKSitDownSuccess",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 101
+        },
+        {
+          "name": "MatchSessionPlayerDetail",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 102
+        },
+        {
+          "name": "OnTSDKSecretInviteNotifyRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 103
+        },
+        {
+          "name": "OnTSDKResponseQueryRelationRankExtInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 104
+        },
+        {
+          "name": "OnTSDKShopGive",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 105
+        },
+        {
+          "name": "OnTSDKFetchDateFreeMsg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 106
+        },
+        {
+          "name": "OnTSDKFetchSecretRoomRecordRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 107
+        },
+        {
+          "name": "OnTSDKAccuseRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 108
+        },
+        {
+          "name": "OnTSDKNotifyOffLine",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 109
+        },
+        {
+          "name": "OnTSDKNotifyRelogin",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 110
+        },
+        {
+          "name": "OnTSDKRspShareGiftURL",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 111
+        },
+        {
+          "name": "OnTSDKChildrenProcted",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 112
+        },
+        {
+          "name": "OnScreenCaptrue",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 113
+        },
+        {
+          "name": "OnReveFazaiCheckinInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 114
+        },
+        {
+          "name": "OnReveFazaSubmitInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 115
+        },
+        {
+          "name": "OnTSDKNotifySendRewardRedPacket",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 116
+        },
+        {
+          "name": "OnTSDKSendRewardRedPacketRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 117
+        },
+        {
+          "name": "OnTSDKSnatchRewardRedPacketRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 118
+        },
+        {
+          "name": "OnTSDKFetchSelfRewardRedPacketRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 119
+        },
+        {
+          "name": "OnTSDKFetchTotalRedPacketRankRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 120
+        },
+        {
+          "name": "OnGnaNotifySnatchRedPacket",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 121
+        },
+        {
+          "name": "OnTSDKEnterRoomRefreshPrivateRoomConfig",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 125
+        },
+        {
+          "name": "OnScreenRotate",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 126
+        },
+        {
+          "name": "OnTSDKItemExchangeRemainNum",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 127
+        },
+        {
+          "name": "OnTSDKFetchEveryLoginRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 128
+        },
+        {
+          "name": "OnTSDKRealNameAuthRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 130
+        },
+        {
+          "name": "OnTSDKCommonMission",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 131
+        },
+        {
+          "name": "OnTSDKGradeSeasonNotifyRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 132
+        },
+        {
+          "name": "ReceiveBookGameList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 133
+        },
+        {
+          "name": "ReceiveBookGame",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 134
+        },
+        {
+          "name": "OnBuyWeekCardEnd",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 136
+        },
+        {
+          "name": "OnTSDKPunish",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 137
+        },
+        {
+          "name": "OnTSDKPlayerShare",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 138
+        },
+        {
+          "name": "OnReceivePrivateShareReward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 139
+        },
+        {
+          "name": "RecAthenaShowIcon",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 140
+        },
+        {
+          "name": "ReceiveAthenaPanelReady",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 141
+        },
+        {
+          "name": "ReceiveAthenaPanelClosed",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 142
+        },
+        {
+          "name": "ReceoveAthenaRefreshDiamond",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 143
+        },
+        {
+          "name": "ReceiveAthenaJumpGame",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 144
+        },
+        {
+          "name": "ReceiveAthenaGetAward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 145
+        },
+        {
+          "name": "ReceiveMidasPay",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 146
+        },
+        {
+          "name": "ReceiveAgentServerData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 147
+        },
+        {
+          "name": "OnPlayerVentureInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 148
+        },
+        {
+          "name": "ModeDataReset",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 149
+        },
+        {
+          "name": "OnTSDKEnterRoomRefreshGameMode",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 150
+        },
+        {
+          "name": "OnTSDKStartRefreshGameMode",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 151
+        },
+        {
+          "name": "LoginPlatformFailed",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 152
+        },
+        {
+          "name": "LoginPlatformSuccess",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 153
+        },
+        {
+          "name": "OnTSDKFriendRoomGradeSeasonNotifyRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 154
+        },
+        {
+          "name": "OnTSDKRecvFetchShareFriendsListRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 155
+        },
+        {
+          "name": "OnTSDKRecvShareToFriendRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 156
+        },
+        {
+          "name": "OnTSDKShareUIClose",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 157
+        },
+        {
+          "name": "OnRecvRankBypassFriends",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 158
+        },
+        {
+          "name": "OnLastStreetRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 159
+        },
+        {
+          "name": "OnFetchRankRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 160
+        },
+        {
+          "name": "OnHighPayLimitInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 161
+        },
+        {
+          "name": "OnTSDK2V2RspGetTeamInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 162
+        },
+        {
+          "name": "OnTSDK2V2RspCreateTeam",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 163
+        },
+        {
+          "name": "OnTSDK2V2RspJoinTeam",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 164
+        },
+        {
+          "name": "OnTSDK2V2RspUpdateTeam",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 165
+        },
+        {
+          "name": "OnTSDK2V2RspGetTeamRoundList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 166
+        },
+        {
+          "name": "OnTSDK2V2NotifyMatchMake",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 167
+        },
+        {
+          "name": "OnTSDK2V2NotifyTeamInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 168
+        },
+        {
+          "name": "OnTSDK2V2InviteNotifyRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 169
+        },
+        {
+          "name": "OnTSDK2V2NotifyChatMsg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 170
+        },
+        {
+          "name": "OnTSDK2V2RspCheckFriend",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 171
+        },
+        {
+          "name": "OnTSDK2V2RspUinToOpenId",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 172
+        },
+        {
+          "name": "OnFirstTimeShareQuery",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 173
+        },
+        {
+          "name": "OnRecvClientVersionNotAllow",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 174
+        },
+        {
+          "name": "OnResDownLoadEndNotify",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 175
+        },
+        {
+          "name": "OnResDownLoadProgress",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 176
+        },
+        {
+          "name": "OnEnterRoomRecvBaseCfg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 177
+        },
+        {
+          "name": "OnFetchShareLuckyFrinedRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 178
+        },
+        {
+          "name": "OnShareLuckyFriendResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 179
+        },
+        {
+          "name": "OnNotifyFetchSectionScoreShareFriendList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 180
+        },
+        {
+          "name": "OnFetchSectionScoreShareRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 181
+        },
+        {
+          "name": "OnShareSectionScoreResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 182
+        },
+        {
+          "name": "OnNotifyFetchSectionLoseScoreShareFriendList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 183
+        },
+        {
+          "name": "OnFetchSectionLoseScoreShareRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 184
+        },
+        {
+          "name": "OnShareSectionLoseScoreResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 185
+        },
+        {
+          "name": "OnRspTimerRPQuery",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 186
+        },
+        {
+          "name": "OnRspTimerRPSubmit",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 187
+        },
+        {
+          "name": "OnRspTimerRPCash",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 188
+        },
+        {
+          "name": "ReceiveAthenaShowRedPoint",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 189
+        },
+        {
+          "name": "NotifyLeftBarAdsAward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 190
+        },
+        {
+          "name": "OnGDTAdsClose",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 191
+        },
+        {
+          "name": "OnTSDKLotusReconnect",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 192
+        },
+        {
+          "name": "OnGDTAdsInitOver",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 193
+        },
+        {
+          "name": "NotifyBenefitAdsAward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 194
+        },
+        {
+          "name": "NotifyRankAdsTimes",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 195
+        },
+        {
+          "name": "OnGDTAdsError",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 196
+        },
+        {
+          "name": "ReceiveAdsLotteryMsg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 197
+        },
+        {
+          "name": "RecvAllPlaybackRecordRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 198
+        },
+        {
+          "name": "RecvAddFavoritePlaybackRecordRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 199
+        },
+        {
+          "name": "RecvDelFavoritePlaybackRecordRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 200
+        },
+        {
+          "name": "RecvMakeRecordPublickRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 201
+        },
+        {
+          "name": "RecvReplayRecordDataAndPlay",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 202
+        },
+        {
+          "name": "RecvReplayRecordDataAndOpenStreamPanel",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 203
+        },
+        {
+          "name": "OnUpdateBottomBar",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 204
+        },
+        {
+          "name": "OnUpdateGameCamera",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 205
+        },
+        {
+          "name": "OnRspFetchHealthInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 206
+        },
+        {
+          "name": "OnRspSetHealthInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 207
+        },
+        {
+          "name": "OnRspGetWxBook",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 208
+        },
+        {
+          "name": "OnTsdkHealthGamePop",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 209
+        },
+        {
+          "name": "OnRspFriendPhotoFrame",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 210
+        },
+        {
+          "name": "OnRspCrossMarketing",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 211
+        },
+        {
+          "name": "OnRspAdsShowList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 212
+        },
+        {
+          "name": "OnRspMissonStatus",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 213
+        },
+        {
+          "name": "OnTSDKChallageMatchChangeSeat",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 214
+        },
+        {
+          "name": "OnQueryTmtWeeklyScore",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 215
+        },
+        {
+          "name": "RecvBetRecordRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 216
+        },
+        {
+          "name": "OnTSDKGamePbMessage",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 217
+        },
+        {
+          "name": "OnTSDKPBGameReplay",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 218
+        },
+        {
+          "name": "OnTSDKOfflineMatchScorePara",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 219
+        },
+        {
+          "name": "OnRspEntertainmentGuide",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 220
+        },
+        {
+          "name": "ReceiveAthenaStructShareWx",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 221
+        },
+        {
+          "name": "ReceiveAthenaStructShareQQ",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 222
+        },
+        {
+          "name": "ReceiveAthenaPhotoShareWx",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 223
+        },
+        {
+          "name": "ReceiveAthenaPhotoShareQQ",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 224
+        },
+        {
+          "name": "ReceiveAthenaGameFriendShareQQ",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 225
+        },
+        {
+          "name": "ReceiveAthenaUrlShareWx",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 226
+        },
+        {
+          "name": "RecvOldItemExchangeInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 227
+        },
+        {
+          "name": "RecvOldItemExchangeResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 228
+        },
+        {
+          "name": "OnRecvCreditScore",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 229
+        },
+        {
+          "name": "TryNotifyCreditScoreTips",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 230
+        },
+        {
+          "name": "ShowRegisterFailDialog",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 231
+        },
+        {
+          "name": "OnRecvActivityOperateRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 232
+        },
+        {
+          "name": "OnTommorowGiftQueryRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 233
+        },
+        {
+          "name": "OnTommorowGiftAwardRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 234
+        },
+        {
+          "name": "RecvFetchEntertainmentMissionRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 235
+        },
+        {
+          "name": "RecvEntertainmentMissionAwardRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 236
+        },
+        {
+          "name": "OnLuckyCallQueryRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 237
+        },
+        {
+          "name": "OnLuckyCallBuyCardRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 238
+        },
+        {
+          "name": "OnLuckyCallDrawLottery",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 239
+        },
+        {
+          "name": "OnLuckyDrawQueryRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 240
+        },
+        {
+          "name": "OnLuckyDrawLotteryRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 241
+        },
+        {
+          "name": "OnLuckyDrawRspTimeOut",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 242
+        },
+        {
+          "name": "OnFetchCustomProfileInfoRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 243
+        },
+        {
+          "name": "OnChangeNicknameRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 244
+        },
+        {
+          "name": "OnChangeHeadPicRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 245
+        },
+        {
+          "name": "OnChangePlayerInfoTimeOut",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 246
+        },
+        {
+          "name": "RecvShopMallFreeRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 247
+        },
+        {
+          "name": "PandoraSharePhotoToQQ",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 248
+        },
+        {
+          "name": "PandoraSharePhotoToWX",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 249
+        },
+        {
+          "name": "RecvChangeGenderRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 250
+        },
+        {
+          "name": "UpdateLBS",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 251
+        },
+        {
+          "name": "RecvPrivilegeAddress",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 252
+        },
+        {
+          "name": "OnServerDiscardTip",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 253
+        },
+        {
+          "name": "OnMaxWinBeanRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 254
+        },
+        {
+          "name": "OnRspMissionInfos",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 255
+        },
+        {
+          "name": "OnRspGetMissionAward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 256
+        },
+        {
+          "name": "OnRspMissionTimeOut",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 257
+        },
+        {
+          "name": "OnGetRankLevelGiftRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 258
+        },
+        {
+          "name": "RecvStoreRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 259
+        },
+        {
+          "name": "OnFetchLuckRouletteStatus",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 260
+        },
+        {
+          "name": "OnFetchLuckRouletteResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 261
+        },
+        {
+          "name": "FullScreenCapture",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 262
+        },
+        {
+          "name": "UpdateRankGradeLevelJiangLi",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 263
+        },
+        {
+          "name": "OnNotifySectionFirstReward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 264
+        },
+        {
+          "name": "OnGetSectionFirstRewardRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 265
+        },
+        {
+          "name": "OnQuerySectionFirstRewardRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 266
+        },
+        {
+          "name": "MarkPandoraActivityItem",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 267
+        },
+        {
+          "name": "OnTSDKGradeSeasonNeedReqInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 268
+        },
+        {
+          "name": "OnTSDKNotifySelfInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 269
+        },
+        {
+          "name": "OnActivityDrawLotteryHuaweiInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 270
+        },
+        {
+          "name": "OnActivityDrawLotteryHuaweiPrize",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 271
+        },
+        {
+          "name": "OnActivityDrawLotteryHuaweiAccumulate",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 272
+        },
+        {
+          "name": "RecvAdsSwitchFile",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 273
+        },
+        {
+          "name": "SendFreeGameGetBeanReward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 274
+        },
+        {
+          "name": "RecvFreeGameGetBeanReward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 275
+        },
+        {
+          "name": "RecvFreeGameRoundNum",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 276
+        },
+        {
+          "name": "OnFetchAbTestJson",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 277
+        },
+        {
+          "name": "RecPandoraSoundOpen",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 278
+        },
+        {
+          "name": "RecvPandoraShowAds",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 279
+        },
+        {
+          "name": "OnFriendWinRateAndRankRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 280
+        },
+        {
+          "name": "OnTSDKRefinePersonActivityCfg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 281
+        },
+        {
+          "name": "OnWanfaUiAbTestRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 282
+        },
+        {
+          "name": "OnTSDKUnregFriendsRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 283
+        },
+        {
+          "name": "OnTSDKOlympicSeriesDetail",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 284
+        },
+        {
+          "name": "OnRecMagicFaceFreeTimes",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 285
+        },
+        {
+          "name": "SendSetADSPrivligeData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 286
+        },
+        {
+          "name": "SendGetADSPrivligeData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 287
+        },
+        {
+          "name": "RecvSetADSPrivligeData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 288
+        },
+        {
+          "name": "RecvGetADSPrivligeData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 289
+        },
+        {
+          "name": "OnTSDKMysteryGoodsQuery",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 290
+        },
+        {
+          "name": "UpdatePandoraActivity",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 291
+        },
+        {
+          "name": "PandoraReceiveDestroy",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 292
+        },
+        {
+          "name": "PandoraReceivePlayAudio",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 293
+        },
+        {
+          "name": "PandoraReceiveItemExhibition",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 294
+        },
+        {
+          "name": "ReceivePandoraRefreshInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 295
+        },
+        {
+          "name": "PandoraReceiveShowBanner",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 296
+        },
+        {
+          "name": "OnTSDKDownloadSuccess",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 297
+        },
+        {
+          "name": "OnTSDKGoodsQuery",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 298
+        },
+        {
+          "name": "RecvAdsExperimentData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 299
+        },
+        {
+          "name": "OnTSDKPreviewGameMessage",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 300
+        },
+        {
+          "name": "ReplayLocalRecordData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 301
+        },
+        {
+          "name": "SaveLocalRecordData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 302
+        },
+        {
+          "name": "ResetPandoraData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 303
+        },
+        {
+          "name": "OnRecommendNextRoundScene",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 304
+        },
+        {
+          "name": "OnTSDKRecvGenericCommonNotify",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 305
+        },
+        {
+          "name": "PlayerGroupQueryRes",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 306
+        },
+        {
+          "name": "OnTSDKRspStartInfo",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 307
+        },
+        {
+          "name": "OnDirectBuyRecommendRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 308
+        },
+        {
+          "name": "OnGetReliefFoundSuccess",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 309
+        },
+        {
+          "name": "OnGetReliefFoundFailed",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 310
+        },
+        {
+          "name": "PandoraReceiveReqRegisteredData",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 311
+        },
+        {
+          "name": "OnRecvAdsSdkTest",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 312
+        },
+        {
+          "name": "OnShopMallDiamondBuyGoldCoinQueryRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 313
+        },
+        {
+          "name": "OnDiamondBuyGoldCoinRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 314
+        },
+        {
+          "name": "RecvBeanBuyCoinsPanelRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 315
+        },
+        {
+          "name": "OnBeanBuyGoldCoinRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 316
+        },
+        {
+          "name": "OnTSDKGRPCArrangeFailed",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 317
+        },
+        {
+          "name": "RecAthenaChangeIcon",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 318
+        },
+        {
+          "name": "FirstGameShowAward",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 319
+        },
+        {
+          "name": "OnChatMsgRspNew",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 320
+        },
+        {
+          "name": "OnUpdateFriendList",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 321
+        },
+        {
+          "name": "OnRiichiPlayerInfoRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 322
+        },
+        {
+          "name": "ReceiveAthenaShowBubble",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 323
+        },
+        {
+          "name": "UpdateArrangeTimeOut",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 324
+        },
+        {
+          "name": "HundredPlayerQueryScenesRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 325
+        },
+        {
+          "name": "OnNotifyFaceCheckResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 326
+        },
+        {
+          "name": "OnRecvAdActiveUserResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 327
+        },
+        {
+          "name": "OnFreeGameCheckEntryRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 328
+        },
+        {
+          "name": "OnGrpcMjRoundRecordRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 329
+        },
+        {
+          "name": "OnGrpcWXSubscribeRsp",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 330
+        },
+        {
+          "name": "OnWXSubscribeResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 331
+        },
+        {
+          "name": "OnTSDKNormalItemNumberChg",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 332
+        },
+        {
+          "name": "OnUpdateNickNameForBP",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 333
+        },
+        {
+          "name": "OnTSDKStartGameGroupEnd",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 334
+        },
+        {
+          "name": "OnNotifyStreakBallResult",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 335
+        },
+        {
+          "name": "OnLogoutClearDataModel",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 336
+        },
+        {
+          "name": "HandleWakeupMessage",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 337
+        },
+        {
+          "name": "OnTSDKGRPCArrangeCancel",
+          "type": "HappyMahjong.TSDKMessageEvent",
+          "is_static": true,
+          "constant": 338
+        }
+      ],
+      "properties": [],
+      "methods": []
+    },
+    {
+      "assembly": "HappyMahjong.Hall",
+      "type": "HappyMahjong.TSDK4CSharpService",
+      "fields": [
+        {
+          "name": "m_bReconnectToGameSvr",
+          "type": "System.Boolean",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "m_bUseTss",
+          "type": "System.Boolean",
+          "is_static": false,
+          "constant": null
+        },
+        {
+          "name": "GAMEID",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": 398
+        },
+        {
+          "name": "MAX_GAMEMESSAGE_LENGTH",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "CAPABILITY",
+          "type": "System.Int64",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "\u003Cdispatcher\u003Ek__BackingField",
+          "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "gLotusStatus",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "m_bEnterInterrupt",
+          "type": "System.Boolean",
+          "is_static": false,
+          "constant": null
+        },
+        {
+          "name": "m_fLastInterruptTime",
+          "type": "System.Single",
+          "is_static": false,
+          "constant": null
+        },
+        {
+          "name": "msgBuffer",
+          "type": "System.Byte[]",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "msgBufferLen",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": 102400
+        },
+        {
+          "name": "gameMsgBuffer",
+          "type": "System.Byte[]",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "m_roomId",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "m_svrId",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "unKnowMsgParam",
+          "type": "TSDK4CSharp.CUnknowMsgPara",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "s_sceneId",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": null
+        },
+        {
+          "name": "s_roomType",
+          "type": "System.Int32",
+          "is_static": true,
+          "constant": null
+        }
+      ],
+      "properties": [
+        {
+          "name": "dispatcher",
+          "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher"
+        },
+        {
+          "name": "roomId",
+          "type": "System.Int32"
+        },
+        {
+          "name": "svrId",
+          "type": "System.Int32"
+        }
+      ],
+      "methods": [
+        {
+          "name": "get_dispatcher",
+          "signature": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher HappyMahjong.TSDK4CSharpService::get_dispatcher()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "set_dispatcher",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::set_dispatcher(strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "value",
+              "type": "strange.extensions.dispatcher.eventdispatcher.api.IEventDispatcher"
+            }
+          ]
+        },
+        {
+          "name": "get_roomId",
+          "signature": "System.Int32 HappyMahjong.TSDK4CSharpService::get_roomId()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "set_roomId",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::set_roomId(System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "value",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "get_svrId",
+          "signature": "System.Int32 HappyMahjong.TSDK4CSharpService::get_svrId()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "set_svrId",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::set_svrId(System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "value",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "Awake",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::Awake()",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "RegisterNotifyMsg",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::RegisterNotifyMsg()",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "RegisterGRPCMsg",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::RegisterGRPCMsg()",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "OnGRPCMJChatRsp",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnGRPCMJChatRsp(HappyMahjong.NewGame.GRPCMsgPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "grpcPara",
+              "type": "HappyMahjong.NewGame.GRPCMsgPara"
+            }
+          ]
+        },
+        {
+          "name": "OnGRPCArrangeError",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnGRPCArrangeError(HappyMahjong.NewGame.GRPCMsgPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "grpcPara",
+              "type": "HappyMahjong.NewGame.GRPCMsgPara"
+            }
+          ]
+        },
+        {
+          "name": "OnGRPCArrangeMsg",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnGRPCArrangeMsg(HappyMahjong.NewGame.GRPCMsgPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "grpcPara",
+              "type": "HappyMahjong.NewGame.GRPCMsgPara"
+            }
+          ]
+        },
+        {
+          "name": "HandleArrangeLockInGame",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::HandleArrangeLockInGame(Rpc.RspArrange)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "rsp",
+              "type": "Rpc.RspArrange"
+            }
+          ]
+        },
+        {
+          "name": "OnGRPCNtfArrangeMsg",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnGRPCNtfArrangeMsg(HappyMahjong.NewGame.GRPCMsgPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "grpcPara",
+              "type": "HappyMahjong.NewGame.GRPCMsgPara"
+            }
+          ]
+        },
+        {
+          "name": "OnGRPCSayHelloMsg",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnGRPCSayHelloMsg(HappyMahjong.NewGame.GRPCMsgPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "grpcPara",
+              "type": "HappyMahjong.NewGame.GRPCMsgPara"
+            }
+          ]
+        },
+        {
+          "name": "OnGRPCCancelArrangeMsg",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnGRPCCancelArrangeMsg(HappyMahjong.NewGame.GRPCMsgPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "grpcPara",
+              "type": "HappyMahjong.NewGame.GRPCMsgPara"
+            }
+          ]
+        },
+        {
+          "name": "Start",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::Start()",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "OnApplicationQuit",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnApplicationQuit()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "Update",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::Update()",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "ConfigReadFinish",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ConfigReadFinish(HappyMahjong.update.CsResMgr/ConfigReadFinishState)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "mConfigReadFinishState",
+              "type": "HappyMahjong.update.CsResMgr/ConfigReadFinishState"
+            }
+          ]
+        },
+        {
+          "name": "IIPSFinish",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::IIPSFinish(HappyMahjong.update.CsResMgr/ConfigReadFinishState)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "mConfigReadFinishState",
+              "type": "HappyMahjong.update.CsResMgr/ConfigReadFinishState"
+            }
+          ]
+        },
+        {
+          "name": "ApplicationPauseRefreshAudio",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ApplicationPauseRefreshAudio(System.Boolean)",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "applicationPauseStatus",
+              "type": "System.Boolean"
+            }
+          ]
+        },
+        {
+          "name": "OnApplicationPause",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::OnApplicationPause(System.Boolean)",
+          "is_public": false,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "pauseStatus",
+              "type": "System.Boolean"
+            }
+          ]
+        },
+        {
+          "name": "GetInGameEnterInterruptDuration",
+          "signature": "System.Int32 HappyMahjong.TSDK4CSharpService::GetInGameEnterInterruptDuration()",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "QueryPlayerGameStatus",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::QueryPlayerGameStatus()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "RequestOB",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::RequestOB(System.UInt32,System.Int16,System.Int16,HuanLeGameSvr.VIEWSEAT_FLAG)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "targetUIN",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "roomId",
+              "type": "System.Int16"
+            },
+            {
+              "name": "seat",
+              "type": "System.Int16"
+            },
+            {
+              "name": "flag",
+              "type": "HuanLeGameSvr.VIEWSEAT_FLAG"
+            }
+          ]
+        },
+        {
+          "name": "RequestEnterRoomDirect",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::RequestEnterRoomDirect(System.UInt32,System.Int16,System.Int32,System.Int16,HuanLeGameSvr.TTLVUNIT[])",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "svrId",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "roomId",
+              "type": "System.Int16"
+            },
+            {
+              "name": "sceneId",
+              "type": "System.Int32"
+            },
+            {
+              "name": "shTlvNum",
+              "type": "System.Int16"
+            },
+            {
+              "name": "tlv",
+              "type": "HuanLeGameSvr.TTLVUNIT[]"
+            }
+          ]
+        },
+        {
+          "name": "AppendRankToolsTLV",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendRankToolsTLV(TSDK4CSharp.TSDKTLV[]\u0026,System.Int16\u0026)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "tsdkTLV",
+              "type": "TSDK4CSharp.TSDKTLV[]\u0026"
+            },
+            {
+              "name": "tlvNum",
+              "type": "System.Int16\u0026"
+            }
+          ]
+        },
+        {
+          "name": "AppendMJCapabilityTLV",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendMJCapabilityTLV(TSDK4CSharp.TSDKTLV[]\u0026,System.Int16\u0026)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "tsdkTLV",
+              "type": "TSDK4CSharp.TSDKTLV[]\u0026"
+            },
+            {
+              "name": "tlvNum",
+              "type": "System.Int16\u0026"
+            }
+          ]
+        },
+        {
+          "name": "GetMJCapability",
+          "signature": "System.Int64 HappyMahjong.TSDK4CSharpService::GetMJCapability()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "AppendMJClientChooseInfoTLV",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendMJClientChooseInfoTLV(TSDK4CSharp.TSDKTLV[]\u0026,System.Int16\u0026)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "tsdkTLV",
+              "type": "TSDK4CSharp.TSDKTLV[]\u0026"
+            },
+            {
+              "name": "tlvNum",
+              "type": "System.Int16\u0026"
+            }
+          ]
+        },
+        {
+          "name": "AppendRankToolsTLVWhenSitDown",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendRankToolsTLVWhenSitDown(HuanLeGameSvr.CRequestSitDownHGPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sitDownPara",
+              "type": "HuanLeGameSvr.CRequestSitDownHGPara"
+            }
+          ]
+        },
+        {
+          "name": "AppendRankToolsTLVWhenReady",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendRankToolsTLVWhenReady(HuanLeGameSvr.CRequestReadyHGPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "readyPara",
+              "type": "HuanLeGameSvr.CRequestReadyHGPara"
+            }
+          ]
+        },
+        {
+          "name": "CheckUseSelfDesk",
+          "signature": "System.Boolean HappyMahjong.TSDK4CSharpService::CheckUseSelfDesk()",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "AppendDeskSettingTLVWhenLogin",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendDeskSettingTLVWhenLogin(TSDK4CSharp.TSDKTLV[]\u0026,System.Int16\u0026)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "tsdkTLV",
+              "type": "TSDK4CSharp.TSDKTLV[]\u0026"
+            },
+            {
+              "name": "tlvNum",
+              "type": "System.Int16\u0026"
+            }
+          ]
+        },
+        {
+          "name": "AppendDeskSettingTLVWhenSitDown",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendDeskSettingTLVWhenSitDown(HuanLeGameSvr.CRequestSitDownHGPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sitdownPara",
+              "type": "HuanLeGameSvr.CRequestSitDownHGPara"
+            }
+          ]
+        },
+        {
+          "name": "AppendBeanCardTLVWhenSitDown",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendBeanCardTLVWhenSitDown(HuanLeGameSvr.CRequestSitDownHGPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sitdownPara",
+              "type": "HuanLeGameSvr.CRequestSitDownHGPara"
+            }
+          ]
+        },
+        {
+          "name": "AppendWorryFreeCardTLVWhenSitDown",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendWorryFreeCardTLVWhenSitDown(HuanLeGameSvr.CRequestSitDownHGPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sitdownPara",
+              "type": "HuanLeGameSvr.CRequestSitDownHGPara"
+            }
+          ]
+        },
+        {
+          "name": "AppendChipInfoWhenSitDown",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendChipInfoWhenSitDown(HuanLeGameSvr.CRequestSitDownHGPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sitdownPara",
+              "type": "HuanLeGameSvr.CRequestSitDownHGPara"
+            }
+          ]
+        },
+        {
+          "name": "AppendDeskSettingTLVWhenReady",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendDeskSettingTLVWhenReady(HuanLeGameSvr.CRequestReadyHGPara)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "readyPara",
+              "type": "HuanLeGameSvr.CRequestReadyHGPara"
+            }
+          ]
+        },
+        {
+          "name": "AppendSceneIDTLVWhenLogin",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::AppendSceneIDTLVWhenLogin(System.Int32,TSDK4CSharp.TSDKTLV[]\u0026,System.Int16\u0026)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sceneId",
+              "type": "System.Int32"
+            },
+            {
+              "name": "tsdkTLV",
+              "type": "TSDK4CSharp.TSDKTLV[]\u0026"
+            },
+            {
+              "name": "tlvNum",
+              "type": "System.Int16\u0026"
+            }
+          ]
+        },
+        {
+          "name": "RequestEnterOlympicRoom",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::RequestEnterOlympicRoom(System.UInt32,System.Int16,System.Int16)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "svrId",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "roomId",
+              "type": "System.Int16"
+            },
+            {
+              "name": "sceneId",
+              "type": "System.Int16"
+            }
+          ]
+        },
+        {
+          "name": "GetLocalCodeVersionNumber",
+          "signature": "System.UInt32 HappyMahjong.TSDK4CSharpService::GetLocalCodeVersionNumber()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "CheckUpgradeInfo",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::CheckUpgradeInfo(System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "testType",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportMissionEvent",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportMissionEvent(System.Int32,System.UInt32,System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "eventId",
+              "type": "System.Int32"
+            },
+            {
+              "name": "sceneId",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "additionValues",
+              "type": "System.Collections.Generic.List\u00601\u003CSystem.Int32\u003E"
+            }
+          ]
+        },
+        {
+          "name": "ConfirmInstallApkByTSDK",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ConfirmInstallApkByTSDK()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "GetVersionByStr",
+          "signature": "System.UInt32 HappyMahjong.TSDK4CSharpService::GetVersionByStr(System.String)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "str",
+              "type": "System.String"
+            }
+          ]
+        },
+        {
+          "name": "RequestSitDown",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::RequestSitDown(System.UInt32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "nTimeOut",
+              "type": "System.UInt32"
+            }
+          ]
+        },
+        {
+          "name": "RequestReady",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::RequestReady(System.UInt32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "nTimeOut",
+              "type": "System.UInt32"
+            }
+          ]
+        },
+        {
+          "name": "ReportDiscardTipsClientStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportDiscardTipsClientStatistics(System.UInt32,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "accessToken",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSRecvNum",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSCount",
+              "type": "System.Int32"
+            },
+            {
+              "name": "GameType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "SceneID",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportDeeplinkClick",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportDeeplinkClick(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "deeplink",
+              "type": "System.String"
+            },
+            {
+              "name": "realDeeplink",
+              "type": "System.String"
+            }
+          ]
+        },
+        {
+          "name": "ReportNewbieEvent",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportNewbieEvent(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.String)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "info",
+              "type": "System.String"
+            }
+          ]
+        },
+        {
+          "name": "ReportDirectBuyEvent",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportDirectBuyEvent(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "sceneID",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportShopMallDirectBuyBeansEvent",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportShopMallDirectBuyBeansEvent(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "packageId",
+              "type": "System.String"
+            },
+            {
+              "name": "pfKey",
+              "type": "System.String"
+            },
+            {
+              "name": "timestamp",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportFireworksEvent",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportFireworksEvent(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,HappyMahjong.Common.GameType)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "gameType",
+              "type": "HappyMahjong.Common.GameType"
+            }
+          ]
+        },
+        {
+          "name": "ReportDeskProEvent",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportDeskProEvent(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "itemID",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportWanfaMainEntry",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportWanfaMainEntry(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "gameType",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportMainUIStateEvent",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportMainUIStateEvent(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openID",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "curState",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nextState",
+              "type": "System.Int32"
+            },
+            {
+              "name": "stayTime",
+              "type": "System.Single"
+            }
+          ]
+        },
+        {
+          "name": "ReportGameLaunchStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportGameLaunchStatistics(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "launchTime",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportDiscardTipsClientStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportDiscardTipsClientStatistics(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "GameType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "SceneID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "inHandList",
+              "type": "System.String"
+            },
+            {
+              "name": "otherList",
+              "type": "System.String"
+            },
+            {
+              "name": "svrDiscard",
+              "type": "System.Int32"
+            },
+            {
+              "name": "clientDiscard",
+              "type": "System.Int32"
+            },
+            {
+              "name": "userDiscard",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportAdviceCPGHTStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportAdviceCPGHTStatistics(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "sceneId",
+              "type": "System.Int32"
+            },
+            {
+              "name": "param1",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportAutoPlayClientStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportAutoPlayClientStatistics(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "GameType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "SceneID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "roundId",
+              "type": "System.String"
+            },
+            {
+              "name": "type",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportDevicePerformanceData",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportDevicePerformanceData(System.UInt32,System.String,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportAdaptivePerformance",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportAdaptivePerformance(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "currentLevel",
+              "type": "System.Int32"
+            },
+            {
+              "name": "fps",
+              "type": "System.Single"
+            },
+            {
+              "name": "lag",
+              "type": "System.Single"
+            }
+          ]
+        },
+        {
+          "name": "ReportEmojiClientStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportEmojiClientStatistics(System.UInt32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "GameType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "SceneID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "sendTime",
+              "type": "System.Int32"
+            },
+            {
+              "name": "emojiType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "emojiID",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ReportClientStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportClientStatistics(System.UInt32,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,AppStatus.TSNSFLowReportStr[])",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "accessToken",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSRecvNum",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSCount",
+              "type": "System.Int32"
+            },
+            {
+              "name": "reportStrList",
+              "type": "AppStatus.TSNSFLowReportStr[]"
+            }
+          ]
+        },
+        {
+          "name": "ReportClientStatistics",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReportClientStatistics(System.UInt32,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "playerUin",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "openId",
+              "type": "System.String"
+            },
+            {
+              "name": "accessToken",
+              "type": "System.String"
+            },
+            {
+              "name": "nSNSType",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSSubtype",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nPlatID",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSRecvNum",
+              "type": "System.Int32"
+            },
+            {
+              "name": "nSNSCount",
+              "type": "System.Int32"
+            },
+            {
+              "name": "needDeviceInfo",
+              "type": "System.Boolean"
+            }
+          ]
+        },
+        {
+          "name": "UpLoadCurrFile",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::UpLoadCurrFile()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "SetUploadAttachmentDir",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::SetUploadAttachmentDir(System.String)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "lpszAttachmentDir",
+              "type": "System.String"
+            }
+          ]
+        },
+        {
+          "name": "UpLoadSpecificLog",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::UpLoadSpecificLog(System.Int32,System.Int32,System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "year",
+              "type": "System.Int32"
+            },
+            {
+              "name": "mouth",
+              "type": "System.Int32"
+            },
+            {
+              "name": "day",
+              "type": "System.Int32"
+            },
+            {
+              "name": "hour",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "EnterRoomByQuick",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::EnterRoomByQuick(System.UInt32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sceneId",
+              "type": "System.UInt32"
+            },
+            {
+              "name": "gameType",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "AsyncEnterRoomFailed",
+          "signature": "System.Collections.IEnumerator HappyMahjong.TSDK4CSharpService::AsyncEnterRoomFailed(System.Int32)",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "nRet",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "IsAllowEnterRoom",
+          "signature": "System.Boolean HappyMahjong.TSDK4CSharpService::IsAllowEnterRoom()",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "ToReportStr",
+          "signature": "AppStatus.TSNSFLowReportStr HappyMahjong.TSDK4CSharpService::ToReportStr(System.String)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "input",
+              "type": "System.String"
+            }
+          ]
+        },
+        {
+          "name": "ReqEnterRoomNew",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ReqEnterRoomNew(System.Int32,System.Int32)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "sceneId",
+              "type": "System.Int32"
+            },
+            {
+              "name": "roomType",
+              "type": "System.Int32"
+            }
+          ]
+        },
+        {
+          "name": "ArrangeTimeOut",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ArrangeTimeOut()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "PreArrangeTimeOut",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::PreArrangeTimeOut()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "ArrangeFailed",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ArrangeFailed(System.String,System.Boolean,System.Boolean)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "tips",
+              "type": "System.String"
+            },
+            {
+              "name": "reMatching",
+              "type": "System.Boolean"
+            },
+            {
+              "name": "isTimeout",
+              "type": "System.Boolean"
+            }
+          ]
+        },
+        {
+          "name": "ShowEnterRoomFailedTips",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::ShowEnterRoomFailedTips(System.String,System.Boolean,System.Boolean)",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": [
+            {
+              "name": "tips",
+              "type": "System.String"
+            },
+            {
+              "name": "reMatching",
+              "type": "System.Boolean"
+            },
+            {
+              "name": "isTimeout",
+              "type": "System.Boolean"
+            }
+          ]
+        },
+        {
+          "name": "GRPCArrangeSayHello",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::GRPCArrangeSayHello()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "CancelSayHello",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::CancelSayHello()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "CancelTimeOut",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::CancelTimeOut()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": "CancelArrange",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::CancelArrange()",
+          "is_public": true,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": ".ctor",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::.ctor()",
+          "is_public": true,
+          "is_static": false,
+          "is_virtual": false,
+          "parameters": []
+        },
+        {
+          "name": ".cctor",
+          "signature": "System.Void HappyMahjong.TSDK4CSharpService::.cctor()",
+          "is_public": false,
+          "is_static": true,
+          "is_virtual": false,
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "candidates": [],
+  "limits": [
+    "Static schema and direct source references only; no runtime event registration is performed.",
+    "Runtime field values, account data and arbitrary strings are not emitted."
+  ]
+}

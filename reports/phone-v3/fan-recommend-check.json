@@ -1,0 +1,1384 @@
+{
+  "files": [
+    {
+      "entry": 6,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 7,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 8,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 9,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 10,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 11,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 15,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 16,
+      "recommendation_log_lines": 62,
+      "detail_entries": 434,
+      "unparsed_recommendation_lines": [],
+      "messages": [
+        {
+          "line": 17113,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 17114,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 17470,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 17471,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 21474,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 21475,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 22120,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 22121,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 22430,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 22431,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 22957,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 22958,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 23249,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 23250,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 23639,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 23640,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 23937,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 23938,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 24312,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 24313,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 24584,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 24585,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 24981,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 24982,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 25221,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 25222,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 25598,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 25599,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 25822,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 25823,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 26289,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 26290,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 26538,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 26539,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 26903,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 26904,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 27123,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 27124,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 27548,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 27549,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 27797,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 27798,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28164,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28165,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28388,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28389,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28753,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28754,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28982,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 28983,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 29404,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 29405,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 29619,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 29620,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 29995,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 29996,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 30215,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 30216,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 30744,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "14": 13
+          },
+          "tag_lengths": {
+            "14": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 30745,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "14": 1
+          },
+          "tag_lengths": {
+            "14": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 30973,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "13": 13
+          },
+          "tag_lengths": {
+            "13": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 30974,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        }
+      ],
+      "self_checkpoints": [
+        {
+          "baseline": "initial_self_hand",
+          "baseline_line": 16990,
+          "baseline_count": 13,
+          "recommendation_line": 17113,
+          "comparison_available": true,
+          "detail_count": 13,
+          "same_length_entries": 13,
+          "exact_self_multiset_matches": 13,
+          "same_length_nonmatches": 0
+        },
+        {
+          "baseline": "first_self_draw_hand",
+          "baseline_line": 17444,
+          "baseline_count": 14,
+          "recommendation_line": 17470,
+          "comparison_available": true,
+          "detail_count": 13,
+          "same_length_entries": 13,
+          "exact_self_multiset_matches": 13,
+          "same_length_nonmatches": 0
+        }
+      ],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 17,
+      "recommendation_log_lines": 34,
+      "detail_entries": 250,
+      "unparsed_recommendation_lines": [],
+      "messages": [
+        {
+          "line": 10169,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 12,
+          "hand_lengths": {
+            "13": 12
+          },
+          "tag_lengths": {
+            "13": 12
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 10170,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 10698,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 12,
+          "hand_lengths": {
+            "13": 12
+          },
+          "tag_lengths": {
+            "13": 12
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 10699,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "13": 1
+          },
+          "tag_lengths": {
+            "13": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 11432,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "11": 13
+          },
+          "tag_lengths": {
+            "11": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 11433,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "11": 1
+          },
+          "tag_lengths": {
+            "11": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 11646,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "10": 13
+          },
+          "tag_lengths": {
+            "10": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 11647,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "10": 1
+          },
+          "tag_lengths": {
+            "10": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12017,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "11": 13
+          },
+          "tag_lengths": {
+            "11": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12018,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "11": 1
+          },
+          "tag_lengths": {
+            "11": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12265,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 13,
+          "hand_lengths": {
+            "10": 13
+          },
+          "tag_lengths": {
+            "10": 13
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12266,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "10": 1
+          },
+          "tag_lengths": {
+            "10": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12783,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 15,
+          "hand_lengths": {
+            "8": 15
+          },
+          "tag_lengths": {
+            "8": 15
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12784,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "8": 1
+          },
+          "tag_lengths": {
+            "8": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12993,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 15,
+          "hand_lengths": {
+            "7": 15
+          },
+          "tag_lengths": {
+            "7": 15
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 12994,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "7": 1
+          },
+          "tag_lengths": {
+            "7": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 13352,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "8": 14
+          },
+          "tag_lengths": {
+            "8": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 13353,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "8": 1
+          },
+          "tag_lengths": {
+            "8": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 13597,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 15,
+          "hand_lengths": {
+            "7": 15
+          },
+          "tag_lengths": {
+            "7": 15
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 13598,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "7": 1
+          },
+          "tag_lengths": {
+            "7": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14031,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "8": 14
+          },
+          "tag_lengths": {
+            "8": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14032,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "8": 1
+          },
+          "tag_lengths": {
+            "8": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14289,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "7": 14
+          },
+          "tag_lengths": {
+            "7": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14290,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "7": 1
+          },
+          "tag_lengths": {
+            "7": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14673,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "8": 14
+          },
+          "tag_lengths": {
+            "8": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14674,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "8": 1
+          },
+          "tag_lengths": {
+            "8": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14952,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "7": 14
+          },
+          "tag_lengths": {
+            "7": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 14953,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "7": 1
+          },
+          "tag_lengths": {
+            "7": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 15381,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "8": 14
+          },
+          "tag_lengths": {
+            "8": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 15382,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "8": 1
+          },
+          "tag_lengths": {
+            "8": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 15629,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "7": 14
+          },
+          "tag_lengths": {
+            "7": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 15630,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "7": 1
+          },
+          "tag_lengths": {
+            "7": 1
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 16105,
+          "kind": "SetNewFanRecommendDetailData",
+          "detail_count": 14,
+          "hand_lengths": {
+            "8": 14
+          },
+          "tag_lengths": {
+            "8": 14
+          },
+          "distinct_hand_multisets": 1
+        },
+        {
+          "line": 16106,
+          "kind": "Set Active FanRecommendDeatil",
+          "detail_count": 1,
+          "hand_lengths": {
+            "8": 1
+          },
+          "tag_lengths": {
+            "8": 1
+          },
+          "distinct_hand_multisets": 1
+        }
+      ],
+      "self_checkpoints": [
+        {
+          "baseline": "initial_self_hand",
+          "baseline_line": 10062,
+          "baseline_count": 13,
+          "recommendation_line": 10169,
+          "comparison_available": true,
+          "detail_count": 12,
+          "same_length_entries": 12,
+          "exact_self_multiset_matches": 12,
+          "same_length_nonmatches": 0
+        },
+        {
+          "baseline": "first_self_draw_hand",
+          "baseline_line": 11981,
+          "baseline_count": 14,
+          "recommendation_line": 12017,
+          "comparison_available": true,
+          "detail_count": 13,
+          "same_length_entries": 0,
+          "exact_self_multiset_matches": 0,
+          "same_length_nonmatches": 0
+        }
+      ],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 18,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 19,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    },
+    {
+      "entry": 20,
+      "recommendation_log_lines": 0,
+      "detail_entries": 0,
+      "unparsed_recommendation_lines": [],
+      "messages": [],
+      "self_checkpoints": [],
+      "limits": [
+        "Fields are parsed using the recovered FanRecommendDetail.ToString format.",
+        "Only the first recommendation after each known self checkpoint is compared; later hand evolution is not reconstructed.",
+        "Repeated recommendations and candidate patterns are not independent player hands.",
+        "Equality proves matching tile multisets at those checkpoints, not absence of all other unlogged data.",
+        "No hand values, tags, fan names, account IDs or raw lines are emitted."
+      ]
+    }
+  ]
+}

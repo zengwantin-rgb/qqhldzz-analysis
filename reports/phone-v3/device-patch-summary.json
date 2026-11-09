@@ -1,0 +1,216 @@
+{
+  "status": "device_patch_not_exported",
+  "patch_match_count": 0,
+  "runtime_readiness": [
+    {
+      "entry": 6,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 7,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 8,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 9,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 10,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 11,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 15,
+      "counts": {
+        "fix_begin": 1,
+        "ready": 1,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [
+        {
+          "line": 3171,
+          "kind": "fix_begin",
+          "time": "2026-11-09 21:33:48"
+        },
+        {
+          "line": 3261,
+          "kind": "ready",
+          "time": "2026-11-09 21:33:48",
+          "matches_manifest_version": true
+        }
+      ],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 16,
+      "counts": {
+        "fix_begin": 2,
+        "ready": 2,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [
+        {
+          "line": 366,
+          "kind": "fix_begin",
+          "time": "2026-11-09 22:13:12"
+        },
+        {
+          "line": 456,
+          "kind": "ready",
+          "time": "2026-11-09 22:13:12",
+          "matches_manifest_version": true
+        },
+        {
+          "line": 2836,
+          "kind": "fix_begin",
+          "time": "2026-11-09 22:13:19"
+        },
+        {
+          "line": 2926,
+          "kind": "ready",
+          "time": "2026-11-09 22:13:19",
+          "matches_manifest_version": true
+        }
+      ],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 17,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 18,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 19,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    },
+    {
+      "entry": 20,
+      "counts": {
+        "fix_begin": 0,
+        "ready": 0,
+        "version_check_unload": 0,
+        "patch_load_exception": 0,
+        "manager_exception": 0,
+        "null_input": 0,
+        "already_loaded_unchanged": 0
+      },
+      "events": [],
+      "event_samples_truncated": false
+    }
+  ],
+  "limits": [
+    "Patch bytes are read as serialized data; no patch, VM instruction, reflection binding or game code is executed.",
+    "Successful structural parsing does not prove that this patch was applied in the recorded session.",
+    "Readiness markers and matching app-version strings do not identify the exact loaded patch digest.",
+    "A missing exported disk patch does not establish that no patch was active in memory.",
+    "Only resolved source type names and restricted method metadata are emitted; intern strings and raw patch data are omitted."
+  ]
+}

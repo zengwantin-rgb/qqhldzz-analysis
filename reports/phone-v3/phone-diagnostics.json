@@ -1,0 +1,155 @@
+{
+  "reported_tool_version": "1.2",
+  "container_scan_count": 1,
+  "diagnostic_state_count": 1,
+  "reported_diagnostics": [
+    {
+      "reported_preference_present": true,
+      "reported_disk_trace_level": 3,
+      "reported_restore_available": true,
+      "reported_backup_file_present": true,
+      "reported_runtime_effect_verified": false,
+      "activation_time_present": true
+    }
+  ],
+  "trace_file_count": 0,
+  "nonempty_trace_file_count": 0,
+  "nonempty_trace_files_updated_after_activation": 0,
+  "trace_files": [],
+  "comparison_available": true,
+  "file_changes": [
+    {
+      "entry": 1,
+      "category": "configuration_or_data",
+      "previous_entry": 1,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 2,
+      "category": "configuration_or_data",
+      "previous_entry": 2,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 3,
+      "category": "configuration_or_data",
+      "previous_entry": 4,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 4,
+      "category": "replay_or_record",
+      "previous_entry": 5,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 5,
+      "category": "replay_or_record",
+      "previous_entry": 6,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 6,
+      "category": "cloud_log",
+      "previous_entry": 7,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 7,
+      "category": "cloud_log",
+      "previous_entry": 8,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 8,
+      "category": "cloud_log",
+      "previous_entry": null,
+      "comparison": "added"
+    },
+    {
+      "entry": 9,
+      "category": "cloud_log",
+      "previous_entry": 9,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 10,
+      "category": "cloud_log",
+      "previous_entry": 10,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 11,
+      "category": "cloud_log",
+      "previous_entry": null,
+      "comparison": "added"
+    },
+    {
+      "entry": 12,
+      "category": "cloud_log",
+      "previous_entry": 11,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 13,
+      "category": "cloud_log",
+      "previous_entry": 12,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 14,
+      "category": "cloud_log",
+      "previous_entry": null,
+      "comparison": "added"
+    },
+    {
+      "entry": 15,
+      "category": "main_log",
+      "previous_entry": 13,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 16,
+      "category": "main_log",
+      "previous_entry": 14,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 17,
+      "category": "main_log",
+      "previous_entry": null,
+      "comparison": "added"
+    },
+    {
+      "entry": 18,
+      "category": "activity_log",
+      "previous_entry": 15,
+      "comparison": "unchanged"
+    },
+    {
+      "entry": 19,
+      "category": "activity_log",
+      "previous_entry": null,
+      "comparison": "added"
+    },
+    {
+      "entry": 20,
+      "category": "other",
+      "previous_entry": 16,
+      "comparison": "modified"
+    }
+  ],
+  "change_counts": {
+    "unchanged": 14,
+    "added": 5,
+    "modified": 1
+  },
+  "previous_files_absent_from_current_count": 1,
+  "limits": [
+    "Diagnostic values are reports from the exporter, not an independent in-process preference read.",
+    "A requested disk level or updated file does not establish runtime trace semantics or opponent hand visibility.",
+    "Only one-container, one-diagnostic manifests can attribute modification times to an activation.",
+    "Byte equality is compared privately; file paths, digests, raw payloads and actual tile values are omitted.",
+    "No trace file in an export does not prove that no unexported or transient trace ever existed."
+  ]
+}
