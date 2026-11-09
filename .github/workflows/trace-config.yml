@@ -1,0 +1,27 @@
+name: Inspect existing trace configuration
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  trace-config:
+    runs-on: macos-15-intel
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Download recovered assemblies
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+      - name: Inspect diagnostic configuration without executing game code
+        run: |
+          dotnet build tools/TraceConfigInspect/TraceConfigInspect.csproj -c Release
+          dotnet tools/TraceConfigInspect/bin/Release/net8.0/TraceConfigInspect.dll recovered-input/recovered/assemblies report/trace-config
+      - uses: actions/upload-artifact@v4
+        with:
+          name: trace-config-report
+          path: report/trace-config/
