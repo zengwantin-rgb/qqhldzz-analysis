@@ -1,6 +1,7 @@
 #import "TraceControl.h"
 #import "Scanner.h"
 #import <math.h>
+#import <TargetConditionals.h>
 
 NSString *MJTracePreferenceKey(void) { return @"int_gmModelVMTraceBinLevel"; }
 static BOOL MJTraceFail(NSError **error, NSString *message) {
@@ -98,7 +99,12 @@ BOOL MJSetTraceRecording(NSString *container, NSString *backupDirectory, BOOL en
     NSDictionary *attributes=[fm attributesOfItemAtPath:path error:error]; if (!attributes) return NO;
     NSData *updated=[NSPropertyListSerialization dataWithPropertyList:plist format:format options:0 error:error];
     if (!updated || ![updated writeToFile:path options:NSDataWritingAtomic error:error]) return NO;
-    if (attributes[NSFilePosixPermissions] && ![fm setAttributes:@{NSFilePosixPermissions:attributes[NSFilePosixPermissions]} ofItemAtPath:path error:error]) return NO;
+    NSMutableDictionary *preservedAttributes=[NSMutableDictionary dictionary];
+    if (attributes[NSFilePosixPermissions]) preservedAttributes[NSFilePosixPermissions]=attributes[NSFilePosixPermissions];
+#if TARGET_OS_IPHONE
+    if (attributes[NSFileProtectionKey]) preservedAttributes[NSFileProtectionKey]=attributes[NSFileProtectionKey];
+#endif
+    if (preservedAttributes.count && ![fm setAttributes:preservedAttributes ofItemAtPath:path error:error]) return NO;
     NSDictionary *verified=[NSDictionary dictionaryWithContentsOfFile:path];
     if (![verified isEqual:plist]) return MJTraceFail(error,@"写入后核对未通过；原设置备份已保留。");
     if (!enable && ![fm removeItemAtPath:backupPath error:error]) return NO;

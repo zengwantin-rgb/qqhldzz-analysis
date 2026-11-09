@@ -11,12 +11,14 @@ int main(void) { @autoreleasepool {
     NSString *key=MJTracePreferenceKey();
     NSDictionary *original=@{@"unrelated_fixture":@"preserve me",@"another":@42};
     [original writeToFile:prefs atomically:YES];
+    [fm setAttributes:@{NSFilePosixPermissions:@0600} ofItemAtPath:prefs error:NULL];
     NSError *error=nil;
     NSDictionary *state=MJTraceStatus(container,backups,&error);
     if (!state) NSLog(@"Fixture status error: %@",error);
     Check(state && ![state[@"preference_present"] boolValue],@"Absent override must be distinct from explicit off");
     Check(MJSetTraceRecording(container,backups,YES,&error),@"Enable missing override");
     Check([[NSDictionary dictionaryWithContentsOfFile:prefs][key] isEqual:@3],@"Exact trace setting written");
+    Check([[fm attributesOfItemAtPath:prefs error:NULL][NSFilePosixPermissions] unsignedIntegerValue]==0600,@"Preserve original preference file permissions");
     NSString *backup=[backups stringByAppendingPathComponent:@"game-trace.plist"];
     NSDictionary *saved=[NSDictionary dictionaryWithContentsOfFile:backup];
     Check(saved && !saved[@"unrelated_fixture"] && !saved[@"another"],@"Backup contains no unrelated preferences");
