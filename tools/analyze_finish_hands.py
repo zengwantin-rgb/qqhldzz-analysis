@@ -26,7 +26,7 @@ def analyze(lines, placeholder):
                 phase = 'settled'
         if 'HandleSelfRedraw' in line:
             obj = first_object(line)
-            seat = obj.get('nSeatId') if obj else None
+            seat = obj.get('nSeatID', obj.get('nSeatId')) if obj else None
             if type(seat) is int and 0 <= seat <= 3:
                 self_seats[seat] += 1
         if 'Balance UserHand Tiles seat:' not in line:
@@ -55,7 +55,7 @@ def analyze(lines, placeholder):
             'pre_hu_final_hand_entries': sum(r['phase'] in ('before_deal', 'live') for r in rows),
             'final_hands': rows,
             'limits': [
-                'Seat identity is inferred only when all parsed HandleSelfRedraw nSeatId observations agree.',
+                'Seat identity is inferred only when all parsed HandleSelfRedraw nSeatID observations agree.',
                 'Final-hand logging is inspected independently of whether a finish notification has arrived.',
                 'Post-Hu final hands cannot establish visibility during ordinary live play.',
                 'Counts omit actual tile values and do not include melds absent from this field.',

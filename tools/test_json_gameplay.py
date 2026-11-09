@@ -80,7 +80,7 @@ class JsonGameplayTests(unittest.TestCase):
     def test_finish_hands_timing_and_self_seat_are_not_assumed(self):
         result = analyze_finish([
             'RecvGameMsg msgType:ID_SO_NOTIFY_DEAL',
-            'HandleSelfRedraw {"nSeatId":2,"chTile":4}',
+            'HandleSelfRedraw {"nSeatID":2,"chTile":4}',
             'Balance UserHand Tiles seat:1 tiles:0,0,0',
             'RecvGameMsg msgType:ID_SO_NOTIFY_HU',
             'Balance UserHand Tiles seat:1 tiles:1,2,3',
