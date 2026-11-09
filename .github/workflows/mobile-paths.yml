@@ -1,0 +1,37 @@
+name: Inspect mobile log and replay paths
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  paths:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Download recovered assemblies
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 42631920188 --repo zengwantin-rgb/qqhldzz-analysis --name unitymj-recovered-report --dir recovered-input
+      - name: Install decompiler
+        run: dotnet tool install --tool-path .tools ilspycmd --version 9.1.0.7988
+      - name: Read logging path implementations
+        run: |
+          mkdir -p report/mobile-paths
+          for type in HappyMahjong.Common.GM.GMLogSystemHandler HappyMahjong.Setting.FeedBack TSDK.TSDKServiceProvider; do
+            .tools/ilspycmd --disable-updatecheck -t "$type" -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Hall.dll > "report/mobile-paths/$type.cs"
+          done
+          python3 - <<'PY'
+          import pathlib,re
+          for p in pathlib.Path('report/mobile-paths').glob('*.cs'):
+              p.write_text(re.sub(r'https://qyapi\.weixin\.qq\.com/[^"\s]+', '[redacted-webhook]', p.read_text()))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mobile-log-paths-report
+          path: report/mobile-paths/
