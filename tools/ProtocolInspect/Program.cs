@@ -66,7 +66,7 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
       hits.Add(new{offset=ins.Offset,opcode=ins.OpCode.Name,field=f.FullName});
    }
    if(ioCalls.Count>0 && (recordLiteral || byteArray16))recordIoCandidates.Add(new{assembly=asm.Name.Name,method=m.FullName,record_literal_present=recordLiteral,sixteen_byte_array_allocation=byteArray16,static_record_filenames=recordFileLiterals.ToArray(),io_calls=ioCalls.ToArray()});
-   if(ownershipHits.Count>0 && !t.Namespace.StartsWith("HuanLeGameSo") && !t.Namespace.StartsWith("MJSoPb") && !t.Namespace.StartsWith("IFix"))ownershipConsumers.Add(new{assembly=asm.Name.Name,method=m.FullName,hits=ownershipHits});
+   if(ownershipHits.Count>0 && !t.FullName.StartsWith("HuanLeGameSo.") && !t.FullName.StartsWith("MJSoPb.") && !t.FullName.StartsWith("IFix."))ownershipConsumers.Add(new{assembly=asm.Name.Name,method=m.FullName,hits=ownershipHits});
    if(hits.Count>0 && !t.Namespace.StartsWith("HuanLeGameSo") && !t.Namespace.StartsWith("MJSoPb") && !t.Namespace.StartsWith("IFix"))
     consumers.Add(new{assembly=asm.Name.Name,method=m.FullName,hits});
   }
