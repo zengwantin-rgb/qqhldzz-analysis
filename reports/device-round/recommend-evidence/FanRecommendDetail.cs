@@ -237,13 +237,13 @@ public class FanRecommendDetail
 		int num = 0;
 		return actionType switch
 		{
-			UserActionType.Drop => 0, 
-			UserActionType.Chi => 1, 
-			UserActionType.Peng => 2, 
-			UserActionType.MingGang => 3, 
-			UserActionType.AnGang => 4, 
-			UserActionType.BuGang => 5, 
-			_ => 31, 
+			UserActionType.Drop => 0,
+			UserActionType.Chi => 1,
+			UserActionType.Peng => 2,
+			UserActionType.MingGang => 3,
+			UserActionType.AnGang => 4,
+			UserActionType.BuGang => 5,
+			_ => 31,
 		};
 	}
 
