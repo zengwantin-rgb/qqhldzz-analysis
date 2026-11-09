@@ -1,0 +1,26 @@
+name: Inspect supplied iOS artifacts
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download original artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download inputs-v1 --dir inputs
+      - name: Compile analysis script
+        run: python3 -m py_compile tools/analyze.py
+      - name: Analyze and verify artifacts
+        run: python3 tools/analyze.py
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-analysis-report
+          path: report/
