@@ -1,0 +1,40 @@
+name: Reverse IL2CPP metadata
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reverse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download inputs-v1 --repo zwthys-cyber/qqhldzz-analysis --dir inputs
+      - name: Compile and inspect metadata
+        run: |
+          python3 -m py_compile tools/reverse_metadata.py
+          python3 tools/reverse_metadata.py
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Get pinned Il2CppDumper source
+        run: |
+          git clone https://github.com/Perfare/Il2CppDumper.git vendor/Il2CppDumper
+          git -C vendor/Il2CppDumper checkout 4741d46ba9cd6159c5d853eb9d6fc48b4bfa2b1a
+      - name: Build Il2CppDumper on GitHub
+        run: dotnet publish vendor/Il2CppDumper/Il2CppDumper/Il2CppDumper.csproj -f net8.0 -c Release -o dumper
+      - name: Attempt native registration recovery
+        continue-on-error: true
+        run: |
+          mkdir -p report/reverse/dumper
+          set -o pipefail
+          timeout 300s dotnet dumper/Il2CppDumper.dll inputs/UnityFramework inputs/global-metadata.dat report/reverse/dumper < /dev/null 2>&1 | tee report/reverse/dumper.log
+      - name: Upload reverse inspection results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: il2cpp-reverse-report
+          path: report/reverse/
