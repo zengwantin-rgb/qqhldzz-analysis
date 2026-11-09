@@ -25,6 +25,8 @@ jobs:
           mkdir -p build/checks
           clang -DMJ_TEST_DEBUG -fobjc-arc -framework Foundation -lz mobile/LogReader/Scanner.m mobile/LogReader/ScannerTests.m -o build/scanner-tests
           build/scanner-tests build/checks/export-test.zip build/checks/complete-export-test.zip
+          clang -fobjc-arc -framework Foundation -lz mobile/LogReader/Scanner.m mobile/LogReader/TraceControl.m mobile/LogReader/TraceControlTests.m -o build/trace-control-tests
+          build/trace-control-tests
           python3 - <<'PY'
           import zipfile
           with zipfile.ZipFile('build/checks/export-test.zip') as z:
@@ -52,12 +54,12 @@ jobs:
           cp mobile/LogReader/Info.plist build/Simulator/MJLogReader.app/Info.plist
           sdk_path=$(xcrun --sdk iphonesimulator --show-sdk-path)
           sim_arch=$(uname -m)
-          xcrun --sdk iphonesimulator clang -target "$sim_arch-apple-ios17.0-simulator" -isysroot "$sdk_path" -fobjc-arc -O1 -framework UIKit -framework Foundation -lz mobile/LogReader/main.m mobile/LogReader/Scanner.m -o build/Simulator/MJLogReader.app/MJLogReader
+          xcrun --sdk iphonesimulator clang -target "$sim_arch-apple-ios17.0-simulator" -isysroot "$sdk_path" -fobjc-arc -O1 -framework UIKit -framework Foundation -lz mobile/LogReader/main.m mobile/LogReader/Scanner.m mobile/LogReader/TraceControl.m -o build/Simulator/MJLogReader.app/MJLogReader
           device_id=$(xcrun simctl list devices available -j | python3 -c 'import json,sys; d=json.load(sys.stdin); print(next(x["udid"] for group in d["devices"].values() for x in group if "iPhone" in x["name"]))')
           xcrun simctl boot "$device_id"
           xcrun simctl bootstatus "$device_id" -b
           xcrun simctl install "$device_id" build/Simulator/MJLogReader.app
-          xcrun simctl launch "$device_id" org.qqhldzz.MJLogReader
+          xcrun simctl launch "$device_id" org.qqhldzz.MJLogReader --trace-panel
           sleep 3
           xcrun simctl io "$device_id" screenshot build/checks/simulator.png
       - name: Verify packaging and expected entitlements
@@ -68,8 +70,8 @@ jobs:
               assert z.testzip() is None
               p=plistlib.loads(z.read('Payload/MJLogReader.app/Info.plist'))
               assert p['CFBundleIdentifier']=='org.qqhldzz.MJLogReader'
-              assert p['CFBundleShortVersionString']=='1.1'
-              assert p['CFBundleVersion']=='2'
+              assert p['CFBundleShortVersionString']=='1.2'
+              assert p['CFBundleVersion']=='3'
               assert 'Payload/MJLogReader.app/MJLogReader' in z.namelist()
           e=plistlib.loads(pathlib.Path('build/checks/device-entitlements.plist').read_bytes())
           assert e['com.apple.private.security.no-sandbox'] is True

@@ -3,7 +3,7 @@ set -euo pipefail
 mkdir -p build/Payload/MJLogReader.app build/checks
 app=build/Payload/MJLogReader.app
 sdk_path=$(xcrun --sdk iphoneos --show-sdk-path)
-xcrun --sdk iphoneos clang -target arm64-apple-ios15.0 -isysroot "$sdk_path" -fobjc-arc -O2 -Wall -Wextra -Wno-unused-parameter -framework UIKit -framework Foundation -lz mobile/LogReader/main.m mobile/LogReader/Scanner.m -o "$app/MJLogReader"
+xcrun --sdk iphoneos clang -target arm64-apple-ios15.0 -isysroot "$sdk_path" -fobjc-arc -O2 -Wall -Wextra -Wno-unused-parameter -framework UIKit -framework Foundation -lz mobile/LogReader/main.m mobile/LogReader/Scanner.m mobile/LogReader/TraceControl.m -o "$app/MJLogReader"
 cp mobile/LogReader/Info.plist "$app/Info.plist"
 codesign --force --sign - --entitlements mobile/LogReader/Entitlements.plist "$app"
 codesign --verify --deep --strict "$app"

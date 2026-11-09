@@ -1,0 +1,17 @@
+{
+  "source_run": 42685250684,
+  "source_commit": "54f93f4",
+  "keys": [
+    {
+      "property": "VMLogLevel",
+      "static_playerprefs_key": "int_gmModelVMLogLevel"
+    },
+    {
+      "property": "VMTraceBinLevel",
+      "static_playerprefs_key": "int_gmModelVMTraceBinLevel"
+    }
+  ],
+  "limits": [
+    "Static diagnostic preference keys only. The device preference file and its other entries are not included."
+  ]
+}
