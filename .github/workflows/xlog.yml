@@ -1,0 +1,38 @@
+name: Inspect private binary log framing
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  binary-log:
+    runs-on: macos-15-intel
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download encrypted input and original app
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p private-input inputs report/device
+          gh release download log-inputs-v2 --pattern log-input-v2.enc --repo zengwantin-rgb/qqhldzz-analysis --dir private-input
+          gh release download inputs-v1 --pattern '_Decrypted.ipa' --repo zwthys-cyber/qqhldzz-analysis --dir inputs
+      - name: Decrypt input inside runner
+        env:
+          MJ_LOG_INPUT_KEY_V1: ${{ secrets.MJ_LOG_INPUT_KEY_V1 }}
+        run: |
+          umask 077
+          openssl enc -d -aes-256-cbc -pbkdf2 -in private-input/log-input-v2.enc -out private-input/device.zip -pass env:MJ_LOG_INPUT_KEY_V1
+      - name: Verify bounds and inspect without publishing plaintext
+        run: |
+          python3 -m unittest discover -s tools -p test_xlog.py
+          python3 tools/inspect_xlog.py
+          python3 tools/trace_native_file_sources.py > private-input/static-summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binary-log-summary
+          path: |
+            report/device/xlog-summary.json
+            report/device/native-file-sources.json
+      - name: Remove private input
+        if: always()
+        run: rm -rf private-input inputs
