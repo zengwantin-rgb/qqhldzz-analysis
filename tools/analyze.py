@@ -35,7 +35,7 @@ def macho(data):
         pos += length
     return [result]
 
-with zipfile.ZipFile(root/'欢乐麻将_Decrypted.ipa') as z:
+with zipfile.ZipFile(root/'_Decrypted.ipa') as z:
     bad = z.testzip()
     assert bad is None, f'ZIP CRC failure: {bad}'
     names = z.namelist()
