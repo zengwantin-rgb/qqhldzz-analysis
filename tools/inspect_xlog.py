@@ -130,6 +130,7 @@ def main():
         'No validated chain does not exclude a different SDK format or encryption wrapper.',
         'Deflate sync-flushed records need not contain a final stream marker; nonfinal counts are explicit.'
     ]}
+    pathlib.Path('report/device').mkdir(parents=True, exist_ok=True)
     pathlib.Path('report/device/xlog-summary.json').write_text(json.dumps(result, indent=2)+'\n')
 
 
