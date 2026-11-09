@@ -2,7 +2,7 @@ import struct
 import unittest
 import zlib
 
-from inspect_complete_configs import base_config_rows, compare_base_configs, facts
+from inspect_complete_configs import base_config_rows, compare_base_configs, facts, runtime_config_matches
 
 
 def varint(value):
@@ -41,6 +41,13 @@ class CompleteConfigTests(unittest.TestCase):
     def test_patch_magic_uses_recovered_constant(self):
         self.assertTrue(facts(struct.pack('<Q', 8881892042087324221))['ifix_magic_matches_recovered_loader'])
         self.assertFalse(facts(b'other-format')['ifix_magic_matches_recovered_loader'])
+
+    def test_runtime_matching_reports_ambiguous_ids_without_guessing_game(self):
+        rows = base_config_rows(fixture([(149, '4;136;0'), (398, '4;136;1'), (399, '4;136;1')]))
+        result = runtime_config_matches(['MJGameBaseConfigDetail GetBaseConifgByGameID configValues = 4;136;1'], rows,
+                                        'case 2: afterTingShowAllHandTile = value == 1;')
+        self.assertEqual(result[0]['matching_device_row_ids'], [398, 399])
+        self.assertEqual(result[0]['named_config_values']['afterTingShowAllHandTile'], 1)
 
 
 if __name__ == '__main__':
