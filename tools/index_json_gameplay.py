@@ -27,6 +27,7 @@ def index_text(text, catalog):
     counters = collections.Counter()
     arrays = []
     root_shapes = collections.Counter()
+    all_numeric_arrays = collections.defaultdict(lambda: {'shapes': collections.Counter(), 'locations': []})
 
     def shape_key(facts):
         return tuple(facts[k] for k in ('length', 'zero_entries', 'positive_entries', 'negative_entries'))
@@ -39,6 +40,12 @@ def index_text(text, catalog):
         if depth > MAX_DEPTH:
             counters['depth_limit_hits'] += 1
             return
+        array_facts = numeric_array_facts(value)
+        if array_facts is not None:
+            row = all_numeric_arrays[path]
+            row['shapes'][shape_key(array_facts)] += 1
+            if len(row['locations']) < 20:
+                row['locations'].append({'line': line_number, 'context': context})
         if isinstance(value, dict):
             for key, child in value.items():
                 name = canonical.get(key.lower())
@@ -112,6 +119,8 @@ def index_text(text, catalog):
             'recognized_fields': [{'path': key, **row, 'numeric_array_shapes': shape_rows(row['numeric_array_shapes'])}
                                   for key, row in sorted(stats.items())],
             'root_numeric_array_shapes': shape_rows(root_shapes),
+            'all_numeric_array_paths': [{'path': path, 'shapes': shape_rows(row['shapes']), 'locations': row['locations']}
+                                       for path, row in sorted(all_numeric_arrays.items())],
             'root_numeric_array_samples': arrays}
 
 

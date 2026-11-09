@@ -31,6 +31,13 @@ class JsonGameplayTests(unittest.TestCase):
         self.assertEqual(result['recognized_fields'][0]['path'], '$/DrawTiles')
         self.assertEqual(result['counters']['json_documents'], 1)
 
+    def test_unknown_array_key_is_indexed_without_publishing_the_key(self):
+        result = index_text('{"private-key-sentinel":{"another-private-key":[0,7,8]}}', [])
+        row = result['all_numeric_array_paths'][0]
+        self.assertEqual(row['path'], '$/$unknown/$unknown')
+        self.assertEqual(row['shapes'][0]['positive_entries'], 2)
+        self.assertNotIn('private-key', json.dumps(result))
+
 
 if __name__ == '__main__':
     unittest.main()
