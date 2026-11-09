@@ -38,6 +38,14 @@ class JsonGameplayTests(unittest.TestCase):
         self.assertEqual(row['shapes'][0]['positive_entries'], 2)
         self.assertNotIn('private-key', json.dumps(result))
 
+    def test_plain_sequences_and_no_double_counting_json(self):
+        text = 'Recv Deal Self mjValue: 1;2;3;4\nother: 0 0 7\n{"handTiles":[1,2,3]}'
+        result = index_text(text, ['handTiles'])
+        self.assertEqual(result['counters']['non_json_numeric_sequences'], 2)
+        sequences = result['non_json_numeric_sequences']
+        self.assertTrue(any(s['context'] == 'Recv Deal Self mjValue:' and s['length'] == 4 for s in sequences))
+        self.assertTrue(any(s['zero_entries'] == 2 for s in sequences))
+
 
 if __name__ == '__main__':
     unittest.main()

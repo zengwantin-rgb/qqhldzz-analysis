@@ -2,6 +2,7 @@
 import collections
 import json
 import pathlib
+import re
 import zipfile
 
 MARKERS = ('Recv Deal Self mjValue:', 'HandleSelfRedraw', 'HandleOtherRedraw',
@@ -9,6 +10,7 @@ MARKERS = ('Recv Deal Self mjValue:', 'HandleSelfRedraw', 'HandleOtherRedraw',
 MAX_ARRAY = 4096
 MAX_DEPTH = 24
 MAX_STARTS = 128
+NUMBER_SEQUENCE = re.compile(r'(?<![\w.])-?\d+(?:(?:[ \t]*[,;][ \t]*|[ \t]+)-?\d+){2,}(?![\w.])')
 
 
 def numeric_array_facts(value):
@@ -28,6 +30,7 @@ def index_text(text, catalog):
     arrays = []
     root_shapes = collections.Counter()
     all_numeric_arrays = collections.defaultdict(lambda: {'shapes': collections.Counter(), 'locations': []})
+    text_sequences = collections.defaultdict(lambda: {'occurrences': 0, 'first_lines': []})
 
     def shape_key(facts):
         return tuple(facts[k] for k in ('length', 'zero_entries', 'positive_entries', 'negative_entries'))
@@ -86,6 +89,7 @@ def index_text(text, catalog):
         position = 0
         attempts = 0
         found = False
+        json_spans = []
         while position < len(line):
             starts = [p for p in (line.find('{', position), line.find('[', position)) if p >= 0]
             if not starts:
@@ -102,6 +106,7 @@ def index_text(text, catalog):
                 position = start + 1
                 continue
             found = True
+            json_spans.append((start, end))
             counters['json_documents'] += 1
             facts = numeric_array_facts(value)
             if facts is not None:
@@ -115,12 +120,27 @@ def index_text(text, catalog):
             position = end
         if attempts and not found:
             counters['lines_with_starts_but_no_json'] += 1
+        for match in NUMBER_SEQUENCE.finditer(line):
+            if any(start <= match.start() and match.end() <= end for start, end in json_spans):
+                continue
+            values = [int(n) for n in re.findall(r'-?\d+', match.group())]
+            if not 3 <= len(values) <= 512 or not all(-1 <= n <= 255 for n in values):
+                continue
+            counters['non_json_numeric_sequences'] += 1
+            facts = numeric_array_facts(values)
+            key = (context, *shape_key(facts))
+            row = text_sequences[key]
+            row['occurrences'] += 1
+            if len(row['first_lines']) < 20:
+                row['first_lines'].append(line_number)
     return {'counters': dict(counters),
             'recognized_fields': [{'path': key, **row, 'numeric_array_shapes': shape_rows(row['numeric_array_shapes'])}
                                   for key, row in sorted(stats.items())],
             'root_numeric_array_shapes': shape_rows(root_shapes),
             'all_numeric_array_paths': [{'path': path, 'shapes': shape_rows(row['shapes']), 'locations': row['locations']}
                                        for path, row in sorted(all_numeric_arrays.items())],
+            'non_json_numeric_sequences': [dict(zip(('context', 'length', 'zero_entries', 'positive_entries', 'negative_entries'), key), **row)
+                                           for key, row in sorted(text_sequences.items())],
             'root_numeric_array_samples': arrays}
 
 
@@ -144,6 +164,7 @@ def inspect(device_path, catalog):
         'All text entries are scanned; binary input is not interpreted as JSON.',
         'Depth, array length, candidate-start and sample limits are counted explicitly.',
         'Numeric array sign and length summaries do not identify valid tiles, owners or live opponent hands.',
+        'Non-JSON integer sequences use comma, semicolon or whitespace separators and can also represent non-gameplay data.',
     ]}
 
 
