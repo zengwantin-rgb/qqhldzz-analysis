@@ -27,6 +27,11 @@ class Decode
  }
  static void Main(string[] args)
  {
+  try { Run(args); }
+  catch(Exception error) { Exception inner=error is TargetInvocationException && error.InnerException!=null?error.InnerException:error;File.WriteAllText(Path.Combine(args[2],"decode-summary.json"),"{\"startup_error_category\":"+Quote(inner.GetType().Name)+"}"); }
+ }
+ static void Run(string[] args)
+ {
   references=args[0];AppDomain.CurrentDomain.AssemblyResolve+=Resolve;
   var a=Assembly.LoadFrom(Path.Combine(references,"HappyMahjong.InGameScripts.dll"));
   var t=a.GetType("HuanLeGameSo.SoNotifyMsgTV",true);

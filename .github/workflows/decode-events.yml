@@ -56,6 +56,7 @@ jobs:
           docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges --pids-limit 128 --memory 768m --cpus 1 --tmpfs /tmp:rw,nosuid,size=64m -v "$PWD/private-input:/input:ro" -v "$PWD/private-output:/output:rw" -v "$PWD/tools/DecodeTdr:/code:ro" mono:6.12 sh -c 'mcs -out:/tmp/decode.exe /code/Program.cs && mono /tmp/decode.exe /input/decoder-assemblies /input/decoded-game-frames /output' > private-input/decoder-output.txt 2>&1
           cp private-output/decode-summary.json report/device/
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: decoded-event-summary
           path: report/device/
