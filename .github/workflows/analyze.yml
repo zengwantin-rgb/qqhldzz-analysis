@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - tools/analyze.py
+      - .github/workflows/analyze.yml
 permissions:
   contents: read
 jobs:
