@@ -11,6 +11,8 @@ FIELDS = (
     'stUnitProtoValueBuf', 'stAbilityTileWallInfo', 'astTileInfos',
     'tileInfos', 'iTileFace', 'tileFace', 'stHandTiles', 'nHandTilesNum',
     'ExtraTiles', 'ProtoIntelligenceAdvice', 'IntelligenceAdviceTing',
+    'ProtocolDataList', 'BinaryArray', 'ClassName', 'objectJson',
+    'PlaybackRecord', 'RecordVersion', 'so_notify_msg', 'round_env',
 )
 PATH_HINTS = ('replay', 'record', 'tracebinlogs', 'crash', 'bugly', 'tss', 'tersafe',
               'msdk', 'gcloud', 'tsdk', 'unity', 'pandora', 'log398')
