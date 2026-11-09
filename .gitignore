@@ -3,3 +3,8 @@ remote-assets/assemblies/
 remote-reverse/
 remote-assets/
 remote-assets-normalized/
+remote-format/
+remote-recovered/
+remote-managed/
+**/bin/
+**/obj/
