@@ -38,6 +38,7 @@ jobs:
           python3 -m unittest discover -s tools -p test_json_gameplay.py
           python3 -m unittest discover -s tools -p test_round_multilog.py
           python3 -m unittest discover -s tools -p test_complete_configs.py
+          python3 -m unittest discover -s tools -p test_ifix_patch.py
           python3 tools/audit_export_coverage.py
           python3 -m py_compile tools/inspect_device_logs.py
           python3 tools/inspect_device_logs.py
@@ -83,6 +84,7 @@ jobs:
           .tools/ilspycmd --disable-updatecheck -l c recovered-input/recovered/assemblies/HappyMahjong.Core.dll > private-input/core-types.txt
           mj_combined_type=$(python3 -c 'from pathlib import Path; print(next(line.split()[-1] for line in Path("private-input/core-types.txt").read_text().splitlines() if line.split() and line.split()[-1].endswith("CombinedPatchProcessor")))')
           .tools/ilspycmd --disable-updatecheck -t "$mj_combined_type" -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/CombinedPatchProcessor.cs
+          .tools/ilspycmd --disable-updatecheck -t HappyMahjong.PatchCombiner -r recovered-input/recovered/assemblies recovered-input/recovered/assemblies/HappyMahjong.Core.dll > report/device/record-evidence/PatchCombiner.cs
       - name: Probe known embedded gameplay buffers
         run: |
           python3 -m py_compile tools/probe_embedded_payloads.py
@@ -98,6 +100,8 @@ jobs:
           python3 tools/trace_sequence_context.py
           python3 -m py_compile tools/inspect_complete_configs.py
           python3 tools/inspect_complete_configs.py
+          python3 -m py_compile tools/inspect_ifix_patch.py
+          python3 tools/inspect_ifix_patch.py
       - uses: actions/upload-artifact@v4
         with:
           name: device-log-summary
