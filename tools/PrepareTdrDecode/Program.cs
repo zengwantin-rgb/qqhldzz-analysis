@@ -9,7 +9,7 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
  foreach(var t in Flatten(a.MainModule.Types)){
   if(t.FullName is "HuanLeGameSo.UMJMsgTVValue" or "HuanLeGameSo.USOTLVValue"){
    var map=new Dictionary<long,string>();
-   foreach(var ctor in t.Methods.Where(m=>m.Name==".cctor" && m.HasBody)){
+   foreach(var ctor in t.Methods.Where(m=>(m.Name==".cctor" || m.Name=="addPackDict") && m.HasBody)){
     var ins=ctor.Body.Instructions;
     for(int j=0;j<ins.Count;j++)if(ins[j].OpCode.Code==Code.Ldftn && ins[j].Operand is MethodReference callback){
       var target=t.Methods.FirstOrDefault(m=>m.FullName==callback.FullName);
@@ -27,7 +27,7 @@ foreach(var file in Directory.GetFiles(args[0],"*.dll")){
     m.Body=new MethodBody(m);m.Body.Instructions.Add(Instruction.Create(OpCodes.Ldc_I4_0));m.Body.Instructions.Add(Instruction.Create(OpCodes.Ret));guards++;changed=true;
   }
   if(t.FullName is "HuanLeGameSo.UMJMsgTVValue" or "HuanLeGameSo.SoNotifyMsgTV"){
-   var schema=new {type=t.FullName,fields=t.Fields.Where(f=>!f.IsStatic).Select(f=>new{name=f.Name,type=f.FieldType.FullName}),methods=t.Methods.Where(m=>m.HasBody && m.Name=="pack").Select(m=>new{signature=m.FullName,instructions=m.Body.Instructions.Select(i=>new{offset=i.Offset,opcode=i.OpCode.Name,operand=i.Operand is FieldReference f?f.FullName:i.Operand is MethodReference r?r.FullName:i.Operand is Instruction b?"IL_"+b.Offset:i.Operand is Instruction[] bs?string.Join(",",bs.Select(b=>b.Offset.ToString())):i.Operand is string?"<literal omitted>":i.Operand?.ToString()})})};
+   var schema=new {type=t.FullName,fields=t.Fields.Where(f=>!f.IsStatic).Select(f=>new{name=f.Name,type=f.FieldType.FullName}),methods=t.Methods.Where(m=>m.HasBody && (m.Name=="pack" || m.Name=="addPackDict")).Select(m=>new{signature=m.FullName,instructions=m.Body.Instructions.Select(i=>new{offset=i.Offset,opcode=i.OpCode.Name,operand=i.Operand is FieldReference f?f.FullName:i.Operand is MethodReference r?r.FullName:i.Operand is Instruction b?"IL_"+b.Offset:i.Operand is Instruction[] bs?string.Join(",",bs.Select(b=>b.Offset.ToString())):i.Operand is string?"<literal omitted>":i.Operand?.ToString()})})};
    File.WriteAllText(Path.Combine(args[2],t.Name+"-schema.json"),JsonSerializer.Serialize(schema,new JsonSerializerOptions{WriteIndented=true}));
   }
  }
