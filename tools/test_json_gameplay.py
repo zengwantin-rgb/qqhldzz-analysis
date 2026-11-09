@@ -81,6 +81,7 @@ class JsonGameplayTests(unittest.TestCase):
         result = analyze_finish([
             'RecvGameMsg msgType:ID_SO_NOTIFY_DEAL',
             'HandleSelfRedraw {"nSeatID":2,"chTile":4}',
+            'Set Active FanRecommendDeatil 【 CurHandTile 4 CurHandTag 0 】',
             'Balance UserHand Tiles seat:1 tiles:0,0,0',
             'RecvGameMsg msgType:ID_SO_NOTIFY_HU',
             'Balance UserHand Tiles seat:1 tiles:1,2,3',
@@ -92,6 +93,15 @@ class JsonGameplayTests(unittest.TestCase):
         self.assertFalse(result['final_hands'][1]['is_self'])
         self.assertTrue(result['final_hands'][2]['is_self'])
         self.assertEqual(result['final_hands'][0]['placeholder_entries'], 3)
+        mismatch = analyze_finish([
+            'RecvGameMsg msgType:ID_SO_NOTIFY_DEAL',
+            'HandleSelfRedraw {"nSeatID":2,"chTile":4}',
+            'Set Active FanRecommendDeatil 【 CurHandTile 1 CurHandTag 0 】',
+            'RecvGameMsg msgType:ID_SO_NOTIFY_HU',
+            'Balance UserHand Tiles seat:1 tiles:1',
+        ], 0)
+        self.assertIsNone(mismatch['unambiguous_self_seat'])
+        self.assertIsNone(mismatch['final_hands'][0]['is_self'])
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ import pathlib
 import re
 import zipfile
 
-from analyze_fan_recommend import first_object
+from analyze_fan_recommend import first_object, DETAIL, LABELS, numbers
 
 
 def analyze(lines, placeholder):
@@ -14,6 +14,9 @@ def analyze(lines, placeholder):
     self_seats = collections.Counter()
     markers = 0
     unparsed = []
+    raw_hands = []
+    last_recommended_hand = None
+    last_recommendation_line = None
     for number, line in enumerate(lines, 1):
         event = re.search(r'RecvGameMsg msgType:(ID_SO_[A-Z_0-9]+)', line)
         if event:
@@ -29,6 +32,11 @@ def analyze(lines, placeholder):
             seat = obj.get('nSeatID', obj.get('nSeatId')) if obj else None
             if type(seat) is int and 0 <= seat <= 3:
                 self_seats[seat] += 1
+        if phase == 'live' and any(label in line for label in LABELS):
+            hands = [numbers(match.group(1)) for match in DETAIL.finditer(line)]
+            if hands and all(collections.Counter(hand) == collections.Counter(hands[0]) for hand in hands):
+                last_recommended_hand = collections.Counter(hands[0])
+                last_recommendation_line = number
         if 'Balance UserHand Tiles seat:' not in line:
             continue
         markers += 1
@@ -47,15 +55,21 @@ def analyze(lines, placeholder):
         rows.append({'line': number, 'phase': phase, 'seat': int(match.group(1)),
                      'tile_count': len(tiles), 'placeholder_entries': sum(n == placeholder for n in tiles),
                      'positive_entries': sum(n > 0 for n in tiles)})
-    self_seat = next(iter(self_seats)) if len(self_seats) == 1 else None
+        raw_hands.append((int(match.group(1)), tiles))
+    field_seat = next(iter(self_seats)) if len(self_seats) == 1 else None
+    matching_seats = sorted({seat for seat, tiles in raw_hands if last_recommended_hand is not None and collections.Counter(tiles) == last_recommended_hand})
+    self_seat = field_seat if field_seat is not None and matching_seats == [field_seat] else None
     for row in rows:
         row['is_self'] = row['seat'] == self_seat if self_seat is not None else None
-    return {'self_seat_observations': dict(self_seats), 'unambiguous_self_seat': self_seat,
+    return {'self_seat_observations': dict(self_seats), 'self_seat_from_draw_field': field_seat,
+            'last_live_recommendation_line': last_recommendation_line,
+            'final_seats_matching_last_recommended_hand': matching_seats,
+            'unambiguous_self_seat': self_seat,
             'final_hand_markers': markers, 'unparsed_final_hand_lines': unparsed,
             'pre_hu_final_hand_entries': sum(r['phase'] in ('before_deal', 'live') for r in rows),
             'final_hands': rows,
             'limits': [
-                'Seat identity is inferred only when all parsed HandleSelfRedraw nSeatID observations agree.',
+                'Self seat requires consistent HandleSelfRedraw nSeatID and a unique agreeing final-hand multiset match to the last live recommendation.',
                 'Final-hand logging is inspected independently of whether a finish notification has arrived.',
                 'Post-Hu final hands cannot establish visibility during ordinary live play.',
                 'Counts omit actual tile values and do not include melds absent from this field.',
