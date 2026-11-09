@@ -1,0 +1,19 @@
+{
+  "source_commit": "4de18343a0aa6202acfbf9c32320ee9662880ad8",
+  "source_run": 42687906038,
+  "version": "1.2",
+  "build": "3",
+  "ipa_sha256": "6548bfd391d516e2a4b420d3bd8580d002f66845aae0fac2f2329083260d71c0",
+  "settings_transaction_tests_passed": true,
+  "export_tests_and_independent_zip_crc_passed": true,
+  "arm64_device_build_and_adhoc_signature_verified": true,
+  "entitlements_match_source": true,
+  "simulator_launch_verified_by_this_workflow": false,
+  "device_trace_preference_write_verified": false,
+  "runtime_trace_recording_verified": false,
+  "live_opponent_display_implemented": false,
+  "limits": [
+    "This workflow validates the device package and scoped settings fixtures. Simulator launch is tracked separately.",
+    "Actual TrollStore preference mutation, preferences-daemon caching and fresh trace creation require device validation."
+  ]
+}

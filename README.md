@@ -1,5 +1,7 @@
 # 欢乐麻将 iOS 静态逆向分析
 
+[可安装的诊断工具 1.2 Beta 1](reports/mobile/LOG-READER-1.2.md)已发布：新增主动开启记录、状态检查及原设置恢复。设备包与设置事务测试通过，真机记录生成待验证；仍未实现实时对手暗牌显示。
+
 [第十五轮：TraceBin 写入与清理](reports/trace-format/FINDINGS.md)：确认原始字节追加、按文件数清理，以及根目录最终来自 Unity persistentDataPath；现有扫描支持 TraceBin 自定义扩展名，仍无实际负载样本。
 
 [第十四轮：现有二进制跟踪入口](reports/trace-config/FINDINGS.md)：确认 TraceBin 默认关闭、GM 覆盖使用 PlayerPrefs 保存，以及虚拟机初始化和字节写入调用链；未取得实际 TraceBin 样本。
