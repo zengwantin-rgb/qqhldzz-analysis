@@ -93,7 +93,12 @@ def lua_shape(value):
     if type(size) is not int or not 0<=size<=65536 or not isinstance(data,list) or len(data)<size or not all(type(c) is int and -128<=c<=255 for c in data):return {'status':'invalid_shape'}
     raw=bytes(c&255 for c in data[:size]).rstrip(b'\0');signals=collections.Counter();arrays=[];scalar_kinds=collections.Counter()
     try:parsed=json.loads(raw)
-    except (ValueError,UnicodeError,RecursionError):return {'status':'not_json','bytes':size}
+    except (ValueError,UnicodeError,RecursionError):
+        try:text=raw.decode('utf8')
+        except UnicodeError:return {'status':'not_utf8_json','bytes':size}
+        conditions=re.findall(r'condition_(\d{1,2})',text)
+        known=bool(conditions) and all(0<=int(c)<50 for c in conditions) and re.fullmatch(r'(?:\s|return|condition_\d{1,2}|and|or|[()])+',text) is not None
+        return {'status':'known_rule_condition_expression' if known else 'unclassified_utf8','bytes':size,'rule_type_one':value.get('iLuaType')==1,'condition_reference_count':len(conditions) if known else None}
     def walk(node):
         if isinstance(node,dict):
             for key,child in node.items():

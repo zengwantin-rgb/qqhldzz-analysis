@@ -47,6 +47,14 @@ class DecodedEventTests(unittest.TestCase):
         self.assertEqual(result['numeric_array_lengths'],[2])
         self.assertNotIn('private-user-token',json.dumps(result));self.assertNotIn('12345678',json.dumps(result))
 
+    def test_lua_rule_vocabulary_validation_without_execution(self):
+        raw=b'return condition_7() and (condition_3() or condition_4())\0'
+        result=lua_shape({'iLuaType':1,'nLuaBuffLen':len(raw),'szLuaBuff':list(raw)})
+        self.assertEqual(result['status'],'known_rule_condition_expression');self.assertEqual(result['condition_reference_count'],3)
+        raw=b'return condition_7() or private_player_token'
+        result=lua_shape({'iLuaType':1,'nLuaBuffLen':len(raw),'szLuaBuff':list(raw)})
+        self.assertEqual(result['status'],'unclassified_utf8');self.assertNotIn('private_player_token',json.dumps(result))
+
     def test_invalid_hand_ownership_not_reported(self):
         with tempfile.TemporaryDirectory() as temp:
             (Path(temp)/'entry-0001-seq-0001.tdr.json').write_text(json.dumps({'iType':3,'nSeat':99,'nHandTilesNum':2,'szTiles':[12,13]}))
