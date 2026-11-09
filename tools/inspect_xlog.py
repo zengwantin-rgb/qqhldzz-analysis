@@ -5,6 +5,7 @@ Encrypted and zstd records are classified, not guessed to be plaintext.
 import collections
 import json
 import pathlib
+import re
 import struct
 import zipfile
 import zlib
@@ -66,7 +67,7 @@ def decode(magic, payload):
     return payload, 'uncompressed', None
 
 
-def inspect(raw):
+def inspect(raw, decoded_sink=None):
     # Require two adjacent valid frames, or one frame covering the complete file.
     start = None
     for pos in range(len(raw)):
@@ -95,6 +96,8 @@ def inspect(raw):
                     counts['total_decode_limit'] += 1
                     break
                 decoded_bytes += len(clear)
+                if decoded_sink is not None:
+                    decoded_sink.append(clear)
                 printable += sum(b in (9, 10, 13) or 32 <= b < 127 for b in clear)
                 text = clear.decode('utf-8', errors='replace')
                 replacement += text.count('\ufffd')
@@ -121,7 +124,24 @@ def main():
         entries = [i for i in archive.infolist() if not i.is_dir() and i.filename != 'manifest.json']
         for entry, info in enumerate(entries, 1):
             if info.filename.lower().endswith('.xlog'):
-                rows.append({'entry': entry, **inspect(archive.read(info))})
+                decoded = []
+                row = {'entry': entry, **inspect(archive.read(info), decoded)}
+                if decoded:
+                    from index_json_gameplay import index_text
+                    catalog = json.loads(pathlib.Path('reports/device-round/gameplay-field-catalog.json').read_text())['fields']
+                    canonical = {key.lower(): key for key in catalog}
+                    # Adjacent decoded frames are parts of the same logical stream.
+                    # Stop at any undecoded frame instead of splicing across a gap.
+                    if row.get('decode_counts', {}).get('encrypted_variant') or row.get('decode_counts', {}).get('decode_error') or row.get('decode_counts', {}).get('zstd_not_decoded'):
+                        text = '\n'.join(chunk.decode('utf-8', errors='replace') for chunk in decoded)
+                    else:
+                        text = b''.join(decoded).decode('utf-8', errors='replace')
+                    matches = collections.Counter(canonical[token.lower()] for token in re.findall(r'[A-Za-z_][A-Za-z_0-9]*', text) if token.lower() in canonical)
+                    row['source_catalog_field_count'] = len(catalog)
+                    row['source_catalog_token_mentions'] = dict(sorted(matches.items()))
+                    row['decoded_line_count'] = len(text.splitlines())
+                    row['json_gameplay_index'] = index_text(text, catalog)
+                rows.append(row)
     result = {'files': rows, 'limits': [
         'Framing follows the public Tencent Mars format; no arbitrary decryption is attempted.',
         'Encrypted variants are never interpreted as plaintext.',
