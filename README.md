@@ -1,6 +1,12 @@
-# 欢乐麻将 iOS 静态逆向分析
+# 欢乐麻将 iOS 分析与运行时观察
 
-[原生运行环境探针](reports/runtime-probe/FINDINGS.md)已发布，可通过 TrollFools 导入游戏，验证传统消息入口的运行时 API 与类型是否可见。探针仅查询元数据，尚未实现消息订阅或手牌显示。
+当前新增：[0.3 运行时模型手牌面板](mobile/MessageObserver/README.md)，[下载 dylib](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/message-observer-v0.3.0-beta1/MJMessageObserver.dylib)。已实现直接读取当前四家模型、区分牌背与已知牌值、单独显示暗杠，并限量记录辅助字段及内部缓存。构建和回归检查已通过；新运行时入口仍待真机验证，实时看到真实对手暗牌的目标尚未完成。[设计与验证范围](reports/runtime-model/FINDINGS.md)。
+
+[0.2.2 真机局中快照结果](reports/message-observer/device-v8/FINDINGS.md)：消息采集与字段备份已验证成功；重连快照含自己的 13 张牌值，其他三家只有 14/13/13 张数量。该结论限于已检查的消息路径，后续转向独立的客户端运行时模型入口。
+
+以下保留各阶段报告，旧报告中的“待验证”指对应阶段当时的状态。
+
+[原生运行环境探针](reports/runtime-probe/FINDINGS.md)已发布，可通过 TrollFools 导入游戏，验证传统消息入口的运行时 API 与类型是否可见。早期 0.1 探针只查询元数据；后续 0.2.x 已实现消息订阅与真机采集，0.3 新增模型显示分支。
 
 [第十六轮：1.2 真机新包](reports/phone-v3/FINDINGS.md)：20/20 个文件完整，新增一局；磁盘记录级别报告为 3，但没有 TraceBin，新增手牌 TLV 已验证归属自己。
 
@@ -32,7 +38,7 @@
 
 [最新业务代码分析报告](reports/managed/FINDINGS.md)记录了 UnityMJ 格式恢复、热更新程序集反编译，以及普通对局、回放、组队和明牌的数据差异。当前尚未证明大众麻将普通对局会下发对手完整暗牌。
 
-所有分析工具的编译和执行、原始文件校验、格式恢复及反编译均在 GitHub Actions 中完成。当前服务器只准备代码、推送并读取下载的结果，不编译或运行应用与分析工具。
+原始文件分析、应用构建、格式恢复及反编译在 GitHub Actions 中完成。当前服务器准备源代码、加密输入并读取下载的筛选报告，不执行用户原始输入或本机应用构建。
 
 ## 工作流与输出
 
@@ -42,7 +48,7 @@
 - `managed.yml`：编译 Mono.Cecil 元数据读取器，使用 ILSpy 反编译对局业务代码。输出 managed-game-report。
 - `dazhong.yml`：进一步查看游戏标识和规则配置来源。输出 dazhong-rule-report。
 
-原始输入没有游戏源码工程、Xcode 构建配置和签名材料；反编译输出也不能直接等同于可重编译的完整原游戏。没有在手机上执行修改版，也没有证明实时对手手牌泄露。旧阶段报告保留了当时的结果，UnityMJ 解析障碍已在最新报告中解决。
+原始输入没有游戏源码工程、Xcode 构建配置和签名材料；反编译输出也不能直接等同于可重编译的完整原游戏。观察库已在手机上加载并采集消息；新增 0.3 模型入口尚待真机验证，也没有证明实时对手手牌泄露。旧阶段报告保留了当时的结果，UnityMJ 解析障碍已在最新报告中解决。
 
 [第四轮与手机诊断工具](reports/mobile/FINDINGS.md)：已发现新的动态规则引擎路径，进一步限定了传统手牌模型结论的适用范围。提供 [TrollStore 日志导出工具源码与使用说明](mobile/LogReader/README.md)，用于在只有手机的条件下取得现有诊断文件；实际对局消息是否可从日志恢复尚未验证。
 
