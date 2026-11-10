@@ -12,7 +12,8 @@ def inspect(directory):
         value=json.loads(path.read_bytes())
         if kind=='snapshot.json':packets[(entry,sequence)]=value
         elif value.get('status')=='ok':models[(entry,sequence)]=value
-    comparisons=[];cache_counts=collections.Counter();cache_observations=0;sentinels=collections.defaultdict(collections.Counter)
+    static_types=json.loads((pathlib.Path(__file__).with_name('runtime_cache_static_types.json')).read_text())
+    other_sources=collections.Counter();comparisons=[];cache_counts=collections.Counter();cache_observations=0;sentinels=collections.defaultdict(collections.Counter)
     for (entry,sequence),model in models.items():
         for seat in model.get('seats',[]):
             if seat.get('view_seat')==0:continue
@@ -34,12 +35,13 @@ def inspect(directory):
             recommendation=source=='HappyMahjong.Game.FanRecommendDetail'
             category='recommendation_current_hand' if recommendation and field=='curTilesInHand' else 'recommendation_target' if recommendation and field in ('proximateMjTiles','proximateMjSplit','proximateMjSplitShow','paiList') else 'recommendation_tags_or_actions' if recommendation else 'other_candidate'
             cache_counts[category]+=1
+            if category=='other_candidate':other_sources[static_types.get(source,'unrecognized_static_type')]+=1
             if category=='recommendation_current_hand':
                 bag=collections.Counter(values)
                 if own and bag==collections.Counter(own):cache_counts['recommendation_hand_matches_current_self']+=1
                 elif any(s<=sequence and bag==h for s,h in own_history[entry]):cache_counts['recommendation_hand_matches_previous_self']+=1
                 else:cache_counts['recommendation_hand_not_matched_to_sampled_self']+=1
-    cache_summary={'observations_with_candidates':cache_observations,'counts':dict(cache_counts),'limits':['Categories use exact static type and field allowlists; unknown candidates remain unclassified.','Recommendation targets and tags are not actual opponent hands.','Values, source paths, strings and hashes are omitted.']}
+    cache_summary={'observations_with_candidates':cache_observations,'counts':dict(cache_counts),'other_candidate_static_categories':dict(other_sources),'limits':['Categories use exact static type and field allowlists; unknown candidates remain unclassified.','Recommendation targets and tags are not actual opponent hands.','Values, source paths, strings and hashes are omitted.']}
     def hands(node,seat):
         found=[]
         if isinstance(node,dict):
