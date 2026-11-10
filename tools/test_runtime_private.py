@@ -13,6 +13,15 @@ class PrivateRuntimeTests(unittest.TestCase):
             model['seats'][0]['hand']=[32,31];(p/'entry-0001-seq-0002.runtime.json').write_text(json.dumps(model))
             result=inspect(temp);self.assertTrue(result['self_hand_comparisons'][0]['multiset_equal'])
             self.assertNotIn('szTiles',json.dumps(result));self.assertNotIn('[32, 31]',json.dumps(result))
+    def test_cache_classification_does_not_publish_values_or_paths(self):
+        with tempfile.TemporaryDirectory() as temp:
+            p=Path(temp)
+            model={'status':'ok','seats':[{'view_seat':0,'hand':[31,32]}],'cache_candidates':[{'source_type':'HappyMahjong.Game.FanRecommendDetail','field':'private.root.curTilesInHand','values':[32,31]},{'source_type':'HappyMahjong.Game.FanRecommendDetail','field':'private.root.proximateMjTiles','values':[33,34]},{'source_type':'secret','field':'secret','values':[35]}]}
+            (p/'entry-0001-seq-0001.runtime.json').write_text(json.dumps(model))
+            result=inspect(temp);counts=result['cache_candidate_classification']['counts']
+            self.assertEqual(counts['recommendation_hand_matches_current_self'],1)
+            self.assertEqual(counts['recommendation_target'],1);self.assertEqual(counts['other_candidate'],1)
+            for secret in ('private.root','secret','[32, 31]','[33, 34]'):self.assertNotIn(secret,json.dumps(result))
     def test_no_model_between_packet_and_next_wire_is_not_compared(self):
         with tempfile.TemporaryDirectory() as temp:
             p=Path(temp);(p/'entry-0001-seq-0001.snapshot.json').write_text(json.dumps({'iType':8}))
