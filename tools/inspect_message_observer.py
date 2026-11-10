@@ -79,6 +79,7 @@ def runtime_model(obj):
     if stats is not None:
         if not isinstance(stats,dict) or not integer(stats.get('objects_visited'),0,96) or not integer(stats.get('unsupported_containers'),0,100000) or type(stats.get('time_budget_hit')) is not bool:return None
         output['cache_stats']={k:stats[k] for k in ('objects_visited','unsupported_containers','time_budget_hit')}
+        if integer(stats.get('recommendation_objects_skipped'),0,100000):output['cache_stats']['recommendation_objects_skipped']=stats['recommendation_objects_skipped']
         if integer(stats.get('read_failures'),0,100000):output['cache_stats']['read_failures']=stats['read_failures']
     types=obj.get('cache_model_types')
     if types is not None:

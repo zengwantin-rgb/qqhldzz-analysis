@@ -202,7 +202,7 @@ namespace MJDiagnostic
                 output.Append("}}");
             }
             output.Append("],\"cache_status\":").Append(Quote(state.Cache.Status));
-            output.Append(",\"cache_stats\":{\"objects_visited\":").Append(state.Cache.ObjectsVisited).Append(",\"unsupported_containers\":").Append(state.Cache.UnsupportedContainers).Append(",\"read_failures\":").Append(state.Cache.ReadFailures).Append(",\"time_budget_hit\":").Append(state.Cache.TimeBudgetHit ? "true" : "false").Append("},\"cache_roots\":[");
+            output.Append(",\"cache_stats\":{\"objects_visited\":").Append(state.Cache.ObjectsVisited).Append(",\"unsupported_containers\":").Append(state.Cache.UnsupportedContainers).Append(",\"read_failures\":").Append(state.Cache.ReadFailures).Append(",\"recommendation_objects_skipped\":").Append(state.Cache.RecommendationObjectsSkipped).Append(",\"time_budget_hit\":").Append(state.Cache.TimeBudgetHit ? "true" : "false").Append("},\"cache_roots\":[");
             for (int i = 0; i < state.Cache.Roots.Length; i++)
             {
                 if (i != 0) output.Append(','); var root = state.Cache.Roots[i];

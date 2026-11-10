@@ -24,6 +24,14 @@ namespace OtherModuleSpace
 {
     public sealed class DerivedHandCacheFixture : GameModule.DataModel { public int[] otherHandTiles=new int[]{31,32}; }
 }
+namespace HappyMahjong.Game
+{
+    public sealed class NewFanRecommendDataModel : GameModule.DataModel
+    {
+        public List<FanRecommendDetail> recommendations = new List<FanRecommendDetail>();
+    }
+    public sealed class FanRecommendDetail { public int[] curTilesInHand = new int[]{1,2,3}; }
+}
 static class ModuleCacheFixture
 {
     static void Check(bool condition,string message){if(!condition)throw new Exception(message);}
@@ -36,6 +44,14 @@ static class ModuleCacheFixture
         var scan=ModelCacheReader.Capture(root,1000);
         Check(scan.Status=="candidates_recorded" && scan.Roots.Length==2,"scan registered modules independently of an empty blackboard");
         Check(scan.Roots[0].Name=="module_models" && scan.Roots[0].RegisteredCount==2 && scan.Roots[0].ValuesVisited==2,"registered module coverage counters");
+        var advice=new HappyMahjong.Game.NewFanRecommendDataModel();
+        for(int i=0;i<200;i++)advice.recommendations.Add(new HappyMahjong.Game.FanRecommendDetail());
+        modules.Add("private-advice-key",advice);
+        var focused=ModelCacheReader.Capture(root,1000);
+        Check(focused.RecommendationObjectsSkipped==1 && focused.ObjectsVisited<96,"known recommendation trees cannot starve unrelated module coverage");
+        Check(focused.Roots[0].RegisteredCount==3 && focused.Roots[0].ValuesVisited==3,"all registered modules still enumerated");
+        foreach(var candidate in focused.Candidates)Check(!candidate.SourceType.EndsWith("FanRecommendDetail"),"recommendation targets excluded from focused capture");
+        modules.Remove("private-advice-key");
         bool dictionary=false,bytes=false,scalar=false,derived=false;
         foreach(var candidate in scan.Candidates)
         {

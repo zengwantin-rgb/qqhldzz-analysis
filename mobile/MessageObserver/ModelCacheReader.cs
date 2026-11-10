@@ -34,6 +34,7 @@ namespace MJDiagnostic
         public int UnsupportedContainers;
         public bool TimeBudgetHit;
         public int ReadFailures;
+        public int RecommendationObjectsSkipped;
         public string[] ModelTypes = new string[0];
     }
     // Reads existing round fields only. String dictionary keys and Unity scene objects are excluded.
@@ -97,6 +98,7 @@ namespace MJDiagnostic
             readonly int start = Environment.TickCount;
             readonly int milliseconds;
             readonly int rotation;
+            internal int RecommendationObjectsSkipped;
             internal bool Limited;
             internal bool TimeHit;
             internal int Unsupported;
@@ -168,13 +170,16 @@ namespace MJDiagnostic
                     if (data != null) value = data.GetValue(value);
                 }
                 Walk(value, 0, name, null, false, -1, "none", root, null);
-                if (root.ReadStatus == "not_read") { root.ReadStatus = TimeHit ? "budget_limited" : "not_dictionary"; if (!TimeHit) Unsupported++; }
+                if (root.ReadStatus == "not_read") { bool exhausted = TimeHit || visited.Count >= 96; root.ReadStatus = exhausted ? "budget_limited" : "not_dictionary"; if (!exhausted) Unsupported++; }
             }
             internal void Walk(object value, int depth, string path, object parent, bool tileContext, int owner, string ownerKind, ModelCacheRoot root, long? selector)
             {
                 if (value == null || Expired()) return;
                 if (depth > 6) { Limited = true; return; }
                 Type type = value.GetType();
+                // Already audited self-hand advice and hypothetical targets must not exhaust unrelated model coverage.
+                if (type.FullName == "HappyMahjong.Game.NewFanRecommendDataModel" || type.FullName == "HappyMahjong.Game.FanRecommendDetail")
+                { RecommendationObjectsSkipped++; return; }
                 if (type.IsPrimitive || type.IsEnum || value is string) return;
                 bool dictionary = DictionaryType(type), list = IsCoreList(value);
                 if (!dictionary && !list && !Scope(type)) return;
@@ -260,8 +265,9 @@ namespace MJDiagnostic
             {
                 var scan = new Scan(round, Math.Max(1, Math.Min(1000, budgetMilliseconds)));
                 // Registered rule DataModels are held here, not in the score/condition blackboard.
-                try { scan.Root(round, "m_moduleDataModels", "module_models"); } catch { scan.ReadFailures++; }
                 try { scan.Root(round, "m_blackboard", "blackboard"); } catch { scan.ReadFailures++; }
+                try { scan.Root(round, "m_moduleDataModels", "module_models"); } catch { scan.ReadFailures++; }
+                if (scan.Roots.Count == 2) { var swap = scan.Roots[0]; scan.Roots[0] = scan.Roots[1]; scan.Roots[1] = swap; }
                 var values = scan.Results.ToArray();
                 for (int i = 0; i < values.Length; i++) for (int j = i + 1; j < values.Length; j++)
                 {
@@ -269,7 +275,7 @@ namespace MJDiagnostic
                     if (order == 0) order = String.CompareOrdinal(values[j].FieldPath, values[i].FieldPath);
                     if (order < 0) { var swap = values[i]; values[i] = values[j]; values[j] = swap; }
                 }
-                result.Candidates = values; result.Roots = scan.Roots.ToArray(); result.ObjectsVisited = scan.VisitedCount; result.UnsupportedContainers = scan.Unsupported; result.TimeBudgetHit = scan.TimeHit; result.ReadFailures = scan.ReadFailures; result.ModelTypes = scan.ModelTypes.ToArray();
+                result.Candidates = values; result.Roots = scan.Roots.ToArray(); result.ObjectsVisited = scan.VisitedCount; result.UnsupportedContainers = scan.Unsupported; result.TimeBudgetHit = scan.TimeHit; result.ReadFailures = scan.ReadFailures; result.RecommendationObjectsSkipped = scan.RecommendationObjectsSkipped; result.ModelTypes = scan.ModelTypes.ToArray();
                 for (int i = 0; i < result.ModelTypes.Length; i++) for (int j = i + 1; j < result.ModelTypes.Length; j++)
                     if (String.CompareOrdinal(result.ModelTypes[j], result.ModelTypes[i]) < 0) { string swap = result.ModelTypes[i]; result.ModelTypes[i] = result.ModelTypes[j]; result.ModelTypes[j] = swap; }
                 result.Status = scan.ReadFailures > 0 ? "partial_read" : scan.Limited ? "budget_limited" : values.Length > 0 ? "candidates_recorded" : scan.Unsupported > 0 ? "unsupported_storage" : "no_numeric_candidates";
