@@ -49,6 +49,7 @@ jobs:
           dotnet run --project tools/PrepareTdrDecode -c Release -- recovered-input/recovered/assemblies private-input/decoder-assemblies report/device
           python3 tools/verify_union_maps.py
           python3 tools/inspect_message_observer.py
+          python3 tools/inspect_runtime_private.py
       - name: Decode inside isolated read-only networkless container
         run: |
           python3 -m unittest discover -s tools -p test_decoded_events.py
