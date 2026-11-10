@@ -46,6 +46,7 @@ static class ModuleCacheFixture
             if(candidate.SourceType.StartsWith("OtherModuleSpace."))derived=true;
         }
         Check(dictionary && bytes && scalar && derived,"dictionary hands, signed-byte arrays, tile objects and derived models covered");
+        Check(scan.ModelTypes.Length==2 && scan.ReadFailures==0,"model type coverage and field read failures are explicit");
         Check(model.GetterCalls==0,"module scan never invokes game properties");
         var state=GameModelReader.Capture(root,"live");state.Cache=scan;string json=GameModelReader.Json(state);
         using(var parsed=JsonDocument.Parse(json))Check(parsed.RootElement.GetProperty("cache_roots")[0].GetProperty("registered_count").GetInt32()==2,"coverage JSON");

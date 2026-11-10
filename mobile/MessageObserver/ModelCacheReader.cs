@@ -33,6 +33,8 @@ namespace MJDiagnostic
         public int ObjectsVisited;
         public int UnsupportedContainers;
         public bool TimeBudgetHit;
+        public int ReadFailures;
+        public string[] ModelTypes = new string[0];
     }
     // Reads existing round fields only. String dictionary keys and Unity scene objects are excluded.
     public static class ModelCacheReader
@@ -90,6 +92,7 @@ namespace MJDiagnostic
         {
             internal readonly List<ModelCacheCandidate> Results = new List<ModelCacheCandidate>();
             internal readonly List<ModelCacheRoot> Roots = new List<ModelCacheRoot>();
+            internal readonly List<string> ModelTypes = new List<string>();
             readonly List<object> visited = new List<object>();
             readonly int start = Environment.TickCount;
             readonly int milliseconds;
@@ -178,6 +181,14 @@ namespace MJDiagnostic
                 foreach (object previous in visited) if (Object.ReferenceEquals(previous, value)) return;
                 if (visited.Count >= 96) { Limited = true; return; }
                 visited.Add(value);
+                Type ancestor = type;
+                for (int level = 0; ancestor != null && level < 8; level++, ancestor = ancestor.BaseType)
+                    if (ancestor.FullName == "GameModule.DataModel")
+                    {
+                        string modelType = type.FullName ?? "unknown";
+                        if (!ModelTypes.Contains(modelType) && ModelTypes.Count < 64) ModelTypes.Add(modelType);
+                        break;
+                    }
                 if (list)
                 {
                     if (tileContext && Add(parent, path, value, owner, ownerKind, "numeric_array")) return;
@@ -257,7 +268,7 @@ namespace MJDiagnostic
                     if (order == 0) order = String.CompareOrdinal(values[j].FieldPath, values[i].FieldPath);
                     if (order < 0) { var swap = values[i]; values[i] = values[j]; values[j] = swap; }
                 }
-                result.Candidates = values; result.Roots = scan.Roots.ToArray(); result.ObjectsVisited = scan.VisitedCount; result.UnsupportedContainers = scan.Unsupported; result.TimeBudgetHit = scan.TimeHit;
+                result.Candidates = values; result.Roots = scan.Roots.ToArray(); result.ObjectsVisited = scan.VisitedCount; result.UnsupportedContainers = scan.Unsupported; result.TimeBudgetHit = scan.TimeHit; result.ReadFailures = scan.ReadFailures; result.ModelTypes = scan.ModelTypes.ToArray();
                 result.Status = scan.ReadFailures > 0 ? "partial_read" : scan.Limited ? "budget_limited" : values.Length > 0 ? "candidates_recorded" : scan.Unsupported > 0 ? "unsupported_storage" : "no_numeric_candidates";
             }
             catch { result.Status = "cache_read_failed"; }
