@@ -123,7 +123,7 @@ namespace MJDiagnostic
             static bool TileField(string name)
             {
                 name = name.ToLowerInvariant();
-                return (name.Contains("hand") || name.Contains("wall") || name.Contains("tile") || name.Contains("mj") || name.Contains("card") || name.Contains("pai")) && !name.Contains("account") && !name.Contains("token") && !name.Contains("playerid") && !name.Contains("uin") && !name.Contains("idcard");
+                return (name.Contains("hand") || name.Contains("wall") || name.Contains("tile") || name.Contains("mj") || name.Contains("card") || name.Contains("pai")) && !name.Contains("account") && !name.Contains("token") && !name.Contains("playerid") && !name.Contains("uin") && !name.Contains("idcard") && !name.Contains("time") && !name.Contains("duration") && !name.Contains("clock");
             }
             static bool FaceScalar(string name)
             {
@@ -213,7 +213,8 @@ namespace MJDiagnostic
                     for (int item = 0; item < slots; item++)
                     {
                         if (Expired()) { if (root != null) root.ReadStatus = "budget_limited"; return; }
-                        int index = (item + (rotation & 0x7fffffff) % Math.Max(1, slots)) % Math.Max(1, slots);
+                        int step = slots % 17 == 0 ? 19 : 17;
+                        int index = (item + (int)(((long)(rotation & 0x7fffffff) * step) % Math.Max(1, slots))) % Math.Max(1, slots);
                         object entry = entries.GetValue(index); if (entry == null) continue;
                         var member = Find(entry.GetType(), "value"); if (member == null) { Unsupported++; continue; }
                         object child = member.GetValue(entry); if (child == null) continue;
@@ -269,6 +270,8 @@ namespace MJDiagnostic
                     if (order < 0) { var swap = values[i]; values[i] = values[j]; values[j] = swap; }
                 }
                 result.Candidates = values; result.Roots = scan.Roots.ToArray(); result.ObjectsVisited = scan.VisitedCount; result.UnsupportedContainers = scan.Unsupported; result.TimeBudgetHit = scan.TimeHit; result.ReadFailures = scan.ReadFailures; result.ModelTypes = scan.ModelTypes.ToArray();
+                for (int i = 0; i < result.ModelTypes.Length; i++) for (int j = i + 1; j < result.ModelTypes.Length; j++)
+                    if (String.CompareOrdinal(result.ModelTypes[j], result.ModelTypes[i]) < 0) { string swap = result.ModelTypes[i]; result.ModelTypes[i] = result.ModelTypes[j]; result.ModelTypes[j] = swap; }
                 result.Status = scan.ReadFailures > 0 ? "partial_read" : scan.Limited ? "budget_limited" : values.Length > 0 ? "candidates_recorded" : scan.Unsupported > 0 ? "unsupported_storage" : "no_numeric_candidates";
             }
             catch { result.Status = "cache_read_failed"; }

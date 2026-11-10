@@ -50,6 +50,8 @@ static class ModuleCacheFixture
         Check(model.GetterCalls==0,"module scan never invokes game properties");
         var state=GameModelReader.Capture(root,"live");state.Cache=scan;string json=GameModelReader.Json(state);
         using(var parsed=JsonDocument.Parse(json))Check(parsed.RootElement.GetProperty("cache_roots")[0].GetProperty("registered_count").GetInt32()==2,"coverage JSON");
+        var second=ModelCacheReader.Capture(root,1000);state.Cache=second;
+        Check(GameModelReader.Json(state)==json,"unchanged complete cache scans have stable metadata despite rotating traversal");
         Check(!json.Contains("private-module-token") && !json.Contains("another-private-key") && !json.Contains("987654321") && !json.Contains("99887766"),"keys, account arrays and scene data are not captured");
         Check(!GameModelReader.Panel(state).Contains("1条"),"unverified module candidates never become rendered opponent hand values");
     }
