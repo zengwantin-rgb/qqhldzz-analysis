@@ -56,6 +56,14 @@ class MessageObserverTests(unittest.TestCase):
         row['kind']='game_event'
         self.assertEqual(events(b'MJMessageObserverEvents/1\n'+json.dumps(row).encode())['invalid_record_count'],1)
 
+    def test_registered_module_coverage_and_new_cache_budgets(self):
+        model={'kind':'runtime_model','schema':1,'source':'RoundModeUtil.RoundModel','status':'ok','phase':'dealing','generation':1,'game_type':149,'game_status':1,'player_count':4,'self_seat':0,'seats':[{'view_seat':v,'seat':v,'hand':[]} for v in range(4)],'cache_status':'no_numeric_candidates','cache_candidates':[],'cache_stats':{'objects_visited':8,'unsupported_containers':0,'time_budget_hit':False},'cache_roots':[{'name':'module_models','field_present':True,'object_present':True,'registered_count':5,'slots':7,'values_visited':5,'read_status':'read'},{'name':'blackboard','field_present':True,'object_present':True,'registered_count':0,'slots':0,'values_visited':0,'read_status':'empty'}]}
+        result=runtime_model(model);self.assertTrue(result['cache_root_coverage_provided']);self.assertFalse(result['model_hands_ready']);self.assertEqual(result['cache_roots'][0]['registered_count'],5)
+        model['cache_candidates']=[{'values':[1],'candidate_kind':'scalar','origin':'protocol_cache','owner_field':'dictionary_key_candidate','owner_value':2} for i in range(48)]
+        self.assertEqual(len(runtime_model(model)['cache_candidates']),48)
+        model['cache_candidates'].append({'values':[1]});self.assertIsNone(runtime_model(model))
+        model['cache_candidates']=[{'values':[1]*200} for i in range(21)];self.assertIsNone(runtime_model(model))
+
     def test_subscription_is_not_inherited_across_sessions(self):
         rows=[{'kind':'native_status','schema':1,'status':'library_loaded'}, {'kind':'managed_status','schema':1,'status':'observer_started','value':0}, {'kind':'native_status','schema':1,'status':'library_loaded'}]
         result=statuses(b'MJMessageObserverStatus/1\n'+b'\n'.join(json.dumps(r).encode() for r in rows))

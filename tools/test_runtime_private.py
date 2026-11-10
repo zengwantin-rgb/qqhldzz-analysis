@@ -8,7 +8,7 @@ class PrivateRuntimeTests(unittest.TestCase):
             deal={'iType':1,'stValue':{'stNotifyDeal':{'nTilesNum':2,'szTiles':[31,32]}}}
             model={'status':'ok','phase':'live','self_seat':0,'seats':[{'view_seat':0,'hand':[]},{'view_seat':1,'hand':[0],'aux_fields':{'LastMJ':[-1],'curRedrawMjValue':[0]}}]}
             (p/'entry-0001-seq-0001.snapshot.json').write_text(json.dumps(deal));(p/'entry-0001-seq-0002.runtime.json').write_text(json.dumps(model))
-            result=inspect(temp);self.assertEqual(result['self_hand_comparisons'][0]['status'],'model_not_ready_after_deal')
+            result=inspect(temp);self.assertEqual(result['self_hand_comparisons'][0]['status'],'model_not_ready_after_deal');self.assertNotIn('multiset_equal',result['self_hand_comparisons'][0])
             self.assertEqual(result['opponent_auxiliary_value_categories']['LastMJ']['negative_one_sentinel'],1)
             model['seats'][0]['hand']=[32,31];(p/'entry-0001-seq-0002.runtime.json').write_text(json.dumps(model))
             result=inspect(temp);self.assertTrue(result['self_hand_comparisons'][0]['multiset_equal'])

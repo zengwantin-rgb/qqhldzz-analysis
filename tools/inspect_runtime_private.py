@@ -40,6 +40,8 @@ def inspect(directory):
             body=packet.get('stValue',{}).get('stNotifyDeal',{});tiles=body.get('szTiles');count=body.get('nTilesNum');references=[tiles[:count]] if isinstance(tiles,list) and type(count) is int and 0<=count<=32 else []
         else:references=hands(packet,model['self_seat'])
         if len(references)!=1:comparisons.append({'entry':entry,'packet_sequence':sequence,'packet_type':packet['iType'],'status':'ambiguous_or_missing_self_reference'});continue
-        comparisons.append({'entry':entry,'packet_sequence':sequence,'packet_type':packet['iType'],'model_sequence':model_seq,'status':'model_not_ready_after_deal' if packet['iType']==1 and not own['hand'] else 'compared','reference_tiles':len(references[0]),'model_tiles':len(own['hand']),'multiset_equal':collections.Counter(references[0])==collections.Counter(own['hand'])})
+        row={'entry':entry,'packet_sequence':sequence,'packet_type':packet['iType'],'model_sequence':model_seq,'status':'model_not_ready_after_deal' if packet['iType']==1 and not own['hand'] else 'compared','reference_tiles':len(references[0]),'model_tiles':len(own['hand'])}
+        if row['status']=='compared':row['multiset_equal']=collections.Counter(references[0])==collections.Counter(own['hand'])
+        comparisons.append(row)
     return {'self_hand_comparisons':comparisons,'opponent_auxiliary_value_categories':{k:dict(v) for k,v in sentinels.items()},'limits':['Comparisons use the first model sample before the next captured wire event; local actions may still change a hand in that window.','Only equality, counts and fixed sentinel categories are emitted; no card values, hashes, IDs or private paths.','An empty_or_unsupported cache status is not proof that registered module models were scanned.']}
 if __name__=='__main__':pathlib.Path('report/device/runtime-private-checks.json').write_text(json.dumps(inspect('private-input/decoded-game-frames'),indent=2)+'\n')
