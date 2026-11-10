@@ -28,7 +28,7 @@
 
 已通过：原版元数据编译、ARM64 构建与 ad-hoc 签名、文件隔离测试、核心模型/缓存边界测试、阶段变化和记录上限测试、公开报告隐私测试。旧版 v8 ZIP 的 163 条记录回归校验仍通过。
 
-0.3 新增的运行时字段读取、字符串接口和面板需要真机验证；此前 0.2.x 的成功验证不能代替这一项。
+0.3 的模型字段读取、字符串返回和面板已由真机截图验证：三家显示牌背 13/13/11 张，未显示对手牌名。辅助字段、缓存及原始模型日志仍待新导出验证。构建时的未验证标记保留为历史记录，详见 reports/runtime-model/DEVICE-VISUAL-CHECK.md。
 
 构建：https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42724037280
 解析器测试：https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42724043983

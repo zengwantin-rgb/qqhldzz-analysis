@@ -1,0 +1,33 @@
+{
+  "source": "user-provided screenshot",
+  "screenshot_published": false,
+  "visual_runtime_model_reading_verified": true,
+  "visual_native_panel_verified": true,
+  "panel_phase": "live",
+  "opponent_rows": [
+    {
+      "view_seat": 1,
+      "label": "next",
+      "placeholder_count": 13,
+      "known_tile_names_displayed": false
+    },
+    {
+      "view_seat": 2,
+      "label": "opposite",
+      "placeholder_count": 13,
+      "known_tile_names_displayed": false
+    },
+    {
+      "view_seat": 3,
+      "label": "previous",
+      "placeholder_count": 11,
+      "known_tile_names_displayed": false
+    }
+  ],
+  "field_values_inferred_from_validated_panel_contract": true,
+  "raw_runtime_log_verified": false,
+  "auxiliary_fields_verified": false,
+  "blackboard_cache_values_verified": false,
+  "complete_live_opponent_hands_observed": false,
+  "overall_goal_complete": false
+}
