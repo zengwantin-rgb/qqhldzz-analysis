@@ -62,7 +62,7 @@ jobs:
           for line in (p/'checks/dependencies.txt').read_text().splitlines()[1:]:
               dependency=line.strip().split(' (')[0]
               assert dependency.startswith(('@rpath/MJMessageObserver.dylib','/System/Library/','/usr/lib/')),dependency
-          result={'version':'0.3.0','source_commit':os.environ['GITHUB_SHA'],'source_run':int(os.environ['GITHUB_RUN_ID']),
+          result={'version':'0.3.1','source_commit':os.environ['GITHUB_SHA'],'source_run':int(os.environ['GITHUB_RUN_ID']),
               'sha256':digest,'managed_payload_sha256':hashlib.sha256(pathlib.Path('build/message-observer/MJMessageObserver.Managed.dll').read_bytes()).hexdigest(),
               'journal_and_storage_tests_passed':True,'compiled_against_original_game_metadata':True,'arm64_build_and_adhoc_signature_verified':True,
               'dependencies_limited_to_system_libraries':True,'native_loader_on_device_verified':False,'managed_subscription_on_device_verified':False,

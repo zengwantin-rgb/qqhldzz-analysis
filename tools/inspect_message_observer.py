@@ -48,17 +48,36 @@ def runtime_model(obj):
             seat['aux_fields'][name]={'entries':len(values),'nonzero_entries':sum(c!=0 for c in values),'valid_tile_code_count':sum(1<=c<=9 or 11<=c<=19 or 21<=c<=29 or 31<=c<=37 for c in values)}
         output['seats'].append(seat)
     cache=obj.get('cache_candidates',[])
-    if not isinstance(cache,list) or len(cache)>16:return None
+    if not isinstance(cache,list) or len(cache)>48:return None
     total=0;counts=[]
     for candidate in cache:
         if not isinstance(candidate,dict):return None
         values=candidate.get('values')
         if not isinstance(values,list) or not 1<=len(values)<=200 or not all(integer(v,-2147483648,2147483647) for v in values):return None
         total+=len(values)
-        if total>1024:return None
-        counts.append({'array_length':len(values),'zero_entries':sum(v==0 for v in values),'valid_tile_code_count':sum(1<=v<=9 or 11<=v<=19 or 21<=v<=29 or 31<=v<=37 for v in values)})
+        if total>4096:return None
+        row={'array_length':len(values),'zero_entries':sum(v==0 for v in values),'valid_tile_code_count':sum(1<=v<=9 or 11<=v<=19 or 21<=v<=29 or 31<=v<=37 for v in values)}
+        if candidate.get('candidate_kind') in ('scalar','numeric_array'):row['candidate_kind']=candidate['candidate_kind']
+        if candidate.get('origin') in ('model_cache','protocol_cache'):row['origin']=candidate['origin']
+        if candidate.get('owner_field') in ('nSeatID','nSeat','seatID','seatId','viewSeat','dictionary_key_candidate','array_index_candidate','none') and integer(candidate.get('owner_value'),-1,3):row['owner_field']=candidate['owner_field'];row['owner_value']=candidate['owner_value']
+        counts.append(row)
     output['cache_candidates']=counts
-    if obj.get('cache_status') in ('empty_or_unsupported','no_blackboard_field','budget_limited','candidates_recorded','cache_read_failed'):output['cache_status']=obj['cache_status']
+    if obj.get('cache_status') in ('empty_or_unsupported','no_blackboard_field','budget_limited','candidates_recorded','cache_read_failed','partial_read','unsupported_storage','no_numeric_candidates'):output['cache_status']=obj['cache_status']
+    roots=obj.get('cache_roots')
+    output['cache_root_coverage_provided']=isinstance(roots,list)
+    if roots is not None:
+        if not isinstance(roots,list) or len(roots)>2:return None
+        output['cache_roots']=[]
+        for root in roots:
+            if not isinstance(root,dict) or root.get('name') not in ('module_models','blackboard'):return None
+            if type(root.get('field_present')) is not bool or type(root.get('object_present')) is not bool:return None
+            if not integer(root.get('registered_count'),-1,10000) or not integer(root.get('slots'),-1,100000) or not integer(root.get('values_visited'),0,512):return None
+            if root.get('read_status') not in ('not_read','field_missing','null','empty','entries_missing','read','budget_limited','not_dictionary'):return None
+            output['cache_roots'].append({k:root[k] for k in ('name','field_present','object_present','registered_count','slots','values_visited','read_status')})
+    stats=obj.get('cache_stats')
+    if stats is not None:
+        if not isinstance(stats,dict) or not integer(stats.get('objects_visited'),0,96) or not integer(stats.get('unsupported_containers'),0,100000) or type(stats.get('time_budget_hit')) is not bool:return None
+        output['cache_stats']={k:stats[k] for k in ('objects_visited','unsupported_containers','time_budget_hit')}
     return output
 
 def statuses(raw):

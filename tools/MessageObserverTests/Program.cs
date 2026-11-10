@@ -29,6 +29,7 @@ class Tests
         CallbackFixture.Run(root);
         ModelFixture.Run();
         ObserverModelFixture.Run(root);
+        ModuleCacheFixture.Run();
         Directory.Delete(Path.GetDirectoryName(root),true);
         Console.WriteLine("PASS: frame encoding/subrange, frame and byte budgets, channel restriction and unrelated-file guard");
     }

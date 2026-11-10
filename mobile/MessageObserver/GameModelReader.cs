@@ -202,13 +202,21 @@ namespace MJDiagnostic
                 output.Append("}}");
             }
             output.Append("],\"cache_status\":").Append(Quote(state.Cache.Status));
+            output.Append(",\"cache_stats\":{\"objects_visited\":").Append(state.Cache.ObjectsVisited).Append(",\"unsupported_containers\":").Append(state.Cache.UnsupportedContainers).Append(",\"time_budget_hit\":").Append(state.Cache.TimeBudgetHit ? "true" : "false").Append("},\"cache_roots\":[");
+            for (int i = 0; i < state.Cache.Roots.Length; i++)
+            {
+                if (i != 0) output.Append(','); var root = state.Cache.Roots[i];
+                output.Append("{\"name\":").Append(Quote(root.Name)).Append(",\"field_present\":").Append(root.FieldPresent ? "true" : "false").Append(",\"object_present\":").Append(root.ObjectPresent ? "true" : "false");
+                output.Append(",\"registered_count\":").Append(root.RegisteredCount).Append(",\"slots\":").Append(root.Slots).Append(",\"values_visited\":").Append(root.ValuesVisited).Append(",\"read_status\":").Append(Quote(root.ReadStatus)).Append('}');
+            }
+            output.Append(']');
             if (includeCaches)
             {
                 output.Append(",\"cache_candidates\":[");
                 for (int i = 0; i < state.Cache.Candidates.Length; i++)
                 {
                     if (i != 0) output.Append(','); var candidate = state.Cache.Candidates[i];
-                    output.Append("{\"source_type\":").Append(Quote(candidate.SourceType)).Append(",\"field\":").Append(Quote(candidate.FieldPath));
+                    output.Append("{\"candidate_kind\":").Append(Quote(candidate.Kind)).Append(",\"origin\":").Append(Quote(candidate.Origin)).Append(",\"source_type\":").Append(Quote(candidate.SourceType)).Append(",\"field\":").Append(Quote(candidate.FieldPath));
                     output.Append(",\"owner_field\":").Append(Quote(candidate.OwnerField)).Append(",\"owner_value\":").Append(candidate.Owner.ToString(CultureInfo.InvariantCulture)).Append(",\"values\":[");
                     for (int j = 0; j < candidate.Values.Length; j++) { if (j != 0) output.Append(','); output.Append(candidate.Values[j].ToString(CultureInfo.InvariantCulture)); }
                     output.Append("]}");

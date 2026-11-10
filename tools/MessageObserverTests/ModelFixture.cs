@@ -13,13 +13,14 @@ namespace HappyMahjong.Game
         protected int m_selfSeat;
         protected object[] m_playerGameInfo;
         private object m_blackboard;
+        private object m_moduleDataModels;
         public int PropertyCalls;
         public string PlayerAccountSecret="never include account fixture";
         public object GetTilesByViewSeat(int seat) { PropertyCalls++;throw new Exception("Game getter must not run"); }
         public int selfSeat { get { PropertyCalls++;throw new Exception("Game getter must not run"); } }
-        public GuoBiaoRoundModel(IList[] hands,int type=149,int status=1,int self=0,object board=null)
+        public GuoBiaoRoundModel(IList[] hands,int type=149,int status=1,int self=0,object board=null,object modules=null)
         {
-            m_blackboard=board;m_gameType=type;m_gameStatus=status;m_selfSeat=self;m_playerGameInfo=new object[4];
+            m_blackboard=board;m_moduleDataModels=modules ?? new Dictionary<string,object>();m_gameType=type;m_gameStatus=status;m_selfSeat=self;m_playerGameInfo=new object[4];
             for(int i=0;i<4;i++)m_playerGameInfo[i]=new ModelFixturePlayer { tiles=new ModelFixtureTiles(hands[i]) };
         }
     }
@@ -79,8 +80,8 @@ namespace HappyMahjong.Common
 {
     public sealed class Blackboard
     {
-        readonly System.Collections.Generic.Dictionary<string,object> models=new System.Collections.Generic.Dictionary<string,object>();
-        public void Add(object value){models["private-account-key"]=value;}
+        readonly System.Collections.Generic.Dictionary<string,object> data=new System.Collections.Generic.Dictionary<string,object>();
+        public void Add(object value){data["private-account-key"]=value;}
     }
 }
 namespace GameModule
