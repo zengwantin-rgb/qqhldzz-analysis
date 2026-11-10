@@ -1,0 +1,18 @@
+{
+  "version": "0.3.1",
+  "source_commit": "cb16bcbfdfc1ec359d609a61d1e9fc83c1782d37",
+  "source_run": 42730674972,
+  "sha256": "71370fa61971174d082ee6ee640af1dda5002fc7e31045efba19d0af0f71d840",
+  "managed_payload_sha256": "216a076479231c7475e8bc54cc1f648e6aeb764d3028462698d42e82fd9d7994",
+  "journal_and_storage_tests_passed": true,
+  "compiled_against_original_game_metadata": true,
+  "arm64_build_and_adhoc_signature_verified": true,
+  "dependencies_limited_to_system_libraries": true,
+  "native_loader_on_device_verified": false,
+  "managed_subscription_on_device_verified": false,
+  "game_event_recording_on_device_verified": false,
+  "live_opponent_display_implemented": false,
+  "runtime_model_panel_implemented": true,
+  "runtime_model_reading_on_device_verified": false,
+  "scope": "Observe TSDK channels 9 and 217, and read known active RoundModel hand fields on the main thread for a live model panel. Placeholder values remain unknown; post-Hu and stale phases are labeled. Local bounded journals only. No game-field writes, receive-function patches or outgoing game requests."
+}

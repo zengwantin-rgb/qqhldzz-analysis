@@ -1,0 +1,45 @@
+{
+  "self_hand_comparisons": [
+    {
+      "entry": 1,
+      "packet_sequence": 4,
+      "packet_type": 8,
+      "status": "no_model_before_next_wire_event"
+    },
+    {
+      "entry": 1,
+      "packet_sequence": 5,
+      "packet_type": 1,
+      "model_sequence": 6,
+      "status": "model_not_ready_after_deal",
+      "reference_tiles": 13,
+      "model_tiles": 0
+    },
+    {
+      "entry": 1,
+      "packet_sequence": 24,
+      "packet_type": 8,
+      "model_sequence": 25,
+      "status": "compared",
+      "reference_tiles": 13,
+      "model_tiles": 13,
+      "multiset_equal": true
+    }
+  ],
+  "opponent_auxiliary_value_categories": {
+    "curRedrawMjValue": {
+      "zero": 39
+    },
+    "LastMJ": {
+      "negative_one_sentinel": 39
+    },
+    "m_tianHuTile": {
+      "negative_one_sentinel": 39
+    }
+  },
+  "limits": [
+    "Comparisons use the first model sample before the next captured wire event; local actions may still change a hand in that window.",
+    "Only equality, counts and fixed sentinel categories are emitted; no card values, hashes, IDs or private paths.",
+    "An empty_or_unsupported cache status is not proof that registered module models were scanned."
+  ]
+}

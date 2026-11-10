@@ -1,6 +1,6 @@
 # 欢乐麻将 iOS 分析与运行时观察
 
-当前新增：[0.3 运行时模型手牌面板](mobile/MessageObserver/README.md)，[下载 dylib](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/message-observer-v0.3.0-beta1/MJMessageObserver.dylib)。已实现直接读取当前四家模型、区分牌背与已知牌值、单独显示暗杠，并限量记录辅助字段及内部缓存。构建和回归检查已通过；新运行时入口已由真机截图验证能读取并显示三家的牌背数量，辅助字段与缓存内容仍待新导出核对；实时看到真实对手暗牌的目标尚未完成。[真机面板验证](reports/runtime-model/DEVICE-VISUAL-CHECK.md)。[设计与验证范围](reports/runtime-model/FINDINGS.md)。
+当前版本：[0.3.1 运行时模型手牌面板](mobile/MessageObserver/README.md)，[下载 dylib](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/message-observer-v0.3.1-beta1/MJMessageObserver.dylib)。v9 真机日志验证自己的13张牌与重连数据一致，三家模型手牌仍是未知值。新版修正旧版遗漏的注册模块模型入口，并提供有界扫描覆盖记录；构建与回归测试通过，新增模块扫描待真机验证。真实对手暗牌目标尚未完成。[v9结果](reports/runtime-model/device-v9/FINDINGS.md)。[设计与验证范围](reports/runtime-model/FINDINGS.md)。
 
 [0.2.2 真机局中快照结果](reports/message-observer/device-v8/FINDINGS.md)：消息采集与字段备份已验证成功；重连快照含自己的 13 张牌值，其他三家只有 14/13/13 张数量。该结论限于已检查的消息路径，后续转向独立的客户端运行时模型入口。
 
@@ -48,7 +48,7 @@
 - `managed.yml`：编译 Mono.Cecil 元数据读取器，使用 ILSpy 反编译对局业务代码。输出 managed-game-report。
 - `dazhong.yml`：进一步查看游戏标识和规则配置来源。输出 dazhong-rule-report。
 
-原始输入没有游戏源码工程、Xcode 构建配置和签名材料；反编译输出也不能直接等同于可重编译的完整原游戏。观察库已在手机上加载并采集消息；新增 0.3 模型入口尚待真机验证，也没有证明实时对手手牌泄露。旧阶段报告保留了当时的结果，UnityMJ 解析障碍已在最新报告中解决。
+原始输入没有游戏源码工程、Xcode 构建配置和签名材料；反编译输出也不能直接等同于可重编译的完整原游戏。观察库已在手机上加载并采集消息；0.3 主模型读取已由真机验证，0.3.1 新增注册模块扫描尚待真机验证，也没有证明实时对手手牌泄露。旧阶段报告保留了当时的结果，UnityMJ 解析障碍已在最新报告中解决。
 
 [第四轮与手机诊断工具](reports/mobile/FINDINGS.md)：已发现新的动态规则引擎路径，进一步限定了传统手牌模型结论的适用范围。提供 [TrollStore 日志导出工具源码与使用说明](mobile/LogReader/README.md)，用于在只有手机的条件下取得现有诊断文件；实际对局消息是否可从日志恢复尚未验证。
 

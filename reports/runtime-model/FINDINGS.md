@@ -15,3 +15,8 @@ Runtime observations have a distinct wrapper/channel/encoding. Public validation
 Static metadata schema build: 42721634134. Final native build and core tests: 42724037280. Diagnostic privacy tests: 42724043983. Existing v8 input regression: 42724049117, 163 valid records retained, zero legacy runtime observations (expected for 0.2.2). These checks do not establish on-device success of the new model sampler or actual live opponent values. Historical 0.2.x build/device receipts remain unchanged.
 
 The installable 0.3 dylib and source implement the runtime panel. Live opponent-hand visibility is still unverified and the user's overall goal is not marked complete.
+
+
+## Device v9 and correction in 0.3.1
+
+See device-v9/FINDINGS.md. Device data verifies the primary model reader and self-hand equality, but finds only opponent placeholders. Version 0.3 omitted the separate registered-module map; 0.3.1 corrects that omission and adds explicit bounded coverage. New module scanning remains device-unverified. The original build receipts above are historical.

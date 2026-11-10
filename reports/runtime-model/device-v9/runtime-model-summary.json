@@ -1,0 +1,2192 @@
+{
+  "observations": [
+    {
+      "entry": 1,
+      "sequence": 1,
+      "status": "waiting_for_table",
+      "phase": "unanchored",
+      "generation": 0,
+      "seats": [],
+      "model_hands_ready": false,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 2,
+      "status": "not_playing",
+      "phase": "unanchored",
+      "generation": 0,
+      "seats": [],
+      "model_hands_ready": false,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 6,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 0,
+          "known_tile_count": 0,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 0,
+          "known_tile_count": 0,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 0,
+          "known_tile_count": 0,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 0,
+          "known_tile_count": 0,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": false,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 8,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 8,
+          "known_tile_count": 8,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 8,
+          "known_tile_count": 0,
+          "placeholder_count": 8,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 8,
+          "known_tile_count": 0,
+          "placeholder_count": 6,
+          "invalid_tile_count": 2,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 8,
+          "known_tile_count": 0,
+          "placeholder_count": 7,
+          "invalid_tile_count": 1,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 9,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 11,
+          "invalid_tile_count": 2,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 11,
+          "invalid_tile_count": 2,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 10,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 11,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 12,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 14,
+          "known_tile_count": 14,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 14,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 18,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 11,
+          "known_tile_count": 0,
+          "placeholder_count": 11,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 20,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 10,
+          "known_tile_count": 0,
+          "placeholder_count": 10,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 21,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 14,
+          "known_tile_count": 14,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 13,
+          "known_tile_count": 0,
+          "placeholder_count": 13,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 10,
+          "known_tile_count": 0,
+          "placeholder_count": 10,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 25,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 7,
+          "known_tile_count": 0,
+          "placeholder_count": 7,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 7,
+          "known_tile_count": 0,
+          "placeholder_count": 7,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 5,
+          "known_tile_count": 0,
+          "placeholder_count": 5,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 27,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 13,
+          "known_tile_count": 13,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 7,
+          "known_tile_count": 0,
+          "placeholder_count": 7,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 7,
+          "known_tile_count": 0,
+          "placeholder_count": 7,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 4,
+          "known_tile_count": 0,
+          "placeholder_count": 4,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    },
+    {
+      "entry": 1,
+      "sequence": 28,
+      "status": "ok",
+      "phase": "live",
+      "generation": 1,
+      "seats": [
+        {
+          "view_seat": 0,
+          "seat": 0,
+          "tiles": 14,
+          "known_tile_count": 14,
+          "placeholder_count": 0,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 1
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 1,
+          "seat": 1,
+          "tiles": 7,
+          "known_tile_count": 0,
+          "placeholder_count": 7,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 2,
+          "seat": 2,
+          "tiles": 7,
+          "known_tile_count": 0,
+          "placeholder_count": 7,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        },
+        {
+          "view_seat": 3,
+          "seat": 3,
+          "tiles": 4,
+          "known_tile_count": 0,
+          "placeholder_count": 4,
+          "invalid_tile_count": 0,
+          "aux_status": "read",
+          "concealed_kong_groups": 0,
+          "known_concealed_kong_groups": 0,
+          "aux_fields": {
+            "curRedrawMjValue": {
+              "entries": 1,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "LastMJ": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_tianHuTile": {
+              "entries": 1,
+              "nonzero_entries": 1,
+              "valid_tile_code_count": 0
+            },
+            "m_multiTileRedrawList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            },
+            "m_laiZhiList": {
+              "entries": 0,
+              "nonzero_entries": 0,
+              "valid_tile_code_count": 0
+            }
+          }
+        }
+      ],
+      "self_seat": 0,
+      "model_hands_ready": true,
+      "cache_candidates": [],
+      "cache_status": "empty_or_unsupported",
+      "cache_root_coverage_provided": false
+    }
+  ],
+  "observation_count": 15,
+  "limits": [
+    "Actual model tile values, cache values and panel text remain private.",
+    "View seats are distinguished from raw player seats using the sampled self seat.",
+    "Cache candidates are not asserted to be actual opponent hands; model values are separate from original wire bytes."
+  ]
+}
