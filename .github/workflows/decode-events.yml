@@ -6,12 +6,12 @@ on:
         type: choice
         required: true
         default: v3
-        options: [v3, v4, v5, v6, v7, v8, v9]
+        options: [v3, v4, v5, v6, v7, v8, v9, v10]
       previous_version:
         type: choice
         required: true
         default: v2
-        options: [v2, v3, v4, v5, v6, v7, v8]
+        options: [v2, v3, v4, v5, v6, v7, v8, v9]
 permissions:
   contents: read
 jobs:
