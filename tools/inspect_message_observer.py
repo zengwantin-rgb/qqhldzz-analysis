@@ -21,7 +21,7 @@ def integer(value,minimum,maximum):
 
 def runtime_model(obj):
     statuses={'waiting_for_table','unsupported_model','unsupported_game','not_playing','invalid_seats','invalid_hand_list','model_fields_missing','model_read_failed','ok'}
-    phases={'live','after_hu','stale','unanchored'}
+    phases={'live','after_hu','stale','unanchored','dealing'}
     if not isinstance(obj,dict) or obj.get('kind')!='runtime_model' or obj.get('schema')!=1 or obj.get('source')!='RoundModeUtil.RoundModel' or not isinstance(obj.get('status'),str) or obj.get('status') not in statuses or not isinstance(obj.get('phase'),str) or obj.get('phase') not in phases:return None
     rows=obj.get('seats');own=obj.get('self_seat');generation=obj.get('generation')
     if not isinstance(rows,list) or len(rows) not in (0,4) or not integer(generation,0,10000):return None
@@ -47,6 +47,7 @@ def runtime_model(obj):
             if name not in ('curRedrawMjValue','LastMJ','m_tianHuTile','m_multiTileRedrawList','m_laiZhiList') or not isinstance(values,list) or len(values)>16 or not all(integer(c,-2147483648,2147483647) for c in values):return None
             seat['aux_fields'][name]={'entries':len(values),'nonzero_entries':sum(c!=0 for c in values),'valid_tile_code_count':sum(1<=c<=9 or 11<=c<=19 or 21<=c<=29 or 31<=c<=37 for c in values)}
         output['seats'].append(seat)
+    output['model_hands_ready']=bool(output['seats'] and output['seats'][0]['tiles']>0 and output['seats'][0]['known_tile_count']>0)
     cache=obj.get('cache_candidates',[])
     if not isinstance(cache,list) or len(cache)>48:return None
     total=0;counts=[]

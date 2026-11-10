@@ -72,6 +72,9 @@ static class ModelFixture
         string privateJson=GameModelReader.Json(withCache);
         Check(privateJson.Contains("987654321") && !privateJson.Contains("account-token-fixture") && !privateJson.Contains("private-account-key"),"bounded cache values stay in private capture, unrelated fields omitted");
         Check(!GameModelReader.Json(withCache,false).Contains("987654321") && !GameModelReader.Panel(withCache).Contains("987654321"),"unverified cache arrays never rendered as opponent hands");
+        var pending=Hands();pending[0]=new List<int>();
+        var dealing=GameModelReader.Capture(new HappyMahjong.Game.GuoBiaoRoundModel(pending),"live");
+        Check(dealing.Phase=="dealing" && GameModelReader.Panel(dealing).Contains("等待发牌完成") && !GameModelReader.Panel(dealing).Contains("1条"),"empty self hand during deal cannot display old opponent faces as live");
         Check(!GameModelReader.ValidTile(0) && !GameModelReader.ValidTile(10) && GameModelReader.ValidTile(37),"source tile code ranges");
     }
 }

@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test metadata privacy and session boundaries
         run: |
+          python3 -m unittest discover -s tools -p test_runtime_private.py
           python3 -m unittest discover -s tools -p test_message_observer.py
           python3 -m unittest discover -s tools -p test_runtime_probe.py
           python3 -m unittest discover -s tools -p test_phone_diagnostics.py

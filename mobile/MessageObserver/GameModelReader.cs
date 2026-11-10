@@ -85,7 +85,7 @@ namespace MJDiagnostic
             }
             catch { hand.AuxStatus = "aux_read_failed"; }
         }
-        static string Phase(string phase) { return phase == "live" || phase == "after_hu" || phase == "stale" ? phase : "unanchored"; }
+        static string Phase(string phase) { return phase == "live" || phase == "after_hu" || phase == "stale" || phase == "dealing" ? phase : "unanchored"; }
         public static ModelState Capture(object model, string phase)
         {
             var state = new ModelState { Status = "waiting_for_table", Phase = Phase(phase) };
@@ -119,7 +119,7 @@ namespace MJDiagnostic
                     hands[view] = new ModelHand { ViewSeat = view, Seat = (state.SelfSeat + view) % 4, Tiles = values };
                     ReadAux(tiles, hands[view]);
                 }
-                state.Hands = hands; state.Cache = ModelCacheReader.Capture(model); state.Status = "ok"; return state;
+                state.Hands = hands; if (state.Phase == "live" && hands[0].Tiles.Length == 0) state.Phase = "dealing"; state.Cache = ModelCacheReader.Capture(model); state.Status = "ok"; return state;
             }
             catch (MissingFieldException) { state.Status = "model_fields_missing"; }
             catch { state.Status = "model_read_failed"; }
@@ -146,7 +146,7 @@ namespace MJDiagnostic
                 return "客户端模型：读取未完成，请导出记录";
             }
             bool confirmed = state.Phase == "live" && state.GameStatus == 1 || state.Phase == "after_hu";
-            string title = state.Phase == "after_hu" ? "客户端模型 · 胡牌/结算阶段" : confirmed ? "客户端模型 · 对局中" : "客户端模型 · 等待阶段确认";
+            string title = state.Phase == "dealing" ? "客户端模型 · 等待发牌完成" : state.Phase == "after_hu" ? "客户端模型 · 胡牌/结算阶段" : confirmed ? "客户端模型 · 对局中" : "客户端模型 · 等待阶段确认";
             var output = new StringBuilder(title);
             string[] names = { "自己", "下家", "对家", "上家" };
             for (int index = 1; index < state.Hands.Length; index++)
