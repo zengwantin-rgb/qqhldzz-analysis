@@ -1,4 +1,4 @@
-# 运行时模型手牌面板 0.3.1 Beta
+# 运行时模型手牌面板 0.3.2 Beta
 
 这一版新增直接读取客户端牌局模型的面板，继续保留 0.2.2 的消息观察器。支持已核对的欢乐麻将 build 8.19.112、大众麻将 ModuleTuidaohu49（149）。
 
@@ -16,7 +16,7 @@
 
 模型入口为 RoundModeUtil.RoundModel。读取 GuoBiaoRoundModel.m_playerGameInfo → PlayerGameInfoVO.tiles → MJTileData.m_inHandList，并按实际 selfSeat 将视角座位映射到服务器座位。m_anGangList 的已知 mjValue 只标为暗杠；curRedrawMjValue、LastMJ、天胡和额外摸牌字段单独记录为辅助信息，不混入当前手牌。
 
-内部扫描直接读取当前牌局 m_moduleDataModels 注册模块及 blackboard.data，忽略字符串字典键、账号字段和 Unity 对象；支持数值列表及牌值对象。候选只保存在私密日志，不显示为对手手牌。扫描限制为深度6、96个对象、48个候选、4096个整数及每次25毫秒，记录根入口覆盖、读取错误和预算状态。未扫描完不代表客户端不存在其他数据。
+内部扫描直接读取当前牌局 m_moduleDataModels 注册模块及 blackboard.data，忽略字符串字典键、账号字段和 Unity 对象；支持数值列表及牌值对象。0.3.2 优先检查 blackboard，并跳过已核对的自身番型推荐树，避免其占满扫描额度；日志记录跳过数量。候选只保存在私密日志，不显示为对手手牌。扫描限制为深度6、96个对象、48个候选、4096个整数及每次25毫秒，记录根入口覆盖、读取错误和预算状态。未扫描完不代表客户端不存在其他数据。
 
 观察器不写游戏字段，不调用游戏 getter/setter、单例构造器或对局请求。字段及标准集合只读，结果复制到自己的数组。屏幕面板不接收触摸。没有接入外部收件服务，也不自动上传。
 
@@ -28,9 +28,11 @@
 
 已通过：原版元数据编译、ARM64 构建与 ad-hoc 签名、文件隔离测试、核心模型/缓存边界测试、阶段变化和记录上限测试、公开报告隐私测试。旧版 v8 ZIP 的 163 条记录回归校验仍通过。
 
-0.3 的字段读取和面板已由截图及 v9 日志验证：自己的13张牌与重连包一致，三家手牌字段仍是未知值。旧版漏扫注册模块入口，因此不能用旧缓存结果排除该入口。0.3.1 补齐此入口并修正发牌过程中空手牌的阶段显示；新版模块扫描尚待真机导出验证。
+0.3 的字段读取和面板已由截图及 v9 日志验证。v10 验证 0.3.1 可以枚举21个注册模块，但推荐数据占满对象预算。采到的103份推荐当前手牌全部可对应自己当前、此前或稍后的手牌；其余推荐为目标、标签或动作，其他候选没有有效牌值。三家实际手牌仍未知。
 
-构建：https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42730674972
-解析器测试：https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42730680596
-源码：cb16bcbfdfc1ec359d609a61d1e9fc83c1782d37
-SHA256：71370fa61971174d082ee6ee640af1dda5002fc7e31045efba19d0af0f71d840
+0.3.2 优先扫描其余模块，并修正预算耗尽的状态报告。新版构建、签名、模型及隐私测试通过，扫描效果仍需真机导出验证。进入牌桌观察约20秒即可导出，不必打一整局。
+
+构建：https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42732335612
+解析器测试：https://github.com/zengwantin-rgb/qqhldzz-analysis/actions/runs/42732338908
+源码：025fe8c383510286e79d6af0afdf49456a5b374e
+SHA256：4f56b005e071165fc21c4c77c2d6f3163e4c56c22d983e578b583a23464b21c7

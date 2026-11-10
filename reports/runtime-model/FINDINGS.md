@@ -20,3 +20,8 @@ The installable 0.3 dylib and source implement the runtime panel. Live opponent-
 ## Device v9 and correction in 0.3.1
 
 See device-v9/FINDINGS.md. Device data verifies the primary model reader and self-hand equality, but finds only opponent placeholders. Version 0.3 omitted the separate registered-module map; 0.3.1 corrects that omission and adds explicit bounded coverage. New module scanning remains device-unverified. The original build receipts above are historical.
+
+
+## Device v10 and focused scan in 0.3.2
+
+See device-v10/FINDINGS.md. Registered module enumeration is device-verified, but recommendation trees exhaust nested traversal. All 103 captured recommendation hand arrays match current, earlier or later self samples; remaining non-advice candidates contain no valid tile codes. Version 0.3.2 excludes those audited trees and improves root budget reporting. Its focused traversal is build-tested and still device-unverified.

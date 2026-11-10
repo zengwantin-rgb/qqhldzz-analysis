@@ -1,0 +1,637 @@
+{
+  "zip_crc_valid": true,
+  "reported_selection_mode": "manual",
+  "reported_coverage_status": "partial",
+  "complete_claim_independently_verified": null,
+  "manifest_declared_export_count": 9,
+  "actual_export_count": 9,
+  "duplicate_zip_entry_count": 0,
+  "declared_but_missing_count": 0,
+  "undeclared_entry_count": 0,
+  "candidate_count": 44,
+  "candidate_categories": {
+    "other": 9,
+    "main_log": 7,
+    "cloud_log": 21,
+    "activity_log": 2,
+    "replay_or_record": 2,
+    "configuration_or_data": 3
+  },
+  "exported_categories": {
+    "other": 3,
+    "replay_or_record": 1,
+    "cloud_log": 3,
+    "main_log": 1,
+    "activity_log": 1
+  },
+  "unexported_candidate_count": 35,
+  "unexported_candidates": [
+    {
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 430377
+    },
+    {
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 2150400
+    },
+    {
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 209119
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 14314
+    },
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 89030
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 4703
+    },
+    {
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 2596864
+    },
+    {
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 331790
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 5181
+    },
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 92510
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 14197
+    },
+    {
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 5570560
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 12368
+    },
+    {
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 217796
+    },
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 183526
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 28579
+    },
+    {
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 191
+    },
+    {
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 4141056
+    },
+    {
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 8844
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 11394
+    },
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 216540
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 42016
+    },
+    {
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 6580
+    },
+    {
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 1092
+    },
+    {
+      "category": "replay_or_record",
+      "extension": "data",
+      "path_hints": [
+        "record"
+      ],
+      "bytes": 230
+    },
+    {
+      "category": "configuration_or_data",
+      "extension": "data",
+      "path_hints": [],
+      "bytes": 5552
+    },
+    {
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 4419584
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 35389
+    },
+    {
+      "category": "activity_log",
+      "extension": "log",
+      "path_hints": [
+        "pandora"
+      ],
+      "bytes": 140025
+    },
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 60827
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 14197
+    },
+    {
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 1298432
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 24822
+    },
+    {
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 109324
+    },
+    {
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 13663
+    }
+  ],
+  "files": [
+    {
+      "entry": 1,
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 324964,
+      "format": "utf8_text",
+      "line_count": 25,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 2,
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 7629,
+      "format": "utf8_text",
+      "line_count": 71,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 3,
+      "category": "replay_or_record",
+      "extension": "dat",
+      "path_hints": [
+        "record"
+      ],
+      "bytes": 16,
+      "format": "utf8_with_binary_controls",
+      "control_characters": 12,
+      "zero_byte_count": 6,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 4,
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 10818,
+      "format": "utf8_text",
+      "line_count": 67,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 5,
+      "category": "cloud_log",
+      "extension": "log",
+      "path_hints": [
+        "gcloud"
+      ],
+      "bytes": 27603,
+      "format": "utf8_text",
+      "line_count": 138,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 6,
+      "category": "cloud_log",
+      "extension": "xlog",
+      "path_hints": [
+        "msdk",
+        "gcloud"
+      ],
+      "bytes": 187129,
+      "format": "non_utf8_binary",
+      "utf8_replacement_characters": 71124,
+      "line_count_with_replacement": 5255,
+      "zero_byte_count": 18347,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 7,
+      "category": "main_log",
+      "extension": "log",
+      "path_hints": [
+        "log398"
+      ],
+      "bytes": 4169728,
+      "format": "non_utf8_binary",
+      "utf8_replacement_characters": 2,
+      "line_count_with_replacement": 30156,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 1,
+        "ExtraTiles": 70,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 8,
+      "category": "activity_log",
+      "extension": "log",
+      "path_hints": [
+        "pandora"
+      ],
+      "bytes": 559620,
+      "format": "utf8_text",
+      "line_count": 511,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    },
+    {
+      "entry": 9,
+      "category": "other",
+      "extension": "log",
+      "path_hints": [],
+      "bytes": 17609,
+      "format": "utf8_text",
+      "line_count": 747,
+      "zero_byte_count": 0,
+      "known_field_mentions": {
+        "szGameBuf": 0,
+        "gameBuf": 0,
+        "nGameBuf": 0,
+        "iOriginSize": 0,
+        "stUnitProtoValueBuf": 0,
+        "stAbilityTileWallInfo": 0,
+        "astTileInfos": 0,
+        "tileInfos": 0,
+        "iTileFace": 0,
+        "tileFace": 0,
+        "stHandTiles": 0,
+        "nHandTilesNum": 0,
+        "ExtraTiles": 0,
+        "ProtoIntelligenceAdvice": 0,
+        "IntelligenceAdviceTing": 0,
+        "ProtocolDataList": 0,
+        "BinaryArray": 0,
+        "ClassName": 0,
+        "objectJson": 0,
+        "PlaybackRecord": 0,
+        "RecordVersion": 0,
+        "so_notify_msg": 0,
+        "round_env": 0
+      }
+    }
+  ],
+  "limits": [
+    "Entry numbers identify archive order only; paths and contents are omitted.",
+    "All exported entries are inventoried; missing candidates cannot be read from this ZIP.",
+    "Known-field byte matches do not prove structured payloads or real opponent tiles.",
+    "Binary formats are classified, not guessed or treated as decrypted messages.",
+    "Nested ZIP entries are counted but their contents are not inspected."
+  ]
+}

@@ -1,6 +1,6 @@
 # 欢乐麻将 iOS 分析与运行时观察
 
-当前版本：[0.3.1 运行时模型手牌面板](mobile/MessageObserver/README.md)，[下载 dylib](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/message-observer-v0.3.1-beta1/MJMessageObserver.dylib)。v9 真机日志验证自己的13张牌与重连数据一致，三家模型手牌仍是未知值。新版修正旧版遗漏的注册模块模型入口，并提供有界扫描覆盖记录；构建与回归测试通过，新增模块扫描待真机验证。真实对手暗牌目标尚未完成。[v9结果](reports/runtime-model/device-v9/FINDINGS.md)。[设计与验证范围](reports/runtime-model/FINDINGS.md)。
+当前版本：[0.3.2 运行时模型手牌面板](mobile/MessageObserver/README.md)，[下载 dylib](https://github.com/zengwantin-rgb/qqhldzz-analysis/releases/download/message-observer-v0.3.2-beta1/MJMessageObserver.dylib)。v10 已验证注册模块扫描运行，但推荐数据占满对象预算。已采到的推荐手牌均能对应自身样本，其他候选没有有效牌值；三家实际手牌仍未知。新版优先读取其余模块并准确报告预算状态，构建和回归测试通过，新增扫描效果待真机验证。[v10结果](reports/runtime-model/device-v10/FINDINGS.md)。实时对手暗牌目标尚未完成。
 
 [0.2.2 真机局中快照结果](reports/message-observer/device-v8/FINDINGS.md)：消息采集与字段备份已验证成功；重连快照含自己的 13 张牌值，其他三家只有 14/13/13 张数量。该结论限于已检查的消息路径，后续转向独立的客户端运行时模型入口。
 

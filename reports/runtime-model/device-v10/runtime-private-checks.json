@@ -1,0 +1,60 @@
+{
+  "cache_candidate_classification": {
+    "observations_with_candidates": 15,
+    "counts": {
+      "other_candidate": 18,
+      "recommendation_tags_or_actions": 204,
+      "recommendation_current_hand": 103,
+      "recommendation_hand_matches_later_sampled_self": 42,
+      "recommendation_target": 315,
+      "recommendation_hand_matches_current_self": 36,
+      "recommendation_hand_matches_previous_self": 25
+    },
+    "other_candidate_static_categories": {
+      "BaoPaiDataModel": 15,
+      "unrecognized_static_type": 3
+    },
+    "other_candidate_value_categories": {
+      "sentinel_or_other_integer": 15,
+      "zero": 12
+    },
+    "limits": [
+      "Categories use exact static type and field allowlists; unknown candidates remain unclassified.",
+      "Recommendation targets and tags are not actual opponent hands.",
+      "Values, source paths, strings and hashes are omitted."
+    ]
+  },
+  "self_hand_comparisons": [
+    {
+      "entry": 1,
+      "packet_sequence": 4,
+      "packet_type": 8,
+      "status": "no_model_before_next_wire_event"
+    },
+    {
+      "entry": 1,
+      "packet_sequence": 5,
+      "packet_type": 1,
+      "model_sequence": 6,
+      "status": "model_not_ready_after_deal",
+      "reference_tiles": 13,
+      "model_tiles": 0
+    }
+  ],
+  "opponent_auxiliary_value_categories": {
+    "curRedrawMjValue": {
+      "zero": 45
+    },
+    "LastMJ": {
+      "negative_one_sentinel": 45
+    },
+    "m_tianHuTile": {
+      "negative_one_sentinel": 45
+    }
+  },
+  "limits": [
+    "Comparisons use the first model sample before the next captured wire event; local actions may still change a hand in that window.",
+    "Only equality, counts and fixed sentinel categories are emitted; no card values, hashes, IDs or private paths.",
+    "An empty_or_unsupported cache status is not proof that registered module models were scanned."
+  ]
+}
